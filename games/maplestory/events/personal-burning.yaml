@@ -1,0 +1,17 @@
+id: personal-burning
+title: 퍼스널 버닝
+kind: event
+start: 2026-09-17
+startNote: 점검 후
+end: 2026-11-18
+summary: >-
+  260레벨 이상 캐릭터 대상. 이벤트 시작 시점의 레벨·경험치 기준 30단계 맞춤형 성장 미션.
+  명의당 1캐릭터만 참여 가능하며 지정한 효과는 취소할 수 없다.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/promotion/event/2026/20260917/event02
+    collectedAt: 2026-09-25
+  - source: press-kr
+    url: https://www.gamemeca.com/view.php?gid=1780649
+    collectedAt: 2026-09-25
+updatedAt: 2026-09-25

@@ -1,0 +1,13 @@
+---
+import GameShell from '../../../../layouts/GameShell.astro';
+import { games } from '../../../../core/hub';
+import { views } from '../../../../modules';
+
+export const getStaticPaths = () =>
+  games().flatMap((game) => game.config.modules.map((mod) => ({ params: { game: game.config.id, module: mod.id }, props: { game, mod } })));
+const { game, mod } = Astro.props;
+const { List } = views[mod.type];
+---
+<GameShell game={game} current={mod.id} title={mod.label}>
+  <List game={game} mod={mod} />
+</GameShell>

@@ -1,0 +1,13 @@
+---
+import type { Game } from '../../core/load';
+import type { ModuleConfig, NewsRecord } from '../../core/schema';
+import { gameHref, newsDate, recordsOf } from '../../core/hub';
+import NewsItem from '../../components/NewsItem.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const items = recordsOf<NewsRecord>(game, mod).sort((a, b) => Date.parse(newsDate(b)) - Date.parse(newsDate(a))).slice(0, 5);
+---
+<section class="card">
+  <div class="section-head"><h2>최신 {mod.label}</h2><a href={gameHref(game, mod.id)}>전체 보기</a></div>
+  {items.length ? <ul class="list">{items.map((n) => <NewsItem game={game} mod={mod} news={n} />)}</ul> : <p class="empty">아직 수집된 소식이 없습니다.</p>}
+</section>

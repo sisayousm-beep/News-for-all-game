@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import EventItem from '../components/EventItem.astro';
+import { allEvents, eventStatus } from '../core/hub';
+
+const events = allEvents();
+const groups = [
+  ['진행 중', events.filter((t) => eventStatus(t.record) === 'ongoing')],
+  ['예정', events.filter((t) => eventStatus(t.record) === 'upcoming')],
+  ['최근 종료', events.filter((t) => eventStatus(t.record) === 'ended').reverse().slice(0, 20)],
+] as const;
+---
+<Base title="일정" nav="schedule">
+  <h1>일정</h1>
+  <p class="muted small">모든 게임의 이벤트·점검·픽업 일정. 시간은 한국 시간(KST) 기준입니다.</p>
+  <div class="grid">
+    {groups.map(([label, list]) => (
+      <section class="card">
+        <h2>{label} <span class="muted small">{list.length}</span></h2>
+        {list.length ? <ul class="list">{list.map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} showGame />)}</ul> : <p class="empty">없음</p>}
+      </section>
+    ))}
+  </div>
+</Base>

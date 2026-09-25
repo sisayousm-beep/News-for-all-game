@@ -1,0 +1,30 @@
+---
+/** Per-game hub frame: identity header + module tabs generated from game.yaml. */
+import Base from './Base.astro';
+import GameIcon from '../components/GameIcon.astro';
+import type { Game } from '../core/load';
+import { gameHref } from '../core/hub';
+interface Props { game: Game; current: string; title?: string }
+const { game, current, title } = Astro.props;
+const { config } = game;
+const tabs = [
+  ['overview', gameHref(game), '개요'],
+  ...config.modules.map((m) => [m.id, gameHref(game, m.id), m.label]),
+  ['sources', gameHref(game, 'sources'), '출처'],
+];
+---
+<Base title={title ? `${title} · ${config.name}` : config.name} nav="games" accent={config.theme.accent}>
+  <div class="stack">
+    <div class="game-header">
+      <GameIcon game={game} large />
+      <div>
+        <h1><a href={gameHref(game)}>{config.name}</a></h1>
+        <p class="muted small">{config.genre} · {config.region}</p>
+      </div>
+    </div>
+    <nav class="tabs" aria-label={`${config.name} 메뉴`}>
+      {tabs.map(([id, url, label]) => <a href={url} aria-current={id === current ? 'page' : undefined}>{label}</a>)}
+    </nav>
+  </div>
+  <slot />
+</Base>

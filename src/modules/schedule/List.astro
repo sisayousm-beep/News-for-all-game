@@ -1,0 +1,21 @@
+---
+import type { Game } from '../../core/load';
+import type { EventRecord, ModuleConfig } from '../../core/schema';
+import { eventStatus, recordsOf } from '../../core/hub';
+import EventItem from '../../components/EventItem.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const events = recordsOf<EventRecord>(game, mod).sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
+const active = events.filter((e) => eventStatus(e) !== 'ended');
+const ended = events.filter((e) => eventStatus(e) === 'ended').reverse();
+---
+<div class="grid-2">
+  <section class="card">
+    <h2>진행 중 · 예정</h2>
+    {active.length ? <ul class="list">{active.map((e) => <EventItem game={game} mod={mod} event={e} />)}</ul> : <p class="empty">진행 중이거나 예정된 일정이 없습니다.</p>}
+  </section>
+  <section class="card">
+    <h2>종료</h2>
+    {ended.length ? <ul class="list">{ended.map((e) => <EventItem game={game} mod={mod} event={e} />)}</ul> : <p class="empty">종료된 일정이 없습니다.</p>}
+  </section>
+</div>

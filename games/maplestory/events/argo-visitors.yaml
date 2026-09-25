@@ -1,0 +1,13 @@
+id: argo-visitors
+title: 아르고 호의 방문객
+kind: event
+start: 2026-09-17
+startNote: 점검 후
+end: 2026-11-18T23:59:00+09:00
+endNote: 이벤트 아이템 사용은 11월 19일 오전 2시까지
+summary: 유니온의 정보선 아르고 호의 출항 준비를 돕는 가을 이벤트.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/promotion/event/2026/20260917/event02
+    collectedAt: 2026-09-25
+updatedAt: 2026-09-25

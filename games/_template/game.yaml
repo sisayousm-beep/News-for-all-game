@@ -1,0 +1,51 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# New game template. Copy this folder to games/<your-game-id>/ and edit.
+# Folders starting with "_" are ignored by the site. Full guide: docs/adding-a-game.md
+# Reference implementations: games/maplestory (news+schedule), games/wuthering-waves (database)
+# ─────────────────────────────────────────────────────────────────────────────
+id: my-game                      # must equal the folder name; lowercase-kebab; never change later (it is in URLs)
+name: 게임 이름                   # Korean display name
+names: { en: Game Name }         # other-language names (also searchable)
+description: 한두 문장 소개.
+genre: 장르
+region: 서버/지역
+locale: ko
+theme:
+  accent: "#7c9cff"              # the game's identity color
+  # icon: /games/my-game/icon.png  # optional, file under public/
+
+# Tabs of this game's hub, in order. type = news | schedule | database (see docs/modules.md)
+modules:
+  - type: news
+    label: 뉴스
+    collection: news             # records live in games/my-game/news/*.yaml
+  - type: schedule
+    label: 이벤트 일정
+    collection: events
+  - type: database
+    id: characters               # URL: /games/my-game/characters/
+    label: 캐릭터
+    itemLabel: 캐릭터
+    collection: characters
+    fields:                      # game-specific attributes; every record must list each key (null = unknown)
+      - key: rarity
+        label: 등급
+        filter: true
+        values: { "5": "★5", "4": "★4" }
+
+# Every URL cited by a record must belong to one of these. Types: docs/source-policy.md
+sources:
+  - id: official
+    name: 공식 홈페이지
+    type: OFFICIAL
+    url: https://example.com
+    domains: [example.com]
+
+# Independent AI update tasks (one per collection or source group). See docs/ai-update-rules.md
+updates:
+  - id: my-game-news
+    collection: news
+    sources: [official]
+    frequency: 6h                # Nh | Nd | patch | manual
+    instructions: >-
+      공식 공지 목록에서 새 글을 news 레코드로 추가한다.

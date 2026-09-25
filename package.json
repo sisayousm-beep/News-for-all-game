@@ -1,0 +1,27 @@
+{
+  "name": "game-hub",
+  "private": true,
+  "type": "module",
+  "description": "Game Hub — 관심 있는 모든 게임의 정보를 한 곳에서.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate": "tsx scripts/validate.ts",
+    "job": "tsx scripts/job-context.ts",
+    "scope": "tsx scripts/check-scope.ts",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^22.20.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}

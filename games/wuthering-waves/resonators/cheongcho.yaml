@@ -1,0 +1,26 @@
+id: cheongcho
+title: 청초
+aliases: []
+summary: 현방 지계에서 수백 년간 백성을 지켜온 전설적인 검선. 검과 현악기를 접목한 전투를 한다.
+attributes:
+  rarity: 5
+  element: aero
+  weapon: sword
+  version: "3.6"
+history:
+  - date: 2026-08-20
+    version: "3.6"
+    kind: release
+    summary: 3.6 버전 전반부 픽업으로 출시.
+    sources:
+      - source: press-kr
+        url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
+        collectedAt: 2026-09-25
+sources:
+  - source: press-kr
+    url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
+    collectedAt: 2026-09-25
+  - source: press-kr
+    url: https://www.gameple.co.kr/news/articleView.html?idxno=216215
+    collectedAt: 2026-09-25
+updatedAt: 2026-09-25

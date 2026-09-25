@@ -1,0 +1,18 @@
+---
+/** Game hub overview: one widget per enabled module, in game.yaml order. */
+import GameShell from '../../../layouts/GameShell.astro';
+import { games } from '../../../core/hub';
+import { views } from '../../../modules';
+
+export const getStaticPaths = () => games().map((game) => ({ params: { game: game.config.id }, props: { game } }));
+const { game } = Astro.props;
+---
+<GameShell game={game} current="overview">
+  <p class="muted prose">{game.config.description}</p>
+  <div class="grid-2">
+    {game.config.modules.map((mod) => {
+      const { Widget } = views[mod.type];
+      return <Widget game={game} mod={mod} />;
+    })}
+  </div>
+</GameShell>

@@ -1,0 +1,7 @@
+---
+import type { Game } from '../core/load';
+import { gameHref } from '../core/hub';
+interface Props { game: Game }
+const { game } = Astro.props;
+---
+<a class="badge game" style={`--accent:${game.config.theme.accent}`} href={gameHref(game)}>{game.config.name}</a>

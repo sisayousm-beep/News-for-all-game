@@ -1,0 +1,19 @@
+---
+import GameShell from '../../../../layouts/GameShell.astro';
+import { games, gameHref, recordsOf } from '../../../../core/hub';
+import type { AnyRecord } from '../../../../core/schema';
+import { views } from '../../../../modules';
+
+export const getStaticPaths = () =>
+  games().flatMap((game) =>
+    game.config.modules.flatMap((mod) =>
+      recordsOf<AnyRecord>(game, mod).map((record) => ({ params: { game: game.config.id, module: mod.id, id: record.id }, props: { game, mod, record } })),
+    ),
+  );
+const { game, mod, record } = Astro.props;
+const { Detail } = views[mod.type];
+---
+<GameShell game={game} current={mod.id} title={record.title}>
+  <a class="muted small" href={gameHref(game, mod.id)}>← {mod.label}</a>
+  <Detail game={game} mod={mod} record={record} />
+</GameShell>

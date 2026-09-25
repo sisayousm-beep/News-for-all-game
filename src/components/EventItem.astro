@@ -1,0 +1,24 @@
+---
+/** Status is rendered at build time and re-evaluated in the browser (see Base.astro). */
+import type { Game } from '../core/load';
+import type { EventRecord, ModuleConfig } from '../core/schema';
+import { eventStatus, formatDate, gameHref } from '../core/hub';
+import { eventKind, eventStatus as statusLabel } from '../i18n/ko';
+import Certainty from './Certainty.astro';
+import GameBadge from './GameBadge.astro';
+interface Props { game: Game; mod: ModuleConfig; event: EventRecord; showGame?: boolean; hideEnded?: boolean }
+const { game, mod, event, showGame, hideEnded } = Astro.props;
+const status = eventStatus(event);
+---
+<li data-start={event.start} data-end={event.end ?? undefined} data-hide-ended={hideEnded ? '' : undefined} hidden={hideEnded && status === 'ended'}>
+  <div class="row small">
+    <span class="badge status" data-status={status}>{statusLabel[status]}</span>
+    {showGame && <GameBadge game={game} />}
+    <span class="badge">{eventKind[event.kind]}</span>
+    <Certainty value={event.certainty} />
+  </div>
+  <a href={gameHref(game, mod.id, event.id)}><strong>{event.title}</strong></a>
+  <span class="muted small">
+    {formatDate(event.start)}{event.startNote && ` ${event.startNote}`} ~ {event.end ? formatDate(event.end) : '종료일 미정'}
+  </span>
+</li>

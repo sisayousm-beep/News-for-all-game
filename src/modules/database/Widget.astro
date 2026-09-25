@@ -1,0 +1,30 @@
+---
+import type { Game } from '../../core/load';
+import type { EntityRecord, ModuleConfig } from '../../core/schema';
+import { formatDate, gameHref, recordsOf } from '../../core/hub';
+import { historyKind } from '../../i18n/ko';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const items = recordsOf<EntityRecord>(game, mod);
+const changes = items
+  .flatMap((r) => r.history.map((h) => ({ r, h })))
+  .sort((a, b) => (b.h.version ?? '').localeCompare(a.h.version ?? '', undefined, { numeric: true }) || Date.parse(b.h.date ?? '0') - Date.parse(a.h.date ?? '0'))
+  .slice(0, 5);
+---
+<section class="card">
+  <div class="section-head"><h2>{mod.label} <span class="muted small">{items.length}</span></h2><a href={gameHref(game, mod.id)}>전체 보기</a></div>
+  {changes.length ? (
+    <ul class="list">
+      {changes.map(({ r, h }) => (
+        <li>
+          <div class="row small">
+            <span class="badge">{historyKind[h.kind]}</span>
+            {h.version && <span class="badge">v{h.version}</span>}
+            <span class="muted">{h.date ? formatDate(h.date) : '날짜 미확인'}</span>
+          </div>
+          <a href={gameHref(game, mod.id, r.id)}><strong>{r.title}</strong></a>
+        </li>
+      ))}
+    </ul>
+  ) : <p class="empty">아직 등록된 항목이 없습니다.</p>}
+</section>

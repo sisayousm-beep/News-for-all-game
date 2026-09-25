@@ -1,0 +1,79 @@
+# Wuthering Waves — reference game #2: news + a database module with game-specific fields.
+# Schema: src/core/schema.ts (GameConfig). Docs: docs/game-configuration.md
+id: wuthering-waves
+name: 명조:워더링 웨이브
+names: { en: Wuthering Waves }
+description: 쿠로 게임즈의 오픈월드 액션 RPG. 공명자를 수집·육성해 파티를 구성한다.
+genre: 수집형 액션 RPG
+region: 글로벌 (한국어)
+locale: ko
+theme:
+  accent: "#d9c48a"
+
+modules:
+  - type: database
+    id: resonators
+    label: 공명자
+    itemLabel: 공명자
+    collection: resonators
+    fields:
+      - key: rarity
+        label: 등급
+        filter: true
+        values: { "5": "★5", "4": "★4" }
+      - key: element
+        label: 속성
+        filter: true
+        values: { glacio: 응결, fusion: 용융, electro: 전도, aero: 기류, spectro: 회절, havoc: 인멸 }
+      - key: weapon
+        label: 무기
+        filter: true
+        values: { broadblade: 대검, sword: 직검, pistols: 권총, gauntlets: 권갑, rectifier: 증폭기 }
+      - key: version
+        label: 출시 버전
+  - type: news
+    label: 뉴스·공지
+    collection: news
+
+sources:
+  - id: kuro-official
+    name: 명조 공식 홈페이지
+    type: OFFICIAL
+    url: https://wutheringwaves.kurogames.com/ko/main
+    domains: [wutheringwaves.kurogames.com]
+  - id: official-x-kr
+    name: 명조 한국 공식 X
+    type: OFFICIAL
+    url: https://x.com/WW_KR_Official
+    domains: [x.com/WW_KR_Official]
+  - id: press-kr
+    name: 국내 게임 언론
+    type: PRESS
+    url: https://www.gametoc.co.kr
+    domains: [gametoc.co.kr, gameinsight.co.kr, gameple.co.kr, gamemeca.com, inven.co.kr/webzine]
+  - id: press-en
+    name: 해외 게임 언론
+    type: PRESS
+    url: https://www.gematsu.com
+    domains: [gematsu.com, fandomwire.com]
+  - id: inven-board
+    name: 명조 인벤 게시판
+    type: COMMUNITY
+    url: https://www.inven.co.kr/board/party/6196
+    domains: [inven.co.kr/board]
+
+updates:
+  - id: wuthering-waves-news
+    collection: news
+    sources: [kuro-official, official-x-kr, press-kr]
+    frequency: 12h
+    instructions: >-
+      공식 홈페이지 뉴스와 한국 공식 X에서 버전 업데이트·픽업·점검 공지를 찾아 news 레코드로 추가한다.
+      게시일을 확인할 수 없으면 publishedAt: null.
+  - id: wuthering-waves-resonators
+    collection: resonators
+    sources: [kuro-official, press-kr, press-en]
+    frequency: patch
+    instructions: >-
+      신규 공명자 공개 시 레코드를 추가하고, 복각·조정이 있으면 해당 공명자의 history에 항목을 추가한다.
+      속성/무기/등급을 출처에서 확인하지 못하면 null로 둔다. 한국어 공식 명칭이 불확실하면 aliases에 후보를 넣는다.

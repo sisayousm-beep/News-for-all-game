@@ -1,0 +1,20 @@
+---
+import type { Game } from '../core/load';
+import type { ModuleConfig, NewsRecord } from '../core/schema';
+import { formatDate, gameHref } from '../core/hub';
+import { newsCategory } from '../i18n/ko';
+import Certainty from './Certainty.astro';
+import GameBadge from './GameBadge.astro';
+interface Props { game: Game; mod: ModuleConfig; news: NewsRecord; showGame?: boolean }
+const { game, mod, news, showGame } = Astro.props;
+---
+<li>
+  <div class="row small">
+    {showGame && <GameBadge game={game} />}
+    <span class="badge">{newsCategory[news.category]}</span>
+    <Certainty value={news.certainty} />
+    {news.analysis && <span class="badge ai">AI 분석</span>}
+    <span class="muted">{news.publishedAt ? formatDate(news.publishedAt) : '게시일 미확인'}</span>
+  </div>
+  <a href={gameHref(game, mod.id, news.id)}><strong>{news.title}</strong></a>
+</li>

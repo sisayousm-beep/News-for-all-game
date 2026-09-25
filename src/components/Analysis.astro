@@ -1,0 +1,17 @@
+---
+/** Level 3 (intelligence). Always visually separated from facts. */
+import type { Game } from '../core/load';
+import type { RecordBase } from '../core/schema';
+import { formatDate } from '../core/hub';
+import SourceList from './SourceList.astro';
+interface Props { game: Game; analysis: NonNullable<RecordBase['analysis']> }
+const { game, analysis } = Astro.props;
+---
+<section class="card analysis">
+  <div class="row">
+    <span class="badge ai">{analysis.author.startsWith('ai:') ? 'AI 분석' : '편집자 분석'}</span>
+    <span class="muted small">{formatDate(analysis.generatedAt)} 작성 · 사실이 아닌 해석이며 틀릴 수 있습니다</span>
+  </div>
+  <p class="prose">{analysis.text}</p>
+  <SourceList game={game} refs={analysis.basedOn} title="근거" />
+</section>

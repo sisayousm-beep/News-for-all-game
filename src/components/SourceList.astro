@@ -1,0 +1,30 @@
+---
+/** Citations for a record. Every dynamic fact on the site should render one of these. */
+import type { Game } from '../core/load';
+import type { SourceRef } from '../core/schema';
+import { formatDate, sourceOf } from '../core/hub';
+import { sourceType } from '../i18n/ko';
+interface Props { game: Game; refs: SourceRef[]; title?: string }
+const { game, refs, title = '출처' } = Astro.props;
+---
+<div class="sources stack" style="gap:6px">
+  <strong class="muted">{title}</strong>
+  <ul class="list">
+    {refs.map((r) => {
+      const def = sourceOf(game, r.source);
+      return (
+        <li>
+          <div class="row">
+            <span class={`badge ${def.type}`}>{sourceType[def.type]}</span>
+            <a href={r.url} target="_blank" rel="noopener noreferrer">{def.name}</a>
+          </div>
+          <span class="muted">
+            수집 {formatDate(r.collectedAt)} ·{' '}
+            {r.verifiedAt ? `검증 ${formatDate(r.verifiedAt)}` : <span class="badge unknown">원문 미검증</span>}
+            {r.note && ` · ${r.note}`}
+          </span>
+        </li>
+      );
+    })}
+  </ul>
+</div>

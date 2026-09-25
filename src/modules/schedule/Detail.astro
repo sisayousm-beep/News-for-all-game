@@ -1,0 +1,27 @@
+---
+import type { Game } from '../../core/load';
+import type { EventRecord, ModuleConfig } from '../../core/schema';
+import { eventStatus, formatDate } from '../../core/hub';
+import { eventKind, eventStatus as statusLabel } from '../../i18n/ko';
+import Certainty from '../../components/Certainty.astro';
+import SourceList from '../../components/SourceList.astro';
+import Analysis from '../../components/Analysis.astro';
+interface Props { game: Game; mod: ModuleConfig; record: EventRecord }
+const { game, record: e } = Astro.props;
+const status = eventStatus(e);
+---
+<article class="card" data-start={e.start} data-end={e.end ?? undefined}>
+  <div class="row small">
+    <span class="badge status" data-status={status}>{statusLabel[status]}</span>
+    <span class="badge">{eventKind[e.kind]}</span>
+    <Certainty value={e.certainty} />
+  </div>
+  <h2>{e.title}</h2>
+  <dl class="facts">
+    <dt>시작</dt><dd>{formatDate(e.start)}{e.startNote && ` (${e.startNote})`}</dd>
+    <dt>종료</dt><dd>{e.end ? formatDate(e.end) : '미정'}{e.endNote && ` (${e.endNote})`}</dd>
+  </dl>
+  {e.summary && <p class="prose">{e.summary}</p>}
+  <SourceList game={game} refs={e.sources} />
+</article>
+{e.analysis && <Analysis game={game} analysis={e.analysis} />}

@@ -1,0 +1,25 @@
+---
+/** Global news feed, paginated so page weight stays flat as games are added. */
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import NewsItem from '../../components/NewsItem.astro';
+import { allNews, games } from '../../core/hub';
+
+export const getStaticPaths = (({ paginate }) => paginate(allNews(), { pageSize: 30 })) satisfies GetStaticPaths;
+const { page } = Astro.props;
+---
+<Base title="뉴스" nav="news">
+  <div class="spread"><h1>뉴스</h1><span class="muted small">{games().length}개 게임 · {page.total}건</span></div>
+  <section class="card">
+    {page.data.length
+      ? <ul class="list">{page.data.map((t) => <NewsItem game={t.game} mod={t.mod} news={t.record} showGame />)}</ul>
+      : <p class="empty">아직 소식이 없습니다.</p>}
+  </section>
+  {page.lastPage > 1 && (
+    <nav class="row" aria-label="페이지">
+      {page.url.prev && <a class="badge" href={page.url.prev}>← 이전</a>}
+      <span class="muted small">{page.currentPage} / {page.lastPage}</span>
+      {page.url.next && <a class="badge" href={page.url.next}>다음 →</a>}
+    </nav>
+  )}
+</Base>

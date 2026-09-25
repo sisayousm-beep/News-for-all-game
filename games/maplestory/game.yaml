@@ -1,0 +1,55 @@
+# MapleStory (KMS) — reference game #1: news + schedule modules.
+# Schema: src/core/schema.ts (GameConfig). Docs: docs/game-configuration.md
+id: maplestory
+name: 메이플스토리
+names: { en: MapleStory }
+description: 넥슨이 서비스하는 2D 횡스크롤 MMORPG. 한국 서버(KMS) 기준.
+genre: MMORPG
+region: KMS (한국)
+locale: ko
+theme:
+  accent: "#f39a1d"
+
+modules:
+  - type: news
+    label: 뉴스·패치노트
+    collection: news
+  - type: schedule
+    label: 이벤트 일정
+    collection: events
+
+sources:
+  - id: nexon-official
+    name: 메이플스토리 공식 홈페이지
+    type: OFFICIAL
+    url: https://maplestory.nexon.com/News/Notice
+    domains: [maplestory.nexon.com]
+  - id: inven
+    name: 메이플스토리 인벤
+    type: COMMUNITY
+    url: https://www.inven.co.kr/board/maple/2314
+    domains: [inven.co.kr/board]
+    note: 게시판(실시간 소식 전재 포함)은 커뮤니티. 공식 원문을 찾으면 공식 출처로 교체한다.
+  - id: press-kr
+    name: 국내 게임 언론
+    type: PRESS
+    url: https://www.gamemeca.com
+    domains: [gamemeca.com, betanews.net, ipnn.co.kr, gameabout.com]
+
+updates:
+  - id: maplestory-news
+    collection: news
+    sources: [nexon-official]
+    frequency: 6h
+    instructions: >-
+      공식 공지사항(/News/Notice), 업데이트(/News/Update) 목록에서 아직 없는 글을 찾아 news 레코드로 추가한다.
+      제목은 원문 그대로, summary는 원문에 있는 사실만 1~3문장으로 요약한다.
+      점검 공지는 category maintenance, 패치노트는 patch.
+  - id: maplestory-events
+    collection: events
+    sources: [nexon-official]
+    frequency: 1d
+    instructions: >-
+      공식 이벤트 페이지(/News/Event)와 업데이트 프로모션 페이지에서 이벤트 기간을 확인한다.
+      "점검 후" 시작은 start에 날짜만 쓰고 startNote에 "점검 후"를 적는다.
+      종료일이 공지되지 않았으면 end: null. 추측 금지.

@@ -1,0 +1,56 @@
+---
+import type { Game } from '../../core/load';
+import type { EntityRecord, ModuleConfig } from '../../core/schema';
+import { gameHref, recordsOf } from '../../core/hub';
+import { fieldLabel } from './fields';
+import Certainty from '../../components/Certainty.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const items = recordsOf<EntityRecord>(game, mod).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
+const filters = mod.fields.filter((f) => f.filter && f.values);
+---
+<section class="card" data-db>
+  <div class="spread"><h2>{mod.label}</h2><span class="muted small"><span data-count>{items.length}</span> / {items.length}</span></div>
+  <div class="filters">
+    <input class="input" style="flex:1 1 160px" data-q type="search" placeholder={`${mod.itemLabel ?? mod.label} 이름 검색`} aria-label="이름 검색" />
+    {filters.map((f) => (
+      <select data-filter={f.key} aria-label={f.label}>
+        <option value="">{f.label} 전체</option>
+        {Object.entries(f.values!).map(([v, label]) => <option value={v}>{label}</option>)}
+      </select>
+    ))}
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>이름</th>{mod.fields.map((f) => <th>{f.label}</th>)}</tr></thead>
+      <tbody>
+        {items.map((r) => (
+          <tr data-name={[r.title, ...r.aliases].join(' ').toLowerCase()} {...Object.fromEntries(mod.fields.map((f) => [`data-${f.key}`, String(r.attributes[f.key] ?? '')]))}>
+            <td><a href={gameHref(game, mod.id, r.id)}><strong>{r.title}</strong></a> <Certainty value={r.certainty} /></td>
+            {mod.fields.map((f) => <td>{fieldLabel(f, r.attributes[f.key]) ?? <span class="badge unknown">미확인</span>}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  {!items.length && <p class="empty">아직 등록된 항목이 없습니다.</p>}
+</section>
+<script>
+  // Client-side filter over the already-rendered rows (no extra data is downloaded).
+  document.querySelectorAll<HTMLElement>('[data-db]').forEach((root) => {
+    const rows = [...root.querySelectorAll<HTMLTableRowElement>('tbody tr')];
+    const q = root.querySelector<HTMLInputElement>('[data-q]')!;
+    const selects = [...root.querySelectorAll<HTMLSelectElement>('[data-filter]')];
+    const apply = () => {
+      const term = q.value.trim().toLowerCase();
+      let n = 0;
+      for (const row of rows) {
+        const ok = row.dataset.name!.includes(term) && selects.every((s) => !s.value || row.dataset[s.dataset.filter!] === s.value);
+        row.hidden = !ok;
+        n += +ok;
+      }
+      root.querySelector('[data-count]')!.textContent = String(n);
+    };
+    [q, ...selects].forEach((el) => el.addEventListener('input', apply));
+  });
+</script>

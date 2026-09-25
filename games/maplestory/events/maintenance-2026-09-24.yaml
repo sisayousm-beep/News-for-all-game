@@ -1,0 +1,10 @@
+id: maintenance-2026-09-24
+title: 전체 월드 채널 점검
+kind: maintenance
+start: 2026-09-24T11:00:00+09:00
+end: 2026-09-24T12:00:00+09:00
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/notice/inspection
+    collectedAt: 2026-09-25
+updatedAt: 2026-09-25

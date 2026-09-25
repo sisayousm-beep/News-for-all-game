@@ -1,0 +1,24 @@
+id: jiyan
+title: 기염
+aliases: [Jiyan]
+summary: 명조 정식 출시 당시 첫 픽업 튜닝의 5성 공명자.
+# element/weapon: not confirmed by any collected source yet — left null on purpose.
+attributes:
+  rarity: 5
+  element: null
+  weapon: null
+  version: "1.0"
+history:
+  - date: 2024-05-23
+    version: "1.0"
+    kind: release
+    summary: 정식 출시(5월 23일)와 함께 첫 픽업 튜닝으로 출시. 전용 무기 '천룡의 천장' 픽업 동시 진행.
+    sources:
+      - source: press-kr
+        url: https://www.gametoc.co.kr/news/articleView.html?idxno=80390
+        collectedAt: 2026-09-25
+sources:
+  - source: press-kr
+    url: https://www.gametoc.co.kr/news/articleView.html?idxno=80390
+    collectedAt: 2026-09-25
+updatedAt: 2026-09-25

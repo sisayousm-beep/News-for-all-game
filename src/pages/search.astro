@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { games, href } from '../core/hub';
+const gameNames = Object.fromEntries(games().map((g) => [g.config.id, { name: g.config.name, accent: g.config.theme.accent }]));
+---
+<Base title="검색" nav="search">
+  <h1>검색</h1>
+  <input class="input" id="q" type="search" placeholder="게임, 캐릭터, 이벤트, 뉴스 검색" aria-label="검색어" autofocus />
+  <p class="muted small" id="status" aria-live="polite"></p>
+  <ul class="list card" id="results" hidden></ul>
+</Base>
+<script is:inline define:vars={{ indexUrl: href('/search-index.json'), gameNames }}>
+  const q = document.getElementById('q');
+  const status = document.getElementById('status');
+  const results = document.getElementById('results');
+  let index;
+  const norm = (s) => s.toLowerCase().replace(/\s+/g, '');
+
+  async function run() {
+    const term = norm(q.value);
+    history.replaceState(null, '', term ? `?q=${encodeURIComponent(q.value)}` : location.pathname);
+    if (!term) { results.hidden = true; status.textContent = ''; return; }
+    index ??= await fetch(indexUrl).then((r) => r.json());
+    const hits = index
+      .map((row) => {
+        const names = [row.t, ...(row.a ?? [])].map(norm);
+        const score = names.some((n) => n === term) ? 3 : names.some((n) => n.startsWith(term)) ? 2 : names.some((n) => n.includes(term)) ? 1 : 0;
+        return { row, score };
+      })
+      .filter((h) => h.score)
+      .sort((a, b) => b.score - a.score || (b.row.d ?? '').localeCompare(a.row.d ?? ''))
+      .slice(0, 50);
+    status.textContent = `${hits.length}건`;
+    results.hidden = !hits.length;
+    results.replaceChildren(...hits.map(({ row }) => {
+      const g = gameNames[row.g];
+      const li = document.createElement('li');
+      li.innerHTML = `<div class="row small"><span class="badge game"></span><span class="badge"></span></div><a><strong></strong></a>`;
+      const [gameBadge, kind] = li.querySelectorAll('.badge');
+      gameBadge.textContent = g.name; gameBadge.style.setProperty('--accent', g.accent);
+      kind.textContent = row.k;
+      li.querySelector('a').href = row.u;
+      li.querySelector('strong').textContent = row.t;
+      return li;
+    }));
+  }
+  q.value = new URLSearchParams(location.search).get('q') ?? '';
+  q.addEventListener('input', run);
+  if (q.value) run();
+</script>

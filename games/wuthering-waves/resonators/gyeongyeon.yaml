@@ -1,0 +1,26 @@
+id: gyeongyeon
+title: 경연
+aliases: [산고양이 등불]
+summary: "'산고양이 등불'이라는 별명의 남성 공명자. 수명을 바쳐 힘을 끌어내는 생명의 등불과 울림 생물 산고양이를 활용한다."
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: broadblade
+  version: "3.6"
+history:
+  - date: null
+    version: "3.6"
+    kind: release
+    summary: 3.6 버전 후반부 픽업으로 출시 (후반부 시작일 미확인).
+    sources:
+      - source: press-kr
+        url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
+        collectedAt: 2026-09-25
+sources:
+  - source: press-kr
+    url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
+    collectedAt: 2026-09-25
+  - source: press-kr
+    url: https://www.gameple.co.kr/news/articleView.html?idxno=216215
+    collectedAt: 2026-09-25
+updatedAt: 2026-09-25

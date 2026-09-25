@@ -1,0 +1,61 @@
+---
+import '../styles/global.css';
+import { href } from '../core/hub';
+
+interface Props { title?: string; nav?: 'home' | 'games' | 'news' | 'schedule' | 'search'; accent?: string }
+const { title, nav, accent } = Astro.props;
+const links = [
+  ['home', '/', '대시보드'],
+  ['games', '/games/', '게임'],
+  ['news', '/news/', '뉴스'],
+  ['schedule', '/schedule/', '일정'],
+  ['search', '/search/', '검색'],
+] as const;
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0d0f14" />
+    <title>{title ? `${title} · Game Hub` : 'Game Hub'}</title>
+    <link rel="icon" href={href('/favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body style={accent ? `--accent:${accent}` : undefined}>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href={href('/')}>Game<span>Hub</span></a>
+        <nav class="nav" aria-label="주요 메뉴">
+          {links.map(([key, path, label]) => <a href={href(path)} aria-current={nav === key ? 'page' : undefined}>{label}</a>)}
+        </nav>
+        <form class="search-form" action={href('/search/')} role="search">
+          <input name="q" type="search" placeholder="게임, 캐릭터, 이벤트, 뉴스 검색" aria-label="검색" />
+        </form>
+      </div>
+    </header>
+    <main><slot /></main>
+    <footer class="footer">
+      Game Hub는 원본 출처의 정보를 모아 정리합니다. 모든 정보의 원문은 각 항목의 출처 링크를 확인하세요.
+      <span class="badge ai">AI 분석</span> 표시는 사실이 아닌 해석입니다.
+    </footer>
+    <nav class="tabbar" aria-label="하단 메뉴">
+      {links.map(([key, path, label]) => <a href={href(path)} aria-current={nav === key ? 'page' : undefined}>{label}</a>)}
+    </nav>
+    <script is:inline>
+      // Static pages are built once; recompute event status in the viewer's clock so
+      // "진행 중 / 예정 / 종료" stays correct between rebuilds. Mirrors eventStatus() in src/core/hub.ts.
+      (() => {
+        const t = (s, end) => Date.parse(s.length === 10 ? s + (end ? 'T23:59:59' : 'T00:00:00') + '+09:00' : s);
+        const label = { upcoming: '예정', ongoing: '진행 중', ended: '종료' };
+        const now = Date.now();
+        document.querySelectorAll('[data-start]').forEach((el) => {
+          const { start, end } = el.dataset;
+          const s = now < t(start) ? 'upcoming' : end && now > t(end, true) ? 'ended' : 'ongoing';
+          el.dataset.status = s;
+          el.querySelectorAll('.status').forEach((b) => { b.dataset.status = s; b.textContent = label[s]; });
+          if (el.hasAttribute('data-hide-ended')) el.hidden = s === 'ended';
+        });
+      })();
+    </script>
+  </body>
+</html>

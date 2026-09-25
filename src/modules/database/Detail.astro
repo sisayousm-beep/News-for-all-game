@@ -1,0 +1,47 @@
+---
+import type { Game } from '../../core/load';
+import type { EntityRecord, ModuleConfig } from '../../core/schema';
+import { formatDate } from '../../core/hub';
+import { historyKind } from '../../i18n/ko';
+import { fieldLabel } from './fields';
+import Certainty from '../../components/Certainty.astro';
+import SourceList from '../../components/SourceList.astro';
+import Analysis from '../../components/Analysis.astro';
+interface Props { game: Game; mod: ModuleConfig; record: EntityRecord }
+const { game, mod, record: r } = Astro.props;
+---
+<div class="grid-2">
+  <article class="card">
+    <div class="row"><h2>{r.title}</h2><Certainty value={r.certainty} /></div>
+    {r.aliases.length > 0 && <p class="muted small">{r.aliases.join(' · ')}</p>}
+    <dl class="facts">
+      {mod.fields.map((f) => (
+        <>
+          <dt>{f.label}</dt>
+          <dd>{fieldLabel(f, r.attributes[f.key]) ?? <span class="badge unknown" title="출처에서 확인되지 않은 값">미확인</span>}</dd>
+        </>
+      ))}
+    </dl>
+    {r.summary && <p class="prose">{r.summary}</p>}
+    <SourceList game={game} refs={r.sources} />
+  </article>
+  <section class="card">
+    <h2>변경 이력</h2>
+    {r.history.length ? (
+      <ol class="timeline">
+        {r.history.map((h) => (
+          <li>
+            <div class="row small">
+              <span class="badge">{historyKind[h.kind]}</span>
+              {h.version && <span class="badge">v{h.version}</span>}
+              <span class="muted">{h.date ? formatDate(h.date) : '날짜 미확인'}</span>
+            </div>
+            <p>{h.summary}</p>
+            <SourceList game={game} refs={h.sources} />
+          </li>
+        ))}
+      </ol>
+    ) : <p class="empty">기록된 변경 이력이 없습니다.</p>}
+  </section>
+</div>
+{r.analysis && <Analysis game={game} analysis={r.analysis} />}

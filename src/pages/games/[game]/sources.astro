@@ -1,0 +1,45 @@
+---
+/** Registered sources for one game and how much data cites each. */
+import GameShell from '../../../layouts/GameShell.astro';
+import { games } from '../../../core/hub';
+import { sourceType } from '../../../i18n/ko';
+
+export const getStaticPaths = () => games().map((game) => ({ params: { game: game.config.id }, props: { game } }));
+const { game } = Astro.props;
+const citations = Object.values(game.collections).flat().flatMap((r) => r.sources);
+const count = (id: string) => citations.filter((c) => c.source === id).length;
+---
+<GameShell game={game} current="sources" title="출처">
+  <section class="card">
+    <h2>등록된 출처</h2>
+    <p class="muted small">이 게임의 모든 정보는 아래 출처 중 하나 이상을 근거로 합니다. 공식 &gt; 언론 &gt; DB·위키 &gt; 공략 &gt; 커뮤니티 순으로 신뢰합니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>출처</th><th>유형</th><th>인용 수</th><th>범위</th></tr></thead>
+        <tbody>
+          {game.config.sources.map((s) => (
+            <tr>
+              <td><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a></td>
+              <td><span class={`badge ${s.type}`}>{sourceType[s.type]}</span></td>
+              <td>{count(s.id)}</td>
+              <td class="muted small">{s.domains.join(', ')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section class="card">
+    <h2>자동 업데이트 작업</h2>
+    {game.config.updates.length ? (
+      <ul class="list">
+        {game.config.updates.map((j) => (
+          <li>
+            <div class="row"><code>{j.id}</code><span class="badge">{j.frequency}</span><span class="muted small">→ {j.collection}</span></div>
+            <span class="muted small">{j.instructions}</span>
+          </li>
+        ))}
+      </ul>
+    ) : <p class="empty">등록된 작업이 없습니다.</p>}
+  </section>
+</GameShell>
