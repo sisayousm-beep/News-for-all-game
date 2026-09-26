@@ -1,5 +1,7 @@
 # 새 게임 추가
 
+> 새 게임도 [정보의 3단계](information-layers.md)와 화면 원칙(결론 먼저, 세부는 접기, 원문 통째 금지)을 그대로 따릅니다. 공통 코드·검증기에 들어 있어 따로 할 일은 없고, 데이터를 `topics`·`results`·`summary` 구조에 맞춰 짧게 쓰면 됩니다.
+
 코드 수정 없이 폴더 하나로 추가됩니다. 참고 구현: `games/maplestory`(뉴스+일정), `games/wuthering-waves`(DB+뉴스).
 
 1. **복사**: `cp -r games/_template games/<game-id>` (id는 소문자-kebab, 예 `arknights`)

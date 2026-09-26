@@ -74,12 +74,19 @@ const Version = z.string().regex(/^\d+(\.\d+)*$/, 'version like "3.7"');
  */
 export const SubjectRef = z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+(#[a-z0-9-]+)?$/, 'collection/id or collection/id#topic');
 
+/**
+ * Brevity limits (all games). Screens are conclusion-first: the short line is shown, details sit behind a toggle.
+ * Long official text belongs summarized in `topics`, never pasted. See docs/information-layers.md.
+ */
+const short = (max: number) => z.string().max(max, `${max}자 이하로 요약 — 결론만 쓰고 세부는 나눠 적기`);
+export const LIMITS = { summary: 200, topic: 300, conclusion: 150 } as const;
+
 /** Fields shared by every record in every collection. */
 const RecordBase = z.object({
   id: slug,
   title: z.string(),
   aliases: z.array(z.string()).default([]),
-  summary: z.string().optional(),
+  summary: short(LIMITS.summary).optional(),
   /** Thumbnail / portrait under public/ (e.g. /games/<id>/img/x.webp). No hotlinking; lists fall back to a game-colored tile. */
   image: z.string().regex(/^\/games\//, 'path under public/games/, e.g. /games/<game>/img/<collection>/<id>.webp').optional(),
   /** Where the image was downloaded from (official page/CDN), so it can be re-fetched or checked. */
@@ -144,7 +151,7 @@ export const Topic = z.object({
   /** Key of a `sections` entry of the module (e.g. skills, chain). */
   section: z.string(),
   name: z.string(),
-  text: z.string().optional(),
+  text: short(LIMITS.topic).optional(),
   /** Key official numbers only (배율, 쿨타임, 에너지…), label → value. */
   values: z.record(z.string(), z.union([z.string(), z.number()])).default({}),
   /** Only when this topic cites something beyond the record's own sources. */
@@ -203,8 +210,8 @@ export const AnalysisRecord = RecordBase.extend({
   assumptions: z.array(z.string()).min(1),
   /** Version of the calculator / sheet / method, when the source has one. */
   calculationVersion: z.string().optional(),
-  /** Findings as conditional sentences ("이 조건에서 약 …"). */
-  results: z.array(z.string()).min(1),
+  /** Findings as conditional sentences ("이 조건에서 약 …"). results[0] is the conclusion shown on top. */
+  results: z.array(short(LIMITS.conclusion)).min(1),
   table: z.object({
     columns: z.array(z.string()).min(2),
     rows: z.array(z.array(z.union([z.string(), z.number(), z.null()]))).min(1),
@@ -227,8 +234,8 @@ export const CONSENSUS = ['strong', 'moderate', 'mixed', 'weak'] as const;
 export const CommunityRecord = RecordBase.extend({
   kind: z.enum(COMMUNITY_KINDS),
   version: Version,
-  /** One or two sentences: what the prevailing view is and why. */
-  summary: z.string(),
+  /** The conclusion shown on top: the prevailing view in one or two short sentences. */
+  summary: short(LIMITS.conclusion),
   consensus: z.enum(CONSENSUS),
   positive: z.array(z.string()).default([]),
   negative: z.array(z.string()).default([]),

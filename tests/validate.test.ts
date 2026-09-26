@@ -118,3 +118,9 @@ test('games/_template is a valid starting point', () => {
   writeFileSync(join(dir, 'my-game', 'game.yaml'), readFileSync(join('games', '_template', 'game.yaml')));
   assert.deepEqual(loadGames(dir).errors, []);
 });
+
+test('brevity limits apply to every game', () => {
+  assert.match(errorsFor({ 'news/n1': news({ summary: '가'.repeat(201) }) }), /200자 이하/);
+  assert.match(errorsFor({ 'calc/a1': calc({ results: ['가'.repeat(151)] }) }), /150자 이하/);
+  assert.match(errorsFor({ 'chars/c1': char({ topics: [{ id: 't', section: 'chain', name: 'x', text: '가'.repeat(301) }] }) }), /300자 이하/);
+});
