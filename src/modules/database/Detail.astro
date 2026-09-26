@@ -72,17 +72,29 @@ const showCalc = has('analysis') || !!stats, showTalk = has('community');
             const tc = calc.filter((l) => l.topic === t.id), tt = talk.filter((l) => l.topic === t.id);
             return (
               <li class="topic" id={`t-${t.id}`}>
-                <h3>{t.name}</h3>
-                {t.text && <p class="prose">{t.text}</p>}
-                {Object.keys(t.values).length > 0 && (
-                  <dl class="topic-values num">{Object.entries(t.values).map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>
-                )}
-                {t.sources.length > 0 && <details><summary class="meta">출처 {t.sources.length}건</summary><SourceList game={game} refs={t.sources} compact /></details>}
-                {(tc.length > 0 || tt.length > 0) && (
-                  <ul class="chain-links" aria-label={`${t.name} — 계산·커뮤니티`}>
-                    {tc.map((l) => <li><LayerBadge layer="analysis" /><a href={anchor('analysis', l.record.id)}>{l.record.results[0]}</a></li>)}
-                    {tt.map((l) => <li><LayerBadge layer="community" /><a href={anchor('community', l.record.id)}>{l.record.summary}</a></li>)}
-                  </ul>
+                {t.text || t.sources.length || tc.length || tt.length ? (
+                  <details class="topic-toggle">
+                    <summary>
+                      <span class="topic-name">{t.name}</span>
+                      <span class="topic-marks">{tc.length > 0 && <LayerBadge layer="analysis" />}{tt.length > 0 && <LayerBadge layer="community" />}</span>
+                    </summary>
+                    <div class="topic-body">
+                      {t.text && <p class="prose">{t.text}</p>}
+                      {Object.keys(t.values).length > 0 && <dl class="topic-values num">{Object.entries(t.values).map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>}
+                      {t.sources.length > 0 && <details><summary class="meta">출처 {t.sources.length}건</summary><SourceList game={game} refs={t.sources} compact /></details>}
+                      {(tc.length > 0 || tt.length > 0) && (
+                        <ul class="chain-links" aria-label={`${t.name} — 계산·커뮤니티`}>
+                          {tc.map((l) => <li><LayerBadge layer="analysis" /><a href={anchor('analysis', l.record.id)}>{l.record.results[0]}</a></li>)}
+                          {tt.map((l) => <li><LayerBadge layer="community" /><a href={anchor('community', l.record.id)}>{l.record.summary}</a></li>)}
+                        </ul>
+                      )}
+                    </div>
+                  </details>
+                ) : (
+                  <>
+                    <p class="topic-name">{t.name}</p>
+                    {Object.keys(t.values).length > 0 && <dl class="topic-values num">{Object.entries(t.values).map(([k, v]) => <div><dt>{k}</dt><dd>{v}</dd></div>)}</dl>}
+                  </>
                 )}
               </li>
             );
@@ -117,13 +129,18 @@ const showCalc = has('analysis') || !!stats, showTalk = has('community');
           <article class="layer-card" data-layer="analysis">
             <p class="layer-card-top"><LayerBadge layer="analysis" /><span class="meta">픽업 통계 · 자동 계산</span></p>
             <p class="headline">픽업 기록</p>
-            <dl class="topic-values num">
-              <div><dt>날짜 확인된 픽업</dt><dd>{stats.count}회</dd></div>
-              <div><dt>마지막 픽업 시작</dt><dd>{formatDate(stats.last, false)}</dd></div>
-              <div><dt>그 후 경과</dt><dd>{stats.sinceLast}일</dd></div>
-              {stats.avgGap != null && <div><dt>평균 복각 간격</dt><dd>{stats.avgGap}일 ({stats.gaps.join(' · ')}일)</dd></div>}
-            </dl>
-            <p class="meta">방법: 위 변경 이력 중 날짜가 확인된 출시·복각 시작일로 계산{stats.undated > 0 && ` (날짜 미확인 ${stats.undated}건 제외)`}. 다음 복각 시점은 예측하지 않습니다.</p>
+            <p class="conclusion">마지막 픽업 시작 후 {stats.sinceLast}일 경과{stats.avgGap != null && ` · 평균 복각 간격 ${stats.avgGap}일`}</p>
+            <details class="more-toggle">
+              <summary>계산 과정 보기</summary>
+              <div class="more-body">
+                <dl class="topic-values num">
+                  <div><dt>날짜 확인된 픽업</dt><dd>{stats.count}회</dd></div>
+                  <div><dt>마지막 픽업 시작</dt><dd>{formatDate(stats.last, false)}</dd></div>
+                  {stats.avgGap != null && <div><dt>복각 간격</dt><dd>{stats.gaps.join(' · ')}일</dd></div>}
+                </dl>
+                <p class="meta">변경 이력 중 날짜가 확인된 출시·복각 시작일로 계산{stats.undated > 0 && ` (날짜 미확인 ${stats.undated}건 제외)`}. 다음 복각 시점은 예측하지 않습니다.</p>
+              </div>
+            </details>
           </article>
         )}
       </div>

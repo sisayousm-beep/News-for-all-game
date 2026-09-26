@@ -1,11 +1,11 @@
 ---
 /**
- * One calculation / statistic. Results are never shown without their conditions.
- * compact: title + first result + conditions count (for cross-links); full: everything incl. table and sources.
+ * One calculation, conclusion first: the key result sits on top; the other results, table, conditions,
+ * method and sources open behind "계산 과정 보기". compact: title + conclusion only (lists, cross-links).
  */
 import type { Game } from '../core/load';
 import type { AnalysisRecord, ModuleConfig } from '../core/schema';
-import { gameHref } from '../core/hub';
+import { gameHref, staleness } from '../core/hub';
 import { analysisKind } from '../i18n/ko';
 import LayerBadge from './LayerBadge.astro';
 import Freshness from './Freshness.astro';
@@ -13,34 +13,36 @@ import SourceList from './SourceList.astro';
 interface Props { game: Game; mod: ModuleConfig; record: AnalysisRecord; compact?: boolean; heading?: boolean }
 const { game, mod, record: a, compact, heading } = Astro.props;
 const url = gameHref(game, mod.id, a.id);
+const [conclusion, ...more] = a.results;
+const stale = staleness(game, a);
 ---
 <article class="layer-card" data-layer="analysis">
-  <p class="layer-card-top"><LayerBadge layer="analysis" /><span class="meta">{analysisKind[a.kind]}</span>{a.version && <span class="meta num">{a.version} 기준</span>}</p>
+  <p class="layer-card-top"><LayerBadge layer="analysis" /><span class="meta">{analysisKind[a.kind]}</span><span class="meta num">{a.version} 기준</span></p>
   {heading ? <h1 class="article-title">{a.title}</h1> : <a class="headline" href={url}>{a.title}</a>}
-  {compact ? (
-    <>
-      <p class="dek">{a.results[0]}</p>
-      <p class="meta">조건: {a.assumptions.join(' · ')}</p>
-    </>
-  ) : (
-    <>
-      <ul class="results">{a.results.map((x) => <li>{x}</li>)}</ul>
-      {a.table && (
-        <div class="table-wrap">
-          <table class="num">
-            <thead><tr>{a.table.columns.map((c) => <th>{c}</th>)}</tr></thead>
-            <tbody>{a.table.rows.map((row) => <tr>{row.map((v, i) => i === 0 ? <th scope="row">{v ?? '—'}</th> : <td>{v ?? '—'}</td>)}</tr>)}</tbody>
-          </table>
-          {a.table.note && <p class="meta">{a.table.note}</p>}
-        </div>
-      )}
-      <dl class="facts conditions">
-        <dt>계산 조건</dt><dd><ul>{a.assumptions.map((x) => <li>{x}</li>)}</ul></dd>
-        <dt>방법</dt><dd>{a.method}</dd>
-        {a.calculationVersion && <><dt>계산 버전</dt><dd>{a.calculationVersion}</dd></>}
-      </dl>
-      <Freshness game={game} record={a} />
-      <details><summary class="meta">근거 출처 {a.sources.length}건</summary><SourceList game={game} refs={a.sources} compact /></details>
-    </>
+  <p class="conclusion">{conclusion}</p>
+  {stale && <p class="stale" data-level={stale.level} role="note">⚠ {stale.text}</p>}
+  {!compact && (
+    <details class="more-toggle" open={heading}>
+      <summary>계산 과정 보기</summary>
+      <div class="more-body">
+        {more.length > 0 && <ul class="results">{more.map((x) => <li>{x}</li>)}</ul>}
+        {a.table && (
+          <div class="table-wrap">
+            <table class="num">
+              <thead><tr>{a.table.columns.map((c) => <th>{c}</th>)}</tr></thead>
+              <tbody>{a.table.rows.map((row) => <tr>{row.map((v, i) => i === 0 ? <th scope="row">{v ?? '—'}</th> : <td>{v ?? '—'}</td>)}</tr>)}</tbody>
+            </table>
+            {a.table.note && <p class="meta">{a.table.note}</p>}
+          </div>
+        )}
+        <dl class="facts conditions">
+          <dt>계산 조건</dt><dd><ul>{a.assumptions.map((x) => <li>{x}</li>)}</ul></dd>
+          <dt>방법</dt><dd>{a.method}</dd>
+          {a.calculationVersion && <><dt>계산 버전</dt><dd>{a.calculationVersion}</dd></>}
+        </dl>
+        <Freshness game={game} record={a} quiet />
+        <details><summary class="meta">근거 출처 {a.sources.length}건</summary><SourceList game={game} refs={a.sources} compact /></details>
+      </div>
+    </details>
   )}
 </article>

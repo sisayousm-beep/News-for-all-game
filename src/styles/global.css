@@ -506,7 +506,6 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
   color: var(--layer); background: var(--layer-bg); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--layer) 30%, transparent);
 }
 .layer-head { border-top-color: var(--layer); flex-wrap: wrap; }
-.layer-head .meta { font-size: .75rem; }
 .layer-list { display: grid; gap: var(--s3); padding-top: var(--s3); }
 .layer-card { display: grid; gap: var(--s2); padding: var(--s4); background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--layer); border-radius: 0 var(--r) var(--r) 0; min-width: 0; }
 .layer-card-top { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
@@ -516,7 +515,19 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .layer-card ul li::marker { color: var(--faint); }
 .layer-card .table-wrap { margin: 4px 0; }
 .layer-card th[scope="row"] { color: var(--ink); font-size: .875rem; }
-.results { font-weight: 600; color: var(--ink); }
+.conclusion { font-size: 1rem; font-weight: 700; line-height: 1.55; color: var(--ink); }
+.results { color: var(--ink-2); }
+/* "더 보기" toggles: details stay one tap away, conclusions stay on top. */
+.more-toggle > summary, .topic-toggle > summary { list-style: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.more-toggle > summary::-webkit-details-marker, .topic-toggle > summary::-webkit-details-marker { display: none; }
+.more-toggle > summary {
+  display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 12px; border: 1px solid var(--line-strong);
+  border-radius: var(--r); font-size: var(--fs-meta); font-weight: 700; color: var(--ink-2); background: var(--surface);
+}
+.more-toggle > summary::after { content: "▾"; font-size: .75rem; color: var(--faint); }
+.more-toggle[open] > summary::after { content: "▴"; }
+.more-toggle > summary:hover { border-color: var(--ink-2); }
+.more-body { display: grid; gap: var(--s3); padding-top: var(--s3); }
 .conditions { font-size: .875rem; }
 .conditions dt { color: var(--muted); padding-right: var(--s4); }
 .freshness b { color: var(--ink-2); }
@@ -535,8 +546,17 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 
 /* Official topics (skills, chain nodes…) with their links into the other layers. */
 .topics { list-style: none; padding: 0; }
-.topic { padding: var(--s3) 0; border-bottom: 1px solid var(--line); display: grid; gap: 6px; scroll-margin-top: calc(var(--header-h) + 60px); }
-.topic h3 { font-size: .9375rem; font-weight: 700; }
+.topic { border-bottom: 1px solid var(--line); display: grid; gap: 6px; scroll-margin-top: calc(var(--header-h) + 60px); }
+.topic > .topic-name, .topic > .topic-values { padding: 0; }
+.topic > .topic-name { padding-top: var(--s3); }
+.topic > .topic-values:last-child { padding-bottom: var(--s3); }
+.topic-name { font-size: .9375rem; font-weight: 700; color: var(--ink); }
+.topic-toggle > summary { display: flex; gap: 8px; align-items: center; justify-content: space-between; padding: 12px 0; }
+.topic-toggle > summary::after { content: "＋"; color: var(--faint); font-weight: 700; flex: none; }
+.topic-toggle[open] > summary::after { content: "−"; }
+.topic-toggle > summary:hover .topic-name { color: var(--accent-ink); }
+.topic-marks { display: flex; gap: 4px; margin-left: auto; }
+.topic-body { display: grid; gap: 8px; padding: 0 0 var(--s3); }
 .topic .prose { font-size: .9rem; line-height: 1.65; }
 .topic:target { background: var(--accent-tint); }
 .topic-values { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .8125rem; }
@@ -549,6 +569,10 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .layer-jump { display: grid; gap: 2px; margin-top: var(--s3); }
 .layer-jump a { display: flex; gap: 8px; align-items: center; padding: 6px 0; font-weight: 600; font-size: .875rem; }
 .layer-jump .count { color: var(--faint); font-size: var(--fs-meta); }
+@media (max-width: 720px) {
+  .entity-side .layer-jump { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 0; }
+  .layer-jump a { white-space: nowrap; padding: 6px 10px 6px 6px; border: 1px solid var(--line); border-radius: var(--r); background: var(--surface); }
+}
 .plain-list { list-style: none; padding: 0; }
 .plain-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
 
