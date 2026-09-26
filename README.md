@@ -1,5 +1,7 @@
 # Game Hub
 
+[🌐 웹사이트 바로가기](https://sisayousm-beep.github.io/News-for-all-game/)
+
 > 내가 관심 있는 모든 게임의 모든 유용한 정보를 하나의 웹사이트에서 확인한다.
 
 Game Hub는 여러 곳에 흩어진 게임 정보(공식 공지, 패치노트, 이벤트, 캐릭터 DB, 커뮤니티 반응)를
