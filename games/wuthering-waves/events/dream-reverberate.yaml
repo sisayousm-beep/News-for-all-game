@@ -1,0 +1,12 @@
+id: dream-reverberate
+title: "[꿈속에서 메아리가 울린다면] 기간 한정 멀티플레이 전투 이벤트"
+kind: event
+start: 2026-09-10T11:00:00+09:00
+end: 2026-09-29T04:59:00+09:00
+version: "3.6"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

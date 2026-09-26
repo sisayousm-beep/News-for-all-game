@@ -1,0 +1,33 @@
+---
+/** Calculations / statistics of a game, newest first, filterable by kind. */
+import type { Game } from '../../core/load';
+import type { AnalysisRecord, ModuleConfig } from '../../core/schema';
+import { recordsOf } from '../../core/hub';
+import { analysisKind } from '../../i18n/ko';
+import LayerHead from '../../components/LayerHead.astro';
+import AnalysisCard from '../../components/AnalysisCard.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const items = recordsOf<AnalysisRecord>(game, mod).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+const kinds = [...new Set(items.map((a) => a.kind))];
+---
+<section class="section" data-kind-filter>
+  <LayerHead layer="analysis" title={mod.label} count={items.length} />
+  {kinds.length > 1 && (
+    <div class="toolbar"><div class="chips" role="group" aria-label="분류">
+      <button class="chip" type="button" data-kind="" aria-pressed="true">전체</button>
+      {kinds.map((k) => <button class="chip" type="button" data-kind={k} aria-pressed="false">{analysisKind[k]}</button>)}
+    </div></div>
+  )}
+  {items.length ? <div class="layer-list">{items.map((a) => <div data-k={a.kind}><AnalysisCard game={game} mod={mod} record={a} compact /></div>)}</div>
+    : <p class="empty"><strong>아직 등록된 계산이 없습니다</strong>계산 조건과 출처가 확인된 자료만 등록합니다.</p>}
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-kind-filter]').forEach((root) => {
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-kind]')];
+    chips.forEach((c) => c.addEventListener('click', () => {
+      chips.forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+      root.querySelectorAll<HTMLElement>('[data-k]').forEach((el) => (el.hidden = !!c.dataset.kind && el.dataset.k !== c.dataset.kind));
+    }));
+  });
+</script>

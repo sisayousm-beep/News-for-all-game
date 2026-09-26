@@ -1,5 +1,5 @@
 /** Korean display labels for enum values in src/core/schema.ts. Add a locale file beside this one to localize. */
-import type { Certainty, SourceType } from '../core/schema';
+import type { ANALYSIS_KINDS, COMMUNITY_KINDS, CONSENSUS, Certainty, Layer, SourceType } from '../core/schema';
 import type { Bucket, Provenance } from '../core/hub';
 
 export const newsCategory: Record<string, string> = {
@@ -33,3 +33,30 @@ export const provenance: Record<Provenance, { label: string; title: string }> = 
 };
 
 export const bucket: Record<Bucket, string> = { today: '오늘', ongoing: '진행 중', week: '이번 주', later: '이후', ended: '최근 종료' };
+
+/** The three information layers (docs/information-layers.md). Order = reading order on every page. */
+export const layer: Record<Layer, { label: string; title: string; note: string }> = {
+  official: { label: '공식', title: '공식 정보', note: '게임사가 공식 채널로 공개한 정보' },
+  analysis: { label: '계산', title: '계산 · 통계', note: '공식 수치로 계산한 결과 — 적힌 조건에서만 유효합니다' },
+  community: { label: '커뮤니티', title: '커뮤니티 여론', note: '실제 커뮤니티 의견의 요약 — 사실이 아니라 현재 여론입니다' },
+};
+
+export const analysisKind: Record<(typeof ANALYSIS_KINDS)[number], string> = {
+  breakpoint: '돌파 효율', weapon: '무기 효율', dps: '조합 딜', stat: '스탯 효율', build: '세팅 계산', currency: '획득 재화',
+  event: '이벤트 효율', cost: '육성 비용', farming: '파밍 효율', gacha: '가챠 통계', banner: '픽업 통계', other: '기타 계산',
+};
+
+export const communityKind: Record<(typeof COMMUNITY_KINDS)[number], string> = {
+  evaluation: '평가', investment: '돌파·무기 여론', team: '조합 여론', feel: '사용감', story: '스토리 평가', version: '버전 평가',
+  tip: '팁', mistake: '자주 하는 실수', debate: '논쟁',
+};
+
+/** Descriptive, not a score. */
+export const consensus: Record<(typeof CONSENSUS)[number], { label: string; title: string }> = {
+  strong: { label: '의견 대체로 일치', title: '확인한 글 대부분이 같은 방향' },
+  moderate: { label: '다수 의견 있음', title: '우세한 의견이 있지만 반대 의견도 보임' },
+  mixed: { label: '의견 갈림', title: '뚜렷한 다수 없이 나뉨' },
+  weak: { label: '의견 적음', title: '확인한 글이 적어 여론이라 보기 어려움' },
+};
+
+export const codeStatus = { active: '사용 가능', upcoming: '예정', expired: '만료' } as const;

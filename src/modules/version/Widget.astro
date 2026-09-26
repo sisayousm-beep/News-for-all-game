@@ -1,0 +1,26 @@
+---
+/** Game home: current version, time left, next version. */
+import type { Game } from '../../core/load';
+import type { ModuleConfig } from '../../core/schema';
+import { currentVersion, dday, gameHref, monthDay, versionsOf } from '../../core/hub';
+import LayerBadge from '../../components/LayerBadge.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const cur = currentVersion(game);
+const next = versionsOf(game).find((v) => v.record.version !== cur?.record.version && Date.parse(v.record.start) > Date.now());
+---
+<section class="section">
+  <div class="section-head"><h2 class="section-title"><LayerBadge layer="official" /> 지금 버전</h2><a class="more" href={gameHref(game, mod.id)}>{mod.label}</a></div>
+  {cur ? (
+    <a class="version-now" href={gameHref(game, mod.id, cur.record.id)} data-start={cur.record.start} data-end={cur.record.end ?? undefined}>
+      <span class="version-num num">{cur.record.version}</span>
+      <span class="headline clamp-2">{cur.record.title}</span>
+      <span class="dday" data-dday>{dday(cur.record)}</span>
+    </a>
+  ) : <p class="empty">현재 버전 정보가 없습니다.</p>}
+  {next && (
+    <a class="version-next" href={gameHref(game, mod.id, next.record.id)} data-start={next.record.start}>
+      <span class="meta">다음</span> <b class="num">{next.record.version}</b> <span class="meta num">{monthDay(next.record.start)}</span> <span class="dday" data-dday>{dday(next.record)}</span>
+    </a>
+  )}
+</section>

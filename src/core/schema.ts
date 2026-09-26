@@ -46,19 +46,33 @@ export const SourceRef = z.object({
 });
 export type SourceRef = z.infer<typeof SourceRef>;
 
+// ── Information layers ──────────────────────────────────────────────────────
+
+/**
+ * Every record belongs to exactly one layer, decided by its module type (LAYER_OF below).
+ * official: what the publisher said · analysis: what the numbers work out to under stated conditions ·
+ * community: what players currently think. Never mixed in one record. See docs/information-layers.md.
+ */
+export const LAYERS = ['official', 'analysis', 'community'] as const;
+export type Layer = (typeof LAYERS)[number];
+
+/** current: valid now · outdated: a patch changed the premise (kept, shown with a warning) · archived: history only. */
+export const Freshness = z.enum(['current', 'outdated', 'archived']);
+
 // ── Record building blocks ──────────────────────────────────────────────────
 
 /** confirmed: backed by a fact-grade source. reported: stated by a source but not confirmed. speculative: leak / prediction. */
 export const Certainty = z.enum(['confirmed', 'reported', 'speculative']);
 export type Certainty = z.infer<typeof Certainty>;
 
-/** Level 3 intelligence. Always rendered visibly apart from facts, never merged into them. */
-export const Analysis = z.object({
-  text: z.string(),
-  author: z.string(), // e.g. "ai:claude", "ai:gpt", "editor"
-  generatedAt: dateString,
-  basedOn: z.array(SourceRef).min(1),
-});
+/** Game version string, e.g. "3.7". */
+const Version = z.string().regex(/^\d+(\.\d+)*$/, 'version like "3.7"');
+
+/**
+ * Link to another record of the same game: `<collection>/<id>` or `<collection>/<id>#<topic>`
+ * (e.g. `resonators/cheongcho#chain-1`). This is how the three layers attach to the same subject.
+ */
+export const SubjectRef = z.string().regex(/^[a-z0-9-]+\/[a-z0-9-]+(#[a-z0-9-]+)?$/, 'collection/id or collection/id#topic');
 
 /** Fields shared by every record in every collection. */
 const RecordBase = z.object({
@@ -73,11 +87,15 @@ const RecordBase = z.object({
   certainty: Certainty.default('confirmed'),
   sources: z.array(SourceRef).min(1),
   updatedAt: dateString,
-  analysis: Analysis.optional(),
+  /** Game version this information is based on ("기준 버전"). Required for analysis / community records. */
+  version: Version.optional(),
+  status: Freshness.default('current'),
+  /** Records this one is about. Validated: every target (and #topic) must exist. */
+  subjects: z.array(SubjectRef).default([]),
 });
 export type RecordBase = z.infer<typeof RecordBase>;
 
-// ── Record schemas per module type ──────────────────────────────────────────
+// ── Official layer ──────────────────────────────────────────────────────────
 
 export const NEWS_CATEGORIES = ['notice', 'update', 'patch', 'event', 'maintenance', 'shop', 'announcement'] as const;
 
@@ -99,6 +117,8 @@ export const EventRecord = RecordBase.extend({
   /** Human qualifier the date cannot express, e.g. "점검 후". */
   startNote: z.string().optional(),
   endNote: z.string().optional(),
+  /** Main official rewards, short ("별의 소리 ×800"). */
+  rewards: z.array(z.string()).default([]),
 });
 export type EventRecord = z.infer<typeof EventRecord>;
 
@@ -114,15 +134,111 @@ export const HistoryEntry = z.object({
   sources: z.array(SourceRef).min(1),
 });
 
+/**
+ * One official sub-item of an entity (a skill, a resonance chain node, a stat line, a weapon passive).
+ * `text` is a short digest of the official description — not the full tooltip. Other layers link to it
+ * with `subjects: [<collection>/<id>#<topic id>]`.
+ */
+export const Topic = z.object({
+  id: slug,
+  /** Key of a `sections` entry of the module (e.g. skills, chain). */
+  section: z.string(),
+  name: z.string(),
+  text: z.string().optional(),
+  /** Key official numbers only (배율, 쿨타임, 에너지…), label → value. */
+  values: z.record(z.string(), z.union([z.string(), z.number()])).default({}),
+  /** Only when this topic cites something beyond the record's own sources. */
+  sources: z.array(SourceRef).default([]),
+});
+export type Topic = z.infer<typeof Topic>;
+
 /** Generic database entity (characters, jobs, bosses, items…). Shape of `attributes` is declared per game in game.yaml. */
 export const EntityRecord = RecordBase.extend({
   /** null = unknown / not yet verified. Never guess a value. */
   attributes: z.record(z.string(), z.union([z.string(), z.number(), z.null()])).default({}),
+  topics: z.array(Topic).default([]),
   history: z.array(HistoryEntry).default([]),
 });
 export type EntityRecord = z.infer<typeof EntityRecord>;
 
-export type AnyRecord = NewsRecord | EventRecord | EntityRecord;
+/** A game version / season / major patch window. Other records attach to it by date or by `subjects`. */
+export const VersionRecord = RecordBase.extend({
+  version: Version,
+  start: dateString,
+  /** null = next version not announced. */
+  end: dateString.nullable(),
+  /** Official phases inside the version (전반부 / 후반부…). */
+  phases: z.array(z.object({ name: z.string(), start: dateString.nullable(), end: dateString.nullable() })).default([]),
+  /** Short official headline items (신규 지역, 신규 시스템…). */
+  highlights: z.array(z.string()).default([]),
+});
+export type VersionRecord = z.infer<typeof VersionRecord>;
+
+/** Redeem code. Expired codes stay as history (never deleted). */
+export const CodeRecord = RecordBase.extend({
+  code: z.string().regex(/^[A-Za-z0-9]+$/, 'code: letters and digits only'),
+  rewards: z.array(z.string()).min(1),
+  /** null = release date unknown. */
+  start: dateString.nullable(),
+  /** null = no announced expiry. */
+  end: dateString.nullable(),
+});
+export type CodeRecord = z.infer<typeof CodeRecord>;
+
+// ── Analysis layer ──────────────────────────────────────────────────────────
+
+/** Generic across games; labels in i18n. */
+export const ANALYSIS_KINDS = ['breakpoint', 'weapon', 'dps', 'stat', 'build', 'currency', 'event', 'cost', 'farming', 'gacha', 'banner', 'other'] as const;
+
+/**
+ * A calculated / statistical result derived from official data. Never an absolute truth:
+ * it is only valid under its `assumptions`, which are required and always shown next to the numbers.
+ */
+export const AnalysisRecord = RecordBase.extend({
+  kind: z.enum(ANALYSIS_KINDS),
+  version: Version,
+  /** How the numbers were produced (formula, simulator, sample), one or two sentences. */
+  method: z.string(),
+  /** Conditions the result depends on (무기, 에코, 로테이션, 적 조건…). */
+  assumptions: z.array(z.string()).min(1),
+  /** Version of the calculator / sheet / method, when the source has one. */
+  calculationVersion: z.string().optional(),
+  /** Findings as conditional sentences ("이 조건에서 약 …"). */
+  results: z.array(z.string()).min(1),
+  table: z.object({
+    columns: z.array(z.string()).min(2),
+    rows: z.array(z.array(z.union([z.string(), z.number(), z.null()]))).min(1),
+    note: z.string().optional(),
+  }).optional(),
+});
+export type AnalysisRecord = z.infer<typeof AnalysisRecord>;
+
+// ── Community layer ─────────────────────────────────────────────────────────
+
+export const COMMUNITY_KINDS = ['evaluation', 'investment', 'team', 'feel', 'story', 'version', 'tip', 'mistake', 'debate'] as const;
+
+/** How much the observed opinions agree — a descriptive label, never a score. */
+export const CONSENSUS = ['strong', 'moderate', 'mixed', 'weak'] as const;
+
+/**
+ * A digest of opinions actually observed in player communities — not facts and not the editor's view.
+ * Every point must be traceable to the cited threads; the AI summarizes, it never invents an evaluation.
+ */
+export const CommunityRecord = RecordBase.extend({
+  kind: z.enum(COMMUNITY_KINDS),
+  version: Version,
+  /** One or two sentences: what the prevailing view is and why. */
+  summary: z.string(),
+  consensus: z.enum(CONSENSUS),
+  positive: z.array(z.string()).default([]),
+  negative: z.array(z.string()).default([]),
+  /** Opposing camps, each with its reasons. */
+  divided: z.array(z.object({ position: z.string(), reasons: z.array(z.string()).min(1) })).default([]),
+  tips: z.array(z.object({ text: z.string(), when: z.string().optional(), who: z.string().optional() })).default([]),
+});
+export type CommunityRecord = z.infer<typeof CommunityRecord>;
+
+export type AnyRecord = NewsRecord | EventRecord | EntityRecord | VersionRecord | CodeRecord | AnalysisRecord | CommunityRecord;
 
 // ── Game configuration (games/<id>/game.yaml) ───────────────────────────────
 
@@ -136,8 +252,14 @@ export const FieldDef = z.object({
 });
 export type FieldDef = z.infer<typeof FieldDef>;
 
-export const MODULE_TYPES = ['news', 'schedule', 'database'] as const;
+export const MODULE_TYPES = ['news', 'schedule', 'database', 'version', 'codes', 'analysis', 'community'] as const;
 export type ModuleType = (typeof MODULE_TYPES)[number];
+
+/** Which information layer each module type belongs to. */
+export const LAYER_OF: Record<ModuleType, Layer> = {
+  news: 'official', schedule: 'official', database: 'official', version: 'official', codes: 'official',
+  analysis: 'analysis', community: 'community',
+};
 
 export const ModuleConfig = z.object({
   type: z.enum(MODULE_TYPES),
@@ -150,6 +272,8 @@ export const ModuleConfig = z.object({
   fields: z.array(FieldDef).default([]),
   /** database modules only: singular noun for one record, e.g. "공명자". */
   itemLabel: z.string().optional(),
+  /** database modules only: official sub-item groups shown on the detail page, in order (스킬, 공명 체인…). */
+  sections: z.array(z.object({ key: z.string(), label: z.string() })).default([]),
 });
 export type ModuleConfig = z.infer<typeof ModuleConfig> & { id: string };
 
@@ -190,4 +314,7 @@ export const GameConfig = z.object({
 export type GameConfig = Omit<z.infer<typeof GameConfig>, 'modules'> & { modules: ModuleConfig[] };
 export type SourceDef = z.infer<typeof SourceDef>;
 
-export const RECORD_SCHEMAS = { news: NewsRecord, schedule: EventRecord, database: EntityRecord } as const;
+export const RECORD_SCHEMAS = {
+  news: NewsRecord, schedule: EventRecord, database: EntityRecord, version: VersionRecord, codes: CodeRecord,
+  analysis: AnalysisRecord, community: CommunityRecord,
+} as const;

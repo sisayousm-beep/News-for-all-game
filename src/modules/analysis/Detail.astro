@@ -1,0 +1,13 @@
+---
+/** One calculation + a reverse link to the official records it is about. */
+import type { Game } from '../../core/load';
+import type { AnalysisRecord, ModuleConfig } from '../../core/schema';
+import AnalysisCard from '../../components/AnalysisCard.astro';
+import Subjects from '../../components/Subjects.astro';
+interface Props { game: Game; mod: ModuleConfig; record: AnalysisRecord }
+const { game, mod, record } = Astro.props;
+---
+<div class="layout">
+  <div class="article"><AnalysisCard game={game} mod={mod} record={record} heading /></div>
+  <div class="aside aside-sticky"><Subjects game={game} record={record} /></div>
+</div>

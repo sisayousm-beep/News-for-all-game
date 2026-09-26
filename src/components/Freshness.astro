@@ -1,0 +1,15 @@
+---
+/** 기준 버전 · 작성일 · 마지막 확인 — plus a warning when a patch may have changed the result. */
+import type { Game } from '../core/load';
+import type { AnyRecord } from '../core/schema';
+import { formatDate, lastChecked, staleness } from '../core/hub';
+interface Props { game: Game; record: AnyRecord }
+const { game, record: r } = Astro.props;
+const stale = staleness(game, r);
+---
+<p class="meta num freshness">
+  {r.version && <span>기준 버전 <b>{r.version}</b></span>}
+  <span class:list={{ sep: !!r.version }}>작성·수정 {formatDate(r.updatedAt, false)}</span>
+  <span class="sep">마지막 확인 {formatDate(lastChecked(r), false)}</span>
+</p>
+{stale && <p class="stale" data-level={stale.level} role="note">⚠ {stale.text}</p>}

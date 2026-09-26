@@ -1,0 +1,28 @@
+---
+/**
+ * Under any official record: the calculations and community digests about it (via `subjects`),
+ * in reading order 공식 → 계산 → 커뮤니티. Renders nothing when there are none.
+ */
+import type { Game } from '../core/load';
+import type { AnalysisRecord, CommunityRecord } from '../core/schema';
+import { linkedRecords } from '../core/hub';
+import LayerHead from './LayerHead.astro';
+import AnalysisCard from './AnalysisCard.astro';
+import CommunityCard from './CommunityCard.astro';
+interface Props { game: Game; target: string }
+const { game, target } = Astro.props;
+const calc = linkedRecords<AnalysisRecord>(game, 'analysis', target);
+const talk = linkedRecords<CommunityRecord>(game, 'community', target);
+---
+{calc.length > 0 && (
+  <section class="section">
+    <LayerHead layer="analysis" count={calc.length} />
+    <div class="layer-list">{calc.map((l) => <AnalysisCard game={game} mod={l.mod} record={l.record} compact />)}</div>
+  </section>
+)}
+{talk.length > 0 && (
+  <section class="section">
+    <LayerHead layer="community" count={talk.length} />
+    <div class="layer-list">{talk.map((l) => <CommunityCard game={game} mod={l.mod} record={l.record} compact />)}</div>
+  </section>
+)}

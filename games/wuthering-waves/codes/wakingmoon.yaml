@@ -1,0 +1,15 @@
+id: wakingmoon
+title: WAKINGMOON
+code: WAKINGMOON
+certainty: reported
+version: "3.7"
+rewards: [별의 소리 ×100, "Premium Tuner ×20", "Advanced Sealed Tube ×5"]
+start: 2026-09-19
+end: 2026-09-21T08:59:00-07:00
+summary: 3.7 버전 특별 방송(2026년 9월 19일)에서 공개된 방송 코드. 만료 시각은 출처의 태평양 시간 표기. 일부 보상명은 출처의 영문 표기.
+sources:
+  - source: game8
+    url: https://game8.co/games/Wuthering-Waves/archives/453149
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

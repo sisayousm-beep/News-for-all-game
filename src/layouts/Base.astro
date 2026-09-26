@@ -58,7 +58,7 @@ const builtAt = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month
     <footer class="footer">
       <div class="footer-inner">
         <p>Game Hub는 공식 공지·언론·DB의 정보를 모아 정리합니다. 모든 항목에는 원문 출처 링크가 있으며, 숫자·날짜는 원문을 기준으로 합니다.</p>
-        <p><span class="badge ai">AI 분석</span> 표시는 사실이 아닌 해석입니다. <span class="badge reported">전언</span> <span class="badge speculative">추측</span>은 공식 확인 전 정보입니다.</p>
+        <p>정보는 세 단계로 나눠 표시합니다: <span class="layer-badge" data-layer="official">공식</span> 게임사 발표, <span class="layer-badge" data-layer="analysis">계산</span> 공식 수치로 계산한 결과(조건부), <span class="layer-badge" data-layer="community">커뮤니티</span> 유저 의견 요약(사실 아님). <span class="badge reported">전언</span> <span class="badge speculative">추측</span>은 공식 확인 전 정보입니다.</p>
       </div>
     </footer>
     <nav class="tabbar" aria-label="하단 메뉴">
@@ -81,6 +81,11 @@ const builtAt = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month
           const d = s === 'ended' ? '종료' : s === 'upcoming' ? (n ? 'D-' + n : 'D-DAY') : n == null ? '종료일 미정' : n ? n + '일 남음' : '오늘 종료';
           el.querySelectorAll('[data-dday]').forEach((b) => { b.textContent = d; b.classList.toggle('soon', n != null && n <= 2 && s !== 'ended'); });
           if (el.hasAttribute('data-hide-ended')) el.hidden = s === 'ended';
+        });
+        document.addEventListener('click', (e) => {
+          const b = e.target.closest && e.target.closest('[data-copy]');
+          if (!b || !navigator.clipboard) return;
+          navigator.clipboard.writeText(b.dataset.copy).then(() => { const was = b.textContent; b.textContent = '복사됨'; setTimeout(() => (b.textContent = was), 1500); }, () => {});
         });
       })();
     </script>

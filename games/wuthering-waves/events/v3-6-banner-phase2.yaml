@@ -1,0 +1,18 @@
+id: v3-6-banner-phase2
+title: 3.6 후반부 픽업 — 히유키 · 모니에 복각
+aliases: [Hiyuki, Mornye]
+kind: banner
+start: 2026-09-10T10:00:00+08:00
+end: 2026-09-29T11:59:00+08:00
+startNote: "공지 표기: server time"
+endNote: "공지 표기: 2026-09-29 11:59 (server time) — 아시아 서버 UTC+8 기준으로 환산"
+version: "3.6"
+summary: >-
+  5성 히유키 캐릭터 튜닝 [Thousand Futures Mirrored in Snow]와 5성 모니에 캐릭터 튜닝
+  [Distant May the Starlights Be], 각 전용 무기 튜닝이 함께 진행된다. 한국어 배너명은 한국 공지 미확인.
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5431
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

@@ -1,0 +1,43 @@
+id: v3-6
+title: 「신기루 속 등불 그림자, 속세에 깃든 검의 결심」
+version: "3.6"
+start: 2026-08-20T05:00:00+09:00
+end: 2026-09-30T05:00:00+09:00
+summary: >-
+  2026년 8월 20일 업데이트(점검 05:00~12:00). 신규 5성 공명자 청초·경연과 신규 지역 「현원경」,
+  조수 임무 제4장 제3막이 추가됐다. 3.7 업데이트 점검(9월 30일 05:00)까지 진행된다.
+highlights:
+  - "신규 5성 공명자: 청초(기류·직검), 경연(용융·대검)"
+  - "신규 5성 무기: 옥빛 구름(직검), 수많은 인도(대검)"
+  - "신규 지역: 「현원경」 · 신규 에코: 「하늘의 기관 인형 · 겁살」"
+  - "신규 스토리: 조수 임무 제4장 · 제3막 「연운이 아득하니 심검이 우네」"
+  - "신규 도전: 「홀로그램 전략 · 연무」 「만와뢰 · 잔해」"
+  - "점검 보상 별의 소리 ×300·결정 용제 ×2, 문제 수정 보상 별의 소리 ×300 (다음 버전 점검 전까지 수령)"
+phases:
+  - name: 전반부 픽업 (청초)
+    start: 2026-08-20T05:00:00+09:00
+    end: 2026-09-10T09:59:00+08:00
+  - name: 후반부 픽업 (히유키·모니에)
+    start: 2026-09-10T10:00:00+08:00
+    end: 2026-09-29T11:59:00+08:00
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5331
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 전반부 픽업 기간 (server time)
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5431
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 후반부 픽업 기간 (server time)
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5476
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.7 업데이트 점검 시작 = 3.6 종료
+updatedAt: 2026-09-26

@@ -36,7 +36,14 @@ Claude/GPT 등의 예약 작업이 이 저장소를 갱신하는 방법입니다
 - 새 파일 id: 영문 공식 명칭의 kebab-case (없으면 로마자 표기). 뉴스는 `<yyyy-mm>-<주제>` 등 안정적인 형태.
 - 수정할 때 `updatedAt`을 오늘로. 사실이 바뀌면 `history`에 항목 추가(database).
 - 원문을 직접 열었으면 `verifiedAt`, 검색 요약만 봤다면 `collectedAt`만.
-- 분석/평가를 쓰려면 `analysis` 블록에, `author: ai:<모델명>`, `basedOn`에 근거 출처.
+- **3단계를 지킨다** ([information-layers.md](information-layers.md)): 공식 작업은 공식 사실만, 계산은 `analysis` 작업(조건·방법 필수),
+  여론은 `community` 작업. 계산·여론 레코드는 `subjects`로 공식 레코드를 가리킨다(`npm run job -- <id>`의 `linkTargets`).
+- **요약한다.** 스킬 툴팁 전문, 공지 전문, 게시글 원문을 옮기지 않는다. 핵심 1~3문장 + 핵심 수치.
+- **커뮤니티 요약 절차**: 글 본문과 댓글을 직접 열어 읽는다 → 반복되는 의견만 모은다 → 긍정/부정/갈림/팁으로 나눈다 →
+  이유를 쓴다 → 읽은 글을 모두 `sources`에(`verifiedAt`) → 어느 커뮤니티 기준인지 `summary`에 밝힌다. 광고·잡담·게임 외 사건은 제외.
+  확인되지 않은 평가를 만들어 넣지 않는다. 같은 주제의 기존 레코드가 있으면 새로 만들지 않고 갱신한다.
+- **계산 절차**: 공식 수치만으로 가능한 계산은 직접 하고 `method`에 식을 쓴다. 남의 계산을 옮길 때는 그 계산의 조건을 함께 옮긴다. 조건을 모르면 쓰지 않는다.
+- 패치로 전제가 바뀐 계산·여론은 지우지 않고 `status: outdated`.
 - **이미지**: 원문에 대표 이미지(이벤트 배너, 업데이트 키비주얼, 캐릭터 공식 일러스트)가 있으면 내려받아
   `public/games/<game>/img/<collection>/<id>.webp`로 저장(가로 최대 1280px, WebP)하고 레코드에
   `image: /games/<game>/img/<collection>/<id>.webp`, `imageFrom: <원본 이미지 URL>`을 쓴다. 공식 출처 이미지만 쓴다.

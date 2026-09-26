@@ -1,0 +1,13 @@
+---
+/** One community digest + a reverse link to the official records it is about. */
+import type { Game } from '../../core/load';
+import type { CommunityRecord, ModuleConfig } from '../../core/schema';
+import CommunityCard from '../../components/CommunityCard.astro';
+import Subjects from '../../components/Subjects.astro';
+interface Props { game: Game; mod: ModuleConfig; record: CommunityRecord }
+const { game, mod, record } = Astro.props;
+---
+<div class="layout">
+  <div class="article"><CommunityCard game={game} mod={mod} record={record} heading /></div>
+  <div class="aside aside-sticky"><Subjects game={game} record={record} /></div>
+</div>

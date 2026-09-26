@@ -1,0 +1,32 @@
+---
+import type { Game } from '../../core/load';
+import type { CodeRecord, ModuleConfig } from '../../core/schema';
+import { clock, codeStatus, formatDate } from '../../core/hub';
+import { codeStatus as statusLabel } from '../../i18n/ko';
+import Provenance from '../../components/Provenance.astro';
+import SourceList from '../../components/SourceList.astro';
+import LayerLinks from '../../components/LayerLinks.astro';
+interface Props { game: Game; mod: ModuleConfig; record: CodeRecord }
+const { game, mod, record: c } = Astro.props;
+const s = codeStatus(c);
+const when = (d: string | null, none: string) => (d ? `${formatDate(d, false)}${clock(d) && ` ${clock(d)}`}` : none);
+---
+<article class="article">
+  <div class="article-kicker"><span>리딤 코드</span><Provenance game={game} record={c} /></div>
+  <h1 class="article-title"><code class="code-big">{c.code}</code> <button class="btn" type="button" data-copy={c.code}>복사</button></h1>
+  <dl class="facts-grid num">
+    <div><dt>상태</dt><dd><span class="code-status" data-s={s}>{statusLabel[s]}</span></dd></div>
+    <div><dt>공개</dt><dd>{when(c.start, '미확인')}</dd></div>
+    <div><dt>만료</dt><dd>{when(c.end, '공지 없음')}</dd></div>
+  </dl>
+  {c.summary && <p class="article-lead">{c.summary}</p>}
+  <section class="section">
+    <div class="section-head"><h2 class="section-title">보상</h2></div>
+    <ul class="plain-list">{c.rewards.map((x) => <li>{x}</li>)}</ul>
+  </section>
+  <section class="section">
+    <div class="section-head"><h2 class="section-title">출처 · 검증</h2></div>
+    <SourceList game={game} refs={c.sources} />
+  </section>
+  <LayerLinks game={game} target={`${mod.collection}/${c.id}`} />
+</article>

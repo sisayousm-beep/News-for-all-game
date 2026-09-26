@@ -5,6 +5,7 @@
  * `npm run job` with no argument lists all jobs. See docs/ai-update-rules.md.
  */
 import { loadGames } from '../src/core/load';
+import { LAYER_OF, type EntityRecord } from '../src/core/schema';
 
 const { games, errors } = loadGames();
 if (errors.length) console.warn(`⚠ repository currently has ${errors.length} validation error(s) — run npm run validate\n`);
@@ -28,11 +29,20 @@ const mod = g.config.modules.find((m) => m.collection === job.collection)!;
 const records = g.collections[job.collection] ?? [];
 const lastVerified = records.flatMap((r) => r.sources.map((s) => s.verifiedAt ?? s.collectedAt)).sort().at(-1) ?? 'never';
 
+const layer = LAYER_OF[mod.type];
+// Analysis/community records attach to official records via `subjects`; list every valid target.
+const linkTargets = layer === 'official' ? undefined : g.config.modules.filter((m) => LAYER_OF[m.type] === 'official').flatMap((m) =>
+  (g.collections[m.collection] ?? []).flatMap((r) => [`${m.collection}/${r.id}`, ...((r as EntityRecord).topics ?? []).map((t) => `${m.collection}/${r.id}#${t.id}`)]));
+
 console.log(JSON.stringify({
   job,
   writeTo: `games/${g.config.id}/${job.collection}/<id>.yaml`,
   moduleType: mod.type,
+  layer,
+  layerRules: 'docs/information-layers.md',
   fields: mod.type === 'database' ? mod.fields : undefined,
+  sections: mod.type === 'database' ? mod.sections : undefined,
+  linkTargets,
   sources: g.config.sources.filter((s) => job.sources.includes(s.id)),
   allRegisteredSourceIds: g.config.sources.map((s) => s.id),
   lastCollected: lastVerified,

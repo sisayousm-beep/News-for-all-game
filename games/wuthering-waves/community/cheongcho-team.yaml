@@ -1,0 +1,53 @@
+id: cheongcho-team
+title: 청초 — 모니에 의존도와 청데모 조합
+kind: team
+version: "3.6"
+consensus: moderate
+summary: >-
+  청초를 제대로 쓰려면 모니에가 사실상 필요하다는 의견이 우세하고, 청초·데니아·모니에(청데모)가 가장 많이 언급되는 조합이다.
+  모니에 1돌이 필요한지는 "조화도 파괴 타이밍 부담이 줄어 체감이 크다"와 "딜 차이는 크지 않다"로 갈린다. 디시인사이드 명조 갤러리 기준이다.
+positive:
+  - 청초·데니아·모니에 조합이 기본 조합으로 가장 자주 언급된다.
+negative:
+  - 모니에 없이 쓰면 딜이 크게 떨어진다는 의견이 많고, 대체 캐릭터는 불편하거나 약하다는 평가가 있다.
+  - 모니에 자리에 다른 서포터를 넣으면 사이클당 피해가 크게 준다는 체감 수치가 언급되지만 계산 근거는 제시되지 않았다.
+divided:
+  - position: 모니에 1돌이 체감상 크다
+    reasons:
+      - 명함 모니에의 버프는 8초라 조화도 파괴를 청초 차례에 맞춰야 하지만, 1돌은 20초라 타이밍 제약이 거의 사라진다
+      - 실제 탑·매트릭스에서는 적 등장 시간·보스 패턴 때문에 8초 제한이 크게 느껴진다
+      - 피격 시 추락하지 않는 등 조작 편의가 좋아진다
+  - position: 모니에 명함으로도 충분하다
+    reasons:
+      - 퀵스왑 없이 321 순서로 돌리면 명함으로도 사이클에 문제가 없다
+      - 청데모에서는 모니에 1돌보다 청초 1돌의 전체 딜 상승이 더 크다는 댓글이 있다(수치는 댓글마다 다름)
+tips:
+  - text: 모니에가 명함이면 조화도 파괴는 청초의 극딜 차례에 맞춰 터뜨려야 버프를 온전히 받는다.
+    when: 모니에 명함 · 청데모
+subjects: [resonators/cheongcho]
+sources:
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855560
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2847967
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2857211
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2408832
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2896274
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2906359
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

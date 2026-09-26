@@ -5,7 +5,11 @@
  */
 import { loadGames, type Game } from './load';
 import { historyKind } from '../i18n/ko';
-import { SOURCE_TYPES, type AnyRecord, type EntityRecord, type EventRecord, type ModuleConfig, type ModuleType, type NewsRecord, type SourceDef } from './schema';
+import {
+  LAYER_OF, SOURCE_TYPES,
+  type AnyRecord, type CodeRecord, type EntityRecord, type EventRecord, type Layer,
+  type ModuleConfig, type ModuleType, type NewsRecord, type SourceDef, type VersionRecord,
+} from './schema';
 
 let cache: Game[] | undefined;
 
@@ -39,6 +43,98 @@ export function provenance(g: Game, r: AnyRecord): Provenance {
   if (r.certainty !== 'confirmed') return r.certainty;
   const t = primarySource(g, r).type;
   return t.startsWith('OFFICIAL') ? 'official' : t === 'PRESS' ? 'press' : t === 'DATABASE' || t === 'WIKI' ? 'db' : 'community';
+}
+
+// ── Information layers ──────────────────────────────────────────────────────
+
+export const layerOf = (mod: ModuleConfig): Layer => LAYER_OF[mod.type];
+
+export interface Linked<T> { mod: ModuleConfig; record: T; topic?: string }
+
+/**
+ * Records of a layer that are about `target` (`<collection>/<id>`), via their `subjects`.
+ * One entry per matching subject, so a record about two topics of the same target appears under each.
+ */
+export function linked<T extends AnyRecord>(g: Game, layer: Layer, target: string): Linked<T>[] {
+  return modulesOf(g).filter((m) => layerOf(m) === layer).flatMap((mod) =>
+    recordsOf<T>(g, mod).flatMap((record) =>
+      record.subjects
+        .filter((s) => s.split('#')[0] === target)
+        .map((s) => ({ mod, record, topic: s.split('#')[1] })),
+    ),
+  );
+}
+
+/** Unique records of `linked()` (a record about several topics listed once). */
+export const linkedRecords = <T extends AnyRecord>(g: Game, layer: Layer, target: string) =>
+  linked<T>(g, layer, target).filter((l, i, all) => all.findIndex((x) => x.record === l.record) === i);
+
+const cmpVersion = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true });
+
+/** Versions of a game, newest first. */
+export const versionsOf = (g: Game) =>
+  modulesOf(g, 'version').flatMap((m) => recordsOf<VersionRecord>(g, m).map((record) => ({ mod: m, record })))
+    .sort((a, b) => cmpVersion(b.record.version, a.record.version));
+
+/** The version live now (latest one that has started), if the game tracks versions. */
+export const currentVersion = (g: Game, now = Date.now()) => versionsOf(g).find((v) => toTime(v.record.start) <= now);
+
+/**
+ * Freshness notice for analysis/community (and any versioned) record:
+ * explicit status first; otherwise "based on an older version" when the game has moved on.
+ */
+export function staleness(g: Game, r: AnyRecord): { level: 'archived' | 'outdated' | 'older'; text: string } | null {
+  if (r.status === 'archived') return { level: 'archived', text: `보관된 정보입니다${r.version ? ` (${r.version} 버전 기준)` : ''}. 현재와 다를 수 있습니다.` };
+  if (r.status === 'outdated') return { level: 'outdated', text: `${r.version ?? '이전'} 버전 기준 정보입니다. 현재 버전에서는 결과가 달라질 수 있습니다.` };
+  const cur = currentVersion(g)?.record.version;
+  if (r.version && cur && cmpVersion(r.version, cur) < 0) return { level: 'older', text: `${r.version} 버전 기준 · 현재 ${cur} 버전에서 다시 확인되지 않았습니다.` };
+  return null;
+}
+
+/** Newest date any source of the record was checked ("마지막 확인"). */
+export const lastChecked = (r: AnyRecord) => r.sources.map((s) => s.verifiedAt ?? s.collectedAt).sort().at(-1)!;
+
+/** Distinct registered sources (≈ platforms) a record cites. */
+export const platformsOf = (g: Game, r: AnyRecord) => [...new Set(r.sources.map((s) => s.source))].map((id) => sourceOf(g, id));
+
+/**
+ * Pickup statistics derived from an entity's dated release/rerun history — computed, never typed in.
+ * Rendered in the analysis layer with its method stated.
+ */
+export function bannerStats(r: EntityRecord, now = Date.now()) {
+  const dates = r.history.filter((h) => (h.kind === 'release' || h.kind === 'rerun') && h.date && toTime(h.date) <= now)
+    .map((h) => h.date!).sort((a, b) => toTime(a) - toTime(b));
+  if (!dates.length) return null;
+  const day = (a: string, b: number) => kstDay(b) - kstDay(toTime(a));
+  const gaps = dates.slice(1).map((d, i) => kstDay(toTime(d)) - kstDay(toTime(dates[i])));
+  return {
+    count: dates.length,
+    last: dates.at(-1)!,
+    sinceLast: day(dates.at(-1)!, now),
+    gaps,
+    avgGap: gaps.length ? Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length) : null,
+    undated: r.history.filter((h) => (h.kind === 'release' || h.kind === 'rerun') && !h.date).length,
+  };
+}
+
+/** Everything official that belongs to a version: by explicit `version`, else by date inside the version window. */
+export function inVersion(g: Game, v: VersionRecord) {
+  const from = toTime(v.start), to = v.end ? toTime(v.end, true) : Infinity;
+  // An explicit `version` on the record wins over its date (e.g. 3.7 livestream codes released during 3.6).
+  const belongs = (r: AnyRecord, d: string | null) => (r.version ? r.version === v.version : !!d && toTime(d) >= from && toTime(d) < to);
+  return {
+    events: modulesOf(g, 'schedule').flatMap((m) => recordsOf<EventRecord>(g, m).filter((e) => belongs(e, e.start)).map((record) => ({ mod: m, record }))),
+    codes: modulesOf(g, 'codes').flatMap((m) => recordsOf<CodeRecord>(g, m).filter((c) => belongs(c, c.start)).map((record) => ({ mod: m, record }))),
+    news: modulesOf(g, 'news').flatMap((m) => recordsOf<NewsRecord>(g, m).filter((n) => belongs(n, n.publishedAt)).map((record) => ({ mod: m, record }))),
+    changes: modulesOf(g, 'database').flatMap((m) => recordsOf<EntityRecord>(g, m).flatMap((record) =>
+      record.history.filter((h) => h.version === v.version).map((entry) => ({ mod: m, record, entry })))),
+  };
+}
+
+export type CodeStatus = 'active' | 'upcoming' | 'expired';
+export function codeStatus(c: CodeRecord, now = Date.now()): CodeStatus {
+  if (c.start && now < toTime(c.start)) return 'upcoming';
+  return c.end && now > toTime(c.end, true) ? 'expired' : 'active';
 }
 
 // ── URLs ────────────────────────────────────────────────────────────────────
@@ -80,7 +176,7 @@ const SITE_TZ = { name: 'Asia/Seoul', offset: '+09:00' };
 export const toTime = (s: string, endOfDay = false) =>
   Date.parse(s.length === 10 ? `${s}T${endOfDay ? '23:59:59' : '00:00:00'}${SITE_TZ.offset}` : s);
 
-export function eventStatus(e: EventRecord, now = Date.now()): EventStatus {
+export function eventStatus(e: Pick<EventRecord, 'start' | 'end'>, now = Date.now()): EventStatus {
   if (now < toTime(e.start)) return 'upcoming';
   if (e.end && now > toTime(e.end, true)) return 'ended';
   return 'ongoing';
@@ -183,9 +279,9 @@ export function searchRows(): SearchRow[] {
   return games().flatMap((g) => [
     { t: g.config.name, a: Object.values(g.config.names), k: '게임', g: g.config.id, u: gameHref(g) },
     ...modulesOf(g).flatMap((mod) =>
-      recordsOf<NewsRecord & EventRecord & EntityRecord>(g, mod).map((r) => ({
+      recordsOf<NewsRecord & EventRecord & EntityRecord & CodeRecord>(g, mod).map((r) => ({
         t: r.title,
-        a: nonEmpty([...r.aliases, ...(r.tags ?? [])]),
+        a: nonEmpty([...r.aliases, ...(r.tags ?? []), ...(r.code ? [r.code] : []), ...(r.topics ?? []).map((t) => t.name)]),
         k: mod.type === 'database' ? (mod.itemLabel ?? mod.label) : mod.label,
         g: g.config.id,
         u: gameHref(g, mod.id, r.id),

@@ -1,0 +1,14 @@
+id: resonance-sim-realm
+title: "[군성 공진 시뮬레이션 영역] 전투 이벤트"
+aliases: [Resonance Sim Realm]
+kind: event
+start: 2026-08-22T11:00:00+09:00
+end: 2026-09-29T12:59:00+09:00
+version: "3.6"
+summary: 다양한 간섭원을 조합해 능력 구조를 탐색하는 전투 이벤트. 칭호 「공명! 최고의 조합」과 이상 에코 「이상 · 만와뢰 · 잔해」를 얻을 수 있다.
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

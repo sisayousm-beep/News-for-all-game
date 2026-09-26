@@ -9,8 +9,12 @@
 3. **레코드 일관성** (`checkRecord`):
    - `id` = 파일 이름
    - 모든 인용 출처가 등록되어 있고 URL이 해당 출처 `domains`에 속함
-   - `confirmed`는 사실 등급 출처(OFFICIAL/OFFICIAL_API/PRESS/DATABASE/WIKI) 필요
-   - 일정: `end` ≥ `start`
+   - YAML 문법 오류도 파일 단위 오류로 보고(검증이 중단되지 않음)
+   - 공식 단계의 `confirmed`는 사실 등급 출처(OFFICIAL/OFFICIAL_API/PRESS/DATABASE/WIKI) 필요
+   - 커뮤니티 단계는 COMMUNITY/GUIDE 출처 1개 이상, 계산 단계는 `version`·`method`·`assumptions`·`results` 필수(스키마)
+   - `subjects`가 가리키는 레코드·토픽이 존재
+   - DB `topics[].section`이 모듈 `sections`에 선언됨, 토픽 id 중복 없음
+   - 일정·버전·코드: `end` ≥ `start`
    - DB: `attributes` 키가 `fields`와 정확히 일치(누락 시 `null`로 명시), `values`가 있으면 허용 값만
 4. **범위** (`npm run scope -- <job-id> [base]`): 변경 파일이 작업의 컬렉션 폴더 안에만 있는지.
 

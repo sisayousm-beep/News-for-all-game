@@ -1,0 +1,95 @@
+id: cheongcho-investment
+title: 청초 — 전용 무기 vs 1돌, 어디까지 돌파할까
+kind: investment
+version: "3.6"
+consensus: moderate
+summary: >-
+  확인한 글에서는 "메인 딜러는 전용 무기(옥빛 구름)가 먼저"라는 의견이 가장 많다. 1돌은 크리티컬 16% 덕분에
+  고점과 에코 세팅 선택지가 넓어진다는 평가가 많지만, 1돌에서 멈출 거면 0·3·6돌을 지키라는 의견도 있어 갈린다.
+  디시인사이드 명조 갤러리 기준이다.
+positive:
+  - 1돌의 크리티컬 16%로 4코스트 에코 메인 옵션을 크리티컬 피해로 바꿀 수 있어 고점이 오른다는 의견이 반복된다.
+  - 1돌 후 일반 공격만으로도 크리티컬이 거의 터져 필드·일일 임무가 빨라졌다는 만족 후기가 있다.
+negative:
+  - 1돌 후 4코스트를 크리티컬 피해로 바꾸면 크리티컬 100%를 맞추려고 서브 옵션 부담이 오히려 커진다는 불만이 여러 번 보인다.
+  - 2돌은 단독 가치가 낮아 "2돌이면 3돌까지 가라"는 반응이 있다.
+  - 전용 무기 없이 쓰면 상시 무기로는 크리티컬 36%를 대신하기 어렵다는 지적이 있다.
+divided:
+  - position: 전용 무기 먼저 (다수)
+    reasons:
+      - 무기 튜닝은 5성이 항상 픽업이라 50% 실패(픽뚫)가 없다
+      - 메인 딜러는 전용 무기가 기본값이라는 인식 — "안 쓰면 성능 75%로 쓰는 것", "다른 무기와 딜 차이 18~20%"라는 언급(근거 계산은 제시되지 않음)
+  - position: 전용 무기는 복각 때, 지금은 3.7 캐릭터 우선 (소수)
+    reasons:
+      - 재화가 부족하면 다음 버전 캐릭터(여우의 별자리)를 먼저 확보하겠다는 선택
+  - position: 1돌 딜 상승 폭에 대한 체감은 제각각
+    reasons:
+      - 「15% 안팎」, 「20%에 근접」, 「딜보다 스탯 편의가 크다」 등 서로 다른 수치가 오가며 계산 근거는 제시되지 않았다
+tips:
+  - text: 명함이라면 4코스트 에코를 크리티컬로 두고 크리티컬 100% 근처를 맞추는 쪽이 무난하다는 조언이 많다.
+    when: 명함 · 에코 세팅
+  - text: 1돌을 했다면 4코스트를 크리티컬 피해로 바꾸고 서브 옵션 크리티컬을 챙기는 구성이 권장된다(에코 파밍 부담 증가 감수).
+    when: 1돌 · 에코 세팅
+subjects: [resonators/cheongcho, resonators/cheongcho#chain-1, weapons/okbit-gureum]
+sources:
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2865381
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2862810
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2857135
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855861
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855207
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2851882
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2858474
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2857736
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2861490
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2848837
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2849678
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2887597
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2863948
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2862803
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2869142
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

@@ -1,0 +1,14 @@
+id: gifts-of-drifting-mist
+title: "[연운의 선물] 7일 출석 이벤트"
+kind: event
+start: 2026-08-20T12:00:00+09:00
+startNote: 3.6 버전 업데이트 후
+end: 2026-09-29T04:59:00+09:00
+version: "3.6"
+summary: 이벤트 기간 동안 매일 접속하면 누적 접속 일수에 따른 출석 보상을 받는다.
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

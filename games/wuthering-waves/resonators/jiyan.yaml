@@ -2,11 +2,10 @@ id: jiyan
 title: 기염
 aliases: [Jiyan]
 summary: 황룡 금주 야귀군의 지휘관. 바람으로 청룡을 만들어 내는 능력을 지녔다.
-# weapon: not stated in any official Korean text found so far — left null on purpose.
 attributes:
   rarity: 5
   element: aero
-  weapon: null
+  weapon: broadblade
   version: "1.0"
 history:
   - date: null
@@ -37,6 +36,11 @@ sources:
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
     note: 공식 홈페이지 공명자 소개(속성 아이콘 기류)
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1404
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 인게임 데이터의 무기 종류 「대검」
 image: /games/wuthering-waves/img/resonators/jiyan.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/jiyan-c2e66ae6.png
 updatedAt: 2026-09-26

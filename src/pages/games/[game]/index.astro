@@ -1,16 +1,16 @@
 ---
 /**
  * Game hub home: one widget per enabled module, in game.yaml order.
- * News widgets take the wide column; schedule/database widgets sit in the side column (by module type, never by game).
+ * Reading widgets (news, community, analysis) take the wide column; version/codes/schedule/database sit in the side column.
  */
 import GameShell from '../../../layouts/GameShell.astro';
 import { games } from '../../../core/hub';
-import { views } from '../../../modules';
+import { views, WIDE_TYPES } from '../../../modules';
 
 export const getStaticPaths = () => games().map((game) => ({ params: { game: game.config.id }, props: { game } }));
 const { game } = Astro.props;
-const main = game.config.modules.filter((m) => m.type === 'news');
-const side = game.config.modules.filter((m) => m.type !== 'news');
+const main = game.config.modules.filter((m) => WIDE_TYPES.includes(m.type));
+const side = game.config.modules.filter((m) => !WIDE_TYPES.includes(m.type));
 ---
 <GameShell game={game} current="overview">
   <div class="layout">
@@ -19,7 +19,7 @@ const side = game.config.modules.filter((m) => m.type !== 'news');
       {(main.length ? main : side).map((mod) => { const { Widget } = views[mod.type]; return <Widget game={game} mod={mod} />; })}
     </div>
     {main.length > 0 && side.length > 0 && (
-      <div class="aside">{side.map((mod) => { const { Widget } = views[mod.type]; return <Widget game={game} mod={mod} />; })}</div>
+      <div class="aside home-side">{side.map((mod) => { const { Widget } = views[mod.type]; return <Widget game={game} mod={mod} />; })}</div>
     )}
   </div>
 </GameShell>
