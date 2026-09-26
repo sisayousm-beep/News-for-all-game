@@ -1,11 +1,11 @@
 ---
-/** 기준 버전 · 작성일 · 마지막 확인 — plus a warning when a patch may have changed the result. */
+/** 기준 버전 · 작성일 · 마지막 확인 — plus a warning when a patch may have changed the result (omitted with `quiet`, when the card already shows it). */
 import type { Game } from '../core/load';
 import type { AnyRecord } from '../core/schema';
 import { formatDate, lastChecked, staleness } from '../core/hub';
-interface Props { game: Game; record: AnyRecord }
-const { game, record: r } = Astro.props;
-const stale = staleness(game, r);
+interface Props { game: Game; record: AnyRecord; quiet?: boolean }
+const { game, record: r, quiet } = Astro.props;
+const stale = quiet ? null : staleness(game, r);
 ---
 <p class="meta num freshness">
   {r.version && <span>기준 버전 <b>{r.version}</b></span>}

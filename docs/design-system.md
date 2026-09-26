@@ -54,11 +54,12 @@
 | 섹션 헤더 | `.section-head` | 2px 검정 상단선 + 제목 + 개수 + "전체 보기 →" |
 | 신뢰 배지 | `Provenance.astro` | 공식 / 보도 / DB / 커뮤니티 / 전언 / 추측 중 1개. `provenance()`(core/hub.ts)가 확실성 → 최상위 출처 유형 순으로 결정 |
 | 단계 배지 | `LayerBadge.astro` `.layer-badge[data-layer]` | 텍스트 필수(공식/계산/커뮤니티), 단계 색 글자 + 옅은 면 + 얇은 테두리 |
-| 단계 섹션 머리 | `LayerHead.astro` | 단계 색 상단선 + 배지 + 제목 + 한 줄 설명("적힌 조건에서만 유효" 등) |
-| 계산 카드 | `AnalysisCard.astro` `.layer-card` | 보라 좌측선. 결과(조건부 문장) → 표 → **계산 조건·방법** → 기준 버전·마지막 확인 → 근거 접기 |
-| 커뮤니티 카드 | `CommunityCard.astro` `.layer-card` | 황토 좌측선. 일치 정도 → 요약 → 긍정/부정 2열 → 갈리는 지점 → 팁 → 확인한 커뮤니티(1곳이면 경고) |
+| 단계 섹션 머리 | `LayerHead.astro` | 단계 색 상단선 + 배지 + 제목 (면책 문구 없음) |
+| 계산 카드 | `AnalysisCard.astro` `.layer-card` | 보라 좌측선. **결론 한 줄(`.conclusion`)** → [계산 과정 보기] 버튼 안에 나머지 결과·표·조건·방법·근거 |
+| 커뮤니티 카드 | `CommunityCard.astro` `.layer-card` | 황토 좌측선. 일치 정도 → **결론(summary)** → 출처 커뮤니티·버전 → [자세한 의견 보기] 안에 긍정/부정·갈리는 지점·팁·근거 |
+| 접기 버튼 | `.more-toggle` | `<details>` 기반. 결론은 밖, 세부는 안. 딥링크(#…)로 오면 자동으로 열림 |
 | 신선도 | `Freshness.astro` `.stale` | 기준 버전·작성·마지막 확인. 구버전·outdated면 경고 줄 |
-| 토픽 | `.topic` `.chain-links` | 공식 하위 항목(스킬·체인) 요약 + 수치 칩, 아래에 계산·커뮤니티 한 줄 링크 |
+| 토픽 | `.topic-toggle` `.chain-links` | 이름 한 줄 + 연결된 단계 배지 + ＋. 누르면 요약·수치·계산/커뮤니티 링크. 설명 없는 수치 토픽은 바로 표시 |
 | 리딤 코드 | `CodeItem.astro` `.code-row` | 고정폭 코드 + 복사 버튼, 만료 코드는 취소선 |
 | 출처 목록 | `SourceList.astro` | 유형 배지 · 출처명(링크) · 도메인 · 원문 확인일(녹색) 또는 "원문 미검증" |
 | 게임 표식 | `GameTag.astro` `.game-tag` | ■ accent + 게임명. 알약 배지 대신 사용 |

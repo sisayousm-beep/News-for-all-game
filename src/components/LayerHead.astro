@@ -1,5 +1,5 @@
 ---
-/** Section header for one information layer: badge + title + what this layer is (and is not). */
+/** Section header for one information layer: badge + title. No disclaimer copy — the badge says which layer it is. */
 import type { Layer } from '../core/schema';
 import { layer as labels } from '../i18n/ko';
 import LayerBadge from './LayerBadge.astro';
@@ -8,5 +8,4 @@ const { layer, title, count, id } = Astro.props;
 ---
 <div class="section-head layer-head" data-layer={layer} id={id}>
   <h2 class="section-title"><LayerBadge layer={layer} /> {title ?? labels[layer].title}{count != null && <span class="count">{count}</span>}</h2>
-  <span class="meta">{labels[layer].note}</span>
 </div>

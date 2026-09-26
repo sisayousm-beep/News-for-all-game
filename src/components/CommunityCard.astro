@@ -1,11 +1,11 @@
 ---
 /**
- * One community digest. Framed as "what players say", never as fact; shows how many communities it
- * draws on and warns when it is a single one.
+ * One community digest, conclusion first: the prevailing view on top with where it comes from;
+ * pros/cons, split opinions, tips and source threads open behind "자세한 의견 보기".
  */
 import type { Game } from '../core/load';
 import type { CommunityRecord, ModuleConfig } from '../core/schema';
-import { gameHref, platformsOf } from '../core/hub';
+import { gameHref, platformsOf, staleness } from '../core/hub';
 import { communityKind, consensus } from '../i18n/ko';
 import LayerBadge from './LayerBadge.astro';
 import Freshness from './Freshness.astro';
@@ -14,6 +14,7 @@ interface Props { game: Game; mod: ModuleConfig; record: CommunityRecord; compac
 const { game, mod, record: c, compact, heading } = Astro.props;
 const url = gameHref(game, mod.id, c.id);
 const platforms = platformsOf(game, c).filter((p) => p.type === 'COMMUNITY' || p.type === 'GUIDE');
+const stale = staleness(game, c);
 ---
 <article class="layer-card" data-layer="community">
   <p class="layer-card-top">
@@ -21,35 +22,34 @@ const platforms = platformsOf(game, c).filter((p) => p.type === 'COMMUNITY' || p
     <span class="consensus" data-v={c.consensus} title={consensus[c.consensus].title}>{consensus[c.consensus].label}</span>
   </p>
   {heading ? <h1 class="article-title">{c.title}</h1> : <a class="headline" href={url}>{c.title}</a>}
-  <p class="dek">{c.summary}</p>
-  {compact ? (
-    <p class="meta">{platforms.map((p) => p.name).join(' · ')} 기준{c.version && <span class="sep num">{c.version} 버전</span>}</p>
-  ) : (
-    <>
-      {(c.positive.length > 0 || c.negative.length > 0) && (
-        <div class="opinions">
-          {c.positive.length > 0 && <div data-tone="pos"><h3>자주 보이는 긍정 의견</h3><ul>{c.positive.map((x) => <li>{x}</li>)}</ul></div>}
-          {c.negative.length > 0 && <div data-tone="neg"><h3>자주 보이는 부정·우려 의견</h3><ul>{c.negative.map((x) => <li>{x}</li>)}</ul></div>}
-        </div>
-      )}
-      {c.divided.length > 0 && (
-        <div class="divided">
-          <h3>의견이 갈리는 지점</h3>
-          {c.divided.map((d) => <div><p><b>{d.position}</b></p><ul>{d.reasons.map((x) => <li>{x}</li>)}</ul></div>)}
-        </div>
-      )}
-      {c.tips.length > 0 && (
-        <div class="tips">
-          <h3>공유되는 팁</h3>
-          <ul>{c.tips.map((t) => <li>{t.text}{(t.when || t.who) && <span class="meta"> — {[t.when, t.who].filter(Boolean).join(' · ')}</span>}</li>)}</ul>
-        </div>
-      )}
-      <p class="meta platforms">
-        확인한 커뮤니티: {platforms.map((p) => p.name).join(', ')} · 글 {c.sources.length}건
-        {platforms.length < 2 && <span class="stale-inline"> ⚠ 한 커뮤니티 기준이라 전체 여론과 다를 수 있습니다</span>}
-      </p>
-      <Freshness game={game} record={c} />
-      <details><summary class="meta">근거 글 {c.sources.length}건</summary><SourceList game={game} refs={c.sources} compact /></details>
-    </>
+  <p class="conclusion">{c.summary}</p>
+  <p class="meta">{platforms.map((p) => p.name).join(' · ')}<span class="sep num">{c.version} 버전</span></p>
+  {stale && <p class="stale" data-level={stale.level} role="note">⚠ {stale.text}</p>}
+  {!compact && (
+    <details class="more-toggle" open={heading}>
+      <summary>자세한 의견 보기</summary>
+      <div class="more-body">
+        {(c.positive.length > 0 || c.negative.length > 0) && (
+          <div class="opinions">
+            {c.positive.length > 0 && <div data-tone="pos"><h3>긍정 의견</h3><ul>{c.positive.map((x) => <li>{x}</li>)}</ul></div>}
+            {c.negative.length > 0 && <div data-tone="neg"><h3>부정·우려 의견</h3><ul>{c.negative.map((x) => <li>{x}</li>)}</ul></div>}
+          </div>
+        )}
+        {c.divided.length > 0 && (
+          <div class="divided">
+            <h3>의견이 갈리는 지점</h3>
+            {c.divided.map((d) => <div><p><b>{d.position}</b></p><ul>{d.reasons.map((x) => <li>{x}</li>)}</ul></div>)}
+          </div>
+        )}
+        {c.tips.length > 0 && (
+          <div class="tips">
+            <h3>팁</h3>
+            <ul>{c.tips.map((t) => <li>{t.text}{(t.when || t.who) && <span class="meta"> — {[t.when, t.who].filter(Boolean).join(' · ')}</span>}</li>)}</ul>
+          </div>
+        )}
+        <Freshness game={game} record={c} quiet />
+        <details><summary class="meta">근거 글 {c.sources.length}건</summary><SourceList game={game} refs={c.sources} compact /></details>
+      </div>
+    </details>
   )}
 </article>
