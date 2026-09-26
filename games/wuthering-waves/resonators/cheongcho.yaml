@@ -1,7 +1,7 @@
 id: cheongcho
 title: 청초
-aliases: []
-summary: 현방 지계에서 수백 년간 백성을 지켜온 전설적인 검선. 검과 현악기를 접목한 전투를 한다.
+aliases: [Qingxiao]
+summary: 현방성 진현사기를 맡은 은거 검술 고수로 '검선'이라 불린다. 금(琴)과 검술 모두에 뛰어나다.
 attributes:
   rarity: 5
   element: aero
@@ -11,16 +11,25 @@ history:
   - date: 2026-08-20
     version: "3.6"
     kind: release
-    summary: 3.6 버전 전반부 픽업으로 출시.
+    summary: 3.6 버전 전반부 캐릭터 이벤트 튜닝 [물빛 하늘 아래 흩날리는 선인의 그림자]로 출시 (3.6 업데이트 ~ 2026년 9월 10일 09:59, 서버 시간).
     sources:
-      - source: press-kr
-        url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
-        collectedAt: 2026-09-25
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5331
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
 sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
   - source: press-kr
     url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
     collectedAt: 2026-09-25
   - source: press-kr
     url: https://www.gameple.co.kr/news/articleView.html?idxno=216215
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26

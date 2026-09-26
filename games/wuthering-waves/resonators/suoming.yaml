@@ -1,7 +1,7 @@
 id: suoming
 title: 쇄명
 aliases: [Suoming, 锁瞑]
-summary: 몽조 소속의 신규 5성 공명자.
+summary: 3.7 버전 신규 5성 공명자.
 attributes:
   rarity: 5
   element: electro
@@ -17,10 +17,15 @@ history:
         url: https://fandomwire.com/wuthering-waves-reveals-hsin-suoming-version-3-7/
         collectedAt: 2026-09-25
 sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5454
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.7 버전 미리보기 신규 공명자·2기 픽업 확인. 한국어 명칭은 한국 공식 페이지 미게시
   - source: press-kr
     url: https://www.inven.co.kr/webzine/news/?news=320387
     collectedAt: 2026-09-25
   - source: press-en
     url: https://fandomwire.com/wuthering-waves-reveals-hsin-suoming-version-3-7/
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26

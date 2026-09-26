@@ -1,24 +1,40 @@
 id: jiyan
 title: 기염
 aliases: [Jiyan]
-summary: 명조 정식 출시 당시 첫 픽업 튜닝의 5성 공명자.
-# element/weapon: not confirmed by any collected source yet — left null on purpose.
+summary: 황룡 금주 야귀군의 지휘관. 바람으로 청룡을 만들어 내는 능력을 지녔다.
+# weapon: not stated in any official Korean text found so far — left null on purpose.
 attributes:
   rarity: 5
-  element: null
+  element: aero
   weapon: null
   version: "1.0"
 history:
-  - date: 2024-05-23
+  - date: null
     version: "1.0"
     kind: release
-    summary: 정식 출시(5월 23일)와 함께 첫 픽업 튜닝으로 출시. 전용 무기 '천룡의 천장' 픽업 동시 진행.
+    summary: 1.0 버전 공명자. 2024년 5월 24일 공식 프로필 공개(5성, 기류). 출시 픽업 일정은 공식 공지에서 미확인.
     sources:
-      - source: press-kr
-        url: https://www.gametoc.co.kr/news/articleView.html?idxno=80390
-        collectedAt: 2026-09-25
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/796
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+  - date: 2024-10-24
+    version: "1.4"
+    kind: rerun
+    summary: 캐릭터 이벤트 튜닝 「야밤의 청룡」으로 복각 (2024년 10월 24일 11:00 ~ 11월 13일 12:59).
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1545
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
 sources:
-  - source: press-kr
-    url: https://www.gametoc.co.kr/news/articleView.html?idxno=80390
-    collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/796
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 공식 홈페이지 공명자 소개(속성 아이콘 기류)
+updatedAt: 2026-09-26
