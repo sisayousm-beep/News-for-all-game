@@ -111,6 +111,7 @@ history:
 | `version` | 기준 버전 (필수) |
 | `summary` | 필수. 우세한 의견과 **이유**, 어느 커뮤니티 기준인지 |
 | `consensus` | `strong` `moderate` `mixed` `weak` — 점수가 아닌 일치 정도 |
+| `verdicts` | `{ label, value }` 한 줄 판정(티어, 파티 순위, 전용 무기 의존도…). 카드 맨 위와 엔티티 페이지 "한눈에 보기"에 표시 |
 | `positive` / `negative` | 자주 보이는 긍정 / 부정·우려 의견 |
 | `divided` | `{ position, reasons[] }` — 갈리는 지점의 양쪽 |
 | `tips` | `{ text, when?, who? }` — 어떤 상황·어떤 유저에게 |

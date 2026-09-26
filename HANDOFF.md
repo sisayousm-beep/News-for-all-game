@@ -64,7 +64,9 @@
 | 명조 인게임 문구·수치(스킬, 공명 체인, 무기) | `https://api.encore.moe/ko/character/<id>`, `/ko/weapon/<id>`, 목록 `/ko/character` (출처 `encore-db`, DATABASE) |
 | 명조 튜닝 확률 | 공식 `ko/article/763.json` 「튜닝 상세정보」 |
 | 커뮤니티 (디시 명조 갤) | 검색 `gall.dcinside.com/mgallery/board/lists?id=wutheringwaves&s_type=search_subject_memo&s_keyword=…`(다음 검색은 `search_pos`), 본문 `board/view/?id=wutheringwaves&no=<n>`, 댓글은 `POST /board/comment/`(본문의 `e_s_n_o` 필요). 광고 줄("1/20 이전 다음") 제외 |
-| 차단됨 | reddit, arca.live, NGA, prydwen, fandom (403). 빌리빌리는 검색 API 1~2회 후 차단 |
+| Reddit·아카라이브·Prydwen | curl은 403(봇 차단)이지만 **Playwright 브라우저로 열림**. 프록시 CA의 SPKI 해시를 `--ignore-certificate-errors-spki-list`로 신뢰(프록시 CA만 신뢰, 검증 끄는 것 아님). 아카는 "잠시만 기다리십시오"가 사라질 때까지 대기 후 `.article-body`, `.comment-item .message`. Reddit은 `shreddit-post`/`shreddit-comment`. Prydwen은 `.tabs .single-tab` 클릭(Review·Calculations·Build) |
+| YouTube | 검색 결과(ytInitialData)의 제목·조회수만 읽힘. 영상 페이지는 차단 → `collectedAt`만, note에 "영상 제목" 명시 |
+| 차단됨 | NGA, fandom. 빌리빌리는 검색 API 1~2회 후 차단 |
 
 Playwright: 로컬 미리보기(`astro preview`) 스크린샷은 `executablePath: /opt/pw-browsers/chromium-1194/chrome-linux/chrome`로 동작함(외부 사이트는 프록시 인증서 문제).
 

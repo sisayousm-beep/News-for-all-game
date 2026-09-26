@@ -1,0 +1,85 @@
+id: cheongcho-evaluation
+title: 청초 — 커뮤니티 종합 평가
+kind: evaluation
+version: "3.6"
+consensus: strong
+verdicts:
+  - { label: 캐릭터 티어, value: "T0 (역경의 탑 기준 최상위)" }
+  - { label: 파티 순위, value: "최상위권 — 히유키·에이메스 팀과 비슷하거나 한 단계 아래" }
+  - { label: 전용 무기 의존도, value: "높음 — 대체 무기면 약 20% 손실" }
+  - { label: 파티 의존도, value: "매우 높음 — 데니아+모니에 사실상 필수" }
+  - { label: 돌파 가치, value: "낮은 편 — 1돌 약 +15%" }
+  - { label: 조작 난이도, value: "매우 쉬움" }
+summary: 현 메타 최상위(T0) 메인 딜러라는 평가가 지배적이다. 대신 데니아·모니에 없이는 크게 약해지고 전용 무기 의존도도 높다.
+positive:
+  - 단일·광역 딜 모두 3.x 최신 딜러 수준이고, 공중 적도 쉽게 따라가 보스 상성을 덜 탄다 (Prydwen).
+  - 로테이션이 역대 가장 쉽다 — 대부분 평타 꾹 누르기 (Prydwen, 디시, Reddit 공통).
+  - 스택이 쌓이는 두 번째 로테이션부터 딜이 크게 올라 매트릭스·장기전 보스에 강하다 (Reddit 풀돌 리뷰).
+negative:
+  - 파티가 경직적이다 — 데니아+모니에, 또는 린네+강한 서포터가 아니면 최신 딜러들에 크게 뒤처진다 (Prydwen, Reddit, 국내 영상 제목).
+  - 돌파 효율이 최근 딜러 기준으로 낮다는 평가 (Prydwen, Reddit).
+  - 첫 로테이션 딜이 약해 짧은 전투에서는 풀돌 히유키·에이메스보다 느리다는 후기 (Reddit).
+  - 다수전은 보스전보다 불편하다는 의견 (디시).
+divided:
+  - position: 지금 뽑을 가치가 크다
+    reasons:
+      - 주요 KR 유튜버들이 "사기", "뉴비는 무조건"이라는 제목으로 추천 (영상 제목 기준)
+      - 이미 데니아·모니에가 있으면 바로 최상위 파티가 완성된다
+  - position: 캐릭터가 많은 계정은 걸러도 된다
+    reasons:
+      - 대부분 보유한 계정에는 큰 차이가 없다는 Reddit 의견
+      - 파츠(데니아·모니에)까지 필요해 뉴비에게는 비싸다는 지적
+subjects: [resonators/cheongcho, resonators/cheongcho#forte]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/qingxiao
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review 탭: 티어·장단점"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.6 티어 리스트 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/team-tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "팀 티어 리스트 (2026-09-16 갱신)"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWaves/comments/1vyozem/s6_qingxiao_review_why_calculations_dont_tell_the/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWaves/comments/1w1yc5n/should_i_invest_into_denia_or_qingxiao_sequences/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWaves/comments/1w1kkyz/should_i_pull_for_qingxiao/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vy0lvj/pulled_qingxiao_should_i_get_her_weap_or_denia/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: youtube
+    url: https://www.youtube.com/watch?v=Fbm23ZS8z-M
+    collectedAt: 2026-09-26
+    note: "영상 제목: 청초 성능 후기 -파츠 경직성을 대가로 강력함을 챙김- (조회 6.2만)"
+  - source: youtube
+    url: https://www.youtube.com/watch?v=nELButxbNGg
+    collectedAt: 2026-09-26
+    note: "영상 제목: 진짜 겁나 셉니다.. 청초 명함부터 풀돌까지 (조회 2.6만)"
+  - source: youtube
+    url: https://www.youtube.com/watch?v=4L8ICIIZtzg
+    collectedAt: 2026-09-26
+    note: "영상 제목: 명조 뉴비가 청초를 무조건 뽑아야 하는 이유 (조회 2.4만)"
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2905051
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2897797
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

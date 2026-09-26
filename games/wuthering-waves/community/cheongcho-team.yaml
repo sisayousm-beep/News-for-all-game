@@ -1,35 +1,48 @@
 id: cheongcho-team
-title: 청초 — 모니에 의존도와 청데모 조합
+title: 청초 — 파티 조합과 모니에 의존도
 kind: team
 version: "3.6"
-consensus: moderate
-summary: 모니에는 사실상 필수라는 의견이 우세하고, 청초·데니아·모니에(청데모)가 기본 조합이다. 모니에 1돌이 필요한지는 의견이 갈린다.
+consensus: strong
+verdicts:
+  - { label: 최적 조합, value: "청초 · 데니아 · 모니에" }
+  - { label: 대체 조합, value: "청초 · 린네 · 모니에/샤콘/파수인" }
+  - { label: 모니에 1돌, value: "선택 — 청데모에선 체감 크지만 필수는 아님" }
+summary: 청초·데니아·모니에가 정답 조합이라는 데 이견이 거의 없다. 데니아가 없으면 린네 조합이 대안이지만 일부 콘텐츠에서 약해진다.
 positive:
-  - 청초·데니아·모니에 조합이 기본 조합으로 가장 자주 언급된다.
+  - 데니아+모니에 조합은 출시 시점 최적이고 앞으로도 유지될 조합으로 평가된다 (Prydwen).
+  - 린네 조합은 모니에 대신 샤콘·파수인을 써도 손실이 적다 (Prydwen).
 negative:
-  - 모니에 없이 쓰면 딜이 크게 떨어진다는 의견이 많고, 대체 캐릭터는 불편하거나 약하다는 평가가 있다.
-  - 모니에 자리에 다른 서포터를 넣으면 사이클당 피해가 크게 준다는 체감 수치가 언급되지만 계산 근거는 제시되지 않았다.
+  - 데니아를 쓰면서 모니에가 빠지면 파티 딜이 크게 떨어져 대안이 없다 (Prydwen, 디시).
+  - 린네는 적을 흩어 놓아 다수 웨이브 콘텐츠에서 청초와 궁합이 나쁘다는 지적 (Reddit).
+  - 청초와 루크가 같은 파츠를 써서 둘 중 하나만 최적 파티를 가질 수 있다 (Prydwen).
 divided:
-  - position: 모니에 1돌이 체감상 크다
+  - position: 모니에 1돌 체감이 크다
     reasons:
-      - 명함 모니에의 버프는 8초라 조화도 파괴를 청초 차례에 맞춰야 하지만, 1돌은 20초라 타이밍 제약이 거의 사라진다
-      - 실제 탑·매트릭스에서는 적 등장 시간·보스 패턴 때문에 8초 제한이 크게 느껴진다
-      - 피격 시 추락하지 않는 등 조작 편의가 좋아진다
-  - position: 모니에 명함으로도 충분하다
+      - 명함 모니에 버프는 8초라 조화도 파괴 타이밍을 맞춰야 하지만 1돌은 20초로 여유가 생긴다 (디시, 아카라이브)
+  - position: 명함 모니에로 충분하다
     reasons:
-      - 퀵스왑 없이 321 순서로 돌리면 명함으로도 사이클에 문제가 없다
-      - 청데모에서는 모니에 1돌보다 청초 1돌의 전체 딜 상승이 더 크다는 댓글이 있다(수치는 댓글마다 다름)
+      - 321 순서로 돌리면 사이클에 문제가 없고, 청데모에선 모니에 1돌보다 청초 1돌 딜 상승이 크다는 댓글 (디시)
 tips:
-  - text: 모니에가 명함이면 조화도 파괴는 청초의 극딜 차례에 맞춰 터뜨려야 버프를 온전히 받는다.
-    when: 모니에 명함 · 청데모
+  - text: 모니에가 명함이면 조화도 파괴는 청초의 극딜 차례에 맞춰 터뜨린다.
+    when: 모니에 명함
 subjects: [resonators/cheongcho]
 sources:
-  - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855560
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/qingxiao
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
+    note: "Gameplay and teams 탭"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vy0lvj/pulled_qingxiao_should_i_get_her_weap_or_denia/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/182252735
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.6 후반 가챠 가이드 (조회 1.2만)"
   - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2847967
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855560
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
   - source: dc-wuwa

@@ -237,6 +237,11 @@ export const CommunityRecord = RecordBase.extend({
   /** The conclusion shown on top: the prevailing view in one or two short sentences. */
   summary: short(LIMITS.conclusion),
   consensus: z.enum(CONSENSUS),
+  /**
+   * Headline verdicts players look for, shown first (and in the entity page's "한눈에 보기"):
+   * e.g. 티어 / 파티 순위 / 전용 무기 의존도 / 추천 돌파. Labels are free per game; each must be backed by the cited sources.
+   */
+  verdicts: z.array(z.object({ label: short(20), value: short(60) })).default([]),
   positive: z.array(z.string()).default([]),
   negative: z.array(z.string()).default([]),
   /** Opposing camps, each with its reasons. */

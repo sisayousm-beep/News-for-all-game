@@ -124,3 +124,8 @@ test('brevity limits apply to every game', () => {
   assert.match(errorsFor({ 'calc/a1': calc({ results: ['가'.repeat(151)] }) }), /150자 이하/);
   assert.match(errorsFor({ 'chars/c1': char({ topics: [{ id: 't', section: 'chain', name: 'x', text: '가'.repeat(301) }] }) }), /300자 이하/);
 });
+
+test('community verdicts are short one-liners', () => {
+  assert.equal(errorsFor({ 'talk/k1': talk({ verdicts: [{ label: '티어', value: 'T0' }] }) }), '');
+  assert.match(errorsFor({ 'talk/k1': talk({ verdicts: [{ label: '티어', value: '가'.repeat(61) }] }) }), /60자 이하/);
+});
