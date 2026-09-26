@@ -1,20 +1,31 @@
 ---
+/** Compact news row: thumbnail · trust badge · game · category · headline · summary · source · date. */
 import type { Game } from '../core/load';
 import type { ModuleConfig, NewsRecord } from '../core/schema';
-import { formatDate, gameHref } from '../core/hub';
+import { gameHref, listDate, primarySource } from '../core/hub';
 import { newsCategory } from '../i18n/ko';
-import Certainty from './Certainty.astro';
-import GameBadge from './GameBadge.astro';
-interface Props { game: Game; mod: ModuleConfig; news: NewsRecord; showGame?: boolean }
-const { game, mod, news, showGame } = Astro.props;
+import Provenance from './Provenance.astro';
+import GameTag from './GameTag.astro';
+import Thumb from './Thumb.astro';
+interface Props { game: Game; mod: ModuleConfig; news: NewsRecord; showGame?: boolean; dense?: boolean }
+const { game, mod, news: n, showGame, dense } = Astro.props;
+const url = gameHref(game, mod.id, n.id);
 ---
-<li>
-  <div class="row small">
-    {showGame && <GameBadge game={game} />}
-    <span class="badge">{newsCategory[news.category]}</span>
-    <Certainty value={news.certainty} />
-    {news.analysis && <span class="badge ai">AI 분석</span>}
-    <span class="muted">{news.publishedAt ? formatDate(news.publishedAt) : '게시일 미확인'}</span>
+<li data-game={game.config.id} data-category={n.category}>
+  <div class="news-row">
+    {!dense && <a href={url} tabindex="-1"><Thumb game={game} image={n.image} label={newsCategory[n.category]} /></a>}
+    <div class="news-body">
+      <div class="news-top">
+        {showGame && <GameTag game={game} plain />}
+        <span>{newsCategory[n.category]}</span>
+        <Provenance game={game} record={n} />
+        {n.analysis && <span class="badge ai" title="AI 분석이 함께 제공됩니다">AI 분석</span>}
+      </div>
+      <a class="headline clamp-2" href={url}>{n.title}</a>
+      {!dense && n.summary && <p class="dek clamp-2">{n.summary}</p>}
+      <p class="meta">
+        <span>{primarySource(game, n).name}</span><span class="sep num">{n.publishedAt ? listDate(n.publishedAt) : '게시일 미확인'}</span>
+      </p>
+    </div>
   </div>
-  <a href={gameHref(game, mod.id, news.id)}><strong>{news.title}</strong></a>
 </li>

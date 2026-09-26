@@ -1,25 +1,79 @@
 ---
-/** Global news feed, paginated so page weight stays flat as games are added. */
+/** Global news feed, paginated so page weight stays flat as games are added. Filters run client-side on the current page. */
 import type { GetStaticPaths } from 'astro';
 import Base from '../../layouts/Base.astro';
 import NewsItem from '../../components/NewsItem.astro';
-import { allNews, games } from '../../core/hub';
+import EventItem from '../../components/EventItem.astro';
+import TrustLegend from '../../components/TrustLegend.astro';
+import { allEvents, allNews, eventStatus, games, href } from '../../core/hub';
+import { newsCategory } from '../../i18n/ko';
 
 export const getStaticPaths = (({ paginate }) => paginate(allNews(), { pageSize: 30 })) satisfies GetStaticPaths;
 const { page } = Astro.props;
+const categories = [...new Set(page.data.map((t) => t.record.category))];
+const upcoming = allEvents().filter((t) => eventStatus(t.record) !== 'ended').slice(0, 5);
 ---
 <Base title="뉴스" nav="news">
-  <div class="spread"><h1>뉴스</h1><span class="muted small">{games().length}개 게임 · {page.total}건</span></div>
-  <section class="card">
-    {page.data.length
-      ? <ul class="list">{page.data.map((t) => <NewsItem game={t.game} mod={t.mod} news={t.record} showGame />)}</ul>
-      : <p class="empty">아직 소식이 없습니다.</p>}
-  </section>
-  {page.lastPage > 1 && (
-    <nav class="row" aria-label="페이지">
-      {page.url.prev && <a class="badge" href={page.url.prev}>← 이전</a>}
-      <span class="muted small">{page.currentPage} / {page.lastPage}</span>
-      {page.url.next && <a class="badge" href={page.url.next}>다음 →</a>}
-    </nav>
-  )}
+  <div class="page-head">
+    <h1 class="page-title">뉴스</h1>
+    <p class="meta num">{games().length}개 게임 · 전체 {page.total}건{page.lastPage > 1 && ` · ${page.currentPage}/${page.lastPage} 페이지`}</p>
+  </div>
+
+  <div class="layout">
+    <section class="section" data-news-filter>
+      <div class="toolbar" role="group" aria-label="뉴스 필터">
+        <div class="chips" data-chips="game">
+          <button class="chip" type="button" data-value="" aria-pressed="true">전체</button>
+          {games().map((g) => <button class="chip" type="button" data-value={g.config.id} aria-pressed="false" style={`--accent:${g.config.theme.accent}`}><span class="dot" />{g.config.name}</button>)}
+        </div>
+        <select class="select end" data-select="category" aria-label="분류">
+          <option value="">모든 분류</option>
+          {categories.map((c) => <option value={c}>{newsCategory[c]}</option>)}
+        </select>
+      </div>
+      {page.data.length
+        ? <ul class="news-list">{page.data.map((t) => <NewsItem game={t.game} mod={t.mod} news={t.record} showGame />)}</ul>
+        : <p class="empty"><strong>아직 소식이 없습니다</strong>업데이트 작업이 새 소식을 수집하면 여기에 표시됩니다.</p>}
+      <p class="empty" data-none hidden><strong>조건에 맞는 소식이 없습니다</strong>필터를 바꾸거나 전체를 선택하세요.</p>
+      {page.lastPage > 1 && (
+        <nav class="pager" aria-label="페이지">
+          <a class="btn" href={page.url.prev ?? '#'} aria-disabled={page.url.prev ? undefined : 'true'}>← 이전</a>
+          <span class="num">{page.currentPage} / {page.lastPage}</span>
+          <a class="btn" href={page.url.next ?? '#'} aria-disabled={page.url.next ? undefined : 'true'}>다음 →</a>
+        </nav>
+      )}
+    </section>
+
+    <div class="aside aside-sticky">
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">다가오는 일정</h2><a class="more" href={href('/schedule/')}>전체</a></div>
+        {upcoming.length
+          ? <ul class="ev-list compact">{upcoming.map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} compact hideEnded />)}</ul>
+          : <p class="empty">예정된 일정이 없습니다.</p>}
+      </section>
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">정보 표시 기준</h2></div>
+        <TrustLegend />
+      </section>
+    </div>
+  </div>
 </Base>
+<script>
+  // Game chips + category select over already-rendered rows (current page only).
+  document.querySelectorAll<HTMLElement>('[data-news-filter]').forEach((root) => {
+    const rows = [...root.querySelectorAll<HTMLElement>('.news-list > li')];
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-chips="game"] .chip')];
+    const select = root.querySelector<HTMLSelectElement>('[data-select="category"]')!;
+    let game = new URLSearchParams(location.search).get('game') ?? '';
+    const apply = () => {
+      chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.value === game)));
+      select.classList.toggle('is-set', !!select.value);
+      let n = 0;
+      for (const r of rows) n += +!(r.hidden = (!!game && r.dataset.game !== game) || (!!select.value && r.dataset.category !== select.value));
+      root.querySelector<HTMLElement>('[data-none]')!.hidden = n > 0 || !rows.length;
+    };
+    chips.forEach((c) => c.addEventListener('click', () => { game = c.dataset.value!; apply(); }));
+    select.addEventListener('input', apply);
+    apply();
+  });
+</script>

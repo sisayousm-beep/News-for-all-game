@@ -8,10 +8,11 @@ name: 게임 이름                   # Korean display name
 names: { en: Game Name }         # other-language names (also searchable)
 description: 한두 문장 소개.
 genre: 장르
+publisher: 개발·서비스사          # optional
 region: 서버/지역
 locale: ko
 theme:
-  accent: "#7c9cff"              # the game's identity color
+  accent: "#3f6e8c"              # the game's identity color — a mid-tone that reads on white (used for text, lines, tints)
   # icon: /games/my-game/icon.png  # optional, file under public/
 
 # Tabs of this game's hub, in order. type = news | schedule | database (see docs/modules.md)

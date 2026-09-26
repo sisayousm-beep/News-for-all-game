@@ -1,8 +1,0 @@
----
-/** Shows nothing for confirmed facts; a warning badge otherwise. */
-import type { Certainty } from '../core/schema';
-import { certainty as labels } from '../i18n/ko';
-interface Props { value: Certainty }
-const { value } = Astro.props;
----
-{value !== 'confirmed' && <span class={`badge ${value}`} title="공식 확인 전 정보">{labels[value]}</span>}

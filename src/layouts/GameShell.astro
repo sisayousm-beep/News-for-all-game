@@ -1,30 +1,37 @@
 ---
-/** Per-game hub frame: identity header + module tabs generated from game.yaml. */
+/** Per-game hub frame: identity header + key numbers + module tabs generated from game.yaml. Same frame for every game; only --accent changes. */
 import Base from './Base.astro';
 import GameIcon from '../components/GameIcon.astro';
 import type { Game } from '../core/load';
-import { gameHref } from '../core/hub';
+import { gameHref, gameSummary, monthDay } from '../core/hub';
 interface Props { game: Game; current: string; title?: string }
 const { game, current, title } = Astro.props;
 const { config } = game;
+const s = gameSummary(game);
 const tabs = [
-  ['overview', gameHref(game), '개요'],
-  ...config.modules.map((m) => [m.id, gameHref(game, m.id), m.label]),
-  ['sources', gameHref(game, 'sources'), '출처'],
-];
+  ['overview', gameHref(game), '홈', null],
+  ...s.counts.map(({ mod, n }) => [mod.id, gameHref(game, mod.id), mod.label, n] as const),
+  ['sources', gameHref(game, 'sources'), '출처', config.sources.length],
+] as const;
+const hasSchedule = config.modules.some((m) => m.type === 'schedule');
 ---
-<Base title={title ? `${title} · ${config.name}` : config.name} nav="games" accent={config.theme.accent}>
-  <div class="stack">
-    <div class="game-header">
-      <GameIcon game={game} large />
+<Base title={title ? `${title} · ${config.name}` : config.name} nav="games" accent={config.theme.accent} description={config.description}>
+  <header class="game-hero">
+    <div class="game-id">
+      <GameIcon game={game} size="lg" />
       <div>
         <h1><a href={gameHref(game)}>{config.name}</a></h1>
-        <p class="muted small">{config.genre} · {config.region}</p>
+        <p class="meta">{config.genre}{config.publisher && <span class="sep">{config.publisher}</span>}<span class="sep">{config.region}</span></p>
       </div>
+      <dl class="game-stats">
+        {hasSchedule && <div><dt>진행 중 이벤트</dt><dd>{s.ongoing}</dd></div>}
+        <div><dt>다음 일정</dt><dd>{s.next ? <span class="num">{monthDay(s.next.date).replace(/ \(.+\)/, '')}</span> : <small>없음</small>}</dd></div>
+        {s.counts.filter(({ mod }) => mod.type === 'database').map(({ mod, n }) => <div><dt>{mod.label}</dt><dd>{n}</dd></div>)}
+      </dl>
     </div>
-    <nav class="tabs" aria-label={`${config.name} 메뉴`}>
-      {tabs.map(([id, url, label]) => <a href={url} aria-current={id === current ? 'page' : undefined}>{label}</a>)}
+    <nav class="tabs game-tabs" aria-label={`${config.name} 메뉴`}>
+      {tabs.map(([id, url, label, n]) => <a href={url} aria-current={id === current ? 'page' : undefined}>{label}{n != null && <span class="tab-count">{n}</span>}</a>)}
     </nav>
-  </div>
+  </header>
   <slot />
 </Base>

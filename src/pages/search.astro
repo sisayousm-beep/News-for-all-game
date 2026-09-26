@@ -1,27 +1,62 @@
 ---
 import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
 import { games, href } from '../core/hub';
 const gameNames = Object.fromEntries(games().map((g) => [g.config.id, { name: g.config.name, accent: g.config.theme.accent }]));
 ---
 <Base title="검색" nav="search">
-  <h1>검색</h1>
-  <input class="input" id="q" type="search" placeholder="게임, 캐릭터, 이벤트, 뉴스 검색" aria-label="검색어" autofocus />
-  <p class="muted small" id="status" aria-live="polite"></p>
-  <ul class="list card" id="results" hidden></ul>
+  <div class="page-head"><h1 class="page-title">검색</h1><p class="meta">게임 · 뉴스 · 일정 · 캐릭터를 이름과 별칭으로 찾습니다</p></div>
+  <div class="layout">
+    <section class="section" style="gap:12px">
+      <div class="search-form" style="display:block;width:100%">
+        <Icon name="search" />
+        <input class="input input-lg" id="q" type="search" placeholder="예: 메이플, 청초, 3.7, 점검" aria-label="검색어" autofocus />
+      </div>
+      <div class="chips" id="games" role="group" aria-label="게임" hidden>
+        <button class="chip" type="button" data-value="" aria-pressed="true">전체</button>
+        {games().map((g) => <button class="chip" type="button" data-value={g.config.id} aria-pressed="false" style={`--accent:${g.config.theme.accent}`}><span class="dot" />{g.config.name}</button>)}
+      </div>
+      <p class="meta" id="status" aria-live="polite"></p>
+      <div class="skeleton" id="loading" hidden><i></i><i></i><i></i><i></i></div>
+      <p class="state-error" id="error" hidden>검색 색인을 불러오지 못했습니다. 네트워크를 확인한 뒤 다시 시도하세요.</p>
+      <ul class="news-list" id="results"></ul>
+      <div class="empty" id="hint"><strong>무엇을 찾으세요?</strong>게임 이름, 캐릭터 이름(원어 별칭 포함), 이벤트·뉴스 제목의 일부를 입력하세요.</div>
+    </section>
+    <div class="aside">
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">게임별로 보기</h2></div>
+        <ul class="news-list dense">
+          {games().map((g) => (
+            <li><a class="news-row" href={href(`/games/${g.config.id}/`)}><span class="news-body"><span class="game-tag" style={`--accent:${g.config.theme.accent}`}>{g.config.name}</span><span class="meta">{g.config.modules.map((m) => m.label).join(' · ')}</span></span></a></li>
+          ))}
+        </ul>
+      </section>
+    </div>
+  </div>
 </Base>
 <script is:inline define:vars={{ indexUrl: href('/search-index.json'), gameNames }}>
-  const q = document.getElementById('q');
-  const status = document.getElementById('status');
-  const results = document.getElementById('results');
-  let index;
+  const $ = (id) => document.getElementById(id);
+  const q = $('q'), status = $('status'), results = $('results'), chips = [...$('games').querySelectorAll('.chip')];
+  let index, game = '';
   const norm = (s) => s.toLowerCase().replace(/\s+/g, '');
+
+  async function load() {
+    if (index) return index;
+    $('loading').hidden = false; $('error').hidden = true;
+    try { index = await fetch(indexUrl).then((r) => { if (!r.ok) throw r; return r.json(); }); }
+    catch { $('error').hidden = false; }
+    finally { $('loading').hidden = true; }
+    return index;
+  }
 
   async function run() {
     const term = norm(q.value);
     history.replaceState(null, '', term ? `?q=${encodeURIComponent(q.value)}` : location.pathname);
-    if (!term) { results.hidden = true; status.textContent = ''; return; }
-    index ??= await fetch(indexUrl).then((r) => r.json());
+    $('hint').hidden = !!term; $('games').hidden = !term;
+    if (!term) { results.replaceChildren(); status.textContent = ''; return; }
+    if (!(await load())) return;
     const hits = index
+      .filter((row) => !game || row.g === game)
       .map((row) => {
         const names = [row.t, ...(row.a ?? [])].map(norm);
         const score = names.some((n) => n === term) ? 3 : names.some((n) => n.startsWith(term)) ? 2 : names.some((n) => n.includes(term)) ? 1 : 0;
@@ -30,20 +65,28 @@ const gameNames = Object.fromEntries(games().map((g) => [g.config.id, { name: g.
       .filter((h) => h.score)
       .sort((a, b) => b.score - a.score || (b.row.d ?? '').localeCompare(a.row.d ?? ''))
       .slice(0, 50);
-    status.textContent = `${hits.length}건`;
-    results.hidden = !hits.length;
-    results.replaceChildren(...hits.map(({ row }) => {
+    status.textContent = hits.length ? `${hits.length}건` : '';
+    const rows = hits.map(({ row }) => {
       const g = gameNames[row.g];
       const li = document.createElement('li');
-      li.innerHTML = `<div class="row small"><span class="badge game"></span><span class="badge"></span></div><a><strong></strong></a>`;
-      const [gameBadge, kind] = li.querySelectorAll('.badge');
-      gameBadge.textContent = g.name; gameBadge.style.setProperty('--accent', g.accent);
-      kind.textContent = row.k;
+      li.innerHTML = '<a class="news-row"><span class="news-body"><span class="news-top"><span class="game-tag"></span><span></span><span class="num"></span></span><span class="headline"></span></span></a>';
+      const [tag, kind, date] = li.querySelectorAll('.news-top > span');
+      tag.textContent = g.name; tag.style.setProperty('--accent', g.accent);
+      kind.textContent = row.k; date.textContent = row.d ? row.d.slice(0, 10).replaceAll('-', '.') : '';
       li.querySelector('a').href = row.u;
-      li.querySelector('strong').textContent = row.t;
+      li.querySelector('.headline').textContent = row.t;
       return li;
-    }));
+    });
+    if (!rows.length) {
+      const li = document.createElement('li');
+      li.className = 'empty';
+      li.innerHTML = '<strong></strong>철자를 확인하거나 원어 이름·별칭으로 검색해 보세요.';
+      li.querySelector('strong').textContent = `'${q.value}'에 대한 결과가 없습니다`;
+      rows.push(li);
+    }
+    results.replaceChildren(...rows);
   }
+  chips.forEach((c) => c.addEventListener('click', () => { game = c.dataset.value; chips.forEach((x) => x.setAttribute('aria-pressed', String(x === c))); run(); }));
   q.value = new URLSearchParams(location.search).get('q') ?? '';
   q.addEventListener('input', run);
   if (q.value) run();

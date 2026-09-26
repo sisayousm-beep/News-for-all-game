@@ -14,6 +14,10 @@ const { game, mod, record } = Astro.props;
 const { Detail } = views[mod.type];
 ---
 <GameShell game={game} current={mod.id} title={record.title}>
-  <a class="muted small" href={gameHref(game, mod.id)}>← {mod.label}</a>
+  <nav class="crumbs" aria-label="위치">
+    <a href={gameHref(game)}>{game.config.name}</a><span aria-hidden="true">/</span>
+    <a href={gameHref(game, mod.id)}>{mod.label}</a><span aria-hidden="true">/</span>
+    <span class="clamp-1" aria-current="page">{record.title}</span>
+  </nav>
   <Detail game={game} mod={mod} record={record} />
 </GameShell>

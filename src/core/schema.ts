@@ -66,6 +66,8 @@ const RecordBase = z.object({
   title: z.string(),
   aliases: z.array(z.string()).default([]),
   summary: z.string().optional(),
+  /** Thumbnail / portrait under public/ (e.g. /games/<id>/img/x.webp). No hotlinking; lists fall back to a game-colored tile. */
+  image: z.string().regex(/^\//, 'path under public/, starting with /').optional(),
   certainty: Certainty.default('confirmed'),
   sources: z.array(SourceRef).min(1),
   updatedAt: dateString,
@@ -168,6 +170,8 @@ export const GameConfig = z.object({
   names: z.record(z.string(), z.string()).default({}),
   description: z.string(),
   genre: z.string(),
+  /** Developer / publisher shown on game cards, e.g. "Nexon". */
+  publisher: z.string().optional(),
   region: z.string(),
   locale: z.string().default('ko'),
   theme: z.object({ accent: z.string().regex(/^#[0-9a-fA-F]{6}$/), icon: z.string().optional() }),

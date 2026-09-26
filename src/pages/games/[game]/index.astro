@@ -1,18 +1,25 @@
 ---
-/** Game hub overview: one widget per enabled module, in game.yaml order. */
+/**
+ * Game hub home: one widget per enabled module, in game.yaml order.
+ * News widgets take the wide column; schedule/database widgets sit in the side column (by module type, never by game).
+ */
 import GameShell from '../../../layouts/GameShell.astro';
 import { games } from '../../../core/hub';
 import { views } from '../../../modules';
 
 export const getStaticPaths = () => games().map((game) => ({ params: { game: game.config.id }, props: { game } }));
 const { game } = Astro.props;
+const main = game.config.modules.filter((m) => m.type === 'news');
+const side = game.config.modules.filter((m) => m.type !== 'news');
 ---
 <GameShell game={game} current="overview">
-  <p class="muted prose">{game.config.description}</p>
-  <div class="grid-2">
-    {game.config.modules.map((mod) => {
-      const { Widget } = views[mod.type];
-      return <Widget game={game} mod={mod} />;
-    })}
+  <div class="layout">
+    <div class="aside" style="gap:32px">
+      <p class="dek">{game.config.description}</p>
+      {(main.length ? main : side).map((mod) => { const { Widget } = views[mod.type]; return <Widget game={game} mod={mod} />; })}
+    </div>
+    {main.length > 0 && side.length > 0 && (
+      <div class="aside">{side.map((mod) => { const { Widget } = views[mod.type]; return <Widget game={game} mod={mod} />; })}</div>
+    )}
   </div>
 </GameShell>

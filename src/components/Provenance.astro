@@ -1,0 +1,10 @@
+---
+/** The single trust badge for a record: 공식 / 보도 / DB / 커뮤니티 / 전언 / 추측. See provenance() in core/hub.ts. */
+import type { Game } from '../core/load';
+import type { AnyRecord } from '../core/schema';
+import { provenance } from '../core/hub';
+import { provenance as labels } from '../i18n/ko';
+interface Props { game: Game; record: AnyRecord }
+const p = provenance(Astro.props.game, Astro.props.record);
+---
+<span class={`badge ${p}`} title={labels[p].title}>{labels[p].label}</span>

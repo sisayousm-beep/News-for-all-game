@@ -5,10 +5,11 @@ name: 명조:워더링 웨이브
 names: { en: Wuthering Waves }
 description: 쿠로 게임즈의 오픈월드 액션 RPG. 공명자를 수집·육성해 파티를 구성한다.
 genre: 수집형 액션 RPG
+publisher: Kuro Games
 region: 글로벌 (한국어)
 locale: ko
 theme:
-  accent: "#d9c48a"
+  accent: "#3f6e8c"
 
 modules:
   - type: database

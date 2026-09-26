@@ -6,9 +6,12 @@ import EventItem from '../../components/EventItem.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
 const events = recordsOf<EventRecord>(game, mod).sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
-const shown = events.filter((e) => eventStatus(e) !== 'ended').slice(0, 6);
+const ongoing = events.filter((e) => eventStatus(e) === 'ongoing').sort((a, b) => Date.parse(a.end ?? '9999') - Date.parse(b.end ?? '9999'));
+const upcoming = events.filter((e) => eventStatus(e) === 'upcoming');
 ---
-<section class="card">
-  <div class="section-head"><h2>{mod.label}</h2><a href={gameHref(game, mod.id)}>전체 보기</a></div>
-  {shown.length ? <ul class="list">{shown.map((e) => <EventItem game={game} mod={mod} event={e} hideEnded />)}</ul> : <p class="empty">진행 중이거나 예정된 일정이 없습니다.</p>}
+<section class="section">
+  <div class="section-head"><h2 class="section-title">{mod.label}</h2><a class="more" href={gameHref(game, mod.id)}>전체 보기</a></div>
+  {upcoming.length > 0 && <ul class="ev-list">{upcoming.slice(0, 3).map((e) => <EventItem game={game} mod={mod} event={e} hideEnded />)}</ul>}
+  {ongoing.length > 0 && <ul class="ev-list">{ongoing.slice(0, 6).map((e) => <EventItem game={game} mod={mod} event={e} hideEnded />)}</ul>}
+  {!ongoing.length && !upcoming.length && <p class="empty">진행 중이거나 예정된 일정이 없습니다.</p>}
 </section>

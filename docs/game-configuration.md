@@ -8,8 +8,9 @@
 | `name` | ✓ | 한국어 표시 이름 |
 | `names` | | 다른 언어 이름 `{ en: ... }` — 검색에도 쓰임 |
 | `description`, `genre`, `region` | ✓ | 게임 소개, 장르, 서버/지역 |
+| `publisher` | | 개발·서비스사 (게임 카드·허브 헤더에 표시) |
 | `locale` | | 기본 `ko` |
-| `theme.accent` | ✓ | 게임 대표 색 `#rrggbb` (게임별 시각 정체성) |
+| `theme.accent` | ✓ | 게임 대표 색 `#rrggbb`. 흰 배경 위 글자·선·옅은 배경으로 쓰이므로 중간 명도(너무 밝은 노랑·연두 금지). → [design-system.md](design-system.md) |
 | `theme.icon` | | `public/` 아래 아이콘 경로 |
 | `modules` | ✓ | 게임 허브의 탭. 순서대로 표시. → [modules.md](modules.md) |
 | `sources` | ✓ | 이 게임 데이터가 인용할 수 있는 출처. → [source-policy.md](source-policy.md) |

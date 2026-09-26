@@ -1,27 +1,39 @@
 ---
 import type { Game } from '../../core/load';
 import type { EventRecord, ModuleConfig } from '../../core/schema';
-import { eventStatus, formatDate } from '../../core/hub';
+import { clock, dday, eventStatus, formatDate, gameHref, recordsOf } from '../../core/hub';
 import { eventKind, eventStatus as statusLabel } from '../../i18n/ko';
-import Certainty from '../../components/Certainty.astro';
+import Provenance from '../../components/Provenance.astro';
+import GameTag from '../../components/GameTag.astro';
 import SourceList from '../../components/SourceList.astro';
 import Analysis from '../../components/Analysis.astro';
+import EventItem from '../../components/EventItem.astro';
 interface Props { game: Game; mod: ModuleConfig; record: EventRecord }
-const { game, record: e } = Astro.props;
+const { game, mod, record: e } = Astro.props;
 const status = eventStatus(e);
+const others = recordsOf<EventRecord>(game, mod).filter((x) => x.id !== e.id && eventStatus(x) !== 'ended').sort((a, b) => Date.parse(a.start) - Date.parse(b.start)).slice(0, 6);
 ---
-<article class="card" data-start={e.start} data-end={e.end ?? undefined}>
-  <div class="row small">
-    <span class="badge status" data-status={status}>{statusLabel[status]}</span>
-    <span class="badge">{eventKind[e.kind]}</span>
-    <Certainty value={e.certainty} />
+<div class="layout">
+  <article class="article" data-start={e.start} data-end={e.end ?? undefined}>
+    <div class="article-kicker"><GameTag game={game} /><span>{eventKind[e.kind]}</span><Provenance game={game} record={e} /></div>
+    <h1 class="article-title">{e.title}</h1>
+    <dl class="facts-grid num">
+      <div><dt>상태</dt><dd><span class="status" data-status={status}>{statusLabel[status]}</span></dd></div>
+      <div><dt>남은 기간</dt><dd class="dday" data-dday>{dday(e)}</dd></div>
+      <div><dt>시작</dt><dd>{formatDate(e.start, false)}{clock(e.start) && ` ${clock(e.start)}`}{e.startNote && <span class="meta"> {e.startNote}</span>}</dd></div>
+      <div><dt>종료</dt><dd>{e.end ? <>{formatDate(e.end, false)}{clock(e.end) && ` ${clock(e.end)}`}</> : '미정'}{e.endNote && <span class="meta"> {e.endNote}</span>}</dd></div>
+    </dl>
+    {e.summary && <p class="article-lead">{e.summary}</p>}
+    {e.analysis && <Analysis game={game} analysis={e.analysis} />}
+    <section class="section">
+      <div class="section-head"><h2 class="section-title">출처 · 검증</h2></div>
+      <SourceList game={game} refs={e.sources} />
+    </section>
+  </article>
+  <div class="aside aside-sticky">
+    <section class="section">
+      <div class="section-head"><h2 class="section-title">다른 일정</h2><a class="more" href={gameHref(game, mod.id)}>전체</a></div>
+      {others.length ? <ul class="ev-list compact">{others.map((x) => <EventItem game={game} mod={mod} event={x} compact hideEnded />)}</ul> : <p class="empty">다른 일정이 없습니다.</p>}
+    </section>
   </div>
-  <h2>{e.title}</h2>
-  <dl class="facts">
-    <dt>시작</dt><dd>{formatDate(e.start)}{e.startNote && ` (${e.startNote})`}</dd>
-    <dt>종료</dt><dd>{e.end ? formatDate(e.end) : '미정'}{e.endNote && ` (${e.endNote})`}</dd>
-  </dl>
-  {e.summary && <p class="prose">{e.summary}</p>}
-  <SourceList game={game} refs={e.sources} />
-</article>
-{e.analysis && <Analysis game={game} analysis={e.analysis} />}
+</div>

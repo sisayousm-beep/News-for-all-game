@@ -3,6 +3,7 @@
 import GameShell from '../../../layouts/GameShell.astro';
 import { games } from '../../../core/hub';
 import { sourceType } from '../../../i18n/ko';
+import TrustLegend from '../../../components/TrustLegend.astro';
 
 export const getStaticPaths = () => games().map((game) => ({ params: { game: game.config.id }, props: { game } }));
 const { game } = Astro.props;
@@ -10,36 +11,43 @@ const citations = Object.values(game.collections).flat().flatMap((r) => r.source
 const count = (id: string) => citations.filter((c) => c.source === id).length;
 ---
 <GameShell game={game} current="sources" title="출처">
-  <section class="card">
-    <h2>등록된 출처</h2>
-    <p class="muted small">이 게임의 모든 정보는 아래 출처 중 하나 이상을 근거로 합니다. 공식 &gt; 언론 &gt; DB·위키 &gt; 공략 &gt; 커뮤니티 순으로 신뢰합니다.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>출처</th><th>유형</th><th>인용 수</th><th>범위</th></tr></thead>
-        <tbody>
-          {game.config.sources.map((s) => (
-            <tr>
-              <td><a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a></td>
-              <td><span class={`badge ${s.type}`}>{sourceType[s.type]}</span></td>
-              <td>{count(s.id)}</td>
-              <td class="muted small">{s.domains.join(', ')}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+  <div class="layout">
+    <div class="aside" style="gap:32px">
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">등록된 출처<span class="count">{game.config.sources.length}</span></h2><span class="meta">인용 {citations.length}건</span></div>
+        <p class="meta" style="padding-top:12px">이 게임의 모든 정보는 아래 출처 중 하나 이상을 근거로 합니다. 신뢰 순서: 공식 &gt; 언론 &gt; DB·위키 &gt; 공략 &gt; 커뮤니티.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>출처</th><th>유형</th><th>인용</th><th>범위</th></tr></thead>
+            <tbody>
+              {game.config.sources.map((s) => (
+                <tr>
+                  <td class="wrap"><a class="headline" style="font-size:.875rem" href={s.url} target="_blank" rel="noopener noreferrer">{s.name} ↗</a>{s.note && <p class="meta">{s.note}</p>}</td>
+                  <td><span class={`badge ${s.type}`}>{sourceType[s.type]}</span></td>
+                  <td class="num"><b>{count(s.id)}</b></td>
+                  <td class="meta wrap">{s.domains.join(', ')}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">자동 업데이트 작업<span class="count">{game.config.updates.length}</span></h2></div>
+        {game.config.updates.length ? (
+          <ul class="news-list">
+            {game.config.updates.map((j) => (
+              <li style="padding:12px 0;display:grid;gap:4px">
+                <p class="news-top"><code style="color:var(--ink);font-weight:700">{j.id}</code><span class="badge outline">주기 {j.frequency}</span><span>→ {j.collection}</span></p>
+                <p class="meta">{j.instructions}</p>
+              </li>
+            ))}
+          </ul>
+        ) : <p class="empty">등록된 작업이 없습니다.</p>}
+      </section>
     </div>
-  </section>
-  <section class="card">
-    <h2>자동 업데이트 작업</h2>
-    {game.config.updates.length ? (
-      <ul class="list">
-        {game.config.updates.map((j) => (
-          <li>
-            <div class="row"><code>{j.id}</code><span class="badge">{j.frequency}</span><span class="muted small">→ {j.collection}</span></div>
-            <span class="muted small">{j.instructions}</span>
-          </li>
-        ))}
-      </ul>
-    ) : <p class="empty">등록된 작업이 없습니다.</p>}
-  </section>
+    <div class="aside">
+      <section class="section"><div class="section-head"><h2 class="section-title">정보 표시 기준</h2></div><TrustLegend /></section>
+    </div>
+  </div>
 </GameShell>

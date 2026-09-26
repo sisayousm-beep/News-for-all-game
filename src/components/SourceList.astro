@@ -4,27 +4,23 @@ import type { Game } from '../core/load';
 import type { SourceRef } from '../core/schema';
 import { formatDate, sourceOf } from '../core/hub';
 import { sourceType } from '../i18n/ko';
-interface Props { game: Game; refs: SourceRef[]; title?: string }
-const { game, refs, title = '출처' } = Astro.props;
+interface Props { game: Game; refs: SourceRef[]; compact?: boolean }
+const { game, refs, compact } = Astro.props;
+const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
 ---
-<div class="sources stack" style="gap:6px">
-  <strong class="muted">{title}</strong>
-  <ul class="list">
-    {refs.map((r) => {
-      const def = sourceOf(game, r.source);
-      return (
-        <li>
-          <div class="row">
-            <span class={`badge ${def.type}`}>{sourceType[def.type]}</span>
-            <a href={r.url} target="_blank" rel="noopener noreferrer">{def.name}</a>
-          </div>
-          <span class="muted">
-            수집 {formatDate(r.collectedAt)} ·{' '}
-            {r.verifiedAt ? `검증 ${formatDate(r.verifiedAt)}` : <span class="badge unknown">원문 미검증</span>}
-            {r.note && ` · ${r.note}`}
-          </span>
-        </li>
-      );
-    })}
-  </ul>
-</div>
+<ul class:list={['sources', { 'sources-compact': compact }]}>
+  {refs.map((r) => {
+    const def = sourceOf(game, r.source);
+    return (
+      <li>
+        <span class={`badge ${def.type}`}>{sourceType[def.type]}</span>
+        <span><a class="src" href={r.url} target="_blank" rel="noopener noreferrer">{def.name}</a><span class="host">{host(r.url)} ↗</span></span>
+        <span class="meta num">
+          {r.verifiedAt ? <span class="verified">원문 확인 {formatDate(r.verifiedAt, false)}</span> : <span class="badge unknown" title="요약·검색 결과로 수집, 원문을 직접 열어 확인하지 않음">원문 미검증</span>}
+          <span class="sep">수집 {formatDate(r.collectedAt, false)}</span>
+          {r.note && <span class="sep">{r.note}</span>}
+        </span>
+      </li>
+    );
+  })}
+</ul>

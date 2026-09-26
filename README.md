@@ -66,6 +66,7 @@ docs/                   ← 설계 문서
 | [docs/ai-update-rules.md](docs/ai-update-rules.md) | AI 자동 최신화 절차와 금지 사항 |
 | [docs/adding-a-game.md](docs/adding-a-game.md) | 새 게임 추가 방법 |
 | [docs/validation.md](docs/validation.md) | 검증 단계와 규칙 목록 |
+| [docs/design-system.md](docs/design-system.md) | UI 디자인 시스템(토큰·컴포넌트·화면 구조) |
 
 ## 배포
 

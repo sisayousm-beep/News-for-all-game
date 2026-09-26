@@ -17,6 +17,7 @@
 | 새 게임 추가 | `games/_template/` 복사 → [docs/adding-a-game.md](docs/adding-a-game.md) |
 | 데이터 형식 변경 | `src/core/schema.ts` (+ `docs/data-schemas.md`) |
 | 새 모듈 타입(화면 종류) | [docs/modules.md](docs/modules.md) |
+| 화면 디자인·스타일 | `src/styles/global.css` + [docs/design-system.md](docs/design-system.md) |
 
 데이터 업데이트 작업은 **코드(`src/`)를 수정하지 않는다.**
 

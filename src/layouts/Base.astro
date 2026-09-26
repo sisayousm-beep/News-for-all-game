@@ -1,51 +1,75 @@
 ---
 import '../styles/global.css';
-import { href } from '../core/hub';
+import { games, href } from '../core/hub';
+import Icon from '../components/Icon.astro';
 
-interface Props { title?: string; nav?: 'home' | 'games' | 'news' | 'schedule' | 'search'; accent?: string }
-const { title, nav, accent } = Astro.props;
-const links = [
-  ['home', '/', '대시보드'],
+interface Props { title?: string; nav?: 'home' | 'games' | 'news' | 'schedule' | 'search'; accent?: string; description?: string }
+const { title, nav, accent, description } = Astro.props;
+const top = [
+  ['home', '/', '홈'],
   ['games', '/games/', '게임'],
   ['news', '/news/', '뉴스'],
   ['schedule', '/schedule/', '일정'],
   ['search', '/search/', '검색'],
 ] as const;
+// Mobile order puts the daily-use tabs under the thumb.
+const bottom = [
+  ['home', '/', '홈', 'home'],
+  ['news', '/news/', '뉴스', 'news'],
+  ['schedule', '/schedule/', '일정', 'calendar'],
+  ['games', '/games/', '게임', 'games'],
+  ['search', '/search/', '검색', 'search'],
+] as const;
+const builtAt = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
 ---
 <!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0d0f14" />
+    <meta name="theme-color" content="#ffffff" />
+    {description && <meta name="description" content={description} />}
     <title>{title ? `${title} · Game Hub` : 'Game Hub'}</title>
     <link rel="icon" href={href('/favicon.svg')} type="image/svg+xml" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
   </head>
   <body style={accent ? `--accent:${accent}` : undefined}>
     <header class="topbar">
       <div class="topbar-inner">
-        <a class="brand" href={href('/')}>Game<span>Hub</span></a>
+        <a class="brand" href={href('/')}>
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#17191c"/><path d="M8 9h16v4H8zM8 16h10v4H8zM8 23h13v2H8z" fill="#fff"/><path d="M21 16h3v4h-3z" fill="#2fae9b"/></svg>
+          Game Hub
+        </a>
         <nav class="nav" aria-label="주요 메뉴">
-          {links.map(([key, path, label]) => <a href={href(path)} aria-current={nav === key ? 'page' : undefined}>{label}</a>)}
+          {top.map(([key, path, label]) => <a href={href(path)} aria-current={nav === key ? 'page' : undefined}>{label}</a>)}
         </nav>
-        <form class="search-form" action={href('/search/')} role="search">
-          <input name="q" type="search" placeholder="게임, 캐릭터, 이벤트, 뉴스 검색" aria-label="검색" />
-        </form>
+        <div class="topbar-tools">
+          <form class="search-form" action={href('/search/')} role="search">
+            <Icon name="search" size={16} />
+            <input class="input" name="q" type="search" placeholder="게임, 캐릭터, 이벤트, 뉴스" aria-label="통합 검색" />
+          </form>
+          <span class="data-status num" title="이 페이지의 데이터를 마지막으로 반영한 시각 (매일 자동 갱신)">{games().length}개 게임 · {builtAt} 갱신</span>
+          <a class="icon-btn" href={href('/search/')} aria-label="검색"><Icon name="search" /></a>
+        </div>
       </div>
     </header>
     <main><slot /></main>
     <footer class="footer">
-      Game Hub는 원본 출처의 정보를 모아 정리합니다. 모든 정보의 원문은 각 항목의 출처 링크를 확인하세요.
-      <span class="badge ai">AI 분석</span> 표시는 사실이 아닌 해석입니다.
+      <div class="footer-inner">
+        <p>Game Hub는 공식 공지·언론·DB의 정보를 모아 정리합니다. 모든 항목에는 원문 출처 링크가 있으며, 숫자·날짜는 원문을 기준으로 합니다.</p>
+        <p><span class="badge ai">AI 분석</span> 표시는 사실이 아닌 해석입니다. <span class="badge reported">전언</span> <span class="badge speculative">추측</span>은 공식 확인 전 정보입니다.</p>
+      </div>
     </footer>
     <nav class="tabbar" aria-label="하단 메뉴">
-      {links.map(([key, path, label]) => <a href={href(path)} aria-current={nav === key ? 'page' : undefined}>{label}</a>)}
+      {bottom.map(([key, path, label, icon]) => <a href={href(path)} aria-current={nav === key ? 'page' : undefined}><Icon name={icon} size={22} />{label}</a>)}
     </nav>
     <script is:inline>
-      // Static pages are built once; recompute event status in the viewer's clock so
-      // "진행 중 / 예정 / 종료" stays correct between rebuilds. Mirrors eventStatus() in src/core/hub.ts.
+      // Static pages are built once a day; recompute status and D-day in the viewer's clock.
+      // Mirrors eventStatus() / dday() in src/core/hub.ts.
       (() => {
         const t = (s, end) => Date.parse(s.length === 10 ? s + (end ? 'T23:59:59' : 'T00:00:00') + '+09:00' : s);
+        const day = (ms) => Math.floor((ms + 9 * 3600e3) / 864e5);
         const label = { upcoming: '예정', ongoing: '진행 중', ended: '종료' };
         const now = Date.now();
         document.querySelectorAll('[data-start]').forEach((el) => {
@@ -53,6 +77,9 @@ const links = [
           const s = now < t(start) ? 'upcoming' : end && now > t(end, true) ? 'ended' : 'ongoing';
           el.dataset.status = s;
           el.querySelectorAll('.status').forEach((b) => { b.dataset.status = s; b.textContent = label[s]; });
+          const n = s === 'upcoming' ? day(t(start)) - day(now) : end ? day(t(end, true)) - day(now) : null;
+          const d = s === 'ended' ? '종료' : s === 'upcoming' ? (n ? 'D-' + n : 'D-DAY') : n == null ? '종료일 미정' : n ? n + '일 남음' : '오늘 종료';
+          el.querySelectorAll('[data-dday]').forEach((b) => { b.textContent = d; b.classList.toggle('soon', n != null && n <= 2 && s !== 'ended'); });
           if (el.hasAttribute('data-hide-ended')) el.hidden = s === 'ended';
         });
       })();

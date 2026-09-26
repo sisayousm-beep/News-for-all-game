@@ -1,0 +1,9 @@
+---
+/** Game name with its accent square. Links to the game hub unless `plain`. */
+import type { Game } from '../core/load';
+import { gameHref } from '../core/hub';
+interface Props { game: Game; plain?: boolean }
+const { game, plain } = Astro.props;
+const style = `--accent:${game.config.theme.accent}`;
+---
+{plain ? <span class="game-tag" style={style}>{game.config.name}</span> : <a class="game-tag" style={style} href={gameHref(game)}>{game.config.name}</a>}

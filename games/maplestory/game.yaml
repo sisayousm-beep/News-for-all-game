@@ -5,10 +5,11 @@ name: 메이플스토리
 names: { en: MapleStory }
 description: 넥슨이 서비스하는 2D 횡스크롤 MMORPG. 한국 서버(KMS) 기준.
 genre: MMORPG
+publisher: Nexon
 region: KMS (한국)
 locale: ko
 theme:
-  accent: "#f39a1d"
+  accent: "#d9652f"
 
 modules:
   - type: news

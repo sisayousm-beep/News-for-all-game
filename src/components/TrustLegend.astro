@@ -1,0 +1,9 @@
+---
+/** Explains the trust badges. Shown next to news so readers learn the system where they use it. */
+import { provenance } from '../i18n/ko';
+const keys = ['official', 'press', 'db', 'reported', 'speculative'] as const;
+---
+<ul class="legend">
+  {keys.map((k) => <li><span><span class={`badge ${k}`}>{provenance[k].label}</span></span><span>{provenance[k].title}</span></li>)}
+  <li><span><span class="badge ai">AI 분석</span></span><span>사실과 분리된 해석. 항목 안에서 보라색 영역으로 따로 표시</span></li>
+</ul>

@@ -1,0 +1,10 @@
+---
+/** Record image, or a game-colored tile naming the game + category so the list still scans by game. */
+import type { Game } from '../core/load';
+import { href } from '../core/hub';
+interface Props { game: Game; image?: string; label: string }
+const { game, image, label } = Astro.props;
+---
+<span class:list={['thumb', { 'is-fallback': !image }]} style={`--accent:${game.config.theme.accent}`} aria-hidden="true">
+  {image ? <img src={href(image)} alt="" loading="lazy" /> : <span class="thumb-fallback"><b>{label}</b><small>{game.config.names.en ?? game.config.name}</small></span>}
+</span>

@@ -1,24 +1,80 @@
 ---
+/** Global schedule, grouped 오늘 / 진행 중 / 이번 주 / 이후 / 최근 종료. Groups are recomputed in the browser (script below). */
 import Base from '../layouts/Base.astro';
 import EventItem from '../components/EventItem.astro';
-import { allEvents, eventStatus } from '../core/hub';
+import { allEvents, bucket, games, type Bucket } from '../core/hub';
+import { bucket as bucketLabel, eventKind } from '../i18n/ko';
 
 const events = allEvents();
-const groups = [
-  ['진행 중', events.filter((t) => eventStatus(t.record) === 'ongoing')],
-  ['예정', events.filter((t) => eventStatus(t.record) === 'upcoming')],
-  ['최근 종료', events.filter((t) => eventStatus(t.record) === 'ended').reverse().slice(0, 20)],
-] as const;
+const order: Bucket[] = ['today', 'ongoing', 'week', 'later', 'ended'];
+const hint: Record<Bucket, string> = { today: '오늘 시작하거나 끝나는 일정', ongoing: '종료가 가까운 순', week: '7일 이내 시작', later: '', ended: '최근 20건' };
+const grouped = Object.fromEntries(order.map((b) => [b, events.filter((t) => bucket(t.record) === b)])) as Record<Bucket, typeof events>;
+grouped.ongoing.sort((a, b) => Date.parse(a.record.end ?? '9999') - Date.parse(b.record.end ?? '9999'));
+grouped.ended = grouped.ended.reverse().slice(0, 20);
+const kinds = [...new Set(events.map((t) => t.record.kind))];
 ---
 <Base title="일정" nav="schedule">
-  <h1>일정</h1>
-  <p class="muted small">모든 게임의 이벤트·점검·픽업 일정. 시간은 한국 시간(KST) 기준입니다.</p>
-  <div class="grid">
-    {groups.map(([label, list]) => (
-      <section class="card">
-        <h2>{label} <span class="muted small">{list.length}</span></h2>
-        {list.length ? <ul class="list">{list.map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} showGame />)}</ul> : <p class="empty">없음</p>}
+  <div class="page-head">
+    <h1 class="page-title">일정</h1>
+    <p class="meta">모든 게임의 이벤트·업데이트·점검·픽업 · 한국 시간(KST)</p>
+  </div>
+
+  <div data-schedule style="display:grid;gap:24px">
+    <div class="toolbar" role="group" aria-label="일정 필터" style="padding-top:0">
+      <div class="chips" data-chips="game">
+        <button class="chip" type="button" data-value="" aria-pressed="true">전체</button>
+        {games().map((g) => <button class="chip" type="button" data-value={g.config.id} aria-pressed="false" style={`--accent:${g.config.theme.accent}`}><span class="dot" />{g.config.name}</button>)}
+      </div>
+      <select class="select end" data-select="kind" aria-label="종류">
+        <option value="">모든 종류</option>
+        {kinds.map((k) => <option value={k}>{eventKind[k]}</option>)}
+      </select>
+    </div>
+
+    {order.map((b) => (
+      <section class="timeline-group" data-bucket={b} hidden={!grouped[b].length && b !== 'today'}>
+        <header><h2>{bucketLabel[b]} <span class="count meta num" data-count>{grouped[b].length}</span></h2>{hint[b] && <p>{hint[b]}</p>}</header>
+        <div>
+          <ul class="ev-list">{grouped[b].map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} showGame />)}</ul>
+          <p class="empty" data-empty hidden={grouped[b].length > 0}>해당하는 일정이 없습니다.</p>
+        </div>
       </section>
     ))}
   </div>
 </Base>
+<script>
+  // Mirrors bucket() in src/core/hub.ts so groups stay right between daily rebuilds; then applies filters.
+  const root = document.querySelector<HTMLElement>('[data-schedule]')!;
+  const t = (s: string, end = false) => Date.parse(s.length === 10 ? `${s}T${end ? '23:59:59' : '00:00:00'}+09:00` : s);
+  const day = (ms: number) => Math.floor((ms + 9 * 3600e3) / 864e5);
+  const now = Date.now(), today = day(now);
+  const list = (b: string) => root.querySelector(`[data-bucket="${b}"] .ev-list`)!;
+  const rows = [...root.querySelectorAll<HTMLElement>('.ev-list > li')];
+  for (const li of rows) {
+    const { start, end } = li.dataset as { start: string; end?: string };
+    const ended = !!end && now > t(end, true);
+    const b = ended ? 'ended'
+      : day(t(start)) === today || (end && day(t(end, true)) === today) ? 'today'
+      : now >= t(start) ? 'ongoing'
+      : day(t(start)) - today <= 7 ? 'week' : 'later';
+    if (li.closest('[data-bucket]')!.getAttribute('data-bucket') !== b) list(b).append(li);
+  }
+  const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-chips="game"] .chip')];
+  const select = root.querySelector<HTMLSelectElement>('[data-select="kind"]')!;
+  let game = '';
+  const apply = () => {
+    chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.value === game)));
+    select.classList.toggle('is-set', !!select.value);
+    root.querySelectorAll<HTMLElement>('[data-bucket]').forEach((sec) => {
+      const items = [...sec.querySelectorAll<HTMLElement>('.ev-list > li')];
+      let n = 0;
+      for (const li of items) n += +!(li.hidden = (!!game && li.dataset.game !== game) || (!!select.value && li.dataset.kind !== select.value));
+      sec.querySelector('[data-count]')!.textContent = String(n);
+      sec.querySelector<HTMLElement>('[data-empty]')!.hidden = n > 0;
+      sec.hidden = !n && sec.dataset.bucket !== 'today'; // "오늘" always answers the question, even when empty
+    });
+  };
+  chips.forEach((c) => c.addEventListener('click', () => { game = c.dataset.value!; apply(); }));
+  select.addEventListener('input', apply);
+  apply();
+</script>

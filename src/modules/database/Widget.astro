@@ -1,30 +1,42 @@
 ---
+/** Game home: roster strip (newest version first) + latest history entries. */
 import type { Game } from '../../core/load';
 import type { EntityRecord, ModuleConfig } from '../../core/schema';
-import { formatDate, gameHref, recordsOf } from '../../core/hub';
+import { gameHref, recordsOf, shortDate } from '../../core/hub';
 import { historyKind } from '../../i18n/ko';
+import { fieldLabel } from './fields';
+import Portrait from '../../components/Portrait.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
 const items = recordsOf<EntityRecord>(game, mod);
+const byVersion = [...items].sort((a, b) => String(b.attributes.version ?? '').localeCompare(String(a.attributes.version ?? ''), undefined, { numeric: true }));
 const changes = items
   .flatMap((r) => r.history.map((h) => ({ r, h })))
   .sort((a, b) => (b.h.version ?? '').localeCompare(a.h.version ?? '', undefined, { numeric: true }) || Date.parse(b.h.date ?? '0') - Date.parse(a.h.date ?? '0'))
-  .slice(0, 5);
+  .slice(0, 4);
+const sub = mod.fields.filter((f) => f.values && f.key !== 'rarity').slice(0, 2);
 ---
-<section class="card">
-  <div class="section-head"><h2>{mod.label} <span class="muted small">{items.length}</span></h2><a href={gameHref(game, mod.id)}>전체 보기</a></div>
-  {changes.length ? (
-    <ul class="list">
-      {changes.map(({ r, h }) => (
-        <li>
-          <div class="row small">
-            <span class="badge">{historyKind[h.kind]}</span>
-            {h.version && <span class="badge">v{h.version}</span>}
-            <span class="muted">{h.date ? formatDate(h.date) : '날짜 미확인'}</span>
-          </div>
-          <a href={gameHref(game, mod.id, r.id)}><strong>{r.title}</strong></a>
-        </li>
-      ))}
-    </ul>
+<section class="section">
+  <div class="section-head"><h2 class="section-title">{mod.label}<span class="count">{items.length}</span></h2><a class="more" href={gameHref(game, mod.id)}>{mod.itemLabel ?? mod.label} DB</a></div>
+  {items.length ? (
+    <>
+      <div class="db-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 8px">
+        {byVersion.slice(0, 8).map((r) => (
+          <a class="db-card" href={gameHref(game, mod.id, r.id)}>
+            <Portrait game={game} record={r} />
+            <span class="name clamp-1" style="font-size:.8125rem">{r.title}</span>
+            <span class="attrs">{sub.map((f) => <span>{fieldLabel(f, r.attributes[f.key]) ?? '미확인'}</span>)}</span>
+          </a>
+        ))}
+      </div>
+      <ul class="history" style="margin-top:12px">
+        {changes.map(({ r, h }) => (
+          <li style="grid-template-columns:64px minmax(0,1fr);padding:10px 0">
+            <span class="when"><b>{h.version ? `v${h.version}` : '—'}</b><span>{h.date ? shortDate(h.date) : '날짜 미확인'}</span></span>
+            <a class="what" href={gameHref(game, mod.id, r.id)}><span class="meta">{historyKind[h.kind]}</span><span class="headline" style="font-size:.9375rem">{r.title}</span></a>
+          </li>
+        ))}
+      </ul>
+    </>
   ) : <p class="empty">아직 등록된 항목이 없습니다.</p>}
 </section>

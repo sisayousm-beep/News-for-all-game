@@ -2,20 +2,37 @@
 import type { Game } from '../../core/load';
 import type { EventRecord, ModuleConfig } from '../../core/schema';
 import { eventStatus, recordsOf } from '../../core/hub';
+import { eventKind } from '../../i18n/ko';
 import EventItem from '../../components/EventItem.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
 const events = recordsOf<EventRecord>(game, mod).sort((a, b) => Date.parse(a.start) - Date.parse(b.start));
-const active = events.filter((e) => eventStatus(e) !== 'ended');
+const upcoming = events.filter((e) => eventStatus(e) === 'upcoming');
+const ongoing = events.filter((e) => eventStatus(e) === 'ongoing').sort((a, b) => Date.parse(a.end ?? '9999') - Date.parse(b.end ?? '9999'));
 const ended = events.filter((e) => eventStatus(e) === 'ended').reverse();
+const groups = [['진행 중', '종료가 가까운 순', ongoing], ['예정', '시작일 순', upcoming], ['종료', '최근 순', ended]] as const;
+const kinds = [...new Set(events.map((e) => e.kind))];
 ---
-<div class="grid-2">
-  <section class="card">
-    <h2>진행 중 · 예정</h2>
-    {active.length ? <ul class="list">{active.map((e) => <EventItem game={game} mod={mod} event={e} />)}</ul> : <p class="empty">진행 중이거나 예정된 일정이 없습니다.</p>}
-  </section>
-  <section class="card">
-    <h2>종료</h2>
-    {ended.length ? <ul class="list">{ended.map((e) => <EventItem game={game} mod={mod} event={e} />)}</ul> : <p class="empty">종료된 일정이 없습니다.</p>}
-  </section>
+<div data-kind-filter style="display:grid;gap:24px">
+  {kinds.length > 1 && (
+    <div class="toolbar chips" role="group" aria-label="종류" style="padding-top:0">
+      <button class="chip" type="button" data-value="" aria-pressed="true">전체 {events.length}</button>
+      {kinds.map((k) => <button class="chip" type="button" data-value={k} aria-pressed="false">{eventKind[k]}</button>)}
+    </div>
+  )}
+  {groups.map(([label, hint, list]) => (
+    <section class="timeline-group" data-bucket={label === '종료' ? 'ended' : undefined}>
+      <header><h2>{label} <span class="count meta num">{list.length}</span></h2><p>{hint}</p></header>
+      {list.length ? <ul class="ev-list">{list.map((e) => <EventItem game={game} mod={mod} event={e} />)}</ul> : <p class="empty">해당하는 일정이 없습니다.</p>}
+    </section>
+  ))}
 </div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-kind-filter]').forEach((root) => {
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('.chip')];
+    chips.forEach((c) => c.addEventListener('click', () => {
+      chips.forEach((x) => x.setAttribute('aria-pressed', String(x === c)));
+      root.querySelectorAll<HTMLElement>('.ev-list > li').forEach((li) => { li.hidden = !!c.dataset.value && li.dataset.kind !== c.dataset.value; });
+    }));
+  });
+</script>

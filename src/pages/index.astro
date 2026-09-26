@@ -1,67 +1,101 @@
 ---
-/** Global dashboard: everything here is aggregated from game data — nothing is hardcoded. */
+/** Global home: everything is aggregated from game data — nothing is hardcoded. */
 import Base from '../layouts/Base.astro';
 import GameIcon from '../components/GameIcon.astro';
-import GameBadge from '../components/GameBadge.astro';
+import GameTag from '../components/GameTag.astro';
+import GameCard from '../components/GameCard.astro';
 import NewsItem from '../components/NewsItem.astro';
 import EventItem from '../components/EventItem.astro';
-import { allChanges, allEvents, allNews, eventStatus, formatDate, gameHref, games, href } from '../core/hub';
-import { historyKind } from '../i18n/ko';
+import Provenance from '../components/Provenance.astro';
+import Portrait from '../components/Portrait.astro';
+import { allChanges, allEvents, allNews, eventStatus, featured, gameHref, games, href, listDate, primarySource } from '../core/hub';
+import { historyKind, newsCategory } from '../i18n/ko';
 
-const news = allNews();
-const events = allEvents().filter((t) => eventStatus(t.record) !== 'ended');
-const changes = allChanges().slice(0, 6);
-const latestOf = (id: string) => news.find((n) => n.game.config.id === id);
+const top = featured(3);
+const shown = new Set(top.map((t) => t.record));
+const news = allNews().filter((t) => !shown.has(t.record)).slice(0, 8);
+const events = allEvents();
+const ongoing = events.filter((t) => eventStatus(t.record) === 'ongoing')
+  .sort((a, b) => Date.parse(a.record.end ?? '9999') - Date.parse(b.record.end ?? '9999'));
+const upcoming = events.filter((t) => eventStatus(t.record) === 'upcoming');
+const changes = allChanges().slice(0, 5);
+const today = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric', weekday: 'long' }).format(new Date());
 ---
-<Base nav="home">
-  <section class="stack">
-    <div class="section-head"><h1>대시보드</h1><a href={href('/games/')}>게임 {games().length}개</a></div>
-    <div class="grid">
-      {games().map((g) => {
-        const latest = latestOf(g.config.id);
-        return (
-          <a class="card card-link" href={gameHref(g)} style={`--accent:${g.config.theme.accent}`}>
-            <div class="row"><GameIcon game={g} /><div><h2>{g.config.name}</h2><span class="muted small">{g.config.genre}</span></div></div>
-            {latest
-              ? <p class="small"><span class="muted">최신 · {latest.record.publishedAt ? formatDate(latest.record.publishedAt, false) : '게시일 미확인'}</span><br />{latest.record.title}</p>
-              : <p class="empty">아직 소식이 없습니다.</p>}
-          </a>
-        );
-      })}
-    </div>
-  </section>
-
-  <div class="grid-2">
-    <section class="card">
-      <div class="section-head"><h2>진행 중 · 다가오는 일정</h2><a href={href('/schedule/')}>전체 일정</a></div>
-      {events.length
-        ? <ul class="list">{events.slice(0, 8).map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} showGame hideEnded />)}</ul>
-        : <p class="empty">진행 중이거나 예정된 일정이 없습니다.</p>}
-    </section>
-    <section class="card">
-      <div class="section-head"><h2>최신 소식</h2><a href={href('/news/')}>전체 뉴스</a></div>
-      {news.length
-        ? <ul class="list">{news.slice(0, 8).map((t) => <NewsItem game={t.game} mod={t.mod} news={t.record} showGame />)}</ul>
-        : <p class="empty">아직 소식이 없습니다.</p>}
-    </section>
-    <section class="card">
-      <h2>최근 데이터 변경</h2>
-      {changes.length ? (
-        <ul class="list">
-          {changes.map((c) => (
-            <li>
-              <div class="row small">
-                <GameBadge game={c.game} />
-                <span class="badge">{historyKind[c.entry.kind]}</span>
-                {Date.parse(c.date) > Date.now() && <span class="badge" data-status="upcoming">예정</span>}
-                <span class="muted">{formatDate(c.date)}</span>
-              </div>
-              <a href={gameHref(c.game, c.mod.id, c.record.id)}><strong>{c.record.title}</strong></a>
-              <span class="muted small">{c.entry.summary}</span>
-            </li>
-          ))}
-        </ul>
-      ) : <p class="empty">기록된 변경이 없습니다.</p>}
-    </section>
+<Base nav="home" description="메이플스토리, 명조 등 관심 있는 게임의 공식 공지·패치노트·이벤트 일정·캐릭터 DB를 출처와 함께 한곳에서.">
+  <div class="page-head">
+    <h1 class="page-title">오늘의 게임 소식</h1>
+    <p class="meta">{today} · 한국 시간 기준</p>
   </div>
+
+  <nav class="game-switch" aria-label="게임 바로가기">
+    {games().map((g) => <a href={gameHref(g)}><GameIcon game={g} />{g.config.name}</a>)}
+  </nav>
+
+  {top.length > 0 && (
+    <section class="featured" aria-label="주요 업데이트">
+      {top.map((t) => (
+        <a class="feature" href={gameHref(t.game, t.mod.id, t.record.id)} style={`--accent:${t.game.config.theme.accent}`}>
+          <span class="bar" aria-hidden="true" />
+          <span class="kicker"><GameTag game={t.game} plain /><span class="muted">{newsCategory[t.record.category]}</span><Provenance game={t.game} record={t.record} /></span>
+          <span class="headline">{t.record.title}</span>
+          {t.record.summary && <span class="dek clamp-2">{t.record.summary}</span>}
+          <span class="meta">{primarySource(t.game, t.record).name}<span class="sep num">{t.record.publishedAt ? listDate(t.record.publishedAt) : '게시일 미확인'}</span></span>
+        </a>
+      ))}
+    </section>
+  )}
+
+  <div class="layout">
+    <section class="section" aria-labelledby="h-news">
+      <div class="section-head"><h2 class="section-title" id="h-news">최신 뉴스</h2><a class="more" href={href('/news/')}>전체 뉴스</a></div>
+      {news.length
+        ? <ul class="news-list">{news.map((t) => <NewsItem game={t.game} mod={t.mod} news={t.record} showGame />)}</ul>
+        : <p class="empty">아직 수집된 소식이 없습니다.</p>}
+    </section>
+
+    <div class="aside">
+      <section class="section" aria-labelledby="h-today">
+        <div class="section-head"><h2 class="section-title" id="h-today">진행 중 이벤트<span class="count">{ongoing.length}</span></h2><a class="more" href={href('/schedule/')}>일정</a></div>
+        {ongoing.length
+          ? <ul class="ev-list compact">{ongoing.slice(0, 6).map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} compact hideEnded />)}</ul>
+          : <p class="empty">진행 중인 이벤트가 없습니다.</p>}
+        {ongoing.length > 6 && <a class="more" style="padding-top:10px" href={href('/schedule/')}>{ongoing.length - 6}개 더 보기</a>}
+      </section>
+
+      <section class="section" aria-labelledby="h-next">
+        <div class="section-head"><h2 class="section-title" id="h-next">주요 일정</h2><a class="more" href={href('/schedule/')}>전체 일정</a></div>
+        {upcoming.length
+          ? <ul class="ev-list">{upcoming.slice(0, 5).map((t) => <EventItem game={t.game} mod={t.mod} event={t.record} showGame hideEnded />)}</ul>
+          : <p class="empty">예정된 일정이 없습니다.</p>}
+      </section>
+
+      <section class="section" aria-labelledby="h-db">
+        <div class="section-head"><h2 class="section-title" id="h-db">최근 DB 변경</h2></div>
+        {changes.length ? (
+          <ul class="news-list dense">
+            {changes.map((c) => (
+              <li>
+                <a class="news-row" href={gameHref(c.game, c.mod.id, c.record.id)}>
+                  <Portrait game={c.game} record={c.record} small />
+                  <span class="news-body">
+                    <span class="news-top">
+                      <GameTag game={c.game} plain /><span>{historyKind[c.entry.kind]}</span>
+                      {c.entry.version && <span class="num">v{c.entry.version}</span>}
+                    </span>
+                    <span class="headline">{c.record.title}</span>
+                    <span class="meta num">{listDate(c.date)}{Date.parse(c.date) > Date.now() && <span class="sep" style="color:var(--upcoming);font-weight:700">예정</span>}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        ) : <p class="empty">기록된 변경이 없습니다.</p>}
+      </section>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="h-games">
+    <div class="section-head"><h2 class="section-title" id="h-games">게임 한눈에 보기<span class="count">{games().length}</span></h2><a class="more" href={href('/games/')}>모든 게임</a></div>
+    <div class="game-cards" style="padding-top:16px">{games().map((g) => <GameCard game={g} />)}</div>
+  </section>
 </Base>

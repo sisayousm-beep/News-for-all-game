@@ -1,13 +1,27 @@
 ---
+/** Game home: lead story (largest) + compact list of the rest. */
 import type { Game } from '../../core/load';
 import type { ModuleConfig, NewsRecord } from '../../core/schema';
-import { gameHref, newsDate, recordsOf } from '../../core/hub';
+import { gameHref, listDate, newsDate, primarySource, recordsOf } from '../../core/hub';
+import { newsCategory } from '../../i18n/ko';
 import NewsItem from '../../components/NewsItem.astro';
+import Provenance from '../../components/Provenance.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
-const items = recordsOf<NewsRecord>(game, mod).sort((a, b) => Date.parse(newsDate(b)) - Date.parse(newsDate(a))).slice(0, 5);
+const items = recordsOf<NewsRecord>(game, mod).sort((a, b) => Date.parse(newsDate(b)) - Date.parse(newsDate(a)));
+const [lead, ...rest] = items;
 ---
-<section class="card">
-  <div class="section-head"><h2>최신 {mod.label}</h2><a href={gameHref(game, mod.id)}>전체 보기</a></div>
-  {items.length ? <ul class="list">{items.map((n) => <NewsItem game={game} mod={mod} news={n} />)}</ul> : <p class="empty">아직 수집된 소식이 없습니다.</p>}
+<section class="section">
+  <div class="section-head"><h2 class="section-title">{mod.label}<span class="count">{items.length}</span></h2><a class="more" href={gameHref(game, mod.id)}>전체 보기</a></div>
+  {lead ? (
+    <>
+      <a class="feature" style="padding:16px 0 20px;border-bottom:1px solid var(--line)" href={gameHref(game, mod.id, lead.id)}>
+        <span class="kicker"><Provenance game={game} record={lead} />{lead.analysis && <span class="badge ai">AI 분석</span>}<span class="muted">{newsCategory[lead.category]}</span></span>
+        <span class="headline">{lead.title}</span>
+        {lead.summary && <span class="dek clamp-3">{lead.summary}</span>}
+        <span class="meta">{primarySource(game, lead).name}<span class="sep num">{lead.publishedAt ? listDate(lead.publishedAt) : '게시일 미확인'}</span></span>
+      </a>
+      <ul class="news-list">{rest.slice(0, 5).map((n) => <NewsItem game={game} mod={mod} news={n} />)}</ul>
+    </>
+  ) : <p class="empty">아직 수집된 소식이 없습니다.</p>}
 </section>

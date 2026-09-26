@@ -1,46 +1,81 @@
 ---
+/** Database list: search + field filters + grid/list views over the same rendered rows (no extra download). */
 import type { Game } from '../../core/load';
 import type { EntityRecord, ModuleConfig } from '../../core/schema';
 import { gameHref, recordsOf } from '../../core/hub';
 import { fieldLabel } from './fields';
-import Certainty from '../../components/Certainty.astro';
+import Provenance from '../../components/Provenance.astro';
+import Portrait from '../../components/Portrait.astro';
+import Icon from '../../components/Icon.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
 const items = recordsOf<EntityRecord>(game, mod).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
 const filters = mod.fields.filter((f) => f.filter && f.values);
+const noun = mod.itemLabel ?? mod.label;
+const attrs = (r: EntityRecord) => ({
+  'data-name': [r.title, ...r.aliases].join(' ').toLowerCase(),
+  ...Object.fromEntries(mod.fields.map((f) => [`data-${f.key}`, String(r.attributes[f.key] ?? '')])),
+});
+const value = (r: EntityRecord, key: string) => fieldLabel(mod.fields.find((f) => f.key === key)!, r.attributes[key]);
+const has = (key: string) => mod.fields.some((f) => f.key === key);
+const cardFields = mod.fields.filter((f) => f.key !== 'rarity').slice(0, 3);
 ---
-<section class="card" data-db>
-  <div class="spread"><h2>{mod.label}</h2><span class="muted small"><span data-count>{items.length}</span> / {items.length}</span></div>
-  <div class="filters">
-    <input class="input" style="flex:1 1 160px" data-q type="search" placeholder={`${mod.itemLabel ?? mod.label} 이름 검색`} aria-label="이름 검색" />
-    {filters.map((f) => (
-      <select data-filter={f.key} aria-label={f.label}>
-        <option value="">{f.label} 전체</option>
-        {Object.entries(f.values!).map(([v, label]) => <option value={v}>{label}</option>)}
-      </select>
+<section class="section" data-db>
+  <div class="toolbar toolbar-wrap">
+    <input class="input grow" data-q type="search" placeholder={`${noun} 이름 검색`} aria-label={`${noun} 이름 검색`} />
+    <div class="chips" style="flex:1 1 auto">
+      {filters.map((f) => (
+        <select class="select" data-filter={f.key} aria-label={f.label}>
+          <option value="">{f.label}</option>
+          {Object.entries(f.values!).map(([v, label]) => <option value={v}>{label}</option>)}
+        </select>
+      ))}
+      <button class="btn" type="button" data-reset hidden>초기화</button>
+    </div>
+    <span class="meta num"><b data-count style="color:var(--ink)">{items.length}</b> / {items.length}</span>
+    <div class="segmented" role="group" aria-label="보기 방식">
+      <button type="button" data-view="grid" aria-pressed="true" aria-label="그리드"><Icon name="grid" size={16} /></button>
+      <button type="button" data-view="list" aria-pressed="false" aria-label="목록"><Icon name="list" size={16} /></button>
+    </div>
+  </div>
+
+  <div class="db-grid" data-pane="grid">
+    {items.map((r) => (
+      <a class="db-card" href={gameHref(game, mod.id, r.id)} {...attrs(r)}>
+        <Portrait game={game} record={r} />
+        <span class="name">{r.title} {r.certainty !== 'confirmed' && <Provenance game={game} record={r} />}</span>
+        <span class="attrs">
+          {has('rarity') && <span class="rarity" data-v={r.attributes.rarity}>{value(r, 'rarity') ?? '등급 미확인'}</span>}
+          {cardFields.map((f) => <span>{fieldLabel(f, r.attributes[f.key]) ?? '미확인'}</span>)}
+        </span>
+      </a>
     ))}
   </div>
-  <div class="table-wrap">
+
+  <div class="table-wrap" data-pane="list" hidden>
     <table>
-      <thead><tr><th>이름</th>{mod.fields.map((f) => <th>{f.label}</th>)}</tr></thead>
+      <thead><tr><th>이름</th>{mod.fields.map((f) => <th>{f.label}</th>)}<th>신뢰도</th></tr></thead>
       <tbody>
         {items.map((r) => (
-          <tr data-name={[r.title, ...r.aliases].join(' ').toLowerCase()} {...Object.fromEntries(mod.fields.map((f) => [`data-${f.key}`, String(r.attributes[f.key] ?? '')]))}>
-            <td><a href={gameHref(game, mod.id, r.id)}><strong>{r.title}</strong></a> <Certainty value={r.certainty} /></td>
-            {mod.fields.map((f) => <td>{fieldLabel(f, r.attributes[f.key]) ?? <span class="badge unknown">미확인</span>}</td>)}
+          <tr {...attrs(r)}>
+            <td><a class="cell-name" href={gameHref(game, mod.id, r.id)}><Portrait game={game} record={r} small />{r.title}</a></td>
+            {mod.fields.map((f) => <td class:list={{ rarity: f.key === 'rarity' }} data-v={f.key === 'rarity' ? r.attributes.rarity : undefined}>{fieldLabel(f, r.attributes[f.key]) ?? <span class="badge unknown" title="출처에서 확인되지 않은 값">미확인</span>}</td>)}
+            <td><Provenance game={game} record={r} /></td>
           </tr>
         ))}
       </tbody>
     </table>
   </div>
-  {!items.length && <p class="empty">아직 등록된 항목이 없습니다.</p>}
+  <p class="empty" data-none hidden><strong>조건에 맞는 {noun}이(가) 없습니다</strong>검색어나 필터를 바꿔 보세요.</p>
+  {!items.length && <p class="empty"><strong>아직 등록된 항목이 없습니다</strong>업데이트 작업이 데이터를 추가하면 표시됩니다.</p>}
 </section>
 <script>
-  // Client-side filter over the already-rendered rows (no extra data is downloaded).
+  // Client-side filter over the already-rendered rows. View choice is a per-viewer convenience (localStorage, optional).
   document.querySelectorAll<HTMLElement>('[data-db]').forEach((root) => {
-    const rows = [...root.querySelectorAll<HTMLTableRowElement>('tbody tr')];
+    const rows = [...root.querySelectorAll<HTMLElement>('[data-name]')];
     const q = root.querySelector<HTMLInputElement>('[data-q]')!;
     const selects = [...root.querySelectorAll<HTMLSelectElement>('[data-filter]')];
+    const reset = root.querySelector<HTMLButtonElement>('[data-reset]')!;
     const apply = () => {
       const term = q.value.trim().toLowerCase();
       let n = 0;
@@ -49,8 +84,22 @@ const filters = mod.fields.filter((f) => f.filter && f.values);
         row.hidden = !ok;
         n += +ok;
       }
+      n /= 2; // every record is rendered once per view
+      selects.forEach((s) => s.classList.toggle('is-set', !!s.value));
+      reset.hidden = !term && selects.every((s) => !s.value);
       root.querySelector('[data-count]')!.textContent = String(n);
+      root.querySelector<HTMLElement>('[data-none]')!.hidden = n > 0 || !rows.length;
     };
     [q, ...selects].forEach((el) => el.addEventListener('input', apply));
+    reset.addEventListener('click', () => { q.value = ''; selects.forEach((s) => (s.value = '')); apply(); });
+
+    const buttons = [...root.querySelectorAll<HTMLButtonElement>('[data-view]')];
+    const show = (v: string) => {
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.view === v)));
+      root.querySelectorAll<HTMLElement>('[data-pane]').forEach((p) => (p.hidden = p.dataset.pane !== v));
+      try { localStorage.setItem('db-view', v); } catch {}
+    };
+    buttons.forEach((b) => b.addEventListener('click', () => show(b.dataset.view!)));
+    try { const v = localStorage.getItem('db-view'); if (v) show(v); } catch {}
   });
 </script>

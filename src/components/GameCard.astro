@@ -1,0 +1,43 @@
+---
+/** "게임 한눈에 보기" card: identity + latest update + ongoing events + next date. `full` adds description and module links. */
+import type { Game } from '../core/load';
+import { gameHref, gameSummary, monthDay } from '../core/hub';
+import GameIcon from './GameIcon.astro';
+interface Props { game: Game; full?: boolean }
+const { game, full } = Astro.props;
+const { config } = game;
+const s = gameSummary(game);
+const hasSchedule = config.modules.some((m) => m.type === 'schedule');
+---
+<article class="game-card" style={`--accent:${config.theme.accent}`}>
+  <a class="game-card-head" href={gameHref(game)}>
+    <GameIcon game={game} size="md" />
+    <div>
+      <h3>{config.name}</h3>
+      <p class="meta">{config.genre}{config.publisher && <span class="sep">{config.publisher}</span>}<span class="sep">{config.region}</span></p>
+    </div>
+  </a>
+  <div>
+    {full && <p class="game-card-desc">{config.description}</p>}
+    <dl class="game-card-stats">
+      <div class="wide">
+        <dt>최근 업데이트</dt>
+        <dd>{s.latest ? <a class="clamp-1" href={gameHref(game, s.latest.mod.id, s.latest.record.id)}>{s.latest.record.title}</a> : <span class="muted">아직 소식 없음</span>}</dd>
+      </div>
+      <div>
+        <dt>진행 중 이벤트</dt>
+        <dd class="big">{hasSchedule ? s.ongoing : <span class="muted">—</span>}</dd>
+      </div>
+      <div>
+        <dt>다음 일정</dt>
+        <dd>{s.next ? <><span class="date num">{monthDay(s.next.date)}</span><br /><span class="meta clamp-1">{s.next.title}</span></> : <span class="muted">예정 없음</span>}</dd>
+      </div>
+    </dl>
+    {full && (
+      <nav class="game-card-mods" aria-label={`${config.name} 바로가기`}>
+        {s.counts.map(({ mod, n }) => <a href={gameHref(game, mod.id)}>{mod.label} <span class="muted num">{n}</span></a>)}
+        <a href={gameHref(game, 'sources')}>출처</a>
+      </nav>
+    )}
+  </div>
+</article>

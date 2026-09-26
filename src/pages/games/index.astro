@@ -1,17 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
-import GameIcon from '../../components/GameIcon.astro';
-import { games, gameHref } from '../../core/hub';
+import GameCard from '../../components/GameCard.astro';
+import { games } from '../../core/hub';
 ---
 <Base title="게임" nav="games">
-  <h1>게임</h1>
-  <div class="grid">
-    {games().map((g) => (
-      <a class="card card-link" href={gameHref(g)} style={`--accent:${g.config.theme.accent}`}>
-        <div class="row"><GameIcon game={g} /><div><h2>{g.config.name}</h2><span class="muted small">{g.config.genre} · {g.config.region}</span></div></div>
-        <p class="muted small">{g.config.description}</p>
-        <div class="row">{g.config.modules.map((m) => <span class="badge">{m.label}</span>)}</div>
-      </a>
-    ))}
+  <div class="page-head">
+    <h1 class="page-title">게임</h1>
+    <p class="meta">{games().length}개 게임 · 게임마다 제공하는 정보(탭)가 다릅니다</p>
   </div>
+  <div class="game-cards">{games().map((g) => <GameCard game={g} full />)}</div>
 </Base>
