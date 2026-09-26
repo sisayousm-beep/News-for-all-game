@@ -1,12 +1,22 @@
 id: zealot-qualification
-title: 광신도의 자격 — 1인 선착순 격파 미션
+title: "[보스 이벤트] 광신도의 자격 - 선착순 격파"
 kind: event
 start: 2026-09-17
 startNote: 점검 후
 end: 2026-09-23T23:59:00+09:00
-summary: 보스 이벤트 '광신도의 자격'의 1인 선착순 격파 미션.
+summary: >-
+  벨로나(하드)를 가장 먼저 격파한 50명에게 주는 선착순 격파 미션 보상 이벤트.
+  선착순 격파 미션을 완료한 메이플ID 내 101레벨 이상 캐릭터가 보상을 받을 수 있다.
 sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/Closed/1386
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
   - source: nexon-official
     url: https://maplestory.nexon.com/promotion/event/2026/20260917/intro
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26

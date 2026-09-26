@@ -2,11 +2,17 @@ id: personal-boss-mission
 title: 퍼스널 보스 미션
 kind: event
 start: 2026-09-24T00:00:00+09:00
-end: null
-endNote: 종료일 미확인
-summary: 9월 24일(목) 오전 0시부터 참여 가능.
+end: 2026-11-18T23:59:00+09:00
+summary: >-
+  퍼스널 버닝의 세부 미션. 퍼스널 버닝에 참여한 캐릭터가 주간 보스 목록의 보스를 처치하면 보스별 경험치를 받는다.
+  300레벨 캐릭터는 경험치를 받을 수 없다.
 sources:
   - source: nexon-official
-    url: https://maplestory.nexon.com/promotion/event/2026/20260917/event02
-    collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/1389
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

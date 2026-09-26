@@ -1,0 +1,17 @@
+id: hyper-burning-booster
+title: 하이퍼 버닝 부스터를 드려요!
+kind: event
+start: 2026-09-17
+startNote: 점검 후
+end: 2026-12-16T23:59:00+09:00
+summary: 모든 캐릭터 대상. 이벤트 리스트에서 참여하면 메이플ID당 1개의 하이퍼 버닝 부스터를 받는다.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/1384
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

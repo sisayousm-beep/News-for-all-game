@@ -1,0 +1,17 @@
+id: momentum-pass-plus
+title: 모멘텀 패스 PLUS
+kind: pass
+start: 2026-09-17
+startNote: 점검 후
+end: 2026-10-21T23:59:00+09:00
+summary: 280레벨 이상 캐릭터 대상. 주간 미션으로 패스 레벨을 올리고 레벨 달성 보상을 받는다.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/1385
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

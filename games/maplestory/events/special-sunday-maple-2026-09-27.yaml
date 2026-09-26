@@ -1,0 +1,14 @@
+id: special-sunday-maple-2026-09-27
+title: 스페셜 썬데이 메이플
+kind: event
+start: 2026-09-27T00:00:00+09:00
+end: 2026-09-27T23:59:00+09:00
+summary: >-
+  미라클 타임: 잠재능력·에디셔널 잠재능력 재설정 및 큐브 사용 시 등급 상승 확률 2배,
+  소울 잠재능력 재설정 시 등급 상승 확률 2배.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/1391
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

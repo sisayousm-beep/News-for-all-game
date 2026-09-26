@@ -1,0 +1,13 @@
+id: hangul-moamoa
+title: "[미니게임] 한글 모아모아"
+kind: event
+start: 2026-10-01T10:00:00+09:00
+end: 2026-10-14T23:59:00+09:00
+endNote: 랭킹 보상은 10월 22일(목) 점검 후 ~ 10월 28일(수) 오후 11시 59분 지급
+summary: 101레벨 이상 캐릭터 대상 미니게임. 참여 기록은 메이플ID 내 모든 캐릭터가 공유한다.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

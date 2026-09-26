@@ -1,0 +1,11 @@
+id: maintenance-2026-09-24-evening
+title: 전체 월드 채널 점검 (저녁)
+kind: maintenance
+start: 2026-09-24T18:05:00+09:00
+end: 2026-09-24T19:05:00+09:00
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Notice/All/150215
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

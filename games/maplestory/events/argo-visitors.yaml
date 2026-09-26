@@ -4,10 +4,21 @@ kind: event
 start: 2026-09-17
 startNote: 점검 후
 end: 2026-11-18T23:59:00+09:00
-endNote: 이벤트 아이템 사용은 11월 19일 오전 2시까지
-summary: 유니온의 정보선 아르고 호의 출항 준비를 돕는 가을 이벤트.
+endNote: 보상 아이템은 일부를 제외하고 11월 19일(목) 오전 2시까지 사용 가능
+summary: >-
+  재정비를 위해 정박한 연맹의 정보선 아르고 호의 출항을 돕는 가을 이벤트. 101레벨 이상 캐릭터 대상.
+  출석 이벤트 '프로텍트 아르고', 이벤트 스킬 '아르고 호의 가호', 성장 이벤트 '어센던트 링크',
+  아르고 주화 상점·메소샵으로 구성된다.
 sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/1388
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
   - source: nexon-official
     url: https://maplestory.nexon.com/promotion/event/2026/20260917/event02
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26

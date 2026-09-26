@@ -1,0 +1,16 @@
+id: premium-pc-cafe-2026-09
+title: 프리미엄 PC방 접속보상 이벤트
+kind: event
+start: 2026-09-18T00:00:00+09:00
+end: 2026-10-22T23:59:00+09:00
+summary: 프리미엄 PC방에 접속한 캐릭터가 일일 누적 접속 보상을 받는다. 총 누적 접속 시간 보상은 PC방이 아닌 곳에서도 받을 수 있다.
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/News/Event/1380
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26
