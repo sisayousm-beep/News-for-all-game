@@ -1,0 +1,14 @@
+id: client-1-2-419-skill
+title: 클라이언트 1.2.419 업데이트 안내 (스킬 조정)
+category: patch
+publishedAt: 2026-09-17
+summary: >-
+  9월 17일 업데이트의 스킬 조정 패치노트. 공통 및 직업별 스킬 수정 사항, 연무장 변경,
+  HEXA 매트릭스 초기화 스크롤 지원 내용을 담고 있다.
+tags: [패치노트, 스킬 조정]
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/812
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

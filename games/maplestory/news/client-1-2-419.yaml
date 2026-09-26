@@ -1,15 +1,18 @@
 id: client-1-2-419
-title: 클라이언트 1.2.419 업데이트 — 이벤트, 콘텐츠, 개편 사항 및 오류 수정
+title: 클라이언트 1.2.419 업데이트 안내 (이벤트, 컨텐츠, 개선사항 및 오류 수정)
 category: patch
 publishedAt: 2026-09-17
-# Only a community repost was reachable; replace with the official patch note URL when available.
-certainty: reported
 summary: >-
-  9월 업데이트 패치노트. 소울 웨폰 개편, 성장 경로 개편, 보스 보상 개편,
-  아케인심볼 강화 비용 조정, 필드 메소 페널티 조정 등이 포함된 것으로 전해진다.
-tags: [패치노트]
+  9월 17일 정기 업데이트 패치노트. 가을 이벤트 '아르고 호의 방문객'과 퍼스널 버닝, 신규 에픽 던전 '아우룸 레기스'가 추가됐다.
+  어빌리티·주문서 강화·소울웨폰·성장 동선·보스 리워드·마일리지·MVP가 개편되고,
+  아케인심볼 강화 비용이 전 지역 30% 하향되며 필드 메소 페널티가 조정됐다.
+tags: [패치노트, 소울웨폰, 아케인심볼, 마일리지, MVP]
 sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/813
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
   - source: inven
     url: https://www.inven.co.kr/board/maple/2314/13209
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26

@@ -1,0 +1,14 @@
+id: client-1-2-419-5
+title: 클라이언트 1.2.419(5) 업데이트 안내
+category: patch
+publishedAt: 2026-09-22
+summary: >-
+  9월 22일(화) 마이너 패치. 에르다 노바 관련 오류와 일부 직업 스킬 오류가 수정됐다.
+  '마일리지 1000' 아이템 사용 시 탐험 코인을 받지 못하던 오류도 수정되었으며, 소실된 아이템은 추후 조치 예정이다.
+tags: [패치노트, 오류 수정]
+sources:
+  - source: nexon-official
+    url: https://maplestory.nexon.com/news/update/814
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26
