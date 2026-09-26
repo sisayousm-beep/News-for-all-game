@@ -1,0 +1,79 @@
+id: denia
+title: 데니아
+aliases: ["Denia"]
+summary: "스타토치 아카데미 보이드매터 과학부 학생. 하루 종일 빈둥거리며 꾸벅꾸벅 졸고 있다. 거의 모든 학생 활동에 참여했으며, 언제나 「부드러운」 미소로 사람들을 대한다"
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: rectifier
+  version: "3.3"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "11,025", 공격력: "425", 방어력: "1,148.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「거품의 달콤한 미끼」"
+    values: {쿨타임: "20초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「막이 내리는 순간」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「희미한 꿈, 고요한 빛」"
+    text: "크리티컬 피해 +30%, 주요 스킬 경직 저항. 전투 진입 시 「엔트로피 변이 강화」 획득."
+    values: {크리티컬 피해: "+30%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「이 세계에 추락한 조수 하나」"
+    text: "불꽃 모드에서 불꽃 효과를 부여한 캐릭터의 용융 피해 +50%(15초), 스택당 용융 저항 1% 무시(최대 10)."
+    values: {용융 피해: "+50%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「밤바람을 가르는 붉은 버들」"
+    text: "공명 해방(환멸) 배율 +80%. 「어둠의 핵심」 최대 5개·획득 간격 단축."
+    values: {배율: "+80%"}
+  - id: chain-4
+    section: chain
+    name: "4체인 「먼 곳에서, 먼 곳으로」"
+    text: "침식 영역 공격 간격 3초로 단축."
+  - id: chain-5
+    section: chain
+    name: "5체인 「거짓말로 심장을 꿰맬 수 있다면」"
+    text: "공명 해방(연극) 피해 +100%."
+  - id: chain-6
+    section: chain
+    name: "6체인 「침묵 속에서 태양을 얻기를」"
+    text: "엔트로피 변이 강화 중 공격력·용융 피해 +60%. 침식 영역이 불꽃 효과를 강하게 폭발."
+    values: {공격력·용융 피해: "+60%"}
+history:
+  - date: null
+    version: "3.3"
+    kind: release
+    summary: "3.3 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [내일에 바치는 거짓말]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.3 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.3 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1211
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/denia.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/daniya-15bbe28e.webp
+updatedAt: 2026-09-26

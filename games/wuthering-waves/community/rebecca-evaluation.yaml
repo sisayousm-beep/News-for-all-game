@@ -1,0 +1,49 @@
+id: rebecca-evaluation
+title: "레베카 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T0.5 서브 딜러 (역경의 탑 기준)" }
+  - { label: "역할", value: "강공격 딜러용 서브 딜러 — 모르테피 상위호환" }
+  - { label: "전용 무기 의존도", value: "낮음 — 부동의 안개로 충분" }
+  - { label: "파티 궁합", value: "양양·현령, 루시, 경연 등 강공격 딜러" }
+  - { label: "획득", value: "무료 캐릭터(3.4)" }
+  - { label: "국내 성능 만족도", value: "7.18/10 (3.4 채널 설문)" }
+summary: "무료 캐릭터인데 강공격 딜러의 서브 딜러로 꽤 강하다는 평가다. 양양·현령 출시 이후 가치가 올랐다."
+shift:
+  release: "루시 전용 서브 딜러 (T1)"
+  now: "T0.5, 양양·현령·경연 파티에서도 활약"
+  reason: "3.5 양양·현령의 최적 파티에 들어가며 Prydwen이 T1 → T0.5로 올렸다(7/10)."
+positive:
+  - "무료인데 모르테피보다 강한 강공격 버퍼 (Prydwen)."
+  - "전용 무기 없이도 성능이 거의 같다 — \"상시 부동의 안개면 충분\" (Reddit, Prydwen)."
+negative:
+  - "주요 공격이 끊기기 쉬워 퍼펙트 회피 효과를 잘 못 살린다 (Prydwen)."
+  - "콜라보 캐릭터라 지금 못 받았으면 얻기 어렵다 (Prydwen)."
+subjects: [resonators/rebecca]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/rebecca
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0.5, 장단점"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "7/10: T1 → T0.5"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1u81v9r/should_i_pull_rebeccas_signature/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1u47pra/am_i_dumb_pull_for_rebecca_is_worth/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/176126002
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.4 설문: 성능 7.18, 보유 100%"
+updatedAt: 2026-09-26

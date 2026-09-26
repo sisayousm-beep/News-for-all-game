@@ -10,6 +10,10 @@ verdicts:
   - { label: 파티 의존도, value: "매우 높음 — 데니아+모니에 사실상 필수" }
   - { label: 돌파 가치, value: "낮은 편 — 1돌 약 +15%" }
   - { label: 조작 난이도, value: "매우 쉬움" }
+shift:
+  release: "T0 (다수전 T1)"
+  now: "T0 (다수전 T0.5)"
+  reason: "Prydwen 9/10 다수전(WhiWa) 재측정에서 한 단계 상향 — 출시 초 우려보다 광역이 쓸 만하다는 평가"
 summary: 현 메타 최상위(T0) 메인 딜러라는 평가가 지배적이다. 대신 데니아·모니에 없이는 크게 약해지고 전용 무기 의존도도 높다.
 positive:
   - 단일·광역 딜 모두 3.x 최신 딜러 수준이고, 공중 적도 쉽게 따라가 보스 상성을 덜 탄다 (Prydwen).
@@ -40,7 +44,7 @@ sources:
     url: https://www.prydwen.gg/wuthering-waves/tier-list
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
-    note: "3.6 티어 리스트 (2026-09-16 갱신)"
+    note: "3.6 티어 리스트 (2026-09-16 갱신) · 9/10 변경 기록: 다수전 T1→T0.5"
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/team-tier-list
     collectedAt: 2026-09-26

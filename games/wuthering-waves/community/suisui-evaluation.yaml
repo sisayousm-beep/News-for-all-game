@@ -1,0 +1,50 @@
+id: suisui-evaluation
+title: "수수 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 서포터 (역경의 탑) · 다수전 T0.5" }
+  - { label: "역할", value: "이상 효과 딜러(히유키·양양·현령) 최적 서포터" }
+  - { label: "전용 무기 의존도", value: "낮음 — 판타지 변주로 충분" }
+  - { label: "1돌 가치", value: "낮음 — 범용화 효과가 실전에서 약함" }
+  - { label: "대체 가능성", value: "치사와 비슷 — 일반 유저는 소폭 상승" }
+  - { label: "국내 성능 만족도", value: "8.00/10 (3.5 채널 설문)" }
+summary: "히유키·양양·현령의 최적 서포터로 평가되지만, 치사와 차이는 크지 않다는 의견이 많다. 무과금 친화적이다."
+positive:
+  - "이상 효과 파티 최적 서포터이자 치사를 다른 파티로 돌릴 수 있게 해준다 (Prydwen, Reddit)."
+  - "로테이션이 쉽고 명함·4성 무기로 완성된다 (Prydwen)."
+negative:
+  - "버프 조건(이상 효과 소모)이 까다로워 범용성이 낮다 (Prydwen)."
+  - "돌파 효율이 최근 캐릭터 중 가장 낮은 편 (Prydwen)."
+  - "치사 대비 체감 차이가 작다 — 157추천 댓글 (Reddit)."
+subjects: [resonators/suisui]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/suisui
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0, 장단점"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "7/30: T0 신규 등록"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vb735l/so_now_that_suisui_is_out_how_is_she_compared_to/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vbge8s/should_i_pull_or_skip_suisui_im_f2p/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1v0jhch/do_i_got_for_sui_sui_s1_or_her_signature/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/180186371
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.5 설문: 성능 8.00, 1돌 21%"
+updatedAt: 2026-09-26

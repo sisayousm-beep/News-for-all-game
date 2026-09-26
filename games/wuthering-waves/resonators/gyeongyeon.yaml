@@ -7,6 +7,51 @@ attributes:
   element: fusion
   weapon: broadblade
   version: "3.6"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "15,375", 공격력: "312.5", 방어력: "0", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", HP: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「흉살과 마주한 순간」"
+    values: {쿨타임: "15초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「만귀를 거두는 무덤」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「음양이 한데 어우러지며, 시작과 끝이 한뜻을 이루고」"
+    text: "공명 스킬 4종 배율 +80%·경직 저항."
+    values: {공명 스킬 배율: "+80%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「고독한 등불 그림자 밟아, 산하에 그의 자취를 남기네」"
+    text: "강공격 혼백 탈취·북두칠성 배율 +46%, 「생명의 불꽃」 효과 +46%. 전투 진입 시 「기」 획득."
+    values: {배율: "+46%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「천도가 변해 만물도 따라, 본성과 운명 올곧게 세우니」"
+    text: "강공격 시 「귀신의 가호」 획득. 공명 해방 후 HP에 비례해 공격력 추가(음양상생, 15초)."
+  - id: chain-4
+    section: chain
+    name: "4체인 「거짓과 참을 가리지 못해, 사람과 귀신 경계가 사라져」"
+    text: "파티원이 실드를 얻으면 파티 전체 속성 피해 +20%(30초)."
+    values: {파티 속성 피해: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「처음을 짚어 끝을 헤아려, 삶과 죽음의 깨달음 얻으니」"
+    text: "치명상 시 HP 50% 실드(10분에 1회)."
+  - id: chain-6
+    section: chain
+    name: "6체인 「은원을 끝내 매듭 지으며, 이후의 글은 훗날을 기약해」"
+    text: "적이 받는 강공격 피해 +40%, 이매망량 배율 +80%·지속 소환."
+    values: {받는 강공격 피해: "+40%"}
 history:
   - date: null
     version: "3.6"
@@ -22,6 +67,11 @@ sources:
     url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1212
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
   - source: press-kr
     url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
     collectedAt: 2026-09-25

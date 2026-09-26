@@ -1,0 +1,52 @@
+id: lucilla-evaluation
+title: "루실라 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 서브 딜러 (역경의 탑·다수전)" }
+  - { label: "역할", value: "서리(히유키)·에코(시그리카·플로로) 파티 최적 파츠" }
+  - { label: "전용 무기 의존도", value: "서리 모드 낮음, 에코 모드 높음" }
+  - { label: "대체 가능성", value: "히유키 파티는 수수·치사로 7% 안팎 차이" }
+  - { label: "돌파 가치", value: "낮은 편" }
+  - { label: "국내 성능 만족도", value: "8.31/10 (3.4 채널 설문)" }
+summary: "히유키·시그리카·플로로의 최적 파츠로 평가되지만, 히유키 파티는 수수·치사로도 대체 가능하다는 의견이 많다."
+positive:
+  - "조작이 매우 쉽고(입력 5번) 에너지 요구가 없다 (Prydwen)."
+  - "히유키·플로로 최강 파티의 일원 (Prydwen)."
+negative:
+  - "모드마다 에코 세트가 달라 최대 3세트를 맞춰야 한다 (Prydwen)."
+  - "히유키 파티에 필수는 아니다 — 수수·치사와 차이 7% 안팎 (Reddit)."
+  - "퀵스왑이 어렵다 (Prydwen)."
+divided:
+  - position: "히유키 보유자는 필수"
+    reasons:
+      - "히유키 최고 성적 파티가 루실라·수수 (Prydwen)"
+  - position: "수수가 먼저"
+    reasons:
+      - "수수가 더 범용적인 서포터라는 의견 (Reddit)"
+subjects: [resonators/lucilla]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/lucilla
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0, 장단점"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1u7k6mv/is_lucilla_a_must_have_for_hiyuki/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1u56lmv/how_important_is_lucillas_weapon_in_a_hiyuki_team/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1wgwftp/should_i_pull_lucilla_or_save_for_another_s6_carry/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/176126002
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.4 설문: 성능 8.31"
+updatedAt: 2026-09-26

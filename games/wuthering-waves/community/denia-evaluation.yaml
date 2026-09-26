@@ -1,0 +1,53 @@
+id: denia-evaluation
+title: "데니아 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: strong
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 서브 딜러 (역경의 탑 기준)" }
+  - { label: "역할", value: "불꽃(에이메스)·조화 밀집(청초·루크) 파티 전용 최적 파츠" }
+  - { label: "전용 무기 의존도", value: "조화 밀집 모드에서 높음" }
+  - { label: "범용성", value: "낮음 — 2가지 파티 전용" }
+  - { label: "돌파 가치", value: "2돌에서 크게 상승" }
+  - { label: "국내 성능 만족도", value: "8.65/10 (3.3 채널 설문)" }
+summary: "에이메스(불꽃)·청초·루크(조화 밀집) 파티의 대체 불가 파츠로 평가된다. 대신 그 파티가 없으면 쓸 곳이 거의 없다."
+shift:
+  release: "에이메스·루크 전용 파츠"
+  now: "청초까지 3명 딜러의 필수 파츠"
+  reason: "3.6 청초 출시로 \"청초는 데니아 없이 갈 곳이 없다\"는 평가가 나오며 가치가 올랐다 (Reddit)."
+positive:
+  - "자기 딜·전문 버프·빠른 로테이션을 모두 갖춘 최상급 서브 딜러 (Prydwen)."
+  - "상시 몰이로 단일 딜러도 다수전에 강해진다 (Prydwen)."
+negative:
+  - "불꽃·조화 밀집 두 파티 외에는 쓸 곳이 없다 — 에이메스·루크가 없으면 비추천 (Reddit 346추천 글)."
+  - "조화 밀집 모드에서는 전용 무기와 모니에가 사실상 필수 (Prydwen)."
+  - "파티마다 에코 세트를 따로 맞춰야 한다 (Prydwen)."
+subjects: [resonators/denia]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/denia
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0, 장단점"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1sv5scf/is_denia_good_without_aemeath_or_luuk/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1ti71r8/how_valuableneeded_is_denia/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1wa6syb/i_heard_denia_its_her_last_banner_should_i_get/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vy0lvj/pulled_qingxiao_should_i_get_her_weap_or_denia/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/173050935
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.3 설문: 성능 8.65"
+updatedAt: 2026-09-26

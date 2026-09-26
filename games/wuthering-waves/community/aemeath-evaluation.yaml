@@ -1,0 +1,67 @@
+id: aemeath-evaluation
+title: "에이메스 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: strong
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 (역경의 탑 기준)" }
+  - { label: "파티 순위", value: "최상위 — 조화 파동·불꽃·단일 용융 3가지 파티 모두 메타" }
+  - { label: "전용 무기 의존도", value: "중간 — 대체 무기로도 85% 수준" }
+  - { label: "파티 의존도", value: "중간 — 린네·모니에 / 데니아 / 루파 중 선택" }
+  - { label: "돌파 가치", value: "3돌 이상에서 큼, 1돌은 편의" }
+  - { label: "국내 성능 만족도", value: "9.61/10 (3.5 채널 설문)" }
+summary: "3.x 최고 인기·최상위 딜러로 평가된다. 파티 선택지가 넓고 전용 무기 의존도도 비교적 낮다."
+shift:
+  release: "성능 만족도 9.45/10 (3.1 설문)"
+  now: "9.61/10 (3.5 설문), 여전히 T0"
+  reason: "후발 딜러(경연 등) 이후에도 불꽃(데니아) 파티가 광역 최강으로 평가돼 위상이 유지됐다 (Reddit, Prydwen)."
+positive:
+  - "세 가지 파티 방식 모두에서 메타 성능을 낸다 (Prydwen)."
+  - "불꽃 모드는 현재 최강 광역 딜러라는 평가 (Reddit)."
+  - "국내 채널 풀돌 비율 43.6% — 압도적 인기 (아카라이브 설문)."
+negative:
+  - "근접 평타가 맞아야 자원이 차서, 적이 날아다니면 로테이션이 길어진다 (Prydwen)."
+  - "콘텐츠별 최적을 쓰려면 프리미엄 파티 2개가 필요하다 (Prydwen)."
+  - "연출(컷신) 위주 플레이가 호불호 (Reddit)."
+divided:
+  - position: "1돌이면 충분"
+    reasons:
+      - "1돌은 다수전 편의(몰이)와 약 7% 상승 — 멈추기 좋은 지점이라는 의견 (Reddit)"
+  - position: "3돌까지 가야 의미"
+    reasons:
+      - "1돌 딜 상승은 작고 3돌부터 체감이 크다 (Reddit)"
+subjects: [resonators/aemeath]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/aemeath
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0, 장단점"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "9/10 변경 내역: 에이메스 T0 유지 언급"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1qwj40m/is_s1_aemeath_a_good_stopping_point/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1w2l0ck/is_aemeath_still_worth_getting/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vioknf/aemeaths_sig_or_qingxiaos_sig/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/164965726
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.1 설문: 성능 9.45, 풀돌 41%"
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/180186371
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.5 설문: 성능 9.61, 풀돌 43.6%"
+updatedAt: 2026-09-26

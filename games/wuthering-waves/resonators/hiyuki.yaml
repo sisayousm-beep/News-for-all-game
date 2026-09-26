@@ -1,0 +1,80 @@
+id: hiyuki
+title: 히유키
+aliases: ["Hiyuki"]
+summary: "아시노하라에서 온 타오르는 벚꽃의 무녀. 현재 유일무이한 특별 대책반 멤버로 라하이 로이에 머물고 있다"
+attributes:
+  rarity: 5
+  element: glacio
+  weapon: sword
+  version: "3.3"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,300", 공격력: "462.5", 방어력: "1,112.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「서리의 징벌」"
+    values: {쿨타임: "20초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「끌어온 내 가능성」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「오지 않는 봄이여」"
+    text: "선견력 계열 공격 배율 +120%. 3단 범위 확대·끌어당김, 4·5단 경직 저항."
+    values: {배율: "+120%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「고요히 타오르는 얼음의 불꽃」"
+    text: "거합 배율 +125%. 비전투 4초 후 「서리 단조 · 납도」 3pt 회복."
+    values: {거합 배율: "+125%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「공허한 몸에 깃든 무한한 가능성」"
+    text: "강공격 서리 결정·서리 나무 배율 +160%. 편성 시 「눈의 침식」 1스택 즉시 획득."
+    values: {배율: "+160%"}
+  - id: chain-4
+    section: chain
+    name: "4체인 「물결 사이에 떠다니는 갈대처럼」"
+    text: "특정 스킬 발동 시 파티 피해 +20%(30초), HP 18% 회복."
+    values: {파티 피해: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「무수한 기도와 소원이 와도」"
+    text: "현세의 나·찰나의 백옥빛·낙화 배율 +80%."
+  - id: chain-6
+    section: chain
+    name: "6체인 「설령 그 끝이 영원한 밤 속에서 기다린다 해도」"
+    text: "독심·납도 크리티컬 피해 +500%. 파티원이 서리 효과를 부여할 때마다 추가 이상 효과 피해."
+    values: {크리티컬 피해: "+500%"}
+history:
+  - date: null
+    version: "3.3"
+    kind: release
+    summary: "3.3 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [눈 속에 비친 무수한 미래]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.3 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.3 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1108
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/hiyuki.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/feixue-842a8cb5.webp
+updatedAt: 2026-09-26

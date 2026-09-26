@@ -1,0 +1,79 @@
+id: aemeath
+title: 에이메스
+aliases: ["Aemeath"]
+summary: "스타토치 아카데미 라벨 학부의 엑소스트라이더 적격자, 지금은 별바다를 떠돌며 노래하는 전자 유령이다"
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: sword
+  version: "3.1"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "11,025", 공격력: "425", 방어력: "1,148.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「함께 떠난 긴 여정」"
+    values: {쿨타임: "1초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「샛별을 향한 비행」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「금빛 가루로 흩뿌려진 첫 새벽」"
+    text: "즉시 대응 상태 강공격 크리티컬 피해 +300%, 차지 중 적 끌어당김. 비전투 4초 후 「즉시 대응 · 찬란한 빛」 획득."
+    values: {강공격 크리티컬 피해: "+300%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「깃털 눈꽃처럼 선율에 실린 마음」"
+    text: "빛나는 날개의 합주(강림·등장) 배율 +100%, 공명 모드별 추가 강화."
+    values: {배율: "+100%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「침묵 속에 처음처럼 타오르는 불꽃」"
+    text: "공명 해방 · 종결 배율 +100%, 과부하 +40%. 강공격이 모드에 맞춰 조화 파동 · 이탈 / 불꽃 효과를 부여."
+  - id: chain-4
+    section: chain
+    name: "4체인 「끝없는 전자 바다에서 추는 춤」"
+    text: "특정 스킬 발동 시 파티 전체 속성 피해 보너스 +20%(30초)."
+    values: {파티 속성 피해: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「별바다 끝에 닿은 영원의 여정」"
+    text: "스킬로 격파 시 자원 리셋. 치명상 시 1회 버티고 파티에 실드(10분에 1회)."
+  - id: chain-6
+    section: chain
+    name: "6체인 「봄바람이 그대의 여정을 축복하리」"
+    text: "적이 받는 공명 해방 피해 +40%. 조화 파동·불꽃 피해가 크리티컬 발생(80%/275% 고정)."
+    values: {받는 공명 해방 피해: "+40%"}
+history:
+  - date: null
+    version: "3.1"
+    kind: release
+    summary: "3.1 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [봄바람을 타고 온 별의 여정]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.1 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.1 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1210
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/aemeath.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/aimisi-c3b418c7.webp
+updatedAt: 2026-09-26

@@ -1,0 +1,78 @@
+id: luuk-herssen
+title: 루크 · 헤르센
+aliases: ["Luuk Herssen"]
+summary: "스타토치 아카데미 공명 보건실의 담당 의사. 똑똑하고 진중하며, 누구도 그가 흐트러진 모습을 본 적이 없다. 그는 타인의 말에 귀를 기울이고, 사람의 마음속 그림자들을 능숙하게 해부해 낸다. 영원히 낫지 않을 상처에서 흐르는 황금피는, 오차 없는 칼날이기도 하다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: gauntlets
+  version: "3.1"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,300", 공격력: "462.5", 방어력: "1,112.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「이곳에 지는 모든 것들, 결국 재회하리니」"
+    values: {쿨타임: "8초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「얼음 속의 의미」"
+    values: {공명 에너지: "125", 쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「잿빛 속에 타오르는 금빛」"
+    text: "공중 공격 피해 보너스 +150%, 「햇살의 비호」 최대 스택 +1."
+    values: {공중 공격 피해: "+150%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「끊이지 않고 펼쳐지는 눈사태」"
+    text: "공명 해방 배율 +60%. 조화 밀집 · 간섭 대상 피해 부스트가 최대 60%까지 강화."
+  - id: chain-3
+    section: chain
+    name: "3체인 「그대의 의지를 일깨우는 금비」"
+    text: "황금의 재량 상태 햇무리 참살과 후속 공격 배율 +136%."
+    values: {배율: "+136%"}
+  - id: chain-4
+    section: chain
+    name: "4체인 「얼어붙은 땅 아래에도, 새 생명은 움트니」"
+    text: "조화도 파괴 후 파티 피해 +20%(20초)."
+    values: {파티 피해: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「눈보라가 만든 침묵의 장을 지나」"
+    text: "변주·반주 피해 +80%. 되살아난 금빛의 흐름 배율 +50%·쿨타임 -2초·사용 횟수 +1."
+  - id: chain-6
+    section: chain
+    name: "6체인 「빙원 위, 끝없이 펼쳐진 새벽빛」"
+    text: "조화도 파괴 시 적이 받는 주요 스킬 피해 +30%, 공명 해방 피해 보너스 최대 +120%."
+history:
+  - date: null
+    version: "3.1"
+    kind: release
+    summary: "3.1 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [기나긴 겨울을 넘어]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.1 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.1 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1510
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/luuk-herssen.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/luhesi-ef057603.webp
+updatedAt: 2026-09-26

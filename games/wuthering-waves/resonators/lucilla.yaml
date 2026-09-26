@@ -1,0 +1,77 @@
+id: lucilla
+title: 루실라
+aliases: ["Lucilla"]
+summary: "스타토치 아카데미의 교장 루실라. 현실적인 이상주의자. 묵묵히 학생들의 뒤를 지키며, 그들이 하늘에 도전하는 모습을 바라본다"
+attributes:
+  rarity: 5
+  element: glacio
+  weapon: rectifier
+  version: "3.4"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,237.5", 공격력: "375", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「환상 프레임」"
+    values: {쿨타임: "16초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「생생한 기억」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「아득한 한낮」"
+    text: "포커스 링 즉시 완성. 팔로우 스폿 후 크리티컬 +20%(10초), 주요 스킬 경직 저항."
+    values: {크리티컬: "+20%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「깊이 잠든 달빛」"
+    text: "공명 해방 시 모드별 강화 — 서리: 적이 받는 서리 효과 피해 +80%, 에코: 파티 에코 어빌리티 피해 +40%."
+    values: {서리 효과 피해: "+80%", 에코 어빌리티 피해: "+40%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「소리 없는 곳에서 사라지는 시간」"
+    text: "내려놓기 배율 +100%."
+  - id: chain-4
+    section: chain
+    name: "4체인 「고요히 침묵하는 과거」"
+    text: "망각 명중 시 끌어당김·공격력 스택(최대 +30%). 받는 피해 -30%."
+  - id: chain-5
+    section: chain
+    name: "5체인 「시냇물 같은 세월」"
+    text: "망각 배율 +50%."
+  - id: chain-6
+    section: chain
+    name: "6체인 「아지랑이 같은 시간 속 바라보는 시선」"
+    text: "「명심」 스택으로 내려놓기 피해 최대 +600%."
+history:
+  - date: null
+    version: "3.4"
+    kind: release
+    summary: "3.4 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [내일에 인화될 기억]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.4 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.4 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1109
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/lucilla.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/luosela-22bd666e.webp
+updatedAt: 2026-09-26

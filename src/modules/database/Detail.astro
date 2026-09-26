@@ -33,7 +33,10 @@ const talkCards = unique(talk).sort((a, b) => COMMUNITY_KINDS.indexOf(a.record.k
 // "한눈에 보기": the top calculation's answer, then the headline verdicts of the top community record (kind order: evaluation first).
 const glance = [
   ...calcCards.slice(0, 1).map((l) => ({ layer: 'analysis' as const, label: analysisKind[l.record.kind], value: l.record.results[0], href: anchor('analysis', l.record.id) })),
-  ...talkCards.slice(0, 1).flatMap((l) => l.record.verdicts.map((v) => ({ layer: 'community' as const, label: v.label, value: v.value, href: anchor('community', l.record.id) }))),
+  ...talkCards.slice(0, 1).flatMap((l) => [
+    ...l.record.verdicts.map((v) => ({ layer: 'community' as const, label: v.label, value: v.value, href: anchor('community', l.record.id) })),
+    ...(l.record.shift ? [{ layer: 'community' as const, label: '평가 변화', value: `출시 ${l.record.shift.release} → 현재 ${l.record.shift.now}`, href: anchor('community', l.record.id) }] : []),
+  ]),
 ];
 const sections = mod.sections.map((s) => ({ ...s, topics: r.topics.filter((t) => t.section === s.key) })).filter((s) => s.topics.length);
 const has = (layer: string) => modulesOf(game).some((m) => layerOf(m) === layer);

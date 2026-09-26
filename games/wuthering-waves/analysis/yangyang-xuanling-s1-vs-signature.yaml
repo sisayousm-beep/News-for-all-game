@@ -1,0 +1,48 @@
+id: yangyang-xuanling-s1-vs-signature
+title: "양양 · 현령 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+results:
+  - "명전이 더 좋다. 전용 무기 없는 1돌은 명전 딜의 약 82~97%이고, 평균 뽑기도 명전(약 139회)이 1돌(약 167회)보다 적다."
+  - "전용 무기(아득히 푸른 하늘)는 대체 5성 대비 +14%, 1돌은 명함 대비 +10.5%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 6돌(직전 대비 +63%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100 }
+    - { label: 1돌, value: 110.5 }
+    - { label: 2돌, value: 127.77 }
+    - { label: 3돌, value: 155.56 }
+    - { label: 4돌, value: 165.64 }
+    - { label: 5돌, value: 165.64 }
+    - { label: 6돌, value: 269.8 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 아득히 푸른 하늘 (명전)", "100%", "139회"]
+    - ["1돌 + 푸른 의지 (대체 5성)", "약 97%", "167회 + 무기"]
+    - ["1돌 + 천공의 광경 (4성)", "약 82%", "167회"]
+    - ["명함 + 푸른 의지", "약 88%", "83회"]
+    - ["1돌 + 아득히 푸른 하늘", "약 110%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(3.6, 1타겟, 치사·수수 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(아득히 푸른 하늘 100%, 푸른 의지 88.0%, 천공의 광경 74.3%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "치사·수수 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/yangyang-xuanling, resonators/yangyang-xuanling#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/yangyang-xuanling
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭, 3.6 갱신"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-26
