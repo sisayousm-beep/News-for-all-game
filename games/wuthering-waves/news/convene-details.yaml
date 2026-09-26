@@ -1,0 +1,15 @@
+id: convene-details
+title: 튜닝 상세정보 — 5성 확률·천장·픽업 보장 규칙
+category: notice
+publishedAt: 2024-05-22
+summary: >-
+  캐릭터 이벤트 튜닝의 5성 기본 확률은 0.8%, 천장 포함 종합 확률은 1.8%이며 최대 80회 튜닝 시 5성을 1개 얻는다.
+  5성을 얻으면 50% 확률로 픽업(UP) 캐릭터이고, 픽업이 아니었다면 다음 5성은 반드시 픽업 캐릭터다.
+  무기 이벤트 튜닝도 기본 0.8%·종합 1.8%·80회 천장이며, 5성 무기는 항상 픽업 무기다. 천장 횟수는 같은 종류의 이벤트 튜닝끼리 이어진다.
+tags: [튜닝, 확률, 천장]
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

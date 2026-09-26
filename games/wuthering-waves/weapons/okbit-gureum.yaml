@@ -1,0 +1,42 @@
+id: okbit-gureum
+title: 옥빛 구름
+aliases: [Glint of Clouds]
+summary: 3.6 버전 5성 직검. 청초와 같은 시기에 무기 이벤트 튜닝으로 출시됐다.
+attributes:
+  rarity: 5
+  type: sword
+  version: "3.6"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "500", 크리티컬: 36% }
+  - id: passive
+    section: passive
+    name: 패시브 (재련 1~5)
+    text: >-
+      공격력 증가. 「조화 밀집 · 이탈」을 부여하면 기류 피해 보너스가 2초간 증가하며 최대 5스택(0.5초에 1회).
+      5스택에 도달하면 지속 시간이 30초로 늘고, 그동안 기류 피해가 적의 방어력 일부를 무시한다.
+    values: { 공격력: 12~24%, 기류 피해 보너스(스택당): 11.2~22.4%, 방어력 무시: 10~20% }
+history:
+  - date: 2026-08-20
+    version: "3.6"
+    kind: release
+    summary: 3.6 버전 전반부 무기 이벤트 튜닝으로 출시 (3.6 업데이트 ~ 2026년 9월 10일 09:59, 서버 시간). 5성 무기 획득 시 반드시 옥빛 구름.
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5332
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 한국어 명칭·무기 종류·획득 경로
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020106
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·패시브 수치
+updatedAt: 2026-09-26

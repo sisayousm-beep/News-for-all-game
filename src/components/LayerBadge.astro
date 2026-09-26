@@ -1,0 +1,8 @@
+---
+/** Which information layer a block belongs to: 공식 / 계산 / 커뮤니티. Always text, never color alone. */
+import type { Layer } from '../core/schema';
+import { layer as labels } from '../i18n/ko';
+interface Props { layer: Layer }
+const { layer } = Astro.props;
+---
+<span class="layer-badge" data-layer={layer} title={labels[layer].note}>{labels[layer].label}</span>

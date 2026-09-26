@@ -1,0 +1,31 @@
+id: v3-6-banner-phase1
+title: 3.6 전반부 픽업 — 청초 · 옥빛 구름
+kind: banner
+start: 2026-08-20T12:00:00+09:00
+startNote: 3.6 버전 업데이트 후
+end: 2026-09-10T09:59:00+08:00
+endNote: "공지 표기: 2026-09-10 09:59 (server time) — 아시아 서버 UTC+8 기준으로 환산"
+version: "3.6"
+summary: >-
+  캐릭터 이벤트 튜닝 [물빛 하늘 아래 흩날리는 선인의 그림자](5성 청초 확률 UP, 4성 양양·설지·산화)와
+  무기 이벤트 튜닝(5성 옥빛 구름 확정)이 함께 진행됐다.
+subjects: [resonators/cheongcho, weapons/okbit-gureum]
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5331
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5332
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: encore-db
+    url: https://api.encore.moe/ko/character
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 4성 공명자 한국어 명칭(Yangyang·Baizhi·Sanhua = 양양·설지·산화)
+updatedAt: 2026-09-26

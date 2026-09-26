@@ -1,0 +1,25 @@
+id: v3-7
+title: 「거울에 잠긴 허상, 마음이 비추는 인간 세상」
+aliases: ["Prism's Illusion, Heart's Illumination"]
+version: "3.7"
+start: 2026-09-30T05:00:00+09:00
+end: null
+summary: >-
+  2026년 9월 30일 업데이트 예정(점검 05:00~12:00, 한국 시간). 신규 5성 공명자 여우의 별자리(전반부)와
+  쇄명(후반부)이 공개됐다. 한국어 버전명은 한국 공식 X 게시물 기준.
+highlights:
+  - "신규 5성 공명자: 여우의 별자리(전도·증폭기, 전반부), 쇄명(전도·직검, 후반부)"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5454
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5476
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: official-x-kr
+    url: https://x.com/WW_KR_Official/status/2101268817095844331
+    collectedAt: 2026-09-25
+    note: 한국어 버전명
+updatedAt: 2026-09-26

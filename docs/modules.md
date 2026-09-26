@@ -8,12 +8,19 @@
 | `news` | `NewsRecord` | 공지, 패치노트, 업데이트 소식 | `/news/`, 대시보드 최신 소식 |
 | `schedule` | `EventRecord` | 이벤트, 점검, 픽업, 시즌 | `/schedule/`, 대시보드 일정 |
 | `database` | `EntityRecord` | 캐릭터, 직업, 보스, 아이템, 무기 | 대시보드 "최근 데이터 변경" |
+| `version` | `VersionRecord` | 게임 버전·시즌 (공식 내용 + 그 버전의 계산·여론) | 게임 홈 "지금 버전" |
+| `codes` | `CodeRecord` | 리딤 코드 (사용 가능 / 지난 코드) | 게임 홈 |
+| `analysis` | `AnalysisRecord` | **계산·통계** 단계 | 공식 레코드 페이지에 연결 |
+| `community` | `CommunityRecord` | **여론·커뮤니티** 단계 | 공식 레코드 페이지에 연결 |
+
+모듈 타입이 정보 단계를 정합니다(`LAYER_OF`): `analysis` = 계산, `community` = 커뮤니티, 나머지 = 공식. → [information-layers.md](information-layers.md)
 
 `database` 한 타입으로 대부분의 게임별 DB를 표현합니다:
 
 ```yaml
 # 명조
-- { type: database, id: resonators, label: 공명자, collection: resonators, fields: [등급, 속성, 무기, 출시 버전] }
+- { type: database, id: resonators, label: 공명자, collection: resonators, fields: [등급, 속성, 무기, 출시 버전],
+    sections: [기본 능력치, 스킬, 공명 체인] }   # 상세 페이지의 공식 하위 항목(topics) 묶음
 # (예) 메이플스토리 — 아직 미구현
 - { type: database, id: jobs, label: 직업, collection: jobs, fields: [계열, 주스탯, 출시일] }
 - { type: database, id: bosses, label: 보스, collection: bosses, fields: [난이도, 입장 레벨, 주간/월간] }

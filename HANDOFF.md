@@ -1,7 +1,7 @@
 # HANDOFF — 다음 세션 인수인계
 
 > 새 세션의 AI는 **이 파일 → AGENTS.md → README.md** 순서로 읽고 시작한다.
-> 작성: 2026-09-26 · 브랜치 `claude/continue-task-l21f96`
+> 작성: 2026-09-26 · 최근 브랜치 `claude/wuthering-waves-info-structure-nvczn3`
 
 ## 1. 사용자(고용주)와 일하는 방식 — 반드시 지킬 것
 
@@ -43,6 +43,12 @@
   메이플 키비주얼은 9월 업데이트 프로모션의 하늘 배경 + 아르고 호 이미지를 합성한 것. 쇄명 이미지는 3.7 미리보기 공지(이름 표기 확인)에서 잘라냄.
   자동 업데이트 작업도 이미지를 저장하도록 규칙 추가(docs/ai-update-rules.md), `npm run scope`가 `public/games/<game>/img/<collection>/` 허용.
 
+- 2026-09-26 **정보의 3단계 도입**(브랜치 `claude/wuthering-waves-info-structure-nvczn3`) — 사용자가 정한 프로젝트 핵심 이론.
+  공식 / 계산·통계 / 여론·커뮤니티를 모듈 타입으로 분리, `subjects`로 연결, 기준 버전·status로 신선도 관리. 기준 문서 [docs/information-layers.md](docs/information-layers.md).
+  신규 모듈 타입 `version` `codes` `analysis` `community`, DB 상세 `sections`/`topics`. 기존 `analysis` 블록(AI 해석)은 폐지(AI가 평가를 만들지 않는다는 원칙).
+  명조: 버전 2, 무기 1, 이벤트·픽업 8, 리딤 코드 4, 튜닝 확률 공지, 청초 공식 토픽 18, 계산 2, 커뮤니티 3(디시 명조 갤러리 글 25개 직접 열람). 기염 무기 `null` → 대검(encore DB로 확인).
+  사용자 요구: 정보를 전부 옮기지 말고 **집대성해서 짧게** — 툴팁 전문·게임 외 잡담 금지.
+
 ## 4. 공식 출처 읽는 법 (2026-09-26 확인)
 
 네트워크는 열려 있다. 단 나무위키·fandom·prydwen은 403(차단).
@@ -55,7 +61,12 @@
 | 명조 공명자 한국어 명칭·속성 | `https://wutheringwaves.kurogames.com/static4.0/assets/kr-*.js` 안의 공명자 목록(name, attribute). attribute1 응결 · 2 기류 · 3 용융 · 4 인멸 · 5 회절 · 6 전도 |
 | 명조 픽업 일정 | 한국어 피드에는 최근 픽업 공지가 없음 → 영어 피드의 `Featured Resonator Convene` 글 |
 
-Playwright 브라우저는 프록시 인증서 문제로 실패함 — 위 방법으로 충분.
+| 명조 인게임 문구·수치(스킬, 공명 체인, 무기) | `https://api.encore.moe/ko/character/<id>`, `/ko/weapon/<id>`, 목록 `/ko/character` (출처 `encore-db`, DATABASE) |
+| 명조 튜닝 확률 | 공식 `ko/article/763.json` 「튜닝 상세정보」 |
+| 커뮤니티 (디시 명조 갤) | 검색 `gall.dcinside.com/mgallery/board/lists?id=wutheringwaves&s_type=search_subject_memo&s_keyword=…`(다음 검색은 `search_pos`), 본문 `board/view/?id=wutheringwaves&no=<n>`, 댓글은 `POST /board/comment/`(본문의 `e_s_n_o` 필요). 광고 줄("1/20 이전 다음") 제외 |
+| 차단됨 | reddit, arca.live, NGA, prydwen, fandom (403). 빌리빌리는 검색 API 1~2회 후 차단 |
+
+Playwright: 로컬 미리보기(`astro preview`) 스크린샷은 `executablePath: /opt/pw-browsers/chromium-1194/chrome-linux/chrome`로 동작함(외부 사이트는 프록시 인증서 문제).
 
 ## 5. 남은 미확인 항목
 
@@ -68,6 +79,9 @@ Playwright 브라우저는 프록시 인증서 문제로 실패함 — 위 방�
 | 언론 출처(`press-kr`, `press-en`) | 직접 열람 안 함 → `collectedAt`만 |
 
 ## 6. 다음 세션 할 일 (우선순위 순)
+
+0. 3단계 데이터 확장(사용자에게 우선순위 확인): 에코·에코 세트 모듈, 다른 공명자 토픽, 버전별 획득 별의 소리(계산), 스토리·버전 여론.
+   커뮤니티는 디시 1곳뿐 — 인벤 명조 메인 게시판 주소 확인, 아카라이브·Reddit 접근 방법 필요. 리딤 코드는 공식 출처(한국 공식 X) 확인 필요.
 
 1. 3.7 업데이트(9/30) 이후 한국어 공식 공지로 위 5번 항목 확인.
 2. **자동 최신화 예약 작업 설정** — 시작 전 사용자에게 질문할 것: 실행 주기, 비용 허용 범위, 결과 알림 방식, 자동 커밋 대상 브랜치(main 직접 vs PR 검토).

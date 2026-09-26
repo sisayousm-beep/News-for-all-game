@@ -1,0 +1,23 @@
+---
+/** Reverse link from an analysis/community record to the official records (and topics) it is about. */
+import type { Game } from '../core/load';
+import type { AnyRecord, EntityRecord } from '../core/schema';
+import { gameHref, recordsOf } from '../core/hub';
+import LayerHead from './LayerHead.astro';
+interface Props { game: Game; record: AnyRecord }
+const { game, record } = Astro.props;
+const items = record.subjects.map((ref) => {
+  const [path, topic] = ref.split('#');
+  const [collection, id] = path.split('/');
+  const mod = game.config.modules.find((m) => m.collection === collection)!;
+  const target = recordsOf<EntityRecord>(game, mod).find((r) => r.id === id)!;
+  const t = topic ? target.topics?.find((x) => x.id === topic) : undefined;
+  return { url: gameHref(game, mod.id, id) + (t ? `#t-${t.id}` : ''), label: target.title, sub: t?.name, kind: mod.itemLabel ?? mod.label };
+});
+---
+{items.length > 0 && (
+  <section class="section">
+    <LayerHead layer="official" title="다루는 공식 정보" count={items.length} />
+    <ul class="plain-list subjects">{items.map((i) => <li><span class="meta">{i.kind}</span> <a href={i.url}><b>{i.label}</b>{i.sub && ` · ${i.sub}`}</a></li>)}</ul>
+  </section>
+)}

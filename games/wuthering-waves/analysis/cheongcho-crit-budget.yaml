@@ -1,0 +1,31 @@
+id: cheongcho-crit-budget
+title: 청초 크리티컬 확보량 — 명함과 1돌, 옥빛 구름 기준
+kind: build
+version: "3.6"
+method: >-
+  Game Hub 자체 계산. 공식 수치의 단순 합산: 청초 Lv.90 기본 크리티컬 5% + 옥빛 구름 Lv.90 서브 스탯 크리티컬 36%
+  + 1체인 크리티컬 16%. 스킬 트리 능력치 노드에는 크리티컬이 없다(크리티컬 피해·공격력만).
+assumptions:
+  - 청초 Lv.90, 옥빛 구름 Lv.90 (재련 단계는 서브 스탯에 영향 없음)
+  - 에코 메인·서브 옵션, 화음 효과, 파티 버프는 계산에서 제외
+  - 목표 크리티컬 100%는 커뮤니티에서 자주 언급되는 기준을 입력값으로 쓴 것
+results:
+  - 에코를 제외하면 이 조건에서 명함은 크리티컬 41%, 1돌은 57%를 확보한다.
+  - 크리티컬 100%를 목표로 하면 에코에서 채워야 할 크리티컬이 명함 59%p, 1돌 43%p로, 1돌이 16%p를 대신한다.
+  - 1돌의 추가 피해(공격력 400%)와 호신검광 변화는 이 계산에 포함되지 않는다.
+table:
+  columns: [구성, 크리티컬 (에코 제외), 100%까지 남은 양]
+  rows:
+    - ["명함 + 옥빛 구름", "41%", "59%p"]
+    - ["1돌 + 옥빛 구름", "57%", "43%p"]
+subjects: [resonators/cheongcho#chain-1, resonators/cheongcho#stats-lv90, weapons/okbit-gureum#stats]
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1413
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020106
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

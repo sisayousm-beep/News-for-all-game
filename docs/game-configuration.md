@@ -21,12 +21,13 @@
 
 | 필드 | 설명 |
 |---|---|
-| `type` | `news` \| `schedule` \| `database` |
+| `type` | `news` \| `schedule` \| `database` \| `version` \| `codes` \| `analysis` \| `community` — 타입이 정보 단계를 정함 |
 | `id` | URL 조각. 생략 시 `collection`과 같음. `sources`는 예약어 |
 | `label` | 탭 이름 (예: "공명자", "이벤트 일정") |
 | `collection` | 레코드 폴더 이름 `games/<game>/<collection>/` |
 | `itemLabel` | database: 항목 1개의 명칭 (검색 결과 표시용) |
 | `fields` | database: 게임 고유 속성 목록 |
+| `sections` | database: 상세 페이지의 공식 하위 항목 묶음 `[{ key, label }]` (예: 스킬, 공명 체인). 레코드 `topics[].section`이 참조 |
 
 ### fields 항목 (database)
 

@@ -1,0 +1,12 @@
+id: v3-7-maintenance
+title: 3.7 버전 업데이트 점검
+kind: maintenance
+start: 2026-09-30T05:00:00+09:00
+end: 2026-09-30T12:00:00+09:00
+version: "3.7"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5476
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

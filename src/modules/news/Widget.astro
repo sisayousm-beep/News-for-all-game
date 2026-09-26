@@ -18,7 +18,7 @@ const [lead, ...rest] = items;
     <>
       <a class="feature" style="padding:16px 0 20px;border-bottom:1px solid var(--line)" href={gameHref(game, mod.id, lead.id)}>
         {lead.image && <Thumb game={game} image={lead.image} label={newsCategory[lead.category]} size="banner" />}
-        <span class="kicker"><Provenance game={game} record={lead} />{lead.analysis && <span class="badge ai">AI 분석</span>}<span class="muted">{newsCategory[lead.category]}</span></span>
+        <span class="kicker"><Provenance game={game} record={lead} /><span class="muted">{newsCategory[lead.category]}</span></span>
         <span class="headline">{lead.title}</span>
         {lead.summary && <span class="dek clamp-3">{lead.summary}</span>}
         <span class="meta">{primarySource(game, lead).name}<span class="sep num">{lead.publishedAt ? listDate(lead.publishedAt) : '게시일 미확인'}</span></span>

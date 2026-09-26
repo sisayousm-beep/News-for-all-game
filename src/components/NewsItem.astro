@@ -19,7 +19,6 @@ const url = gameHref(game, mod.id, n.id);
         {showGame && <GameTag game={game} plain />}
         <span>{newsCategory[n.category]}</span>
         <Provenance game={game} record={n} />
-        {n.analysis && <span class="badge ai" title="AI 분석이 함께 제공됩니다">AI 분석</span>}
       </div>
       <a class="headline clamp-2" href={url}>{n.title}</a>
       {!dense && n.summary && <p class="dek clamp-2">{n.summary}</p>}

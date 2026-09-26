@@ -1,0 +1,14 @@
+---
+import type { Game } from '../../core/load';
+import type { CodeRecord, ModuleConfig } from '../../core/schema';
+import { codeStatus, gameHref, recordsOf } from '../../core/hub';
+import LayerBadge from '../../components/LayerBadge.astro';
+import CodeItem from '../../components/CodeItem.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const live = recordsOf<CodeRecord>(game, mod).filter((c) => codeStatus(c) === 'active');
+---
+<section class="section">
+  <div class="section-head"><h2 class="section-title"><LayerBadge layer="official" /> {mod.label}<span class="count">{live.length}</span></h2><a class="more" href={gameHref(game, mod.id)}>지난 코드</a></div>
+  {live.length ? <ul class="code-list">{live.map((c) => <CodeItem game={game} mod={mod} code={c} />)}</ul> : <p class="empty">지금 사용 가능한 코드가 없습니다.</p>}
+</section>

@@ -1,0 +1,30 @@
+---
+/** All versions, newest first, with live status. */
+import type { Game } from '../../core/load';
+import type { ModuleConfig, VersionRecord } from '../../core/schema';
+import { eventStatus, formatDate, gameHref, recordsOf } from '../../core/hub';
+import { eventStatus as statusLabel } from '../../i18n/ko';
+import LayerHead from '../../components/LayerHead.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const items = recordsOf<VersionRecord>(game, mod).sort((a, b) => b.version.localeCompare(a.version, undefined, { numeric: true }));
+---
+<section class="section">
+  <LayerHead layer="official" title={mod.label} count={items.length} />
+  {items.length ? (
+    <ul class="ev-list">
+      {items.map((v) => {
+        const s = eventStatus(v);
+        return (
+          <li data-status={s} data-start={v.start} data-end={v.end ?? undefined}>
+            <a class="ev-row" href={gameHref(game, mod.id, v.id)}>
+              <span class="ev-date"><b>{v.version}</b><small>버전</small></span>
+              <span class="ev-main"><span class="headline">{v.title}</span><span class="meta num">{formatDate(v.start, false)} ~ {v.end ? formatDate(v.end, false) : '종료일 미정'}</span></span>
+              <span class="ev-side"><span class="status" data-status={s}>{statusLabel[s]}</span></span>
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  ) : <p class="empty">아직 등록된 버전이 없습니다.</p>}
+</section>

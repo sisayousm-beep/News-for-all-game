@@ -1,0 +1,83 @@
+---
+/**
+ * Version page in three layers. 공식: period, phases, headline content, and everything official dated inside
+ * the version window (releases/reruns, events, codes, news). 계산 / 커뮤니티: records whose subjects include this version.
+ */
+import type { Game } from '../../core/load';
+import type { ModuleConfig, VersionRecord } from '../../core/schema';
+import { clock, dday, eventStatus, formatDate, gameHref, inVersion, versionsOf } from '../../core/hub';
+import { eventStatus as statusLabel, historyKind } from '../../i18n/ko';
+import LayerHead from '../../components/LayerHead.astro';
+import LayerLinks from '../../components/LayerLinks.astro';
+import Provenance from '../../components/Provenance.astro';
+import EventItem from '../../components/EventItem.astro';
+import NewsItem from '../../components/NewsItem.astro';
+import SourceList from '../../components/SourceList.astro';
+import Media from '../../components/Media.astro';
+interface Props { game: Game; mod: ModuleConfig; record: VersionRecord }
+const { game, mod, record: v } = Astro.props;
+const status = eventStatus(v);
+const inside = inVersion(game, v);
+const others = versionsOf(game).filter((x) => x.record.id !== v.id);
+const when = (s: string | null) => (s ? `${formatDate(s, false)}${clock(s) && ` ${clock(s)}`}` : '미정');
+---
+<div class="layout">
+  <article class="article" data-start={v.start} data-end={v.end ?? undefined}>
+    <div class="article-kicker"><span>버전 {v.version}</span><Provenance game={game} record={v} /></div>
+    <h1 class="article-title">{v.title}</h1>
+    <Media image={v.image} from={v.imageFrom} />
+    <dl class="facts-grid num">
+      <div><dt>상태</dt><dd><span class="status" data-status={status}>{statusLabel[status]}</span></dd></div>
+      <div><dt>남은 기간</dt><dd class="dday" data-dday>{dday(v)}</dd></div>
+      <div><dt>시작</dt><dd>{when(v.start)}</dd></div>
+      <div><dt>종료</dt><dd>{when(v.end)}</dd></div>
+    </dl>
+    {v.summary && <p class="article-lead">{v.summary}</p>}
+
+    <section class="section">
+      <LayerHead layer="official" title="이번 버전 공식 내용" />
+      {v.highlights.length > 0 && <ul class="plain-list">{v.highlights.map((h) => <li>{h}</li>)}</ul>}
+      {v.phases.length > 0 && (
+        <dl class="facts" style="margin-top:8px">{v.phases.map((p) => <><dt>{p.name}</dt><dd class="num">{when(p.start)} ~ {when(p.end)}</dd></>)}</dl>
+      )}
+    </section>
+
+    {inside.changes.length > 0 && (
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">출시 · 복각<span class="count">{inside.changes.length}</span></h2></div>
+        <ul class="plain-list">{inside.changes.map((c) => <li><span class="badge outline">{historyKind[c.entry.kind]}</span> <a href={gameHref(game, c.mod.id, c.record.id)}><b>{c.record.title}</b></a> <span class="meta">{c.entry.summary}</span></li>)}</ul>
+      </section>
+    )}
+    {inside.events.length > 0 && (
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">이벤트 · 픽업 일정<span class="count">{inside.events.length}</span></h2></div>
+        <ul class="ev-list">{inside.events.map((t) => <EventItem game={game} mod={t.mod} event={t.record} />)}</ul>
+      </section>
+    )}
+    {inside.codes.length > 0 && (
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">리딤 코드<span class="count">{inside.codes.length}</span></h2></div>
+        <ul class="plain-list">{inside.codes.map((t) => <li><a href={gameHref(game, t.mod.id, t.record.id)}><code>{t.record.code}</code></a> <span class="meta">{t.record.rewards.join(', ')}</span></li>)}</ul>
+      </section>
+    )}
+    {inside.news.length > 0 && (
+      <section class="section">
+        <div class="section-head"><h2 class="section-title">관련 공지<span class="count">{inside.news.length}</span></h2></div>
+        <ul class="news-list dense">{inside.news.map((t) => <NewsItem game={game} mod={t.mod} news={t.record} dense />)}</ul>
+      </section>
+    )}
+
+    <LayerLinks game={game} target={`${mod.collection}/${v.id}`} />
+
+    <section class="section">
+      <div class="section-head"><h2 class="section-title">출처 · 검증</h2></div>
+      <SourceList game={game} refs={v.sources} />
+    </section>
+  </article>
+  <div class="aside aside-sticky">
+    <section class="section">
+      <div class="section-head"><h2 class="section-title">다른 버전</h2><a class="more" href={gameHref(game, mod.id)}>전체</a></div>
+      {others.length ? <ul class="plain-list">{others.map((o) => <li><a href={gameHref(game, o.mod.id, o.record.id)}><b class="num">{o.record.version}</b> {o.record.title}</a></li>)}</ul> : <p class="empty">다른 버전이 없습니다.</p>}
+    </section>
+  </div>
+</div>

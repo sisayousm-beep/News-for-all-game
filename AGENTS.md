@@ -8,11 +8,14 @@
 관심 있는 모든 게임의 유용한 정보를 한 사이트에서. 정보를 **수집·구조화·연결·최신화**하되, 모든 사실은 원문 출처로 추적 가능해야 한다.
 단순 뉴스 사이트나 위키로 축소하지 않는다. 게임마다 정보 구조가 다르다(Shared Core + Game-specific Modules).
 
+**모든 정보는 3단계 중 하나다: 공식 / 계산·통계 / 여론·커뮤니티.** 한 레코드에 섞지 않는다 → [docs/information-layers.md](docs/information-layers.md) 필독.
+
 ## 어디를 고치나
 
 | 하고 싶은 일 | 수정 위치 |
 |---|---|
 | 뉴스·이벤트·캐릭터 데이터 추가/수정 | `games/<game>/<collection>/<id>.yaml` 만 |
+| 계산·통계 / 커뮤니티 여론 추가 | `games/<game>/analysis/`, `games/<game>/community/` (+ `subjects`로 공식 레코드에 연결) |
 | 게임의 탭/필드/출처/작업 변경 | `games/<game>/game.yaml` |
 | 새 게임 추가 | `games/_template/` 복사 → [docs/adding-a-game.md](docs/adding-a-game.md) |
 | 데이터 형식 변경 | `src/core/schema.ts` (+ `docs/data-schemas.md`) |
@@ -26,11 +29,14 @@
 1. **출처 없는 사실 금지.** 모든 레코드에 `sources` 1개 이상. URL은 `game.yaml`에 등록된 출처의 `domains`에 속해야 한다.
 2. **추측 금지.** 확인 못 한 값은 `null`, 게시일 모르면 `publishedAt: null`, 종료일 모르면 `end: null`.
 3. **확실성 표시.** 공식/언론/DB/위키 출처가 없으면 `certainty: reported`(전언) 또는 `speculative`(유출·예측).
-4. **분석은 분리.** 해석·평가·요약 의견은 `analysis` 블록에만(`author: ai:<모델>`), 사실 필드에 섞지 않는다.
+4. **3단계 분리.** 공식 레코드에는 공식 정보만. 계산 결과는 `analysis` 모듈(계산 조건 `assumptions`·방법 `method` 필수, "이 조건에서 약 …"),
+   커뮤니티 의견은 `community` 모듈("…라는 의견이 많다"). **AI가 평가를 지어내지 않는다** — 실제 글에서 반복되는 의견만 요약.
+   요약은 짧게: 스킬 툴팁 전문·게임 외 잡담을 옮기지 않는다.
 5. **덮어쓰기보다 이력.** 캐릭터 조정·복각 등 의미 있는 변화는 `history`에 항목을 **추가**한다.
 6. **범위 제한.** 업데이트 작업 하나는 자기 컬렉션 폴더만 수정한다: `npm run scope -- <job-id>`.
 7. **id는 영구.** 파일명 = `id` = URL. 한 번 만든 id는 바꾸지 않는다.
 8. **`verifiedAt`은 원문을 직접 열어 확인했을 때만** 쓴다. 검색 결과 요약만 봤다면 `collectedAt`만.
+9. **기준 버전.** 계산·커뮤니티 레코드는 `version` 필수. 패치로 전제가 바뀌면 삭제 말고 `status: outdated`.
 
 ## 업데이트 작업 절차 (요약)
 

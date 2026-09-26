@@ -25,16 +25,3 @@ sources:
 image: /games/wuthering-waves/img/news/version-3-7-announcement.webp
 imageFrom: https://hw-media-cdn-mingchao.kurogame.com/object/1790006400000/m39h4r47zx7muv6xlk-1790072631821.jpg
 updatedAt: 2026-09-26
-analysis:
-  author: ai:claude
-  generatedAt: 2026-09-25
-  text: >-
-    3.7의 신규 5성 두 명이 모두 전도 속성이라, 커뮤니티에서는 두 캐릭터를 함께 쓰는 전도 파티가
-    이번 버전의 핵심 조합이 될지에 관심이 모이고 있다. 실제 성능 평가는 출시 이후 다시 확인이 필요하다.
-  basedOn:
-    - source: inven-board
-      url: https://www.inven.co.kr/board/party/6196/3049
-      collectedAt: 2026-09-25
-    - source: press-en
-      url: https://fandomwire.com/wuthering-waves-reveals-hsin-suoming-version-3-7/
-      collectedAt: 2026-09-25

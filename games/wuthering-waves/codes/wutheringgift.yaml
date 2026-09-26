@@ -1,0 +1,14 @@
+id: wutheringgift
+title: WUTHERINGGIFT
+code: WUTHERINGGIFT
+certainty: reported
+rewards: [별의 소리 ×50, 셸 코인 ×15000, "Premium Resonance Potion ×2", "Medium Revival Inhaler ×2", "Medium Energy Bag ×2"]
+start: null
+end: null
+summary: 만료 공지가 없는 상시 코드로 알려져 있다. 공식 원문은 아직 찾지 못했다(공략 사이트 기준). 일부 보상명은 출처의 영문 표기.
+sources:
+  - source: game8
+    url: https://game8.co/games/Wuthering-Waves/archives/453149
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26

@@ -1,0 +1,23 @@
+---
+/** One redeem code row: code (copy button), rewards, status, expiry. Status is computed at build time (the site rebuilds daily). */
+import type { Game } from '../core/load';
+import type { CodeRecord, ModuleConfig } from '../core/schema';
+import { codeStatus, gameHref, listDate } from '../core/hub';
+import { codeStatus as statusLabel } from '../i18n/ko';
+import Provenance from './Provenance.astro';
+interface Props { game: Game; mod: ModuleConfig; code: CodeRecord }
+const { game, mod, code: c } = Astro.props;
+const s = codeStatus(c);
+---
+<li class="code-row" data-code-status={s}>
+  <div class="code-main">
+    <a href={gameHref(game, mod.id, c.id)}><code>{c.code}</code></a>
+    <span class="meta">{c.rewards.join(', ')}</span>
+  </div>
+  <div class="code-side">
+    <span class="code-status" data-s={s}>{statusLabel[s]}</span>
+    <span class="meta num">{c.end ? `${listDate(c.end)} 만료` : '만료일 공지 없음'}</span>
+    {c.certainty !== 'confirmed' && <Provenance game={game} record={c} />}
+    {s !== 'expired' && <button class="btn btn-sm" type="button" data-copy={c.code}>복사</button>}
+  </div>
+</li>

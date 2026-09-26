@@ -1,0 +1,20 @@
+---
+/** Redeem codes: usable ones first (with copy), expired ones kept as history. */
+import type { Game } from '../../core/load';
+import type { CodeRecord, ModuleConfig } from '../../core/schema';
+import { codeStatus, recordsOf } from '../../core/hub';
+import LayerHead from '../../components/LayerHead.astro';
+import CodeItem from '../../components/CodeItem.astro';
+interface Props { game: Game; mod: ModuleConfig }
+const { game, mod } = Astro.props;
+const all = recordsOf<CodeRecord>(game, mod).sort((a, b) => (b.start ?? '').localeCompare(a.start ?? ''));
+const live = all.filter((c) => codeStatus(c) !== 'expired'), old = all.filter((c) => codeStatus(c) === 'expired');
+---
+<section class="section">
+  <LayerHead layer="official" title="사용 가능한 코드" count={live.length} />
+  {live.length ? <ul class="code-list">{live.map((c) => <CodeItem game={game} mod={mod} code={c} />)}</ul> : <p class="empty">지금 사용 가능한 코드가 없습니다.</p>}
+</section>
+<section class="section" style="margin-top:32px">
+  <div class="section-head"><h2 class="section-title">지난 코드<span class="count">{old.length}</span></h2><span class="meta">만료된 코드도 기록으로 남깁니다</span></div>
+  {old.length ? <ul class="code-list">{old.map((c) => <CodeItem game={game} mod={mod} code={c} />)}</ul> : <p class="empty">기록이 없습니다.</p>}
+</section>

@@ -6,7 +6,7 @@ import { eventKind, eventStatus as statusLabel } from '../../i18n/ko';
 import Provenance from '../../components/Provenance.astro';
 import GameTag from '../../components/GameTag.astro';
 import SourceList from '../../components/SourceList.astro';
-import Analysis from '../../components/Analysis.astro';
+import LayerLinks from '../../components/LayerLinks.astro';
 import EventItem from '../../components/EventItem.astro';
 import Media from '../../components/Media.astro';
 interface Props { game: Game; mod: ModuleConfig; record: EventRecord }
@@ -26,11 +26,12 @@ const others = recordsOf<EventRecord>(game, mod).filter((x) => x.id !== e.id && 
       <div><dt>종료</dt><dd>{e.end ? <>{formatDate(e.end, false)}{clock(e.end) && ` ${clock(e.end)}`}</> : '미정'}{e.endNote && <span class="meta"> {e.endNote}</span>}</dd></div>
     </dl>
     {e.summary && <p class="article-lead">{e.summary}</p>}
-    {e.analysis && <Analysis game={game} analysis={e.analysis} />}
+    {e.rewards.length > 0 && <section class="section"><div class="section-head"><h2 class="section-title">주요 보상</h2><span class="meta">공식 공지 기준</span></div><ul class="plain-list">{e.rewards.map((x) => <li>{x}</li>)}</ul></section>}
     <section class="section">
       <div class="section-head"><h2 class="section-title">출처 · 검증</h2></div>
       <SourceList game={game} refs={e.sources} />
     </section>
+    <LayerLinks game={game} target={`${mod.collection}/${e.id}`} />
   </article>
   <div class="aside aside-sticky">
     <section class="section">

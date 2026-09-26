@@ -495,12 +495,82 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .sources-compact li { padding: 6px 0; border: 0; font-size: var(--fs-meta); }
 .verified { color: var(--official); font-weight: 700; }
 
-/* AI analysis — always visually separate from facts. */
-.analysis { border-left: 3px solid var(--ai); background: var(--ai-bg); border-radius: 0 var(--r) var(--r) 0; padding: var(--s4) var(--s5); display: grid; gap: var(--s3); }
-.analysis-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: var(--fs-meta); color: var(--ai); }
-.analysis p.prose { color: #3b3452; }
-.analysis .sources li { border-color: color-mix(in srgb, var(--ai) 15%, transparent); }
-@media (max-width: 720px) { .analysis { padding: var(--s3) var(--s4); } }
+/* ── Information layers: 공식 → 계산 → 커뮤니티 (docs/information-layers.md) ── */
+/* Each layer has a color, but the badge always carries its text too. */
+[data-layer="official"] { --layer: var(--official); --layer-bg: var(--official-bg); }
+[data-layer="analysis"] { --layer: var(--ai); --layer-bg: var(--ai-bg); }
+[data-layer="community"] { --layer: var(--reported); --layer-bg: var(--reported-bg); }
+.layer-badge {
+  display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0 7px; border-radius: var(--r-sm);
+  font-size: var(--fs-badge); font-weight: 750; letter-spacing: .01em; white-space: nowrap; vertical-align: 2px;
+  color: var(--layer); background: var(--layer-bg); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--layer) 30%, transparent);
+}
+.layer-head { border-top-color: var(--layer); flex-wrap: wrap; }
+.layer-head .meta { font-size: .75rem; }
+.layer-list { display: grid; gap: var(--s3); padding-top: var(--s3); }
+.layer-card { display: grid; gap: var(--s2); padding: var(--s4); background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--layer); border-radius: 0 var(--r) var(--r) 0; min-width: 0; }
+.layer-card-top { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.layer-card .headline:hover { color: var(--accent-ink); }
+.layer-card h3 { font-size: .8125rem; font-weight: 700; color: var(--muted); margin-bottom: 2px; }
+.layer-card ul { padding-left: 1.2em; display: grid; gap: 2px; list-style: disc; }
+.layer-card ul li::marker { color: var(--faint); }
+.layer-card .table-wrap { margin: 4px 0; }
+.layer-card th[scope="row"] { color: var(--ink); font-size: .875rem; }
+.results { font-weight: 600; color: var(--ink); }
+.conditions { font-size: .875rem; }
+.conditions dt { color: var(--muted); padding-right: var(--s4); }
+.freshness b { color: var(--ink-2); }
+.stale { font-size: var(--fs-meta); font-weight: 600; color: var(--reported); background: var(--reported-bg); padding: 6px 10px; border-radius: var(--r-sm); }
+.stale[data-level="older"] { color: var(--muted); background: var(--sunken); }
+.stale-inline { color: var(--reported); font-weight: 600; }
+.consensus { font-size: var(--fs-meta); font-weight: 700; color: var(--ink-2); }
+.consensus::before { content: "◐ "; color: var(--layer); }
+.opinions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); }
+.opinions > div, .divided > div, .tips { background: var(--bg); border-radius: var(--r-sm); padding: var(--s2) var(--s3); }
+.opinions [data-tone="pos"] h3::before { content: "+ "; color: var(--official); }
+.opinions [data-tone="neg"] h3::before { content: "− "; color: var(--spec); }
+.divided { display: grid; gap: var(--s2); }
+.divided > div { border-left: 2px solid var(--line-strong); }
+@media (max-width: 720px) { .opinions { grid-template-columns: minmax(0, 1fr); } .layer-card { padding: var(--s3); } }
+
+/* Official topics (skills, chain nodes…) with their links into the other layers. */
+.topics { list-style: none; padding: 0; }
+.topic { padding: var(--s3) 0; border-bottom: 1px solid var(--line); display: grid; gap: 6px; scroll-margin-top: calc(var(--header-h) + 60px); }
+.topic h3 { font-size: .9375rem; font-weight: 700; }
+.topic .prose { font-size: .9rem; line-height: 1.65; }
+.topic:target { background: var(--accent-tint); }
+.topic-values { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .8125rem; }
+.topic-values div { display: flex; gap: 6px; }
+.topic-values dt { color: var(--muted); }
+.topic-values dd { margin: 0; font-weight: 700; }
+.chain-links { list-style: none; padding: 0; display: grid; gap: 4px; }
+.chain-links li { display: flex; gap: 8px; align-items: baseline; font-size: .8125rem; color: var(--ink-2); }
+.chain-links a { text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
+.layer-jump { display: grid; gap: 2px; margin-top: var(--s3); }
+.layer-jump a { display: flex; gap: 8px; align-items: center; padding: 6px 0; font-weight: 600; font-size: .875rem; }
+.layer-jump .count { color: var(--faint); font-size: var(--fs-meta); }
+.plain-list { list-style: none; padding: 0; }
+.plain-list li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
+
+/* Redeem codes. */
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 700; letter-spacing: .02em; }
+.code-list { list-style: none; padding: 0; }
+.code-row { display: flex; flex-wrap: wrap; gap: 6px var(--s4); justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.code-main { display: grid; gap: 2px; min-width: 0; }
+.code-main code { font-size: 1rem; }
+.code-side { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.code-status { font-size: var(--fs-meta); font-weight: 700; color: var(--ended); }
+.code-status[data-s="active"] { color: var(--ongoing); }
+.code-status[data-s="upcoming"] { color: var(--upcoming); }
+[data-code-status="expired"] code { color: var(--muted); text-decoration: line-through; }
+.code-big { font-size: 1.5rem; }
+.btn-sm { height: 28px; padding: 0 10px; font-size: var(--fs-meta); }
+
+/* Version widget. */
+.version-now { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.version-num { font-size: 1.75rem; font-weight: 800; letter-spacing: -.03em; color: var(--accent-ink); }
+.version-next { display: flex; gap: 8px; align-items: baseline; padding: 10px 0; font-size: .9rem; }
+@media (max-width: 720px) { .layout > .home-side { order: -1; } }
 
 /* Legend (trust badges explained). */
 .legend { display: grid; gap: 8px; font-size: var(--fs-meta); color: var(--muted); padding-top: 12px; }

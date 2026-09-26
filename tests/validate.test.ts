@@ -12,7 +12,10 @@ const config = {
   modules: [
     { type: 'news', label: '뉴스', collection: 'news' },
     { type: 'schedule', label: '일정', collection: 'events' },
-    { type: 'database', label: '캐릭터', collection: 'chars', fields: [{ key: 'el', label: '속성', values: { fire: '불' } }] },
+    { type: 'database', label: '캐릭터', collection: 'chars', fields: [{ key: 'el', label: '속성', values: { fire: '불' } }], sections: [{ key: 'chain', label: '체인' }] },
+    { type: 'codes', label: '코드', collection: 'codes' },
+    { type: 'analysis', label: '계산', collection: 'calc' },
+    { type: 'community', label: '커뮤니티', collection: 'talk' },
   ],
   sources: [
     { id: 'off', name: 'Official', type: 'OFFICIAL', url: 'https://demo.com', domains: ['demo.com'] },
@@ -76,6 +79,37 @@ test('urlMatches: host, subdomain and path prefix', () => {
   assert.ok(urlMatches('https://www.inven.co.kr/webzine/news/?news=1', 'inven.co.kr/webzine'));
   assert.ok(!urlMatches('https://www.inven.co.kr/board/maple/1', 'inven.co.kr/webzine'));
   assert.ok(!urlMatches('https://www.inven.co.kr/webzinex', 'inven.co.kr/webzine'));
+});
+
+// ── Three information layers ──────────────────────────────────────────────
+const char = (over = {}) => ({ id: 'c1', title: 'C', attributes: { el: null }, topics: [{ id: 'chain-1', section: 'chain', name: '1체인' }], sources: [ref()], updatedAt: '2026-09-25', ...over });
+const calc = (over = {}) => ({ id: 'a1', title: 'A', kind: 'breakpoint', version: '3.6', method: 'm', assumptions: ['전용 무기'], results: ['이 조건에서 약 10%'], sources: [ref()], updatedAt: '2026-09-25', ...over });
+const talk = (over = {}) => ({ id: 'k1', title: 'K', kind: 'investment', version: '3.6', summary: 's', consensus: 'mixed', sources: [ref('fans', 'https://board.net/b/1')], updatedAt: '2026-09-25', ...over });
+
+test('layered records linked to an official topic pass', () =>
+  assert.equal(errorsFor({ 'chars/c1': char(), 'calc/a1': calc({ subjects: ['chars/c1#chain-1'] }), 'talk/k1': talk({ subjects: ['chars/c1'] }) }), ''));
+test('subjects must point at an existing record and topic', () => {
+  assert.match(errorsFor({ 'chars/c1': char(), 'calc/a1': calc({ subjects: ['chars/nope'] }) }), /no record chars\/nope/);
+  assert.match(errorsFor({ 'chars/c1': char(), 'calc/a1': calc({ subjects: ['chars/c1#chain-9'] }) }), /no topic "chain-9"/);
+});
+test('topic section must be declared in module sections', () =>
+  assert.match(errorsFor({ 'chars/c1': char({ topics: [{ id: 't', section: 'skills', name: 'x' }] }) }), /section "skills" not declared/));
+test('analysis needs conditions and a base version', () => {
+  assert.match(errorsFor({ 'calc/a1': calc({ assumptions: [] }) }), /assumptions/);
+  assert.match(errorsFor({ 'calc/a1': calc({ version: undefined }) }), /version/);
+});
+test('community must cite a community/guide source, but needs no fact-grade source', () => {
+  assert.match(errorsFor({ 'talk/k1': talk({ sources: [ref()] }) }), /COMMUNITY\/GUIDE/);
+  assert.match(errorsFor({ 'talk/k1': talk({ consensus: 'unanimous' }) }), /consensus/);
+});
+test('code expiry before release is rejected', () =>
+  assert.match(errorsFor({ 'codes/x1': { id: 'x1', title: 'X1', code: 'X1', rewards: ['a'], start: '2026-09-19', end: '2026-09-01', sources: [ref()], updatedAt: '2026-09-25' } }), /end is before start/));
+test('YAML syntax errors are reported, not thrown', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'hub-'));
+  mkdirSync(join(dir, 'demo', 'news'), { recursive: true });
+  writeFileSync(join(dir, 'demo', 'game.yaml'), stringify(config));
+  writeFileSync(join(dir, 'demo', 'news', 'n1.yaml'), 'id: n1\nlist:\n  - "a" = b\n');
+  assert.match(loadGames(dir).errors.join('\n'), /YAML syntax/);
 });
 
 test('games/_template is a valid starting point', () => {
