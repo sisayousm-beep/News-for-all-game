@@ -1,0 +1,77 @@
+id: mornye
+title: 모니에
+aliases: ["Mornye"]
+summary: "스페이스트렉 콜렉티브 연구소의 엔지니어 모니에는 스타토치 아카데미 엑소스트라이더 공학부에서 교수로 재직 중이다. 그녀는 인공 다리로 대지에 발을 디디고, 마음속에는 찬란한 뭇별을 품고 있다"
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: broadblade
+  version: "3.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "15,375", 공격력: "287.5", 방어력: "1,356.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {치료 효과 보너스: "+12%", 방어력: "+15.2%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「계산」"
+    values: {쿨타임: "5초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「임계 프로토콜」"
+    values: {쿨타임: "25초", 공명 에너지: "175"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「침묵의 관측자」"
+    text: "간섭 표기 지속 +150%, 피해 증가 효과가 조화 파동·밀집 간섭 조건 없이 적용된다. 관측 표기와 동시에 간섭 표기를 부여하고, 광역 관측 모드 중 경직 저항."
+    values: {간섭 표기 지속: "+150%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「엔트로피의 샛별」"
+    text: "간섭 표기 대상에게 파티 크리티컬 피해 증가(초과 공명 효율 1%당 0.2%, 최대 32%). 공진 필드 부조화 누적 효율 +20%."
+    values: {크리티컬 피해: "최대 +32%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「돌아온 청사진」"
+    text: "분산 배열 시 협주 에너지 25pt·상대 운동 에너지 100pt 회복(25초에 1회)."
+  - id: chain-4
+    section: chain
+    name: "4체인 「우주의 숨은 변수」"
+    text: "강력 공진 필드 치료량 +30%."
+  - id: chain-5
+    section: chain
+    name: "5체인 「느리게 흐르는 시간」"
+    text: "공명 해방 배율 +40%, 입자 분사 배율 +160%."
+  - id: chain-6
+    section: chain
+    name: "6체인 「뭇별의 끝에 닿을 때까지」"
+    text: "공명 해방 피해 +400%. 비전투 상태에서 공명 에너지 빠르게 회복."
+history:
+  - date: null
+    version: "3.0"
+    kind: release
+    summary: "3.0 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [별빛이 닿을 수 없는 곳에 있다 해도]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.0 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.0 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1209
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/mornye.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/moning-ea327483.webp
+updatedAt: 2026-09-26

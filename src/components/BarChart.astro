@@ -1,0 +1,29 @@
+---
+/**
+ * Single-series vertical bar chart in plain HTML/CSS (text stays readable at any width): zero baseline,
+ * one hue (the analysis layer), value label on each bar, hover highlight + native tooltip.
+ * The record's table is the data view.
+ */
+interface Props { chart: { title: string; unit: string; delta: boolean; points: { label: string; value: number }[] } }
+const { chart } = Astro.props;
+const max = Math.max(...chart.points.map((p) => p.value));
+const base = chart.points[0].value;
+const fmt = (v: number) => {
+  if (!chart.delta) return `${Math.round(v * 10) / 10}${chart.unit}`;
+  if (v === base) return '기준';
+  const d = Math.abs((v / base - 1) * 100);
+  return `${v > base ? '+' : '−'}${d >= 100 ? Math.round(d) : d.toFixed(1)}${chart.unit}`;
+};
+const bars = chart.points.map((p) => ({ name: p.label, value: p.value, h: (p.value / max) * 100, shown: fmt(p.value) }));
+---
+<figure class="bar-chart">
+  <figcaption>{chart.title}</figcaption>
+  <ol role="img" aria-label={`${chart.title}: ${bars.map((b) => `${b.name} ${b.shown}`).join(', ')}`} style={`--n:${bars.length}`}>
+    {bars.map((b) => (
+      <li title={`${b.name}: ${b.value}${chart.unit} (${b.shown})`}>
+        <span class="plot"><b class="val num">{b.shown}</b><i style={`height:${b.h.toFixed(1)}%`}></i></span>
+        <span class="cat">{b.name}</span>
+      </li>
+    ))}
+  </ol>
+</figure>

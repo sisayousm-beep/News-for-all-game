@@ -1,0 +1,51 @@
+id: gyeongyeon-evaluation
+title: "경연 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 (역경의 탑) · 다수전 T1" }
+  - { label: "파티 순위", value: "보스전 최상위 — 양양·현령·청초와 같은 급" }
+  - { label: "전용 무기 의존도", value: "매우 높음 — 게임 내 최상위급" }
+  - { label: "파티 의존도", value: "낮음 — 레베카·모르테피 무과금 파티 가능" }
+  - { label: "돌파 가치", value: "높음 — 2돌·6돌" }
+  - { label: "육성 난이도", value: "높음 — HP 5만 세팅 필요" }
+summary: "보스전 최상위 딜러이자 파티 구성이 쉬운 편이지만, 전용 무기 의존도가 게임 내 최상위급이라는 평가가 지배적이다."
+positive:
+  - "최신 딜러 중 가장 접근성 좋은 편 — 전용 무기만 있으면 강하다 (Prydwen)."
+  - "광역 분산 딜로 다수 웨이브에도 무난하다 (Prydwen)."
+negative:
+  - "전용 무기 없으면 딜 손실이 매우 크다 — \"필수\" 의견 다수 (Reddit, 아카라이브)."
+  - "스킬 추적이 나빠 다수전(폐허)에서 약하다 (Prydwen)."
+  - "HP 계수라 에코 세팅·육성이 까다롭다 (아카라이브)."
+subjects: [resonators/gyeongyeon]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/jingran
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0, 장단점"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "9/10: T0 신규 등록, 다수전 T1"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1wdwbwy/do_i_have_to_get_jingrans_signature_weapon/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vkaeqy/jingran_his_signature_or_stringmaster/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/182252735
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.6 후반 가챠 가이드: HP 계수라 전무 대체 불가"
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/183472544
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "경연 육성 목표 스탯 정리"
+updatedAt: 2026-09-26

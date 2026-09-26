@@ -1,0 +1,48 @@
+id: sigrika-s1-vs-signature
+title: "시그리카 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+results:
+  - "명전이 더 좋다. 전용 무기 없는 1돌은 명전 딜의 약 82~91%이고, 평균 뽑기도 명전(약 139회)이 1돌(약 167회)보다 적다."
+  - "전용 무기(솔스원의 해석)는 대체 5성 대비 +17%, 1돌은 명함 대비 +7.1%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 6돌(직전 대비 +59%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100 }
+    - { label: 1돌, value: 107.14 }
+    - { label: 2돌, value: 139.16 }
+    - { label: 3돌, value: 154.94 }
+    - { label: 4돌, value: 166.14 }
+    - { label: 5돌, value: 170.73 }
+    - { label: 6돌, value: 272.25 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 솔스원의 해석 (명전)", "100%", "139회"]
+    - ["1돌 + 불빛의 심판 (대체 5성)", "약 91%", "167회 + 무기"]
+    - ["1돌 + 거침없는 비상 (4성)", "약 82%", "167회"]
+    - ["명함 + 불빛의 심판", "약 85%", "83회"]
+    - ["1돌 + 솔스원의 해석", "약 107%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(3.6, 1타겟, 구원·샤콘 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(솔스원의 해석 100%, 불빛의 심판 85.2%, 거침없는 비상 76.6%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "구원·샤콘 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/sigrika, resonators/sigrika#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/sigrika
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭, 3.6 갱신"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-26

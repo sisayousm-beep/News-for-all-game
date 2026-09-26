@@ -1,0 +1,77 @@
+id: rebecca
+title: 레베카
+aliases: ["Rebecca"]
+summary: "루시와 같은 엣지러너이지만, 하는 행동은 전혀 다르다. 당신의 고민쯤은 손에 든 샷건으로 시원하게 날려버릴 준비가 된, 예측 불가의 불꽃같은 존재"
+attributes:
+  rarity: 5
+  element: electro
+  weapon: pistols
+  version: "3.4"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "11,600", 공격력: "400", 방어력: "1,173.3", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「전술 조정」"
+    values: {쿨타임: "1초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「파티 타임!」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「잘 부탁해!」"
+    text: "헌트리스·거츠 주요 공격 배율 +50%, 「부랑아의 직감」 3스택 추가."
+    values: {배율: "+50%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「뭐야, 너구나!」"
+    text: "변주·공명 해방 시 파티 전체 속성 피해 +20%(30초). 해킹 · 이탈 부여 시 전체 피해 +15%."
+    values: {파티 속성 피해: "+20%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「뒤는 내게 맡겨!」"
+    text: "공명 해방 배율 +60%, 폭발 범위 +30%."
+  - id: chain-4
+    section: chain
+    name: "4체인 「내가 지켜줄게!」"
+    text: "「둘 다 내 거야!」 속성 보너스 +60%."
+  - id: chain-5
+    section: chain
+    name: "5체인 「엣지러너의 꿈」"
+    text: "해킹 · 이탈 부여 시 자신의 일반 공격 피해 +20%(8초)."
+  - id: chain-6
+    section: chain
+    name: "6체인 「어쩌면...」"
+    text: "획득하는 일반 공격 피해 보너스 +40%. 강공격 중 900% 추가 전도 피해."
+history:
+  - date: null
+    version: "3.4"
+    kind: release
+    summary: "3.4 버전 신규 5성 공명자로 출시. 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.4 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.4 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1308
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/rebecca.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/libeika-85c407f7.webp
+updatedAt: 2026-09-26

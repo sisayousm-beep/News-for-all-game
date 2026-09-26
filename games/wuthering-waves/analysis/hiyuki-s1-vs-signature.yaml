@@ -1,0 +1,48 @@
+id: hiyuki-s1-vs-signature
+title: "히유키 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+results:
+  - "명전이 더 좋다. 전용 무기 없는 1돌은 명전 딜의 약 89~94%이고, 평균 뽑기도 명전(약 139회)이 1돌(약 167회)보다 적다."
+  - "전용 무기(서린 불꽃)는 대체 5성 대비 +20%, 1돌은 명함 대비 +13.5%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 3돌(직전 대비 +32%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100 }
+    - { label: 1돌, value: 113.46 }
+    - { label: 2돌, value: 135.65 }
+    - { label: 3돌, value: 179.46 }
+    - { label: 4돌, value: 189.12 }
+    - { label: 5돌, value: 196.86 }
+    - { label: 6돌, value: 259.99 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 서린 불꽃 (명전)", "100%", "139회"]
+    - ["1돌 + 솟아오르는 화염 (대체 5성)", "약 94%", "167회 + 무기"]
+    - ["1돌 + 예리한 날개깃 (4성)", "약 89%", "167회"]
+    - ["명함 + 솟아오르는 화염", "약 83%", "83회"]
+    - ["1돌 + 서린 불꽃", "약 113%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(3.6, 1타겟, 루실라·수수 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(서린 불꽃 100%, 솟아오르는 화염 83.1%, 예리한 날개깃 78.5%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "루실라·수수 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/hiyuki, resonators/hiyuki#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/hiyuki
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭, 3.6 갱신"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-26

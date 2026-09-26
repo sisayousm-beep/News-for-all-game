@@ -515,6 +515,18 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .layer-card ul li::marker { color: var(--faint); }
 .layer-card .table-wrap { margin: 4px 0; }
 .layer-card th[scope="row"] { color: var(--ink); font-size: .875rem; }
+/* Bar chart (AnalysisCard): one hue, zero baseline, recessive axis, text in ink tokens. */
+.bar-chart { margin: 4px 0 0; display: grid; gap: 8px; }
+.bar-chart figcaption { font-size: var(--fs-meta); font-weight: 700; color: var(--ink-2); }
+.bar-chart ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 4px; max-width: 560px; }
+.bar-chart li { display: grid; grid-template-rows: 150px auto; min-width: 0; }
+.bar-chart .plot { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; border-bottom: 1px solid var(--line-strong); }
+.bar-chart i { display: block; width: 76%; border-radius: 4px 4px 0 0; background: color-mix(in srgb, var(--ai) 72%, var(--surface)); transition: background .12s; }
+.bar-chart li:hover i { background: var(--ai); }
+.bar-chart .val { font-size: .6875rem; font-weight: 700; text-align: center; white-space: nowrap; margin-bottom: 3px; letter-spacing: -.02em; }
+.bar-chart .cat { font-size: .75rem; color: var(--muted); text-align: center; padding-top: 4px; white-space: nowrap; }
+.shift { font-size: .875rem; color: var(--ink-2); }
+.shift > .meta:first-child { font-weight: 700; margin-right: 4px; }
 /* Headline verdicts (tier, weapon dependency…) and the entity page's "한눈에 보기". */
 .verdicts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
 .verdicts div { background: var(--bg); border-radius: var(--r-sm); padding: 6px 10px; }

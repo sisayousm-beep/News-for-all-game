@@ -129,3 +129,15 @@ test('community verdicts are short one-liners', () => {
   assert.equal(errorsFor({ 'talk/k1': talk({ verdicts: [{ label: '티어', value: 'T0' }] }) }), '');
   assert.match(errorsFor({ 'talk/k1': talk({ verdicts: [{ label: '티어', value: '가'.repeat(61) }] }) }), /60자 이하/);
 });
+
+test('breakpoint chart needs 2–12 numeric points', () => {
+  const pts = (n: number) => Array.from({ length: n }, (_, i) => ({ label: `${i}돌`, value: 100 + i }));
+  assert.equal(errorsFor({ 'calc/a1': calc({ chart: { title: '돌파별 딜', delta: true, points: pts(7) } }) }), '');
+  assert.match(errorsFor({ 'calc/a1': calc({ chart: { title: 't', points: pts(1) } }) }), /chart/);
+  assert.match(errorsFor({ 'calc/a1': calc({ chart: { title: 't', points: [{ label: 'a', value: 'x' }, { label: 'b', value: 1 }] } }) }), /chart/);
+});
+
+test('evaluation shift records release vs now with a reason', () => {
+  assert.equal(errorsFor({ 'talk/k1': talk({ shift: { release: 'T1', now: 'T0', reason: '파츠 출시' } }) }), '');
+  assert.match(errorsFor({ 'talk/k1': talk({ shift: { release: 'T1', now: 'T0' } }) }), /shift/);
+});

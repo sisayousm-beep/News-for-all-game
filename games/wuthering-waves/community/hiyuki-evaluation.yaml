@@ -1,0 +1,50 @@
+id: hiyuki-evaluation
+title: "히유키 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: strong
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 (역경의 탑·다수전 모두)" }
+  - { label: "파티 순위", value: "최상위 — 루실라·수수 조합이 현 최강권" }
+  - { label: "전용 무기 의존도", value: "중간 — 약 18~20% 차이" }
+  - { label: "파티 의존도", value: "중간 — 루실라·치사·수수 중 조합, 저가 파티도 가능" }
+  - { label: "돌파 가치", value: "2~3돌이 멈춤 지점" }
+  - { label: "국내 성능 만족도", value: "9.39/10 (3.3 채널 설문)" }
+summary: "보스전·다수전 모두 최상위인 올라운더 딜러로 평가된다. 국내 재미 점수도 역대 최고 수준이다."
+shift:
+  release: "T0 (다수전 T0.5)"
+  now: "T0 (다수전도 T0)"
+  reason: "루실라·수수 조합이 다수전에서도 최고 성적을 내며 Prydwen이 다수전 등급을 올렸다(9/10)."
+positive:
+  - "광역 딜과 몰이로 다수전에 강하고, 로테이션을 짧게도 길게도 운용할 수 있다 (Prydwen)."
+  - "긴 모션 중 무적·시간 정지가 많아 안전하다 (Prydwen)."
+  - "국내 재미 점수 4.77/5로 역대 최고 (아카라이브 설문)."
+negative:
+  - "저가 파티에서는 로테이션을 더 신경 써야 한다 (Prydwen)."
+  - "전용 무기는 필수는 아니지만 메인 딜러 중 가장 좋은 업그레이드라는 의견 (Reddit)."
+subjects: [resonators/hiyuki]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/hiyuki
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T0, 장단점"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "9/10: 다수전 T0.5 → T0"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1wcqb37/is_hiyukis_weapon_still_worth_it_or_better_more/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1t9fgtu/hiyuki_s1_or_iuno_s1_from_shop/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/173050935
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.3 설문: 성능 9.39, 재미 4.77"
+updatedAt: 2026-09-26

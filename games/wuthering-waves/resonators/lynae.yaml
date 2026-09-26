@@ -1,0 +1,79 @@
+id: lynae
+title: 린네
+aliases: ["Lynae"]
+summary: "스타토치 아카데미의 예과 학생. 개성 넘치는 외모 속에 넘치는 활력과 힘을 가지고 있다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: pistols
+  version: "3.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,237.5", 공격력: "375", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「린네식 아이디어」"
+    values: {쿨타임: "6초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「컬러 스프레이 폭발」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「마음껏 날뛰었어야 했을 찬란한 나날들」"
+    text: "일반 공격 · 환각빛 배율 +120%. 페인트 지속 시간 2배·주기적으로 적을 끌어당기고, 주요 일반 공격 중 경직 저항."
+    values: {환각빛 배율: "+120%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「빛이 엮이는 저편을 향해」"
+    text: "전체 피해 25% 부스트. 반주 스킬 시 다음 등장 캐릭터 전체 피해 25% 부스트(14초)."
+    values: {다음 캐릭터 피해: "+25%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「찰나의 반짝임을 위하여」"
+    text: "시각적 충격·레인보우 스플래시 배율 +90%. 「흐르는 빛」 120pt 이상이면 컬러 프리믹싱(최대 25스택)으로 색 더하기 회절 피해 보너스 증가."
+    values: {배율: "+90%"}
+  - id: chain-4
+    section: chain
+    name: "4체인 「바람결에 흐르는 어두운 그림자」"
+    text: "공격력 20% 증가."
+    values: {공격력: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「자유롭게 그리는 미래」"
+    text: "공명 해방 · 컬러 스프레이 폭발 배율 +70%."
+  - id: chain-6
+    section: chain
+    name: "6체인 「「나」라는 이름으로 그려진 진정한 빛」"
+    text: "찬란한 도약·공중 강공격마다 「마음의 색」(최대 3스택) — 스택당 적이 받는 레인보우 스플래시·시각적 충격 피해 +30%."
+history:
+  - date: null
+    version: "3.0"
+    kind: release
+    summary: "3.0 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [언디파인드 스펙트럼]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.0 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.0 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1509
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/lynae.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/linnai-89a81158.webp
+updatedAt: 2026-09-26

@@ -217,6 +217,16 @@ export const AnalysisRecord = RecordBase.extend({
     rows: z.array(z.array(z.union([z.string(), z.number(), z.null()]))).min(1),
     note: z.string().optional(),
   }).optional(),
+  /**
+   * One bar chart shown right under the conclusion (e.g. 명함→6돌 딜). `delta: true` labels bars as
+   * change from the first point ("+14.7%"). Values must also appear in `table` (the chart's data view).
+   */
+  chart: z.object({
+    title: short(60),
+    unit: z.string().max(4).default('%'),
+    delta: z.boolean().default(false),
+    points: z.array(z.object({ label: short(12), value: z.number() })).min(2).max(12),
+  }).optional(),
 });
 export type AnalysisRecord = z.infer<typeof AnalysisRecord>;
 
@@ -242,6 +252,8 @@ export const CommunityRecord = RecordBase.extend({
    * e.g. 티어 / 파티 순위 / 전용 무기 의존도 / 추천 돌파. Labels are free per game; each must be backed by the cited sources.
    */
   verdicts: z.array(z.object({ label: short(20), value: short(60) })).default([]),
+  /** Evaluation at release vs now, when they differ (meta shifts, new supports, powercreep). */
+  shift: z.object({ release: short(60), now: short(60), reason: short(150) }).optional(),
   positive: z.array(z.string()).default([]),
   negative: z.array(z.string()).default([]),
   /** Opposing camps, each with its reasons. */

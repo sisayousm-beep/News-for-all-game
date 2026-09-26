@@ -1,0 +1,49 @@
+id: rebecca-s1-vs-signature
+title: "레베카 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+results:
+  - "개인 딜 기준 명전이 약간 낫지만 차이는 작다(대체 5성이면 1돌이 약 95%). 레베카는 무료 캐릭터라 돌파는 이벤트·산호로 얻는 경우가 많다."
+  - "전용 무기(스컬 스래셔)는 대체 5성 대비 +8%, 1돌은 명함 대비 +2.0%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 6돌(직전 대비 +26%)."
+chart:
+  title: "돌파 단계별 개인 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100 }
+    - { label: 1돌, value: 102.03 }
+    - { label: 2돌, value: 117.36 }
+    - { label: 3돌, value: 145.4 }
+    - { label: 4돌, value: 158.61 }
+    - { label: 5돌, value: 167.09 }
+    - { label: 6돌, value: 210.45 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 스컬 스래셔 (명전)", "100%", "-"]
+    - ["1돌 + 스펙트럼 블래스터 (대체 5성)", "약 95%", "-"]
+    - ["1돌 + 태양 불꽃 (4성)", "약 80%", "-"]
+    - ["명함 + 스펙트럼 블래스터", "약 93%", "-"]
+    - ["1돌 + 스컬 스래셔", "약 102%", "-"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계 (레베카는 무료 획득이라 해당 없음).
+method: >-
+  Prydwen 계산(3.6, 1타겟, 양양 · 현령·수수 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(스컬 스래셔 100%, 스펙트럼 블래스터 92.7%, 태양 불꽃 78.1%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "양양 · 현령·수수 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+  - "레베카 자신의 딜만 계산 — 파티원에게 주는 버프 증가분은 반영되지 않음"
+subjects: [resonators/rebecca, resonators/rebecca#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/rebecca
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭, 3.6 갱신"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-26

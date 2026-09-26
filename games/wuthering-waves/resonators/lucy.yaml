@@ -1,0 +1,77 @@
+id: lucy
+title: 루시
+aliases: ["Lucy"]
+summary: "나이트 시티에서 온 엣지러너. 크루에서 넷러너를 맡고 있다. 마음속 깊이 비밀을 묻어둔 채, 그녀는 다른 사람들과 깊게 얽히려 하지 않는다. 루시 곁에 있는 사람들조차도 그녀의 과거에 대해서는 아는 게 거의 없다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: pistols
+  version: "3.4"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "11,025", 공격력: "425", 방어력: "1,148.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「프로토콜 돌파」"
+    values: {쿨타임: "15초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「넷러너」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「달, 티켓 그리고 동경」"
+    text: "주요 스킬 경직 저항. 변주 스킬 후 공격력 +20%(14초). 스푸핑 프로그램 대상 격파 시 효과 기록."
+    values: {공격력: "+20%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「블랙월, 과거 그리고 도망」"
+    text: "공명 해방 시 기본 램 32pt. 펄스 교란 후 450% 추가 피해(강공격)와 스푸핑 프로그램 추가."
+  - id: chain-3
+    section: chain
+    name: "3체인 「사이버펑크」"
+    text: "공명 해방 오버라이드 배율 +50%·크리티컬 피해 +100%, 기타 해킹 피해 배율 +65%."
+  - id: chain-4
+    section: chain
+    name: "4체인 「나이트 시티에 살아있는 전설은 없다」"
+    text: "해킹 · 이탈 부여 시 파티 전체 속성 피해 +20%(20초)."
+    values: {파티 속성 피해: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「끊어진 지옥으로 향하는 길」"
+    text: "옵티컬 일루전 최대 2스택, 저체력 피격 시 실드."
+  - id: chain-6
+    section: chain
+    name: "6체인 「I Really Want to Stay At Your House」"
+    text: "해킹 대상이 받는 강공격 피해 +40%, 해킹 피해 +60%."
+history:
+  - date: null
+    version: "3.4"
+    kind: release
+    summary: "3.4 버전 신규 5성 공명자로 출시. 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.4 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.4 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1511
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/lucy.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/luxi-51b1c4aa.webp
+updatedAt: 2026-09-26

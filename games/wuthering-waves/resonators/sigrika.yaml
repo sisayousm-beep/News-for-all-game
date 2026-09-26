@@ -1,0 +1,79 @@
+id: sigrika
+title: 시그리카
+aliases: ["Sigrika"]
+summary: "스타토치 아카데미의 학생 시그리카, 로야 룬의 공명자. 모두의 기대에 부응하고 자격을 갖춘 솔스원이 되기 위해 언제나 최선을 다한다"
+attributes:
+  rarity: 5
+  element: aero
+  weapon: gauntlets
+  version: "3.2"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,775", 공격력: "437.5", 방어력: "1,136.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「로야 근접 격투기」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「바라던 대로!」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「밝게 빛나야 할 광휘에게」"
+    text: "주요 공격 배율 +70%·경직 저항. 「함의 응축」 최대 3스택, 반주 스킬로도 획득."
+    values: {배율: "+70%"}
+  - id: chain-2
+    section: chain
+    name: "2체인 「깊게 간직해 온 고뇌에게」"
+    text: "공명 회로 배율 +120%. 비전투 4초 후 「집중」 획득."
+    values: {공명 회로 배율: "+120%"}
+  - id: chain-3
+    section: chain
+    name: "3체인 「도망치며, 찾아내며」"
+    text: "「타고난 재능?」 최대 4스택, 교대해도 유지."
+  - id: chain-4
+    section: chain
+    name: "4체인 「잃어가며, 얻어가며」"
+    text: "파티원이 에코 어빌리티 발동 시 파티 공격력 +20%(20초)."
+    values: {파티 공격력: "+20%"}
+  - id: chain-5
+    section: chain
+    name: "5체인 「그림자 속에 잠길 때까지」"
+    text: "공명 해방 배율 +30%."
+  - id: chain-6
+    section: chain
+    name: "6체인 「함의가 빛나면, 광휘가 떠오르니」"
+    text: "적이 받는 피해 +30%. 「타고난 재능?」 스택당 주요 피해 +15%(최대 60%)."
+    values: {받는 피해: "+30%"}
+history:
+  - date: null
+    version: "3.2"
+    kind: release
+    summary: "3.2 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [룬이 반짝이는 찰나]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4449
+        collectedAt: 2026-09-26
+        verifiedAt: 2026-09-26
+        note: 3.2 버전 업데이트 안내 — 신규 공명자
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4449
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 3.2 버전 업데이트 안내 — 신규 공명자
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1412
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/sigrika.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/xigelika-f45db7ed.webp
+updatedAt: 2026-09-26

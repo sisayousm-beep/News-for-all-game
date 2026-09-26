@@ -1,0 +1,52 @@
+id: lucy-evaluation
+title: "루시 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T1 (역경의 탑) · 다수전 T2" }
+  - { label: "파티 순위", value: "중위권 — 2.x 후반 딜러 수준" }
+  - { label: "전용 무기 의존도", value: "높음 — 최신 기준 성능을 내려면 필요" }
+  - { label: "파티 의존도", value: "낮음 — 무료 레베카 + 범용 서포터" }
+  - { label: "돌파 가치", value: "높음 — 1돌 다수전, 2~3돌 수명 연장" }
+  - { label: "국내 성능 만족도", value: "7.88/10 (3.4 채널 설문)" }
+summary: "파티를 꾸리기 쉽지만 3.x 딜러 중 딜 천장이 낮다는 평가다. 콜라보 캐릭터라 재출시가 불확실하다."
+positive:
+  - "무료 레베카와 범용 서포터로 파티가 쉽게 완성된다 (Prydwen, Reddit)."
+  - "돌파 효율이 높아 1돌부터 다수전이 좋아진다 (Prydwen)."
+negative:
+  - "딜 천장이 최신 딜러들보다 낮다 — 아우구스타·플로로 수준 (Prydwen)."
+  - "해킹 메커니즘이라 일반 조화도 버프를 못 받아 장기적으로 불리 (Prydwen)."
+  - "콜라보 캐릭터라 복각이 없을 가능성이 높다 (Prydwen)."
+divided:
+  - position: "1돌 추천"
+    reasons:
+      - "1돌은 경직 저항·다음 적으로 효과 이전 등 편의가 커 실전 딜이 안정된다 (Reddit)"
+  - position: "전용 무기 추천"
+    reasons:
+      - "전용 무기가 \"필수급\"이라는 의견과 위상의 파동 재련이면 차이가 작다는 의견이 갈림 (Reddit)"
+subjects: [resonators/lucy]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/lucy
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Review: T1, 장단점"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1u98vsw/s1_lucy_or_r1_rebecca_which_is_better/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1u1hu8f/is_lucy_worth_getting_without_moryne_or_sk/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1tyq3f8/lucy_and_rebecca_sig_weapons_are_they_worth_it/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/176126002
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "3.4 설문: 성능 7.88, 1돌 29%"
+updatedAt: 2026-09-26
