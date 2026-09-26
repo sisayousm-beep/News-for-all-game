@@ -97,26 +97,6 @@ export const lastChecked = (r: AnyRecord) => r.sources.map((s) => s.verifiedAt ?
 /** Distinct registered sources (≈ platforms) a record cites. */
 export const platformsOf = (g: Game, r: AnyRecord) => [...new Set(r.sources.map((s) => s.source))].map((id) => sourceOf(g, id));
 
-/**
- * Pickup statistics derived from an entity's dated release/rerun history — computed, never typed in.
- * Rendered in the analysis layer with its method stated.
- */
-export function bannerStats(r: EntityRecord, now = Date.now()) {
-  const dates = r.history.filter((h) => (h.kind === 'release' || h.kind === 'rerun') && h.date && toTime(h.date) <= now)
-    .map((h) => h.date!).sort((a, b) => toTime(a) - toTime(b));
-  if (!dates.length) return null;
-  const day = (a: string, b: number) => kstDay(b) - kstDay(toTime(a));
-  const gaps = dates.slice(1).map((d, i) => kstDay(toTime(d)) - kstDay(toTime(dates[i])));
-  return {
-    count: dates.length,
-    last: dates.at(-1)!,
-    sinceLast: day(dates.at(-1)!, now),
-    gaps,
-    avgGap: gaps.length ? Math.round(gaps.reduce((a, b) => a + b, 0) / gaps.length) : null,
-    undated: r.history.filter((h) => (h.kind === 'release' || h.kind === 'rerun') && !h.date).length,
-  };
-}
-
 /** Everything official that belongs to a version: by explicit `version`, else by date inside the version window. */
 export function inVersion(g: Game, v: VersionRecord) {
   const from = toTime(v.start), to = v.end ? toTime(v.end, true) : Infinity;

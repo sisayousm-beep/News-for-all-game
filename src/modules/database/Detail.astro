@@ -5,9 +5,9 @@
  * can follow one subject from the official text to the numbers to what players think.
  */
 import type { Game } from '../../core/load';
-import type { AnalysisRecord, CommunityRecord, EntityRecord, ModuleConfig } from '../../core/schema';
-import { bannerStats, formatDate, layerOf, linked, modulesOf, relatedNews } from '../../core/hub';
-import { historyKind } from '../../i18n/ko';
+import { ANALYSIS_KINDS, COMMUNITY_KINDS, type AnalysisRecord, type CommunityRecord, type EntityRecord, type ModuleConfig } from '../../core/schema';
+import { formatDate, layerOf, linked, modulesOf, relatedNews } from '../../core/hub';
+import { analysisKind, historyKind } from '../../i18n/ko';
 import { fieldLabel } from './fields';
 import Provenance from '../../components/Provenance.astro';
 import Portrait from '../../components/Portrait.astro';
@@ -23,15 +23,21 @@ const news = relatedNews(game, r).slice(0, 5);
 const history = [...r.history].sort((a, b) => (b.version ?? '').localeCompare(a.version ?? '', undefined, { numeric: true }) || Date.parse(b.date ?? '0') - Date.parse(a.date ?? '0'));
 
 const target = `${mod.collection}/${r.id}`;
+const anchor = (layer: string, id: string) => `#${layer}-${id}`;
 const calc = linked<AnalysisRecord>(game, 'analysis', target);
 const talk = linked<CommunityRecord>(game, 'community', target);
 const unique = <T extends { record: unknown }>(xs: T[]) => xs.filter((x, i) => xs.findIndex((y) => y.record === x.record) === i);
-const calcCards = unique(calc), talkCards = unique(talk);
-const stats = bannerStats(r);
+// Most decision-relevant first: 돌파 효율 before build math, overall evaluation before details (enum order).
+const calcCards = unique(calc).sort((a, b) => ANALYSIS_KINDS.indexOf(a.record.kind) - ANALYSIS_KINDS.indexOf(b.record.kind));
+const talkCards = unique(talk).sort((a, b) => COMMUNITY_KINDS.indexOf(a.record.kind) - COMMUNITY_KINDS.indexOf(b.record.kind));
+// "한눈에 보기": the top calculation's answer, then the headline verdicts of the top community record (kind order: evaluation first).
+const glance = [
+  ...calcCards.slice(0, 1).map((l) => ({ layer: 'analysis' as const, label: analysisKind[l.record.kind], value: l.record.results[0], href: anchor('analysis', l.record.id) })),
+  ...talkCards.slice(0, 1).flatMap((l) => l.record.verdicts.map((v) => ({ layer: 'community' as const, label: v.label, value: v.value, href: anchor('community', l.record.id) }))),
+];
 const sections = mod.sections.map((s) => ({ ...s, topics: r.topics.filter((t) => t.section === s.key) })).filter((s) => s.topics.length);
-const anchor = (layer: string, id: string) => `#${layer}-${id}`;
 const has = (layer: string) => modulesOf(game).some((m) => layerOf(m) === layer);
-const showCalc = has('analysis') || !!stats, showTalk = has('community');
+const showCalc = has('analysis'), showTalk = has('community');
 ---
 <div class="entity">
   <aside class="entity-side">
@@ -53,12 +59,25 @@ const showCalc = has('analysis') || !!stats, showTalk = has('community');
     </dl>
     <nav class="layer-jump" aria-label="정보 단계">
       <a href="#layer-official"><LayerBadge layer="official" /> 공식 데이터</a>
-      {showCalc && <a href="#layer-analysis"><LayerBadge layer="analysis" /> 성능 분석 <span class="count">{calcCards.length + (stats ? 1 : 0)}</span></a>}
+      {showCalc && <a href="#layer-analysis"><LayerBadge layer="analysis" /> 성능 분석 <span class="count">{calcCards.length}</span></a>}
       {showTalk && <a href="#layer-community"><LayerBadge layer="community" /> 커뮤니티 <span class="count">{talkCards.length}</span></a>}
     </nav>
   </aside>
 
   <div class="entity-main">
+    {glance.length > 0 && (
+      <section class="glance" aria-label="한눈에 보기">
+        <h2 class="section-title">한눈에 보기</h2>
+        <dl>
+          {glance.map((g) => (
+            <a href={g.href} data-layer={g.layer}>
+              <dt><LayerBadge layer={g.layer} /> {g.label}</dt>
+              <dd>{g.value}</dd>
+            </a>
+          ))}
+        </dl>
+      </section>
+    )}
     <section class="section">
       <LayerHead layer="official" title="기본 정보" id="layer-official" />
       {r.summary ? <p class="prose" style="padding-top:12px">{r.summary}</p> : <p class="empty">등록된 소개가 없습니다.</p>}
@@ -122,29 +141,11 @@ const showCalc = has('analysis') || !!stats, showTalk = has('community');
     </section>
 
     {showCalc && <section class="section">
-      <LayerHead layer="analysis" title="성능 분석" count={calcCards.length + (stats ? 1 : 0)} id="layer-analysis" />
+      <LayerHead layer="analysis" title="성능 분석" count={calcCards.length} id="layer-analysis" />
       <div class="layer-list">
         {calcCards.map((l) => <div id={`analysis-${l.record.id}`}><AnalysisCard game={game} mod={l.mod} record={l.record} /></div>)}
-        {stats && (
-          <article class="layer-card" data-layer="analysis">
-            <p class="layer-card-top"><LayerBadge layer="analysis" /><span class="meta">픽업 통계 · 자동 계산</span></p>
-            <p class="headline">픽업 기록</p>
-            <p class="conclusion">마지막 픽업 시작 후 {stats.sinceLast}일 경과{stats.avgGap != null && ` · 평균 복각 간격 ${stats.avgGap}일`}</p>
-            <details class="more-toggle">
-              <summary>계산 과정 보기</summary>
-              <div class="more-body">
-                <dl class="topic-values num">
-                  <div><dt>날짜 확인된 픽업</dt><dd>{stats.count}회</dd></div>
-                  <div><dt>마지막 픽업 시작</dt><dd>{formatDate(stats.last, false)}</dd></div>
-                  {stats.avgGap != null && <div><dt>복각 간격</dt><dd>{stats.gaps.join(' · ')}일</dd></div>}
-                </dl>
-                <p class="meta">변경 이력 중 날짜가 확인된 출시·복각 시작일로 계산{stats.undated > 0 && ` (날짜 미확인 ${stats.undated}건 제외)`}. 다음 복각 시점은 예측하지 않습니다.</p>
-              </div>
-            </details>
-          </article>
-        )}
       </div>
-      {!calcCards.length && !stats && <p class="empty">아직 등록된 계산·통계가 없습니다.</p>}
+      {!calcCards.length && <p class="empty">아직 등록된 계산·통계가 없습니다.</p>}
     </section>}
 
     {showTalk && <section class="section">

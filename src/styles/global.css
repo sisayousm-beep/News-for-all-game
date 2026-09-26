@@ -515,6 +515,19 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .layer-card ul li::marker { color: var(--faint); }
 .layer-card .table-wrap { margin: 4px 0; }
 .layer-card th[scope="row"] { color: var(--ink); font-size: .875rem; }
+/* Headline verdicts (tier, weapon dependency…) and the entity page's "한눈에 보기". */
+.verdicts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }
+.verdicts div { background: var(--bg); border-radius: var(--r-sm); padding: 6px 10px; }
+.verdicts dt { font-size: .75rem; color: var(--muted); font-weight: 600; }
+.verdicts dd { margin: 0; font-weight: 750; color: var(--ink); line-height: 1.4; }
+.glance { display: grid; gap: var(--s3); padding: var(--s4); background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--accent); border-radius: var(--r); }
+.glance dl { display: grid; gap: 0; }
+.glance a { display: grid; grid-template-columns: minmax(120px, 34%) minmax(0, 1fr); gap: 4px 12px; padding: 8px 0; border-top: 1px solid var(--line); align-items: baseline; }
+.glance a:first-child { border-top: 0; }
+.glance dt { font-size: var(--fs-meta); color: var(--muted); font-weight: 600; display: flex; gap: 6px; align-items: center; }
+.glance dd { margin: 0; font-weight: 700; color: var(--ink); }
+.glance a:hover dd { color: var(--accent-ink); }
+@media (max-width: 720px) { .glance a { grid-template-columns: minmax(0, 1fr); } .glance { padding: var(--s3); } }
 .conclusion { font-size: 1rem; font-weight: 700; line-height: 1.55; color: var(--ink); }
 .results { color: var(--ink-2); }
 /* "더 보기" toggles: details stay one tap away, conclusions stay on top. */

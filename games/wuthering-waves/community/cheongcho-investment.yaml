@@ -1,38 +1,35 @@
 id: cheongcho-investment
-title: 청초 — 전용 무기 vs 1돌, 어디까지 돌파할까
+title: 청초 — 1돌 vs 명전, 무엇부터 투자할까
 kind: investment
 version: "3.6"
-consensus: moderate
-summary: 1돌보다 전용 무기(옥빛 구름)를 먼저 챙기라는 의견이 다수다. 1돌은 고점·에코 세팅 면에서 좋다는 평가지만, 멈출 거면 3돌까지 가라는 의견도 있다.
+consensus: strong
+verdicts:
+  - { label: 1돌 vs 명전, value: "명전 우세 — 전무 먼저가 다수 의견" }
+  - { label: 투자 순서, value: "명함 → 데니아·모니에 → 전용 무기 → 돌파" }
+  - { label: 돌파 추천, value: "명함 또는 3돌 — 1돌에서 멈출 거면 굳이" }
+summary: 1돌보다 명전(명함+전용 무기)을 먼저 하라는 의견이 국내·해외 모두 다수다. 다만 파티(데니아·모니에)가 전용 무기보다 먼저라는 의견이 많다.
 positive:
-  - 1돌의 크리티컬 16%로 4코스트 에코 메인 옵션을 크리티컬 피해로 바꿀 수 있어 고점이 오른다는 의견이 반복된다.
-  - 1돌 후 일반 공격만으로도 크리티컬이 거의 터져 필드·일일 임무가 빨라졌다는 만족 후기가 있다.
+  - 1돌의 크리티컬 16%로 4코스트를 크리티컬 피해로 바꿀 수 있어 고점이 오르고, 경직 면역도 편하다는 평가 (디시, 아카라이브).
 negative:
-  - 1돌 후 4코스트를 크리티컬 피해로 바꾸면 크리티컬 100%를 맞추려고 서브 옵션 부담이 오히려 커진다는 불만이 여러 번 보인다.
-  - 2돌은 단독 가치가 낮아 "2돌이면 3돌까지 가라"는 반응이 있다.
-  - 전용 무기 없이 쓰면 상시 무기로는 크리티컬 36%를 대신하기 어렵다는 지적이 있다.
+  - 전용 무기 없이 쓰면 약 15~22% 딜 손실이라 "메인 딜러는 전무가 기본"이라는 의견이 반복된다 (Reddit, 디시).
+  - 1돌 후 4코를 크리티컬 피해로 바꾸면 크리티컬 100%를 맞추려고 에코 부담이 커진다는 불만 (디시, 아카라이브).
+  - 2돌 단독 가치는 낮아 "2돌이면 3돌까지"라는 반응 (디시).
 divided:
-  - position: 전용 무기 먼저 (다수)
+  - position: 전용 무기가 먼저
     reasons:
-      - 무기 튜닝은 5성이 항상 픽업이라 50% 실패(픽뚫)가 없다
-      - 메인 딜러는 전용 무기가 기본값이라는 인식 — "안 쓰면 성능 75%로 쓰는 것", "다른 무기와 딜 차이 18~20%"라는 언급(근거 계산은 제시되지 않음)
-  - position: 전용 무기는 복각 때, 지금은 3.7 캐릭터 우선 (소수)
+      - 무기 튜닝은 50% 실패가 없어 확정적이다 (디시, Reddit)
+      - 대체 무기와 차이가 20% 안팎으로 1돌(+15%)보다 크다
+  - position: 데니아·모니에가 전용 무기보다 먼저
     reasons:
-      - 재화가 부족하면 다음 버전 캐릭터(여우의 별자리)를 먼저 확보하겠다는 선택
-  - position: 1돌 딜 상승 폭에 대한 체감은 제각각
-    reasons:
-      - 「15% 안팎」, 「20%에 근접」, 「딜보다 스탯 편의가 크다」 등 서로 다른 수치가 오가며 계산 근거는 제시되지 않았다
+      - 청초는 데니아 없이는 "갈 곳이 없다" — 파티 없이는 전무가 있어도 약하다 (Reddit 208추천 글의 최다 추천 댓글)
+      - 풀 파티면 전무 없이도 엔드 콘텐츠 최상단을 깬다는 의견 (Reddit)
 tips:
-  - text: 명함이라면 4코스트 에코를 크리티컬로 두고 크리티컬 100% 근처를 맞추는 쪽이 무난하다는 조언이 많다.
+  - text: 명함이면 4코스트를 크리티컬로 두고 크리티컬 100% 근처를 맞추는 쪽이 무난하다.
     when: 명함 · 에코 세팅
-  - text: 1돌을 했다면 4코스트를 크리티컬 피해로 바꾸고 서브 옵션 크리티컬을 챙기는 구성이 권장된다(에코 파밍 부담 증가 감수).
+  - text: 1돌이면 4코스트를 크리티컬 피해로 바꾸고 서브 옵션 크리티컬을 챙긴다(에코 파밍 부담 증가).
     when: 1돌 · 에코 세팅
 subjects: [resonators/cheongcho, resonators/cheongcho#chain-1, weapons/okbit-gureum]
 sources:
-  - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2865381
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
   - source: dc-wuwa
     url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2862810
     collectedAt: 2026-09-26
@@ -42,15 +39,11 @@ sources:
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
   - source: dc-wuwa
+    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2865381
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: dc-wuwa
     url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855861
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2855207
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2851882
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
   - source: dc-wuwa
@@ -58,27 +51,11 @@ sources:
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
   - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2857736
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: dc-wuwa
     url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2861490
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
   - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2848837
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2849678
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: dc-wuwa
     url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2887597
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: dc-wuwa
-    url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2863948
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
   - source: dc-wuwa
@@ -87,6 +64,30 @@ sources:
     verifiedAt: 2026-09-26
   - source: dc-wuwa
     url: https://gall.dcinside.com/mgallery/board/view/?id=wutheringwaves&no=2869142
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/183916198
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/184079515
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vy0lvj/pulled_qingxiao_should_i_get_her_weap_or_denia/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vy1ws7/was_planning_to_save_for_hiyuki_but_i_thought/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWavesGuide/comments/1vysir8/should_i_get_qingxiao_weapon_or_use_emerald/
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWaves/comments/1w1yc5n/should_i_invest_into_denia_or_qingxiao_sequences/
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
 updatedAt: 2026-09-26

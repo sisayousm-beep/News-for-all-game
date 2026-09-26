@@ -1,0 +1,40 @@
+id: cheongcho-s1-vs-signature
+title: 청초 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나
+kind: breakpoint
+version: "3.6"
+results:
+  - 명전이 더 좋다. 전용 무기 없는 1돌은 명전 딜의 약 80~92%에 그치고, 평균 뽑기도 1돌(약 167회)보다 명전(약 139회)이 적게 든다.
+  - 전용 무기(옥빛 구름)는 대체 5성 무기 대비 딜 +25~29%, 1돌은 명함 대비 +14.7%로 전무 효율이 약 2배다.
+  - 둘 다 할 경우(1돌+전무)는 명함+전무 대비 +14.7%.
+method: >-
+  Prydwen 계산(3.6, 1타겟, 데니아+모니에 버프 포함)의 돌파별 딜 비율(명함 100%, 1돌 114.71%)과 무기별 딜 비율
+  (옥빛 구름 100%, 날카로운 봄 80.16%, 천년의 회류 77.60%, 예리한 날개깃 R5 69.51%)을 곱해 조합별 딜을 추정했다(Game Hub 계산).
+  평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - 데니아·모니에 파티, 1타겟, Prydwen의 표준 로테이션·에코 세팅
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치 (실제 조합 계산과 몇 % 차이 날 수 있음)
+  - 대체 무기는 모두 재련 1(4성은 재련 5)
+  - 평균 뽑기는 천장 0회·확정 없음에서 시작
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 옥빛 구름 (명전)", "100%", "139회"]
+    - ["1돌 + 날카로운 봄 (한정 5성)", "약 92%", "167회 + 무기"]
+    - ["1돌 + 천년의 회류 (상시 5성)", "약 89%", "167회"]
+    - ["1돌 + 예리한 날개깃 (4성)", "약 80%", "167회"]
+    - ["명함 + 천년의 회류", "약 78%", "83회"]
+    - ["1돌 + 옥빛 구름", "약 115%", "222회"]
+  note: 딜 비율은 두 계산값의 곱으로 반올림. 뽑기 수는 캐릭터·무기 튜닝 합계.
+subjects: [resonators/cheongcho, resonators/cheongcho#chain-1, weapons/okbit-gureum]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/qingxiao
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-26

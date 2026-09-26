@@ -116,6 +116,28 @@ sources:
     type: GUIDE
     url: https://game8.co/games/Wuthering-Waves
     domains: [game8.co/games/Wuthering-Waves]
+  - id: prydwen
+    name: Prydwen (공략·계산)
+    type: GUIDE
+    url: https://www.prydwen.gg/wuthering-waves/
+    domains: [prydwen.gg/wuthering-waves]
+    note: 티어 리스트·캐릭터 계산(돌파·무기 비교). 커뮤니티 협업으로 만든 공략 사이트
+  - id: reddit
+    name: Reddit 명조 커뮤니티
+    type: COMMUNITY
+    url: https://www.reddit.com/r/WutheringWaves/
+    domains: [reddit.com/r/WutheringWaves, reddit.com/r/WutheringWavesGuide]
+  - id: arca-wuwa
+    name: 아카라이브 명조 채널
+    type: COMMUNITY
+    url: https://arca.live/b/wutheringwaves
+    domains: [arca.live/b/wutheringwaves]
+  - id: youtube
+    name: YouTube
+    type: COMMUNITY
+    url: https://www.youtube.com
+    domains: [youtube.com]
+    note: 영상 제목·조회수 수준으로만 참고(본문 미열람 시 collectedAt만)
   - id: inven-board
     name: 명조 인벤 게시판
     type: COMMUNITY
@@ -174,15 +196,17 @@ updates:
       만료된 코드는 삭제하지 않는다(end 날짜로 자동으로 "지난 코드"가 된다). 방송 코드는 해당 버전을 version에.
   - id: wuthering-waves-analysis
     collection: analysis
-    sources: [kuro-official, encore-db, game8]
+    sources: [kuro-official, encore-db, prydwen, game8]
     frequency: patch
     instructions: >-
       공식 수치로 계산하거나 통계를 낸 결과만 analysis 레코드로 쓴다. method(계산 방법)와 assumptions(조건)는 필수이며,
       results는 "이 조건에서 약 …" 같은 조건부 문장으로 쓴다. 출처 없는 딜 수치를 옮기지 않는다. 패치로 전제가 바뀌면 status: outdated.
   - id: wuthering-waves-community
     collection: community
-    sources: [dc-wuwa, inven-board]
+    sources: [dc-wuwa, arca-wuwa, reddit, youtube, prydwen, inven-board]
     frequency: 7d
     instructions: >-
+      국내(디시·아카라이브)와 해외(Reddit)·YouTube를 함께 본다. 캐릭터마다 evaluation 레코드에 verdicts(티어, 파티 순위, 전용 무기 의존도,
+      파티 의존도, 돌파 가치 등)를 두고, investment 레코드에 "1돌 vs 명전" 같은 투자 결론을 둔다.
       커뮤니티 글(본문+댓글)을 직접 열어 반복해서 보이는 의견만 요약한다. AI가 평가를 만들지 않는다. 의견마다 근거 글을 sources에 남기고,
       한 커뮤니티만 봤다면 요약문에 그 커뮤니티를 밝힌다. 새 레코드보다 같은 주제 레코드 갱신을 우선하고, 여론이 바뀌면 summary를 고치고 updatedAt을 갱신한다.
