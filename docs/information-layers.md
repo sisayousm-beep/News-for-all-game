@@ -75,7 +75,7 @@ subjects: [resonators/cheongcho, resonators/cheongcho#chain-1, weapons/okbit-gur
 
 `version`이 현재 버전보다 낮으면 화면에 "3.6 버전 기준 · 현재 3.7에서 다시 확인되지 않음"이 자동으로 붙습니다.
 
-## 화면 규칙
+## 화면 규칙 (모든 게임 공통 — 공통 컴포넌트와 검증기에 구현되어 있어 새 게임도 자동 적용)
 
 - 단계는 **텍스트 배지**로 표시한다(색만으로 구분하지 않음): <kbd>공식</kbd> 녹색 · <kbd>계산</kbd> 보라 · <kbd>커뮤니티</kbd> 황토.
 - 순서는 항상 공식 → 계산 → 커뮤니티.
