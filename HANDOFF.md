@@ -1,7 +1,7 @@
 # HANDOFF — 다음 세션 인수인계
 
 > 새 세션의 AI는 **이 파일 → AGENTS.md → README.md** 순서로 읽고 시작한다.
-> 작성: 2026-09-26 · 브랜치 `claude/game-hub-master-prompt-yw1g4z` (커밋 a13f9ea 기준)
+> 작성: 2026-09-26 · 브랜치 `claude/continue-task-l21f96`
 
 ## 1. 사용자(고용주)와 일하는 방식 — 반드시 지킬 것
 
@@ -32,42 +32,47 @@
 - 데이터 검증, 테스트 14개, AI 작업 도구(`npm run job`, `npm run scope`)
 - 문서: `AGENTS.md`, `README.md`, `docs/` 9종
 - CI + GitHub Pages 배포 워크플로(매일 05:05 KST 재빌드)
-- 실제 데이터 14건: 메이플 뉴스 2 · 이벤트 5 / 명조 공명자 5 · 뉴스 2
-- 마지막 확인: validate ✓, test 14/14 ✓, 타입검사 0 오류, 빌드 27페이지 ✓
+- 실제 데이터 23건: 메이플 뉴스 4 · 이벤트 11 / 명조 공명자 5 · 뉴스 3
+- 2026-09-26 세션: 공식 원문 직접 열람으로 기존 레코드 검증(`verifiedAt`), 오류 정정, 신규 9건 추가
+- 마지막 확인: validate ✓, test 14/14 ✓, 타입검사 0 오류, 빌드 36페이지 ✓
 
-## 4. 이전 세션의 한계 (이번 세션에서 해결할 것)
+## 4. 공식 출처 읽는 법 (2026-09-26 확인)
 
-이전 환경은 공식 사이트·나무위키 등 **페이지 직접 열람이 차단**되어 웹 **검색 요약만**으로 데이터를 모았다.
-그래서 현재 모든 출처에 `verifiedAt`이 없고 화면에 "원문 미검증"으로 표시된다.
+네트워크는 열려 있다. 단 나무위키·fandom·prydwen은 403(차단).
 
-알려진 미확인/임시 항목:
-
-| 파일 | 해야 할 일 |
+| 출처 | 방법 |
 |---|---|
-| 모든 레코드 (`games/**/*.yaml`) | 원문 직접 열람 후 내용 대조 → 일치하면 `verifiedAt` 기록, 다르면 수정 |
-| `games/wuthering-waves/resonators/jiyan.yaml` | 속성·무기 `null` → 공식/신뢰 출처로 확인되면 채움 |
-| `games/wuthering-waves/resonators/hsin.yaml` | 한국어 공식 명칭 확정 (후보: 여우의 별자리 / 심호 / 여우별) |
-| `suoming.yaml`, `gyeongyeon.yaml` | 후반부 픽업 시작일 `null` → 확인되면 채움 |
-| `games/wuthering-waves/news/*.yaml` | `publishedAt: null` → 공식 게시일 확인 |
-| `games/wuthering-waves/news/version-3-7-announcement.yaml` | 복각 공명자(Chisa, Iuno, Lynae, Lucilla) 한국어 명칭 확인 |
-| `games/maplestory/news/client-1-2-419.yaml` | 커뮤니티(인벤) 전재만 출처 → 공식 패치노트 URL로 교체 후 `certainty: confirmed` |
-| `games/maplestory/events/personal-boss-mission.yaml` | 종료일·출처 페이지 정확성 확인 |
+| 메이플 공지/업데이트/이벤트 | `curl`로 HTML 그대로 읽힘. `/News/Notice`, `/News/Update`(패치노트 전문이 텍스트), `/News/Event`(목록에 기간 텍스트), 상세 `/News/Event/<n>`에 정확한 시각 |
+| 메이플 이벤트 본문 | 대부분 이미지. `lwi.nexon.com/...png`를 받아 잘라서 읽는다. 패치노트(`/news/update/<n>`)에 같은 내용이 텍스트로 있으니 그쪽 우선 |
+| 명조 공식 사이트 | JS 앱. 데이터는 JSON: `https://hw-media-cdn-mingchao.kurogame.com/akiwebsite/website2.0/json/G152/kr/ArticleMenu.json`(목록), `.../kr/article/<id>.json`(본문). 영어는 `/en/`. 인용 URL은 `https://wutheringwaves.kurogames.com/ko/main/news/detail/<id>` |
+| 명조 공명자 한국어 명칭·속성 | `https://wutheringwaves.kurogames.com/static4.0/assets/kr-*.js` 안의 공명자 목록(name, attribute). attribute1 응결 · 2 기류 · 3 용융 · 4 인멸 · 5 회절 · 6 전도 |
+| 명조 픽업 일정 | 한국어 피드에는 최근 픽업 공지가 없음 → 영어 피드의 `Featured Resonator Convene` 글 |
 
-## 5. 다음 세션 할 일 (우선순위 순)
+Playwright 브라우저는 프록시 인증서 문제로 실패함 — 위 방법으로 충분.
 
-1. **네트워크 확인**: `curl -sI https://maplestory.nexon.com/News/Notice`, `https://wutheringwaves.kurogames.com/ko/main` 등이 열리는지. 안 열리면 사용자에게 알림.
-2. **위 4번 표의 원문 검증·보완** — `AGENTS.md` 규칙대로. 작업별로 `npm run validate`, `npm run scope -- <job-id>`.
-3. **데이터 확충**: 각 업데이트 작업(`npm run job`)으로 최근 공지·이벤트·공명자 추가. 추측 금지.
-4. **자동 최신화 예약 작업 설정** — 시작 전 사용자에게 질문할 것: 실행 주기, 비용 허용 범위, 결과 알림 방식, 자동 커밋 대상 브랜치(main 직접 vs PR 검토).
-5. 사용자 요청 시: PR 생성 / main 병합 안내.
-6. 이후 후보(사용자에게 먼저 물어볼 것): 메이플 직업·보스 DB, 명조 뽑기(픽업) 일정, 세 번째 게임, 넥슨 Open API 연동(API 키 필요).
+## 5. 남은 미확인 항목
 
-## 6. 사용자가 해야 할 일 (아직 안 한 것)
+| 파일 | 상태 |
+|---|---|
+| `wuthering-waves/resonators/jiyan.yaml` | 무기 `null` — 공식 한국어 문구에서 못 찾음. 출시 픽업 일정도 공식 근거 없음 |
+| `gyeongyeon.yaml` | 픽업 시작일 `null` — 공식 3.6 1·2기 픽업 공지 어디에도 경연 배너가 없음(1기 청초·데니아, 2기 히유키·모니에) |
+| `suoming.yaml` | 한국어 명칭 '쇄명'은 한국 공식 페이지에 아직 없음(3.7 출시 후 확인). 후반부 시작일 `null` |
+| `version-3-7-announcement.yaml` | 복각 4명은 보도 기준. 공식 미리보기는 배너 이름만 있음. 신규 지역명 「몽추천라」 공식 한국어 확인 필요 |
+| 언론 출처(`press-kr`, `press-en`) | 직접 열람 안 함 → `collectedAt`만 |
+
+## 6. 다음 세션 할 일 (우선순위 순)
+
+1. 3.7 업데이트(9/30) 이후 한국어 공식 공지로 위 5번 항목 확인.
+2. **자동 최신화 예약 작업 설정** — 시작 전 사용자에게 질문할 것: 실행 주기, 비용 허용 범위, 결과 알림 방식, 자동 커밋 대상 브랜치(main 직접 vs PR 검토).
+3. 사용자 요청 시: PR 생성 / main 병합 안내.
+4. 이후 후보(사용자에게 먼저 물어볼 것): 메이플 직업·보스 DB, 명조 뽑기(픽업) 일정, 세 번째 게임, 넥슨 Open API 연동(API 키 필요).
+
+## 7. 사용자가 해야 할 일 (아직 안 한 것)
 
 - 사이트를 공개하려면: 이 브랜치를 `main`에 병합 → 저장소 **Settings → Pages → Source: GitHub Actions** 선택.
-- 자동 최신화 방식에 대한 질문(5-4번)에 답하기.
+- 자동 최신화 방식에 대한 질문(6-2번)에 답하기.
 
-## 7. 참고: 주요 명령
+## 8. 참고: 주요 명령
 
 ```bash
 npm install
