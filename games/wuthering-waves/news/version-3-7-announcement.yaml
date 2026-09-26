@@ -1,20 +1,28 @@
 id: version-3-7-announcement
 title: 3.7 버전 「거울에 잠긴 허상, 마음이 비추는 인간 세상」 9월 30일 업데이트
 category: announcement
-publishedAt: null
+publishedAt: 2026-09-19
 summary: >-
-  3.7 버전이 9월 30일 업데이트된다. 신규 지역 「몽추천라」가 개방되고,
+  3.7 버전이 9월 30일 업데이트된다(점검 9월 30일 05:00~12:00, 한국 시간). 신규 지역 「몽추천라」가 개방되고,
   신규 5성 전도 공명자 여우의 별자리(전반부)와 쇄명(후반부)이 픽업으로 등장한다.
-  전반부에는 Chisa·Iuno, 후반부에는 Lynae·Lucilla가 복각된다(복각 공명자 한국어 명칭은 미수집).
+  전반부에는 치사·유노, 후반부에는 린네·루실라가 복각되는 것으로 보도됐다.
 tags: ["3.7", 여우의 별자리, 쇄명, 몽추천라]
 sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5454
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5476
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
   - source: official-x-kr
     url: https://x.com/WW_KR_Official/status/2101268817095844331
     collectedAt: 2026-09-25
   - source: press-en
     url: https://fandomwire.com/wuthering-waves-reveals-hsin-suoming-version-3-7/
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26
 analysis:
   author: ai:claude
   generatedAt: 2026-09-25

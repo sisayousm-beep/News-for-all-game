@@ -1,16 +1,29 @@
 id: version-3-6-update
-title: 3.6 버전 업데이트 — 신규 공명자 청초·경연
+title: 「신기루 속 등불 그림자, 속세에 깃든 검의 결심」 3.6 버전 업데이트 내용 안내
 category: update
-publishedAt: null
+publishedAt: 2026-08-20
 summary: >-
-  8월 20일 3.6 버전 업데이트. 전반부 청초(5성 기류·직검), 후반부 경연(5성 용융·대검)이 신규 픽업으로 등장하고
-  데니아, 히유키, 모니에 복각이 진행된다.
+  8월 20일 3.6 버전 업데이트(점검 05:00~12:00). 신규 5성 공명자 청초(기류·직검)와 경연(용융·대검),
+  신규 5성 무기 「옥빛 구름」·「수많은 인도」, 신규 지역 「현원경」이 추가됐다.
+  공식 픽업 공지 기준 전반부에는 청초·데니아, 후반부(9월 10일~)에는 히유키·모니에 튜닝이 진행된다.
 tags: ["3.6", 청초, 경연]
 sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5318
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5431
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
   - source: press-kr
     url: https://www.gameinsight.co.kr/news/articleView.html?idxno=36695
     collectedAt: 2026-09-25
   - source: press-kr
     url: https://www.gamemeca.com/view.php?gid=1778892
     collectedAt: 2026-09-25
-updatedAt: 2026-09-25
+updatedAt: 2026-09-26

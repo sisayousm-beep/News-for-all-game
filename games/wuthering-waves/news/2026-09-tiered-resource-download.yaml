@@ -1,0 +1,15 @@
+id: 2026-09-tiered-resource-download
+title: 클라이언트 리소스 등급별 다운로드 기능에 관하여
+category: notice
+publishedAt: 2026-09-24
+summary: >-
+  PC·iOS·Android에 리소스 등급별 다운로드 기능이 한정 테스트로 순차 도입된다.
+  PC는 최고 품질(UHD)·고품질(HD)·표준 품질(SD), 모바일은 HD·SD 중 선택할 수 있다.
+  PC(공식 런처)는 3.7 버전 업데이트 후 순차적으로 한정 테스트가 진행된다.
+tags: ["3.7", 최적화]
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5485
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+updatedAt: 2026-09-26
