@@ -67,10 +67,12 @@ Playwright 브라우저는 프록시 인증서 문제로 실패함 — 위 방�
 3. 사용자 요청 시: PR 생성 / main 병합 안내.
 4. 이후 후보(사용자에게 먼저 물어볼 것): 메이플 직업·보스 DB, 명조 뽑기(픽업) 일정, 세 번째 게임, 넥슨 Open API 연동(API 키 필요).
 
-## 7. 사용자가 해야 할 일 (아직 안 한 것)
+## 7. 사이트 공개 상태 (2026-09-26 완료)
 
-- 사이트를 공개하려면: 이 브랜치를 `main`에 병합 → 저장소 **Settings → Pages → Source: GitHub Actions** 선택.
-- 자동 최신화 방식에 대한 질문(6-2번)에 답하기.
+- 공개 주소: https://sisayousm-beep.github.io/News-for-all-game/
+- 저장소 기본 브랜치 = `main`. `main`에 push하면 자동 배포, 매일 05:05 KST 재빌드.
+- GitHub Pages 환경(github-pages)의 배포 허용 브랜치에 `main` 추가됨.
+- 사용자에게 남은 일: 자동 최신화 방식 질문(6-2번)에 답하기.
 
 ## 8. 참고: 주요 명령
 
