@@ -5,7 +5,7 @@
  */
 import type { Game } from '../core/load';
 import type { EventRecord, ModuleConfig } from '../core/schema';
-import { clock, dday, eventStatus, gameHref, shortDate, weekday } from '../core/hub';
+import { clock, dday, eventStatus, gameHref, href, shortDate, weekday } from '../core/hub';
 import { eventKind, eventStatus as statusLabel } from '../i18n/ko';
 import Provenance from './Provenance.astro';
 import GameTag from './GameTag.astro';
@@ -17,10 +17,11 @@ const range = `${shortDate(e.start)}${e.startNote ? ` ${e.startNote}` : ''} ~ ${
 ---
 <li data-start={e.start} data-end={e.end ?? undefined} data-status={status} data-game={game.config.id} data-kind={e.kind}
   data-hide-ended={hideEnded ? '' : undefined} hidden={hideEnded && status === 'ended'}>
-  <a class="ev-row" href={gameHref(game, mod.id, e.id)}>
-    {compact
-      ? <GameIcon game={game} />
-      : <span class="ev-date"><b>{shortDate(e.start)}</b><small>{weekday(e.start)}{clock(e.start) && ` ${clock(e.start)}`}</small></span>}
+  <a class:list={['ev-row', { 'has-thumb': e.image }]} href={gameHref(game, mod.id, e.id)}>
+    {!compact && <span class="ev-date"><b>{shortDate(e.start)}</b><small>{weekday(e.start)}{clock(e.start) && ` ${clock(e.start)}`}</small></span>}
+    {e.image
+      ? <span class="ev-thumb" aria-hidden="true"><img src={href(e.image)} alt="" loading="lazy" decoding="async" /></span>
+      : compact && <GameIcon game={game} />}
     <span class="ev-main">
       <span class="headline clamp-2">{e.title}</span>
       <span class="meta">

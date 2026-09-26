@@ -1,7 +1,7 @@
 ---
 /** "게임 한눈에 보기" card: identity + latest update + ongoing events + next date. `full` adds description and module links. */
 import type { Game } from '../core/load';
-import { gameHref, gameSummary, monthDay } from '../core/hub';
+import { gameHref, gameSummary, href, monthDay } from '../core/hub';
 import GameIcon from './GameIcon.astro';
 interface Props { game: Game; full?: boolean }
 const { game, full } = Astro.props;
@@ -10,6 +10,7 @@ const s = gameSummary(game);
 const hasSchedule = config.modules.some((m) => m.type === 'schedule');
 ---
 <article class="game-card" style={`--accent:${config.theme.accent}`}>
+  {config.theme.cover && <a class="game-card-cover" href={gameHref(game)} tabindex="-1" aria-hidden="true"><img src={href(config.theme.cover)} alt="" loading="lazy" decoding="async" /></a>}
   <a class="game-card-head" href={gameHref(game)}>
     <GameIcon game={game} size="md" />
     <div>

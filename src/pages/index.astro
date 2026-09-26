@@ -8,6 +8,7 @@ import NewsItem from '../components/NewsItem.astro';
 import EventItem from '../components/EventItem.astro';
 import Provenance from '../components/Provenance.astro';
 import Portrait from '../components/Portrait.astro';
+import Thumb from '../components/Thumb.astro';
 import { allChanges, allEvents, allNews, eventStatus, featured, gameHref, games, href, listDate, primarySource } from '../core/hub';
 import { historyKind, newsCategory } from '../i18n/ko';
 
@@ -35,7 +36,7 @@ const today = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', month: 
     <section class="featured" aria-label="주요 업데이트">
       {top.map((t) => (
         <a class="feature" href={gameHref(t.game, t.mod.id, t.record.id)} style={`--accent:${t.game.config.theme.accent}`}>
-          <span class="bar" aria-hidden="true" />
+          <Thumb game={t.game} image={t.record.image} label={newsCategory[t.record.category]} size="wide" />
           <span class="kicker"><GameTag game={t.game} plain /><span class="muted">{newsCategory[t.record.category]}</span><Provenance game={t.game} record={t.record} /></span>
           <span class="headline">{t.record.title}</span>
           {t.record.summary && <span class="dek clamp-2">{t.record.summary}</span>}

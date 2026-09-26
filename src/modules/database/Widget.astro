@@ -23,7 +23,7 @@ const sub = mod.fields.filter((f) => f.values && f.key !== 'rarity').slice(0, 2)
       <div class="db-grid" style="grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 8px">
         {byVersion.slice(0, 8).map((r) => (
           <a class="db-card" href={gameHref(game, mod.id, r.id)}>
-            <Portrait game={game} record={r} />
+            <Portrait game={game} record={r} tall />
             <span class="name clamp-1" style="font-size:.8125rem">{r.title}</span>
             <span class="attrs">{sub.map((f) => <span>{fieldLabel(f, r.attributes[f.key]) ?? '미확인'}</span>)}</span>
           </a>

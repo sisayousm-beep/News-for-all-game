@@ -61,6 +61,10 @@ test('database attribute must be declared, present and in range', () => {
   assert.match(errorsFor(c({ el: 'ice' })), /not in \[fire\]/);
   assert.match(errorsFor(c({ el: 'fire', hp: 1 })), /not declared/);
 });
+test('image must be a file under public/games', () => {
+  assert.match(errorsFor({ 'news/n1': news({ image: '/games/demo/img/news/missing.webp' }) }), /does not exist/);
+  assert.match(errorsFor({ 'news/n1': news({ image: 'https://cdn.example.com/x.png' }) }), /image/);
+});
 test('reserved module id', () =>
   assert.match(errorsFor({}, { ...config, modules: [{ type: 'news', label: 'x', collection: 'sources' }] }), /reserved/));
 test('update job must target a module collection', () =>

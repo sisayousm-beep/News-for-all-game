@@ -16,11 +16,12 @@ const history = [...r.history].sort((a, b) => (b.version ?? '').localeCompare(a.
 ---
 <div class="entity">
   <aside class="entity-side">
-    <Portrait game={game} record={r} />
+    <Portrait game={game} record={r} tall />
     <div class="entity-name">
       <h1>{r.title}</h1>
       {r.aliases.length > 0 && <p class="meta">{r.aliases.join(' · ')}</p>}
       <p style="margin-top:6px"><Provenance game={game} record={r} /></p>
+      {r.imageFrom && <p class="meta" style="margin-top:4px;font-size:.75rem">이미지: <a href={r.imageFrom} target="_blank" rel="noopener noreferrer" style="text-decoration:underline">{new URL(r.imageFrom).hostname}</a></p>}
     </div>
     <dl class="facts entity-extra">
       {mod.fields.map((f) => (

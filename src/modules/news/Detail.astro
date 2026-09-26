@@ -8,6 +8,7 @@ import GameTag from '../../components/GameTag.astro';
 import SourceList from '../../components/SourceList.astro';
 import Analysis from '../../components/Analysis.astro';
 import NewsItem from '../../components/NewsItem.astro';
+import Media from '../../components/Media.astro';
 interface Props { game: Game; mod: ModuleConfig; record: NewsRecord }
 const { game, mod, record: n } = Astro.props;
 const more = recordsOf<NewsRecord>(game, mod).filter((x) => x.id !== n.id).sort((a, b) => Date.parse(newsDate(b)) - Date.parse(newsDate(a))).slice(0, 5);
@@ -22,6 +23,7 @@ const search = (t: string) => `${import.meta.env.BASE_URL.replace(/\/$/, '')}/se
       <span class="sep">출처 {n.sources.length}건</span>
       <span class="sep">{formatDate(n.updatedAt, false)} 갱신</span>
     </p>
+    <Media image={n.image} from={n.imageFrom} />
     {n.summary ? <p class="article-lead">{n.summary}</p> : <p class="empty">요약이 없습니다. 원문 출처를 확인하세요.</p>}
     {n.tags.length > 0 && <p class="tags">{n.tags.map((t) => <a href={search(t)}>#{t}</a>)}</p>}
     {n.analysis && <Analysis game={game} analysis={n.analysis} />}

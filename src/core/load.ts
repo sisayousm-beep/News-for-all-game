@@ -13,6 +13,8 @@ import {
 } from './schema';
 
 export const GAMES_DIR = join(process.cwd(), 'games');
+const PUBLIC_DIR = join(process.cwd(), 'public');
+const missing = (path?: string) => !!path && !existsSync(join(PUBLIC_DIR, path));
 
 /** Built-in pages under /games/<id>/ that module ids must not shadow. */
 const RESERVED_MODULE_IDS = ['sources'];
@@ -58,6 +60,8 @@ export function loadGames(dir = GAMES_DIR): LoadResult {
     config.modules.filter((m) => RESERVED_MODULE_IDS.includes(m.id)).forEach((m) => err(`module id "${m.id}" is reserved`));
     dupes(config.modules.map((m) => m.collection)).forEach((d) => err(`duplicate collection "${d}"`));
     dupes(config.sources.map((s) => s.id)).forEach((d) => err(`duplicate source id "${d}"`));
+    for (const key of ['icon', 'cover'] as const)
+      if (missing(config.theme[key])) err(`theme.${key} file public${config.theme[key]} does not exist`);
     const collections = new Set(config.modules.map((m) => m.collection));
     const sourceIds = new Set(config.sources.map((s) => s.id));
     for (const job of config.updates) {
@@ -97,6 +101,8 @@ function checkRecord(rec: AnyRecord, fileId: string, game: Game, mod: ModuleConf
   const out: string[] = [];
   const sources = new Map(game.config.sources.map((s) => [s.id, s]));
   if (rec.id !== fileId) out.push(`id "${rec.id}" must match file name "${fileId}.yaml"`);
+
+  if (missing(rec.image)) out.push(`image file public${rec.image} does not exist`);
 
   const refs: SourceRef[] = [...rec.sources, ...(rec.analysis?.basedOn ?? [])];
   if (mod.type === 'database') (rec as EntityRecord).history.forEach((h) => refs.push(...h.sources));

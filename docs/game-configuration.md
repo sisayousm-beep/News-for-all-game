@@ -11,7 +11,8 @@
 | `publisher` | | 개발·서비스사 (게임 카드·허브 헤더에 표시) |
 | `locale` | | 기본 `ko` |
 | `theme.accent` | ✓ | 게임 대표 색 `#rrggbb`. 흰 배경 위 글자·선·옅은 배경으로 쓰이므로 중간 명도(너무 밝은 노랑·연두 금지). → [design-system.md](design-system.md) |
-| `theme.icon` | | `public/` 아래 아이콘 경로 |
+| `theme.icon` | | `public/` 아래 정사각 로고/아이콘 경로 |
+| `theme.cover` | | `public/` 아래 16:9 키비주얼. 게임 카드·허브 상단 배너·이미지 없는 뉴스의 대체 썸네일 |
 | `modules` | ✓ | 게임 허브의 탭. 순서대로 표시. → [modules.md](modules.md) |
 | `sources` | ✓ | 이 게임 데이터가 인용할 수 있는 출처. → [source-policy.md](source-policy.md) |
 | `updates` | | AI 업데이트 작업. → [ai-update-rules.md](ai-update-rules.md) |

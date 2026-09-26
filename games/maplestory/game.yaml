@@ -10,6 +10,8 @@ region: KMS (한국)
 locale: ko
 theme:
   accent: "#d9652f"
+  icon: /games/maplestory/img/icon.webp     # 공식 홈페이지 meta.png의 단풍잎
+  cover: /games/maplestory/img/cover.webp   # 공식 9월 업데이트 프로모션(0917_visitor) 하늘 배경 + 아르고 호 이미지 합성
 
 modules:
   - type: news

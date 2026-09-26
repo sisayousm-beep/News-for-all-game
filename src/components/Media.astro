@@ -1,0 +1,13 @@
+---
+/** Article hero image with a link to where it came from. Renders nothing when the record has no image. */
+import { href } from '../core/hub';
+interface Props { image?: string; from?: string }
+const { image, from } = Astro.props;
+const host = from && new URL(from).hostname.replace(/^www\./, '');
+---
+{image && (
+  <figure class="article-media">
+    <img src={href(image)} alt="" decoding="async" />
+    {from && <figcaption>이미지 출처: <a href={from} target="_blank" rel="noopener noreferrer">{host}</a></figcaption>}
+  </figure>
+)}

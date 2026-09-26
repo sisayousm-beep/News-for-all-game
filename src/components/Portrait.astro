@@ -1,11 +1,11 @@
 ---
-/** Character/entity portrait with a first-letter fallback. Rarity (if the module has one) tints the bottom edge. */
+/** Character/entity portrait (official art, top-anchored) with a first-letter fallback. Rarity (if the module has one) tints the bottom edge. */
 import type { Game } from '../core/load';
 import type { EntityRecord } from '../core/schema';
 import { href } from '../core/hub';
-interface Props { game: Game; record: EntityRecord; small?: boolean }
-const { game, record, small } = Astro.props;
+interface Props { game: Game; record: EntityRecord; small?: boolean; tall?: boolean }
+const { game, record, small, tall } = Astro.props;
 ---
-<span class:list={['portrait', { 'portrait-sm': small }]} data-rarity={record.attributes.rarity ?? undefined} style={`--accent:${game.config.theme.accent}`} aria-hidden="true">
-  {record.image ? <img src={href(record.image)} alt="" loading="lazy" /> : record.title.slice(0, 1)}
+<span class:list={['portrait', { 'portrait-sm': small, 'portrait-tall': tall, 'has-img': record.image }]} data-rarity={record.attributes.rarity ?? undefined} style={`--accent:${game.config.theme.accent}`} aria-hidden="true">
+  {record.image ? <img src={href(record.image)} alt="" loading="lazy" decoding="async" /> : record.title.slice(0, 1)}
 </span>

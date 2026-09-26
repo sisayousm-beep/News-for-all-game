@@ -38,6 +38,10 @@
 - 2026-09-26 디자인 개편(브랜치 `claude/news-for-all-game-redesign-m9ikil`): 다크 임시 UI → **Editorial Light** 디자인 시스템. 기준 문서 [docs/design-system.md](docs/design-system.md).
   기능 유지 + 추가: 신뢰 배지(공식/보도/DB/전언/추측), 홈 Featured·게임 카드, 일정 그룹(오늘/진행 중/이번 주/이후/종료)·D-Day, 뉴스·일정 필터, DB 그리드/목록 전환·관련 뉴스, 검색 로딩/오류 상태.
   스키마 추가(선택 필드): 레코드 `image`, 게임 `publisher`. 게임 색 변경: 메이플 `#d9652f`, 명조 `#3f6e8c`.
+- 2026-09-26 공식 이미지 적용: 게임 로고(`theme.icon`)·키비주얼(`theme.cover`), 메이플 이벤트 배너 8, 뉴스 이미지 4, 명조 공명자 일러스트 5.
+  파일은 `public/games/<game>/img/`, 원본 주소는 각 레코드 `imageFrom`. 사용자 결정: 개인용 사이트이므로 공식 이미지 사용 OK.
+  메이플 키비주얼은 9월 업데이트 프로모션의 하늘 배경 + 아르고 호 이미지를 합성한 것. 쇄명 이미지는 3.7 미리보기 공지(이름 표기 확인)에서 잘라냄.
+  자동 업데이트 작업도 이미지를 저장하도록 규칙 추가(docs/ai-update-rules.md), `npm run scope`가 `public/games/<game>/img/<collection>/` 허용.
 
 ## 4. 공식 출처 읽는 법 (2026-09-26 확인)
 

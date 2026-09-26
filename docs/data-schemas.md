@@ -17,7 +17,8 @@ id: hsin                  # = 파일 이름, 영구
 title: 여우의 별자리       # 표시 이름 (한국어)
 aliases: [Hsin, 심호]      # 원어명·별칭 — 검색 대상
 summary: …                # 원문에 있는 사실만으로 쓴 요약
-image: /games/wuthering-waves/img/hsin.webp  # 선택. public/ 아래 파일(핫링크 금지). 없으면 게임 색 타일로 대체
+image: /games/wuthering-waves/img/resonators/hsin.webp  # 선택. public/ 아래 파일(핫링크 금지, 검증 시 존재 확인). 없으면 게임 키비주얼로 대체
+imageFrom: https://…/xin-4e9f5c0c.webp  # 선택. 이미지를 내려받은 공식 원본 URL
 certainty: confirmed      # confirmed | reported | speculative (기본 confirmed)
 sources:                  # 1개 이상 — source-policy.md
   - source: press-kr      # game.yaml에 등록된 출처 id

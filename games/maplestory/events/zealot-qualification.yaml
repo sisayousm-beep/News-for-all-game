@@ -19,4 +19,6 @@ sources:
   - source: nexon-official
     url: https://maplestory.nexon.com/promotion/event/2026/20260917/intro
     collectedAt: 2026-09-25
+image: /games/maplestory/img/events/zealot-qualification.webp
+imageFrom: https://file.nexon.com/NxFile/download/FileDownloader.aspx?oidFile=5413419338709337106
 updatedAt: 2026-09-26

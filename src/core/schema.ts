@@ -67,7 +67,9 @@ const RecordBase = z.object({
   aliases: z.array(z.string()).default([]),
   summary: z.string().optional(),
   /** Thumbnail / portrait under public/ (e.g. /games/<id>/img/x.webp). No hotlinking; lists fall back to a game-colored tile. */
-  image: z.string().regex(/^\//, 'path under public/, starting with /').optional(),
+  image: z.string().regex(/^\/games\//, 'path under public/games/, e.g. /games/<game>/img/<collection>/<id>.webp').optional(),
+  /** Where the image was downloaded from (official page/CDN), so it can be re-fetched or checked. */
+  imageFrom: z.url().optional(),
   certainty: Certainty.default('confirmed'),
   sources: z.array(SourceRef).min(1),
   updatedAt: dateString,
@@ -174,7 +176,13 @@ export const GameConfig = z.object({
   publisher: z.string().optional(),
   region: z.string(),
   locale: z.string().default('ko'),
-  theme: z.object({ accent: z.string().regex(/^#[0-9a-fA-F]{6}$/), icon: z.string().optional() }),
+  theme: z.object({
+    accent: z.string().regex(/^#[0-9a-fA-F]{6}$/),
+    /** Square logo/icon under public/. */
+    icon: z.string().optional(),
+    /** Wide key visual (16:9) under public/: game cards, hub header, and the fallback thumbnail. */
+    cover: z.string().optional(),
+  }),
   modules: z.array(ModuleConfig).min(1),
   sources: z.array(SourceDef).min(1),
   updates: z.array(UpdateJob).default([]),

@@ -21,6 +21,8 @@ sources:
   - source: press-kr
     url: https://www.gamemeca.com/view.php?gid=1780649
     collectedAt: 2026-09-25
+image: /games/maplestory/img/news/2026-09-september-update.webp
+imageFrom: https://lwi.nexon.com/maplestory/2026/0917_board/260917_WQDV38E75N6S4W24.png
 updatedAt: 2026-09-26
 analysis:
   author: ai:claude

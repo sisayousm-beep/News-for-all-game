@@ -10,6 +10,8 @@ region: 글로벌 (한국어)
 locale: ko
 theme:
   accent: "#3f6e8c"
+  icon: /games/wuthering-waves/img/icon.webp     # 공식 홈페이지 한국어 로고
+  cover: /games/wuthering-waves/img/cover.webp   # 공식 3.7 업데이트 키비주얼 (news/detail/5476)
 
 modules:
   - type: database

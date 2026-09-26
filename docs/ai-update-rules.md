@@ -37,6 +37,10 @@ Claude/GPT 등의 예약 작업이 이 저장소를 갱신하는 방법입니다
 - 수정할 때 `updatedAt`을 오늘로. 사실이 바뀌면 `history`에 항목 추가(database).
 - 원문을 직접 열었으면 `verifiedAt`, 검색 요약만 봤다면 `collectedAt`만.
 - 분석/평가를 쓰려면 `analysis` 블록에, `author: ai:<모델명>`, `basedOn`에 근거 출처.
+- **이미지**: 원문에 대표 이미지(이벤트 배너, 업데이트 키비주얼, 캐릭터 공식 일러스트)가 있으면 내려받아
+  `public/games/<game>/img/<collection>/<id>.webp`로 저장(가로 최대 1280px, WebP)하고 레코드에
+  `image: /games/<game>/img/<collection>/<id>.webp`, `imageFrom: <원본 이미지 URL>`을 쓴다. 공식 출처 이미지만 쓴다.
+  - 메이플 이벤트: `/News/Event` 목록의 배너(285×120). 명조 공지: 기사 JSON 본문의 첫 키비주얼. 명조 공명자: 공식 사이트 `kr-*.js`/`index-*.js`의 `role-small/<key>.webp`.
 
 ## 금지
 

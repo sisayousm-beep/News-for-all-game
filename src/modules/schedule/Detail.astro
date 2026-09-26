@@ -8,6 +8,7 @@ import GameTag from '../../components/GameTag.astro';
 import SourceList from '../../components/SourceList.astro';
 import Analysis from '../../components/Analysis.astro';
 import EventItem from '../../components/EventItem.astro';
+import Media from '../../components/Media.astro';
 interface Props { game: Game; mod: ModuleConfig; record: EventRecord }
 const { game, mod, record: e } = Astro.props;
 const status = eventStatus(e);
@@ -17,6 +18,7 @@ const others = recordsOf<EventRecord>(game, mod).filter((x) => x.id !== e.id && 
   <article class="article" data-start={e.start} data-end={e.end ?? undefined}>
     <div class="article-kicker"><GameTag game={game} /><span>{eventKind[e.kind]}</span><Provenance game={game} record={e} /></div>
     <h1 class="article-title">{e.title}</h1>
+    <Media image={e.image} from={e.imageFrom} />
     <dl class="facts-grid num">
       <div><dt>상태</dt><dd><span class="status" data-status={status}>{statusLabel[status]}</span></dd></div>
       <div><dt>남은 기간</dt><dd class="dday" data-dday>{dday(e)}</dd></div>
