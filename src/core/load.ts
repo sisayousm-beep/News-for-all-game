@@ -118,6 +118,8 @@ function checkRecord(rec: AnyRecord, fileId: string, game: Game, mod: ModuleConf
   if (rec.id !== fileId) out.push(`id "${rec.id}" must match file name "${fileId}.yaml"`);
 
   if (missing(rec.image)) out.push(`image file public${rec.image} does not exist`);
+  if (mod.type === 'database' && missing((rec as EntityRecord).keyVisual))
+    out.push(`key visual file public${(rec as EntityRecord).keyVisual} does not exist`);
 
   const refs: SourceRef[] = [...rec.sources];
   if (mod.type === 'database') {

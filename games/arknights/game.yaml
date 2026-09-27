@@ -27,7 +27,7 @@ modules:
       - key: rarity
         label: 등급
         filter: true
-        values: { "6": "★6", "5": "★5", "4": "★4" }
+        values: { "6": "★6", "5": "★5", "4": "★4", "1": "★1" }
       - key: class
         label: 직군
         filter: true
@@ -74,6 +74,12 @@ sources:
     type: OFFICIAL
     url: https://www.arknights.kr
     domains: [arknights.kr]
+  - id: arknights-global
+    name: 명일방주 글로벌 공식 홈페이지
+    type: OFFICIAL
+    url: https://www.arknights.global/news
+    domains: [arknights.global/news]
+    note: 2025년 오퍼레이터 출시 명단·획득 경로 확인용. 한국 서버의 정확한 개방 시각과 구분한다.
   - id: gamedata
     name: 명일방주 게임 데이터 (한국 서버)
     type: DATABASE

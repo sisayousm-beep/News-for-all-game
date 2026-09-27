@@ -1,0 +1,117 @@
+id: crownslayer
+title: 크라운슬레이어
+aliases:
+  - Crownslayer
+summary: 6★ 스페셜리스트 · 처형자. 스페셜리스트 오퍼레이터 크라운슬레이어, 폭군의 악몽이자 복수의 칼날입니다.
+attributes:
+  rarity: 6
+  class: specialist
+  branch: 처형자
+  obtain: event
+  version: "5.0"
+topics:
+  - id: trait
+    section: stats
+    name: 특성 (처형자)
+    text: 재배치 시간 대폭 감소
+  - id: stats-max
+    section: stats
+    name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
+    values:
+      HP: 1,695
+      공격력: "545"
+      방어력: "325"
+      마법 저항: "0"
+      배치 코스트: "12"
+      저지: "1"
+      공격 간격: 0.93초
+      재배치: 22초
+  - id: trust
+    section: stats
+    name: 신뢰도 100% 보너스
+    values:
+      공격력: "+90"
+  - id: potential
+    section: stats
+    name: 잠재 보너스 (2~6잠)
+    text: 2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 배치 코스트 -1 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1
+  - id: s1
+    section: skills
+    name: 1스킬 「시야 차단 연막」 (최대 레벨)
+    text: 배치 후 공격력 +100%, 물리 및 마법 회피 +50%
+    values:
+      SP 소모: "0"
+      초기 SP: "0"
+      지속: 10초
+      SP: 8
+      발동: 패시브
+  - id: s2
+    section: skills
+    name: 2스킬 「포연과 진폭」 (최대 레벨)
+    text: 배치 후 8초간 공격 중지, 쉽게 적의 공격 목표가 되지 않으며, 제1재능의 효과가 2.5배로 증가, 스킬 종료 시 연막 내의 모든 지상 적에게 공격력의 500%에 해당하는 물리 대미지를 입힘
+    values:
+      SP 소모: "0"
+      초기 SP: "0"
+      SP: 8
+      발동: 패시브
+  - id: s3
+    section: skills
+    name: 3스킬 「봉화 처형장」 (최대 레벨)
+    text: 배치 후 제1재능의 효과 범위 확대, 크라운슬레이어는 연막 속에서 은신 효과를 획득하고 저지 가능 수가 0으로 변경, 2초마다 나타나 연막 내의 지상 적 1명에게 공격력의 250%에 해당하는 물리
+      대미지를 2회 입히고, 목표를 4초간 기절시킴 (동일한 목표에게 6초에 1회만 발동)
+    values:
+      SP 소모: "0"
+      초기 SP: "0"
+      지속: 16초
+      SP: 8
+      발동: 패시브
+  - id: talent-1
+    section: talents
+    name: 1재능 「고난 감수」
+    text: 스킬 지속 시간 동안 자신 주변에 연막 생성, 범위 내 적의 물리 및 마법 명중률 -20%
+  - id: talent-2
+    section: talents
+    name: 2재능 「크라운슬레이어의 명성」
+    text: 자신에게 대미지를 입히지 않은 지상 적에게 입히는 물리 대미지 +20%
+  - id: module-1
+    section: modules
+    name: 모듈 EXE-X 「시해의 칼」 (Lv.3)
+    text: 퇴각 시 배치 코스트 대량 반환 / 스킬 지속 시간 동안 자신 주변에 연막 생성, 범위 내 적의 물리 및 마법 명중률 -25%
+    values:
+      HP: "+130"
+      공격력: "+45"
+      방어력: "+30"
+  - id: module-2
+    section: modules
+    name: 모듈 EXE-Y 「목탄화」 (Lv.3)
+    text: 주변 4칸에 아군 오퍼레이터가 없을 경우, 공격력 +10% / 자신에게 대미지를 입히지 않은 지상 적에게 입히는 물리 대미지 +35%, 부여하는 기절 효과 시간 +50%
+    values:
+      HP: "+135"
+      공격력: "+88"
+history:
+  - date: 2025-04-24
+    version: "5.0"
+    kind: release
+    summary: 2025년 신규 6★ 오퍼레이터. 이벤트 보상으로 등장.
+    sources:
+      - source: arknights-global
+        url: https://www.arknights.global/news/283
+        collectedAt: 2026-09-28
+        verifiedAt: 2026-09-28
+        note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+sources:
+  - source: arknights-global
+    url: https://www.arknights.global/news/283
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_1502_crosly)
+image: /games/arknights/img/operators/crownslayer.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_1502_crosly_2.png
+keyVisual: /games/arknights/img/keyvisuals/crownslayer.webp
+keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1502_crosly_2b.png
+updatedAt: 2026-09-28

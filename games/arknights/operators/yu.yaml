@@ -1,0 +1,114 @@
+id: yu
+title: 위
+aliases:
+  - Yu
+summary: 6★ 디펜더 · 프라이멀 프로텍터. 저잣거리에 거주하고 있는 요리사 위. 온종일 화로 앞에서 바쁘게 일합니다.
+attributes:
+  rarity: 6
+  class: defender
+  branch: 프라이멀 프로텍터
+  obtain: limited
+  version: "5.5"
+topics:
+  - id: trait
+    section: stats
+    name: 특성 (프라이멀 프로텍터)
+    text: 적 3명 저지 가능, 공격 시 원소 손상을 입힐 수 있음
+  - id: stats-max
+    section: stats
+    name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
+    values:
+      HP: 3,333
+      공격력: "685"
+      방어력: "577"
+      마법 저항: "10"
+      배치 코스트: "26"
+      저지: "3"
+      공격 간격: 1.6초
+      재배치: 70초
+  - id: trust
+    section: stats
+    name: 신뢰도 100% 보너스
+    values:
+      HP: "+300"
+      공격력: "+30"
+      방어력: "+30"
+  - id: potential
+    section: stats
+    name: 잠재 보너스 (2~6잠)
+    text: 2잠 배치 코스트 -1 · 3잠 제1재능 강화 · 4잠 최대 HP +270 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1
+  - id: s1
+    section: skills
+    name: 1스킬 「오늘의 주인공」 (특화 3)
+    text: "패시브 효과: 적에게 더 쉽게 피격됨 최대 HP +70%, 방어력 +70%, 공격을 받을 때마다 상대에게 공격력의 50%에 해당하는 소각 손상을 입힘"
+    values:
+      SP 소모: "16"
+      초기 SP: "0"
+      지속: 30초
+      SP: 피격 회복
+      발동: 수동
+  - id: s2
+    section: skills
+    name: 2스킬 「귀빈 대접」 (특화 3)
+    text: 즉시 주변의 모든 적에게 공격력의 100%에 해당하는 마법 대미지를 입히고, 범위 내 지상 목표를 자신의 위치로 전송, 저지 가능 수 +2, 최대 HP +160%, 공격력 +290%, 일반 공격이
+      마법 대미지를 입힘
+    values:
+      SP 소모: "26"
+      초기 SP: "20"
+      지속: 20초
+      SP: 자동 회복
+      발동: 수동
+  - id: s3
+    section: skills
+    name: 3스킬 「부엌 속 세상」 (특화 3)
+    text: 최대 HP +110%, 공격력 +110%, 방어력 +110%, 전장의 모든 오퍼레이터에게 제2재능 효과를 부여, 전방에 전장을 가로지르는 화염벽 생성, 아군이 화염벽 너머로 마법 대미지를 입힐 시
+      위 공격력의 10%에 해당하는 소각 손상을 입힘, 적의 투사체가 화염벽 통과 시 20% 확률로 제거
+    values:
+      SP 소모: "55"
+      초기 SP: "42"
+      지속: 45초
+      SP: 자동 회복
+      발동: 수동
+  - id: talent-1
+    section: talents
+    name: 1재능 「예상왕래」
+    text: 적 저지 시 자신은 25%의 가호 효과 획득, 저지한 적에게 초당 공격력의 40%에 해당하는 마법 대미지와 공격력의 12%에 해당하는 소각 손상을 입힘
+  - id: talent-2
+    section: talents
+    name: 2재능 「한운은시」
+    text: 전장에 오퍼레이터가 4명 이상 존재 시, 자신은 초당 최대 HP의 1.5%에 해당하는 HP와 원소 손상 회복
+  - id: module-1
+    section: modules
+    name: 모듈 PRP-X 「인간백미」 (Lv.3)
+    text: 적을 저지하고 있을 때, 자신이 입히는 원소 손상 +15% / 전장에 오퍼레이터가 2명 이상 존재 시, 자신은 초당 최대 HP의 1.5%에 해당하는 HP와 원소 손상 회복. 4명 이상 존재 시,
+      소각 손상 폭발 상태인 적에게 입히는 마법 대미지 14% 증가
+    values:
+      HP: "+400"
+      공격력: "+85"
+history:
+  - date: 2025-07-17
+    version: "5.5"
+    kind: release
+    summary: 2025년 신규 6★ 오퍼레이터. 한정 헤드헌팅으로 등장.
+    sources:
+      - source: arknights-global
+        url: https://www.arknights.global/news/1326
+        collectedAt: 2026-09-28
+        verifiedAt: 2026-09-28
+        note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+sources:
+  - source: arknights-global
+    url: https://www.arknights.global/news/1326
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_2026_yu)
+image: /games/arknights/img/operators/yu.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_2026_yu_2.png
+keyVisual: /games/arknights/img/keyvisuals/yu.webp
+keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_2026_yu_2b.png
+updatedAt: 2026-09-28

@@ -1,0 +1,117 @@
+id: nymph
+title: 님프
+aliases:
+  - Nymph
+summary: 6★ 캐스터 · 프라이멀 캐스터. 젊은 디얄 님프. 세상 밖 경험은 처음입니다.
+attributes:
+  rarity: 6
+  class: caster
+  branch: 프라이멀 캐스터
+  obtain: standard
+  version: "5.0"
+topics:
+  - id: trait
+    section: stats
+    name: 특성 (프라이멀 캐스터)
+    text: 공격 시 마법 대미지를 입히며, 원소 대미지를 입힐 수 있음
+  - id: stats-max
+    section: stats
+    name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
+    values:
+      HP: 1,650
+      공격력: "655"
+      방어력: "129"
+      마법 저항: "15"
+      배치 코스트: "21"
+      저지: "1"
+      공격 간격: 1.6초
+      재배치: 70초
+  - id: trust
+    section: stats
+    name: 신뢰도 100% 보너스
+    values:
+      공격력: "+90"
+  - id: potential
+    section: stats
+    name: 잠재 보너스 (2~6잠)
+    text: 2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 공격력 +27 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1
+  - id: s1
+    section: skills
+    name: 1스킬 「디얄 일격」 (특화 3)
+    text: 공격력 +110%, 공격 시 마법 대미지의 15%에 해당하는 쇠약 손상을 입히고, 목표가 쇠약 손상 폭발 상태인 경우 추가로 공격력의 50%에 해당하는 원소 대미지를 입힘
+    values:
+      SP 소모: "30"
+      초기 SP: "20"
+      지속: 20초
+      SP: 자동 회복
+      발동: 수동
+  - id: s2
+    section: skills
+    name: 2스킬 「공포의 폭파」 (특화 3)
+    text: 적에게 공격력의 400%에 해당하는 마법 대미지를 1회 입히고, 상대에게 5초간 공포 효과 부여, 목표 주변의 적에게 같은 수치의 스플래시 마법 대미지 및 마법 대미지의 25%에 해당하는 쇠약
+      손상을 입힘, 쇠약 손상 폭발 상태인 적을 공격한 경우 제1재능의 대미지 효과가 공격력의 100%로 증가 2회 충전 가능
+    values:
+      SP 소모: "12"
+      초기 SP: "9"
+      SP: 자동 회복
+      발동: 수동
+  - id: s3
+    section: skills
+    name: 3스킬 「마음의 붕괴」 (특화 3)
+    text: 공격 범위 확대, 공격력 +220%, 공격 속도 +60, 동시에 목표 2개 공격, 목표가 쇠약 손상 폭발 상태이면 공격이 원소 대미지를 입힘
+    values:
+      SP 소모: "55"
+      초기 SP: "36"
+      지속: 35초
+      SP: 자동 회복
+      발동: 수동
+  - id: talent-1
+    section: talents
+    name: 1재능 「실혼」
+    text: 쇠약 손상 폭발 상태인 적 공격 시 초당 공격력의 40%에 해당하는 원소 대미지를 입힘, 쇠약 손상 폭발이 끝날 때까지 지속
+  - id: talent-2
+    section: talents
+    name: 2재능 「마음을 엿보는 열쇠」
+    text: 공격 범위 내 적이 쇠약 손상이 폭발할 때마다 자신의 공격력 +2%, 최대 10회 중첩
+  - id: module-1
+    section: modules
+    name: 모듈 PRI-X 「마음의 소리」 (Lv.3)
+    text: 원소 폭발 상태인 적에게 입히는 대미지가 110%로 증가 / 전장에 있는 적이 쇠약 손상이 폭발할 때마다 자신의 공격력 +3%, 최대 10회 중첩, 10회 중첩 후 공격 속도 +12
+    values:
+      HP: "+150"
+      공격력: "+80"
+  - id: module-2
+    section: modules
+    name: 모듈 PRI-Y 「상담 도구함」 (Lv.3)
+    text: 공격 범위 내에 원소 손상 폭발 상태인 적이 존재할 경우, 자신의 SP 자연 회복 속도 +0.2/초 / 쇠약 손상 폭발 상태인 적 공격 시 0.7초당 공격력의 40%에 해당하는 원소 대미지를
+      입힘, 쇠약 손상 폭발이 끝날 때까지 지속
+    values:
+      HP: "+170"
+      공격력: "+75"
+history:
+  - date: 2025-02-07
+    version: "5.0"
+    kind: release
+    summary: 2025년 신규 6★ 오퍼레이터. 이벤트 헤드헌팅으로 등장.
+    sources:
+      - source: arknights-global
+        url: https://www.arknights.global/news/289
+        collectedAt: 2026-09-28
+        verifiedAt: 2026-09-28
+        note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+sources:
+  - source: arknights-global
+    url: https://www.arknights.global/news/289
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_4146_nymph)
+image: /games/arknights/img/operators/nymph.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4146_nymph_2.png
+keyVisual: /games/arknights/img/keyvisuals/nymph.webp
+keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4146_nymph_2b.png
+updatedAt: 2026-09-28
