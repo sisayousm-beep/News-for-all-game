@@ -1,0 +1,43 @@
+id: spectrum-blaster
+title: 스펙트럼 블래스터
+aliases: ["Spectrum Blaster"]
+summary: "3.0 버전 5성 권총. 린네 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/spectrum-blaster.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030046_UI.webp
+attributes:
+  rarity: 5
+  type: pistols
+  version: "3.0"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「출석 면제 프로토콜」 (재련 1~5)"
+    text: "공격력 증가. 변주 스킬이나 일반 공격이 적중하면 자신의 일반 공격 피해 보너스가 4초간 증가한다. 일반 공격 중 적에게 조화 파동·이탈 또는 조화 밀집·이탈을 부여하면 파티 전체 피해가 30초간 증가(최대 3스택, 같은 효과 중첩 불가)."
+    values: { 공격력: "12~24%", 일반 공격 피해 보너스: "36~72%", 파티 피해 증가(스택당): "8~16%" }
+history:
+  - date: 2025-12-24
+    version: "3.0"
+    kind: release
+    summary: "3.0 버전 무기 이벤트 튜닝 [스펙트럼 블래스터]으로 출시 (~ 2026년 1월 15일 09:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3872
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.0 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030046
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

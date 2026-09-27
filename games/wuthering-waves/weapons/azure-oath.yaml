@@ -1,0 +1,43 @@
+id: azure-oath
+title: 아득히 푸른 하늘
+aliases: ["Azure Oath"]
+summary: "3.5 버전 5성 직검. 양양 · 현령 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/azure-oath.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020096_UI.webp
+attributes:
+  rarity: 5
+  type: sword
+  version: "3.5"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「홀로 솟은 깃」 (재련 1~5)"
+    text: "전체 속성 피해 보너스 증가. 암흑 효과를 부여하면 8초간 강공격 피해가 부스트되고 적의 방어력 일부를 무시한다."
+    values: { 전체 속성 피해 보너스: "12~24%", 강공격 피해 부스트: "36~72%", 방어력 무시: "12~24%" }
+history:
+  - date: 2026-07-09
+    version: "3.5"
+    kind: release
+    summary: "3.5 버전 무기 이벤트 튜닝 [아득히 푸른 하늘]으로 출시 (~ 2026년 7월 30일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5058
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5122
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.5 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020096
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

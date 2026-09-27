@@ -30,7 +30,7 @@ divided:
   - position: "돌파보다 다른 캐릭터"
     reasons:
       - "딜이 뒤에 몰려 돌파로 해결되지 않는다는 3돌 보유자 의견"
-subjects: [resonators/luuk-herssen]
+subjects: [resonators/luuk-herssen, weapons/daybreakers-spine]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/luuk-herssen

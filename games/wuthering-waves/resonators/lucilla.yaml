@@ -51,11 +51,16 @@ topics:
     name: "6체인 「아지랑이 같은 시간 속 바라보는 시선」"
     text: "「명심」 스택으로 내려놓기 피해 최대 +600%."
 history:
-  - date: null
+  - date: 2026-06-13
     version: "3.4"
     kind: release
-    summary: "3.4 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [내일에 인화될 기억]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.4 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [내일에 인화될 기억])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4888
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 7월 9일 12:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
         collectedAt: 2026-09-26

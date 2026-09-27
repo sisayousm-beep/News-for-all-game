@@ -65,6 +65,8 @@ modules:
     sections:
       - { key: stats, label: 기본 능력치 }
       - { key: passive, label: 패시브 · 재련 }
+    imageFit: contain
+    glance: [전용 무기 의존도, "analysis:breakpoint=1돌 / 명전"]
   - type: schedule
     id: events
     label: 이벤트·픽업

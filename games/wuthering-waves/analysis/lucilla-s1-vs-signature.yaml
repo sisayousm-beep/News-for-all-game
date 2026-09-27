@@ -35,7 +35,7 @@ assumptions:
   - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
   - 대체 무기는 재련 1, 4성은 재련 5 기준
   - "루실라 자신의 딜만 계산 — 파티원에게 주는 버프 증가분은 반영되지 않음"
-subjects: [resonators/lucilla, resonators/lucilla#chain-1]
+subjects: [resonators/lucilla, resonators/lucilla#chain-1, weapons/freeze-frame]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/lucilla

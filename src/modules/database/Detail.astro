@@ -49,7 +49,7 @@ const showCalc = has('analysis'), showTalk = has('community');
 ---
 <div class="entity">
   <aside class="entity-side">
-    <Portrait game={game} record={r} tall />
+    <Portrait game={game} record={r} tall fit={mod.imageFit} />
     <div class="entity-name">
       <h1>{r.title}</h1>
       {r.aliases.length > 0 && <p class="meta">{r.aliases.join(' · ')}</p>}

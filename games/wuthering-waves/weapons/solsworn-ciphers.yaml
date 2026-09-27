@@ -1,0 +1,43 @@
+id: solsworn-ciphers
+title: 솔스원의 해석
+aliases: ["Solsworn Ciphers"]
+summary: "3.2 버전 5성 권갑. 시그리카 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/solsworn-ciphers.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21040066_UI.webp
+attributes:
+  rarity: 5
+  type: gauntlets
+  version: "3.2"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬 피해: "48.60%" }
+  - id: passive
+    section: passive
+    name: "패시브 「근일점」 (재련 1~5)"
+    text: "공격력 증가. 변주 스킬 또는 에코 어빌리티 발동 시 15초간 에코 어빌리티 피해가 부스트된다. 에코 어빌리티 피해를 입히면 6초간 기류 피해가 적의 방어력 일부를 무시한다."
+    values: { 공격력: "12~24%", 에코 어빌리티 피해 부스트: "32~64%", 방어력 무시: "10~20%" }
+history:
+  - date: 2026-03-18
+    version: "3.2"
+    kind: release
+    summary: "3.2 버전 무기 이벤트 튜닝 [솔스원의 해석]으로 출시 (~ 2026년 4월 9일 09:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4423
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4449
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.2 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21040066
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

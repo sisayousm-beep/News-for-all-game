@@ -22,7 +22,7 @@ positive:
 negative:
   - "주요 공격이 끊기기 쉬워 퍼펙트 회피 효과를 잘 못 살린다."
   - "콜라보 캐릭터라 지금 못 받았으면 얻기 어렵다."
-subjects: [resonators/rebecca]
+subjects: [resonators/rebecca, weapons/skull-thrasher]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/rebecca

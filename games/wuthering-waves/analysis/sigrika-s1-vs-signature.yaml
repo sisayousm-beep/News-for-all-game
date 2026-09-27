@@ -34,7 +34,7 @@ assumptions:
   - "구원·샤콘 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
   - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
   - 대체 무기는 재련 1, 4성은 재련 5 기준
-subjects: [resonators/sigrika, resonators/sigrika#chain-1]
+subjects: [resonators/sigrika, resonators/sigrika#chain-1, weapons/solsworn-ciphers]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/sigrika

@@ -51,11 +51,16 @@ topics:
     name: "6체인 「뭇별의 끝에 닿을 때까지」"
     text: "공명 해방 피해 +400%. 비전투 상태에서 공명 에너지 빠르게 회복."
 history:
-  - date: null
+  - date: 2026-01-15
     version: "3.0"
     kind: release
-    summary: "3.0 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [별빛이 닿을 수 없는 곳에 있다 해도]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.0 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [별빛이 닿을 수 없는 곳에 있다 해도])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4011
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 2월 4일 11:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
         collectedAt: 2026-09-26

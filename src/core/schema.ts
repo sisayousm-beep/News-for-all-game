@@ -306,6 +306,8 @@ export const ModuleConfig = z.object({
    * Missing rows are skipped. Unset: first calculation + all verdicts of the top community record.
    */
   glance: z.array(z.string()).default([]),
+  /** database modules only: `contain` shows the whole image (weapons, items); `cover` crops to the frame (character art). */
+  imageFit: z.enum(['cover', 'contain']).default('cover'),
 });
 export type ModuleConfig = z.infer<typeof ModuleConfig> & { id: string };
 

@@ -53,11 +53,16 @@ topics:
     text: "엔트로피 변이 강화 중 공격력·용융 피해 +60%. 침식 영역이 불꽃 효과를 강하게 폭발."
     values: {공격력·용융 피해: "+60%"}
 history:
-  - date: null
+  - date: 2026-05-21
     version: "3.3"
     kind: release
-    summary: "3.3 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [내일에 바치는 거짓말]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.3 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [내일에 바치는 거짓말])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4714
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 6월 7일 11:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
         collectedAt: 2026-09-26

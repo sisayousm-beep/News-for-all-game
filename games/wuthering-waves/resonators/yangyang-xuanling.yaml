@@ -50,11 +50,16 @@ topics:
     text: "암흑 효과 부여 후 적이 받는 강공격 피해 +40% 등 추가 강화."
     values: {받는 강공격 피해: "+40%"}
 history:
-  - date: null
+  - date: 2026-07-09
     version: "3.5"
     kind: release
-    summary: "3.5 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [깃털에 실은 만물의 소리]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.5 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [깃털에 실은 만물의 소리])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5049
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 7월 30일 10:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5122
         collectedAt: 2026-09-26

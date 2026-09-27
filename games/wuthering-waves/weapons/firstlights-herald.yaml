@@ -1,0 +1,43 @@
+id: firstlights-herald
+title: 노을에 깃든 이슬
+aliases: ["Firstlight's Herald"]
+summary: "3.5 버전 5성 증폭기. 수수 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/firstlights-herald.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050096_UI.webp
+attributes:
+  rarity: 5
+  type: rectifier
+  version: "3.5"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "412.5", 공명 효율: "77.04%" }
+  - id: passive
+    section: passive
+    name: "패시브 「비녀에 깃든 봄」 (재련 1~5)"
+    text: "HP 증가. 공명 해방 발동 시 협주 에너지 회복(20초마다 1회). 서리 효과 부여와 치료를 모두 하면 두 버프를 얻고, 둘 다 있으면 근처 파티 전원의 공격력이 증가한다(같은 효과 중첩 불가)."
+    values: { HP: "12~24%", 협주 에너지 회복: "8~16pt", 파티 공격력: "20~40%" }
+history:
+  - date: 2026-07-30
+    version: "3.5"
+    kind: release
+    summary: "3.5 버전 무기 이벤트 튜닝 [노을에 깃든 이슬]으로 출시 (~ 2026년 8월 19일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5238
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5122
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.5 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050096
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

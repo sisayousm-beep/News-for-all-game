@@ -65,6 +65,19 @@ export function linked<T extends AnyRecord>(g: Game, layer: Layer, target: strin
   );
 }
 
+/**
+ * Records a module lists on its own tab. Calculations / opinions about a database entity (a resonator, a weapon…)
+ * live on that entity's page, so their module tab only lists the rest (e.g. gacha statistics).
+ */
+export function listed<T extends AnyRecord>(g: Game, mod: ModuleConfig): T[] {
+  const all = recordsOf<T>(g, mod);
+  if (layerOf(mod) === 'official') return all;
+  const entities = new Set(modulesOf(g, 'database').map((m) => m.collection));
+  return all.filter((r) => !r.subjects.some((s) => entities.has(s.split('/')[0])));
+}
+/** Modules shown as tabs / home widgets: layered modules with nothing of their own are hidden. */
+export const visibleModules = (g: Game) => g.config.modules.filter((m) => layerOf(m) === 'official' || listed(g, m).length > 0);
+
 /** Unique records of `linked()` (a record about several topics listed once). */
 export const linkedRecords = <T extends AnyRecord>(g: Game, layer: Layer, target: string) =>
   linked<T>(g, layer, target).filter((l, i, all) => all.findIndex((x) => x.record === l.record) === i);
@@ -237,7 +250,7 @@ export function gameSummary(g: Game, now = Date.now()) {
     latest: headline(news),
     ongoing: events.filter((t) => eventStatus(t.record, now) === 'ongoing').length,
     next: upcoming[0],
-    counts: g.config.modules.map((m) => ({ mod: m, n: recordsOf(g, m).length })),
+    counts: visibleModules(g).map((m) => ({ mod: m, n: listed(g, m).length })),
   };
 }
 

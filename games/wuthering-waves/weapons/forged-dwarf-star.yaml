@@ -1,0 +1,43 @@
+id: forged-dwarf-star
+title: 위조된 작은별
+aliases: ["Forged Dwarf Star"]
+summary: "3.3 버전 5성 증폭기. 데니아 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/forged-dwarf-star.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050076_UI.webp
+attributes:
+  rarity: 5
+  type: rectifier
+  version: "3.3"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "500", 크리티컬: "36%" }
+  - id: passive
+    section: passive
+    name: "패시브 「적막」 (재련 1~5)"
+    text: "공격력 증가. 불꽃 효과 또는 조화 밀집·이탈을 부여하면 공명 해방 피해 보너스가 5초간 증가한다. 그동안 같은 효과를 부여한 파티원의 공격력이 15초간 증가한다(같은 효과 중첩 불가)."
+    values: { 공격력: "12~24%", 공명 해방 피해 보너스: "36~72%", 파티원 공격력: "24~48%" }
+history:
+  - date: 2026-05-21
+    version: "3.3"
+    kind: release
+    summary: "3.3 버전 무기 이벤트 튜닝 [위조된 작은별]으로 출시 (~ 2026년 6월 7일 11:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4722
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.3 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050076
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

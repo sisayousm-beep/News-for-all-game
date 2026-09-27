@@ -1,12 +1,12 @@
 ---
 import type { Game } from '../../core/load';
 import type { AnalysisRecord, ModuleConfig } from '../../core/schema';
-import { gameHref, recordsOf } from '../../core/hub';
+import { gameHref, listed } from '../../core/hub';
 import LayerHead from '../../components/LayerHead.astro';
 import AnalysisCard from '../../components/AnalysisCard.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
-const items = recordsOf<AnalysisRecord>(game, mod).filter((a) => a.status === 'current').sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+const items = listed<AnalysisRecord>(game, mod).filter((a) => a.status === 'current').sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 ---
 <section class="section">
   <LayerHead layer="analysis" title={mod.label} count={items.length} />

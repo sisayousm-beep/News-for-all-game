@@ -415,6 +415,7 @@ main { max-width: var(--max); margin: 0 auto; padding: var(--s5) var(--s5) var(-
 .portrait[data-rarity="5"]::after { background: #d6a321; }
 .portrait[data-rarity="4"]::after { background: #9a7acb; }
 .portrait.has-img img { object-position: 50% 12%; }
+.portrait.fit-contain img { object-fit: contain; object-position: center; padding: 10%; }
 .portrait-tall { aspect-ratio: 3 / 4; }
 .portrait-sm { width: 40px; height: 40px; font-size: 1rem; flex: none; }
 @media (max-width: 720px) {

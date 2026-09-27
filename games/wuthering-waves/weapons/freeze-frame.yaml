@@ -1,0 +1,43 @@
+id: freeze-frame
+title: 프리즈 프레임
+aliases: ["Freeze Frame"]
+summary: "3.4 버전 5성 증폭기. 루실라 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/freeze-frame.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050086_UI.webp
+attributes:
+  rarity: 5
+  type: rectifier
+  version: "3.4"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「페이드 아웃」 (재련 1~5)"
+    text: "공격력 증가. 서리 효과를 부여하면 자신의 응결 피해 보너스가 12초간 증가하고, 파티 전원의 공격력이 30초간 증가한다(같은 효과 중첩 불가)."
+    values: { 공격력: "12~24%", 응결 피해 보너스: "30~60%", 파티 공격력: "24~48%" }
+history:
+  - date: 2026-06-13
+    version: "3.4"
+    kind: release
+    summary: "3.4 버전 무기 이벤트 튜닝 [프리즈 프레임]으로 출시 (~ 2026년 7월 9일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4896
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.4 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050086
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

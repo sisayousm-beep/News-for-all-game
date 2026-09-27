@@ -1,0 +1,42 @@
+id: frostburn
+title: 서린 불꽃
+aliases: ["Frostburn"]
+summary: "3.3 버전 5성 직검. 히유키와 같은 버전에 추가됐다."
+image: /games/wuthering-waves/img/weapons/frostburn.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020086_UI.webp
+attributes:
+  rarity: 5
+  type: sword
+  version: "3.3"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「다시는 나란 존재가 없기를」 (재련 1~5)"
+    text: "공격력 증가. 서리 효과를 부여하면 6초간 응결 피해가 부스트되고 공명 해방 피해가 적의 방어력 일부를 무시한다. 등장 중이면 주변 적이 받는 서리 효과 피해도 증가한다(더 높은 효과 적용)."
+    values: { 공격력: "12~24%", 응결 피해 부스트: "28~56%", 방어력 무시: "10~20%", 서리 효과 피해 부스트: "20~40%" }
+history:
+  - date: null
+    version: "3.3"
+    kind: release
+    summary: "3.3 버전에 추가된 5성 무기. 한국어 무기 튜닝 공지는 아직 찾지 못해 출시일 미확인."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/weapon/21020086
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4615
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.3 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020086
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

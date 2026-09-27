@@ -1,0 +1,43 @@
+id: daybreakers-spine
+title: 한낮의 의지
+aliases: ["Daybreaker's Spine"]
+summary: "3.1 버전 5성 권갑. 루크 · 헤르센 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/daybreakers-spine.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21040056_UI.webp
+attributes:
+  rarity: 5
+  type: gauntlets
+  version: "3.1"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「봉합된 새벽과 황혼」 (재련 1~5)"
+    text: "공격력 증가. 일반 공격 피해를 입히면 회절 피해 보너스가 4초간 증가한다. 적에게 조화 밀집·이탈을 부여할 때마다 6초간 일반 공격 피해가 부스트되고 적의 방어력 일부를 무시한다."
+    values: { 공격력: "12~24%", 회절 피해 보너스: "20~40%", 일반 공격 피해 부스트: "20~40%", 방어력 무시: "10~20%" }
+history:
+  - date: 2026-02-26
+    version: "3.1"
+    kind: release
+    summary: "3.1 버전 무기 이벤트 튜닝 [한낮의 의지]으로 출시 (~ 2026년 3월 18일 11:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4331
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "무기 이벤트 튜닝 공지 — 이벤트 기간"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "3.1 버전 업데이트 안내 — 신규 무기"
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21040056
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27
