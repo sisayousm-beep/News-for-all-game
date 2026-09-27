@@ -1,0 +1,40 @@
+id: snow-hunter-evaluation
+title: 스노우헌터 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 괜찮음 — 해외 2스 B·B+
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 사냥꾼 스나이퍼 — 3연타 단일 딜 + 빙결
+- label: 추천 스킬
+  value: 2스킬(수동·충전형)
+summary: 2스와 재능으로 3연타를 넣고 두 번 겹쳐 빙결까지 거는 괜찮은 5★ 스나이퍼라는 해외 평가. 국내에서는 "5★이라 장난감", 명토체스 쉐라그 덱의 정밀 기물로 언급되는 정도다.
+positive:
+- 짧은 쿨·수동·충전형 2스로 딜 타이밍을 정확히 조절한다(해외).
+- 2스를 겹쳐 쓰면 원하는 때 빙결을 건다.
+- 명토체스 쉐라그 초반 정밀 기물로 쓸 만하다는 글.
+negative:
+- 단일 대상 딜이고 메타에는 못 미친다(해외).
+- '"5성은 인프라용 아니면 키울 의미가 없다", "레이 생각하고 쓰면 구리다"는 댓글.'
+subjects:
+- operators/snow-hunter
+- operators/snow-hunter#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1sixuv4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Retracing Our Steps (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6010276
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6044854
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

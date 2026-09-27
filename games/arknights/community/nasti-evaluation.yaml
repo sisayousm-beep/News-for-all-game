@@ -1,0 +1,60 @@
+id: nasti-evaluation
+title: 내스티 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 특수픽 — 해외 3스 A-(일반)·A+(고난도)
+- label: 뽑기 권장
+  value: 넘겨도 됨 (해외 Lean Skip)
+- label: 역할
+  value: 공예가 서포터 — 맵 아무 곳에나 고지대 타일 생성
+- label: 추천 스킬
+  value: 3스킬 / 2스킬은 특화 1까지
+- label: 조작 난이도
+  value: 높음 — 조합·배치 설계가 필요
+summary: 맵 어디에나 고지대를 만드는 독보적인 기믹으로 "꿀잼 전형"이라는 평이지만, 본체 성능은 약해 혼자서는 할 일이 없다는 의견이 국내외 공통이다. 왕과의 조합이 자주 거론된다.
+shift:
+  release: 해외 "Strong Skip"
+  now: 해외 "Lean Skip"
+  reason: 고난도에서 SP 배터리·고지대 활용이 확인되며 해외 공략이 한 단계 올렸다.
+positive:
+- 고지대 타일 생성으로 새로운 공략이 가능하다(해외).
+- 재미있는 전형이라 뽑고 만족했다는 후기, 보스전에서 덕분에 재밌었다는 글.
+- 왕처럼 강한 원거리와 조합하면 딜을 크게 올릴 수 있다.
+negative:
+- 본체 효과가 약해 오퍼풀이 적으면 투자 가치가 낮다(해외).
+- '"본체가 하는 거 없이 서 있기만 해서" 자주 안 쓴다는 댓글.'
+- 특화 효율이 낮다 — 정예2만 해도 된다.
+subjects:
+- operators/nasti
+- operators/nasti#s2
+- operators/nasti#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1tf73ey/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Unrealized Realities (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6085368
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6068131
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6080342
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6039401
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6090337
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

@@ -1,0 +1,39 @@
+id: skybox-evaluation
+title: 스카이박스 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중간 — 해외 2스 B
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 첫 비공(스카이브레이커) 스나이퍼 — 비행 + 스킬 시 광역
+- label: 추천 스킬
+  value: 2스킬 — 특화 효율이 좋음
+summary: 비행하다 스킬 때만 내려와 광역 피해를 주는 첫 스카이브레이커. 해외는 등급 대비 괜찮고 특화 가치가 높다고 보지만, 국내에서는 "배포 5★은 건드리지 말라"는 반응과 "생각보다 세다"는 후기가 갈린다.
+positive:
+- 비행 중엔 여러 피해원을 피해 공격적인 배치가 가능하다(해외).
+- 0정예 1레벨인데도 광역 피해가 꽤 세다는 후기.
+negative:
+- 메타와는 거리가 멀다(해외).
+- '"5★ 배포 캐릭은 키우지 말라"는 댓글이 많다.'
+subjects:
+- operators/skybox
+- operators/skybox#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1tf73ey/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Unrealized Realities (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6047491
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6055658
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

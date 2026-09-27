@@ -1,0 +1,53 @@
+id: snegurochka-evaluation
+title: 스네구로치카 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 두 스킬 모두 등급 없음
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음(4★)
+- label: 역할
+  value: 4★ 에이전트 뱅가드 — 코스트·정지
+- label: 추천 스킬
+  value: 1스킬 특화 1 정도 (해외 Breakpoint)
+summary: 에이전트 직군은 강하지만 초기 SP(초동)가 너무 느리고 스킬 효과가 빈약한 설계 실패라는 평이 국내외 공통이다. 통합 전략 초반 4★ 에이전트 용도로만 쓰인다.
+positive:
+- 통합 전략 0희망 초반에 쓸 만하고, 2스로 적을 정지시킬 수 있다.
+- 쾌속 부활(쾌부) 특성이 좋다는 댓글.
+negative:
+- 2스 초동이 10초라 이네스·칸타빌레(5초)보다 느리다 — "4성이라 성능을 토막냈다".
+- 1스는 SP 소모 대비 코스트 수급이 적고, 2스는 회전율·지속이 짧다.
+- '해외: 두 스킬 모두 약해 추천 스킬을 고르기도 어렵다.'
+subjects:
+- operators/snegurochka
+- operators/snegurochka#s1
+- operators/snegurochka#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1rwl0ov/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Episode 16 (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6045084
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5990953
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5987714
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6056413
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6106535
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

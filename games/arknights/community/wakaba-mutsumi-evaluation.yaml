@@ -1,0 +1,49 @@
+id: wakaba-mutsumi-evaluation
+title: 와카바 무츠미 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 상위 — 해외 2스 A
+- label: 뽑기 권장
+  value: 콜라보 5★ 중 추천
+- label: 역할
+  value: 인형사 스페셜리스트 — 최고의 피버 충전 + 높은 맷집
+- label: 추천 스킬
+  value: 2스킬
+summary: 인형사 특유의 기본 가치에 최고의 피버 생성, 극단적인 맷집, 꽤 강한 딜까지 갖춰 메타 밖으로 넓힐 때 가장 좋은 5★ 중 하나라는 해외 평가. 국내에서도 "생각보다 효녀", "2스 딜이 은근 세다"는 반응.
+positive:
+- 피버 생성이 가장 좋고 재능 덕에 매우 단단하다(해외).
+- 스킬을 켜면 딜이 꽤 세다는 후기가 이어졌다.
+- SS-8 보스맵 사키코 공략에서 우이카와 함께 필수 멤버로 쓰였다.
+negative:
+- 맷집·딜 모두 메타 6★에는 못 미쳐 필수는 아니다(해외).
+- 쇠약 손상 관리가 필요하다는 질문글이 있었다.
+subjects:
+- operators/wakaba-mutsumi
+- operators/wakaba-mutsumi#s2
+- operators/wakaba-mutsumi#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qxxhrp/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Somniloquium Serenum (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5968255
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6058503
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5967046
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5979951
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'
