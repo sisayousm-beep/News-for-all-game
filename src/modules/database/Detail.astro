@@ -31,13 +31,18 @@ const unique = <T extends { record: unknown }>(xs: T[]) => xs.filter((x, i) => x
 const calcCards = unique(calc).sort((a, b) => ANALYSIS_KINDS.indexOf(a.record.kind) - ANALYSIS_KINDS.indexOf(b.record.kind));
 const talkCards = unique(talk).sort((a, b) => COMMUNITY_KINDS.indexOf(a.record.kind) - COMMUNITY_KINDS.indexOf(b.record.kind));
 // "한눈에 보기": the top calculation's answer, then the headline verdicts of the top community record (kind order: evaluation first).
-const glance = [
-  ...calcCards.slice(0, 1).map((l) => ({ layer: 'analysis' as const, label: analysisKind[l.record.kind], value: l.record.results[0], href: anchor('analysis', l.record.id) })),
-  ...talkCards.slice(0, 1).flatMap((l) => [
-    ...l.record.verdicts.map((v) => ({ layer: 'community' as const, label: v.label, value: v.value, href: anchor('community', l.record.id) })),
-    ...(l.record.shift ? [{ layer: 'community' as const, label: '평가 변화', value: `출시 ${l.record.shift.release} → 현재 ${l.record.shift.now}`, href: anchor('community', l.record.id) }] : []),
-  ]),
-];
+type Row = { layer: 'analysis' | 'community'; label: string; value: string; href: string };
+const calcRow = (a: AnalysisRecord, label = analysisKind[a.kind]): Row => ({ layer: 'analysis', label, value: a.answer ?? a.results[0], href: anchor('analysis', a.id) });
+const top = talkCards[0]?.record;
+const verdictRows: Row[] = top ? top.verdicts.map((v) => ({ layer: 'community', label: v.label, value: v.value, href: anchor('community', top.id) })) : [];
+const glance: Row[] = mod.glance.length
+  ? mod.glance.flatMap((g): Row[] => {
+      const m = g.match(/^analysis:(\w+)=(.+)$/);
+      if (!m) return verdictRows.filter((v) => v.label === g);
+      const a = calcCards.find((l) => l.record.kind === m[1])?.record;
+      return a ? [calcRow(a, m[2])] : [];
+    })
+  : [...calcCards.slice(0, 1).map((l) => calcRow(l.record)), ...verdictRows];
 const sections = mod.sections.map((s) => ({ ...s, topics: r.topics.filter((t) => t.section === s.key) })).filter((s) => s.topics.length);
 const has = (layer: string) => modulesOf(game).some((m) => layerOf(m) === layer);
 const showCalc = has('analysis'), showTalk = has('community');

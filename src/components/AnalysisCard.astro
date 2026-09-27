@@ -14,13 +14,14 @@ import BarChart from './BarChart.astro';
 interface Props { game: Game; mod: ModuleConfig; record: AnalysisRecord; compact?: boolean; heading?: boolean }
 const { game, mod, record: a, compact, heading } = Astro.props;
 const url = gameHref(game, mod.id, a.id);
+// With an answer, results[0] becomes the visible explanation under it.
 const [conclusion, ...more] = a.results;
 const stale = staleness(game, a);
 ---
 <article class="layer-card" data-layer="analysis">
   <p class="layer-card-top"><LayerBadge layer="analysis" /><span class="meta">{analysisKind[a.kind]}</span><span class="meta num">{a.version} 기준</span></p>
   {heading ? <h1 class="article-title">{a.title}</h1> : <a class="headline" href={url}>{a.title}</a>}
-  <p class="conclusion">{conclusion}</p>
+  {a.answer ? <><p class="conclusion answer">{a.answer}</p><p class="explain">{conclusion}</p></> : <p class="conclusion">{conclusion}</p>}
   {!compact && a.chart && <BarChart chart={a.chart} />}
   {stale && <p class="stale" data-level={stale.level} role="note">⚠ {stale.text}</p>}
   {!compact && (

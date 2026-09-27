@@ -210,6 +210,8 @@ export const AnalysisRecord = RecordBase.extend({
   assumptions: z.array(z.string()).min(1),
   /** Version of the calculator / sheet / method, when the source has one. */
   calculationVersion: z.string().optional(),
+  /** Optional one-phrase answer shown above everything (e.g. "명전 추천"); results[0] then explains it. */
+  answer: short(20).optional(),
   /** Findings as conditional sentences ("이 조건에서 약 …"). results[0] is the conclusion shown on top. */
   results: z.array(short(LIMITS.conclusion)).min(1),
   table: z.object({
@@ -298,6 +300,12 @@ export const ModuleConfig = z.object({
   itemLabel: z.string().optional(),
   /** database modules only: official sub-item groups shown on the detail page, in order (스킬, 공명 체인…). */
   sections: z.array(z.object({ key: z.string(), label: z.string() })).default([]),
+  /**
+   * database modules only: rows of the detail page's "한눈에 보기", in order. Each entry is a community
+   * verdict label, or `analysis:<kind>=<label>` for the first linked calculation of that kind (its answer).
+   * Missing rows are skipped. Unset: first calculation + all verdicts of the top community record.
+   */
+  glance: z.array(z.string()).default([]),
 });
 export type ModuleConfig = z.infer<typeof ModuleConfig> & { id: string };
 

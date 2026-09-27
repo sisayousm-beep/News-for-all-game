@@ -45,6 +45,7 @@ modules:
       - { key: stats, label: 기본 능력치 }
       - { key: skills, label: 스킬 }
       - { key: chain, label: 공명 체인 }
+    glance: [캐릭터 티어, 파티 순위, 역할, 전용 무기 의존도, "analysis:breakpoint=1돌 / 명전", 조작 난이도]
   - type: database
     id: weapons
     label: 무기
