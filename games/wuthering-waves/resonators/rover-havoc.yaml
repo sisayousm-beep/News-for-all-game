@@ -1,0 +1,70 @@
+id: rover-havoc
+title: 방랑자 · 인멸
+aliases: ["Rover: Havoc"]
+summary: "정체불명의 공명자, 모든 소리를 흡수할 수 있는 힘을 가지고 있다. 기억을 되찾기 위해 여행을 떠난다"
+attributes:
+  rarity: 5
+  element: havoc
+  weapon: sword
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,825", 공격력: "412.5", 방어력: "1,258.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {공격력: "+12%", 인멸 피해 보너스: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「평정의 칼날」"
+    values: {쿨타임: "12초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「임연사적」"
+    values: {쿨타임: "16초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「현의 여운」"
+    text: "공명 스킬 피해 보너스 30% 증가"
+  - id: chain-2
+    section: chain
+    name: "2체인 「낮과 밤」"
+    text: "강공격 멸음을 발동하여 다크 서지 상태 진입 시, 공명 스킬의 쿨타임이 리셋된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「만물의 울림」"
+    text: "다크 서지 상태일 경우, 일반 공격 5단으로 적 명중 시, 손실된 HP의 10%에 해당하는 HP를 회복할 수 있다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「인멸의 먼지 소리」"
+    text: "강공격 멸음, 공명 해방 임연사적을 사용하여 목표에 명중 시, 목표의 인멸 저항이 10% 감소하며, 20초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「만물의 경청」"
+    text: "다크 서지 상태일 경우 일반 공격 5단은 추가로 1회의 인멸 피해를 입히며, 피해량은 일반 공격 5단 피해의 50%에 해당한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「다크 서지 상승」"
+    text: "다크 서지 상태일 경우, 방랑자의 크리티컬이 25% 증가된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 5성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1604
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1604
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/rover-havoc.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/rover2-a3bf71da.png
+updatedAt: 2026-09-27

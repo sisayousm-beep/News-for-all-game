@@ -1,0 +1,42 @@
+id: novaburst
+title: "천공의 순간"
+aliases: ["Novaburst"]
+summary: "4성 권총. 1.2 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/novaburst.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030064_UI.webp
+attributes:
+  rarity: 4
+  type: pistols
+  version: "1.2"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "30.38%" }
+  - id: passive
+    section: passive
+    name: "패시브 「천변만화」 (재련 1~5)"
+    text: "캐릭터가 돌진하거나 회피할 시, 공격력이 4~8% 증가하고, 8초간 지속되며, 최대 3스택 중첩이 가능하다"
+history:
+  - date: null
+    version: "1.2"
+    kind: release
+    summary: "1.2 버전 무기 이벤트 튜닝에 4성 픽업으로 처음 등장 (<무기의 울림> 무기 이벤트 튜닝——「팔방의 천추」 확률UP; 2024년 9월 7일 11:00 ~ 2024년 9월 28일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1286
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1286
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030064
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

@@ -1,0 +1,50 @@
+id: roccia-s1-vs-signature
+title: "로코코 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+answer: 명전 추천
+results:
+  - "개인 딜 기준, 전용 무기 없는 1돌은 명전 딜의 약 71~87%이고, 평균 뽑기도 명전(약 139회)이 1돌(약 167회)보다 적다."
+  - "전용 무기(희비극)는 대체 5성 대비 +11%, 1돌은 명함 대비 +-2.8%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 3돌(직전 대비 +19%)."
+chart:
+  title: "돌파 단계별 개인 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100.0 }
+    - { label: 1돌, value: 97.22 }
+    - { label: 2돌, value: 110.76 }
+    - { label: 3돌, value: 131.83 }
+    - { label: 4돌, value: 154.64 }
+    - { label: 5돌, value: 161.91 }
+    - { label: 6돌, value: 190.06 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 희비극 (명전)", "100%", "139회"]
+    - ["1돌 + 솔스원의 해석 (대체 5성)", "약 87%", "167회 + 무기"]
+    - ["1돌 + 거침없는 비상 (4성)", "약 71%", "167회"]
+    - ["명함 + 솔스원의 해석", "약 90%", "83회"]
+    - ["1돌 + 희비극", "약 97%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(1타겟, 솔로 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(희비극 100%, 솔스원의 해석 90.0%, 거침없는 비상 72.9%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "솔로 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+  - "로코코 자신의 딜만 계산 — 파티원 버프 증가분은 반영되지 않음"
+subjects: [resonators/roccia, weapons/tragicomedy, resonators/roccia#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/roccia
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-27

@@ -1,0 +1,71 @@
+id: lumi
+title: 루미
+aliases: ["Lumi"]
+summary: "무무물류의 내비게이터이자 운송팀의 팀장. 월주 산속 마을 출신이며, 성실하고 열정적이다. 작은 태양처럼 타인을 밝게 비춰주는 순박한 소녀이다"
+attributes:
+  rarity: 4
+  element: electro
+  weapon: broadblade
+  version: "1.4"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "8,500", 공격력: "337.5", 방어력: "880", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「찍찍 특송」"
+    values: {쿨타임: "20초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「소포 픽업 대기 중」"
+    text: "강화 · 후퇴 발동 후 3초 내에, 점차적으로 스태미나를 60pt 회복한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「무무물류 픽업 완료」"
+    text: "강화 · 덮치기와 강화 · 후퇴로 적 공격 시 , 적의 20% 방어력을 무시한다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「빠른 배송 진행 중」"
+    text: "공명 해방 찍찍 특송으로 입히는 피해가 30% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「루미가 배송 진행 중」"
+    text: "루미의 일반 공격 피해 보너스가 30% 증가한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「무사히 배송 완료」"
+    text: "「불빛 에너지」가 가득 찰 시, 강한 빛의 투사로 입히는 피해 배율이 100% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「별점 5개 꼭이요」"
+    text: "공명 해방 찍찍 특송 발동 시, 파티 내 캐릭터의 공격력이 20% 증가하고, 20초간 지속된다"
+history:
+  - date: 2024-12-12
+    version: "1.4"
+    kind: release
+    summary: "1.4 버전 캐릭터 이벤트 튜닝 [별바다의 기관 문명을 찾아서]에 4성 픽업으로 처음 등장 (2024년 12월 12일 11:00 ~ 2025년 1월 1일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1775
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1775
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1504
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/lumi.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/dengdeng-100e326b.png
+updatedAt: 2026-09-27

@@ -1,0 +1,70 @@
+id: rover-spectro
+title: 방랑자 · 회절
+aliases: ["Rover: Spectro"]
+summary: "정체불명의 공명자, 모든 소리를 흡수할 수 있는 힘을 가지고 있다. 기억을 되찾기 위해 여행을 떠난다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: sword
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "11,400", 공격력: "375", 방어력: "1,368.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {회절 피해 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「공명 참격」"
+    values: {쿨타임: "6초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「울림의 연주」"
+    values: {쿨타임: "20초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「시초의 기행」"
+    text: "공명 스킬 공명 참격 또는 공명 스킬 공명 참격·선음 발동 시, 방랑자의 크리티컬이 15% 증가하며, 7초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「작은 속삭임」"
+    text: "방랑자의 회절 피해 보너스가 추가로 20% 증가한다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「만물의 소리」"
+    text: "방랑자의 공명 효율이 20% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「현을 이어주는 음률」"
+    text: "공명 해방 울림의 연주 발동 시, 파티 내 모든 캐릭터에게 초당 자신의 공격력의 20%에 해당하는 HP 지속 회복 효과를 부여하며, 5초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「울림의 흐름」"
+    text: "공명 해방 피해 보너스가 40% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「먼길의 결말」"
+    text: "공명 스킬 공명 참격 혹은 공명 참격·선음이 목표에 명중 시, 목표의 회절 피해 저항이 10% 감소하며, 20초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 5성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1501
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1501
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/rover-spectro.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/rover2-a3bf71da.png
+updatedAt: 2026-09-27

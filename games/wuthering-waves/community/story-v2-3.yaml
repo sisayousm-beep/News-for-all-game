@@ -1,0 +1,26 @@
+id: story-v2-3
+title: "2.3 스토리 — 1주년 이벤트"
+kind: story
+version: "2.3"
+consensus: mixed
+rating:
+  value: 3.94
+  basis: "아카라이브 명조 채널 3.0 버전 설문 스토리 평점(5점) — 누적 표"
+  parts:
+    - { label: "2.3 레귤러 (새알심·1주년)", value: 3.94 }
+flow: "1주년 레귤러(새알심) 이벤트 중심. 젠니·샤콘의 캐릭터 이야기가 이어진다."
+verdicts:
+  - { label: "전개", value: "메인 스토리 공백" }
+  - { label: "이벤트", value: "1주년 치고 약하다(해외)" }
+summary: "국내 평점은 무난(3.94)하지만, 해외에서는 1주년 버전이 기대에 못 미쳤다는 불만이 컸다."
+regions:
+  - region: domestic
+    summary: "채널 설문 3.94."
+  - region: overseas
+    summary: "\"1주년에 쿠로가 부엌을 태웠다\"는 글이 크게 공감받는 등 1주년 콘텐츠 전반에 대한 실망이 컸다."
+    negative:
+      - "1주년 치고 이벤트·스토리가 빈약하다"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/161473805", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.0 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1ku649c/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

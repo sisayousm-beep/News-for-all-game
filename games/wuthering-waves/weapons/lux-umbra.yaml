@@ -1,0 +1,42 @@
+id: lux-umbra
+title: "얽혀진 빛과 그림자"
+aliases: ["Lux & Umbra"]
+summary: "5성 권총. 2.7 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/lux-umbra.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030036_UI.webp
+attributes:
+  rarity: 5
+  type: pistols
+  version: "2.7"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬 피해: "48.60%" }
+  - id: passive
+    section: passive
+    name: "패시브 「불의 귀환」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 에코 어빌리티 피해를 입힐 시, 강공격 피해가 24~48% 부스트되고 6초간 지속된다. 강공격 피해를 입힐 시, 에코 어빌리티 피해가 24~48% 부스트되고, 6초간 지속된다. 단일 공격으로 최대 24~48%의 피해 부스트 효과를 얻는다. 두 가지 효과를 동시에 보유한 경우, 피해를 입힐 시 목표의 8~16% 방어력을 무시한다"
+history:
+  - date: 2025-10-09
+    version: "2.7"
+    kind: release
+    summary: "2.7 버전 무기 이벤트 튜닝으로 출시 ([무기의 울림] 무기 이벤트 튜닝——「얽혀진 빛과 그림자」 확률 UP; 2.7 버전 업데이트 이후 ~ 2025년 10월 30일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3389
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3389
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030036
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

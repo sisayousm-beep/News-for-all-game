@@ -1,0 +1,35 @@
+id: story-v3-2
+title: "3.2 스토리 — 시그리카 — 3장 4막"
+kind: story
+version: "3.2"
+consensus: mixed
+rating:
+  value: 3.98
+  basis: "아카라이브 명조 채널 3.2 버전 설문 스토리 평점(5점) 평균"
+  parts:
+    - { label: "3장 4막 (시그리카)", value: 3.94 }
+    - { label: "3장 에필로그(2)", value: 4.02 }
+flow: "3장 4막과 에필로그. 스타토치 아카데미에서 시그리카의 성장 이야기. 후반에 히유키가 처음 등장한다."
+verdicts:
+  - { label: "분위기", value: "쉬어 가는 버전" }
+  - { label: "캐릭터", value: "시그리카와 방랑자의 대비" }
+  - { label: "평가", value: "호불호 — \"방랑자가 놀러 다닌다\" 논쟁" }
+summary: "쉬어 가는 버전답게 무난한 점수(3.98)다. 3.1 직후라 느슨하다는 불만과, 시그리카를 통해 방랑자의 심정을 비춘 좋은 빌드업이라는 옹호가 갈렸다."
+regions:
+  - region: domestic
+    summary: "설문 3.94·4.02. \"방랑자가 놀러 다닌다\"는 평에 반박하는 글이 공감받았다."
+    positive:
+      - "시그리카에 방랑자의 처지를 겹쳐 보여준다"
+    negative:
+      - "3.1 직후라 긴장감이 떨어진다"
+  - region: overseas
+    summary: "\"3.2도 8.5/10\"이라는 호평 글이 있지만, 3.0~3.5 정리 글에서 3.2를 빼먹는다는 댓글이 나올 만큼 존재감은 약하다."
+    positive:
+      - "다음 이야기를 위한 빌드업"
+    negative:
+      - "기억에 덜 남는 버전"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/169086648", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.2 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/165503009", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1sh3pgb/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

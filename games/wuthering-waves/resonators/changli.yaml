@@ -1,0 +1,71 @@
+id: changli
+title: 장리
+aliases: ["Changli"]
+summary: "금주 영윤의 참사, 명정의 전 중정성 장사. 화염과 함께하는 삶, 언젠가는 자신을 불태워버릴 책략가. 마음속 소원을 이루기 위해 자신을 바둑판에 놓음으로써 더욱 큰 그림을 그린다"
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: sword
+  version: "1.1"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,387.5", 공격력: "462.5", 방어력: "1,100", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「이화의 충성심」"
+    values: {쿨타임: "20초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「숨겨진 진심」"
+    text: "공명 스킬 불멸의 깃털 또는 강공격 이화의 화신 발동 시, 장리의 경직 저항력이 증가하며, 가하는 피해가 10% 증가한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「바라는 소원」"
+    text: "「이화」 획득 시, 장리의 크리티컬이 25% 증가하며, 8초간 지속된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「풍문의 축적」"
+    text: "공명 해방 이화의 충성심으로 가하는 피해가 80% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「언어의 미학」"
+    text: "변주 스킬 발동 후, 파티 내 캐릭터 공격력이 20% 증가하며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「해탈의 성취」"
+    text: "강공격 이화의 화신 배율이 50% 상승하고, 입히는 피해가 50% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「치밀한 계획」"
+    text: "공명 스킬 불멸의 깃털, 강공격 이화의 화신, 공명 해방 이화의 충성심으로 피해를 입힐 때 추가로 목표의 40% 방어력을 무시한다"
+history:
+  - date: 2024-07-22
+    version: "1.1"
+    kind: release
+    summary: "1.1 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [별빛 속의 화염 깃털]으로 출시 (2024년 7월 22일 10:00 ~ 2024년 8월 14일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1069
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1069
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1205
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/changli.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/changli-3da788f2.png
+updatedAt: 2026-09-27

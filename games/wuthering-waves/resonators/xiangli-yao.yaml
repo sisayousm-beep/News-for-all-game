@@ -1,0 +1,75 @@
+id: xiangli-yao
+title: 상리요
+aliases: ["Xiangli Yao"]
+summary: "금주 화서연구원의 수석 연구원이자 최연소 올라운더 과학자이다. 성격이 부드럽고 지적이며 기관술 연구에 대한 독특한 견해와 집착을 가지고 있다"
+attributes:
+  rarity: 5
+  element: electro
+  weapon: gauntlets
+  version: "1.2"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,625", 공격력: "425", 방어력: "1,222.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「기본 추론」"
+    values: {쿨타임: "5초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「사고의 배열」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「청출어람」"
+    text: "공명 스킬 만물의 법칙 발동 시, 추가로 6개의 회선 매트릭스를 생성하여 목표를 공격하고, 피해 배율은 공명 스킬 만물의 법칙의 8%에 해당하며, 해당 피해는 공명 해방 피해로 적용된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「선구자의 발자취」"
+    text: "공명 스킬 혹은 공명 해방 사고의 배열 발동 시, 자신의 크리티컬 피해가 30% 증가되며, 8초간 지속된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「고대 유적지」"
+    text: "공명 해방 사고의 배열 발동 후, 다음 효과를 얻을 수 있다. 공명 스킬 해답, 공명 스킬 기본 추론, 공명 스킬 하나의 이치 혹은 공명 스킬 만물의 법칙의 피해가 63% 증가되며, 24초간 지속되고, 최대 5회 발생할 수 있다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「육체 재구성」"
+    text: "공명 해방 사고의 배열 발동 시, 파티 내 캐릭터의 공명 해방 피해 보너스가 25% 증가되며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「뭇별의 가장자리」"
+    text: "반주 스킬 연쇄 법칙 피해 배율이 222% 증가되며, 공명 해방 사고의 배열 피해 배율이 100% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「도시의 연기」"
+    text: "공명 해방 사고의 배열 발동 시 획득한 판타지 큐브를 강화하고, 공명 스킬 만물의 법칙 피해 배율을 76% 상승시킨다"
+history:
+  - date: 2024-09-07
+    version: "1.2"
+    kind: release
+    summary: "1.2 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [별바다의 기관 문명을 찾아서]으로 출시 (2024년 9월 7일 11:00 ~ 2024년 9월 28일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1285
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1285
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1305
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/xiangli-yao.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/xiangliyao-370c503c.png
+updatedAt: 2026-09-27

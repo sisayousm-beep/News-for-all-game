@@ -1,0 +1,27 @@
+id: broadblade-41
+title: "41형 대검 · 무거운 책임"
+aliases: ["Broadblade#41"]
+summary: "4성 대검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/broadblade-41.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21010034_UI.webp
+attributes:
+  rarity: 4
+  type: broadblade
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "412.5", 공명 효율: "32.40%" }
+  - id: passive
+    section: passive
+    name: "패시브 「포용의 힘」 (재련 1~5)"
+    text: "HP가 80% 이상일 경우 공격력이 12~24% 증가한다. HP가 40~80% 이하일 경우 일반 공격이나 강공격을 사용하여 피해를 입힐 경우, 캐릭터의 HP가 5~10% 회복하며, 8초마다 1회 발생할 수 있다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21010034
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

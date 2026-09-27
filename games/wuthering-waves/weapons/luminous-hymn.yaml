@@ -1,0 +1,40 @@
+id: luminous-hymn
+title: "광휘의 찬송가"
+aliases: ["Luminous Hymn"]
+summary: "5성 증폭기. 2.1 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+attributes:
+  rarity: 5
+  type: rectifier
+  version: "2.1"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "500", 크리티컬: "36%" }
+  - id: passive
+    section: passive
+    name: "패시브 「단결자의 찬가」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 「광학 효과」가 있는 목표에게 피해를 입힐 시, 자신의 일반 공격, 강공격 피해 보너스가 14~28% 증가되고, 최대 3스택 중첩이 가능하며, 6초간 지속된다. 반주 스킬 발동 시, 파티 내 등장 캐릭터 주변의 목표에게 주는 「광학 효과」 피해가 30~60% 부스트되고, 30초간 지속된다. 같은 이름의 효과는 중첩이 불가하다"
+history:
+  - date: 2025-02-13
+    version: "2.1"
+    kind: release
+    summary: "2.1 버전 무기 이벤트 튜닝으로 출시 ([무기의 울림] 무기 이벤트 튜닝——「광휘의 찬송가」 확률 UP; 2.1 버전 업데이트 이후 ~ 2025년 3월 6일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2144
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2144
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050046
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

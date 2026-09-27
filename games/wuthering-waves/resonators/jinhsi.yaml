@@ -1,0 +1,75 @@
+id: jinhsi
+title: 금희
+aliases: ["Jinhsi"]
+summary: "금주 영윤 금희, 하늘의 빛이 여러 갈래의 빛으로 퍼지며 사람들의 소망을 밝혀준다. 운명은 그녀에게 신의 방향을 제시하지만, 그녀의 발걸음은 늘 인간의 미래를 향해 나아간다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: broadblade
+  version: "1.1"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,825", 공격력: "412.5", 방어력: "1,258.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「달빛의 석양」"
+    values: {쿨타임: "3초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「만물의 정화」"
+    values: {쿨타임: "24초", 공명 에너지: "150"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「승천하는 물결」"
+    text: "금희가 일반 공격 하늘로 향해 · 일반 공격, 공명 스킬 달을 품은 용녀 발동 시, 경칩 1스택을 획득하고, 4스택 중첩이 가능하며, 6초간 지속된다. 공명 스킬 승천하는 용 발동 시, 경칩의 모든 스택을 소진하며, 1스택씩 소모할 때마다 공명 스킬 승천하는 용이 입힌 피해가 20% 증가한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「그치는 눈송이」"
+    text: "금희의 비전투 상태 지속 시간이 4초를 초과할 경우, 「봄의 빛」 50pt를 회복하며, 4초마다 1회만 적용한다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「운명적인 사도」"
+    text: "금희가 변주 스킬 반룡의 빛 발동 후, 「적선」 효과를 1스택 획득하며, 스택마다 공격력이 25% 증가한다. 2스택까지 중첩이 가능하며 20초간 지속된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「인간 세상의 수호자」"
+    text: "금희가 공명 해방 만물의 정화 또는 공명 스킬 승천하는 용 발동 시, 근처에 있는 파티 내 모든 캐릭터의 전체 속성 피해 보너스가 20% 증가하며, 20초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「눈을 녹이는 햇살」"
+    text: "공명 해방 만물의 정화 피해 배율이 120% 상승한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「엄동설한 끝에 비추는 봄」"
+    text: "공명 스킬 승천하는 용 피해 배율이 45% 상승되며, 「봄의 빛」 소모 시 얻는 배율 증가 효과가 추가로 45% 상승된다"
+history:
+  - date: 2024-06-28
+    version: "1.1"
+    kind: release
+    summary: "1.1 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [눈 속에 트는 새싹]으로 출시 (1.1 버전 업데이트 이후 ~ 2024년 7월 22일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/982
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/982
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1304
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/jinhsi.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/jinxi-17516f48.png
+updatedAt: 2026-09-27

@@ -99,6 +99,8 @@ export const currentVersion = (g: Game, now = Date.now()) => versionsOf(g).find(
 export function staleness(g: Game, r: AnyRecord): { level: 'archived' | 'outdated' | 'older'; text: string } | null {
   if (r.status === 'archived') return { level: 'archived', text: `보관된 정보입니다${r.version ? ` (${r.version} 버전 기준)` : ''}. 현재와 다를 수 있습니다.` };
   if (r.status === 'outdated') return { level: 'outdated', text: `${r.version ?? '이전'} 버전 기준 정보입니다. 현재 버전에서는 결과가 달라질 수 있습니다.` };
+  // A story evaluation is about that version's story; its version is the subject, not a basis that can go stale.
+  if ('kind' in r && r.kind === 'story') return null;
   const cur = currentVersion(g)?.record.version;
   if (r.version && cur && cmpVersion(r.version, cur) < 0) return { level: 'older', text: `${r.version} 버전 기준 · 현재 ${cur} 버전에서 다시 확인되지 않았습니다.` };
   return null;

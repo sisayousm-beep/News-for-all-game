@@ -1,0 +1,27 @@
+id: meditations-on-mercy
+title: "용서의 명상록"
+aliases: ["Meditations on Mercy"]
+summary: "4성 대검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/meditations-on-mercy.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21010094_UI.webp
+attributes:
+  rarity: 4
+  type: broadblade
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "18.23%" }
+  - id: passive
+    section: passive
+    name: "패시브 「수식」 (재련 1~5)"
+    text: "「이상 효과」가 있는 몬스터에게 피해를 입힐 시, 자신의 공격력이 4~8% 증가하며, 10초간 지속된다. 1초마다 1회 발생할 수 있으며, 최대 4스택 중첩이 가능하다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21010094
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

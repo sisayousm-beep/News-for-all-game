@@ -1,0 +1,70 @@
+id: baizhi
+title: 설지
+aliases: ["Baizhi"]
+summary: "설지는 화서연구원의 연구원으로 주로 울림 성태학을 연구한다. 이루지 못한 소원이 또다른 형태로 남아 그녀를 지키고, 그녀에게 「치유「의 어빌리티를 부여했으며, 그녀가 평생 연구해야 하는 과제로 남았다"
+attributes:
+  rarity: 4
+  element: glacio
+  weapon: rectifier
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,812.5", 공격력: "212.5", 방어력: "1,002.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {치료 효과 보너스: "+12%", HP: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「응급대비책」"
+    values: {쿨타임: "16초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「찰나의 순간」"
+    values: {쿨타임: "25초", 공명 에너지: "175"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「미니멀리즘 및 맥시멀리즘」"
+    text: "공명 스킬 응급대비책 발동 시 「염원」 1pt를 소모할 때마다 설지는 2.5pt의 공명 에너지를 추가로 회복한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「침묵의 빙원」"
+    text: "공명 스킬 응급대비책 발동 시, 「염원」 4pt가 있을 경우, 설지의 응결 피해 보너스가 15% 증가되고, 치료 효과 보너스가 15% 증가되며, 12초간 지속된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「진리의 추구」"
+    text: "변주 스킬 뒤덮인 눈꽃 발동 시, 설지의 HP 최대치가 12% 증가한다 10초간 지속된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「근원을 찾아서」"
+    text: "공명 해방 찰나의 순간 발동 시, 공명 해방 빈틈의 울림이 강화된다. 빈틈의 울림 2단 증가한다. 빈틈의 울림 치료 배율 20% 상승한다. 빈틈의 울림이 추가로 설지 HP 최대치 1.20%의 응결 피해를 가한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「기원에서 받은 응답」"
+    text: "설지가 파티에 있을 때, 파티의 캐릭터가 의식을 잃은 경우(설지 제외), 즉시 해당 캐릭터의 의식을 회복하고 해당 캐릭터 HP 최대치 100%의 HP를 회복시키며, 10분마다 1회 발동된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「추구의 각오」"
+    text: "캐릭터가 고유 스킬 천뢰를 주울 시, 근처 파티 내 모든 캐릭터의 응결 피해 보너스가 12% 증가되며, 20초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 4성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1103
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1103
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/baizhi.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/baizhi-1e63bfde.png
+updatedAt: 2026-09-27

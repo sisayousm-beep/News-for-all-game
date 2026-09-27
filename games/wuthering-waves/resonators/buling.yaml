@@ -1,0 +1,75 @@
+id: buling
+title: 복링
+aliases: ["Buling"]
+summary: "황룡 몽주의 도사, 검은 해안의 초청 멤버, 풍수 대가, 커뮤니티 헤비 유저. 활달하고 명랑한 성격으로, 세상을 유람하며, 사주와 점괘로 무엇이든 알아맞힌다"
+attributes:
+  rarity: 4
+  element: electro
+  weapon: rectifier
+  version: "2.8"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,625", 공격력: "225", 방어력: "1,258.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {치료 효과 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「그림자에 숨은 오뢰」"
+    values: {쿨타임: "15초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「비뢰결」"
+    values: {쿨타임: "24초", 공명 에너지: "150"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「만물 법보, 힘을 빌려」"
+    text: "공명 해방 · 비뢰결 · 귀일(歸一)로 피해를 입힐 시, 해당 피해의 크리티컬이 20% 증가된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「부적 써서, 귀신 잡고」"
+    text: "복링이 「음양상생(陰陽相生)」 상태에 진입 시 25pt의 공명 에너지를 회복하며, 해당 효과는 24초마다 1회만 적용된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「신령 부려, 천기 보아」"
+    text: "「오뢰 퇴마진」 지속 기간 동안, 파티 내 캐릭터의 HP가 50% 미만 시 복링 공격력의 350+150%에 해당하는 HP가 즉시 회복되며, 해당 효과는 24초마다 1회만 적용된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「솔라리스, 기운 모아」"
+    text: "복링의 치료 효과 보너스가 20% 증가된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「차단 계정, 새로 가입」"
+    text: "「오뢰 퇴마진」 생성 시 즉시 범위 내의 모든 목표에게 6스택의 「전자 효과」를 추가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「「천지 혼원 뇌부 도배 요정 천존」」"
+    text: "「뇌법(雷法) · 천지인 합일」 상태 지속 기간 동안, 파티 내 등장 캐릭터가 획득하는 공명 스킬 피해 보너스 효과가 50%로 증가된다"
+history:
+  - date: 2025-12-11
+    version: "2.8"
+    kind: release
+    summary: "2.8 버전 캐릭터 이벤트 튜닝 [영원히 끝나지 않는 슬픈 노래]에 4성 픽업으로 처음 등장 (2025년 12월 11일 10:00 ~ 2025년 12월 24일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3725
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3725
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1307
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/buling.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/buling-46d801eb.webp
+updatedAt: 2026-09-27

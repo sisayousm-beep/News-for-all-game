@@ -1,0 +1,75 @@
+id: zani
+title: 젠니
+aliases: ["Zani"]
+summary: "아베라르도 금고 방위과 직원이자, 모범 직원 최다 선정자. 자신의 여가 시간을 위해 수많은 계획을 짜 두었지만, 일이 이 지경이 된 이상, 일단 정시에 퇴근할 방법부터 찾아야 한다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: gauntlets
+  version: "2.3"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,775", 공격력: "437.5", 방어력: "1,136.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「잠 못 이루는 파수」"
+    values: {쿨타임: "5초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「명암 경계선이 바뀔 무렵」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「아침 알람이 울릴 때」"
+    text: "집중 압박 혹은 습격 반격 발동 시, 회절 피해 보너스가 50% 증가되고, 14초간 지속된다. 중참 · 온밤은 적의 공격에 의해 중단되지 않는다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「차가운 빵과 음료」"
+    text: "크리티컬이 20% 증가한다. 집중 압박, 습격 반격의 배율이 80% 상승된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「매일 반복되는 통근」"
+    text: "화염 형태에 있을 경우, 1pt의 「불빛」을 소모할 때마다 이번 공명 해방 최후의 순간의 마지막 1단 배율이 8% 상승하며, 최대 1200% 상승된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「고효율 에너지 절약 주의자」"
+    text: "변주 스킬 즉시 집행 발동 시, 파티 내 캐릭터의 공격력이 20% 증가하며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「모든 일은 제때 처리」"
+    text: "공명 해방 재연소 배율이 120% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「급한 일? 퇴근!」"
+    text: "중참 · 파효, 중참 · 해오름, 중참 · 온밤, 중참 · 섬광의 배율이 40% 상승된다. 중참 · 온밤으로 목표 명중 시 소모된 「불빛」 1pt마다 추가로 배율 상승 효과를 40% 증가시킨다. 화염 형태일 경우 다음과 같은 효과를 획득한다. · 「불빛」이 70pt 이하 시 즉시 70pt를 회복하며, 화염 형태 기간 동안 1회 발생할 수 있다."
+history:
+  - date: 2025-04-29
+    version: "2.3"
+    kind: release
+    summary: "2.3 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [명암 경계선 사이]으로 출시 (2.3 버전 업데이트 이후 ~ 2025년 5월 22일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2540
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2540
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1507
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/zani.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/zanni-31f68999.webp
+updatedAt: 2026-09-27

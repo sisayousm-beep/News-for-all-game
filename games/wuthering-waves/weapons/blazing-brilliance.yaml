@@ -1,0 +1,42 @@
+id: blazing-brilliance
+title: "솟아오르는 화염"
+aliases: ["Blazing Brilliance"]
+summary: "5성 직검. 1.1 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/blazing-brilliance.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020016_UI.webp
+attributes:
+  rarity: 5
+  type: sword
+  version: "1.1"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬 피해: "48.60%" }
+  - id: passive
+    section: passive
+    name: "패시브 「불사조의 깃털」 (재련 1~5)"
+    text: "공격력이 12~24% 증가한다. 피해를 입힐 시 「빛나는 깃털」 1스택을 획득하며, 0.5초마다 1스택을 획득할 수 있다. 공명 스킬을 발동 시 추가로 5스택을 획득한다. 스택당 「빛나는 깃털」은 공명 스킬 피해 보너스를 4~8% 증가시키고, 최대 14스택까지 중첩이 가능하다. 「빛나는 깃털」이 14스택에 도달한 12초 후, 모든 스택이 리셋된다"
+history:
+  - date: 2024-07-22
+    version: "1.1"
+    kind: release
+    summary: "1.1 버전 무기 이벤트 튜닝으로 출시 (<무기의 울림> 무기 이벤트 튜닝——「솟아오르는 화염」 확률 UP; 2024년 7월 22일 10:00 ~ 2024년 8월 14일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1070
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1070
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020016
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

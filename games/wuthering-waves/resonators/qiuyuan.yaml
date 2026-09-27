@@ -1,0 +1,75 @@
+id: qiuyuan
+title: 구원
+aliases: ["Qiuyuan"]
+summary: "전 명정 진무사의 천호장, 두 눈을 잃은 외로운 검객. 어릴 적엔 그의 원한을 산 자들이 많았고, 장성한 후엔 사람을 쫓는 일을 업으로 삼았다. 하지만 생각지도 못하게 누명을 쓰고 옥에 갇히게 되었다. 지금 그는 지천을 떠도는 방랑의 길 위에 서 있다"
+attributes:
+  rarity: 5
+  element: aero
+  weapon: sword
+  version: "2.7"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,237.5", 공격력: "375", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「숲을 가르는 바람」"
+    values: {쿨타임: "14초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「진중한 한 수」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「고요한 검은 진심을 드러낼지니」"
+    text: "검의 회답 · 끝없는 음률, 검의 회답 · 헌신의 서약, 검의 회답 · 변치않는 충절은 목표의 공격에 의해 중단되지 않는다. 구원의 크리티컬이 20% 증가된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「검아, 이젠 끝없는 음률을 부르지 않는구나」"
+    text: "「대나무 빛」 획득 시 다음 효과 추가: 근처 파티 내 캐릭터의 에코 어빌리티 피해가 30% 부스트된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「검아, 이젠 헌신의 서약을 지키지 않는구나」"
+    text: "공명 해방 진중한 한 수의 피해 배율이 500% 증가된다. 협주 에너지가 가득 차고 「묵향에 물들어」 상태가 아닐 시, 구원의 공명 스킬은 공명 스킬 대나무숲의 은둔자로 대체되고, 20초마다 1회 발동할 수 있다."
+  - id: chain-4
+    section: chain
+    name: "4체인 「검아, 이젠 변치않는 충절을 기리지 않는구나」"
+    text: "구원의 공격력이 20% 증가된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「검아, 이제 내가 노래하노라」"
+    text: "구원은 목표의 15% 방어력을 무시한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「들은 대로, 본 대로, 말한 대로」"
+    text: "강공격 검의 회답 · 변치않는 충절 발동 시, 주변 목표를 정체시키고 5초간 지속되며, 해당 효과는 멀티플레이 모드에서 적용되지 않는다. 다른 캐릭터로 전환하거나 목표가 피해를 입을 시 정체 효과가 즉시 제거된다."
+history:
+  - date: 2025-10-30
+    version: "2.7"
+    kind: release
+    summary: "2.7 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [끝없는 여정 속 지친 검객]으로 출시 (2025년 10월 30일 10:00 ~ 2025년 11월 19일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3496
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3496
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1411
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/qiuyuan.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/qiuyuan-ec932aec.webp
+updatedAt: 2026-09-27

@@ -1,0 +1,75 @@
+id: roccia
+title: 로코코
+aliases: ["Roccia"]
+summary: "우인 극단 조수, 만능 소품 담당자와 즉흥 연극배우를 겸하고 있는 로코코는 극단을 질서정연하게 잘 운영한다. 로코코가 항상 가지고 다니는, 온 세상을 담은 듯한 진기한 상자는 그녀에 의해 만들어진 또 다른 세상 같기도 하다"
+attributes:
+  rarity: 5
+  element: havoc
+  weapon: gauntlets
+  version: "2.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,250", 공격력: "375", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「고난이도 설정」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「즉흥 공연, 시작」"
+    values: {쿨타임: "20초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「선실로 몰려오는 캄캄한 어둠」"
+    text: "공명 스킬 고난이도 설정 발동 시, 추가로 100pt의 「상상력」과 10pt의 협주 에너지를 회복한다. 일반 공격 현실에 비추는 환상 상태는 적의 공격에 의해 중단되지 않는다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「미약하게 반짝이는 바다반디석」"
+    text: "일반 공격 현실에 비추는 환상 발동 시, 파티 내 캐릭터의 인멸 피해 보너스가 10% 증가되고, 최대 3스택 중첩이 가능하며, 30초간 지속된다. 스택 최대치까지 중첩 시, 파티 내 캐릭터의 인멸 피해 보너스가 추가로 10% 증가되며, 30초간 지속된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「마음으로 보고, 손으로 측정하기」"
+    text: "변주 스킬 펠로, 도와줘 발동 시, 로코코의 크리티컬이 10% 증가되고, 크리티컬 피해가 30% 증가되며, 15초간 지속된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「수많은 「보물」로 가득 찬 상자」"
+    text: "공명 스킬 고난이도 설정 발동 시, 일반 공격 현실에 비추는 환상의 피해 배율이 60% 상승되며, 12초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「무대 위의 낙원 재건」"
+    text: "공명 해방 즉흥 공연, 시작의 피해 배율이 20% 상승되며, 강공격의 피해 배율이 80% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「금빛 날개 타고 비상」"
+    text: "공명 해방 즉흥 공연, 시작 발동 시, 12초 내에 다음과 같은 효과를 획득한다. · 일반 공격 현실에 비추는 환상으로 목표 공격 시, 목표의 60% 방어력을 무시한다."
+history:
+  - date: 2025-01-23
+    version: "2.0"
+    kind: release
+    summary: "2.0 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [상자 속 펼쳐지는 무대]으로 출시 (2025년 1월 23일 11:00 ~ 2025년 2월 12일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2053
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2053
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1606
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/roccia.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/luokeke-761716da.png
+updatedAt: 2026-09-27

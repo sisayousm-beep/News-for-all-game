@@ -1,0 +1,27 @@
+id: phasic-homogenizer
+title: "위상의 파동"
+aliases: ["Phasic Homogenizer"]
+summary: "5성 권총. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/phasic-homogenizer.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030045_UI.webp
+attributes:
+  rarity: 5
+  type: pistols
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬 피해: "48.60%" }
+  - id: passive
+    section: passive
+    name: "패시브 「통찰자」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 파티 내 캐릭터가 「조화도 파괴 스킬」을 발동한 후, 자신의 전체 속성 피해 보너스가 20~30% 증가되고, 14초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030045
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

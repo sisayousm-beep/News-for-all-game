@@ -1,0 +1,75 @@
+id: chisa
+title: 치사
+aliases: ["Chisa"]
+summary: "「평범한 학생일 뿐이에요.」 조용히 자기소개를 하는 그녀의 눈동자에서 알록달록한 빛이 은은히 뿜어져 나왔다. 그렇게 모든 사건과 사물의 구조를 선명히 파악한 그녀는, 눈을 가늘게 뜨고는 그 속에서 생명을 이끄는 현을 찾아냈다"
+attributes:
+  rarity: 5
+  element: havoc
+  weapon: broadblade
+  version: "2.8"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,775", 공격력: "437.5", 방어력: "1,136.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「절단면 구도」"
+    values: {쿨타임: "12초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「즉시 · 초기화」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「폐허의 장랑을 지나며」"
+    text: "치사가 톱니바퀴 · 속공, 톱니바퀴 · 종결, 전기톱 모드 · 회피 반격을 발동하는 기간 동안, 적의 공격에 의해 자신의 공격이 중단되지 않는다. 치사가 목표에게 공허히 얽힌 흔적을 추가할 시 다음과 같은 효과를 발생시킨다. · 자신의 공격력이 30% 증가되고 15초간 지속된다."
+  - id: chain-2
+    section: chain
+    name: "2체인 「인연의 실타래를 엮어내」"
+    text: "입히는 피해가 목표의 10% 인멸 피해 저항을 무시한다. 근처 파티 내 캐릭터가 파멸의 선 상태에 있을 시, 전체 속성 피해 보너스가 50% 증가된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「긴 밤의 혼돈을 넘어서」"
+    text: "톱니바퀴 · 속공, 전기톱 모드 · 회피 반격, 톱니바퀴 · 종결의 피해 배율이 120% 상승되며, 해당 배율 상승 효과는 얽힘 · 결말의 배율 상승 효과와 서로 중첩된다."
+  - id: chain-4
+    section: chain
+    name: "4체인 「끊임없는 반복을 잘라내」"
+    text: "공허히 얽힌 흔적 효과가 다음으로 대체된다: 공허히 얽힌 흔적이 있는 목표가 캐릭터가 직접 입히는 피해를 받을 시, 치사가 목표에게 1스택의 「암흑 효과」를 추가하고, 해당 효과는 1초마다 최대 1회 발생할 수 있다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「수많은 불빛이 귀로를 환히 밝히니」"
+    text: "공명 해방 즉시 · 초기화의 피해 보너스가 100% 증가된다. 생명의 현 · 질주의 「생명의 현 · 본류」 소모량이 50% 감소된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「이제 잃었던 희망의 빛을 되찾으리」"
+    text: "치사가 톱니바퀴 · 속공, 톱니바퀴 · 종결, 전기톱 모드 · 회피 반격을 발동하는 기간 동안, 치명적인 피해를 입을 시 의식을 잃지 않고, 최소 1pt의 HP를 유지한다. 공허히 얽힌 흔적이 공허히 얽힌 흔적 · 종말로 강화되며, 다음과 같은 효과를 획득한다. · 공허히 얽힌 흔적 · 종말은 공허히 얽힌 흔적의 모든 효과를 이어받는다."
+history:
+  - date: 2025-11-20
+    version: "2.8"
+    kind: release
+    summary: "2.8 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [여명의 지평선]으로 출시 (2.8 버전 업데이트 이후 ~ 2025년 12월 11일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3618
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3618
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1508
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/chisa.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/qianxiao-9de775f3.webp
+updatedAt: 2026-09-27

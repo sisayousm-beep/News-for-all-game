@@ -1,0 +1,35 @@
+id: story-v3-3
+title: "3.3 스토리 — 라하이 로이 최종장 — 3장 5막"
+kind: story
+version: "3.3"
+consensus: strong
+rating:
+  value: 4.8
+  basis: "아카라이브 명조 채널 3.3 버전 설문 스토리 평점(5점) 평균"
+  parts:
+    - { label: "3장 5막·에필로그(3) (최종장)", value: 4.89 }
+    - { label: "3장 에필로그(4) (데니아)", value: 4.71 }
+flow: "3장 5막과 에필로그. 라하이 로이 최종장에서 잔성회의 계획이 드러나고, 데니아 에필로그로 마무리된다."
+verdicts:
+  - { label: "작품성", value: "최종장 4.89·데니아 4.71" }
+  - { label: "캐릭터", value: "데니아가 큰 사랑을 받음" }
+  - { label: "전개", value: "내통자 미스터리는 뻔했다는 지적" }
+summary: "라하이 로이 최종장(4.89)과 데니아 에필로그(4.71) 모두 최상위권이다. \"지금까지 최고의 아크\"라는 평이 많고, 아쉬움은 미스터리가 쉽게 풀렸다는 정도다."
+regions:
+  - region: domestic
+    summary: "설문 최종장 4.89로 역대 2위, 데니아 에필로그도 평소보다 높은 4.71."
+    positive:
+      - "잔성회 계획의 빌드업 회수"
+  - region: overseas
+    summary: "\"라하이 로이 아크는 게임 최고의 아크\"라는 글과 데니아가 최애가 됐다는 글이 크게 공감받았다."
+    positive:
+      - "캐릭터와 플롯 모두 몰입"
+      - "데니아 에필로그"
+    negative:
+      - "잔성회 내통자 미스터리가 너무 뻔하고 빨리 끝남"
+      - "에이메스 재회의 감정적 보상이 약하다"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/173050935", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.3 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1tn7d10/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1tm3bjy/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

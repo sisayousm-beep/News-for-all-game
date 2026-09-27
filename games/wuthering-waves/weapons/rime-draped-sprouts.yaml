@@ -1,0 +1,42 @@
+id: rime-draped-sprouts
+title: "옥수 비단"
+aliases: ["Rime-Draped Sprouts"]
+summary: "5성 증폭기. 1.2 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/rime-draped-sprouts.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050026_UI.webp
+attributes:
+  rarity: 5
+  type: rectifier
+  version: "1.2"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "500", 크리티컬 피해: "72%" }
+  - id: passive
+    section: passive
+    name: "패시브 「그림 외의 경지」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 공명 스킬 발동 시 획득 효과: 자신이 출전 상태일 시 일반 공격 피해 보너스가 12~24% 증가되며, 해당 효과가 최대 3스택 중첩이 가능하고, 6초간 지속된다. 반주 스킬 발동 시 이미 3스택의 효과가 누적된 경우, 모든 스택을 소모하여 자신이 출전 상태가 아닐 시의 일반 공격 피해 보너스를 52~104% 증가시키며, 27초간 지속된다"
+history:
+  - date: 2024-08-15
+    version: "1.2"
+    kind: release
+    summary: "1.2 버전 무기 이벤트 튜닝으로 출시 (<무기의 울림> 무기 이벤트 튜닝——「옥수 비단」 확률UP; 1.2 버전 업데이트 이후 ~ 2024년 9월 7일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1173
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1173
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050026
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

@@ -1,0 +1,70 @@
+id: danjin
+title: 단근
+aliases: ["Danjin"]
+summary: "협객 단근은 자신의 혈액을 응고시켜 붉은 빛 복수의 칼날을 만든다. 붉은 빛 칼날을 휘두르며, 옳고 그름을 분별하고, 적을 소멸하며, 세상을 유랑한다"
+attributes:
+  rarity: 4
+  element: havoc
+  weapon: sword
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "9,437.5", 공격력: "262.5", 방어력: "1,148.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {인멸 피해 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「주화잔장」"
+    values: {쿨타임: "0초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「피어나는 주홍」"
+    values: {쿨타임: "16초", 공명 에너지: "100"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「일편단심」"
+    text: "단근이 공명 스킬 주식의 각인을 가지고 있는 목표를 공격할 경우 자신의 공격력이 5% 증가되며, 6초간 지속된다. 최대 6스택 중첩이 가능하며, 피해를 입을 때마다 1스택 감소한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「먼지 묻은 거울」"
+    text: "단근이 공명 스킬 주식의 각인을 가지고 있는 목표를 공격할 경우, 목표에게 가한 피해가 추가로 20% 증가된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「찰나의 적화」"
+    text: "공명 해방 피해 보너스가 30% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「고독한 붉은 칼날」"
+    text: "「단화」 60pt 이상 적립 시, 단근의 크리티컬이 15% 증가한다. 강공격 · 혼란 발동 시, 모든 「단화」를 소모하고 해당 효과는 강공격 · 분락 때까지 이어진 후 사라진다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「멈추지 않는 검객」"
+    text: "단근의 인멸 피해 보너스가 15% 증가한다. HP가 60% 미만인 경우 인멸 피해 보너스가 추가로 15% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「남겨진 붉은빛 옥패」"
+    text: "강공격 혼란을 발동 후 파티 내 캐릭터의 공격력이 20% 증가하며, 20초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 4성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1602
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1602
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/danjin.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/danjin-cc85e1c2.png
+updatedAt: 2026-09-27

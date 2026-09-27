@@ -1,0 +1,24 @@
+id: ciaccona-evaluation
+title: "샤콘 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T1 (역경의 탑 기준)" }
+  - { label: "전용 무기 의존도", value: "중간 — 대체 5성(위상의 파동)으로 약 87%" }
+  - { label: "돌파 가치", value: "1돌 +12%, 6돌 +63%" }
+  - { label: "계산 기준 파티", value: "샤콘 + 카르티시아" }
+summary: "Prydwen 역경의 탑 티어 기준 메타권(T1)로 평가된다. 전용 무기 의존도는 중간, 1돌 가치는 보통."
+subjects: [resonators/ciaccona, weapons/woodland-aria]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/ciaccona
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

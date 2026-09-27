@@ -1,0 +1,24 @@
+id: roccia-evaluation
+title: "로코코 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T3 (역경의 탑 기준)" }
+  - { label: "역할", value: "서포터(버퍼)" }
+  - { label: "전용 무기 의존도", value: "중간 — 대체 5성(솔스원의 해석)으로 약 90%" }
+  - { label: "돌파 가치", value: "1돌 딜 증가 없음, 6돌 +90%" }
+summary: "Prydwen 역경의 탑 티어 기준 현 메타에서는 뒤처진 편(T3)로 평가된다. 전용 무기 의존도는 중간, 1돌 가치는 작다."
+subjects: [resonators/roccia, weapons/tragicomedy]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/roccia
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

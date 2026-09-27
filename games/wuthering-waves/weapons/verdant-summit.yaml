@@ -1,0 +1,42 @@
+id: verdant-summit
+title: "청룡의 천장"
+aliases: ["Verdant Summit"]
+summary: "5성 대검. 기염(1.0)과 함께 출시된 무기로, 한국어 공지 목록에는 출시 당시 튜닝 공지가 없고 첫 공지는 복각이다."
+image: /games/wuthering-waves/img/weapons/verdant-summit.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21010016_UI.webp
+attributes:
+  rarity: 5
+  type: broadblade
+  version: "1.0"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬 피해: "48.60%" }
+  - id: passive
+    section: passive
+    name: "패시브 「용맹무쌍」 (재련 1~5)"
+    text: "전체 속성 피해 보너스가 12~24% 증가한다. 변주 스킬 또는 공명 해방을 발동할 때마다, 자신의 강공격 피해 보너스가 24~48% 증가하고, 2스택 중첩이 가능하며, 14초간 지속된다"
+history:
+  - date: 2024-10-24
+    version: "1.3"
+    kind: rerun
+    summary: "무기 이벤트 튜닝으로 복각 (「무기의 울림」 무기 이벤트 튜닝——「청룡의 천장」 확률 UP; 2024년 10월 24일 11:00 ~ 2024년 11월 13일 12:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1546
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1546
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21010016
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

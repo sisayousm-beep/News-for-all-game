@@ -1,0 +1,42 @@
+id: undying-flame
+title: "불멸의 성화"
+aliases: ["Undying Flame"]
+summary: "4성 권총. 1.1 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/undying-flame.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030044_UI.webp
+attributes:
+  rarity: 4
+  type: pistols
+  version: "1.1"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "30.38%" }
+  - id: passive
+    section: passive
+    name: "패시브 「일편단심」 (재련 1~5)"
+    text: "변주 스킬 발동 시, 자신의 공명 스킬 피해 보너스가 20~40% 증가하며, 15초간 지속된다"
+history:
+  - date: null
+    version: "1.1"
+    kind: release
+    summary: "1.1 버전 무기 이벤트 튜닝에 4성 픽업으로 처음 등장 (<무기의 울림> 무기 이벤트 튜닝——「솟아오르는 화염」 확률 UP; 2024년 7월 22일 10:00 ~ 2024년 8월 14일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1070
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1070
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030044
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

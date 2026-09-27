@@ -1,0 +1,75 @@
+id: camellya
+title: 카멜리아
+aliases: ["Camellya"]
+summary: "검은 해안의 흑화집사. 위험하지만 매혹적이고 자유로운 육종자. 검은 해안에 잠재력 있는 인재를 영입하기 위해 솔라리스 각지를 여행하고 있다. 자신에게 충실하고 과거와 미래에 연연하지 않으며, 오직 현재의 즐거움에 집중한다"
+attributes:
+  rarity: 5
+  element: havoc
+  weapon: sword
+  version: "1.4"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,325", 공격력: "450", 방어력: "1,161.1", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「만개와 시듦의 춤」"
+    values: {쿨타임: "4초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「아름다운 결말」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「나만의 비밀스러운 오솔길에서」"
+    text: "변주 스킬 팔천의 춘추 발동 시, 크리티컬 피해가 28% 증가되며, 18초간 지속되고, 25초마다 1회 발생할 수 있다. 공명 회로 일순의 꽃 상태는 적의 공격에 의해 중단되지 않는다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「침묵의 꽃 향기를 부르며」"
+    text: "공명 회로 일순의 꽃의 피해 배율이 120% 상승된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「모든 꽃씨보다 소중한 가시덤불」"
+    text: "공명 해방 아름다운 결말의 피해 배율이 50% 상승된다. 만개 직전 상태 기간 동안, 카멜리아의 공격력이 58% 증가된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「영원한 생명력을 가진 뿌리」"
+    text: "변주 스킬 팔천의 춘추를 발동 후, 파티 내 캐릭터의 일반 공격 피해 보너스가 25% 증가하며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「그 무한함을 당신의 손에 쥐여줄 것이다」"
+    text: "변주 스킬 팔천의 춘추 피해 배율이 303% 상승된다. 반주 스킬 뒤엉킨 넝쿨 피해 배율이 68% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「그저 그대의 수많은 만개를 기다리리라」"
+    text: "공명 회로 달콤한 꿈의 피해 배율 상승 효과가 추가로 150% 상승된다. 공명 회로 시들지 않는 꽃: 공명 회로 일순의 꽃 발동 후 15초 이내에 협주 에너지가 가득 찰 시 시들지 않는 꽃이 사용 가능한 상태일 경우, 공명 스킬은 시들지 않는 꽃으로 대체된다."
+history:
+  - date: 2024-11-14
+    version: "1.4"
+    kind: release
+    summary: "1.4 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [미로 속에서 마주하는 마음]으로 출시 (1.4 버전 업데이트 이후 ~ 2024년 12월 12일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1649
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1649
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1603
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/camellya.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/camellya-f0395b19.png
+updatedAt: 2026-09-27

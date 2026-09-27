@@ -1,0 +1,42 @@
+id: woodland-aria
+title: "숲속의 아리아"
+aliases: ["Woodland Aria"]
+summary: "5성 권총. 2.3 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/woodland-aria.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030026_UI.webp
+attributes:
+  rarity: 5
+  type: pistols
+  version: "2.3"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "500", 크리티컬: "36%" }
+  - id: passive
+    section: passive
+    name: "패시브 「한여름의 찬송가」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 목표에게 「풍식 효과」를 추가한 후, 자신의 기류 피해 보너스가 24~48% 증가되고 10초간 지속된다. 공격으로 「풍식 효과」가 있는 목표 명중 시, 목표의 기류 저항을 10~16% 감소시키고, 20초간 지속된다. 같은 이름의 효과는 중첩이 불가하다"
+history:
+  - date: 2025-05-22
+    version: "2.3"
+    kind: release
+    summary: "2.3 버전 무기 이벤트 튜닝으로 출시 ([무기의 울림] 무기 이벤트 튜닝——「숲속의 아리아」 확률 UP; 2025년 5월 22일 10:00 ~ 2025년 6월 11일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2649
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2649
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030026
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

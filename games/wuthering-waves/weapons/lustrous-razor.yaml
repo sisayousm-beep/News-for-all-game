@@ -1,0 +1,27 @@
+id: lustrous-razor
+title: "푸른물결의 빛"
+aliases: ["Lustrous Razor"]
+summary: "5성 대검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/lustrous-razor.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21010015_UI.webp
+attributes:
+  rarity: 5
+  type: broadblade
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "36.45%" }
+  - id: passive
+    section: passive
+    name: "패시브 「밀려오는 파도」 (재련 1~5)"
+    text: "공명 효율 12.8~25.6% 증가. 공명 스킬 발동 시, 공명 해방 피해 보너스가 7~14% 증가하고, 최대 3스택 중첩이 가능하며, 12초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21010015
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

@@ -7,6 +7,47 @@ attributes:
   element: aero
   weapon: broadblade
   version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,487.5", 공격력: "437.5", 방어력: "1,185.6", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「돌진의 창」"
+    values: {쿨타임: "7초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「승천하는 청룡·결정」"
+    values: {쿨타임: "16초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「구원」"
+    text: "공명 스킬 돌진의 창의 사용 횟수가 1회 증가한다. 공명 스킬 돌진의 창 발동 시 소모하는 「파진치」가 15pt 감소한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「변통」"
+    text: "변주 스킬 청룡의 습격 발동 후, 기염은 30pt 「파진치」를 획득하는 동시에 공격력이 28% 증가되고, 15초간 지속되며, 15초마다 1회 발생할 수 있다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「통찰」"
+    text: "공명 스킬 돌진의 창, 공명 해방 승천하는 청룡·결정, 공명 해방 승천하는 청룡·처형 또는 변주 스킬 청룡의 습격 발동 시, 기염의 크리티컬이 16% 증가하고, 크리티컬 피해가 32% 증가하며, 8초간 지속된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「절묘」"
+    text: "공명 해방 승천하는 청룡 · 결정 혹은 공명 해방 승천하는 청룡 · 처형 발동 시, 파티 내 캐릭터의 강공격 피해 보너스가 25% 증가하며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「과감」"
+    text: "반주 스킬 극기의 각오 피해 배율+120%. 공격으로 목표 명중 시, 기염의 공격력이 3% 증가하고, 8초간 지속되며, 최대 15스택 중첩이 가능하다. 변주 스킬 청룡의 습격 발동 후, 스택 최대치까지 중첩된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「무적」"
+    text: "강공격, 변주 스킬 청룡의 습격 또는 공명 스킬 돌진의 창 사용할 때마다, 1스택의 「예리한 기세」를 획득하며 최대 2스택까지 중첩이 가능하다. 공명 해방 승천하는 청룡·처형 발동 시, 모든 「예리한 기세」가 소모되며, 매 스택의 「예리한 기세」가 공명 해방 승천하는 청룡·처형의 피해 배율을 120% 상승시킨다"
 history:
   - date: null
     version: "1.0"
@@ -18,7 +59,7 @@ history:
         collectedAt: 2026-09-26
         verifiedAt: 2026-09-26
   - date: 2024-10-24
-    version: "1.4"
+    version: "1.3"
     kind: rerun
     summary: 캐릭터 이벤트 튜닝 「야밤의 청룡」으로 복각 (2024년 10월 24일 11:00 ~ 11월 13일 12:59).
     sources:
@@ -43,4 +84,4 @@ sources:
     note: 인게임 데이터의 무기 종류 「대검」
 image: /games/wuthering-waves/img/resonators/jiyan.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/jiyan-c2e66ae6.png
-updatedAt: 2026-09-26
+updatedAt: 2026-09-27

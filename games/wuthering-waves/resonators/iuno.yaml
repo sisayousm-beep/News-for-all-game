@@ -1,0 +1,75 @@
+id: iuno
+title: 유노
+aliases: ["Iuno"]
+summary: "그녀는 어떤 이유로 운명의 총애를 받았고, 그만큼 운명에게 휘말렸다. 하지만 그녀는 한 번도 무너지지 않았고, 결코 물러서지 않았다. 그러니 지켜보라... 운명을 거역한 예언자가 어째서 뒤돌아보지 않는지, 수천 갈래의 인과 속에서 그녀가 어떻게 자신을 유일한 해답으로 내세웠는지..."
+attributes:
+  rarity: 5
+  element: aero
+  weapon: gauntlets
+  version: "2.6"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,525", 공격력: "450", 방어력: "1,124.4", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「예언의 인도」"
+    values: {쿨타임: "6초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「추락한 달의 바다」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「보름달이든 초승달이든, 그 모든 순간이 고귀한 가지를 금빛으로 물들이고」"
+    text: "유노가 달의 순환 상태에 있을 시, 공격력이 40% 증가된다. 유노가 보름달 영역에 있을 시, 자신이 1초마다 추가로 1pt의 공명 에너지를 회복한다. 공명 스킬 · 경계를 넘은 활시위와 강공격 · 완벽한 결말은 적의 공격에 의해 중단되지 않는다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「밤이든 낮이든, 나는 그 자체로 영원히 변함없이」"
+    text: "파티 내 캐릭터의 창백한 달빛의 축복이 10스택까지 중첩 시, 해당 캐릭터의 전체 피해가 추가로 40% 부스트된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「그들의 망각을 음미해」"
+    text: "유노가 달의 순환 상태에 있을 시, 달의 활 · 일반 공격, 공명 스킬 · 경계를 넘은 활시위, 달의 활 · 회피 반격으로 입히는 피해가 65% 부스트된다. 달의 활 · 일반 공격 혹은 달의 활 · 회피 반격을 발동한 후 일정 시간 내에 공명 스킬 · 경계를 넘은 활시위를 발동하면 달의 활 · 일반 공격의 다단 공격이 리셋되지 않는다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「빗물이 내 눈동자에 깃들게 하노라」"
+    text: "강공격 · 완벽한 결말 발동 시, 파티 내 캐릭터가 유노 공격력의 160%에 해당하는 실드를 획득하고, 30초간 지속되며, 다른 캐릭터로 교체해도 해당 실드 효과를 이어받지 않는다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「수없이 허망한 시선을 받았지만」"
+    text: "공명 해방 피해 보너스가 20% 증가된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「내가 머무는 곳, 그곳이야말로 변치 않는 유일한 진실」"
+    text: "강공격 · 완벽한 결말의 피해 배율이 1600% 증가된다. 유노가 강공격 · 완벽한 결말 발동 시, 다시 달의 순환 · 초승달 상태에 진입하고 100pt의 「영성」을 획득하며, 공명 스킬 · 경계를 넘은 활시위의 모든 쿨타임을 리셋한다"
+history:
+  - date: 2025-09-17
+    version: "2.6"
+    kind: release
+    summary: "2.6 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [영고성쇠한 달 속을 걷는 나]으로 출시 (2025년 9월 17일 10:00 ~ 2025년 10월 8일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3262
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3262
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1410
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/iuno.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/younuo-16dc65fc.webp
+updatedAt: 2026-09-27

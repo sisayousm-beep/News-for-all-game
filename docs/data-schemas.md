@@ -116,6 +116,7 @@ history:
 | `summary` | 필수. 우세한 의견과 **이유**, 어느 커뮤니티 기준인지 |
 | `consensus` | `strong` `moderate` `mixed` `weak` — 점수가 아닌 일치 정도 |
 | `verdicts` | `{ label, value }` 한 줄 판정(티어, 파티 순위, 전용 무기 의존도…). 카드 맨 위와 엔티티 페이지 "한눈에 보기"에 표시 |
+| `flow` / `rating` / `regions` | 스토리 평가(`kind: story`)용. `flow` 스토리 흐름(300자), `rating` `{ value(0~5), basis, parts[{label,value}] }` 별점과 근거·세부 별점, `regions` `[{ region: domestic\|overseas, summary, positive, negative }]` 국내·해외 반응을 따로. 평가 요소는 `verdicts`로. 커뮤니티 탭의 「버전별 스토리 평가」 목록에 모이고 기준 버전 경고를 띄우지 않는다 |
 | `scope` / `happenedAt` / `background` | 핫이슈·꿀팁용. `ingame`(게임 내)·`offgame`(게임 외), 일어난 날, 무엇에 대한 여론인지 한 줄(150자). 커뮤니티 탭은 `happenedAt` 최신순, 게임 내/외 이슈·꿀팁 칩으로 나뉜다 |
 | `shift` | 선택. `{ release, now, reason }` — **굵직한 이미지 변화가 있을 때만**(티어 한 단계 이상, 역할 자체가 바뀜). 카드에만 표시 |
 | `positive` / `negative` | 자주 보이는 긍정 / 부정·우려 의견 |

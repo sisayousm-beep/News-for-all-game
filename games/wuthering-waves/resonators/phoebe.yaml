@@ -1,0 +1,75 @@
+id: phoebe
+title: 페비
+aliases: ["Phoebe"]
+summary: "깊은 바다 수도회의 성직자 페비. 친절하고 독실한 소녀 성직자는 순수한 마음으로 수련하며 성직자로서의 모든 직책을 성실히 실천하고 있다. 그녀의 기도는 마치 소중히 손에 쥔 빛처럼 부드럽고 밝아서 사람들에게 따뜻함과 평온함을 가져다준다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: rectifier
+  version: "2.1"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,825", 공격력: "412.5", 방어력: "1,258.9", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「찬란한 빛을 찾아서」"
+    values: {쿨타임: "12초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「샛별의 소원」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「불빛과 베개의 축복」"
+    text: "사죄 상태에서는 공명 해방 샛별의 소원의 피해 배율이 255%에서 480%로 상승된다. 고해 상태에서는 공명 해방 샛별의 소원의 피해 배율이 90% 상승되며, 동시에 추가된 「광학 효과」 스택은 목표에게 추가 가능한 스택 최대치까지 증가된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「눈물 속에 흔들리는 외로운 배」"
+    text: "사죄 상태에서는 반주 스킬로 「광학 효과」가 있는 목표에게 입히는 피해가 120% 부스트된다. 고해 상태에서는 묵념의 「광학 효과」 피해 부스트 효과가 추가로 120% 증가된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「데이지로 만들어진 화환과 꿈」"
+    text: "사죄 상태에서는 강공격 별빛의 피해 배율이 91% 상승된다. 고해 상태에서는 강공격 별빛의 피해 배율이 249% 상승된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「다시 울려 퍼지는 날갯짓의 종소리」"
+    text: "일반 공격, 일반 공격 샤무엘의 별, 회피 반격, 샤무엘의 별 · 회피 반격으로 목표 명중 시, 목표의 회절 피해 저항이 10% 감소되고, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「머나먼 빛을 향한 기도」"
+    text: "변주 스킬 금빛의 은혜 발동 시, 페비의 회절 피해 보너스가 12% 증가되고, 15초간 지속된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「고요한 창가에서 들려오는 노랫소리」"
+    text: "「거울의 고리」의 정체 효과가 2초 증가된다. 「거울의 고리」가 지속되는 동안, 「거울의 고리」에 진입하는 목표에게 정체 효과를 부여한다. 동일한 「거울의 고리」는 최대 12개의 목표에게 정체 효과를 부여할 수 있고, 목표마다 1회의 정체 효과만 부여할 수 있다."
+history:
+  - date: 2025-02-13
+    version: "2.1"
+    kind: release
+    summary: "2.1 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [고요 속에 들리는 속삭임]으로 출시 (2.1 버전 업데이트 이후 ~ 2025년 3월 6일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2143
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2143
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1506
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/phoebe.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/feibi-0b4de59c.png
+updatedAt: 2026-09-27

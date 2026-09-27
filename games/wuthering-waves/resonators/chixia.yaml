@@ -1,0 +1,70 @@
+id: chixia
+title: 치샤
+aliases: ["Chixia"]
+summary: "금주 순찰관 치샤. 그녀는 끝없이 샘솟는 열정처럼, 넘쳐흐르는 에너지로 금주의 거리를 활보한다. 그녀는 이 열정을 손끝으로 끌어내어 총알로 변환하며, 적에게 끝없는 총알을 쏘아낸다"
+attributes:
+  rarity: 4
+  element: fusion
+  weapon: pistols
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "9,087.5", 공격력: "300", 방어력: "953.3", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {용융 피해 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「투쟁의 마음」"
+    values: {쿨타임: "9초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「뜨거운 불길」"
+    values: {쿨타임: "20초", 공명 에너지: "150"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「극장의 영웅극」"
+    text: "공명 스킬 폭격의 천둥소리 발동 시, 반드시 크리티컬이 발동한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「도약의 불꽃」"
+    text: "공명 해방 뜨거운 불길 기간에 목표 1개 격파할 때마다 5pt 공명 에너지 회복, 매번 최대 20pt 회복 가능하다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「불멸의 횃불」"
+    text: "공명 해방 뜨거운 불길은 HP가 50%보다 낮은 목표에 대한 피해가 40%증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「영웅의 필살기」"
+    text: "공명 해방 뜨거운 불길 발동 시, 치샤는 60발 「열압탄」을 획득하고 공명 스킬 투쟁의 마음의 쿨타임을 1회 즉시 리셋한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「승리의 불꽃 총알」"
+    text: "고유 스킬 극도로 매운맛이 스택 최대치까지 중첩 시 공격력이 추가로 30% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「종영의 컴백 쿠키영상」"
+    text: "공명 스킬 폭격의 천둥소리 발동 후, 파티 내의 캐릭터의 일반 공격 피해 보너스가 25% 증가하며, 15초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 4성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1202
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1202
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/chixia.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/chixia-6dfd68f4.png
+updatedAt: 2026-09-27

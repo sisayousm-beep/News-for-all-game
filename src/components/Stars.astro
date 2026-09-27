@@ -1,0 +1,10 @@
+---
+/** A 0–5 rating as five stars (partially filled by width) + the number. The number carries the meaning; stars are decoration. */
+interface Props { value: number; small?: boolean }
+const { value, small } = Astro.props;
+const pct = Math.max(0, Math.min(100, (value / 5) * 100));
+---
+<span class:list={['stars', { small }]} title={`5점 만점 ${value.toFixed(2)}점`}>
+  <span class="stars-track" aria-hidden="true">★★★★★<span class="stars-fill" style={`width:${pct.toFixed(1)}%`}>★★★★★</span></span>
+  <b class="num">{value.toFixed(2)}</b><span class="meta"> / 5</span>
+</span>

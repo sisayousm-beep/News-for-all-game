@@ -1,0 +1,70 @@
+id: encore
+title: 앙코
+aliases: ["Encore"]
+summary: "앙코의 곁에는 항상 그늘이와 구름이, 두 개의 양 인형이 함께 한다. 검은 해안의 멤버인 앙코는 캔디, 동화, 환상을 잔뜩 넣어 해피엔딩 이야기를 만드는 걸 좋아한다"
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: rectifier
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,512.5", 공격력: "425", 방어력: "1,246.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {용융 피해 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「불꽃 양」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「그늘이의 대폭주」"
+    values: {쿨타임: "4초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「그늘이와 구름이의 동화책」"
+    text: "일반 공격이 목표에 명중 시 용융 피해 보너스가 추가로 3% 증가되고, 4스택 중첩이 가능하며, 6초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「양세기 수면곡」"
+    text: "일반 공격 메에메에 혹은 공명 스킬 열렬한 환영식 발동 시 추가로 공명 에너지 10pt를 회복하며, 10초마다 1회 발동된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「안개? 검은해안!」"
+    text: "강공격 구름이 · 제어불가의 화염 및 강공격 그늘이 · 폭주하는 화염의 피해 배율이 40% 상승한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「모험? 재밌어!」"
+    text: "강공격 그늘이·폭주하는 화염 발동 시, 파티 내의 캐릭터 용융 피해가 추가로 20% 증가하며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「주목주목, 용사 등장!」"
+    text: "공명 스킬 피해 보너스가 35% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「그늘이와 구름이가 세계를 구한다!」"
+    text: "공명 해방 그늘이의 대폭주 기간 동안 입히는 피해마다 자신에게 1스택의 「길 잃은 새끼양」을 중첩하며 매 스택의 공격력이 5% 증가하며 최대 5스택까지 중첩이 가능하며, 10초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 5성 공명자(상시 튜닝). 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1203
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1203
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/encore.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/anke-3bbb264c.png
+updatedAt: 2026-09-27

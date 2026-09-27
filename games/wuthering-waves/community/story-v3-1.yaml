@@ -1,0 +1,35 @@
+id: story-v3-1
+title: "3.1 스토리 — 에이메스 — 3장 3막"
+kind: story
+version: "3.1"
+consensus: strong
+rating:
+  value: 4.64
+  basis: "아카라이브 명조 채널 3.1 버전 설문 스토리 평점(5점) 평균"
+  parts:
+    - { label: "3장 3막 (에이메스)", value: 4.92 }
+    - { label: "3장 에필로그(1) (루크)", value: 4.36 }
+flow: "3장 3막과 에필로그. 에이메스의 이야기와, 뒤이은 루크 에필로그."
+verdicts:
+  - { label: "작품성", value: "역대 최고점" }
+  - { label: "감정선", value: "방랑자와 에이메스의 관계" }
+  - { label: "파급력", value: "해외 스트리머 방송이 화제" }
+summary: "역대 최고점(에이메스 4.92)을 기록했다. 국내외 모두 \"명조 최고의 스토리\"로 꼽는 경우가 많다."
+regions:
+  - region: domestic
+    summary: "설문 역대 최고점 4.92, 루크 에필로그 4.36. \"이번 버전은 거를 스토리가 없다\"는 반응."
+    positive:
+      - "에이메스 서사"
+      - "루크 에필로그"
+    negative:
+      - "여운이 너무 커서 이후 스토리에 영향"
+  - region: overseas
+    summary: "3.1을 \"명조 스토리의 정점\"으로 꼽는 댓글이 많고, 홀로라이브 스트리머의 3.1 플레이 영상이 하루 만에 30만 조회를 넘겼다."
+    positive:
+      - "감정선과 연출"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/164965726", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.1 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/171756885", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1tglm9p/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1rohsq4/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

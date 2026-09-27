@@ -1,0 +1,49 @@
+id: camellya-s1-vs-signature
+title: "카멜리아 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+answer: 명전 추천
+results:
+  - "상시 무기(천년의 회류)를 낀 1돌이 명전의 약 99%로 비슷하다. 평균 뽑기가 명전(약 139회)이 1돌(약 167회)보다 적어 명전이 낫다."
+  - "전용 무기(날카로운 봄)는 대체 5성 대비 +11%, 1돌은 명함 대비 +10.9%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 6돌(직전 대비 +29%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100.0 }
+    - { label: 1돌, value: 110.89 }
+    - { label: 2돌, value: 135.03 }
+    - { label: 3돌, value: 153.04 }
+    - { label: 4돌, value: 167.86 }
+    - { label: 5돌, value: 182.89 }
+    - { label: 6돌, value: 235.83 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 날카로운 봄 (명전)", "100%", "139회"]
+    - ["1돌 + 푸른 의지 (대체 5성)", "약 100%", "167회 + 무기"]
+    - ["1돌 + 예리한 날개깃 (4성)", "약 86%", "167회"]
+    - ["명함 + 푸른 의지", "약 90%", "83회"]
+    - ["1돌 + 날카로운 봄", "약 111%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(1타겟, 린네·모니에 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(날카로운 봄 100%, 푸른 의지 90.1%, 예리한 날개깃 77.8%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "린네·모니에 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/camellya, weapons/red-spring, resonators/camellya#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/camellya
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-27

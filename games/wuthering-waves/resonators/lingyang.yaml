@@ -1,0 +1,70 @@
+id: lingyang
+title: 능양
+aliases: ["Lingyang"]
+summary: "금주 사자춤 공연단 멤버, 착하고 열정적인 야수 족 이방인이다. 열정적이고 밝고, 용감하고 정직하며, 사람들에게 강한 흥미를 갖고 있다. 매우 강한 체력과 힘을 가지고 있으며, 항상 자신의 방식으로 「사자춤」의 의미를 해석하고 있다"
+attributes:
+  rarity: 5
+  element: glacio
+  weapon: gauntlets
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,387.5", 공격력: "437.5", 방어력: "1,210", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {응결 피해 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「충권·반격」"
+    values: {쿨타임: "0초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「돌진·사자의 질주」"
+    values: {쿨타임: "20초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「늘 평안하시길」"
+    text: "공명 해방 사자의 질주 지속 기간 동안, 능양 자신의 경직 저항력이 증가한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「위풍당당한 걸음걸이」"
+    text: "변주 스킬 출동 · 사자의 기상 발동 시, 능양이 추가로 10pt의 공명 에너지를 회복하며, 20초마다 1회 발동된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「모두의 축제」"
+    text: "공명 해방 사자의 질주 지속 기간 동안, 능양의 일반 공격 피해 보너스가 20% 증가하며, 공명 스킬 피해 보너스가 10% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「열정적인 춤사위」"
+    text: "능양이 반주 스킬 흔적 · 의지의 발자취를 발동할 시, 파티 내 캐릭터의 응결 피해 보너스가 20% 증가하며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「울려퍼지는 칠성북」"
+    text: "공명 해방 돌진 · 사자의 질주 발동 시 추가로 능양의 200% 응결 피해를 가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「사자의 위엄」"
+    text: "공명 회로 사자의 길 상태 시, 능양이 매번 공명 스킬 질주 · 초원을 향해 발동 후 3초 내 다음 1회의 일반 공격 피해 보너스가 100% 증가된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 5성 공명자(상시 튜닝). 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1104
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1104
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/lingyang.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/lingyang-e6ad2f11.png
+updatedAt: 2026-09-27

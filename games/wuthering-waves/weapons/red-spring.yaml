@@ -1,0 +1,42 @@
+id: red-spring
+title: "날카로운 봄"
+aliases: ["Red Spring"]
+summary: "5성 직검. 카멜리아(1.4)와 함께 출시된 무기로, 한국어 공지 목록에는 출시 당시 튜닝 공지가 없고 첫 공지는 복각이다."
+image: /games/wuthering-waves/img/weapons/red-spring.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020026_UI.webp
+attributes:
+  rarity: 5
+  type: sword
+  version: "1.4"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「시작과 끝」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 일반 공격 피해를 입힐 시, 자신의 일반 공격 피해 보너스가 10~20% 증가되고, 14초간 지속되며, 1초마다 1회 발생할 수 있고, 최대 3스택 중첩이 가능하다. 자신의 협주 에너지 소모 시, 자신의 일반 공격 피해 보너스가 40~80% 증가되며, 10초간 지속된다. 1초마다 1회 발생할 수 있다. 다른 캐릭터로 전환하면 효과가 즉시 종료된다"
+history:
+  - date: 2025-03-27
+    version: "2.2"
+    kind: rerun
+    summary: "무기 이벤트 튜닝으로 복각 ([무기의 울림] 무기 이벤트 튜닝——「날카로운 봄」 확률 UP; 2.2 버전 업데이트 이후 ~ 2025년 4월 17일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2351
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2351
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020026
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

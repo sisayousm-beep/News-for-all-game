@@ -1,0 +1,42 @@
+id: hollow-mirage
+title: "천공의 역행"
+aliases: ["Hollow Mirage"]
+summary: "4성 권갑. 1.2 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/hollow-mirage.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21040064_UI.webp
+attributes:
+  rarity: 4
+  type: gauntlets
+  version: "1.2"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "30.38%" }
+  - id: passive
+    section: passive
+    name: "패시브 「별의 동반」 (재련 1~5)"
+    text: "공명 해방 발동 시, 3스택의 「철갑」 효과를 획득하고, 각 스택마다 공격력과 방어력을 3~5% 증가시키며, 최대 3스택 중첩이 가능하다. 피해를 입을 때마다 1스택 감소한다"
+history:
+  - date: null
+    version: "1.2"
+    kind: release
+    summary: "1.2 버전 무기 이벤트 튜닝에 4성 픽업으로 처음 등장 (<무기의 울림> 무기 이벤트 튜닝——「옥수 비단」 확률UP; 1.2 버전 업데이트 이후 ~ 2024년 9월 7일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1173
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1173
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21040064
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27
