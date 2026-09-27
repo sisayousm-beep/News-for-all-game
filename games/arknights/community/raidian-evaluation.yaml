@@ -1,0 +1,45 @@
+id: raidian-evaluation
+title: 라이디언 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 통합 전략·위기협약에서 강력 — 해외 등급 없음(육성 방식이 달라서)
+- label: 뽑기 권장
+  value: '뽑기 불가 — 통합 전략 #6 플레이로 획득·육성'
+- label: 역할
+  value: 소환형 서포터 — 소환물 3기로 라인 보조
+- label: 추천 스킬
+  value: 1스킬(통합 전략 초반 운용)
+summary: '통합 전략 #6 [쉐이의 기이한 계원]을 플레이하는 것만으로 얻고 특화까지 올리는 특이한 오퍼레이터. 국내에서는 위기협약 #4 고득점 공략의 핵심 오퍼, 통합 전략 초반 스타팅으로 자주 거론된다.'
+positive:
+- 재화 투자 없이 통합 전략 플레이만으로 3특까지 올릴 수 있다(해외).
+- '위기협약 #4 620점 공략에서 최소 컷 핵심 오퍼로 쓰였다.'
+- 통합 전략 초반 "라이디언 1스 + 신시아면 15전까지 문제없다"는 댓글.
+negative:
+- 통합 전략에서 고르면 점수 패널티가 있어 일부러 안 고르는 경우가 있다.
+- 승천을 올리면 소환물 운용만으로는 초반 보스에서 흔들린다는 질문글.
+subjects:
+- operators/raidian
+- operators/raidian#s1
+- operators/raidian#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1phtqmo/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Fantasy in the Mirage (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5938847
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6066753
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5909756
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

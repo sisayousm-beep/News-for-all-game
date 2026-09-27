@@ -1,0 +1,27 @@
+id: rage-of-the-many
+title: 이벤트 헤드헌팅 '길을 여는 자들' — 지마 더 레이징 타이드
+kind: banner
+start: '2026-09-16T16:00:00+09:00'
+end: '2026-09-30T03:59:00+09:00'
+version: '6.5'
+summary: 6★ 지마 더 레이징 타이드, 5★ 우쿠시크·카제마루 확률 UP. 표준 헤드헌팅이라 150회 동안 확률 UP 6★가 안 나오면 다음 6★는 지마로 확정된다.
+subjects:
+- operators/zima-the-raging-tide
+- operators/ukusik
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247160
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247260
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/gacha_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 헤드헌팅 기간(gachaPoolClient)
+image: /games/arknights/img/events/rage-of-the-many.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA5MTRfMjUg/MDAxNzg5MzgxNDAwNTIx.VTelx_e2nnqa7RbSijyrtn-1iLatPDW6yD5qqz7hr6wg.lL9dcJpcuyAoHR-3ZKhrbXLnVjsAES2QRN5FujWhJ0Mg.JPEG/logo_out.jpg
+updatedAt: '2026-09-27'

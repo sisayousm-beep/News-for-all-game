@@ -1,0 +1,49 @@
+id: misumi-uika-evaluation
+title: 미스미 우이카 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 서포터 중 강함 — 해외 2스 B·B+
+- label: 뽑기 권장
+  value: 아베무지카 파티라면 추천
+- label: 역할
+  value: 음유시인 서포터 — 고무 버프 + 보조 힐·딜
+- label: 추천 스킬
+  value: 2스킬
+summary: 기본 고무 버프에 자체 힐과 딜까지 갖춰 다른 5★보다 가치가 높다는 해외 평가. 국내에서는 아베무지카 파티의 서브 힐러로 쓰이며, 사키코를 우선 치료하는 재능 때문에 1스 힐 대상이 헷갈린다는 글이 있었다.
+positive:
+- 고무 외에 상당한 힐·딜을 준다(해외).
+- 공격력 버프가 준수하고 짧은 대신 회전이 좋다는 국내 후기.
+- 아베무지카 파티에서 서브 힐러 역할.
+negative:
+- 서포터 역할에 6★ 경쟁자가 있어 범용 메타 픽은 아니다(해외).
+- 힐이 버거운 맵에서는 하루카 등 전담 힐러가 따로 필요하다는 댓글.
+subjects:
+- operators/misumi-uika
+- operators/misumi-uika#s2
+- operators/misumi-uika#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qxxhrp/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Somniloquium Serenum (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5968255
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6054750
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6054756
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6086204
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

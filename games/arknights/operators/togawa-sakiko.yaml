@@ -1,0 +1,85 @@
+id: togawa-sakiko
+title: "토가와 사키코"
+aliases: ["Togawa Sakiko"]
+summary: "6★ 가드 · 로드. Ave Mujica에서 키보드와 작곡을 담당하는 토가와 사키코. 상냥하고 자상하며, 자신감이 강한 아가씨입니다."
+attributes:
+  rarity: 6
+  class: guard
+  branch: "로드"
+  obtain: collab
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (로드)"
+    text: "원거리 공격 가능, 원거리 공격 시 공격력이 80%로 감소"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "2,056", "공격력": "725", "방어력": "425", "마법 저항": "10", "배치 코스트": "20", "저지": "2", "공격 간격": "1.3초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+300", "공격력": "+60"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 공격력 +26 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「초승달의 각성」 (특화 3)"
+    text: "음표 8개 연주, 각각의 음표가 입히는 마법 대미지가 공격력의 100%에서 5%까지 점차 감소 / 2회 충전 가능, 최대까지 충전한 경우 자동으로 1회 발동"
+    values: {"SP 소모": "3", "초기 SP": "0", "SP": "공격 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「보름달의 무도회」 (특화 3)"
+    text: "음색을 피아노(초기) 또는 오르간으로 전환하며 연주 가능 / 피아노: 공격력 +110%, 음표의 비행 속도 증가, 명중 시 목표를 관통하며 물리 대미지 / 오르간: 공격 속도 +140, 음표의 비행 속도 감소, 마법 대미지 / Fever 상태 동안 현재 음색이 2연 공격으로 변경"
+    values: {"SP 소모": "5", "초기 SP": "0", "SP": "공격 회복", "발동": "수동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「그믐달의 여운」 (특화 3)"
+    text: "공격 범위 확대, 공격 시 피아노와 오르간 음색을 동시에 연주하며, 각각 공격력 220% 물리 대미지 및 마법 대미지를 입히는 음표를 2개 연주, 각 음표는 방어력과 마법 저항이 가장 높은 적을 추적 / Fever 상태 동안 Ave Mujica 멤버가 치명상을 입어도 퇴각하지 않으며, Fever 종료 후 퇴각"
+    values: {"SP 소모": "42", "초기 SP": "34", "지속": "25초", "SP": "공격 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「찬가의 음표」 (정예2)"
+    text: "토가와 사키코가 지속 공격 시전, 공격 시 적을 추적하는 음표 연주, 음표는 공격 범위를 일정 시간 벗어나면 사라짐. 음표 1개마다 Ave Mujica 멤버가 적의 방어력 3%, 마법 저항 2% 무시(최대 10회 중첩)"
+  - id: talent-2
+    section: talents
+    name: "2재능 「망각이 두렵지 않으리」 (정예2)"
+    text: "적에게 대미지를 입히면 Fever +3, 다른 Ave Mujica 멤버의 공격 범위와 자신의 기본 공격 범위가 겹칠 경우 공격 범위 확장으로 간주, 공격 범위 내 오퍼레이터 공격 속도 +12"
+  - id: module-lory
+    section: modules
+    name: "모듈 LOR-Y 「무언의 약속」 (Lv.3)"
+    text: "특성: 공격 범위 내에 2명 이상의 적 존재 시 공격 속도 +12 / 재능(찬가의 음표): 토가와 사키코가 지속 공격 시전, 공격 시 적을 추적하는 음표 연주, 음표는 공격 범위를 일정 시간 벗어나면 사라짐, 음표 1개당 Ave Mujica 멤버가 적의 방어력 5%, 마법 저항 2.5% 무시(최대 12회 중첩), 스킬 지속 시간 동안 원거리 공격의 공격력이 감소하지 않음"
+    values: {"HP": "+300", "공격력": "+63", "공격 속도": "+7"}
+history:
+  - date: 2026-02-10T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6주년 시즌 신규 6★ 오퍼레이터. 콜라보 이벤트 헤드헌팅 [광대들의 노래] (2월 10일 16:00 ~ 2월 24일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1234927
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1234927
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1235244
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4182_oblvns)"
+image: /games/arknights/img/operators/togawa-sakiko.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4182_oblvns_1b.png
+updatedAt: 2026-09-27

@@ -1,0 +1,57 @@
+id: v6-5
+title: 6.5주년 시즌
+aliases:
+- 명일방주 6.5주년
+version: '6.5'
+start: '2026-07-16T16:00:00+09:00'
+end: null
+summary: 7월 12일 6.5주년 특별 방송 뒤 7월 16일 SideStory [사세행]과 한정 헤드헌팅 [겁진고금]으로 시작한 시즌. 8월 13일 PC 버전이 출시됐다.
+phases:
+- name: 사세행 · 겁진고금
+  start: '2026-07-16T16:00:00+09:00'
+  end: '2026-08-13T03:59:00+09:00'
+- name: 교차지점 · PC 버전
+  start: '2026-08-13T16:00:00+09:00'
+  end: '2026-09-16T16:00:00+09:00'
+- name: 사람들, 우리들
+  start: '2026-09-16T16:00:00+09:00'
+  end: null
+highlights:
+- SideStory [사세행] · 한정 헤드헌팅 [겁진고금] (왕·첸 더 던스트릭) · 용문 복권방 — 7/16
+- 벡터 돌파#2 [주술의 밤] — 7/30
+- PC 버전 출시 · 스토리 모음집 [교차지점] (벨로네) · 읽기 모드 — 8/13
+- '[위수 협의: 맹약] — 8/20'
+- 재개방 SideStory [불타버린 엘레지여] — 8/27
+- SideStory [사람들, 우리들] · 이벤트 헤드헌팅 [길을 여는 자들] (지마 더 레이징 타이드) — 9/16
+- '[듀얼 채널: 아이비바인] — 9/23'
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1243972
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 각 업데이트 공지(개방 일시)
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1245209
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1245977
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246284
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246570
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247160
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247457
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

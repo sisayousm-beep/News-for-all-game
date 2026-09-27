@@ -1,0 +1,50 @@
+id: story-people-a-people
+title: '''사람들, 우리들'' — 우르수스 학생자치단 SideStory'
+kind: story
+version: '6.5'
+consensus: moderate
+flow: 1102년 우르수스. 지마가 재판에 서고, 여러 증인의 진술을 따라 현재와 과거가 번갈아 전개된다. 몰락하는 제국과 황제를 끌어내리려는 귀족, 체르노보그의 트라우마를 딛고 비슷한 상황에 다시 맞서는 학생자치단의 이야기. 메인 에피소드 16과 17을 잇는 내용이다.
+verdicts:
+- label: 전개
+  value: 재판 구성 + 과거·현재 교차, 늘어짐 없음(국내)
+- label: 주제
+  value: 혁명·귀족·황제 — 수위 높은 정치극
+- label: 이벤트 기믹
+  value: 감시탑·조명 기믹 호불호(해외 불만)
+summary: 국내에서는 "진짜 재밌었다", 군상극을 잘 말아줬다는 호평이 많다. 해외도 스토리는 좋다는 반응이지만 다음 이야기를 위한 준비편 같다는 평과 스테이지 기믹 불만이 섞였다.
+regions:
+- region: domestic
+  summary: 장문 리뷰가 개념글(추천 59)에 올랐고, 캐릭터마다 성격이 확고해 재밌다는 글도 추천을 받았다. 우르수스 정세와 황제 묘사, 학생자치단의 성장이 호평.
+  positive:
+  - 재판 형식으로 현재·과거를 오가는 전개
+  - PTSD를 딛고 성장한 학생자치단 묘사
+  - 혁명·귀족 정치를 과감하게 그린 묘사(중국 게임에서 이런 이야기가 나온 게 신기하다는 댓글)
+  negative:
+  - 일부 인물(표도르 등) 활약이 아쉽다는 댓글
+- region: overseas
+  summary: 메가스레드에서 스토리는 좋았다는 댓글이 많지만, 설정이 큰 이야기의 도입부처럼 느껴진다는 의견이 있다. 조명(감시탑) 스테이지 기믹은 "최악의 이벤트"라는 말까지 나왔다.
+  positive:
+  - 스토리 자체는 호평, 16지·17지를 잇는 연결고리
+  negative:
+  - 잠입한 인물 등 일부 요소는 시간이 더 필요했다
+  - EX-7·8 챌린지 모드 난이도와 조명 기믹
+subjects:
+- versions/v6-5
+- events/people-a-people
+sources:
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6147955
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 스토리 장문 리뷰(개념글) + 댓글
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6141114
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 캐릭터 감상(개념글) + 댓글
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1whrnl3/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 이벤트 메가스레드
+updatedAt: '2026-09-27'

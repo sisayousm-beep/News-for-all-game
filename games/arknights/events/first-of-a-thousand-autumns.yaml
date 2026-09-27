@@ -1,0 +1,22 @@
+id: first-of-a-thousand-autumns
+title: SideStory '사세행'
+kind: event
+start: '2026-07-16T16:00:00+09:00'
+end: '2026-08-13T03:59:00+09:00'
+version: '6.5'
+summary: 6.5주년 기념 염국 SideStory. 스테이지는 7월 16일·23일·30일 세 번에 나눠 열렸고(8월 6일 03:59까지), 상점 [천경다실]은 8월 13일까지.
+rewards:
+- 5★ 쥐(이벤트 보상 오퍼레이터)
+- 헤드헌팅 허가증
+- 0011 디자인 시리즈 컬렉션 - 트렘블 콜드(위스퍼레인)
+- 에포크 시리즈 컬렉션 - 빛과 그림자(나이트메어)
+subjects:
+- operators/ju
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1243972
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+image: /games/arknights/img/events/first-of-a-thousand-autumns.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA3MTJfOTYg/MDAxNzgzODQyNDY3Mzc0.HCmPSPGQQWqQRtfx5TiZ-mHlJlE6CLsdpF4KkjTICXIg.kzyhYU57oGvwUP7CHBe6NMgkbBNY11PU7MFEbiz_tcUg.JPEG/out.jpg
+updatedAt: '2026-09-27'

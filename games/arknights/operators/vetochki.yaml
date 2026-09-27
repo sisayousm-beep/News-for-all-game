@@ -1,0 +1,76 @@
+id: vetochki
+title: "베토치키"
+aliases: ["Веточки"]
+summary: "5★ 디펜더 · 저거너트. 우르수스 크라이니 세베르 광산에서 온 종을 치는 소녀 베토치키. 그녀는 드디어 횃불을 들고 극야를 벗어났습니다."
+attributes:
+  rarity: 5
+  class: defender
+  branch: "저거너트"
+  obtain: standard
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (저거너트)"
+    text: "아군의 치료를 받을 수 없음"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.80 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "3,748", "공격력": "865", "방어력": "540", "마법 저항": "10", "배치 코스트": "35", "저지": "3", "공격 간격": "1.6초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+400", "방어력": "+50"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 최대 HP +250 · 5잠 재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「절경을 향한 저항」 (특화 3)"
+    text: "방어력 +120%, 저항 효과 획득"
+    values: {"SP 소모": "15", "초기 SP": "10", "지속": "12초", "SP": "피격 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「생존 의지」 (특화 3)"
+    text: "스킬 발동 시 자신 주변의 지상 적에게 5초간 전율 효과 부여, 공격력 +150%, 방어력 +50%, 저지하고 있는 모든 적 동시에 공격"
+    values: {"SP 소모": "18", "초기 SP": "5", "지속": "15초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「간단한 응급처치」 (정예2)"
+    text: "스킬 종료 시 자신은 최대 HP의 50% 회복"
+  - id: module-unyx
+    section: modules
+    name: "모듈 UNY-X 「'시간의 흔적'」 (Lv.3)"
+    text: "특성: 자신이 저지한 적으로부터 받는 대미지가 15% 감소 / 재능(간단한 응급처치): 스킬 지속 시간 동안 방어력 +18%, 스킬 종료 시 자신은 최대 HP의 70% 회복"
+    values: {"HP": "+385", "방어력": "+68"}
+history:
+  - date: 2026-03-19T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6주년 시즌 신규 5★ 오퍼레이터. 이벤트 헤드헌팅 [공백의 주파수] (3월 19일 16:00 ~ 4월 2일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1237778
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1237778
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1237843
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4207_branch)"
+image: /games/arknights/img/operators/vetochki.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4207_branch_1b.png
+updatedAt: 2026-09-27

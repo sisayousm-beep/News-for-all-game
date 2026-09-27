@@ -1,0 +1,61 @@
+id: togawa-sakiko-mastery
+title: 토가와 사키코 — 스킬 특화(3특) 효과
+kind: stat
+version: '6.0'
+answer: 1스킬 +74% (최대)
+results:
+- '특화 3으로 가장 크게 좋아지는 건 1스킬 「초승달의 각성」: 공격력 배율 13%→17%, SP 4→3 — 종합 약 +74%.'
+- '3스킬 「그믐달의 여운」: 공격력 배율 180%→220%, SP 46→42 — 약 +30%.'
+- '2스킬 「보름달의 무도회」: 공격력 +75%→+110% — 약 +20%.'
+- '스킬 1개 특화 1→3 재료: 스킬개론 제3권 ×35, RMA70-24 ×4 등 (특화 3 기준 1스킬).'
+chart:
+  title: 7레벨 → 특화 3 스킬 성능 상승 (핵심 수치 × 가동률)
+  unit: '%'
+  points:
+  - label: 1스킬
+    value: 74.4
+  - label: 2스킬
+    value: 20.0
+  - label: 3스킬
+    value: 29.5
+table:
+  columns:
+  - 스킬
+  - 핵심 수치 7→특화3
+  - SP
+  - 지속
+  - 종합
+  rows:
+  - - 1스킬 「초승달의 각성」
+    - 공격력 배율 13%→17% (+31%)
+    - 4→3
+    - '-'
+    - +74%
+  - - 2스킬 「보름달의 무도회」
+    - 공격력 +75%→+110% (+20%)
+    - 5→5
+    - '-'
+    - +20%
+  - - 3스킬 「그믐달의 여운」
+    - 공격력 배율 180%→220% (+22%)
+    - 46→42
+    - 25→25초
+    - +30%
+  note: 종합 = (1+핵심 수치 상승) × 가동률 변화 − 1. 지속형은 가동률 = 지속/(지속+SP), 즉발형은 1/SP로 계산(SP 초당 1 회복 가정). 딜 계산이 아니라 수치 변화 비교.
+method: 한국 서버 게임 데이터 skill_table의 7레벨과 특화 3 수치를 비교했다. 핵심 수치는 공격력 배율→피해 배율→치유 배율→공격력… 순으로 1개를 고르고, 공격력·방어력 +% 버프는 기본치 포함 최종값(1+버프) 기준으로 상승률을 냈다(Game Hub 계산).
+assumptions:
+- 정예2·스킬 7레벨 대비 특화 3
+- 핵심 수치 1개와 SP·지속만 반영 — 적 방어력, 공격 횟수, 재능·모듈 상호작용은 제외
+- SP 감소·지속 증가는 스킬 가동률(지속형) 또는 사용 빈도(즉발형) 변화로 환산, SP는 초당 1(또는 공격당 1) 회복
+subjects:
+- operators/togawa-sakiko
+- operators/togawa-sakiko#s1
+- operators/togawa-sakiko#s2
+- operators/togawa-sakiko#s3
+sources:
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/skill_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 스킬 레벨별 수치·특화 재료(character_table)
+updatedAt: '2026-09-27'

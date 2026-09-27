@@ -1,0 +1,76 @@
+id: perfumer-the-distilled
+title: "퍼퓨머 더 디스틸트"
+aliases: ["Perfumer the Distilled"]
+summary: "5★ 서포터 · 비호자. 미노스에 상주하는 서포터 오퍼레이터 퍼퓨머. 아테누스 사무소의 관련 업무를 담당하고 있습니다."
+attributes:
+  rarity: 5
+  class: supporter
+  branch: "비호자"
+  obtain: standard
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (비호자)"
+    text: "공격 시 마법 대미지를 입히며, 스킬 발동 후 아군 치료로 변경 (치유량은 공격력의 75%에 해당)"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.80 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "1,845", "공격력": "420", "방어력": "182", "마법 저항": "25", "배치 코스트": "12", "저지": "1", "공격 간격": "1.6초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+250", "공격력": "+50"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 최대 HP +160 · 5잠 재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「'산속의 기쁨'」 (특화 3)"
+    text: "즉시 1회 치료, 치유량은 퍼퓨머 더 디스틸트 공격력의 500%, 동시에 목표의 방어력 +25%, 10초간 지속 (중첩 불가) / 2회 충전 가능"
+    values: {"SP 소모": "9", "초기 SP": "9", "SP": "자동 회복", "발동": "자동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「'신전의 잔불'」 (특화 3)"
+    text: "공격 속도 +50, 재능의 가호 효과가 2배로 증가, 치료할 때마다 목표가 3초간 공격력 +30%, 초당 최대 HP 1%만큼 감소 (중첩 불가)"
+    values: {"지속": "30초", "발동": "패시브"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「백리향」 (정예2)"
+    text: "공격 범위 내 자신을 제외하고 HP 비율이 자신 이하인 아군이 14%의 가호 효과 획득"
+  - id: module-blsy
+    section: modules
+    name: "모듈 BLS-Y 「'두 달의 호흡'」 (Lv.3)"
+    text: "특성: 공격 시 2명의 목표에게 마법 대미지를 입히며, 스킬 발동 후 아군 2명 치료로 변경 (치유량은 공격력의 75%에 해당) / 재능(백리향): 공격 범위 내 자신을 제외하고 HP 비율이 자신 이하인 아군이 20%의 가호 효과 획득"
+    values: {"HP": "+150", "공격력": "+50"}
+history:
+  - date: 2026-06-22T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6주년 시즌 신규 5★ 오퍼레이터. 이벤트 헤드헌팅 [얼어붙은 시간 속에서의 탐색] (6월 22일 16:00 ~ 7월 6일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1242829
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1242829
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1242903
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_1022_flwr2)"
+image: /games/arknights/img/operators/perfumer-the-distilled.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1022_flwr2_1b.png
+updatedAt: 2026-09-27

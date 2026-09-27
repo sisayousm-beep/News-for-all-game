@@ -1,0 +1,33 @@
+id: botany-evaluation
+title: 보타니 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.5'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 2스 C-·C
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 의식술사 — 아군 부식 피해
+- label: 추천 스킬
+  value: 2스킬
+summary: 첫 "아군 부식 피해" 의식술사지만 해외 공략은 발라르크빈을 키우지 않았다면 키울 필요가 없다고 본다. 국내 성능 논의는 거의 없다.
+positive:
+- 이벤트 보상이라 뽑기 부담이 없다.
+negative:
+- 원소 조합 조건이 까다로워 발라르크빈을 쓰는 계정이 아니면 효용이 낮다.
+subjects:
+- operators/botany
+- operators/botany#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1weq14o/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — People, A People (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6139484
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

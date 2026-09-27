@@ -8,7 +8,7 @@ Game Hub는 여러 곳에 흩어진 게임 정보(공식 공지, 패치노트, �
 **모으고 · 구조화하고 · 연결하고 · 출처를 추적**하는 게임 정보 대시보드 + 데이터베이스입니다.
 정보의 원본인 척하지 않습니다. 모든 사실에는 원문 출처가 붙습니다.
 
-현재 등록된 게임: **메이플스토리(KMS)**, **명조:워더링 웨이브**
+현재 등록된 게임: **메이플스토리(KMS)**, **명조:워더링 웨이브**, **명일방주(한국 서버)**
 
 ## 정보의 3단계 — 이 프로젝트의 핵심 이론
 
@@ -60,6 +60,9 @@ games/                  ← 데이터 (게임별 폴더, 사람·AI가 수정하
     versions/ resonators/ weapons/ events/ codes/ news/   ← 1. 공식
     analysis/*.yaml                                      ← 2. 계산·통계
     community/*.yaml                                     ← 3. 여론·커뮤니티
+  arknights/
+    game.yaml
+    versions/(주년 시즌) operators/ events/ news/ analysis/ community/
   _template/            ← 새 게임 복사용 템플릿
 src/
   core/schema.ts        ← 모든 데이터 형식의 단일 정의 (zod)

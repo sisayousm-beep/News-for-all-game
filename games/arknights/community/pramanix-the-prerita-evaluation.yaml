@@ -1,0 +1,50 @@
+id: pramanix-the-prerita-evaluation
+title: 프라마닉스 더 프레리타 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 — 해외 2스 S++
+- label: 뽑기 권장
+  value: 추천 (해외 Lean Pull)
+- label: 역할
+  value: 광역 캐스터 + 설원(1재능) 제어
+- label: 추천 스킬
+  value: 2스킬 — 최고 수준의 방치형 스킬
+- label: 조작 난이도
+  value: 쉬움
+- label: 모듈
+  value: 3레벨 권장
+summary: 광역 딜과 설원 제어를 갖춘 캐스터로, 2스는 게임 최고 수준의 방치형 스킬이라는 평. 국내에서도 "빌려 써 보면 허탈할 정도로 사기"라는 반응이다.
+positive:
+- 높은 광역 딜 + 1재능 설원 제어, 2스로 더 강화된다(해외).
+- 2스가 충분하지 않을 때 쓸 더 높은 딜의 3스도 있다.
+- 일반 맵·스토리 이벤트에서는 최상위 한정들과도 겨룰 만하다는 댓글.
+negative:
+- 극한 환경에서는 왕·위셔델 같은 최상위 한정에게 밀린다.
+- 딜러라 모듈 3레벨까지 올려야 한다는 의견.
+subjects:
+- operators/pramanix-the-prerita
+- operators/pramanix-the-prerita#s2
+- operators/pramanix-the-prerita#s3
+- operators/pramanix-the-prerita#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1sixuv4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Retracing Our Steps (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6107694
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6044341
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6084665
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

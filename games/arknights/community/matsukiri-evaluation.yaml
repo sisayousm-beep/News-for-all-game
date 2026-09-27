@@ -1,0 +1,45 @@
+id: matsukiri-evaluation
+title: 마츠키리 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 상위권 — 해외 2스 B
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 책사 뱅가드 — 배치 전 아군 강화·코스트
+- label: 추천 스킬
+  value: 2스킬
+summary: 첫 책사(뱅가드) 오퍼레이터로 5★ 중에서는 쓸 만하다는 평. 다만 실버애쉬 더 레인프로스트라는 상위 호환이 나와 굳이 키울 필요는 적다는 의견이 많고, 명토체스에서는 "사기"로 불렸다.
+positive:
+- 배치 전부터 아군을 강화하는 새로운 유틸(해외).
+- 5★ 중 상위권, 사가·플레임테일 같은 6★를 키우느니 낫다는 댓글.
+- 명토체스에서 짝수 라운드마다 상점 오퍼를 공짜로 가져와 초반 체급이 보장된다.
+negative:
+- 실버애쉬 더 레인프로스트가 완벽한 상위 호환이라 추천하기 어렵다.
+- 5★인데 육성 재화가 6★에 가깝게 든다.
+subjects:
+- operators/matsukiri
+- operators/matsukiri#s2
+- operators/matsukiri#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qc7r16/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Ato (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5988635
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6133583
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5935909
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

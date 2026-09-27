@@ -1,7 +1,7 @@
 # HANDOFF — 다음 세션 인수인계
 
 > 새 세션의 AI는 **이 파일 → AGENTS.md → README.md** 순서로 읽고 시작한다.
-> 작성: 2026-09-26 · 최근 브랜치 `claude/wuthering-waves-info-structure-nvczn3`
+> 작성: 2026-09-27 · 최근 브랜치 `claude/arknights-project-rvsidl`
 
 ## 1. 사용자(고용주)와 일하는 방식 — 반드시 지킬 것
 
@@ -71,6 +71,13 @@
   스토리 평가 21건(1.0~3.6): 별점은 아카 채널 설문 누적 표(5점), 국내=아카 글·설문, 해외=Reddit. 아카는 연속 열람 시 차단 → `DELAY=15000`으로 천천히.
   **다음**: 3.6 설문 결과(~9/27 마감) 나오면 story-v3-6 별점·청초·경연 만족도, 1.x·2.x 캐릭터 평가에 국내·Reddit 여론 보강.
 
+- 2026-09-27 **명일방주(한국 서버) 추가** (브랜치 `claude/arknights-project-rvsidl`). 명조와 같은 3단계 구성.
+  버전 번호가 없는 게임이라 **주년 시즌**을 version으로 쓴다(1월 N주년 = "N.0", 7월 N.5주년 = "N.5"). 모듈 탭 이름은 "시즌".
+  오퍼레이터 36명(5.5: 12월 3명, 6.0: 24명, 6.5: 9명) — 능력치·스킬(특화3)·재능(정예2)·모듈(Lv.3)은 한국 서버 게임 데이터 자동 요약, 출시·배너는 공식 카페 공지.
+  계산: 오퍼레이터별 `<id>-mastery`(7렙→특화3 핵심 수치 × 가동률), 한정·표준 헤드헌팅 시뮬레이션(공식 확률 2% + 50회 이후 +2%p, 300회 교환·150회 확정).
+  커뮤니티: 오퍼레이터 평가(Reddit "Mastery Priority Guide & Should You Pull" 시리즈 등급 + 디시 명일방주 갤 글·댓글), 핫이슈(명토체스, PC 버전), 뽑기 팁, 스토리 평가 3(사세행·교차지점·사람들, 우리들 — 별점 근거가 되는 설문이 없어 별점 없음).
+  **다음**: 6.0 시즌 스토리 평가(폐허·편안한 잠꼬대·EP16·설산 강림 1101·허락받지 못한 땅·아테누스 복수록), 5.5 이전 오퍼레이터, 7주년(2027-01) 시즌 레코드, 아카라이브 여론 보강(이번 세션은 429 차단으로 거의 못 읽음).
+
 ## 4. 공식 출처 읽는 법 (2026-09-26 확인)
 
 네트워크는 열려 있다. 단 나무위키·fandom·prydwen은 403(차단).
@@ -89,6 +96,13 @@
 | Reddit·아카라이브·Prydwen | curl은 403(봇 차단)이지만 **Playwright 브라우저로 열림**. 프록시 CA의 SPKI 해시를 `--ignore-certificate-errors-spki-list`로 신뢰(프록시 CA만 신뢰, 검증 끄는 것 아님). 아카는 "잠시만 기다리십시오"가 사라질 때까지 대기 후 `.article-body`, `.comment-item .message`. Reddit은 `shreddit-post`/`shreddit-comment`. Prydwen은 `.tabs .single-tab` 클릭(Review·Calculations·Build) |
 | YouTube | 검색 결과(ytInitialData)의 제목·조회수만 읽힘. 영상 페이지는 차단 → `collectedAt`만, note에 "영상 제목" 명시 |
 | 차단됨 | NGA, fandom. 빌리빌리는 검색 API 1~2회 후 차단 |
+| 명일방주 공식 공지 | 한국은 네이버 공식 카페(clubid 29703924)가 사실상 공지 창구. 목록 `apis.naver.com/cafe-web/cafe2/ArticleListV2dot1.json?search.clubid=29703924&search.menuid=<2 공지|3 이벤트|14 오퍼레이터 소개>`, 본문 `apis.naver.com/cafe-web/cafe-articleapi/v2.1/cafes/29703924/articles/<id>?useCafeId=true`(Referer: cafe.naver.com). `writeDateTimestamp`는 UTC → +9시간. 본문은 대부분 세로로 긴 이미지(`?type=w1600`) → 잘라서 읽는다. 인용 URL은 `cafe.naver.com/arknightskor/<id>` |
+| 명일방주 게임 데이터 | `raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/kr/gamedata/excel/<table>.json`(한국 서버, 최신). Kengxxiao/ArknightsGameData_YoStar의 ko_KR은 2025-12에서 멈춤. **미출시 오퍼레이터가 먼저 들어오므로** 공식 공지로 출시를 확인한다. 헤드헌팅 기간은 `gacha_table.gachaPoolClient`(openTime+9h) |
+| 명일방주 확률 | 공식 홈페이지 `/probability`(6★ 2.00%, 종합 2.89%). 50회 이후 +2%p·한정 70% 규칙은 arknights.wiki.gg |
+| 명일방주 일러스트 | `yuanyan3060/ArknightsGameResource` `skin/<charId>_1b.png`(게임 클라이언트 기본 일러스트) → sharp trim → 420px webp |
+| 디시 명일방주 갤(mibj) | 검색은 최근 약 1만 글 "창" 단위 → 과거 글은 목록의 `search_next` 링크(`search_pos=-N`)를 따라가야 한다(`search_windows`). 하루 약 1,300글 |
+| 아카라이브 명일방주 | curl로도 목록·본문이 열리지만 **몇 번 연속 요청하면 429가 한 시간 넘게 지속**. 요청 간격 20초 이상, 처음부터 천천히 |
+| Reddit r/arknights | TacticalBreakfast의 이벤트별 "A Mastery Priority Guide & Should You Pull" 글이 스킬 등급(Story/Advanced)·뽑기 권장(Strong/Lean Pull·Skip)을 정리 — 오퍼레이터 평가의 해외 기준 |
 
 Playwright: 로컬 미리보기(`astro preview`) 스크린샷은 `executablePath: /opt/pw-browsers/chromium-1194/chrome-linux/chrome`로 동작함(외부 사이트는 프록시 인증서 문제).
 

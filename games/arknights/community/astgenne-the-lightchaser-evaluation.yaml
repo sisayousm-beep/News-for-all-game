@@ -1,0 +1,37 @@
+id: astgenne-the-lightchaser-evaluation
+title: 아스트젠 더 라이트체이서 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중간 — 해외 3스 B-·B
+- label: 뽑기 권장
+  value: 이벤트 보상(무료 6★)
+- label: 역할
+  value: 감속 서포터 — 연쇄 공격·불규칙한 제어
+- label: 추천 스킬
+  value: 3스킬 / 2스킬은 특화 1까지
+summary: 참신하고 재미있는 구성이지만 딜이 인상적이지 않고 제어가 불규칙해 대부분은 키울 필요가 없다는 해외 평가. 국내 갤러리에서는 성능 논의가 거의 없었고 "약하다"는 댓글 정도다.
+positive:
+- 재미있는 구성이고 몇몇 틈새에서는 쓸모가 있다(해외).
+- 틈새용으로 키운다면 특화 가치는 꽤 높다.
+negative:
+- 딜이 약하고 제어의 가동률·예측성이 낮다(해외).
+- '"아스트젠(이 명토체스에서) 약한 이유가 있었네"라는 국내 댓글.'
+subjects:
+- operators/astgenne-the-lightchaser
+- operators/astgenne-the-lightchaser#s2
+- operators/astgenne-the-lightchaser#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1sixuv4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Retracing Our Steps (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6052632
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 명토체스 대비 육성 목록 댓글
+updatedAt: '2026-09-27'

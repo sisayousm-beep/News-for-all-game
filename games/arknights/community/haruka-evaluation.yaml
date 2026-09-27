@@ -1,0 +1,58 @@
+id: haruka-evaluation
+title: 하루카 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 힐러 — 해외 2스 S-
+- label: 뽑기 권장
+  value: 국내 "통상인데 사기, 뽑아라" / 해외 Lean Skip
+- label: 역할
+  value: 수호자 서포터 — 무한 지속 힐
+- label: 추천 스킬
+  value: 2스킬(두 번 켜면 무한 지속)
+- label: 조작 난이도
+  value: 매우 쉬움
+summary: 무한 지속 스킬로 게임 최고 수준이면서 가장 쓰기 쉬운 힐러라는 평. 국내에서는 "중국 서버 기준으로도 힐 0티어", 뽑고 나서 "애들이 안 눕는다"는 반응이 많다. 해외는 힐이 가장 대체되기 쉬운 역할이라 우선순위를 낮췄다.
+shift:
+  release: 해외 "Lean Pull"
+  now: 해외 "Lean Skip"
+  reason: 힐은 핵심 역할 중 우선순위가 가장 낮고 최적화로 빼기 쉬워, 한정·콜라보 배너에 밀렸다.
+positive:
+- 2스를 두 번 켜면 무한 지속이라 수호자 특유의 불안정한 힐 문제가 없다.
+- 뽑은 뒤 "명세상이 달라졌다", "통상치고 개사기급", "앞으로 계속 쓸 힐러"라는 댓글.
+- 고인물이 되면 힐러 두 명 자리를 하나로 줄일 수 있다.
+negative:
+- 힐은 딜·제어보다 대체하기 쉬워 최신 6★ 중 필수도는 낮다(해외).
+- 뉴비라면 사키코 등 콜라보부터 챙기라는 의견.
+divided:
+- position: 꼭 뽑아야 한다
+  reasons:
+  - 통상 6★ 중 사기급 힐러
+  - 맵 체감 난이도가 크게 내려간다
+- position: 여유 있을 때만
+  reasons:
+  - 다음 콜라보·한정 배너가 우선
+subjects:
+- operators/haruka
+- operators/haruka#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qc7r16/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Ato (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5980010
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5929470
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6090647
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

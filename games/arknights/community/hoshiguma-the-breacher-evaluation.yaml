@@ -1,0 +1,51 @@
+id: hoshiguma-the-breacher-evaluation
+title: 호시구마 더 브리처 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 — 해외 3스 S++, 2스 S+
+- label: 뽑기 권장
+  value: 최우선급 (해외 Strong Pull, 한정)
+- label: 역할
+  value: 디펜더 — 거의 모든 팀에 들어가는 만능 해결사
+- label: 추천 스킬
+  value: 3스킬(특화 1부터 체감)
+- label: 잠재 의존도
+  value: 낮음 — 위기협약 모듈 미션도 명함 가능
+summary: 국내외 모두 S+급 한정으로 본다. 해외 공략은 "거의 모든 팀에 들어가는 만능 해결사", 국내에서는 신시아와 함께 최상위권으로 묶이고 계정 거래 "국룰 조합"에 빠지지 않는다.
+positive:
+- 다른 메타 유닛이 못 푸는 문제를 여러 방식으로 해결해 거의 모든 팀에 들어간다(해외).
+- '위기협약 #4 모듈 미션 3인 클리어 공략에서 명함으로도 핵심 역할.'
+- 록라(통합 전략)에서 신시아와 함께 S+급이라는 댓글.
+negative:
+- 이런 만능 유닛답게 특화 투자량이 많다 — 해외는 특화 6~9개까지 권장.
+- 한정이라 일반 헤드헌팅으로는 얻을 수 없다.
+subjects:
+- operators/hoshiguma-the-breacher
+- operators/hoshiguma-the-breacher#s2
+- operators/hoshiguma-the-breacher#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qc7r16/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Ato (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5938976
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6018166
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6047633
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6090647
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

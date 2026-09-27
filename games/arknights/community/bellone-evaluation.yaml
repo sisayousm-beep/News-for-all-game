@@ -1,0 +1,53 @@
+id: bellone-evaluation
+title: 벨로네 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.5'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: A급 — 해외 2스 S-, 3스 A-
+- label: 뽑기 권장
+  value: 애정·재미 픽 (해외 Lean Skip)
+- label: 역할
+  value: 딜러 가드 + 방어력 감소·적 추격
+- label: 추천 스킬
+  value: 2스킬 — 대표 스킬(3스)보다 좋은 경우가 많다
+summary: 딜은 매우 강하지만 최신 가드 경쟁이 치열해 "좋은 것만으로는 부족하다"는 평. 국내에서는 명토체스·인프라(무역소) 용도와 피아메타 조합 재미로 뽑는 사람이 많았다.
+positive:
+- 2스 딜이 강하고 특화 효율이 이례적으로 높다(해외).
+- 명토체스 시라쿠사 덱에서 숨은 보스 딜 절반을 혼자 넣었다는 후기.
+- 인프라 무역소 효율 조합(우미리·비질)으로 쓸모가 있다.
+negative:
+- 1군 고정 픽이 되기 어렵고 범용성이 떨어진다는 댓글.
+- 적 추격은 양날의 검이라는 의견.
+- 한정 배너를 위해 지마·벨로네 모두 거르는 게 정배라는 댓글.
+divided:
+- position: 지마보다 벨로네가 낫다
+  reasons:
+  - 방깎·적 추격 같은 유틸이 있어 조커로 쓸 수 있다
+- position: 둘 다 걸러야 한다
+  reasons:
+  - 다음 한정 배너 천장에 합성옥을 모으는 게 우선
+subjects:
+- operators/bellone
+- operators/bellone#s2
+- operators/bellone#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1vmu3ps/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Crossing (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6098448
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6109563
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6099396
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

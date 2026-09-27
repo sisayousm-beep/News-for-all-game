@@ -1,0 +1,27 @@
+id: by-my-rules
+title: 이벤트 헤드헌팅 '나만의 방식' — 벨로네
+kind: banner
+start: '2026-08-13T16:00:00+09:00'
+end: '2026-08-27T03:59:00+09:00'
+version: '6.5'
+summary: 6★ 벨로네, 5★ 리프레사·스노우헌터 확률 UP. 표준 헤드헌팅(150회 확정 규칙 적용).
+subjects:
+- operators/bellone
+- operators/ripresa
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1245977
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246048
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/gacha_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 헤드헌팅 기간(gachaPoolClient)
+image: /games/arknights/img/events/by-my-rules.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA4MTFfMTAg/MDAxNzg2NDE5NTYxOTE4.vkMds8QF4RJnZghyGgFe2_vZN22Hp73eYb0WsKN_DMEg.nfqUHRvvYyXP3rLkRa3MybHR2N8kS7gRO4NZyLFZC3wg.JPEG/logo_out.jpg
+updatedAt: '2026-09-27'

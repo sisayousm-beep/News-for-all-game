@@ -1,0 +1,37 @@
+id: v6-5-pull-strategy
+title: 6.5 시즌 뽑기 — 통상 픽업은 거르고 한정·콜라보에 대비
+kind: tip
+version: '6.5'
+happenedAt: '2026-09-16'
+background: 지마 더 레이징 타이드 픽업(9/16~) 이후 한정·콜라보 배너가 연달아 온다는 미래시(글로벌·중국 서버 선행)가 공유되면서 나온 조언.
+consensus: moderate
+summary: 지마·벨로네 같은 통상 6★ 픽업은 애정이 아니면 넘기고, 이어지는 한정·콜라보 배너에 합성옥을 모으라는 조언이 국내외 공통이다.
+tips:
+- text: 지마 더 레이징 타이드는 "그 자체를 노리기보다 5★ 우쿠시크를 노리는 김에" 정도로 보라는 댓글이 많다.
+  who: 국내
+- text: 애정이 아니면 비인기 6★를 헤드헌팅 데이터 계약(정가)으로 교환하지 말라 — 한정·콜라보 연타에 대비하라는 글이 추천을 받았다.
+  who: 국내
+- text: 해외 공략 "Should You Pull" 시리즈는 지마·벨로네를 Lean Skip으로 두고, 다음 한정 배너부터 Strong Pull을 권한다.
+  who: 해외
+- text: 한정 배너는 원하는 6★ 한 명 기준 평균 약 96회, 천장 300회 — 계산·통계 탭의 확률 표 참고.
+sources:
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6149874
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 복귀 유저 "지마 뽑아야 하나" 댓글
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6134482
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1weq14o/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Should You Pull — People, A People
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1vmu3ps/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Should You Pull — Crossing
+updatedAt: '2026-09-27'

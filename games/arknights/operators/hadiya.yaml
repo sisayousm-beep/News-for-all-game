@@ -1,0 +1,66 @@
+id: hadiya
+title: "하디야"
+aliases: ["Hadiya"]
+summary: "5★ 가드 · 용병. 사르곤 전사의 후예 하디야, 부족의 재건을 위해 황야에 도전하는 여정에 올랐습니다."
+attributes:
+  rarity: 5
+  class: guard
+  branch: "용병"
+  obtain: shop
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (용병)"
+    text: "배치 코스트를 소모해 작전 능력 강화"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.80 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "2,895", "공격력": "530", "방어력": "393", "마법 저항": "10", "배치 코스트": "10", "저지": "2", "공격 간격": "1.25초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"공격력": "+55"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 공격력 +30 · 5잠 재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「사막 전술 개량」 (특화 3)"
+    text: "방어력 +100% / 장비응변: 배치 코스트 10 소모, 공격력 +100%, 스킬 종료 시까지 지속 / SP 전부 회복 시 장비응변을 사용해 스킬 발동"
+    values: {"SP 소모": "20", "초기 SP": "13", "지속": "30초", "SP": "자동 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「카른사이프의 칼날」 (특화 3)"
+    text: "배치 코스트를 10 소모해 검과 지팡이를 조합, 공격 범위 확대, 공격력 +150%, 동시에 목표 3개 공격 / 스킬 지속 시간 동안 배치 코스트를 15 소모해 장비응변 사용 가능, 스킬 지속 시간 15초 연장"
+    values: {"SP 소모": "26", "초기 SP": "15", "지속": "20초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「황야의 후예」 (정예2)"
+    text: "배치, 스킬 발동, 장비응변을 통해 배치 코스트를 소모할 때마다 공격력 +4%, 공격 범위 내 적을 2초간 기절시킴 (공격력은 최대 5회 증가)"
+history:
+  - date: 2026-04-14T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6주년 시즌 신규 5★ 오퍼레이터. 구매증명서 상점 추가 (설산 강림 1101 업데이트) 구매증명서 상점 교환 오퍼레이터."
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1239062
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1239062
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_394_hadiya)"
+image: /games/arknights/img/operators/hadiya.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_394_hadiya_1b.png
+updatedAt: 2026-09-27

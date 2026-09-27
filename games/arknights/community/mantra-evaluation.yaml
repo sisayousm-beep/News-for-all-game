@@ -1,0 +1,45 @@
+id: mantra-evaluation
+title: 만트라 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상위권 — 해외 3스 S
+- label: 뽑기 권장
+  value: 넘겨도 됨 (해외 Lean Skip)
+- label: 역할
+  value: 원소 캐스터 — 은신 적 대응
+- label: 추천 스킬
+  value: 3스킬
+- label: 모듈
+  value: 필수에 가깝다는 의견
+summary: 구형 오퍼레이터보다 강하고 쓸 만하지만, 같은 원소 계열 의식술사가 워낙 강해 우선순위가 밀린다는 해외 평가. 국내에서는 은신 기믹이 나오는 위기협약·협동전에서 자주 챙긴다는 후기가 있다.
+positive:
+- 프라이멀 캐스터 특유의 약점을 상당 부분 피했다(해외).
+- '"최근 뽑은 통상 중 제일 많이 썼다", 은신 몹이 나오면 무조건 챙긴다는 후기.'
+negative:
+- 파워 인플레 속에서 출력 대비 복잡하고 상황을 탄다(해외).
+- 모듈을 달아야 제 성능이 나온다는 쪽으로 분류된다.
+subjects:
+- operators/mantra
+- operators/mantra#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1rwl0ov/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Episode 16 (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6097916
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6071243
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5977839
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'
