@@ -9,16 +9,27 @@ import Portrait from '../../components/Portrait.astro';
 import Icon from '../../components/Icon.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
-const items = recordsOf<EntityRecord>(game, mod).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
+// Default order: newest release version first (unknown versions last), then rarity, then name. The toolbar can flip it.
+const byName = recordsOf<EntityRecord>(game, mod).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
+const nameRank = new Map(byName.map((r, i) => [r.id, i]));
+const verOf = (r: EntityRecord) => (r.attributes.version == null ? '' : String(r.attributes.version));
+const cmpVer = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true });
+const items = [...byName].sort((a, b) => {
+  const va = verOf(a), vb = verOf(b);
+  if (va !== vb) return !va ? 1 : !vb ? -1 : cmpVer(vb, va);
+  return Number(b.attributes.rarity ?? 0) - Number(a.attributes.rarity ?? 0) || nameRank.get(a.id)! - nameRank.get(b.id)!;
+});
 const filters = mod.fields.filter((f) => f.filter && f.values);
 const noun = mod.itemLabel ?? mod.label;
 const attrs = (r: EntityRecord) => ({
   'data-name': [r.title, ...r.aliases].join(' ').toLowerCase(),
+  'data-ver': verOf(r), 'data-rar': String(r.attributes.rarity ?? 0), 'data-alpha': String(nameRank.get(r.id)),
   ...Object.fromEntries(mod.fields.map((f) => [`data-${f.key}`, String(r.attributes[f.key] ?? '')])),
 });
 const value = (r: EntityRecord, key: string) => fieldLabel(mod.fields.find((f) => f.key === key)!, r.attributes[key]);
 const has = (key: string) => mod.fields.some((f) => f.key === key);
 const cardFields = mod.fields.filter((f) => f.key !== 'rarity').slice(0, 3);
+const sortable = has('version');
 ---
 <section class="section" data-db>
   <div class="toolbar toolbar-wrap">
@@ -30,6 +41,13 @@ const cardFields = mod.fields.filter((f) => f.key !== 'rarity').slice(0, 3);
           {Object.entries(f.values!).map(([v, label]) => <option value={v}>{label}</option>)}
         </select>
       ))}
+      {sortable && (
+        <select class="select" data-sort aria-label="정렬">
+          <option value="new">최신 버전순</option>
+          <option value="old">오래된 버전순</option>
+          <option value="name">이름순</option>
+        </select>
+      )}
       <button class="btn" type="button" data-reset hidden>초기화</button>
     </div>
     <span class="meta num"><b data-count style="color:var(--ink)">{items.length}</b> / {items.length}</span>
@@ -91,6 +109,28 @@ const cardFields = mod.fields.filter((f) => f.key !== 'rarity').slice(0, 3);
       root.querySelector<HTMLElement>('[data-none]')!.hidden = n > 0 || !rows.length;
     };
     [q, ...selects].forEach((el) => el.addEventListener('input', apply));
+
+    // Re-order both panes in place (grid cards and table rows share the same data attributes).
+    const sort = root.querySelector<HTMLSelectElement>('[data-sort]');
+    const num = (v?: string) => (v ? v.split('.').map(Number) : null);
+    const cmpV = (a?: string, b?: string) => { const x = num(a)!, y = num(b)!; for (let i = 0; i < Math.max(x.length, y.length); i++) { const d = (x[i] ?? 0) - (y[i] ?? 0); if (d) return d; } return 0; };
+    const order = (mode: string) => (a: HTMLElement, b: HTMLElement) => {
+      const byName = +a.dataset.alpha! - +b.dataset.alpha!;
+      if (mode === 'name') return byName;
+      const va = a.dataset.ver, vb = b.dataset.ver;
+      if (va !== vb) { if (!va) return 1; if (!vb) return -1; return mode === 'old' ? cmpV(va, vb) : cmpV(vb, va); }
+      return +b.dataset.rar! - +a.dataset.rar! || byName;
+    };
+    const resort = () => {
+      if (!sort) return;
+      for (const pane of [root.querySelector('.db-grid'), root.querySelector('tbody')]) {
+        if (!pane) continue;
+        [...pane.children as HTMLCollectionOf<HTMLElement>].sort(order(sort.value)).forEach((el) => pane.appendChild(el));
+      }
+      try { localStorage.setItem('db-sort', sort.value); } catch {}
+    };
+    sort?.addEventListener('input', resort);
+    try { const s = localStorage.getItem('db-sort'); if (sort && s && s !== 'new') { sort.value = s; resort(); } } catch {}
     reset.addEventListener('click', () => { q.value = ''; selects.forEach((s) => (s.value = '')); apply(); });
 
     const buttons = [...root.querySelectorAll<HTMLButtonElement>('[data-view]')];
