@@ -53,11 +53,16 @@ topics:
     text: "적이 받는 강공격 피해 +40%, 이매망량 배율 +80%·지속 소환."
     values: {받는 강공격 피해: "+40%"}
 history:
-  - date: null
+  - date: 2026-09-10
     version: "3.6"
     kind: release
-    summary: 3.6 버전 신규 공명자. 캐릭터 이벤트 튜닝 [삼도로 떠나는 유람객]으로 획득 (튜닝 시작일은 공식 공지에서 미확인).
+    summary: 3.6 후반부 신규 공명자. 캐릭터 이벤트 튜닝 [삼도로 떠나는 유람객]으로 출시 (~ 2026년 9월 29일 11:59, 서버 시간).
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5428
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "3.6 후반부 튜닝·이벤트 안내(이미지) — 2026-09-10 10:00 ~ 09-29 11:59 (서버 시간)"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5358
         collectedAt: 2026-09-26

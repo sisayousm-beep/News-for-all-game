@@ -19,11 +19,16 @@ topics:
     text: "전체 속성 피해 보너스 증가. 등장 중 변주 스킬이나 실드 획득 시 「봉천」·「포용」 스택을 얻는다(최대 6, 교체 시 소멸). 봉천은 크리티컬 피해를, 6스택이면 강공격 크리티컬을 올리고, 포용은 강공격 때 소모되어 방어력을 무시한다."
     values: { 전체 속성 피해 보너스: "12~24%", 봉천 크리티컬 피해(최대): "24~48%", 포용 방어력 무시(최대): "30~50%", 강공격 크리티컬(봉천 6스택): "12~24%" }
 history:
-  - date: null
+  - date: 2026-09-10
     version: "3.6"
     kind: release
-    summary: "3.6 버전에 추가된 5성 무기. 한국어 무기 튜닝 공지는 아직 찾지 못해 출시일 미확인."
+    summary: "3.6 후반부 무기 이벤트 튜닝 「수많은 인도」로 출시 (~ 2026년 9월 29일 11:59, 서버 시간)."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5428
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "3.6 후반부 튜닝·이벤트 안내(이미지) — 2026-09-10 10:00 ~ 09-29 11:59 (서버 시간)"
       - source: encore-db
         url: https://api.encore.moe/ko/weapon/21010076
         collectedAt: 2026-09-27
