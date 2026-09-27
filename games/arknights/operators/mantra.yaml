@@ -1,0 +1,85 @@
+id: mantra
+title: "만트라"
+aliases: ["Mantra"]
+summary: "6★ 캐스터 · 프라이멀 캐스터. 과묵한 정예 오퍼레이터 만트라. 필요할 때면 언제든지 당신의 곁을 '함께' 지켜줄 것입니다."
+attributes:
+  rarity: 6
+  class: caster
+  branch: "프라이멀 캐스터"
+  obtain: standard
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (프라이멀 캐스터)"
+    text: "공격 시 마법 대미지를 입히며, 원소 대미지를 입힐 수 있음"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "1,428", "공격력": "695", "방어력": "130", "마법 저항": "15", "배치 코스트": "21", "저지": "1", "공격 간격": "1.6초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+180", "공격력": "+60"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -6초 · 4잠 공격력 +31 · 5잠 제1재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「공명붕괴」 (특화 3)"
+    text: "다음 공격이 공격력 325% 마법 대미지를 입히고, 추가로 대미지 30% 신경 손상을 입힘, 목표가 신경 손상 폭발 상태인 경우, 공격력 200% 원소 대미지를 추가로 입힘"
+    values: {"SP 소모": "2", "초기 SP": "0", "SP": "공격 회복", "발동": "자동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「의식 연계」 (특화 3)"
+    text: "공격 딜레이 감소, 공격 시 공격력 240% 마법 대미지를 입히고, 공격이 다른 3명의 적에게 튕겨 공격력 120% 마법 대미지, 모든 공격은 대미지 18% 신경 손상을 입히고, 목표가 신경 손상 폭발 상태인 경우, 공격력 25% 원소 대미지"
+    values: {"SP 소모": "25", "초기 SP": "18", "지속": "25초", "SP": "자동 회복", "발동": "수동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「침묵이 곧 진실」 (특화 3)"
+    text: "공격 범위 확대, 공격 범위 내 적의 은신 효과 무효화, 마비 효과의 중첩 최대치가 2회로 감소, 공격력 +275%, 동시에 목표 2개 공격, 범위 내 오퍼레이터(자신 포함)가 스킬 발동 시 범위 내 적에게 마비 효과를 2회 부여(최대 3회 발동), 범위 내 적의 마비 중첩 횟수가 최대치를 1회 초과할 때마다 공격력 185% 원소 대미지가 목표와 1명의 적 사이에서 1회 튕김"
+    values: {"SP 소모": "40", "초기 SP": "31", "지속": "40초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「묵음의 속박」 (정예2)"
+    text: "전장의 적에게 마비 효과가 발동되는 즉시 만트라 공격력 135% 원소 대미지를 입히며, 마비 효과 발동 시 10% 확률로 마비 중첩 횟수를 소모하지 않음"
+  - id: talent-2
+    section: talents
+    name: "2재능 「전반적 통찰」 (정예2)"
+    text: "만트라와 가장 가까운 침입 포인트에서 등장한 적이 마비 효과 1회 획득"
+  - id: module-prix
+    section: modules
+    name: "모듈 PRI-X 「중추신경 탐지 모듈」 (Lv.3)"
+    text: "특성: 원소 폭발 상태인 적에게 입히는 대미지가 110%로 증가 / 재능(묵음의 속박): 전장의 적에게 마비 효과가 발동되는 즉시 만트라 공격력 160% 원소 대미지를 입히며, 마비 효과 발동 시 15% 확률로 마비 중첩 횟수를 소모하지 않음"
+    values: {"HP": "+145", "공격력": "+87"}
+history:
+  - date: 2026-03-19T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6.0주년 시즌 신규 6★ 오퍼레이터. 이벤트 헤드헌팅 [공백의 주파수] (3월 19일 16:00 ~ 4월 2일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1237778
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1237778
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1237843
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4204_mantra)"
+image: /games/arknights/img/operators/mantra.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4204_mantra_1b.png
+updatedAt: 2026-09-27

@@ -1,0 +1,80 @@
+id: astgenne-the-lightchaser
+title: "아스트젠 더 라이트체이서"
+aliases: ["Astgenne the Lightchaser"]
+summary: "6★ 서포터 · 감속자. 서포터 오퍼레이터 아스트젠, 탐구의 길에서 다시 한번 새로운 여정을 시작합니다."
+attributes:
+  rarity: 6
+  class: supporter
+  branch: "감속자"
+  obtain: event
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (감속자)"
+    text: "공격 시 마법 대미지를 입히고, 적에게 일시적인 정지 효과 부여"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "1,420", "공격력": "533", "방어력": "125", "마법 저항": "25", "배치 코스트": "18", "저지": "1", "공격 간격": "1.9초", "재배치": "80초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"공격력": "+75"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -10초 · 4잠 배치 코스트 -1 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「반짝이는 항성도」 (특화 3)"
+    text: "공격력 +100%, 공격이 적 사이에서 튕김, 최대 3회"
+    values: {"SP 소모": "30", "초기 SP": "15", "지속": "20초", "SP": "자동 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「별무리 인력」 (특화 3)"
+    text: "다음 공격이 공격 범위 내 방어 포인트와 가장 멀리 떨어진 적 2명을 목표로 지정해 공격력 145% 마법 대미지, 공격이 부여하는 정지 효과 시간이 3초로 증가, 목표 주변 최대 3명의 적을 연결하여 목표의 위치로 어느 정도 끌어당기며, 동일한 마법 대미지"
+    values: {"SP 소모": "3", "초기 SP": "0", "SP": "공격 회복", "발동": "자동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「병렬 사슬」 (특화 3)"
+    text: "공격 범위 확대, 공격력 +70%, 공격 딜레이 감소, 적 2명을 목표로 지정해 공격, 지정된 적은 서로 연결되며, 연결된 적은 받은 마법 대미지의 25%만큼 다른 연결 목표에게 추가로 전달"
+    values: {"SP 소모": "35", "초기 SP": "25", "지속": "25초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「데이터 모델링」 (정예2)"
+    text: "적에게 정지 효과를 부여할 때마다 자신의 공격 속도 +1, 최대 18회 중첩"
+  - id: talent-2
+    section: talents
+    name: "2재능 「에너지원 해석」 (정예2)"
+    text: "공격 범위 내 적에게 10%의 취약 효과 부여, 적이 아스트젠 더 라이트체이서의 공격 범위 내에서 7초 이상 머무를 경우 취약 효과가 14%로 증가"
+  - id: module-decy
+    section: modules
+    name: "모듈 DEC-Y 「탐험가의 소장품」 (Lv.3)"
+    text: "특성: 공격 시 마법 대미지 부여, 동시에 비교적 긴 시간 정지 효과 부여 / 재능(데이터 모델링): 적에게 정지 효과를 부여할 때마다 자신의 공격 속도 +1, 최대 25회 중첩, 중첩 완료 후 자신의 공격력 +12%"
+    values: {"HP": "+115", "공격력": "+50"}
+history:
+  - date: 2026-04-14T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6.0주년 시즌 신규 6★ 오퍼레이터. SideStory [설산 강림 1101] 이벤트 보상 (4월 14일 16:00 ~ 5월 12일 03:59) 이벤트 보상 오퍼레이터(이벤트 획득)."
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1239062
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1239062
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_1047_halo2)"
+image: /games/arknights/img/operators/astgenne-the-lightchaser.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1047_halo2_1b.png
+updatedAt: 2026-09-27

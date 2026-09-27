@@ -1,0 +1,44 @@
+id: taraxacum-evaluation
+title: 타락사쿰 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음(키울 필요 없음)
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 감시자 메딕 + 이륙(비행)
+- label: 추천 스킬
+  value: 2스킬 (특화 비추천)
+summary: 힐만 하는 5★ 메딕이라 사일라흐·프틸롭시스·퓨어스트림 등 기존 메딕을 두고 키울 이유가 적다는 평이 국내외 공통이다. 이륙 기믹은 틈새용.
+positive:
+- 이륙으로 공중 적을 막거나 적 공격(장판 등)을 피하는 택틱이 가능하다.
+- HPS는 괜찮고 감시자 범위가 메딕 중 독특하다(해외).
+negative:
+- 기존 5★·4★ 메딕으로 충분해 우선순위가 낮다.
+- 이륙 가동률이 낮아 안정적인 공중 저지는 어렵다.
+subjects:
+- operators/taraxacum
+- operators/taraxacum#s2
+- operators/taraxacum#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1uv86jb/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — First of A Thousand Autumns (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6083447
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6085257
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6082516
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

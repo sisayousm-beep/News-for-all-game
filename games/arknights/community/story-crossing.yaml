@@ -1,0 +1,48 @@
+id: story-crossing
+title: '''교차지점'' — 시라쿠사 스토리 모음집'
+kind: story
+version: '6.5'
+consensus: moderate
+flow: 1099~1102년 시라쿠사 신도시 누오바 볼시니. 공정을 내세운 신도시 관리법의 허점 속에서 외국 자본과 패밀리만 이득을 보고, 레온투초와 라비니아는 패밀리를 몰아내려다 끌려다닌다. 드미트리(벨로네)가 일을 대신 '해결'하며 판을 흔드는 짧은 이야기 모음.
+verdicts:
+- label: 분위기
+  value: 딥다크 느와르 + 정치극
+- label: 화제 인물
+  value: 드미트리(벨로네)의 집착
+- label: 아쉬운 점
+  value: 미니 스토리라 떡밥만 키우고 마무리가 초라
+summary: 국내외 모두 시라쿠사 정치·경제를 파고드는 세계관 묘사를 좋아했다. 다만 짧은 모음집이라 떡밥만 키우고 마무리가 약하다는 아쉬움이 공통이다.
+regions:
+- region: domestic
+  summary: 스토리 요약 짤(추천 83)이 개념글에 올라 드미트리의 집착이 "느와르가 호러가 됐다"며 화제. 뉴 볼시니 상황이 암울하다는 감상.
+  positive:
+  - 드미트리 캐릭터의 강렬함
+  - 신도시 관리법·패밀리 구도를 통한 시라쿠사 정치 묘사
+  negative:
+  - 미니 스토리인데 떡밥은 키워 놓고 마무리가 초라하다
+  - 리프레사(리젤) 이야기가 더 나오지 않았다
+- region: overseas
+  summary: 메가스레드에서 여러 세계관 요소를 엮어 사회·경제 지정학을 파고드는 이야기라 좋다는 댓글이 추천을 받았다. 사건의 동기 설명은 흘려 넘겼다는 지적.
+  positive:
+  - 세계관을 엮고 여파를 보여 주는 이야기(“소프라노스”에 비유)
+  negative:
+  - 살인 사건 배후 설명이 대사 한 줄로 넘어가 아쉽다
+subjects:
+- versions/v6-5
+- events/crossing
+sources:
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6104444
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 스토리 요약(개념글) + 댓글
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6107777
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1vmyjdb/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 이벤트 메가스레드
+updatedAt: '2026-09-27'

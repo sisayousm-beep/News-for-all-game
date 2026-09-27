@@ -1,0 +1,93 @@
+id: limited-headhunting-odds
+title: 한정 vs 표준 헤드헌팅 — 원하는 6★를 얻기까지 몇 번?
+kind: gacha
+version: '6.5'
+answer: 한정 평균 약 96회
+results:
+- 한정 헤드헌팅에서 특정 한정 6★는 평균 약 96회(중앙값 70회)가 들고, 10명 중 1명은 210회를 넘긴다. 300회를 채우면 교환으로 확정.
+- 표준(이벤트) 헤드헌팅의 확률 UP 6★는 평균 약 66회(중앙값 57회). 150회 확정 규칙 덕분에 200회 안에 약 99.6%가 얻는다.
+- 겁진고금 무료분(매일 1회 14번 + 10회 허가증)만으로 왕을 얻을 확률은 약 16%. 용문 복권방 합성옥(2,800~11,200)을 더해도 약 5~19회가 늘 뿐이다.
+- 평균 96회는 합성옥 약 57,600개, 300회 천장은 180,000개(무료 24회를 빼면 276회 = 165,600개)다.
+chart:
+  title: 누적 뽑기별 원하는 6★ 획득 확률 (한정)
+  unit: '%'
+  points:
+  - label: 24회(무료분)
+    value: 15.6
+  - label: 50회
+    value: 29.6
+  - label: 100회
+    value: 62.7
+  - label: 150회
+    value: 79.6
+  - label: 200회
+    value: 88.6
+  - label: 250회
+    value: 93.6
+  - label: 300회(교환)
+    value: 100.0
+table:
+  columns:
+  - 누적 뽑기
+  - 한정 (35%)
+  - 표준 (50% + 150회 확정)
+  rows:
+  - - 24회
+    - 15.6%
+    - 21.3%
+  - - 50회
+    - 29.6%
+    - 39.4%
+  - - 100회
+    - 62.7%
+    - 77.7%
+  - - 150회
+    - 79.6%
+    - 91.3%
+  - - 200회
+    - 88.6%
+    - 99.6%
+  - - 250회
+    - 93.6%
+    - 100%
+  - - 300회
+    - 100% (데이터 계약 300장 교환)
+    - 100%
+  - - 평균 / 중앙값
+    - 약 96회 / 70회
+    - 약 66회 / 57회
+  - - 90%가 얻는 지점
+    - 약 212회
+    - 약 143회
+  note: 각 배너 0회(천장 카운트 0)에서 시작한 20만 회 시뮬레이션. 1회 = 합성옥 600.
+method: 공식 확률(6★ 2%, 한국 공식 홈페이지 확률 안내)과 50회 이후 회당 +2%p 보정(Arknights Terra Wiki), 공식 공지의 한정 300회 교환·표준 150회 확정 규칙으로 20만 회 몬테카를로 시뮬레이션(Game Hub 계산).
+assumptions:
+- '한정 배너: 확률 UP 6★ 2명이 6★ 중 70%를 나눠 가져 원하는 1명은 35%'
+- '표준(이벤트) 배너: 확률 UP 6★ 1명 50%, 150회 동안 못 얻으면 다음 6★ 확정'
+- 천장 카운트(50회 이후 보정)는 0에서 시작 — 다른 표준 배너에서 이어온 카운트는 반영하지 않음
+- 한정 배너의 300회 추가 지급(왕 1회)과 데이터 계약 교환은 같은 300회에 겹치므로 교환 확정으로 처리
+subjects:
+- events/ashes-to-ashes
+- events/rage-of-the-many
+sources:
+- source: official-site
+  url: https://www.arknights.kr/probability
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 헤드헌팅 확률 안내(6★ 2.00%, 종합 2.89%)
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1243972
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 겁진고금 — 누적 300회 추가 획득·매일 1회 무료·10회 허가증·용문 복권방
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247160
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 표준 헤드헌팅 150회 확정 규칙
+- source: wiki-gg
+  url: https://arknights.wiki.gg/wiki/Headhunting
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 50회 이후 6★ 확률 +2%p, 한정 배너 확률 UP 70%
+updatedAt: '2026-09-27'

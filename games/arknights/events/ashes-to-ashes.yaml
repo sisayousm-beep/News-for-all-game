@@ -1,0 +1,31 @@
+id: ashes-to-ashes
+title: 한정 헤드헌팅 '겁진고금' — 왕 · 첸 더 던스트릭
+kind: banner
+start: '2026-07-16T16:00:00+09:00'
+end: '2026-07-30T03:59:00+09:00'
+version: '6.5'
+summary: 한정 6★ 왕·6★ 첸 더 던스트릭, 5★ 타락사쿰 확률 UP(위·슈·총웨 한정 오퍼레이터 포함). 누적 300회 시 왕 1회 추가 획득, 기간 중 매일 1회 무료 헤드헌팅.
+rewards:
+- '접속 보상: 달밤의 귀환 헤드헌팅 10회 허가증 ×1'
+- 매일 무료 헤드헌팅 1회(최대 14회)
+subjects:
+- operators/wang
+- operators/chen-the-dawnstreak
+- operators/taraxacum
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1243972
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1244073
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/gacha_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 헤드헌팅 기간(gachaPoolClient)
+image: /games/arknights/img/events/ashes-to-ashes.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA3MTRfMjQx/MDAxNzg0MDI5OTAyODI1.ND-r4IDGtiwk81hosn-X27xy3rpHGq9hatvNjwjDAoEg.4XkNBuNmY8-7Ip7-cZfceM78cNr7UwUyDcVcgV2Hpxog.JPEG/logo.jpg
+updatedAt: '2026-09-27'

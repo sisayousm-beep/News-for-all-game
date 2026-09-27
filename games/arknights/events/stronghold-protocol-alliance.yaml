@@ -1,0 +1,18 @@
+id: stronghold-protocol-alliance
+title: '''위수 협의: 맹약'' (명토체스 2시즌)'
+kind: event
+start: '2026-08-20T17:00:00+09:00'
+end: '2026-10-01T03:59:00+09:00'
+version: '6.5'
+endNote: 공훈 교환소는 10월 4일 03:59까지
+summary: 오토체스형 기간 한정 모드 두 번째 시즌. 독립·연합 시뮬레이션 환경 개선과 신규 난이도·맹약·전략이 추가됐다. 스테이지와 일일 목표로 [위수 인증]을 모아 공훈 교환소 레벨을 올린다.
+rewards:
+- 컬렉션 - 하이드레이션 타임(무스)
+- 이벤트 프로필
+- 모듈 육성 재료
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246284
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

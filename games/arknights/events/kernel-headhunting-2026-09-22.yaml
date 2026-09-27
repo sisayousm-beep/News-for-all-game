@@ -1,0 +1,18 @@
+id: kernel-headhunting-2026-09-22
+title: '''커널 헤드헌팅'' — 이프리트 확률 UP'
+kind: banner
+start: '2026-09-22T04:00:00+09:00'
+end: '2026-10-06T03:59:00+09:00'
+version: '6.5'
+summary: 커널 헤드헌팅(구 오퍼레이터 전용 상시 배너)에서 6★ 이프리트 등의 채용 확률이 오른다.
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247468
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/gacha_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 헤드헌팅 기간(gachaPoolClient)
+updatedAt: '2026-09-27'

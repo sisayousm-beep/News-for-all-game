@@ -1,0 +1,76 @@
+id: ripresa
+title: "리프레사"
+aliases: ["Ripresa"]
+summary: "5★ 캐스터 · 스플래시 캐스터. 악단 경영인 리프레사. 악단의 미래를 위해 새로운 가능성을 적극적으로 모색하고 있습니다."
+attributes:
+  rarity: 5
+  class: caster
+  branch: "스플래시 캐스터"
+  obtain: standard
+  version: "6.5"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (스플래시 캐스터)"
+    text: "공격 시 광역 마법 대미지"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.80 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "1,550", "공격력": "785", "방어력": "125", "마법 저항": "20", "배치 코스트": "33", "저지": "1", "공격 간격": "2.9초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"공격력": "+90"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 공격력 +32 · 5잠 재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「합주 개시」 (특화 3)"
+    text: "다음 공격의 스플래시 범위 확대, 공격력 210% 마법 대미지 / 2회 충전 가능"
+    values: {"SP 소모": "7", "초기 SP": "0", "SP": "자동 회복", "발동": "자동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「피날레까지」 (특화 3)"
+    text: "스플래시 범위 확대, 공격 범위 내 목표 3명에게 공격력 180% 마법 대미지를 입히며, 공격받은 모든 적이 6초간 초당 리프레사 공격력 35% 마법 대미지를 받음"
+    values: {"SP 소모": "12", "초기 SP": "0", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「지휘의 소양」 (정예2)"
+    text: "스플래시 범위에 적이 3명 이상 있을 경우, 해당 회차의 공격 대미지가 120%로 증가"
+  - id: module-spcy
+    section: modules
+    name: "모듈 SPC-Y 「'황혼의 언약'」 (Lv.3)"
+    text: "특성: 배치 코스트 감소 / 재능(지휘의 소양): 스플래시 범위에 적이 3명 이상 있을 경우, 해당 회차의 공격 대미지가 130%로 증가"
+    values: {"코스트": "+-8", "HP": "+120", "공격력": "+75"}
+history:
+  - date: 2026-08-13T16:00:00+09:00
+    version: "6.5"
+    kind: release
+    summary: "6.5주년 시즌 신규 5★ 오퍼레이터. 이벤트 헤드헌팅 [나만의 방식] (8월 13일 16:00 ~ 8월 27일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1245977
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1245977
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1246048
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4031_liesel)"
+image: /games/arknights/img/operators/ripresa.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4031_liesel_1b.png
+updatedAt: 2026-09-27

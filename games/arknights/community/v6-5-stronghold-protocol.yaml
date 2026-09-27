@@ -1,0 +1,47 @@
+id: v6-5-stronghold-protocol
+title: '명토체스(위수 협의: 맹약) 열풍과 운빨 논란'
+kind: issue
+scope: ingame
+happenedAt: '2026-08-20'
+version: '6.5'
+background: '8월 20일부터 10월 1일까지 열린 오토체스형 모드 [위수 협의: 맹약]. 국내에서는 "명토"로 불리며 한 달 넘게 갤러리 화제를 차지했다.'
+consensus: moderate
+summary: 국내외 모두 "명방 하면서 제일 재밌다"는 반응이 많지만, 뽑기 운(리롤·페어)과 특정 연맹 의존이 크다는 불만도 함께 나온다.
+positive:
+- 명방 시작하고 이게 제일 재밌다는 글과 밈(군대 랜덤매칭, 십일조 패러디)이 쏟아졌다.
+- PC 버전과 겹쳐 오래 붙잡고 하는 유저가 많았다.
+negative:
+- 후반 라운드까지 원하는 기물이 안 나오는 "억까"가 잦다는 글이 막바지까지 이어졌다.
+- 보유 오퍼레이터가 적은 뉴비는 빌려도 조합이 4개 정도라 밴·선픽에 밀린다.
+- '해외: 라테라노처럼 한 오퍼레이터에 의존하는 연맹, "티티 아니면 망"인 사르곤 등 연맹 간 밸런스가 설익었다는 리뷰.'
+sources:
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6130972
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6131134
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6151472
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6108635
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6112398
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1w59jxc/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Stronghold Protocol 2 리뷰 + 댓글
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246284
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

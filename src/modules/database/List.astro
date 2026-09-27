@@ -9,21 +9,22 @@ import Portrait from '../../components/Portrait.astro';
 import Icon from '../../components/Icon.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
-// Default order: newest release version first (unknown versions last), then rarity, then name. The toolbar can flip it.
+// Default order: newest release version first (unknown versions last), then newest release date, rarity, name. The toolbar can flip it.
 const byName = recordsOf<EntityRecord>(game, mod).sort((a, b) => a.title.localeCompare(b.title, 'ko'));
 const nameRank = new Map(byName.map((r, i) => [r.id, i]));
 const verOf = (r: EntityRecord) => (r.attributes.version == null ? '' : String(r.attributes.version));
+const relOf = (r: EntityRecord) => (r.history.find((h) => h.kind === 'release')?.date ?? '').slice(0, 10);
 const cmpVer = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true });
 const items = [...byName].sort((a, b) => {
   const va = verOf(a), vb = verOf(b);
   if (va !== vb) return !va ? 1 : !vb ? -1 : cmpVer(vb, va);
-  return Number(b.attributes.rarity ?? 0) - Number(a.attributes.rarity ?? 0) || nameRank.get(a.id)! - nameRank.get(b.id)!;
+  return relOf(b).localeCompare(relOf(a)) || Number(b.attributes.rarity ?? 0) - Number(a.attributes.rarity ?? 0) || nameRank.get(a.id)! - nameRank.get(b.id)!;
 });
 const filters = mod.fields.filter((f) => f.filter && f.values);
 const noun = mod.itemLabel ?? mod.label;
 const attrs = (r: EntityRecord) => ({
   'data-name': [r.title, ...r.aliases].join(' ').toLowerCase(),
-  'data-ver': verOf(r), 'data-rar': String(r.attributes.rarity ?? 0), 'data-alpha': String(nameRank.get(r.id)),
+  'data-ver': verOf(r), 'data-rel': relOf(r), 'data-rar': String(r.attributes.rarity ?? 0), 'data-alpha': String(nameRank.get(r.id)),
   ...Object.fromEntries(mod.fields.map((f) => [`data-${f.key}`, String(r.attributes[f.key] ?? '')])),
 });
 const value = (r: EntityRecord, key: string) => fieldLabel(mod.fields.find((f) => f.key === key)!, r.attributes[key]);
@@ -119,7 +120,8 @@ const sortable = has('version');
       if (mode === 'name') return byName;
       const va = a.dataset.ver, vb = b.dataset.ver;
       if (va !== vb) { if (!va) return 1; if (!vb) return -1; return mode === 'old' ? cmpV(va, vb) : cmpV(vb, va); }
-      return +b.dataset.rar! - +a.dataset.rar! || byName;
+      const rel = (a.dataset.rel ?? '').localeCompare(b.dataset.rel ?? '');
+      return (mode === 'old' ? rel : -rel) || +b.dataset.rar! - +a.dataset.rar! || byName;
     };
     const resort = () => {
       if (!sort) return;

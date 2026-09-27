@@ -1,0 +1,85 @@
+id: hoshiguma-the-breacher
+title: "호시구마 더 브리처"
+aliases: ["Hoshiguma the Breacher"]
+summary: "6★ 디펜더 · 아츠 프로텍터. 용문근위국 특별감찰팀 팀장 호시구마. 가장 어려운 임무를 자신에게 맡겨주길 기대하고 있습니다."
+attributes:
+  rarity: 6
+  class: defender
+  branch: "아츠 프로텍터"
+  obtain: limited
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (아츠 프로텍터)"
+    text: "스킬 발동 시 일반 공격이 마법 대미지"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "3,551", "공격력": "667", "방어력": "561", "마법 저항": "15", "배치 코스트": "26", "저지": "3", "공격 간격": "1.6초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"공격력": "+55", "방어력": "+55"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 방어력 +30 · 5잠 제1재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「악업과보」 (특화 3)"
+    text: "공격력 +70%, 방어력 +70%, 공격을 받을 때마다 목표에게 호시구마 더 브리처 공격력 175% 마법 대미지 / 무한 지속"
+    values: {"SP 소모": "15", "초기 SP": "0", "SP": "피격 회복", "발동": "자동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「무시무명」 (특화 3)"
+    text: "방패를 투척, 자신은 공격력 90%의 3연 공격으로 저지하고 있는 모든 적 공격, 방패는 호시구마 더 브리처의 주변을 1바퀴 회전. 방패가 적과 부딪히면 목표를 정지시키고, 0.5초마다 목표에게 공격력 130% 마법 대미지를 입히며, 자신은 방패가 입힌 대미지 15% HP 회복"
+    values: {"SP 소모": "6", "초기 SP": "0", "SP": "공격 회복", "발동": "자동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「지옥변상」 (특화 3)"
+    text: "공격 범위 확대, 최대 HP +100%, 공격력 +230%, 2연 공격으로 적 최대 3명 공격. 스킬 수동 종료 후 11초간 스킬 효과가 유지되며 쓰러지지 않음, 공격이 4연 공격으로 변경, 공격 범위 내 아군 오퍼레이터가 받는 치명상을 분담하고 11초 후 강제 퇴각 / 수동 종료 가능"
+    values: {"SP 소모": "45", "초기 SP": "37", "지속": "32초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「업화」 (정예2)"
+    text: "HP가 0이 되면 '아집' 상태가 되어, 지속 시간 동안 다른 오퍼레이터의 치료 목표가 되지 않고, 받는 대미지 누적, 누적 대미지가 최대 HP의 200%에 도달하면 쓰러짐. 5초간 대미지를 받지 않으면 초당 HP 5% 회복, HP 0 초과 시 '아집' 상태 해제"
+  - id: talent-2
+    section: talents
+    name: "2재능 「오니의 자세」 (정예2)"
+    text: "배치되어 있을 때, 자신은 최대로 마법 저항 +50 및 공격력 +35%의 인내 효과 획득 (HP가 70% 감소 시 최대 효과)"
+  - id: module-astx
+    section: modules
+    name: "모듈 AST-X 「무흔」 (Lv.3)"
+    text: "특성: 스킬 발동 시 일반 공격이 마법 대미지, 공격하거나 피격될 시 목표에게 공격력 10% 마법 대미지를 추가로 입힘 / 재능(오니의 자세): 배치되어 있을 때, 자신은 최대로 마법 저항 +50 및 공격력 35%의 인내 효과 획득 (HP가 50% 감소 시 최대 효과), 최대 효과 도달 시 추가로 공격력 +15%"
+    values: {"HP": "+325", "공격력": "+80"}
+history:
+  - date: 2026-01-16T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6.0주년 시즌 신규 6★ 오퍼레이터. 한정 헤드헌팅 [돌아오지 않는 불꽃] (1월 16일 16:00 ~ 1월 30일 03:59) 한정 오퍼레이터 — 일반 헤드헌팅에는 추가되지 않는다."
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1232285
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1232285
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1232487
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_1044_hsgma2)"
+image: /games/arknights/img/operators/hoshiguma-the-breacher.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1044_hsgma2_1b.png
+updatedAt: 2026-09-27

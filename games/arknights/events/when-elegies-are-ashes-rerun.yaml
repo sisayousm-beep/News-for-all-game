@@ -1,0 +1,20 @@
+id: when-elegies-are-ashes-rerun
+title: 재개방 SideStory '불타버린 엘레지여'
+kind: event
+start: '2026-08-27T04:00:00+09:00'
+end: '2026-09-10T03:59:00+09:00'
+version: '6.5'
+summary: SideStory [불타버린 엘레지여] 재개방. 함께 이벤트 헤드헌팅 [불 속에서 귀환](8월 27일 16:00 ~ 9월 10일 03:59)이 재개방됐다.
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246570
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/gacha_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 헤드헌팅 기간(gachaPoolClient)
+image: /games/arknights/img/events/when-elegies-are-ashes-rerun.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA4MjdfMTg3/MDAxNzg3ODIyNjc0Mzg1.0XK_y0eMLE3UigNoZus-MZkTPmsvQLbiGJh2LJ476_kg._PJ0Ezxz-J7MHRonO0fvaJwBOTgrl0UexFJyDdqNWskg.JPEG/out.jpg
+updatedAt: '2026-09-27'

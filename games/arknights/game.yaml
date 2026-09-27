@@ -1,0 +1,154 @@
+# Arknights (KR server) — database of operators + seasons. Schema: src/core/schema.ts (GameConfig). Docs: docs/game-configuration.md
+id: arknights
+name: 명일방주
+names: { en: Arknights }
+description: 하이퍼그리프가 개발하고 요스타가 서비스하는 전략 디펜스 RPG. 오퍼레이터를 모아 배치해 적의 진격을 막는다.
+genre: 수집형 타워 디펜스
+publisher: Hypergryph · Yostar
+region: 한국 서버
+locale: ko
+theme:
+  accent: "#1b8fb3"
+  icon: /games/arknights/img/icon.webp     # 한국 공식 홈페이지 공유 이미지(앱 아이콘)
+  cover: /games/arknights/img/cover.webp   # 공식 카페 SideStory [사람들, 우리들] 업데이트 공지 키비주얼
+
+# 명일방주는 버전 번호 대신 "주년"으로 시즌을 나눈다(1월 N주년, 7월 N.5주년). version = 주년 숫자("6.5").
+modules:
+  - type: version
+    id: seasons
+    label: 시즌
+    collection: versions
+  - type: database
+    id: operators
+    label: 오퍼레이터
+    itemLabel: 오퍼레이터
+    collection: operators
+    fields:
+      - key: rarity
+        label: 등급
+        filter: true
+        values: { "6": "★6", "5": "★5", "4": "★4" }
+      - key: class
+        label: 직군
+        filter: true
+        values: { vanguard: 뱅가드, guard: 가드, defender: 디펜더, sniper: 스나이퍼, caster: 캐스터, medic: 메딕, supporter: 서포터, specialist: 스페셜리스트 }
+      - key: branch
+        label: 세부 직군
+      - key: obtain
+        label: 획득
+        filter: true
+        values: { limited: 한정, standard: 헤드헌팅, collab: 콜라보, event: 이벤트 보상, shop: 증명서 상점, is: 통합 전략 }
+      - key: version
+        label: 출시 시즌
+    sections:
+      - { key: stats, label: 기본 정보 · 능력치 }
+      - { key: skills, label: 스킬 }
+      - { key: talents, label: 재능 }
+      - { key: modules, label: 모듈 }
+    glance: [오퍼레이터 티어, 뽑기 권장, 역할, 추천 스킬, "analysis:stat=3특 효과", 조작 난이도]
+  - type: schedule
+    id: events
+    label: 이벤트·헤드헌팅
+    collection: events
+  - type: news
+    label: 뉴스·공지
+    collection: news
+  - type: analysis
+    id: analysis
+    label: 계산·통계
+    collection: analysis
+  - type: community
+    id: community
+    label: 커뮤니티
+    collection: community
+
+sources:
+  - id: naver-cafe
+    name: 명일방주 공식 카페
+    type: OFFICIAL
+    url: https://cafe.naver.com/arknightskor
+    domains: [cafe.naver.com/arknightskor]
+    note: 한국 서버 공식 공지·이벤트·오퍼레이터 소개. 본문 대부분이 이미지. API는 apis.naver.com/cafe-web/…(clubid 29703924)
+  - id: official-site
+    name: 명일방주 공식 홈페이지
+    type: OFFICIAL
+    url: https://www.arknights.kr
+    domains: [arknights.kr]
+  - id: gamedata
+    name: 명일방주 게임 데이터 (한국 서버)
+    type: DATABASE
+    url: https://github.com/ArknightsAssets/ArknightsGamedata
+    domains: [github.com/ArknightsAssets/ArknightsGamedata, raw.githubusercontent.com/ArknightsAssets]
+    note: 한국 서버 클라이언트 데이터(excel/*.json). 능력치·스킬·재능·모듈 한국어 인게임 문구, 헤드헌팅 기간(gacha_table)
+  - id: wiki-gg
+    name: Arknights Terra Wiki
+    type: WIKI
+    url: https://arknights.wiki.gg
+    domains: [arknights.wiki.gg]
+    note: 영문 커뮤니티 위키(헤드헌팅 규칙 등)
+  - id: dc-mibj
+    name: 디시인사이드 명일방주 마이너 갤러리
+    type: COMMUNITY
+    url: https://gall.dcinside.com/mgallery/board/lists?id=mibj
+    domains: [gall.dcinside.com/mgallery/board]
+  - id: arca-ark
+    name: 아카라이브 명일방주 채널
+    type: COMMUNITY
+    url: https://arca.live/b/arknights
+    domains: [arca.live/b/arknights]
+  - id: reddit
+    name: Reddit 명일방주 커뮤니티
+    type: COMMUNITY
+    url: https://www.reddit.com/r/arknights/
+    domains: [reddit.com/r/arknights]
+  - id: youtube
+    name: YouTube
+    type: COMMUNITY
+    url: https://www.youtube.com
+    domains: [youtube.com]
+    note: 영상 제목·조회수 수준으로만 참고(본문 미열람 시 collectedAt만)
+
+updates:
+  - id: arknights-news
+    collection: news
+    sources: [naver-cafe]
+    frequency: 12h
+    instructions: >-
+      공식 카페 공지사항(menu 2)·이벤트(menu 3)에서 점검·업데이트·신규 시스템 공지를 news 레코드로 추가한다.
+      공지 본문이 이미지뿐이면 이미지를 받아 잘라 읽는다. 카페 API의 writeDateTimestamp는 UTC이므로 +9시간으로 한국 시간을 쓴다.
+  - id: arknights-versions
+    collection: versions
+    sources: [naver-cafe]
+    frequency: patch
+    instructions: >-
+      1월(N주년)·7월(N.5주년) 기념 SideStory 개방일에 시즌 레코드(v<주년>)를 추가한다. start는 기념 SideStory 개방 시각, end는 다음 시즌 시작(미정이면 null).
+      highlights는 시즌 중 SideStory·메인 에피소드·신규 콘텐츠·주요 헤드헌팅을 한 줄씩.
+  - id: arknights-operators
+    collection: operators
+    sources: [naver-cafe, gamedata]
+    frequency: patch
+    instructions: >-
+      신규 오퍼레이터가 공식 카페 업데이트 공지에 나오면 레코드를 추가한다(id = 영문 이름 kebab). 능력치·스킬(특화 3 기준)·재능(정예2)·모듈(Lv.3)은
+      gamedata의 한국어 문구를 짧게 요약하고 수치는 values에. 출시 기간·획득 경로는 history(release)에 공식 공지를 근거로. 게임 데이터에 먼저 들어온
+      미출시 오퍼레이터는 공식 공지 전까지 추가하지 않는다. 이미지는 게임 클라이언트 기본 일러스트를 trim해 webp로.
+  - id: arknights-events
+    collection: events
+    sources: [naver-cafe, gamedata]
+    frequency: 1d
+    instructions: >-
+      공식 카페 이벤트 공지의 SideStory·기간 한정 이벤트·헤드헌팅(banner) 기간을 events 레코드로. 시각은 한국 시간(+09:00). 주요 보상은 rewards에 짧게.
+  - id: arknights-analysis
+    collection: analysis
+    sources: [naver-cafe, official-site, gamedata, wiki-gg]
+    frequency: patch
+    instructions: >-
+      공식 수치(게임 데이터·확률 공지)로 계산한 결과만 analysis 레코드로. method와 assumptions 필수, results는 조건부 문장.
+      오퍼레이터별 특화 효과(<id>-mastery)는 게임 데이터의 7레벨→특화3 수치 변화와 재료로 계산한다.
+  - id: arknights-community
+    collection: community
+    sources: [dc-mibj, arca-ark, reddit, youtube]
+    frequency: 7d
+    instructions: >-
+      국내(디시 명일방주 갤러리·아카라이브)와 해외(Reddit)를 함께 본다. 오퍼레이터마다 evaluation 레코드에 verdicts(오퍼레이터 티어, 역할,
+      추천 스킬, 모듈, 잠재 의존도, 조작 난이도)를 두고, 커뮤니티 글(본문+댓글)에서 반복되는 의견만 요약한다. AI가 평가를 만들지 않는다.
+      커뮤니티 탭에는 최근 핫이슈(게임 내/외)·꿀팁·이벤트별 스토리 평가만. 오래된 이슈는 넣지 않는다.

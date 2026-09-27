@@ -1,0 +1,85 @@
+id: pramanix-the-prerita
+title: "프라마닉스 더 프레리타"
+aliases: ["Pramanix the Prerita"]
+summary: "6★ 캐스터 · 진법 캐스터. 카란의 성녀 프라마닉스, 자신의 새끼 백비스트를 끌고 초원으로 향하고 있습니다."
+attributes:
+  rarity: 6
+  class: caster
+  branch: "진법 캐스터"
+  obtain: standard
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (진법 캐스터)"
+    text: "공격을 진행하지 않으며, 방어력과 마법 저항이 대폭 증가, 스킬 발동 시 공격 범위 내 모든 적에게 광역 마법 대미지"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "2,058", "공격력": "836", "방어력": "265", "마법 저항": "15", "배치 코스트": "24", "저지": "1", "공격 간격": "2초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"공격력": "+80", "방어력": "+30"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 제2재능 강화 · 4잠 공격력 +34 · 5잠 제1재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「눈을 부르는 종소리」 (특화 3)"
+    text: "공격 범위 내 모든 적에게 즉시 공격력 520% 마법 대미지를 입히고, 3.5초간 냉기 효과 부여, 배치한 방향과 동일한 방향으로 상대를 어느 정도 밀어내며, 적설이 전방 지상으로 확산 (최대 전방으로 5칸) / 2회 충전 가능"
+    values: {"SP 소모": "12", "초기 SP": "12", "SP": "자동 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「산을 뒤덮는 서리」 (특화 3)"
+    text: "공격할 때마다 공격력 380% 마법 대미지를 입히며, 적설 중첩이 5회 초과 시 주변으로 확산 (최대 20칸), 적설 위 지상의 적에게 초당 공격력 20% 마법 대미지를 입히며, 적설에서 벗어난 적에게 5초간 냉기 효과 부여, 방어 포인트의 적설이 5회 중첩될 시 방어 포인트가 빙결 상태로 변경 / 무한 지속, 수동 종료 가능"
+    values: {"SP 소모": "45", "초기 SP": "0", "SP": "자동 회복", "발동": "자동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「뭇산의 순종」 (특화 3)"
+    text: "공격 범위 확대, 공격 범위 내 모든 적을 자신 주변에 있는 도달 가능한 지상으로 10초간 유도, 적설의 생성 속도 증가, 공격력 +100%, 공격 속도 +30, 공격 시 목표의 마법 저항 10 무시, 공격할 때마다 공격력 260% 마법 대미지"
+    values: {"SP 소모": "50", "초기 SP": "42", "지속": "35초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「끝없는 설경」 (정예2)"
+    text: "공격 범위 내 지상에 5.5초마다 적설 1회 생성, 지나가는 지상의 적에게 공격력 75% 마법 대미지, 중첩된 적설 1회당 지나가는 적의 이동 속도 -12%, 최대 5회 중첩 (첫 적이 해당 위치를 벗어날 시 적설 소멸)"
+  - id: talent-2
+    section: talents
+    name: "2재능 「성산의 축복」 (정예2)"
+    text: "대미지를 받을 시 상대에게 1.5초간 냉기 효과 부여, 치명상을 입을 시 1회에 한해 모든 HP 회복 및 자신을 4초간 빙결, 공격 범위 내 모든 적을 8초간 빙결"
+  - id: module-plxy
+    section: modules
+    name: "모듈 PLX-Y 「천분의 일의 마음」 (Lv.3)"
+    text: "특성: 범위 내 적이 많을수록 대미지 증가 (최대 15% 증가) / 재능(끝없는 설경): 공격 범위 내 지상에 5초마다 적설 1회 생성, 지나가는 지상의 적에게 공격력 100% 마법 대미지, 중첩된 적설 1회당 지나가는 적의 이동 속도 -12%, 최대 5회 중첩 (첫 적이 해당 위치를 벗어날 시 적설 소멸), 배치 즉시 공격 범위 내 지상에 적설 1회 생성"
+    values: {"공격력": "+75", "방어력": "+38"}
+history:
+  - date: 2026-04-14T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6.0주년 시즌 신규 6★ 오퍼레이터. 한정 헤드헌팅 [눈보라의 맹세] (4월 14일 16:00 ~ 4월 28일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1239062
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1239062
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1239306
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_1046_sbell2)"
+image: /games/arknights/img/operators/pramanix-the-prerita.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1046_sbell2_1b.png
+updatedAt: 2026-09-27

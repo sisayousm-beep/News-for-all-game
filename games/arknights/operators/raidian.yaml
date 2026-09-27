@@ -1,0 +1,90 @@
+id: raidian
+title: "라이디언"
+aliases: ["Raidian"]
+summary: "6★ 서포터 · 소환사. 서포터 오퍼레이터 라이디언. 정보의 중심, 정밀한 장비, 그리고 다정한 보살핌."
+attributes:
+  rarity: 6
+  class: supporter
+  branch: "소환사"
+  obtain: is
+  version: "5.5"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (소환사)"
+    text: "공격 시 마법 대미지 / 소환물 사용 가능"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "1,069", "공격력": "466", "방어력": "143", "마법 저항": "20", "배치 코스트": "12", "저지": "1", "공격 간격": "1.6초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+300", "공격력": "+20", "방어력": "+20"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 공격력 +24 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「율동선」 (특화 3)"
+    text: "패시브 효과: 소환물을 지상에 배치 가능 / 액티브 효과: 자신과 소환물의 방어력 +80%, 최대 HP 100%의 보호막 획득, 스킬이 종료할 때까지 지속 / 스킬 발동 시 소환물 1개 획득"
+    values: {"SP 소모": "25", "초기 SP": "15", "지속": "25초", "SP": "자동 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「린수 연못」 (특화 3)"
+    text: "패시브 효과: 소환물을 지상에 배치 가능, 지속적으로 전방을 향해 탄환 발사 / 액티브 효과: 자신과 소환물의 공격력 +80%, 소환물의 공격이 추가로 탄환 2개 발사, 탄환의 비행거리 +2 / 스킬 발동 시 소환물 1개 획득"
+    values: {"SP 소모": "25", "초기 SP": "16", "지속": "25초", "SP": "자동 회복", "발동": "수동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「손에 손잡고」 (특화 3)"
+    text: "패시브 효과: 소환물을 고지대에 배치 가능, 소환물의 공격 범위에 목표가 없을 경우, 공격 범위 내 다른 소환물과 협동 공격 진행 / 액티브 효과: 자신과 소환물의 공격력 +150%, 적에게 대미지를 입혔을 시 적에게 정지 및 35%의 마법 취약 효과 부여, 2초간 지속 / 스킬 발동 시 소환물 1개 획득"
+    values: {"SP 소모": "40", "초기 SP": "30", "지속": "30초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「카세트 속 영감」 (정예2)"
+    text: "소환물 5개 보유(동시에 최대 3개 배치), 기능은 스킬 선택에 따라 변경"
+  - id: talent-2
+    section: talents
+    name: "2재능 「화이팅~」 (정예2)"
+    text: "라이디언의 소환물이 라이디언의 공격력, 방어력, HP 12% 격려 효과 획득"
+  - id: module-soa
+    section: modules
+    name: "모듈 SO-A 「라이디언의 특근 배지」 (Lv.3)"
+    text: "특성: 통합 전략 [쉐이의 기이한 계원]에서, 소환물 최대 보유량 +5, 소환물이 쓰러지거나 퇴각할 시 25% 확률로 회수 / 재능(카세트 속 영감): 소환물 5개 보유(동시에 최대 3개 배치), 기능은 스킬 선택에 따라 변경. 통합 전략 [쉐이의 기이한 계원]에서, 소환물 재배치 시간 -50%, 소환물이 쓰러지거나 퇴각할 시 라이디언의 SP 2 회복"
+    values: {"HP": "+165", "공격력": "+43"}
+  - id: module-sob
+    section: modules
+    name: "모듈 SO-B 「새로운 기점」 (Lv.3)"
+    text: "특성: 통합 전략 [쉐이의 기이한 계원]에서, 추가로 목표 1개 공격 / 재능(카세트 속 영감): 소환물 5개 보유(동시에 최대 3개 배치), 기능은 스킬 선택에 따라 변경. 통합 전략 [쉐이의 기이한 계원]에서, 라이디언이 주변 4칸에 배치한 소환물을 회수해 즉시 최대 HP의 25% 회복, 이후 공격 시 목표에게 공격력 30% 마법 대미지를 추가로 1회 입힘 (최대 4회 중첩)"
+    values: {"공격력": "+65"}
+history:
+  - date: null
+    version: "5.5"
+    kind: release
+    summary: "5.5주년 시즌 신규 6★ 오퍼레이터. 통합 전략 [쉐이의 기이한 계원] 획득 오퍼레이터 통합 전략 획득 오퍼레이터."
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1229381
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1229381
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1229375
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4195_radian)"
+image: /games/arknights/img/operators/raidian.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4195_radian_1b.png
+updatedAt: 2026-09-27

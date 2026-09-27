@@ -1,0 +1,75 @@
+id: yutenji-nyamu
+title: "유텐지 냐무"
+aliases: ["Yūtenji Nyamu"]
+summary: "5★ 가드 · 어스셰이커. Ave Mujica의 드러머 유텐지 냐무. 유명한 메이크업 인플루언서이며, 배우 데뷔를 목표로 하고 있습니다."
+attributes:
+  rarity: 5
+  class: guard
+  branch: "어스셰이커"
+  obtain: event
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (어스셰이커)"
+    text: "공격 시 목표 주변의 다른 적에게 공격력 50% 광역 물리 대미지"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.80 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "2,482", "공격력": "1190", "방어력": "354", "마법 저항": "0", "배치 코스트": "21", "저지": "2", "공격 간격": "1.8초", "재배치": "80초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+150", "공격력": "+40", "방어력": "+25"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -10초 · 4잠 배치 코스트 -1 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「불처럼 뜨겁게」 (특화 3)"
+    text: "공격이 특수한 3연 공격으로 변경, 그중 첫 번째 공격의 공격력이 160%로 변경, 스플래시 범위 확대, 나머지 공격의 공격력은 20%로 변경"
+    values: {"SP 소모": "20", "초기 SP": "8", "지속": "15초", "SP": "공격 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「보리처럼 굳세게」 (특화 3)"
+    text: "공격 범위 확대, 공격이 특수한 8연 공격으로 변경, 그중 첫 번째와 다섯 번째 공격의 공격력이 125%로 변경, 나머지 공격의 공격력은 10%로 변경, 공격 범위 내 목표를 랜덤으로 공격"
+    values: {"SP 소모": "32", "초기 SP": "24", "지속": "24초", "SP": "공격 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「양손잡이」 (정예2)"
+    text: "유텐지 냐무가 지속 공격 시전, 공격 시 10% 확률로 적에게 8%의 취약 효과 부여, 2초간 지속"
+  - id: talent-2
+    section: talents
+    name: "2재능 「사랑이 두렵지 않으리」 (정예2)"
+    text: "배치되어 있을 때 초당 Fever +3, Ave Mujica 멤버의 공격력 +8%"
+  - id: module-hamx
+    section: modules
+    name: "모듈 HAM-X 「어린 보리」 (Lv.3)"
+    text: "특성: 스플래시 범위 내 적이 3명 이상 있을 시 해당 회차의 공격력이 115%로 증가 / 재능(양손잡이): 유텐지 냐무가 지속 공격 시전, 공격 시 15% 확률로 적에게 12%의 취약 효과 부여, 3초간 지속"
+    values: {"HP": "+178", "공격력": "+67", "방어력": "+25"}
+history:
+  - date: 2026-02-10T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6.0주년 시즌 신규 5★ 오퍼레이터. 콜라보 SideStory [편안한 잠꼬대] 이벤트 보상 이벤트 보상 오퍼레이터(이벤트 획득)."
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1234927
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1234927
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4185_amoris)"
+image: /games/arknights/img/operators/yutenji-nyamu.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4185_amoris_1b.png
+updatedAt: 2026-09-27

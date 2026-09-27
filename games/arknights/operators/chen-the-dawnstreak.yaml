@@ -1,0 +1,85 @@
+id: chen-the-dawnstreak
+title: "첸 더 던스트릭"
+aliases: ["Ch'en the Dawnstreak"]
+summary: "6★ 가드 · 아츠 파이터. 로도스 아일랜드의 오퍼레이터 첸. 그녀의 검은 여전히 '정의'를 위해 휘둘러집니다."
+attributes:
+  rarity: 6
+  class: guard
+  branch: "아츠 파이터"
+  obtain: standard
+  version: "6.5"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (아츠 파이터)"
+    text: "공격 시 마법 대미지"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.90 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "2,910", "공격력": "670", "방어력": "425", "마법 저항": "15", "배치 코스트": "21", "저지": "1", "공격 간격": "1.25초", "재배치": "70초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"공격력": "+100"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 제2재능 강화 · 4잠 공격력 +28 · 5잠 제1재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「적소·분야」 (특화 3)"
+    text: "공격력 +120%, 공격이 2연 공격으로 변경, 공격이 적의 특수 능력 무효화, 스킬이 종료할 때까지 지속"
+    values: {"SP 소모": "20", "초기 SP": "10", "지속": "18초", "SP": "자동 회복", "발동": "수동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「적소·절영-치」 (특화 3)"
+    text: "주변의 가장 가까운 적 1명에게 10회 참격 발동, 참격당 공격력 480% 마법 대미지, 적 처치 시 참격은 목표 주변의 가장 가까운 다른 적에게 전이되며, 남은 공격 횟수 +1. 참격 종료 시 목표를 처치하지 못했고 상대의 위치에 배치 가능하면, 해당 위치로 이동, 그렇지 않으면 원래 위치로 복귀. 이후 공격력 +300%, 물리 및 마법 회피 +60%"
+    values: {"SP 소모": "20", "초기 SP": "15", "지속": "6초", "SP": "자동 회복", "발동": "수동"}
+  - id: s3
+    section: skills
+    name: "3스킬 「적소·천위」 (특화 3)"
+    text: "스킬 발동 시 전방으로 방향 전환이 가능한 검기 발사, 관통한 적에게 대상 현재 HP 6% 마법 대미지(최소 공격력 580% 마법 대미지). 공격 범위 확대, 공격할 때마다 지상 적 최대 4명에게 공격력 210% 마법 대미지를 3회 입힘"
+    values: {"SP 소모": "25", "초기 SP": "18", "지속": "20초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「형의통찰」 (정예2)"
+    text: "공격력 +13%, 공격 속도 +13, 대미지 유형이 약점 대미지로 변경"
+  - id: talent-2
+    section: talents
+    name: "2재능 「한서각지」 (정예2)"
+    text: "대미지를 받지 않을 시 7초마다 일정량(공격력의 30%~160%)의 HP 회복하고, 다음 물리 및 마법 공격 회피"
+  - id: module-aftx
+    section: modules
+    name: "모듈 AFT-X 「기억의 잔편」 (Lv.3)"
+    text: "특성: 적을 저지하고 있지 않을 때 공격 속도 +8 / 재능(한서각지): 대미지를 받지 않을 시 6초마다 일정량(공격력의 50%~200%)의 HP 회복하고, 다음 물리 및 마법 공격 회피"
+    values: {"HP": "+420", "공격력": "+60"}
+history:
+  - date: 2026-07-16T16:00:00+09:00
+    version: "6.5"
+    kind: release
+    summary: "6.5주년 시즌 신규 6★ 오퍼레이터. 한정 헤드헌팅 [겁진고금] (7월 16일 16:00 ~ 7월 30일 03:59)"
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1243972
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1243972
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1244073
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_1050_chen3)"
+image: /games/arknights/img/operators/chen-the-dawnstreak.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1050_chen3_1b.png
+updatedAt: 2026-09-27
