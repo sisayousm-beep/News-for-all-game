@@ -1,0 +1,50 @@
+id: gracebearer-evaluation
+title: 그레이스베어러 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중간 — 해외 2스 B+
+- label: 뽑기 권장
+  value: 헤드헌팅에서 나오면 좋음
+- label: 역할
+  value: 프라이멀 가드 — 원소 누킹
+- label: 추천 스킬
+  value: 2스킬
+- label: 육성 권장
+  value: 애정용 — 기존 가드 풀이 약할 때
+summary: 첫 프라이멀 가드로, 프라이멀 짝 없이도 제 몫을 한다는 해외 평가. 국내에서는 "기본 공격력은 높지만 스킬 배율이 낮다", "통합 전략에서 꽤 좋지만 굳이 쓸 이유가 없다"며 외모 픽이라는 반응이 많았다.
+positive:
+- 프라이멀 파트너가 없어도 쓸 만하다(해외).
+- 통합 전략에서 써 보니 꽤 좋았다는 후기.
+- 직군 자체 체급은 좋다는 댓글.
+negative:
+- 1스는 잡몹은 터뜨리기 전에 죽고 보스에게는 안 박혀 애매하다는 후기.
+- 스킬 배율이 낮아 혼자서는 평범한 5★이라는 평.
+subjects:
+- operators/gracebearer
+- operators/gracebearer#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1o2j8ro/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — The Masses' Travels (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5823845
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5788270
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5828364
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5802079
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

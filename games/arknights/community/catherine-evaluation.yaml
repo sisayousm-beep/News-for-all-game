@@ -1,0 +1,38 @@
+id: catherine-evaluation
+title: 캐서린 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 틈새 — 해외 스킬 등급 없음(특화 효율이 매우 낮음)
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 서포터 — 보호막 회복·로봇 지원
+- label: 추천 스킬
+  value: 특화 비추천(7레벨로 충분)
+summary: 보호막을 회복시켜 실질 회복량이 높은 참신한 유닛이지만, 특화 효율이 매우 낮아(2스 3특해도 약 10%) 특화는 비추천이라는 해외 평가. 국내에서는 "성능 은근히 좋다", 한국어 더빙이 잘 나왔다는 반응.
+positive:
+- 보호막 회복으로 높은 실질 HPS(해외).
+- 로고스에게 로봇을 붙여 딜 증가를 넣으니 처형 컷이 좋아졌다는 후기.
+negative:
+- 7레벨→2스 3특이 HPS 약 26(약 10%) 차이뿐이라 특화 가치가 거의 없다(해외).
+subjects:
+- operators/catherine
+- operators/catherine#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1jroeso/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Ending a Grand Overture (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5553128
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5541988
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

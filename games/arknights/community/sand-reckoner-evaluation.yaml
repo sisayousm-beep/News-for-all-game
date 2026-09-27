@@ -1,0 +1,39 @@
+id: sand-reckoner-evaluation
+title: 샌드레코너 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 소환사 서포터 — 원거리·마법 소환물
+- label: 추천 스킬
+  value: 2스킬(회전·제어·소환물 갱신)
+summary: 오랜만의 정통 소환사지만 대부분의 유저에게는 투자할 가치가 없다는 해외 평가와 "써 보니 안 쓸 것 같다"는 국내 반응이 일치한다.
+positive:
+- 소환물이 원거리·마법 피해를 주는 점은 5★ 중 새롭다(해외).
+- 잘 다루는 사람은 인상적인 플레이도 가능하다.
+negative:
+- 1스는 회전이 매우 나쁘다(해외).
+- '"뉴비가 써 봐도 안 쓸 만하다", 위키에 평가 한 줄 없다는 글.'
+subjects:
+- operators/sand-reckoner
+- operators/sand-reckoner#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1i0rl10/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Adventure That Cannot Wait for the Sun (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5464881
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5460593
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

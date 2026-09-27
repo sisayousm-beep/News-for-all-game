@@ -1,0 +1,54 @@
+id: windscoot-evaluation
+title: 윈드스쿠트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 4★ 중상 — 해외 2스 B+
+- label: 뽑기 권장
+  value: 헤드헌팅에서 자연히 획득
+- label: 역할
+  value: 해방자 가드 — 저비용 초반 딜
+- label: 추천 스킬
+  value: 2스킬
+- label: 육성 권장
+  value: 정예1 60레벨이면 충분(통합 전략용)
+summary: 해방자라 기본 딜이 좋고 싸서 초반 유닛으로 훌륭하지만 정예1 이상 투자할 이유는 적다는 해외 평가. 국내에서는 쉐이 통합 전략의 "염국 오퍼 모집" 조건을 채우는 희망 0 가드라 스타팅으로 쓴다는 꿀팁이 화제였다.
+positive:
+- 쉐이 통합 전략에서 희망 없이 모집되는 염국 4★ 가드라 조우 보상 조건을 채우기 좋다.
+- 4★ 치고 딜이 괜찮아 1층을 대부분 막아 준다는 후기.
+- 2스는 2타겟·회피 무시로 효과 구성이 알차다는 평.
+negative:
+- 대공이 안 된다.
+- 큰 틀에서 특별한 역할은 없어 특화 우선순위는 낮다(해외).
+subjects:
+- operators/windscoot
+- operators/windscoot#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1nfgo4j/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Episode 15 (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5727760
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5806867
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5823237
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5731286
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5734685
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

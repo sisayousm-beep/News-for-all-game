@@ -1,0 +1,42 @@
+id: alanna-evaluation
+title: 알라나 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 등급 없음
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 기능공 서포터 — 공속·방어 무시 지원 장치
+- label: 추천 스킬
+  value: 키운다면 2스킬 (특화 효율이 낮음)
+summary: 버프 조합에는 쓸 수 있지만 기능공 자체가 다루기 번거롭고 특화 효율도 낮다는 해외 평가. 국내에서는 "소각 파티와 Mon3tr에 지원 장치를 더하니 장난감으로 확실하다"는 후기와 "다른 적폐캐를 넣는 게 낫다"는 댓글이 함께 나왔다.
+positive:
+- 코스트 18로 가볍고 지원 장치 코스트는 더 가볍다는 후기.
+- 2저지에 체력도 있어 유사 가드처럼 쓸 수 있다.
+- 공속 버프가 소각 파티·Mon3tr과 어울린다.
+negative:
+- 1스 지원 장치는 총 4개이고 다시 채워지지 않는다.
+- 방어 무시 수치가 작아 그 자리에 다른 강한 오퍼를 넣는 게 낫다는 댓글.
+- 같은 배너의 Mon3tr에 가려 언급이 적었다.
+subjects:
+- operators/alanna
+- operators/alanna#s1
+- operators/alanna#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1nfgo4j/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Episode 15 (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5738013
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5736843
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

@@ -1,0 +1,62 @@
+id: exusiai-the-new-covenant-evaluation
+title: 엑시아 더 뉴 커버넌트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 — 해외 2스 S++, 3스 S+ (출시 시 전 콘텐츠 3위권)
+- label: 뽑기 권장
+  value: 강력 추천 (해외 Strong Pull, 한정)
+- label: 역할
+  value: 스나이퍼 — 고연사 딜 + 고유 유틸
+- label: 추천 스킬
+  value: 2스킬 범용, 3스킬 재배치 오퍼와 조합
+- label: 조작 난이도
+  value: 쉬움 — 2스는 켜 두면 되고 3스는 재배치·공속 공유 운용
+summary: 딜과 고유 유틸을 모두 갖춘 게임 최상위 유닛이라 2·3스 모두 특화하라는 해외 평가. 국내에서도 "정예1로도 고승천을 박살낸다", "한정이니 무조건 챙기라"는 반응이 압도적이었다.
+positive:
+- 정예1에서도 18승천 가시밭길을 뚫고 2스 한 발에 1000씩 박힌다는 후기.
+- 2스는 차지가 빠르고 보호막이 튼튼해 범용 국밥이라는 의견이 다수.
+- 3스로 아군을 좌표 이동시켜 납치된 아군도 구해 준다.
+negative:
+- 3스는 공속을 빼앗고 탄약 소모가 커서 번거롭다는 의견.
+- 한정이라 기간을 놓치면 다음 복각까지 얻을 수 없다.
+divided:
+- position: 2스킬이 범용이다
+  reasons:
+  - 차지가 빠르고 보호막·편의성이 모두 들어 있다
+- position: 3스킬도 쓸 만하다
+  reasons:
+  - 공속을 빼앗는 만큼 더 빨리 처치하고, 재배치 오퍼와 조합하면 강하다
+subjects:
+- operators/exusiai-the-new-covenant
+- operators/exusiai-the-new-covenant#s2
+- operators/exusiai-the-new-covenant#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1o2j8ro/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — The Masses' Travels (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5798097
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5837729
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5828082
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5858518
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5818572
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

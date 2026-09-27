@@ -1,0 +1,51 @@
+id: vina-victoria-evaluation
+title: 비나 빅토리아 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상위권 — 해외 3스 S
+- label: 뽑기 권장
+  value: 복각 시 해외 비추천(Strong Skip)
+- label: 역할
+  value: 가드 — 다수 대상 고정(트루) 피해
+- label: 추천 스킬
+  value: 3스킬
+summary: 다수 대상에게 고정 피해를 주는 강력한 딜러라는 평이지만, 국내에서는 같은 시기 출시된 불피스폴리아가 "10배 낫다"는 글처럼 우선순위가 밀렸다. 해외 공략도 복각 때는 비추천으로 내렸다.
+shift:
+  release: 해외 3스 S — 강력한 고정 피해 딜러
+  now: 복각 때 해외 "Strong Skip"
+  reason: 경쟁 딜러가 계속 강해지며 뽑기 우선순위가 떨어졌다.
+positive:
+- 고정 피해로 여러 기믹을 무시하고 다수에게 딜을 넣는다(해외).
+- 고정 피해가 필요한 통합 전략 유물에서 "비나 진짜 세다"는 댓글, 보스전에서 트루뎀으로 적을 정리했다는 후기.
+negative:
+- 같은 시기 불피스폴리아가 더 만족스럽다는 비교, 좌상단 배치 시 바로 터진다는 댓글.
+- '"비나 뽑는 애들이 진짜 있네"처럼 뽑기 우선순위는 낮게 보는 분위기.'
+subjects:
+- operators/vina-victoria
+- operators/vina-victoria#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1jroeso/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Ending a Grand Overture (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5595048
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5559827
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5554927
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5540411
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

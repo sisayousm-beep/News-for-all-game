@@ -1,0 +1,49 @@
+id: senshi-evaluation
+title: 센시 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 힐탱 중 상위 — 해외 2스 B
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 수호자 디펜더 — 힐 + 탱
+- label: 추천 스킬
+  value: 2스킬 (1·2스 차이가 크지 않음)
+summary: 1스 랜덤 버프와 회전을 감안해도 체급이 5★을 벗어나는 힐탱이라는 국내 평가. 해외도 두 스킬 차이가 작아 어느 쪽이든 괜찮다고 본다. 6★ 탱커가 적은 콜라보 유입에게 추천.
+positive:
+- '"생각보다 체급이 좋다", 5★ 힐탱 중 제일 좋다는 댓글.'
+- 배포 오퍼로만 굴리는 유저도 일 잘한다고 칭찬.
+- 마르실과의 마력 시너지·기반시설 효율.
+negative:
+- 1스는 시전 시간이 있고 버프가 랜덤이라 답답하다는 의견.
+- 결국 6★ 디펜더를 대체하진 못한다.
+subjects:
+- operators/senshi
+- operators/senshi#s1
+- operators/senshi#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1j4hzqh/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Delicious on Terra (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5512373
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5517277
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5514827
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5512673
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

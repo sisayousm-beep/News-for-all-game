@@ -1,0 +1,39 @@
+id: figurino-evaluation
+title: 피구리노 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 상인 스페셜리스트 — 코스트를 쓰는 광역 속박
+- label: 추천 스킬
+  value: 특화 비추천
+summary: 50% 가동률의 광역 속박이 있지만 코스트·재료·운용 부담이 너무 커서 대부분에게는 가치가 없다는 해외 평가. 국내에서는 "아무도 안 써서 평가조차 없다"는 글이 나올 정도.
+positive:
+- 8초 속박은 나쁘지 않다는 댓글.
+negative:
+- 상인 특성상 코스트를 많이 먹는데 스킬도 코스트 25를 소모한다.
+- 에단이 상인 부담 없이 기능적으로 더 낫다(해외).
+subjects:
+- operators/figurino
+- operators/figurino#s1
+- operators/figurino#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1k4r87z/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — I Portatori dei Velluti (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5558361
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5596125
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

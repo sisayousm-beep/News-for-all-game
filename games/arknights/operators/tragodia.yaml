@@ -1,111 +1,120 @@
 id: tragodia
 title: 트라고디아
 aliases:
-  - Tragodia
+- Tragodia
 summary: 6★ 서포터 · 의식술사. 서포터 오퍼레이터 팬텀, 그의 연극은 영원히 막이 내려지지 않을 것입니다.
 attributes:
   rarity: 6
   class: supporter
   branch: 의식술사
   obtain: standard
-  version: "5.5"
+  version: '5.5'
 topics:
-  - id: trait
-    section: stats
-    name: 특성 (의식술사)
-    text: 공격 시 마법 대미지를 입히며, 원소 손상을 입힐 수 있음
-  - id: stats-max
-    section: stats
-    name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
-    values:
-      HP: 1,200
-      공격력: "490"
-      방어력: "104"
-      마법 저항: "15"
-      배치 코스트: "16"
-      저지: "1"
-      공격 간격: 1.6초
-      재배치: 70초
-  - id: trust
-    section: stats
-    name: 신뢰도 100% 보너스
-    values:
-      HP: "+300"
-      공격력: "+40"
-  - id: potential
-    section: stats
-    name: 잠재 보너스 (2~6잠)
-    text: 2잠 배치 코스트 -1 · 3잠 제1재능 강화 · 4잠 공격력 +23 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1
-  - id: s1
-    section: skills
-    name: 1스킬 「밤의 메아리」 (특화 3)
-    text: 다음 공격이 공격력의 150%에 해당하는 마법 대미지를 2회 입히고, 목표를 3초간 속박, 속박 지속 시간 동안 목표가 받는 신경 손상이 1.8배로 증가, 원소 손상 미폭발 상태인 적 우선 공격
-    values:
-      SP 소모: "2"
-      초기 SP: "2"
-      SP: 공격 회복
-      발동: 자동
-  - id: s2
-    section: skills
-    name: 2스킬 「집단적 섬망」 (특화 3)
-    text: 공격 속도 +35, 제1재능의 스플래시 범위 확대, '본능의 부름' 배치 시 범위 내 최대 4명의 적을 자신의 위치로 10초간 유도(정예 또는 리더 적 우선), 첫 목표가 도착 후 '본능의
-      부름'은 즉시 퇴각하고 범위 내 모든 적을 6초간 정지시키며, 0.5초마다 트라고디아 공격력의 150%에 해당하는 마법 대미지 및 공격력의 25%에 해당하는 신경 손상을 입힘 무한 지속, '본능의
-      부름'은 별도의 재배치 시간 보유
-    values:
-      SP 소모: "25"
-      초기 SP: "0"
-      SP: 자동 회복
-      발동: 자동
-  - id: s3
-    section: skills
-    name: 3스킬 「빈 극장」 (특화 3)
-    text: 공격 범위 확대, 공격력 +125%, 원소 손상 미폭발 상태의 적 우선 공격, 스킬 지속 시간 동안 트라고디아가 신경 손상을 입혔던 적은 폭발 상태가 될 때까지 초당 공격력의 10%에 해당하는
-      신경 손상을 받으며, 범위 내 적의 신경 손상 쿨타임 회복 속도 +50%, 신경 손상 폭발 시 목표의 지상 위치에 광란의 감옥 1개 생성/갱신
-    values:
-      SP 소모: "40"
-      초기 SP: "30"
-      지속: 30초
-      SP: 자동 회복
-      발동: 수동
-  - id: talent-1
-    section: talents
-    name: 1재능 「마음에 귀속된 몸」
-    text: 공격 시 공격력의 30%에 해당하는 신경 손상을 입히며, 목표 주변의 다른 적에게 공격력의 20%에 해당하는 신경 손상을 입힘
-  - id: talent-2
-    section: talents
-    name: 2재능 「꿈의 타락」
-    text: 배치되어 있을 때, 신경 손상 폭발 상태인 모든 적의 공격 속도 -12, 공격 범위 내 적이 일반 공격 시 70의 신경 손상을 받음
-  - id: module-1
-    section: modules
-    name: 모듈 RIT-X 「트라고디아의 심장」 (Lv.3)
-    text: 정예 및 리더 적에 입히는 원소 손상 +18% / 배치되어 있을 때, 신경 손상 폭발 상태인 모든 적의 공격 속도 -20, 공격 범위 내 적이 일반 공격 시 90의 신경 손상을 받음
-    values:
-      HP: "+200"
-      공격력: "+42"
+- id: trait
+  section: stats
+  name: 특성 (의식술사)
+  text: 공격 시 마법 대미지를 입히며, 원소 손상을 입힐 수 있음
+- id: stats-max
+  section: stats
+  name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
+  values:
+    HP: 1,200
+    공격력: '490'
+    방어력: '104'
+    마법 저항: '15'
+    배치 코스트: '16'
+    저지: '1'
+    공격 간격: 1.6초
+    재배치: 70초
+- id: trust
+  section: stats
+  name: 신뢰도 100% 보너스
+  values:
+    HP: '+300'
+    공격력: '+40'
+- id: potential
+  section: stats
+  name: 잠재 보너스 (2~6잠)
+  text: 2잠 배치 코스트 -1 · 3잠 제1재능 강화 · 4잠 공격력 +23 · 5잠 제2재능 강화 · 6잠 배치 코스트 -1
+- id: s1
+  section: skills
+  name: 1스킬 「밤의 메아리」 (특화 3)
+  text: 다음 공격이 공격력의 150%에 해당하는 마법 대미지를 2회 입히고, 목표를 3초간 속박, 속박 지속 시간 동안 목표가 받는 신경 손상이 1.8배로 증가, 원소 손상 미폭발 상태인 적 우선 공격
+  values:
+    SP 소모: '2'
+    초기 SP: '2'
+    SP: 공격 회복
+    발동: 자동
+- id: s2
+  section: skills
+  name: 2스킬 「집단적 섬망」 (특화 3)
+  text: 공격 속도 +35, 제1재능의 스플래시 범위 확대, '본능의 부름' 배치 시 범위 내 최대 4명의 적을 자신의 위치로 10초간 유도(정예 또는 리더 적 우선), 첫 목표가 도착 후 '본능의 부름'은 즉시 퇴각하고 범위 내 모든 적을 6초간 정지시키며, 0.5초마다 트라고디아 공격력의 150%에 해당하는 마법 대미지 및 공격력의 25%에 해당하는 신경 손상을 입힘 무한 지속, '본능의 부름'은 별도의 재배치 시간 보유
+  values:
+    SP 소모: '25'
+    초기 SP: '0'
+    SP: 자동 회복
+    발동: 자동
+- id: s3
+  section: skills
+  name: 3스킬 「빈 극장」 (특화 3)
+  text: 공격 범위 확대, 공격력 +125%, 원소 손상 미폭발 상태의 적 우선 공격, 스킬 지속 시간 동안 트라고디아가 신경 손상을 입혔던 적은 폭발 상태가 될 때까지 초당 공격력의 10%에 해당하는 신경 손상을 받으며, 범위 내 적의 신경 손상 쿨타임 회복 속도 +50%, 신경 손상 폭발 시 목표의 지상 위치에 광란의 감옥 1개 생성/갱신
+  values:
+    SP 소모: '40'
+    초기 SP: '30'
+    지속: 30초
+    SP: 자동 회복
+    발동: 수동
+- id: talent-1
+  section: talents
+  name: 1재능 「마음에 귀속된 몸」
+  text: 공격 시 공격력의 30%에 해당하는 신경 손상을 입히며, 목표 주변의 다른 적에게 공격력의 20%에 해당하는 신경 손상을 입힘
+- id: talent-2
+  section: talents
+  name: 2재능 「꿈의 타락」
+  text: 배치되어 있을 때, 신경 손상 폭발 상태인 모든 적의 공격 속도 -12, 공격 범위 내 적이 일반 공격 시 70의 신경 손상을 받음
+- id: module-1
+  section: modules
+  name: 모듈 RIT-X 「트라고디아의 심장」 (Lv.3)
+  text: 정예 및 리더 적에 입히는 원소 손상 +18% / 배치되어 있을 때, 신경 손상 폭발 상태인 모든 적의 공격 속도 -20, 공격 범위 내 적이 일반 공격 시 90의 신경 손상을 받음
+  values:
+    HP: '+200'
+    공격력: '+42'
 history:
-  - date: 2025-11-13
-    version: "5.5"
-    kind: release
-    summary: 2025년 신규 6★ 오퍼레이터. 이벤트 헤드헌팅으로 등장.
-    sources:
-      - source: arknights-global
-        url: https://www.arknights.global/news/1955
-        collectedAt: 2026-09-28
-        verifiedAt: 2026-09-28
-        note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
-sources:
+- date: '2025-11-13T16:00:00+09:00'
+  version: '5.5'
+  kind: release
+  summary: 5.5주년 시즌 신규 6★ 오퍼레이터. 이벤트 헤드헌팅 [내려지지 않는 막] (11월 13일 16:00 ~ 11월 27일 03:59)
+  sources:
+  - &id001
+    source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1226280
+    collectedAt: '2026-09-28'
+    verifiedAt: '2026-09-28'
+    note: 한국 공식 카페 공지 — 개방 일시·기간
   - source: arknights-global
     url: https://www.arknights.global/news/1955
     collectedAt: 2026-09-28
     verifiedAt: 2026-09-28
     note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
-  - source: gamedata
-    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
-    collectedAt: 2026-09-28
-    verifiedAt: 2026-09-28
-    note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_1042_phatm2)
+sources:
+- *id001
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1226064
+  collectedAt: '2026-09-28'
+  verifiedAt: '2026-09-28'
+  note: 한국 공식 카페 공지 — 개방 일시·기간
+- source: arknights-global
+  url: https://www.arknights.global/news/1955
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_1042_phatm2)
 image: /games/arknights/img/operators/tragodia.webp
 imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_1042_phatm2_2.png
 keyVisual: /games/arknights/img/keyvisuals/tragodia.webp
 keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_1042_phatm2_2b.png
-updatedAt: 2026-09-28
+updatedAt: '2026-09-28'

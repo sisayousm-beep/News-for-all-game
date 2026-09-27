@@ -1,0 +1,40 @@
+id: philae-evaluation
+title: 필라에 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 강함 — 해외 2스 A·A+(통합 전략)
+- label: 뽑기 권장
+  value: 구매증명서 상점 교환
+- label: 역할
+  value: 첫 프라이멀 디펜더 — 광역 괴사(부식) 부여
+- label: 추천 스킬
+  value: 2스킬
+summary: 공격력 비례로 괴사를 걸어 방어·마저를 무시하고 광역으로 부여하는 강한 5★ 웨이브 정리 유닛이라는 해외 평가. 국내에서는 "5성 중에선 쓸 만하다"는 쪽과 "써 보니 먼가먼가"라는 반응이 갈린다.
+positive:
+- 괴사를 공격력 비례로 걸어 적 방어·마저를 무시한다(해외).
+- 진짜 광역으로 부여해 등급 대비 웨이브 정리가 강하다.
+negative:
+- 기대하고 써 봤는데 애매하다, 통합 전략에서 찍먹 후 버렸다는 글.
+- 성능보다 외모로 키운다는 댓글.
+subjects:
+- operators/philae
+- operators/philae#s2
+- operators/philae#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1k4r87z/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — I Portatori dei Velluti (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5598756
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5598465
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

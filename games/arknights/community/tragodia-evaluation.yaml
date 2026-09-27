@@ -1,0 +1,46 @@
+id: tragodia-evaluation
+title: 트라고디아 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 — 해외 2스 S++, 3스 A~S
+- label: 뽑기 권장
+  value: 강력 추천 (해외 Strong Pull, 통상)
+- label: 역할
+  value: 프라이멀 캐스터 — 끌어오기·밀어내기 다중 제어 + 딜
+- label: 추천 스킬
+  value: 2스킬
+- label: 조작 난이도
+  value: 쉬움 — 1레벨 1스로도 스톨링한다는 반응
+summary: 여러 겹의 제어기를 딜과 함께 갖춰 파워 인플레에도 오래 버틸 "망가진" 유닛이라는 해외 평가. 국내에서도 "위셔델·신시아와 어깨를 나란히 한다", "없으면 고달픈 오퍼"라는 반응이 이어졌다.
+positive:
+- 적을 끌었다 밀었다 반복하는 제어가 압도적이라는 후기.
+- 낮은 육성 상태로도 스톨링이 된다는 댓글.
+- 기사(나이트) 적 카운터라는 평.
+negative:
+- 프라이멀 캐스터 짝인 미스 크리스틴을 함께 써도 추가 이득은 작다(해외).
+subjects:
+- operators/tragodia
+- operators/tragodia#s2
+- operators/tragodia#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1otu92k/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Act or Die (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5865257
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5860819
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5914351
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'
