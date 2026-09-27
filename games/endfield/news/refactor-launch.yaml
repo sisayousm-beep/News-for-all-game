@@ -1,0 +1,17 @@
+id: refactor-launch
+updatedAt: 2026-09-27
+title: 재구축 헤드헌팅·신청 개방
+category: announcement
+publishedAt: 2026-09-23
+version: "1.5"
+summary: 이본·예술의 폭군이 재구축으로 등장합니다. 같은 이름 배너로 계승되는 누적 보상과 천장 규칙을 구분해야 합니다.
+tags:
+  - 엔드필드
+  - "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/3839
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+image: /games/endfield/img/news/yvonne.webp
+imageFrom: https://web-static.hg-cdn.com/upload/image/20260922/26cf784538ec32443f78f03ac3f5418c.jpg

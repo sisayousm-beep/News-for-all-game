@@ -1,0 +1,40 @@
+id: sufferings-end
+updatedAt: 2026-09-27
+title: 고난의 끝
+aliases:
+  - Suffering's End
+version: "1.5"
+summary: 1.5 업데이트에 추가된 6성 아츠 유닛.
+attributes:
+  rarity: 6
+  type: arts-unit
+  acquisition: null
+  version: "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: warfarin
+    url: https://warfarin.wiki/kr/weapons/sufferings-end
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 기본 공격력
+    values:
+      기본 공격력: 490
+  - id: passive-rank-1
+    section: passive
+    name: 무기 스킬 랭크 1
+    text: 아츠 폭발을 줄 때 자연 피해 버프를 중첩합니다. 각 중첩은 별도 지속 시간을 가지며, 최대 중첩 시 추가 보너스가 적용됩니다.
+    values:
+      민첩: 20
+      자연 피해: 5.6%
+      아츠 강도: 15
+      중첩당 자연 피해: 2%
+      최대 중첩: 4
+      지속(초): 25
+      최대 중첩 추가: 6%
+history: []

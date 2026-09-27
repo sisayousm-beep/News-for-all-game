@@ -1,0 +1,29 @@
+id: support-production
+updatedAt: 2026-09-27
+title: 통합 지원 · 생산·납품
+version: "1.5"
+summary: 지원 아이템을 생산해 거점에 납품하고 지원 성과권을 받습니다. 납품과 교환소 마감은 별개입니다.
+attributes:
+  category: production
+  region: 통합 지원 이벤트
+topics:
+  - id: recipe
+    section: operation
+    name: 지원 조합 공식
+    text: 이벤트 임무로 지원 아이템 조합 공식과 물자 교환소를 해제합니다.
+    values: {}
+  - id: submission
+    section: operation
+    name: 생산·납품
+    text: 지원 아이템을 거점에 제출하고 지원 성과권을 받아 보상을 교환합니다.
+    values: {}
+  - id: deadlines
+    section: constraints
+    name: 서로 다른 마감
+    text: 버블 출동! 제출 마감 후에도 교환소는 별도 기간까지 이용할 수 있습니다.
+    values: {}
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27

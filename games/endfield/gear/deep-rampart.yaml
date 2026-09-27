@@ -1,0 +1,15 @@
+id: deep-rampart
+updatedAt: 2026-09-27
+title: 관문 세트
+aliases:
+  - Deep Rampart
+version: "1.5"
+summary: 1.5 버전에 추가된 장비 세트. 세트 효과 수치는 원문 대조 후 보강합니다.
+attributes:
+  category: 장비 세트
+  version: "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27

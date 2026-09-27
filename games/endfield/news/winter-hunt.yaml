@@ -1,0 +1,17 @@
+id: winter-hunt
+updatedAt: 2026-09-27
+title: 겨울 사냥 · 티프로스 픽업 안내
+category: announcement
+publishedAt: 2026-09-01
+version: "1.5"
+summary: 티프로스 픽업과 벼린 화살 출석 체크·작전 훈련이 함께 진행됩니다.
+tags:
+  - 엔드필드
+  - "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/6172
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+image: /games/endfield/img/news/typhoeus.webp
+imageFrom: https://web-static.hg-cdn.com/upload/image/20260831/b9b60689c5b3a9e3dda9fd55d94b2e3f.jpg

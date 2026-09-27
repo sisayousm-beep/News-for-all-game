@@ -1,0 +1,30 @@
+id: purrchena-p4-energy
+updatedAt: 2026-09-27
+version: "1.5"
+title: 푸치나 4잠재 에너지 변화
+kind: stat
+certainty: reported
+answer: 100 → 85 에너지
+method: 기본 궁극기 에너지 100 × (1 − 0.15).
+assumptions:
+  - 공략에 기재된 기본 궁극기 에너지와 4잠재의 15% 감소를 사용.
+  - 충전 효율·타격·로테이션을 고정한 DPS 또는 충전 시간 계산이 아님.
+  - 한국어 인게임 툴팁 직접 대조 전이므로 제보 정보로 표시.
+results:
+  - 요구 에너지는 85로 15 줄지만, 실제 궁극기 주기나 피해 증가율이 곧 15%라는 뜻은 아닙니다.
+table:
+  columns:
+    - 잠재
+    - 요구 에너지
+  rows:
+    - - 0잠재
+      - 100
+    - - 4잠재
+      - 85
+subjects:
+  - operators/purrchena#p4
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/arknights-endfield/characters/purrchena
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27

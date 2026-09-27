@@ -1,0 +1,28 @@
+id: growth-planning
+updatedAt: 2026-09-27
+title: 육성 확인·기질 찜
+summary: 목표 육성에 필요한 재료와 현재 보유량을 비교하고, 선행 공개 무기의 기질을 찜할 수 있습니다.
+version: "1.5"
+attributes:
+  category: logistics
+  region: 오퍼레이터 화면
+topics:
+  - id: materials
+    section: operation
+    name: 육성 확인
+    text: 보유·미보유·선행 공개 오퍼레이터와 무기의 육성 목표별 재료를 확인합니다.
+    values: {}
+  - id: essence
+    section: operation
+    name: 기질 찜
+    text: 선행 공개 오퍼레이터 추천 무기의 완벽한 조합 기질을 확인해 찜 목록에 추가합니다.
+    values: {}
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/4481
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
