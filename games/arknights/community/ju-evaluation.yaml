@@ -1,0 +1,31 @@
+id: ju-evaluation
+title: 쥐 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.5'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음(키울 필요 없음)
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 공성 스나이퍼 — HP 조건부 추가 피해
+- label: 추천 스킬
+  value: 2스킬 (특화 비추천)
+summary: 디자인과 설정은 좋지만 같은 계열 4★ 토터와 큰 차이가 없어 키울 이유가 적다는 해외 평가가 있다. 국내 갤러리에서는 성능 논의가 거의 없었다.
+positive:
+- 이벤트 보상이라 뽑기 부담이 없다.
+- 비주얼·설정 호평(해외).
+negative:
+- HP 비율 조건부 딜이라 안정성이 낮고, 2스 추가 피해가 적 하나당 1회뿐이다.
+- SP 수급 보조도 약하고 불규칙하다.
+subjects:
+- operators/ju
+- operators/ju#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1uv86jb/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — First of A Thousand Autumns (스킬 등급·뽑기 권장, 댓글)
+updatedAt: '2026-09-27'

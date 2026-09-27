@@ -1,0 +1,39 @@
+id: varkaris-evaluation
+title: 바르카리스 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중하위 — 해외 2스 C
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 백부장 가드 — 라인 유지·자가 회복
+- label: 추천 스킬
+  value: 2스킬
+summary: 백부장 특유의 "높은 바닥, 낮은 천장" 유닛이라 무난하지만 최적의 선택이 되기는 어렵다는 평. 국내에서는 재화가 남는 고인물의 장난감용이라는 댓글이 많다.
+positive:
+- 라인 유지·준수한 딜·자가 회복으로 기본 성능은 괜찮다(해외).
+- 디자인이 잘 뽑혔다는 반응.
+negative:
+- 장기적 가치가 낮고, 부족한 계정도 기존 4성 등으로 더 나은 결과를 낸다(해외).
+- '"5★에게 너무 많은 걸 바라지 말라"는 댓글.'
+subjects:
+- operators/varkaris
+- operators/varkaris#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1u9ych8/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Medjehtiqedti Bound (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6064039
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6062875
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

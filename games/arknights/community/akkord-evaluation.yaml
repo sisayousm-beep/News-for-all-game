@@ -1,0 +1,38 @@
+id: akkord-evaluation
+title: 아코르트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음
+- label: 뽑기 권장
+  value: 구매증명서 상점 교환 — 우선순위 낮음
+- label: 역할
+  value: 4★ 폭발(광역) 캐스터
+- label: 추천 스킬
+  value: 특화 비추천
+summary: 딜 말고는 아무것도 없는 4★ 광역 캐스터라 약하지만, 기존 4★ 광역 캐스터가 더 약해서 틈새 가치는 있다는 해외 평가. 국내에서도 구매증명서로 살 오퍼로 거론되지 않았다.
+positive:
+- 4★ 광역 캐스터 중에서는 나은 편(해외).
+negative:
+- 구매증명서(빨간 증명서) 비용이 크다.
+- 1스 이름 '역박'은 원문(反拍, 엇박)을 살리지 못한 번역이라는 지적.
+subjects:
+- operators/akkord
+- operators/akkord#s1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1sixuv4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Retracing Our Steps (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6077598
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6009468
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

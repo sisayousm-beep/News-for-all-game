@@ -1,0 +1,30 @@
+id: perfumer-the-distilled-evaluation
+title: 퍼퓨머 더 디스틸트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 2스 C·C+
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 수호자(아뷰저) 메딕 — 1회용 긴급 회복
+- label: 추천 스킬
+  value: 2스킬
+summary: 1회성 헬기 투하형 스킬로 긴급 회복 버튼 역할을 하는 특이한 구성이지만, 무한 지속형 수호자(하루카 등)에 크게 못 미친다는 해외 평가. 원본 4★ 퍼퓨머가 더 나은 경우가 많다고 본다.
+positive:
+- 긴급 상황용 회복 버튼으로 실질 HPS가 높다(해외).
+negative:
+- 무한 지속 수호자보다 한참 아래라 틈새용.
+- 애정으로 키워도 원본 4★ 퍼퓨머가 더 강한 경우가 많다.
+subjects:
+- operators/perfumer-the-distilled
+- operators/perfumer-the-distilled#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1u9ych8/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Medjehtiqedti Bound (스킬 등급·뽑기 권장, 댓글)
+updatedAt: '2026-09-27'
