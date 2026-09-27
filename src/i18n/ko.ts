@@ -48,7 +48,7 @@ export const analysisKind: Record<(typeof ANALYSIS_KINDS)[number], string> = {
 
 export const communityKind: Record<(typeof COMMUNITY_KINDS)[number], string> = {
   evaluation: '평가', investment: '돌파·무기 여론', team: '조합 여론', feel: '사용감', story: '스토리 평가', version: '버전 평가',
-  tip: '팁', mistake: '자주 하는 실수', debate: '논쟁',
+  tip: '꿀팁', mistake: '자주 하는 실수', debate: '논쟁', issue: '핫이슈',
 };
 
 /** Descriptive, not a score. */
@@ -60,3 +60,5 @@ export const consensus: Record<(typeof CONSENSUS)[number], { label: string; titl
 };
 
 export const codeStatus = { active: '사용 가능', upcoming: '예정', expired: '만료' } as const;
+
+export const issueScope = { ingame: '게임 내', offgame: '게임 외' } as const;

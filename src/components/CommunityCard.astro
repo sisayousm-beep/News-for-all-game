@@ -5,8 +5,8 @@
  */
 import type { Game } from '../core/load';
 import type { CommunityRecord, ModuleConfig } from '../core/schema';
-import { gameHref, platformsOf, staleness } from '../core/hub';
-import { communityKind, consensus } from '../i18n/ko';
+import { formatDate, gameHref, platformsOf, staleness } from '../core/hub';
+import { communityKind, consensus, issueScope } from '../i18n/ko';
 import LayerBadge from './LayerBadge.astro';
 import Freshness from './Freshness.astro';
 import SourceList from './SourceList.astro';
@@ -19,9 +19,12 @@ const stale = staleness(game, c);
 <article class="layer-card" data-layer="community">
   <p class="layer-card-top">
     <LayerBadge layer="community" /><span class="meta">{communityKind[c.kind]}</span>
+    {c.scope && <span class="badge outline">{issueScope[c.scope]}</span>}
     <span class="consensus" data-v={c.consensus} title={consensus[c.consensus].title}>{consensus[c.consensus].label}</span>
+    {c.happenedAt && <span class="meta num">{formatDate(c.happenedAt, false)}</span>}
   </p>
   {heading ? <h1 class="article-title">{c.title}</h1> : <a class="headline" href={url}>{c.title}</a>}
+  {c.background && <p class="background">{c.background}</p>}
   {c.verdicts.length > 0 && <dl class="verdicts">{c.verdicts.map((v) => <div><dt>{v.label}</dt><dd>{v.value}</dd></div>)}</dl>}
   <p class="conclusion">{c.summary}</p>
   {c.shift && <p class="shift"><span class="meta">평가 변화</span> 출시 당시 <b>{c.shift.release}</b> → 현재 <b>{c.shift.now}</b><span class="meta"> — {c.shift.reason}</span></p>}

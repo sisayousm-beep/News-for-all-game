@@ -1,0 +1,20 @@
+id: v3-7-new-region-hype
+title: 3.7 신규 지역 「몽추천라」·현방 최종장 기대감
+kind: issue
+scope: ingame
+happenedAt: 2026-09-26
+version: "3.7"
+background: "9월 30일 3.7 업데이트를 앞두고 신규 지역 「몽추천라」 예고와 '현방의 최종장' 카운트다운이 공개됐다."
+consensus: strong
+summary: "기대감이 크다. 지역 이름이 '몽 추천'으로 읽힌다는 밈이 퍼졌고, 새 서브 스토리 유형 「기담임무」도 관심을 받는다."
+positive:
+  - 리나시타·라하이로이 최종장 때처럼 공식 카운트다운이 나오면 그 버전은 좋았다는 기대.
+  - 기담임무는 풀더빙 서브 스토리로, 기존 「얽힌 별」의 개선판으로 보인다는 반응.
+negative:
+  - 공식의 과한 연출을 경계하는 반응도 일부 있다.
+subjects: [versions/v3-7]
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184154143", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 신규 지역 예고 공식 게시 전재 + 댓글 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184202430", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 현방 최종장 예고 전재 + 댓글 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wpnea4/yeah_yeah_new_version_37_coming_on_september_30th/", collectedAt: 2026-09-27 }
+updatedAt: 2026-09-27

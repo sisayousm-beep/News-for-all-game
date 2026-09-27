@@ -1,0 +1,33 @@
+id: v3-7-spending-event-reruns
+title: 3.7 누적 충전 이벤트·복각 편중 논란
+kind: issue
+scope: ingame
+happenedAt: 2026-09-19
+version: "3.7"
+background: "3.7 방송에서 누적 충전 이벤트(보상으로 파수인·페비·카를로타)와 린네·치사 재복각이 공개됐다. 시그리카는 출시 후 한 번도 복각되지 않았다."
+consensus: moderate
+summary: "복각 편중과 과금 이벤트 보상 구성에 대한 불만이 국내·Reddit 공통으로 크다. 다만 파수인이 없는 유저에게는 기회라며 최소 비용 공략이 쏟아지는 분위기다."
+positive:
+  - 파수인이 없는 뉴비·미보유자에게는 영입 기회라는 반응.
+  - 결제 할인 조합으로 부담을 줄이는 공략이 활발하게 공유된다.
+negative:
+  - 린네·치사는 3.7로 벌써 네 번째 픽업인데 시그리카는 5버전 넘게 복각이 없고, 카멜리아는 1년 반 넘게 픽업이 없다.
+  - 파수인 같은 핵심 서포터를 과금 이벤트에 묶었다는 비판.
+  - 보상 선택지가 아쉽다(아우구스타·칸타렐라를 원하는 의견).
+  - 캐릭터마다 전용 파티가 고정돼 구캐릭 복각이 줄어드는 구조가 문제라는 지적.
+divided:
+  - position: 버전 보상 총량은 예전과 비슷하다
+    reasons:
+      - 로그인 보상은 배분 방식일 뿐이고 3.7 전체 뽑기 수는 3.6보다 많다는 주장
+  - position: 쿠로가 점점 짜진다
+    reasons:
+      - 과금 전용 재화·이벤트가 늘고, 메타 파티가 없으면 엔드 콘텐츠가 빡빡해졌다
+subjects: [versions/v3-7]
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183492271", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 누적 충전 이벤트 공개 반응 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183518643", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 3.7 픽업 복각표 + 댓글 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183510998", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wmns4p/endless_chisa_and_lynae_reruns/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wn50v4/about_the_hate_toward_37_reward/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wnddjr/in_your_eyes_what_would_be_a_good_rerun_cadence/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

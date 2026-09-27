@@ -1,0 +1,33 @@
+id: ddingjo-festival-2026
+title: 띵조 페스티벌 2주년 — 운영 논란
+kind: issue
+scope: offgame
+happenedAt: 2026-05-29
+version: "3.3"
+background: "5월 29~31일 열린 명조 2주년 오프라인 행사. 첫날 장시간 입장 대기·굿즈 수령 지연이 생겨 당일 공식 사과·개선 안내가 나왔다."
+consensus: moderate
+summary: "무대·굿즈·코스프레를 즐겼다는 후기도 많지만, 첫날 대기열과 스태프 응대 때문에 운영은 실패였다는 평가가 우세하다."
+positive:
+  - 공식 코스어 퍼레이드, 인형탈, 2차 창작 부스는 분위기를 잘 살렸다.
+  - 2일차부터 그늘막·인력 증원으로 입장이 나아졌다.
+  - 행사 자체에 감동했다는 개인 후기도 적지 않다.
+negative:
+  - 첫날 참가자는 장시간 대기로 사실상 실험대가 됐다며 보상 요구가 나왔다.
+  - 현장 굿즈 재고가 일찍 떨어지고 수령 줄이 길었다.
+  - 가수·공연 위주 구성이 게임 행사와 맞지 않는다는 비판(개발 비하인드·OST 무대를 원한다는 의견).
+  - '"성공적인 축제"라는 기사들이 커뮤니티 분위기와 다르다는 반발.'
+divided:
+  - position: 그래도 다음 행사에 가겠다
+    reasons:
+      - 행사 퀄리티보다 게임과 사람들을 만난 경험이 좋았다
+      - 운영만 바뀌면 된다(행사 대행사를 바꿔라)
+  - position: 첫날은 다시는 안 간다
+    reasons:
+      - 매번 첫날 문제를 겪고 나서야 고친다는 불신
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/172139455", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "공식 「현장 운영 관련 개선 안내」 전재 + 댓글" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/172351197", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 행사 구성 비판 글 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/172482880", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 언론 기사(게임와이) 전재 + 댓글 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/172204956", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/172169315", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 참가 후기 }
+updatedAt: 2026-09-27

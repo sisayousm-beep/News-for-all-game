@@ -3,23 +3,29 @@
 import type { Game } from '../../core/load';
 import type { CommunityRecord, ModuleConfig } from '../../core/schema';
 import { listed } from '../../core/hub';
-import { communityKind } from '../../i18n/ko';
+import { communityKind, issueScope } from '../../i18n/ko';
 import LayerHead from '../../components/LayerHead.astro';
 import CommunityCard from '../../components/CommunityCard.astro';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
-const items = listed<CommunityRecord>(game, mod).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
-const kinds = [...new Set(items.map((a) => a.kind))];
+const when = (c: CommunityRecord) => c.happenedAt ?? c.updatedAt;
+const items = listed<CommunityRecord>(game, mod).sort((a, b) => when(b).localeCompare(when(a)));
+// Filter key: hot issues split into 게임 내 / 게임 외, everything else by kind.
+const keyOf = (c: CommunityRecord) => (c.kind === 'issue' && c.scope ? `issue-${c.scope}` : c.kind);
+const labelOf = (k: string) => (k.startsWith('issue-') ? `${issueScope[k.slice(6) as keyof typeof issueScope]} 이슈` : communityKind[k as CommunityRecord['kind']]);
+const ORDER = ['issue-ingame', 'issue-offgame', 'tip'];
+const rank = (k: string) => (ORDER.includes(k) ? ORDER.indexOf(k) : ORDER.length);
+const kinds = [...new Set(items.map(keyOf))].sort((a, b) => rank(a) - rank(b));
 ---
 <section class="section" data-kind-filter>
   <LayerHead layer="community" title={mod.label} count={items.length} />
   {kinds.length > 1 && (
     <div class="toolbar"><div class="chips" role="group" aria-label="분류">
       <button class="chip" type="button" data-kind="" aria-pressed="true">전체</button>
-      {kinds.map((k) => <button class="chip" type="button" data-kind={k} aria-pressed="false">{communityKind[k]}</button>)}
+      {kinds.map((k) => <button class="chip" type="button" data-kind={k} aria-pressed="false">{labelOf(k)}</button>)}
     </div></div>
   )}
-  {items.length ? <div class="layer-list">{items.map((a) => <div data-k={a.kind}><CommunityCard game={game} mod={mod} record={a} compact /></div>)}</div>
+  {items.length ? <div class="layer-list">{items.map((a) => <div data-k={keyOf(a)}><CommunityCard game={game} mod={mod} record={a} /></div>)}</div>
     : <p class="empty"><strong>아직 정리된 여론이 없습니다</strong>실제 커뮤니티 글에서 확인된 의견만 요약합니다.</p>}
 </section>
 <script>
