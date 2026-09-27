@@ -6,7 +6,7 @@
  */
 import type { Game } from '../../core/load';
 import { ANALYSIS_KINDS, COMMUNITY_KINDS, type AnalysisRecord, type CommunityRecord, type EntityRecord, type ModuleConfig } from '../../core/schema';
-import { formatDate, layerOf, linked, modulesOf, relatedNews } from '../../core/hub';
+import { formatDate, href, layerOf, linked, modulesOf, relatedNews } from '../../core/hub';
 import { analysisKind, historyKind } from '../../i18n/ko';
 import { fieldLabel } from './fields';
 import Provenance from '../../components/Provenance.astro';
@@ -90,6 +90,14 @@ const showCalc = has('analysis'), showTalk = has('community');
       <LayerHead layer="official" title="기본 정보" id="layer-official" />
       {r.summary ? <p class="prose" style="padding-top:12px">{r.summary}</p> : <p class="empty">등록된 소개가 없습니다.</p>}
     </section>
+
+    {r.keyVisual && <section class="section" aria-label="오퍼레이터 키비주얼">
+      <div class="section-head"><h2 class="section-title">키비주얼 · 일러스트</h2></div>
+      <figure class="entity-keyvisual">
+        <img src={href(r.keyVisual)} alt={`${r.title} 전신 일러스트`} loading="lazy" decoding="async" />
+        {r.keyVisualFrom && <figcaption>원본: <a href={r.keyVisualFrom} target="_blank" rel="noopener noreferrer">게임 리소스</a></figcaption>}
+      </figure>
+    </section>}
 
     {sections.map((s) => (
       <section class="section">

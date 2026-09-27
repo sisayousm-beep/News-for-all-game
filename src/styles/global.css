@@ -694,6 +694,10 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 
 /* Article hero image (news / schedule detail). */
 .article-media { border-radius: var(--r); overflow: hidden; background: var(--sunken); }
+.entity-keyvisual { margin: 12px 0 0; border-radius: var(--r); overflow: hidden; background: var(--sunken); }
+.entity-keyvisual img { display: block; width: 100%; max-height: 720px; object-fit: contain; }
+.entity-keyvisual figcaption { padding: 8px 12px; color: var(--faint); font-size: .75rem; }
+.entity-keyvisual a { text-decoration: underline; }
 .article-media img { width: 100%; max-height: 480px; object-fit: cover; }
 .article-media figcaption { padding: 6px 0 0; font-size: .75rem; color: var(--faint); background: var(--bg); }
 .article-media figcaption a { text-decoration: underline; text-decoration-color: var(--line-strong); }
