@@ -141,3 +141,10 @@ test('evaluation shift records release vs now with a reason', () => {
   assert.equal(errorsFor({ 'talk/k1': talk({ shift: { release: 'T1', now: 'T0', reason: '파츠 출시' } }) }), '');
   assert.match(errorsFor({ 'talk/k1': talk({ shift: { release: 'T1', now: 'T0' } }) }), /shift/);
 });
+
+test('story rating stays on a 0–5 scale and keeps regions apart', () => {
+  const story = { kind: 'story', rating: { value: 4.6, basis: '설문', parts: [{ label: '7막', value: 4.6 }] }, regions: [{ region: 'domestic', summary: '호평' }, { region: 'overseas', summary: '호평' }] };
+  assert.equal(errorsFor({ 'talk/k1': talk(story) }), '');
+  assert.match(errorsFor({ 'talk/k1': talk({ ...story, rating: { value: 7, basis: '10점' } }) }), /rating/);
+  assert.match(errorsFor({ 'talk/k1': talk({ ...story, regions: [{ region: 'mars', summary: 'x' }] }) }), /region/);
+});

@@ -1,0 +1,41 @@
+id: story-v2-7
+title: "2.7 스토리 — 리나시타 최종장 — 2장 10·11막"
+kind: story
+version: "2.7"
+consensus: moderate
+rating:
+  value: 4.32
+  basis: "아카라이브 명조 채널 3.0 버전 설문 스토리 평점(5점) 평균 — 누적 표"
+  parts:
+    - { label: "2장 10·11막 (리나시타 최종장)", value: 4.71 }
+    - { label: "2장 에필로그 (구원·펜리코)", value: 3.93 }
+flow: "2장 10·11막과 에필로그. 리나시타 최종장으로, 갈브레나와 잔성회의 계략 속에서 방랑자가 궁지에 몰린다. 이후 구원·펜리코 에필로그."
+verdicts:
+  - { label: "연출", value: "최종전·로그인 화면 연출 극찬" }
+  - { label: "완성도", value: "버그·최적화·립싱크 문제" }
+  - { label: "전개", value: "방랑자를 무력하게 만든 구성" }
+summary: "최종장은 4.71의 극찬을 받았다. 방랑자를 끝까지 몰아붙인 전개와 최종전 연출이 호평이지만, 출시 초 버그·최적화 문제가 몰입을 깼다는 불만이 국내외 공통이다."
+regions:
+  - region: domestic
+    summary: "설문 최종장 4.71, 에필로그 3.93. 방랑자를 \"땅이 아니라 지하까지\" 몰아붙인 전개가 호평."
+    positive:
+      - "보스전·최종장 연출"
+      - "인간 찬가 주제"
+    negative:
+      - "첫날 버그·BGM 오류"
+      - "인게임 모션 컷신의 어색함"
+  - region: overseas
+    summary: "\"2.7 스토리 퀘스트는 영화 같았다\"는 글이 인기였지만 \"셉티몬트가 다듬어지지 않았다\"는 피드백 모음도 공감받았다."
+    positive:
+      - "방랑자의 정신 세계 연출"
+      - "리나시타 작별 장면"
+    negative:
+      - "최적화·립싱크 문제"
+      - "반복되는 캐릭터 배경 공식"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/161473805", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.0 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/150182946", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/150355115", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1o20wdh/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1o3a9g4/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

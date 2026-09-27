@@ -1,0 +1,27 @@
+id: sword-18
+title: "18형 직검 · 순간의 칼빛"
+aliases: ["Sword#18"]
+summary: "4성 직검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/sword-18.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020034_UI.webp
+attributes:
+  rarity: 4
+  type: sword
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "36.45%" }
+  - id: passive
+    section: passive
+    name: "패시브 「전진의 발걸음」 (재련 1~5)"
+    text: "HP가 40~80% 이하일 경우, 강공격 피해 보너스가 18~36% 증가하고, 강공격 피해를 입힐 때 현재 캐릭터의 HP가 5~10% 회복되며, 8초마다 1회 발생할 수 있다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020034
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

@@ -1,0 +1,75 @@
+id: cantarella
+title: 칸타렐라
+aliases: ["Cantarella"]
+summary: "현 피살리아 가문의 가주, 「독약」 칸타렐라. 고귀하고 아름답지만, 맹독을 가진 신비로운 그녀... 그녀는 왕관의 모습을 한 산 정상 속에 살고 있으며, 절벽 사이로 흐르는 것은 모두 그녀가 꾸며낸 환각이다"
+attributes:
+  rarity: 5
+  element: havoc
+  weapon: rectifier
+  version: "2.2"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "11,600", 공격력: "400", 방어력: "1,100", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「그림자와 함께 춤을」"
+    values: {쿨타임: "6초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「해수면 밑」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「끝없이 펼쳐진 파도 속에서」"
+    text: "공명 스킬 발동 시, 「몽롱」 1pt가 회복된다. 공명 스킬 민첩, 공명 스킬 뒤섞인 꿈, 공명 회로 감각 흡수의 피해 배율이 50% 상승된다. 공명 회로 감각 흡수는 적의 공격에 의해 중단되지 않는다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「흐릿한 환상 속으로」"
+    text: "공명 해방 함몰은 목표를 환몽 상태로 진입시킬 수 있으며, 칸타렐라가 발생시키는 놀람의 피해 배율이 245% 상승된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「심연을 향한 응시」"
+    text: "공명 해방 함몰의 피해 배율이 370% 상승된다. 공명 해방 함몰 발동 후, 즉시 신기루 상태 상태에 진입한다. 현재 신기루 상태 상태에 있을 경우, 공명 해방 함몰을 발동해도 신기루 상태에 다시 진입하지 않는다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「영혼을 들여다보듯」"
+    text: "신기루 상태 기간 동안, 치료 효과 보너스가 25% 증가된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「그림자의 품에 안긴 채」"
+    text: "공명 해방 자욱한 안개로 꿈을 엮는 해파리 소환 가능한 수량을 5 증가시킨다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「추락, 추락... 더 깊은 환상 속으로」"
+    text: "일반 공격 기이한 환상의 피해 배율이 80% 증가한다. 공명 해방 함몰 발동 시, 칸타렐라가 입히는 피해는 목표의 30% 방어력을 무시하고, 10초간 지속된다. 환몽 효과 발동 후 1.2초 이내, 목표가 피해를 입을 경우, 해당 피해가 환몽 효과를 추가하지 않으면, 목표는 놀람을 발생시킬 수 없다"
+history:
+  - date: 2025-03-27
+    version: "2.2"
+    kind: release
+    summary: "2.2 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [바다를 비추는 꿈]으로 출시 (2.2 버전 업데이트 이후 ~ 2025년 4월 17일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2348
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2348
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1607
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/cantarella.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/cantarella-f997fb74.png
+updatedAt: 2026-09-27

@@ -1,0 +1,75 @@
+id: rover-aero
+title: 방랑자 · 기류
+aliases: ["Rover: Aero"]
+summary: "정체불명의 공명자, 모든 소리를 흡수할 수 있는 힘을 가지고 있다. 기억을 되찾기 위해 여행을 떠난다"
+attributes:
+  rarity: 5
+  element: aero
+  weapon: sword
+  version: "2.2"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,775", 공격력: "437.5", 방어력: "1,136.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {치료 효과 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「분열 형상」"
+    values: {쿨타임: "3초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「만물의 허상」"
+    values: {쿨타임: "24초", 공명 에너지: "150"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「어둠의 경계에서 멈춘 바람」"
+    text: "공중 공격 비바람 속의 춤 발동 시, 경직 저항력이 증가되고, 3초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「긴긴밤 속으로 사라지는 빛」"
+    text: "공명 스킬 허무맹랑 발동 시, 파티 내 등장 캐릭터는 지속적으로 HP 회복 효과를 획득하고, 3초마다 방랑자의 공격력의 20%에 해당하는 HP를 회복하며, 30초간 지속된다. 해당 기간 동안 등장 캐릭터의 HP가 35% 이하일 경우, 등장 캐릭터가 손실된 HP의 10%에 해당하는 HP를 즉시 회복한다. 해당 효과는 10초마다 1회 발생할 수 있으며, 치료 효과 보너스의 영향을 받지 않는다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「손아귀에 떨어진 허상」"
+    text: "기류 피해 보너스가 15% 증가된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「경계가 무너지는 순간」"
+    text: "공중 공격 비바람 속의 춤 발동 시, 공명 스킬 피해 보너스가 15% 증가되고, 5초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「엇갈린 생사의 길」"
+    text: "공명 해방 만물의 허상의 피해 배율이 20% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「바람결에 무너져 내린 모든 것」"
+    text: "공명 스킬 허무맹랑의 피해 배율이 30% 상승된다"
+history:
+  - date: null
+    version: "2.2"
+    kind: release
+    summary: "2.2 버전에 방랑자의 기류 속성이 추가됐다 (2025년 3월 25일 공식 프로필 공개)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2324
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 프로필 공개 — 방랑자·기류
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2324
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1406
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/rover-aero.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/rover2-a3bf71da.png
+updatedAt: 2026-09-27

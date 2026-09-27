@@ -1,0 +1,22 @@
+id: verina-evaluation
+title: "벨리나 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T0.5 (역경의 탑 기준)" }
+  - { label: "역할", value: "서포터" }
+summary: "Prydwen 역경의 탑 티어 기준 최상위권 바로 아래(T0.5)로 평가된다."
+subjects: [resonators/verina]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/verina
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

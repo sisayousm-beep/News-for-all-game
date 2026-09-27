@@ -1,0 +1,42 @@
+id: lethean-elegy
+title: "잊혀진 피안의 슬픈 악장"
+aliases: ["Lethean Elegy"]
+summary: "5성 증폭기. 2.5 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/lethean-elegy.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050066_UI.webp
+attributes:
+  rarity: 5
+  type: rectifier
+  version: "2.5"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「진혼곡」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 에코 어빌리티 피해를 입힌 후 12초 내에, 공명 스킬 피해 보너스가 32~64% 증가되고, 에코 어빌리티 피해가 32~64% 부스트되며, 피해를 입힐 시 목표의 방어력을 8~16% 무시한다"
+history:
+  - date: 2025-07-24
+    version: "2.5"
+    kind: release
+    summary: "2.5 버전 무기 이벤트 튜닝으로 출시 ([무기의 울림] 무기 이벤트 튜닝——「잊혀진 피안의 슬픈 악장」 확률 UP; 2.5 버전 업데이트 이후 ~ 2025년 8월 14일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2945
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2945
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050066
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

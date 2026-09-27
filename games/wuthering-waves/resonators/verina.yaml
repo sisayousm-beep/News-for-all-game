@@ -1,0 +1,70 @@
+id: verina
+title: 벨리나
+aliases: ["Verina"]
+summary: "벨리나는 항상 다정하고, 늘 미소짓고 있으며, 식물 지식에 능하다. 그녀는 모든 꽃들이 생명의 기적을 가질 수 있길 바란다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: rectifier
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "14,237.5", 공격력: "337.5", 방어력: "1,100", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {치료 효과 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「식물 실험」"
+    values: {쿨타임: "12초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「자라난 초목」"
+    values: {쿨타임: "25초", 공명 에너지: "175"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「싹이 트는 순간」"
+    text: "반주 스킬 꽃의 만발이 발동 시, 파티 내 등장 캐릭터에게 추가로 HP 지속 회복의 효과를 부여하고 5초당 벨리나 공격력 20%의 HP를 회복하며 30초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「꽃잎의 생각」"
+    text: "공명 스킬 식물 실험 발동 시, 추가로 「광합성 에너지」 1pt와 협주 에너지 10pt를 획득한다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「성장의 선택」"
+    text: "공명 해방 광합 표기의 치료 효과 보너스가 12% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「만발한 꽃의 포옹」"
+    text: "강공격 별꽃의 개화, 공중 공격 별꽃의 개화, 공명 해방 자라난 초목 또는 반주 스킬 꽃의 만발을 발동할 경우, 파티 내 캐릭터의 회절 피해 보너스가 15% 증가하며, 24초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「결실의 기적」"
+    text: "HP가 50%보다 낮은 캐릭터 치료 시, 벨리나의 치료 효과 보너스가 20% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「수확의 희열」"
+    text: "강공격 별꽃의 개화 및 공중 공격 별꽃의 개화의 피해가 20% 증가하며, 목표 명중 시 협동 공격 1회를 발동시키고 근처 파티 내 모든 캐릭터의 HP를 회복시킨다. 이번 협동 공격의 피해량과 HP 회복량은 공명 해방 광합성 표식과 동일하다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 5성 공명자(상시 튜닝). 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1503
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1503
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/verina.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/weilinai-92d141b8.png
+updatedAt: 2026-09-27

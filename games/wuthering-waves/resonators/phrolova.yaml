@@ -1,0 +1,71 @@
+id: phrolova
+title: 플로로
+aliases: ["Phrolova"]
+summary: "생사의 경계를 넘나드는 잔성회 간부이자 신비롭고도 위험한 지휘자이다... 그녀가 조용히 지휘봉을 휘두르면, 손끝에서 조율된 주파수가 「영혼」의 선율을 연주한다. 이 선율로 아름다운 세계를 그려낼 수 있으며, 천군만마를 소환할 수도 있다"
+attributes:
+  rarity: 5
+  element: havoc
+  weapon: rectifier
+  version: "2.5"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,775", 공격력: "437.5", 방어력: "1,136.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「스쳐 지나간 잠꼬대」"
+    values: {쿨타임: "12초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「이계의 비밀로 들어가는 열쇠」"
+    text: "멸망과 죽음의 악장의 피해 배율이 80% 상승된다. 영원히 사라지지 않는 잠꼬대의 피해 배율이 80% 상승된다. 플로로가 지휘 상태가 아닌 동시에 비전투 상태가 4초간 지속된 후, 「흔들리는 음」이 2개 미만이면 「흔들리는 음」이 2개 이상이 될 때까지 「흔들리는 음 · 카덴차」를 획득한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「새로운 삶을 연결하는 밧줄」"
+    text: "마지막 작곡의 피해 배율이 75% 상승되고 잔음이 마지막 작곡에 대한 배율 증가 효과가 75% 상승된다. 마지막 작곡 발동 시 14스택의 잔음을 획득할 수 있다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「망상을 끊는 날카로운 비수」"
+    text: "에코 어빌리티 피해가 80% 부스트된다. 마지막 작곡 발동 기간, 모든 「흔들리는 음」은 순서에 따라 「흔들리는 음 · 카덴차」로 전환된다. 강화된 공격 · 카덴차 · 헤카테에 명중된 목표는 공격력이 20% 감소되고, 15초간 지속된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「새로운 여정을 인도하는 횃불」"
+    text: "에코 어빌리티 발동 시 파티 내 캐릭터의 전체 속성 피해 보너스가 20% 증가되고 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「삶의 관건을 가로지르는 갈림길」"
+    text: "지휘 상태에 진입 시, 영역을 생성하여 주변 목표를 정체시키며 영역은 4초간 지속된다. 지휘 상태 종료 혹은 다른 캐릭터로 전환하면 정체 효과가 즉시 제거된다. 지휘 상태에 있을 시, 받는 피해가 30% 감소된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「안식과 종말을 벗어나는 심야」"
+    text: "강화된 공격 · 헤카테의 피해 배율이 24% 상승된다. 멸망과 죽음의 악장, 영원히 사라지지 않는 잠꼬대 발동 기간에, 헤카테를 소환하여 뒤얽힌 세계의 환상 · 헤카테를 1회 발동하고, 플로로 공격력의 216.42%에 해당하는 인멸 피해를 입히며, 목표 명중 시 8스택의 잔음을 획득한다. 해당 피해는 에코 어빌리티 피해로 적용된다."
+history:
+  - date: 2025-07-24
+    version: "2.5"
+    kind: release
+    summary: "2.5 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [영원히 끝나지 않는 슬픈 노래]으로 출시 (2.5 버전 업데이트 이후 ~ 2025년 8월 14일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2938
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2938
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1608
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/phrolova.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/fuluoluo-7d531678.webp
+updatedAt: 2026-09-27

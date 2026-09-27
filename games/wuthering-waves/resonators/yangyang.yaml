@@ -1,0 +1,70 @@
+id: yangyang
+title: 양양
+aliases: ["Yangyang"]
+summary: "양양은 「야귀」에 속한 임시 조사원이다. 가족의 울타리에서 온실의 화초처럼 자라던 소녀는 종달새가 바람을 뚫고 자신의 길을 향해 날아가듯, 이제는 자신의 힘으로 남을 지키려 노력하고 있다"
+attributes:
+  rarity: 4
+  element: aero
+  weapon: sword
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,200", 공격력: "250", 방어력: "1,100", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {공격력: "+12%", 기류 피해 보너스: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「바람의 영역」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「북풍의 소용돌이」"
+    values: {쿨타임: "16초", 공명 에너지: "100"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「다크 블루의 세례」"
+    text: "변주 스킬 다크 블루의 찬송 발동 후, 양양의 기류 피해보너스를 추가로 15%만큼 증가하며, 8초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「종달새의 여행」"
+    text: "강공격이 목표에 명중 시, 양양은 추가로 10pt의 공명 에너지를 회복하며, 20초마다 1회 발동된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「끊이지 않는 바람의 숨결」"
+    text: "공명 스킬 피해 보너스가 40% 증가하고, 바람 필드의 주변 목표에 대한 견인효과 증대하며, 견인 범위가 33% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「귀를 기울이면」"
+    text: "공중 공격 날개의 뜻 피해가 95% 증가한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「울려 퍼지는 바람」"
+    text: "공명 해방 북풍의 소용돌이로 인한 피해가 85% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「아름다움에게 바치는 찬가」"
+    text: "공중 공격 날개의 뜻 발동 후, 파티 내의 모든 캐릭터의 공격력이 20% 증가하며, 20초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 4성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1402
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1402
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/yangyang.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/yangyang-899b192b.png
+updatedAt: 2026-09-27

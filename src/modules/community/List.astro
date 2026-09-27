@@ -6,10 +6,15 @@ import { listed } from '../../core/hub';
 import { communityKind, issueScope } from '../../i18n/ko';
 import LayerHead from '../../components/LayerHead.astro';
 import CommunityCard from '../../components/CommunityCard.astro';
+import Stars from '../../components/Stars.astro';
+import { gameHref } from '../../core/hub';
 interface Props { game: Game; mod: ModuleConfig }
 const { game, mod } = Astro.props;
 const when = (c: CommunityRecord) => c.happenedAt ?? c.updatedAt;
-const items = listed<CommunityRecord>(game, mod).sort((a, b) => when(b).localeCompare(when(a)));
+const all = listed<CommunityRecord>(game, mod);
+// Story evaluations get their own part: one row per version, linking to the full evaluation.
+const stories = all.filter((c) => c.kind === 'story').sort((a, b) => b.version.localeCompare(a.version, undefined, { numeric: true }));
+const items = all.filter((c) => c.kind !== 'story').sort((a, b) => when(b).localeCompare(when(a)));
 // Filter key: hot issues split into 게임 내 / 게임 외, everything else by kind.
 const keyOf = (c: CommunityRecord) => (c.kind === 'issue' && c.scope ? `issue-${c.scope}` : c.kind);
 const labelOf = (k: string) => (k.startsWith('issue-') ? `${issueScope[k.slice(6) as keyof typeof issueScope]} 이슈` : communityKind[k as CommunityRecord['kind']]);
@@ -28,6 +33,20 @@ const kinds = [...new Set(items.map(keyOf))].sort((a, b) => rank(a) - rank(b));
   {items.length ? <div class="layer-list">{items.map((a) => <div data-k={keyOf(a)}><CommunityCard game={game} mod={mod} record={a} /></div>)}</div>
     : <p class="empty"><strong>아직 정리된 여론이 없습니다</strong>실제 커뮤니티 글에서 확인된 의견만 요약합니다.</p>}
 </section>
+{stories.length > 0 && (
+  <section class="section" id="story">
+    <div class="section-head"><h2 class="section-title">버전별 스토리 평가<span class="count">{stories.length}</span></h2><span class="meta">누르면 흐름·평가 요소·국내외 반응</span></div>
+    <ol class="story-index">
+      {stories.map((s) => (
+        <li><a href={gameHref(game, mod.id, s.id)}>
+          <span class="ver num">v{s.version}</span>
+          <span class="name">{s.title.replace(/^[\d.]+ 스토리 — /, '')}</span>
+          {s.rating ? <Stars value={s.rating.value} small /> : <span class="meta">집계 전</span>}
+        </a></li>
+      ))}
+    </ol>
+  </section>
+)}
 <script>
   document.querySelectorAll<HTMLElement>('[data-kind-filter]').forEach((root) => {
     const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-kind]')];

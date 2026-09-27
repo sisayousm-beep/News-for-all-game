@@ -1,0 +1,75 @@
+id: shorekeeper
+title: 파수인
+aliases: ["Shorekeeper"]
+summary: "파수인, 검은 해안의 수호자. 이 정도의 설명만으로도 충분할 것 같다. 갈망, 속박, 감정... 직책 외의 모든 것은 당신과의 만남 후에 보다 가득 차게 되었다"
+attributes:
+  rarity: 5
+  element: spectro
+  weapon: rectifier
+  version: "1.3"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "16,712.5", 공격력: "287.5", 방어력: "1,100", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {치료 효과 보너스: "+12%", HP: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「혼돈의 이론」"
+    values: {쿨타임: "16초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「결말의 순환」"
+    values: {쿨타임: "25초", 공명 에너지: "175"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「말없는 자의 가설」"
+    text: "공명 해방 결말의 순환으로 펼쳐진 별의 영역이 강화된다. · 치료 및 버프의 효과 범위가 150% 증가한다. · 지속 시간이 10초 증가한다. · 변주 스킬 통찰 발동 후에도 별의 영역은 종료되지 않는다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「야밤의 선물과 거절」"
+    text: "별의 영역 · 표층 신규 효과 추가: 근처 파티 내 캐릭터의 공격력이 40% 증가된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「끝없는 기다림」"
+    text: "공명 해방 결말의 순환 발동 시, 파수인은 추가로 협주 에너지를 20pt 회복하며, 25초마다 1회 발생된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「만물의 적막」"
+    text: "공명 스킬 혼돈의 이론 발동 시, 치료 효과 보너스가 70% 증가한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「침묵 속의 메아리」"
+    text: "일반 공격 3단의 견인 범위가 50% 증가되며, 공명 회로 연역의 견인 범위가 30% 증가된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「새로운 세상으로」"
+    text: "변주 스킬 통찰의 피해 배율이 42% 상승된다. 변주 스킬 통찰 발동 시, 파수인의 크리티컬 피해가 500% 증가된다"
+history:
+  - date: 2024-09-29
+    version: "1.3"
+    kind: release
+    summary: "1.3 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [그윽한 바닷물이 마를 때까지]으로 출시 (1.3 버전 업데이트 이후 ~ 2024년 10월 24일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1434
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1434
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1505
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/shorekeeper.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/shorekeeper-62a1d56d.png
+updatedAt: 2026-09-27

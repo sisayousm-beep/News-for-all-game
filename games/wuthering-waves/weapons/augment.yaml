@@ -1,0 +1,27 @@
+id: augment
+title: "청음"
+aliases: ["Augment"]
+summary: "4성 증폭기. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/augment.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050074_UI.webp
+attributes:
+  rarity: 4
+  type: rectifier
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "412.5", 크리티컬: "20.25%" }
+  - id: passive
+    section: passive
+    name: "패시브 「강유병존」 (재련 1~5)"
+    text: "공명 해방 발동 시, 자신의 공격력이 15~48% 증가하고, 15초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050074
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

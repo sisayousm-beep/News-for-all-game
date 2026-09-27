@@ -1,0 +1,75 @@
+id: ciaccona
+title: 샤콘
+aliases: ["Ciaccona"]
+summary: "리나시타의 음유시인, 샤콘. 그녀는 신과 평범한 인간 모두를 위해 노래한다. 그녀는 여행을 통해 이야기를 기록하고 노래하며 이야기의 주인공, 그리고 관객과 함께 웃고 감동의 눈물을 흘린다"
+attributes:
+  rarity: 5
+  element: aero
+  weapon: pistols
+  version: "2.3"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,237.5", 공격력: "375", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「하모니의 속주」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「트리오의 카덴차」"
+    values: {쿨타임: "20초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「옛 바람의 음유 전주곡」"
+    text: "공명 스킬 하모니의 속주 발동 시, 샤콘은 적의 공격에 의해 중단되지 않는 효과를 획득하며, 3초간 지속된다. 일반 공격 발동 시, 샤콘의 공격력이 35% 증가되고, 10초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「사계절의 레가토」"
+    text: "공명 해방 트리오의 카덴차 지속 기간 동안, 파티 내 캐릭터의 기류 피해 보너스가 40% 증가된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「별빛이 쏟아지는 즉흥 연주」"
+    text: "일반 공격 4단 발동 시, 1칸의 「음률」을 추가로 획득하며, 공명 스킬 하모니의 속주 사용 횟수가 1회 증가된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「토카타와 푸가」"
+    text: "샤콘이 강공격 네박자 중주로 피해를 입힐 시, 적 방어력의 45%를 무시한다. 샤콘이 공명 해방 피해를 입힐 시, 적의 방어력의 45%를 무시한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「한여름에 바치는 시」"
+    text: "샤콘의 공명 해방 피해 보너스가 40% 증가한다. 샤콘의 공명 해방 트리오의 카덴차의 근처 범위 내에 있는 캐릭터가 받는 피해가 30% 감소된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「끝나지 않은 피날레」"
+    text: "샤콘 혹은 합주의 그림자가 음률의 독주 상태에 진입 시 주변 목표에게 220%의 기류 피해를 입힐 수 있으며, 해당 피해는 공명 해방 피해로 간주된다"
+history:
+  - date: 2025-05-22
+    version: "2.3"
+    kind: release
+    summary: "2.3 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [시와 음악의 심포니]으로 출시 (2025년 5월 22일 10:00 ~ 2025년 6월 11일 11:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2642
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2642
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1407
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/ciaccona.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/xiakong-a429a0dc.webp
+updatedAt: 2026-09-27

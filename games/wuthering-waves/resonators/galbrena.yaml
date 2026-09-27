@@ -1,0 +1,75 @@
+id: galbrena
+title: 갈브레나
+aliases: ["Galbrena"]
+summary: "차가운 인상과 아무렇지 않게 살육을 저지르는 무자비함을 가진, 솔라리스 곳곳을 유랑하며 사냥하는 「데빌 헌터」. 사람들에게는 「영원한 불꽃의 악마」라고도 불린다. 현재 그녀는 검은 해안의 초청 멤버로서 세계 각지에서 활약하고 있다"
+attributes:
+  rarity: 5
+  element: fusion
+  weapon: pistols
+  version: "2.7"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,300", 공격력: "462.5", 방어력: "1,112.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬 피해: "+16%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「경계를 넘는 날개짓」"
+    values: {쿨타임: "5초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「연옥 정화」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「영원히 타오르는 저항의 마음」"
+    text: "갈브레나가 공명 스킬 · 어둠 날개의 비상 발동 시, 「남은 불꽃」 1pt 당 일반 공격 · 데빌 헌터의 처형, 강공격 · 불타는 깃털의 단죄, 공중 공격 · 불지옥 폭풍, 공명 스킬 · 기습 약탈, 회피 반격 · 죄와 벌의 크리티컬 피해를 추가로 2% 증가시키고 최대 80%까지 증가시킬 수 있으며, 악마의 자격 종료 시 제거된다."
+  - id: chain-2
+    section: chain
+    name: "2체인 「연옥과 암흑을 지나는 길」"
+    text: "내부 연소가 제공하는 공격력 보너스가 350% 증가된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「타오른 피로 쓴 사냥의 맹세」"
+    text: "공명 해방 피해 배율이 130% 상승된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「홀로 짊어진 고통의 불길」"
+    text: "파티 내 캐릭터가 에코 어빌리티 발동 시, 파티 내 모든 캐릭터의 전체 속성 피해 보너스를 20% 증가시키고, 20초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「빛이 멀어져도, 재앙에 타들어가도」"
+    text: "공명 스킬 · 임박, 공명 스킬 · 어둠 날개의 비상, 공명 스킬 · 기습 약탈의 피해 배율이 150% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「영원히 불태워 자신을 증명해」"
+    text: "악마의 자격이 불멸의 자격으로 진화하며 불멸의 자격은 악마의 자격의 모든 효과를 이어받는다. 불멸의 자격 기간 동안, 일반 공격 · 데빌 헌터의 처형, 강공격 · 불타는 깃털의 단죄, 공중 공격 · 불지옥 폭풍, 회피 반격 · 죄와 벌의 피해 배율이 60% 상승된다."
+history:
+  - date: 2025-10-09
+    version: "2.7"
+    kind: release
+    summary: "2.7 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [잿더미 속에서]으로 출시 (2.7 버전 업데이트 이후 ~ 2025년 10월 30일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3382
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3382
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/galbrena.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/jiabeilina-138a1465.webp
+updatedAt: 2026-09-27

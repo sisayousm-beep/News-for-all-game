@@ -1,0 +1,27 @@
+id: abyss-surges
+title: "물결의 파동"
+aliases: ["Abyss Surges"]
+summary: "5성 권갑. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/abyss-surges.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21040015_UI.webp
+attributes:
+  rarity: 5
+  type: gauntlets
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "36.45%" }
+  - id: passive
+    section: passive
+    name: "패시브 「죽음의 심연」 (재련 1~5)"
+    text: "공명 효율 12.8~25.6% 증가. 공명 스킬을 사용하여 피해를 입힐 경우, 일반 공격 피해 보너스가 10~20% 증가하며, 8초간 지속된다. 일반 공격을 사용하여 피해를 입힐 경우, 공명 스킬 피해 보너스가 10~20% 증가하며, 8초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21040015
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

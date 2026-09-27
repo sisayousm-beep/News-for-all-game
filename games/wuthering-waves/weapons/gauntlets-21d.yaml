@@ -1,0 +1,27 @@
+id: gauntlets-21d
+title: "21형 권갑 · 아이언 팬텀"
+aliases: ["Gauntlets#21D"]
+summary: "4성 권갑. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/gauntlets-21d.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21040034_UI.webp
+attributes:
+  rarity: 4
+  type: gauntlets
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "387.5", 공명 효율: "38.88%" }
+  - id: passive
+    section: passive
+    name: "패시브 「주도면밀」 (재련 1~5)"
+    text: "회피 또는 돌진 시, 공격력이 8~16% 증가하며, 회피 반격으로 가한 피해가 50~100% 증가하며, 8초간 지속된다. 회피 반격 발동할 경우, 캐릭터의 HP가 5~10% 회복하며, 6초마다 1회 발생할 수 있다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21040034
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

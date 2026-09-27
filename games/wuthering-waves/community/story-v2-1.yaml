@@ -1,0 +1,31 @@
+id: story-v2-1
+title: "2.1 스토리 — 위험한 임무·낚시 이벤트"
+kind: story
+version: "2.1"
+consensus: mixed
+rating:
+  value: 3.27
+  basis: "아카라이브 명조 채널 3.0 버전 설문 스토리 평점(5점) 평균 — 누적 표"
+  parts:
+    - { label: "2.1 위험한 임무 (금고)", value: 3.53 }
+    - { label: "2.1 레귤러 (낚시)", value: 3.02 }
+flow: "위험한 임무(금고)와 낚시 레귤러 이벤트. 페비·브렌트·젠니·아비와 함께하는 섬 모험."
+verdicts:
+  - { label: "분위기", value: "가볍고 유쾌한 모험" }
+  - { label: "전개", value: "급한 마무리·페이싱 지적" }
+  - { label: "캐릭터", value: "브렌트 등장이 갑작스럽다" }
+summary: "국내 평점은 낮은 편(3.28)이다. 해외에서는 유쾌한 모험이라는 호평과 페이싱 문제 지적이 함께 나왔다."
+regions:
+  - region: domestic
+    summary: "채널 설문 금고 3.53, 낚시 3.02로 스토리 평점 하위권."
+  - region: overseas
+    summary: "\"2.1 스토리는 완벽했다\"는 후기도 인기였지만 댓글에서는 페이싱 비판이 이어졌다."
+    positive:
+      - "웃음이 많은 모험, 페비·젠니 상호작용"
+    negative:
+      - "금고 결말이 갑작스럽다"
+      - "브렌트가 늦게 억지로 투입된 느낌"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/161473805", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.0 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1iv56fv/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

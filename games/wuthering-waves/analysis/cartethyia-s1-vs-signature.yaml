@@ -1,0 +1,49 @@
+id: cartethyia-s1-vs-signature
+title: "카르티시아 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+answer: 명전 추천
+results:
+  - "전용 무기 없는 1돌은 명전 딜의 약 87~91%이고, 평균 뽑기도 명전(약 139회)이 1돌(약 167회)보다 적다."
+  - "전용 무기(숙명에 맞서는 관)는 대체 5성 대비 +26%, 1돌은 명함 대비 +14.1%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 2돌(직전 대비 +31%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100.0 }
+    - { label: 1돌, value: 114.09 }
+    - { label: 2돌, value: 149.98 }
+    - { label: 3돌, value: 185.0 }
+    - { label: 4돌, value: 196.4 }
+    - { label: 5돌, value: 196.4 }
+    - { label: 6돌, value: 240.89 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 숙명에 맞서는 관 (명전)", "100%", "139회"]
+    - ["1돌 + 날카로운 봄 (대체 5성)", "약 91%", "167회 + 무기"]
+    - ["1돌 + 예리한 날개깃 (4성)", "약 87%", "167회"]
+    - ["명함 + 날카로운 봄", "약 80%", "83회"]
+    - ["1돌 + 숙명에 맞서는 관", "약 114%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(1타겟, 샤콘 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(숙명에 맞서는 관 100%, 날카로운 봄 79.5%, 예리한 날개깃 76.3%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "샤콘 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/cartethyia, weapons/defiers-thorn, resonators/cartethyia#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/cartethyia
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-27

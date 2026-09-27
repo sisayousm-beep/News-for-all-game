@@ -255,6 +255,19 @@ export const CommunityRecord = RecordBase.extend({
   scope: z.enum(ISSUE_SCOPES).optional(),
   happenedAt: dateString.optional(),
   background: short(150).optional(),
+  /** Story evaluations: the arc in a few sentences, a 0–5 rating with its basis (and per-part scores), 국내/해외 reactions kept apart. */
+  flow: short(300).optional(),
+  rating: z.object({
+    value: z.number().min(0).max(5),
+    basis: short(80),
+    parts: z.array(z.object({ label: short(40), value: z.number().min(0).max(5) })).default([]),
+  }).optional(),
+  regions: z.array(z.object({
+    region: z.enum(['domestic', 'overseas']),
+    summary: short(200),
+    positive: z.array(z.string()).default([]),
+    negative: z.array(z.string()).default([]),
+  })).default([]),
   /**
    * Headline verdicts players look for, shown first (and in the entity page's "한눈에 보기"):
    * e.g. 티어 / 파티 순위 / 전용 무기 의존도 / 추천 돌파. Labels are free per game; each must be backed by the cited sources.

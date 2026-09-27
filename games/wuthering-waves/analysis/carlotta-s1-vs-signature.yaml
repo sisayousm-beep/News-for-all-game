@@ -1,0 +1,49 @@
+id: carlotta-s1-vs-signature
+title: "카를로타 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+answer: 1돌파 추천
+results:
+  - "상시 무기(위상의 파동)만으로도 1돌이 명전 딜의 약 105%라 1돌이 낫다."
+  - "전용 무기(죽음과 춤)는 대체 5성 대비 +5%, 1돌은 명함 대비 +10.4%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 6돌(직전 대비 +27%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100.0 }
+    - { label: 1돌, value: 110.39 }
+    - { label: 2돌, value: 133.36 }
+    - { label: 3돌, value: 167.97 }
+    - { label: 4돌, value: 178.05 }
+    - { label: 5돌, value: 184.04 }
+    - { label: 6돌, value: 233.61 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 죽음과 춤 (명전)", "100%", "139회"]
+    - ["1돌 + 위상의 파동 (대체 5성)", "약 105%", "167회 + 무기"]
+    - ["1돌 + 불멸의 성화 (4성)", "약 84%", "167회"]
+    - ["명함 + 위상의 파동", "약 95%", "83회"]
+    - ["1돌 + 죽음과 춤", "약 110%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(1타겟, 린네·모니에 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(죽음과 춤 100%, 위상의 파동 95.1%, 불멸의 성화 76.2%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "린네·모니에 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/carlotta, weapons/the-last-dance, resonators/carlotta#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/carlotta
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-27

@@ -51,7 +51,7 @@ topics:
     name: "6체인 「I Really Want to Stay At Your House」"
     text: "해킹 대상이 받는 강공격 피해 +40%, 해킹 피해 +60%."
 history:
-  - date: 2026-06-07
+  - date: 2026-06-08
     version: "3.4"
     kind: release
     summary: "3.4 버전 신규 5성 공명자로 출시 (캐릭터 콜라보 튜닝 [달 위를 거니는 꿈])."

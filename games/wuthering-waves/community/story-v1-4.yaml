@@ -1,0 +1,27 @@
+id: story-v1-4
+title: "1.4 스토리 — 스즈메 이벤트"
+kind: story
+version: "1.4"
+consensus: moderate
+rating:
+  value: 4.15
+  basis: "아카라이브 명조 채널 3.0 버전 설문 스토리 평점(5점) — 누적 표"
+  parts:
+    - { label: "1.4 레귤러 (스즈메)", value: 4.15 }
+flow: "레귤러 이벤트 「스즈메」 스토리 중심 버전. 검은 해안의 카멜리아가 새로 등장한다."
+verdicts:
+  - { label: "전개", value: "이벤트 스토리로 호평" }
+  - { label: "캐릭터", value: "\"스토리에 인물이 부족하다\"는 지적(해외)" }
+summary: "이벤트 스토리로는 높은 4.15를 받았다. 해외에서는 1.x 스토리가 방랑자와 1~2명 위주라 등장인물이 부족하다는 글이 공감받았다."
+regions:
+  - region: domestic
+    summary: "채널 설문 4.15로 이벤트 스토리 중 높은 편."
+  - region: overseas
+    summary: "\"1.4 스토리에 더 많은 인물이 필요하다\"는 글이 크게 공감받았다."
+    negative:
+      - "매 버전 방랑자와 신캐 1~2명만 다룬다"
+      - "칼카로·단근 등 기존 인물이 활용되지 않는다"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/161473805", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.0 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1gkzkaw/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

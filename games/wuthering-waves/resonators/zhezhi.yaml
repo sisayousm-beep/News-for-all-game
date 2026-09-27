@@ -1,0 +1,75 @@
+id: zhezhi
+title: 절지
+aliases: ["Zhezhi"]
+summary: "의뢰를 받아 생계를 유지하는 화가이다. 걱정이 많고 예민하며, 표현이 서투르다. 자신의 생각과 느낌을 그림에 오롯이 담아내곤 한다. 그녀의 붓끝을 통해 그려진 만물은 생동감이 넘쳐 마치 그림 밖으로 금방이라도 뛰쳐나올 것만 같다"
+attributes:
+  rarity: 5
+  element: glacio
+  weapon: rectifier
+  version: "1.2"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,250", 공격력: "375", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「무형의 형상화」"
+    values: {쿨타임: "6초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「상상과 현실」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「골법용필(骨法用筆)」"
+    text: "절지가 공명 스킬 궁극 · 천재의 붓놀림을 발동할 시 공명 에너지 15pt가 회복되고, 자신의 크리티컬이 10% 증가되며, 27초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「기운생동(氣韻生動)」"
+    text: "공명 해방 상상과 현실로 재두루미 소환 가능한 수량을 6마리 증가시킨다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「응물상형(應物象形)」"
+    text: "절지가 공명 스킬 무형의 형상화, 공명 스킬 천재의 붓놀림 혹은 공명 스킬 궁극 · 천재의 붓놀림을 발동할 시 공격력이 15% 증가되고, 최대 3스택 중첩이 가능하며, 27초간 지속된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「수류부채(隨類賦彩)」"
+    text: "절지가 공명 해방 상상과 현실을 발동할 시 파티 내 캐릭터의 공격력이 20% 증가되며, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「경영위치(經營位置)」"
+    text: "공명 해방 상상과 현실이 지속되는 동안, 재두루미 3마리를 소환할 때마다 재두루미 1마리를 추가로 소환하여 협동 공격을 가하고 재두루미 피해량의 140%에 해당하는 피해를 입힐 수 있다. 해당 피해는 일반 공격 피해로 적용되고, 재두루미 소환 효과를 발생시키지 않는다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「전이모사(傳移模寫)」"
+    text: "공명 스킬 천재의 붓놀림 혹은 공명 스킬 궁극 · 천재의 붓놀림을 발동할 시 흰두루미 1마리를 추가로 소환하여 공명 스킬 천재의 붓놀림 피해량의 120%에 해당하는 피해를 입힐 수 있으며, 해당 피해는 일반 공격 피해로 적용된다"
+history:
+  - date: 2024-08-15
+    version: "1.2"
+    kind: release
+    summary: "1.2 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [채색의 운율]으로 출시 (1.2 버전 업데이트 이후 ~ 2024년 9월 7일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1172
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1172
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1105
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/zhezhi.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/zhezhi-6698177e.png
+updatedAt: 2026-09-27

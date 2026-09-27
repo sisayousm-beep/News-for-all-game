@@ -1,0 +1,25 @@
+id: bloodpacts-pledge
+title: "혈맹의 약속"
+aliases: ["Bloodpact's Pledge"]
+summary: "5성 직검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+attributes:
+  rarity: 5
+  type: sword
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 공명 효율: "38.88%" }
+  - id: passive
+    section: passive
+    name: "패시브 「화음 공진」 (재련 1~5)"
+    text: "치료 효과 발동 시, 자신의 공명 스킬 피해가 10~26% 증가되고, 6초간 지속된다. 방랑자 · 기류가 공명 스킬 · 허무맹랑 발동 시, 근처 파티 내 등장 캐릭터의 기류 피해가 10~26% 부스트되고, 30초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020046
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

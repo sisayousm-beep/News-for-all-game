@@ -1,0 +1,27 @@
+id: emerald-of-genesis
+title: "천년의 회류"
+aliases: ["Emerald of Genesis"]
+summary: "5성 직검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/emerald-of-genesis.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020015_UI.webp
+attributes:
+  rarity: 5
+  type: sword
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「무한의 소용돌이」 (재련 1~5)"
+    text: "공명 효율 12.8~25.6% 증가. 공명 스킬 발동 시, 공격력이 6~12% 증가하고, 최대 2스택 중첩이 가능하며, 10초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020015
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

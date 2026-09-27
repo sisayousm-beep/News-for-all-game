@@ -1,0 +1,42 @@
+id: lunar-cutter
+title: "상승의 서녘"
+aliases: ["Lunar Cutter"]
+summary: "4성 직검. 1.0 버전 튜닝 공지에서 처음 확인된다(한국어 공지 목록 기준)."
+image: /games/wuthering-waves/img/weapons/lunar-cutter.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020064_UI.webp
+attributes:
+  rarity: 4
+  type: sword
+  version: "1.0"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "30.38%" }
+  - id: passive
+    section: passive
+    name: "패시브 「천시의 끌림」 (재련 1~5)"
+    text: "캐릭터가 등장한 후 6스택의 「맹세」 효과를 얻게 되고, 각 스택은 공격력이 2~4% 증가시키며, 최대 6스택 중첩이 가능하고, 12초마다 1회 발생할 수 있다. 2초마다 이 효과가 1스택 감소하게 되며, 목표를 격파할 시 추가로 6스택의 「맹세」 효과를 얻게 된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 버전 무기 이벤트 튜닝에 4성 픽업으로 처음 등장 (「무기의 울림」 무기 이벤트 튜닝——「꼭두각시의 손」 확률 UP; 2024년 6월 6일 10:00 ~ 2024년 6월 26일 11:59 (서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/849
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 무기 튜닝 공지
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/849
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020064
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

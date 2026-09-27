@@ -1,0 +1,33 @@
+id: story-v3-5
+title: "3.5 스토리 — 몽주 — 4장 1·2막"
+kind: story
+version: "3.5"
+consensus: mixed
+rating:
+  value: 3.89
+  basis: "아카라이브 명조 채널 3.5 버전 설문 스토리 평점(5점)"
+  parts:
+    - { label: "4장 1·2막·에필로그 (몽주·양양)", value: 3.89 }
+flow: "4장 1·2막과 에필로그. 새 지역 몽주(현방)의 첫 이야기로, 양양·현령과 방랑자의 재회를 다룬다."
+verdicts:
+  - { label: "캐릭터", value: "양양·방랑자 서사 호평" }
+  - { label: "논란", value: "노래(C팝) 연출 논란" }
+  - { label: "분량", value: "탐사·사이드 콘텐츠 풍부" }
+summary: "평점은 3.89로 3.x 최저다. 양양과 방랑자의 감정선은 호평이지만 삽입곡 연출 논란이 점수를 끌어내렸다는 의견이 많다."
+regions:
+  - region: domestic
+    summary: "설문 3.89. 점수를 깎은 건 C팝 연출이라는 댓글이 많고, 양양 서사 자체는 좋았다는 후기가 공감받았다."
+    positive:
+      - "양양이 성장하는 감정선"
+      - "3버전 이후 비언어 표현 발전"
+    negative:
+      - "삽입곡(C팝) 연출"
+  - region: overseas
+    summary: "3.5는 탐사·사이드 콘텐츠 분량이 역대급이라는 평가가 많다."
+    positive:
+      - "콘텐츠 볼륨"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/180186371", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.5 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/176747187", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1ux203x/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

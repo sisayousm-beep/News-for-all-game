@@ -1,0 +1,27 @@
+id: rectifier-25
+title: "25형 증폭기 · 울림의 멜로디"
+aliases: ["Rectifier#25"]
+summary: "4성 증폭기. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/rectifier-25.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21050034_UI.webp
+attributes:
+  rarity: 4
+  type: rectifier
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "337.5", 공명 효율: "51.84%" }
+  - id: passive
+    section: passive
+    name: "패시브 「새로운 법칙」 (재련 1~5)"
+    text: "공명 스킬 발동 시, 캐릭터의 HP가 60% 이하일 경우 캐릭터의 HP가 5~10% 회복하며, 8초마다 1회 발생할 수 있다. 캐릭터의 HP가 60% 이상일 경우 공격력이 12~24% 증가하며, 10초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21050034
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

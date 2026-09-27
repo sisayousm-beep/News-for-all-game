@@ -1,0 +1,36 @@
+id: story-v2-5
+title: "2.5 스토리 — 플로로 — 2장 7막"
+kind: story
+version: "2.5"
+consensus: moderate
+rating:
+  value: 4.6
+  basis: "아카라이브 명조 채널 3.0 버전 설문 스토리 평점(5점) — 누적 표"
+  parts:
+    - { label: "2장 7막 (플로로)", value: 4.6 }
+flow: "2장 7막. 플로로와 방랑자가 신념을 두고 정면으로 충돌하는 이야기."
+verdicts:
+  - { label: "작품성", value: "국내외 모두 최상급 평가" }
+  - { label: "캐릭터", value: "방랑자 행동에 대한 호불호" }
+  - { label: "여운", value: "결말의 여운이 크다" }
+summary: "역대 손꼽히는 스토리로 평가된다(4.60). 방랑자가 자기 신념으로 플로로와 대립한 전개는 호불호가 갈렸지만, 그 자체가 좋은 각본이라는 평이 우세하다."
+regions:
+  - region: domestic
+    summary: "설문 4.60. 현직 작가가 \"질투가 날 만큼 잘 쓴 이야기\"라고 쓴 후기가 크게 공감받았다."
+    positive:
+      - "각본·필력"
+    negative:
+      - "방랑자 행동에 대한 불호"
+  - region: overseas
+    summary: "\"메인 스토리에서 쿠로가 불타고 있다\"는 호평 글이 인기였고, 방랑자가 결함 있는 인물로 그려진 점을 두고 논쟁이 있었다."
+    positive:
+      - "2.0 이후 최고 수준"
+      - "방랑자에게 인물로서의 결함을 줬다"
+    negative:
+      - "주인공을 싫어하게 만든다는 반발"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/161473805", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.0 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/143428926", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1m8h9ww/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1m9717f/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

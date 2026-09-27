@@ -34,6 +34,11 @@ history:
         collectedAt: 2026-09-27
         verifiedAt: 2026-09-27
 sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5428
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
   - source: encore-db
     url: https://api.encore.moe/ko/weapon/21010076
     collectedAt: 2026-09-27

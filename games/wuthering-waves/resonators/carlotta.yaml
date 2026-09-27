@@ -1,0 +1,75 @@
+id: carlotta
+title: 카를로타
+aliases: ["Carlotta"]
+summary: "몬텔리 가문의 둘째 아가씨이자, 규칙에 얽매이지 않는 예술품 투자자이다. 겉으로는 다양한 사교활동이나 거래를 진행하지만, 사실 가문을 위해 외부에 알려져선 안되는 「문제」들을 암암리에 처리하는 역할을 맡고 있다. 「보석」의 만개는 생명의 끝을 의미한다. 그녀는 자신의 이름으로 현실을 새로운 방향으로 재구성한다"
+attributes:
+  rarity: 5
+  element: glacio
+  weapon: pistols
+  version: "2.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "12,450", 공격력: "462.5", 방어력: "1,197.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「폭력 미학」"
+    values: {쿨타임: "14초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「새로운 트렌드」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「아름다움 또는 죽음, 반짝임 뒤의 시듦」"
+    text: "카를로타가 해리 효과를 보유한 목표에게 피해를 입힐 시, 해당 피해의 크리티컬이 12.5% 증가된다. 공명 스킬 눈부시는 현란함을 발동하여 넘쳐나는 불빛 상태의 목표에 명중 시, 추가로 「영민」 30pt를 회복한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「고독과 죽음, 몰락은 곧 새로운 탄생」"
+    text: "공명 해방 피할 수 없는 죽음의 피해 배율이 126% 상승된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「스텝 업, 앞으로, 우아한 진행 방식」"
+    text: "반주 스킬 만화경의 불꽃: 반주 스킬 연설 발동 후, 추가로 공격 1회를 가하여, 카를로타 공격력의 1032.18%에 해당하는 응결 피해를 입힌다. 공명 스킬 폭력 미학, 공명 스킬 눈부시는 현란함의 피해 배율이 93% 상승된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「과거의 비로, 찬송의 술을 위하여」"
+    text: "카를로타가 강공격, 강공격 제한 전략, 강공격 마지막 길 발동 시, 파티 내 캐릭터의 공명 스킬 피해 보너스가 25% 증가되고, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「어젯 밤, 오늘 그리고 지난 과거를 위하여」"
+    text: "강공격 마지막 길의 피해 배율이 47% 상승된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「종막 앞에 선 예전 그대로의 나」"
+    text: "공명 해방 죽음의 징조의 사격은 더 큰 피해를 입힐 수 있고, 생성되는 결정체 수량이 두 배로 늘어나며, 두 효과는 공명 해방 죽음의 징조의 피해 배율을 186.6% 상승시킨다. 공명 해방 죽음의 징조의 사격으로 목표 명중 시, 목표에게 넘쳐나는 반짝임 효과를 추가한다. 해당 효과가 지속되는 동안 어떤 행동도 취할 수 없고, 피해를 받거나 1.5초의 지속 시간이 지나면 해당 효과가 사라진다"
+history:
+  - date: 2025-01-02
+    version: "2.0"
+    kind: release
+    summary: "2.0 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [또 다른 불협화음]으로 출시 (2.0 버전 업데이트 이후 ~ 2025년 1월 23일 10:59)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1938
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/1938
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1107
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/carlotta.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/kelaita-13713817.png
+updatedAt: 2026-09-27

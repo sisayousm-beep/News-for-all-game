@@ -1,0 +1,27 @@
+id: pistols-26
+title: "26형 권총 · 맹렬한 돌격"
+aliases: ["Pistols#26"]
+summary: "4성 권총. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/pistols-26.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21030034_UI.webp
+attributes:
+  rarity: 4
+  type: pistols
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "36.45%" }
+  - id: passive
+    section: passive
+    name: "패시브 「끝없는 탐구」 (재련 1~5)"
+    text: "캐릭터가 피해를 입지 않은 경우, 5초마다 공격력이 6~12% 증가하며, 해당 효과는 최대 2스택 중첩이 가능하고, 8초간 지속된다. 피해를 입었을 경우, 1스택의 효과를 소모하고 캐릭터의 HP가 5~10% 회복한다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21030034
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

@@ -1,0 +1,70 @@
+id: yuanwu
+title: 연무
+aliases: ["Yuanwu"]
+summary: "권법 도장 관장, 연무. 뇌황권과 양생술(건강관리법)에 능통하고, 처세가 매우 온화하여 이웃들에게 인기가 많다."
+attributes:
+  rarity: 4
+  element: electro
+  weapon: gauntlets
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "8,525", 공격력: "225", 방어력: "1,637.8", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {전도 피해 보너스: "+12%", 방어력: "+15.2%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「진동의 일격」"
+    values: {쿨타임: "3초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「적토중명」"
+    values: {공명 에너지: "125", 쿨타임: "20초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「차 한잔의 여유」"
+    text: "연무가 공명 회로 뇌전의 집행 상태일 시, 자신의 일반 공격 공격 속도가 20%, 강공격 공격 속도가 20% 증가한다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「정직한 마음」"
+    text: "변주 스킬 천둥의 울림 발동 시, 연무는 15pt의 공명 에너지를 추가로 회복한다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「정의의 화신」"
+    text: "공명 스킬 뇌전의 쐐기의 협동 공격이 목표에 명중 시, 연무 방어력 20%를 기반으로 피해가 추가로 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「극기의 권법」"
+    text: "공명 해방 적토중명 발동 시, 파티 내 파티원은 자체 연무 방어력 200%의 실드를 획득하며, 10초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「절대적인 보호」"
+    text: "공명 스킬 천둥의 쐐기가 있을 시, 연무의 공명 해방 피해 보너스가 50% 증가한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「평화를 위하여」"
+    text: "공명 스킬 천둥의 쐐기의 범위 내에 있는 전체 파티원의 방어력이 32% 증가하며 3초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 4성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1303
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1303
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/yuanwu.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/yuanwu-20ae8447.png
+updatedAt: 2026-09-27

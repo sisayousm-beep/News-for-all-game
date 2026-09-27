@@ -1,0 +1,75 @@
+id: cartethyia
+title: 카르티시아
+aliases: ["Cartethyia"]
+summary: "리나시타를 여행하는 떠돌이 기사 카르티시아. 그녀는 과거 성녀였고, 신의 그릇이자 바람과 조수를 지배한 자였다. 한때 플뢰르 드 리스로 불리기도 했지만, 지금은 그저 자유로운 떠돌이 기사일 뿐이다"
+attributes:
+  rarity: 5
+  element: aero
+  weapon: sword
+  version: "2.4"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "14,800", 공격력: "312.5", 방어력: "611.1", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", HP: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「사람의 이름으로 바치는 검」"
+    values: {쿨타임: "14초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「기사의 소원대로」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「운명을 짊어진 면류관」"
+    text: "「카르티시아」, 「플뢰르 드 리스」가 자신의 스킬로 직접 입힌 피해로 「풍식 효과」 상태가 추가된 목표를 격파하면 「전심전력」 상태를 획득하고 10초간 지속된다. 「전심전력」 상태에서 격파한 목표에게 추가된 「풍식 효과」의 현재 최대 스택을 유지하고, 자신의 다음 스킬로 직접 입힌 피해는 즉시 명중한 목표에게 해당 스택을 추가하며, 현재 목표의 「풍식 효과」 스택 최대치까지 중첩시킬 수 있…"
+  - id: chain-2
+    section: chain
+    name: "2체인 「폭풍에 의해 부서진 칼날」"
+    text: "공명 해방 · 기사의 소원대로 발동 후, 자신을 중심으로 일정 범위 내에 있는 목표의 「풍식 효과」의 스택 최대치를 3스택 증가시킨다. 자신의 스킬이 다음번에 직접 피해를 입힌 후, 자신을 중심으로 일정 범위 내의 목표에게 3스택의 「풍식 효과」를 추가하고, 즉시 목표가 보유한 「풍식 효과」 피해를 1회 발생시키며, 해당 피해 발생은 「풍식 효과」의 스택을 소모하지 않는다."
+  - id: chain-3
+    section: chain
+    name: "3체인 「스스로 갇힌 높은 탑」"
+    text: "「플뢰르 드 리스」의 일반 공격 · 플뢰르 드 리스 5단, 공중 공격 · 플뢰르 드 리스 2단, 강화된 강공격 · 플뢰르 드 리스, 공명 스킬 · 바람을 빌려서 돌파는 명중한 목표에게 2스택의 「풍식 효과」를 추가한다. 공명 해방 · 폭풍의 울음을 가르는 칼날의 피해 배율이 100% 상승된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「구원을 위한 희생」"
+    text: "파티 내 캐릭터가 목표에게 「암흑 효과」, 「불꽃 효과」, 「광학 효과」, 「전자 효과」, 「서리 효과」, 「풍식 효과」 추가 후, 파티 내 모든 캐릭터의 전체 속성 피해 보너스를 20% 증가시키고 20초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「바람에서 피어난 희망」"
+    text: "「카르티시아」 혹은 「플뢰르 드 리스」가 치명적인 피해를 받을 시, 「카르티시아」 혹은 「플뢰르 드 리스」는 해당 피해로 인해 의식을 잃지 않고, 「카르티시아」의 HP 최대치의 20%에 해당하는 실드를 획득하며 10초간 지속된다. 해당 효과는 10분마다 1회 발생할 수 있다. 공명 해방 · 기사의 소원대로 발동에 소모되는 HP가 HP 최대치의 25%로 감소된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「자유를 위한 멈추지 않는 싸움」"
+    text: "공명 해방 · 폭풍의 울음을 가르는 칼날을 발동하여, 명중한 목표에게 「풍식 효과」를 스택 최대치까지 추가하고 공명 해방 · 폭풍의 울음을 가르는 칼날을 발동하여 목표 명중 후 더 이상 목표가 보유한 「풍식 효과」를 제거하지 않는다."
+history:
+  - date: 2025-06-12
+    version: "2.4"
+    kind: release
+    summary: "2.4 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [폭풍이 휩쓴 후에도 계속되는 춤]으로 출시 (2.4 버전 업데이트 이후 ~ 2025년 7월 3일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2768
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/2768
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1409
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/cartethyia.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/katixiya-69530af5.webp
+updatedAt: 2026-09-27

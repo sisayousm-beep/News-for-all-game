@@ -1,0 +1,27 @@
+id: radiance-cleaver
+title: "에너지 절단"
+aliases: ["Radiance Cleaver"]
+summary: "5성 대검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/radiance-cleaver.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21010045_UI.webp
+attributes:
+  rarity: 5
+  type: broadblade
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬 피해: "48.60%" }
+  - id: passive
+    section: passive
+    name: "패시브 「개척자」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 「조화 밀집 · 간섭」 상태에 있는 목표에게 피해를 입힌 후, 공명 해방 피해 보너스가 24~36% 증가되고 3초간 지속된다. 중복 발생 시 지속 시간이 리셋된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21010045
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

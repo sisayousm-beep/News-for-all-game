@@ -1,0 +1,24 @@
+id: jinhsi-evaluation
+title: "금희 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T3 (역경의 탑 기준)" }
+  - { label: "전용 무기 의존도", value: "중간 — 대체 5성(쿠모키리(曇斬))으로 약 88%" }
+  - { label: "돌파 가치", value: "1돌 +16%, 6돌 +103%" }
+  - { label: "계산 기준 파티", value: "금희 + 절지 + 벨리나" }
+summary: "Prydwen 역경의 탑 티어 기준 현 메타에서는 뒤처진 편(T3)로 평가된다. 전용 무기 의존도는 중간, 1돌 가치는 크다."
+subjects: [resonators/jinhsi, weapons/ages-of-harvest]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/jinhsi
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

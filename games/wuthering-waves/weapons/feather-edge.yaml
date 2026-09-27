@@ -1,0 +1,27 @@
+id: feather-edge
+title: "예리한 날개깃"
+aliases: ["Feather Edge"]
+summary: "4성 직검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/feather-edge.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020104_UI.webp
+attributes:
+  rarity: 4
+  type: sword
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "412.5", 크리티컬: "20.25%" }
+  - id: passive
+    section: passive
+    name: "패시브 「흑조(黑潮) 사냥의 맹세」 (재련 1~5)"
+    text: "공명 해방 발동 시, 공격력이 7.2~23% 증가되고 공명 해방 피해 보너스가 10.8~34.5% 증가되며 15초간 지속된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020104
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

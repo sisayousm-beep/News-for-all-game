@@ -1,0 +1,70 @@
+id: sanhua
+title: 산화
+aliases: ["Sanhua"]
+summary: "산화는 금주의 변정에서 영윤의 호위 직을 맡고 있다. 과거에 그녀는 재앙을 불러오고 세상 만물을 꿰뚫는 아수라였지만, 현재는 무자비한 눈보라를 수호의 힘으로 전환시켜 과묵한 수호자가 되었다"
+attributes:
+  rarity: 4
+  element: glacio
+  weapon: sword
+  version: "1.0"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,062.5", 공격력: "275", 방어력: "941.1", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {응결 피해 보너스: "+12%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「만년적설」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「죽음의 눈보라」"
+    values: {쿨타임: "16초", 공명 에너지: "100"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「고독한 자」"
+    text: "일반 공격 제5단계 발동 후, 산화 자신의 크리티컬이 15% 증가하며, 10초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「순결한 눈 결정」"
+    text: "강공격 폭발로 소모되는 스태미나가 10pt 감소한다. 공명 스킬 만년적설 발동 시, 산화의 경직 저항력이 증가하며, 5초간 지속된다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「통찰의 눈동자」"
+    text: "산화는 HP가 70%보다 낮은 목표 공격 시, 가하는 피해가 35% 증가한다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「오온의 수행」"
+    text: "공명 해방 죽음의 눈보라 발동 시, 공명 에너지 10pt를 회복한다. 5초내의 다음 강공격 폭발의 피해가 120% 증가한다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「끊이지 않는 변화」"
+    text: "공명 회로 얼음 파편의 크리티컬 피해가 100% 증가된다. 폭발에 성공하지 못했더라도 「얼음 가시」, 「얼음 기둥」, 「얼음산」은 사라질 때 바로 폭발한다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「새벽의 햇빛」"
+    text: "「얼음 기둥」 또는 「얼음산」을 폭발시킨 후, 파티 내 캐릭터의 공격력이 10% 증가되고, 최대 2스택 중첩이 가능하며, 20초간 지속된다"
+history:
+  - date: null
+    version: "1.0"
+    kind: release
+    summary: "1.0 출시 때부터 등장한 4성 공명자. 출시일 게시글은 한국어 공식 공지 목록에 없다."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/character/1102
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 능력치·스킬·공명 체인 한국어 인게임 문구
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1102
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/sanhua.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/sanhua-db5af96c.png
+updatedAt: 2026-09-27

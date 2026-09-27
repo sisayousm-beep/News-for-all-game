@@ -1,0 +1,49 @@
+id: augusta-s1-vs-signature
+title: "아우구스타 1돌 vs 명전(명함+전용 무기) — 뭐가 더 좋나"
+kind: breakpoint
+version: "3.6"
+answer: 명전 추천
+results:
+  - "다른 한정 무기(청룡의 천장)가 있으면 1돌(109%)이 더 세지만, 상시·4성 무기로는 약 88~92%라 명전이 낫다."
+  - "전용 무기(천둥벼락을 다스리는 권능)는 대체 5성 대비 +7%, 1돌은 명함 대비 +17.0%."
+  - "돌파 중 상승 폭이 가장 큰 단계는 6돌(직전 대비 +36%)."
+chart:
+  title: "돌파 단계별 딜 (명함 = 기준, 전용 무기 장착)"
+  delta: true
+  points:
+    - { label: 명함, value: 100.0 }
+    - { label: 1돌, value: 116.99 }
+    - { label: 2돌, value: 146.35 }
+    - { label: 3돌, value: 172.27 }
+    - { label: 4돌, value: 182.04 }
+    - { label: 5돌, value: 182.04 }
+    - { label: 6돌, value: 247.31 }
+table:
+  columns: [구성, 명전 대비 딜, 평균 뽑기]
+  rows:
+    - ["명함 + 천둥벼락을 다스리는 권능 (명전)", "100%", "139회"]
+    - ["1돌 + 청룡의 천장 (대체 5성)", "약 109%", "167회 + 무기"]
+    - ["1돌 + 금빛 하늘 (4성)", "약 88%", "167회"]
+    - ["명함 + 청룡의 천장", "약 94%", "83회"]
+    - ["1돌 + 천둥벼락을 다스리는 권능", "약 117%", "222회"]
+  note: 딜 비율은 돌파 계산값 × 무기 계산값의 근사. 뽑기 수는 캐릭터·무기 튜닝 평균 기대값 합계.
+method: >-
+  Prydwen 계산(1타겟, 유노 버프 포함)의 돌파별 딜 비율과 무기별 딜 비율(천둥벼락을 다스리는 권능 100%, 청룡의 천장 93.5%, 금빛 하늘 75.6%)을
+  곱해 조합별 딜을 추정했다(Game Hub 계산). 평균 뽑기는 공식 확률 기준 기대값(analysis/convene-expected-pulls).
+assumptions:
+  - "유노 파티, 1타겟, Prydwen 표준 로테이션·에코 세팅"
+  - 돌파 효과와 무기 효과를 서로 독립으로 보고 곱한 근사치
+  - 대체 무기는 재련 1, 4성은 재련 5 기준
+subjects: [resonators/augusta, weapons/thunderflare-dominion, resonators/augusta#chain-1]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/augusta
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
+    collectedAt: 2026-09-26
+    verifiedAt: 2026-09-26
+    note: "튜닝 확률(평균 뽑기 계산)"
+updatedAt: 2026-09-27

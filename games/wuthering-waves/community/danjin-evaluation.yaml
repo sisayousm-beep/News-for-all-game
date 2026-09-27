@@ -1,0 +1,16 @@
+id: danjin-evaluation
+title: "단근 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T3 (역경의 탑 기준)" }
+summary: "Prydwen 역경의 탑 티어 기준 현 메타에서는 뒤처진 편(T3)로 평가된다."
+subjects: [resonators/danjin]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+updatedAt: 2026-09-27

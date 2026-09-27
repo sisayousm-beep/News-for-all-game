@@ -10,6 +10,7 @@ import { communityKind, consensus, issueScope } from '../i18n/ko';
 import LayerBadge from './LayerBadge.astro';
 import Freshness from './Freshness.astro';
 import SourceList from './SourceList.astro';
+import Stars from './Stars.astro';
 interface Props { game: Game; mod: ModuleConfig; record: CommunityRecord; compact?: boolean; heading?: boolean }
 const { game, mod, record: c, compact, heading } = Astro.props;
 const url = gameHref(game, mod.id, c.id);
@@ -24,7 +25,9 @@ const stale = staleness(game, c);
     {c.happenedAt && <span class="meta num">{formatDate(c.happenedAt, false)}</span>}
   </p>
   {heading ? <h1 class="article-title">{c.title}</h1> : <a class="headline" href={url}>{c.title}</a>}
+  {c.rating && <p class="rating"><Stars value={c.rating.value} /><span class="meta">{c.rating.basis}</span></p>}
   {c.background && <p class="background">{c.background}</p>}
+  {c.flow && <p class="flow"><span class="meta">스토리 흐름</span> {c.flow}</p>}
   {c.verdicts.length > 0 && <dl class="verdicts">{c.verdicts.map((v) => <div><dt>{v.label}</dt><dd>{v.value}</dd></div>)}</dl>}
   <p class="conclusion">{c.summary}</p>
   {c.shift && <p class="shift"><span class="meta">평가 변화</span> 출시 당시 <b>{c.shift.release}</b> → 현재 <b>{c.shift.now}</b><span class="meta"> — {c.shift.reason}</span></p>}
@@ -34,6 +37,21 @@ const stale = staleness(game, c);
     <details class="more-toggle" open={heading}>
       <summary>자세한 의견 보기</summary>
       <div class="more-body">
+        {c.rating && c.rating.parts.length > 1 && (
+          <div class="rating-parts"><h3>세부 별점</h3><ul>{c.rating.parts.map((x) => <li><span>{x.label}</span><Stars value={x.value} small /></li>)}</ul></div>
+        )}
+        {c.regions.length > 0 && (
+          <div class="regions">
+            {c.regions.map((r) => (
+              <div data-region={r.region}>
+                <h3>{r.region === 'domestic' ? '국내 반응' : '해외 반응'}</h3>
+                <p>{r.summary}</p>
+                {r.positive.length > 0 && <ul class="pos">{r.positive.map((x) => <li>{x}</li>)}</ul>}
+                {r.negative.length > 0 && <ul class="neg">{r.negative.map((x) => <li>{x}</li>)}</ul>}
+              </div>
+            ))}
+          </div>
+        )}
         {(c.positive.length > 0 || c.negative.length > 0) && (
           <div class="opinions">
             {c.positive.length > 0 && <div data-tone="pos"><h3>긍정 의견</h3><ul>{c.positive.map((x) => <li>{x}</li>)}</ul></div>}

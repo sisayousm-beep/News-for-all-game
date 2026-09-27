@@ -1,0 +1,24 @@
+id: iuno-evaluation
+title: "유노 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T0 (역경의 탑 기준)" }
+  - { label: "전용 무기 의존도", value: "높음 — 대체 5성(팔방의 천추)으로 약 84%" }
+  - { label: "돌파 가치", value: "1돌 +14%, 6돌 +125%" }
+  - { label: "계산 기준 파티", value: "유노 + 린네 + 샤콘" }
+summary: "Prydwen 역경의 탑 티어 기준 현 메타 최상위(T0)로 평가된다. 전용 무기 의존도는 높음, 1돌 가치는 보통."
+subjects: [resonators/iuno, weapons/moongazers-sigil]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/iuno
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

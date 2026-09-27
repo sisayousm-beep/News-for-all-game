@@ -1,0 +1,24 @@
+id: galbrena-evaluation
+title: "갈브레나 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T1 (역경의 탑 기준)" }
+  - { label: "전용 무기 의존도", value: "중간 — 대체 5성(위상의 파동)으로 약 92%" }
+  - { label: "돌파 가치", value: "1돌 +13%, 6돌 +173%" }
+  - { label: "계산 기준 파티", value: "갈브레나 + 구원 + 파수인" }
+summary: "Prydwen 역경의 탑 티어 기준 메타권(T1)로 평가된다. 전용 무기 의존도는 중간, 1돌 가치는 보통."
+subjects: [resonators/galbrena, weapons/lux-umbra]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/galbrena
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

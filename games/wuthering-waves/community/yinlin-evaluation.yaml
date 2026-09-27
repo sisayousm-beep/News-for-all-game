@@ -1,0 +1,25 @@
+id: yinlin-evaluation
+title: "음림 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.6"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T3 (역경의 탑 기준)" }
+  - { label: "역할", value: "서브 딜러(하이브리드)" }
+  - { label: "전용 무기 의존도", value: "낮음 — 대체 5성(바다의 속삭임)으로 약 97%" }
+  - { label: "돌파 가치", value: "1돌 +3%, 6돌 +77%" }
+  - { label: "계산 기준 파티", value: "음림 + 파수인" }
+summary: "Prydwen 역경의 탑 티어 기준 현 메타에서는 뒤처진 편(T3)로 평가된다. 전용 무기 의존도는 낮음, 1돌 가치는 작다."
+subjects: [resonators/yinlin, weapons/stringmaster]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-26
+    note: "역경의 탑 티어 (2026-09-16 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/yinlin
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "Review·Build·Calculations 탭"
+updatedAt: 2026-09-27

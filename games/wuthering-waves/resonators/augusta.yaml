@@ -1,0 +1,75 @@
+id: augusta
+title: 아우구스타
+aliases: ["Augusta"]
+summary: "일곱 언덕의 현임 장관. 영원히 비추는 태양이자 영원히 휘날리는 깃발이다. 그녀가 왔고, 보았고, 정복하였다. 예리한 칼날을 높이든 그녀는 다음 도전자, 그리고 저항할 수 없는 운명을 기다린다"
+attributes:
+  rarity: 5
+  element: electro
+  weapon: broadblade
+  version: "2.6"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,300", 공격력: "462.5", 방어력: "1,112.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「검날」"
+    values: {쿨타임: "15초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「태양의 정벌」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「검게 탄 흙 속 먼지에 뒤덮혀」"
+    text: "· 「만민의 염원, 영광의 왕관」 각 스택마다 크리티컬 피해를 추가로 15% 증가시킨다. · 「만민의 염원, 영광의 왕관」의 최대 스택이 2스택까지 증가된다. · 아우구스타가 변주 스킬 · 불타는 황금빛 여정 발동 시에도 「만민의 염원, 영광의 왕관」 1스택을 획득할 수 있다."
+  - id: chain-2
+    section: chain
+    name: "2체인 「살육 속에서 먼지를 씻어내」"
+    text: "· 「만민의 염원, 영광의 왕관」은 다음과 같은 추가 효과를 획득한다. 각 스택마다 크리티컬을 20% 증가시킨다. · 아우구스타의 크리티컬이 100%를 초과할 경우, 초과한 크리티컬 1% 당, 아우구스타의 크리티컬 피해를 2% 증가시키고, 최대 100%까지 증가시킬 수 있다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「부패한 세상 속에서 연마된 뼈」"
+    text: "다음 스킬의 피해 배율이 25% 상승된다. · 강공격 · 섬뢰 · 후퇴, 회피 반격 · 섬뢰 · 후퇴, 강공격 · 섬뢰 · 회전 베기, 강공격 · 섬뢰 · 올려치기 · 공명 스킬 · 영원한 불패의 태양 · 습격 · 공명 해방 · 뜨거운 태양의 강림 · 뜨거운 태양, 공명 해방 · 뜨거운 태양의 강림 · 불멸자의 보우"
+  - id: chain-4
+    section: chain
+    name: "4체인 「영광 속에서 나 홀로」"
+    text: "변주 스킬 · 불타는 황금빛 여정 발동 시, 파티 내 캐릭터의 공격력이 20% 증가되고, 30초간 지속된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「성난 조수 속에 우뚝 서서」"
+    text: "고유 스킬 · 영예의 가호로 획득한 실드량이 50% 증가된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「찬란한 빛 속에 새긴 이름」"
+    text: "· 「만민의 염원, 영광의 왕관」의 최대 스택이 4스택까지 증가된다. · 아우구스타의 크리티컬이 150%를 초과할 경우, 초과한 크리티컬 1% 당, 아우구스타의 크리티컬 피해가 2% 증가되고, 최대 50%까지 증가시킬 수 있다. · 아우구스타가 강공격 · 섬뢰 · 회전 베기, 강공격 · 섬뢰 · 올려치기 발동 시, 「만민의 염원, 영광의 왕관」을 2스택 획득할 수 있고, 1초마다"
+history:
+  - date: 2025-08-28
+    version: "2.6"
+    kind: release
+    summary: "2.6 버전 신규 5성 공명자. 캐릭터 이벤트 튜닝 [실추되지 않는 태양관]으로 출시 (2.6 버전 업데이트 이후 ~ 2025년 9월 17일 09:59(서버 시간))."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3144
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 캐릭터 튜닝 공지 — 이벤트 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3144
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 튜닝·출시 공지
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1306
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/augusta.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/augusta-481f1e58.webp
+updatedAt: 2026-09-27

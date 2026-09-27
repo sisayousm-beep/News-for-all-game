@@ -1,0 +1,27 @@
+id: somnoire-anchor
+title: "마음의 닻"
+aliases: ["Somnoire Anchor"]
+summary: "4성 직검. 튜닝 공지에 픽업으로 등장한 적이 없어 출시 버전은 미확인(상시 튜닝·제작·보상 등)."
+image: /games/wuthering-waves/img/weapons/somnoire-anchor.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020017_UI.webp
+attributes:
+  rarity: 4
+  type: sword
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "18.23%" }
+  - id: passive
+    section: passive
+    name: "패시브 「냐앙!」 (재련 1~5)"
+    text: "피해를 입힐 시 1스택 「포악」을 획득하고, 1초마다 1스택을 획득할 수 있다. 「포악」: 1스택마다 자신의 공격력을 2~4% 증가시키고, 3초간 지속되며, 최대 10스택 중첩이 가능하다. 캐릭터 퇴장 시 모든 스택이 제거된다. 「포악」이 10스택 중첩 시, 자신의 크리티컬이 6~12% 증가된다"
+history: []
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020017
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

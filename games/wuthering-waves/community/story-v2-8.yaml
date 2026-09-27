@@ -1,0 +1,31 @@
+id: story-v2-8
+title: "2.8 스토리 — 치사 — 2장 12막·에필로그"
+kind: story
+version: "2.8"
+consensus: mixed
+rating:
+  value: 4.62
+  basis: "아카라이브 명조 채널 3.0 버전 설문 스토리 평점(5점) — 누적 표"
+  parts:
+    - { label: "2장 12막·에필로그 (치사)", value: 4.62 }
+flow: "2장 12막과 에필로그. 치사와 호나미 시를 무대로, 비명 재해가 할퀸 더 넓은 세계가 드러난다."
+verdicts:
+  - { label: "세계관", value: "세계가 넓어졌다는 호평" }
+  - { label: "캐릭터", value: "치사 서사 호불호, 이후 퇴장 논란" }
+  - { label: "로맨스", value: "로맨스 요소에 대한 논쟁" }
+summary: "평점 4.62로 높다. 세계관이 확장됐다는 호평이 많지만, 로맨스 비중과 이후 치사가 스토리에서 빠진 점은 논쟁이 됐다."
+regions:
+  - region: domestic
+    summary: "설문 4.62로 고평가."
+  - region: overseas
+    summary: "\"2.8 퀘스트가 세계를 크게 넓혔다\"는 글이 호평받았고, 이후 \"치사 처우\" 논란 글도 크게 공감받았다."
+    positive:
+      - "세계관 확장, 비명 재해의 규모"
+    negative:
+      - "로맨스 비중"
+      - "배너 이후 캐릭터가 스토리에서 사라진다"
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/161473805", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.0 버전 채널 설문 결과 — 스토리 평점" }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1p29r4o/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1q4kdg6/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27
