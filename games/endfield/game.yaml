@@ -1,0 +1,292 @@
+id: endfield
+name: "명일방주: 엔드필드"
+names:
+  en: "Arknights: Endfield"
+description: 탈로스 II의 오퍼레이터·무기·공업 생산과 픽업·이벤트를 공식 정보, 계산, 커뮤니티 평가로 나눠 확인합니다.
+genre: 3D 실시간 전략 RPG · 공업 자동화
+publisher: HYPERGRYPH · GRYPHLINE
+region: Asia 서버 · 한국어
+locale: ko
+theme:
+  accent: "#82612b"
+  cover: /games/endfield/img/news/cover.webp
+modules:
+  - type: version
+    label: 버전
+    collection: versions
+  - type: database
+    label: 오퍼레이터
+    collection: operators
+    itemLabel: 오퍼레이터
+    fields:
+      - key: rarity
+        label: 등급
+        values:
+          "4": ★4
+          "5": ★5
+          "6": ★6
+        filter: true
+      - key: element
+        label: 속성
+        values:
+          physical: 물리
+          heat: 열기
+          cryo: 냉기
+          electric: 전기
+          nature: 자연
+        filter: true
+      - key: class
+        label: 직업
+        values:
+          striker: 스트라이커
+          guard: 가드
+          defender: 디펜더
+          caster: 캐스터
+          supporter: 서포터
+          vanguard: 뱅가드
+        filter: true
+      - key: weapon
+        label: 무기
+        values:
+          sword: 한손검
+          greatsword: 양손검
+          polearm: 장병기
+          handcannon: 권총
+          arts-unit: 아츠 유닛
+        filter: true
+      - key: version
+        label: 출시 버전
+    sections:
+      - key: stats
+        label: 기본 능력치
+      - key: skills
+        label: 스킬 요약
+      - key: talents
+        label: 재능·기지
+      - key: potential
+        label: 잠재능력
+      - key: acquisition
+        label: 획득 방법
+    glance:
+      - 티어
+      - 역할
+      - 전용 무기 의존도
+      - 파티 의존도
+      - 조작 난이도
+      - analysis:stat=잠재능력 수치
+  - type: database
+    label: 무기
+    collection: weapons
+    itemLabel: 무기
+    fields:
+      - key: rarity
+        label: 등급
+        values:
+          "4": ★4
+          "5": ★5
+          "6": ★6
+        filter: true
+      - key: type
+        label: 종류
+        values:
+          sword: 한손검
+          greatsword: 양손검
+          polearm: 장병기
+          handcannon: 권총
+          arts-unit: 아츠 유닛
+        filter: true
+      - key: acquisition
+        label: 획득 경로
+      - key: version
+        label: 출시 버전
+    sections:
+      - key: stats
+        label: 능력치
+      - key: passive
+        label: 무기 효과
+      - key: acquisition
+        label: 획득 방법
+    imageFit: contain
+  - type: database
+    label: 장비
+    collection: gear
+    itemLabel: 장비 세트
+    fields:
+      - key: category
+        label: 구분
+      - key: version
+        label: 출시 버전
+    sections:
+      - key: set
+        label: 세트 정보
+    imageFit: contain
+  - type: database
+    label: 공업·생산
+    collection: industry
+    itemLabel: 공업 시스템
+    fields:
+      - key: category
+        label: 분류
+        values:
+          construction: 건설
+          power: 전력
+          production: 생산
+          logistics: 관리·물류
+        filter: true
+      - key: region
+        label: 적용 지역
+    sections:
+      - key: operation
+        label: 사용·작동 조건
+      - key: constraints
+        label: 제한·주의 사항
+    glance:
+      - analysis:farming=생산 계획
+  - type: schedule
+    label: 이벤트·픽업
+    collection: events
+  - type: codes
+    label: 리딤 코드
+    collection: codes
+  - type: news
+    label: 뉴스·공지
+    collection: news
+  - type: analysis
+    label: 계산·통계
+    collection: analysis
+  - type: community
+    label: 커뮤니티
+    collection: community
+sources:
+  - id: gryphline
+    name: 엔드필드 한국 공식 홈페이지
+    type: OFFICIAL
+    url: https://endfield.gryphline.com/ko-kr
+    domains:
+      - endfield.gryphline.com/ko-kr
+    note: Asia 서버 시간은 UTC+8. 한국어 페이지라도 일정의 서버 시간을 KST로 간주하지 않는다.
+  - id: official-x
+    name: 엔드필드 한국 공식 X
+    type: OFFICIAL
+    url: https://x.com/AKEndfieldKR
+    domains:
+      - x.com/AKEndfieldKR
+  - id: prydwen
+    name: Prydwen 엔드필드 공략·계산
+    type: GUIDE
+    url: https://www.prydwen.gg/arknights-endfield/
+    domains:
+      - prydwen.gg/arknights-endfield
+    note: 티어·투자 평가는 커뮤니티에, 수치 계산은 조건을 확인한 뒤 analysis에만. GUIDE를 DATABASE로 바꾸지 않는다.
+  - id: creator-syrol
+    name: 시롤 엔드필드 공략 (게임톡)
+    type: GUIDE
+    url: https://v.daum.net/v/20260903101152213
+    domains:
+      - v.daum.net/v/20260903101152213
+    note: 국내 크리에이터의 체험·평가. 공식 사실과 분리.
+  - id: reddit
+    name: Reddit 엔드필드
+    type: COMMUNITY
+    url: https://www.reddit.com/r/Endfield/
+    domains:
+      - reddit.com/r/Endfield
+      - reddit.com/r/ArknightsEndfield
+  - id: arca
+    name: 아카라이브 엔드필드 채널
+    type: COMMUNITY
+    url: https://arca.live/b/endfield
+    domains:
+      - arca.live/b/endfield
+    note: 업데이트 조사 후보. 이번 초기 데이터의 검증 근거로 사용하지 않음.
+  - id: warfarin
+    name: 와파린 위키
+    type: WIKI
+    url: https://warfarin.wiki/kr
+    domains:
+      - warfarin.wiki/kr
+    note: 비공식 게임 데이터 위키. 공식 공지와 구분하고 데이터 버전을 확인합니다.
+updates:
+  - id: endfield-versions
+    collection: versions
+    sources:
+      - gryphline
+      - official-x
+    frequency: patch
+    instructions: 한국 공식 버전 공지의 점검 시작/후속 버전 점검 시작을 기록. 버전 숫자는 공식 메타데이터와 대조. 명조의 게시일+1일 관행을 적용하지 않는다. 후속
+      점검일 미확인이면 end:null.
+  - id: endfield-operators
+    collection: operators
+    sources:
+      - gryphline
+      - prydwen
+    frequency: patch
+    instructions: 등급·속성·직업·무기·스킬·재능·잠재능력 1~5를 원문과 대조해 짧게 요약. 새 캐릭터를 우선한 뒤 전원으로 확장. 최초 출시와 복각을 구분해
+      history 추가. GUIDE만으로 확인한 키트는 certainty:reported. 공식 초상화를 내려받고 imageFrom 기록. 명일방주 본편의 정예화·모듈·직업
+      정보를 섞지 않는다.
+  - id: endfield-weapons
+    collection: weapons
+    sources:
+      - gryphline
+      - prydwen
+    frequency: patch
+    instructions: 아츠 유닛/한손검/양손검/권총/장병기를 구분. 최대 레벨 수치·기질·돌파 효과는 원문을 대조한 값만 기록. 신규 무기고 신청과 재구축 신청의 누적/천장
+      이월을 구분. 1회 신청=무기 10개이며 오퍼레이터 1회 헤드헌팅과 혼동 금지.
+  - id: endfield-gear
+    collection: gear
+    sources:
+      - gryphline
+      - prydwen
+    frequency: patch
+    instructions: 세트 효과·부품·레벨·제작 재료를 직접 확인한 범위만 기록. 캐릭터 추천 장비 평가는 공식 필드에 섞지 않고 community로.
+  - id: endfield-industry
+    collection: industry
+    sources:
+      - gryphline
+      - prydwen
+    frequency: patch
+    instructions: 시설/전력/물류/생산 조합식을 database topics로 추가. 입력·출력·주기·전력·지역·해제 조건을 확인하지 못하면 추정하지 않는다. 시간당
+      생산량과 병목 분석은 analysis에서 조건과 식을 제시. 베타 데이터와 현재 데이터를 구분.
+  - id: endfield-events
+    collection: events
+    sources:
+      - gryphline
+      - official-x
+    frequency: 1d
+    instructions: Asia 서버 기준으로 작성. 서버 시간은 +08:00, KST 원문은 +09:00. 업데이트 후는 공지의 예정 종료 시각과 startNote를 함께
+      기록. 공장 지원품 제출 종료와 교환소 종료는 별도 레코드로. 종료 미공개는 end:null 및 endNote. 이벤트 보상과 상시 임무 보상을 이중 합산하지 않는다.
+  - id: endfield-codes
+    collection: codes
+    sources:
+      - gryphline
+      - official-x
+    frequency: 1d
+    instructions: 공식 홈페이지/X에서 코드·보상·사용 조건·만료 시각을 직접 확인한 경우만 추가. 확인한 활성 코드가 없으면 빈 컬렉션 유지. 오래된 코드를 활성 코드처럼
+      재등록하지 않는다.
+  - id: endfield-news
+    collection: news
+    sources:
+      - gryphline
+      - official-x
+    frequency: 12h
+    instructions: 한국 공식 공지를 원문 열람하고 패치/확률/이벤트/점검을 요약. 게시 시각은 공식 displayTime으로 확인. 추측한 공지 날짜 금지. 기사 이미지 내려받기.
+  - id: endfield-analysis
+    collection: analysis
+    sources:
+      - gryphline
+      - prydwen
+    frequency: patch
+    instructions: 이용자 질문(첫 픽업 확보, 잠재능력 vs 전무, 무료 재화, 공업 병목)에 답한다. assumptions/method 필수. 긴급 모집은 천장/누적
+      횟수에서 제외. 헤드헌팅 80회 천장과 120회 최초 픽업 보장, 재구축 동일 이름 이월, 무기고 신청 단위를 분리. DPS 그래프는 팀·장비·스킬·적·회전 조건이
+      확보될 때만. 부분 재화 합계를 버전 총량으로 부르지 않는다.
+  - id: endfield-community
+    collection: community
+    sources:
+      - reddit
+      - arca
+      - prydwen
+      - creator-syrol
+    frequency: 7d
+    instructions: 국내·해외 실제 본문/댓글 및 전문 공략을 함께 확인. 대상 캐릭터는 subjects로 연결하고 evaluation에는 티어 기준 콘텐츠·파티 의존도·전무
+      의존도·조작 난이도를 구분. 신규/복각을 출시 평가로 오인하지 않는다. 스토리 별점은 실제 설문만. 최근 이슈/팁은 독립 탭, 캐릭터 평가는 상세에. 한 출처만 본
+      상태에서는 전체 여론처럼 작성하지 않는다.

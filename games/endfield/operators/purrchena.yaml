@@ -1,0 +1,105 @@
+id: purrchena
+updatedAt: 2026-09-27
+title: 푸치나
+aliases:
+  - Purrchena
+version: "1.5"
+certainty: reported
+summary: 이벤트로 본체와 증표 5개를 얻는 5성 디펜더. 방어·회복과 자연 부착을 제공합니다.
+attributes:
+  rarity: 5
+  element: physical
+  class: defender
+  weapon: sword
+  version: "1.5"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90
+    values:
+      힘: 168
+      민첩: 93
+      지능: 89
+      의지: 113
+  - id: battle
+    section: skills
+    name: 배틀 스킬
+    text: 방패로 공격을 막아 SP를 반환하고 후속 공격으로 자연 부착을 적용합니다.
+    values:
+      SP: 100
+  - id: combo
+    section: skills
+    name: 연계 스킬
+    text: 조작 캐릭터 피격 시 발동. 선물 상자로 회복·모으기·폭발 중 무작위 효과를 냅니다.
+    values:
+      쿨타임(초): 22
+  - id: ultimate
+    section: skills
+    name: 궁극기
+    text: 선물 상자 3개를 열고 무작위 효과를 냅니다.
+    values:
+      필요 에너지: 100
+  - id: base
+    section: talents
+    name: 기지 재능
+    text: 응접실 단서 지원·제조실 오퍼레이터 경험치 재료 생산 지원.
+    values:
+      경험치 재료 효율: 20~30%
+  - id: p1
+    section: potential
+    name: 1잠재
+    text: 궁극기의 특별 선물 기본 출현 확률 강화.
+    values:
+      원래 확률 대비: 1.5배
+  - id: p2
+    section: potential
+    name: 2잠재
+    text: 방어력·의지 증가.
+    values:
+      방어력: 20
+      의지: 20
+  - id: p3
+    section: potential
+    name: 3잠재
+    text: 연계 폭탄 피해·회복량·모으기 범위 강화.
+    values:
+      각 증가: 20%
+  - id: p4
+    section: potential
+    name: 4잠재
+    text: 궁극기 요구 에너지가 감소합니다.
+    values:
+      에너지 감소: 15%
+  - id: p5
+    section: potential
+    name: 5잠재
+    text: 특별 선물의 피해·아츠 취약 효과 강화.
+    values:
+      원래 효과 대비: 1.2배
+  - id: free
+    section: acquisition
+    name: 이벤트 획득
+    text: 우리의 거대한 필라인이 왔다!에서 본체와 잠재능력용 증표를 획득합니다.
+    values:
+      본체: 1
+      증표: 5
+history:
+  - date: 2026-09-24T12:00:00+08:00
+    version: "1.5"
+    kind: release
+    summary: 증정 이벤트로 획득 가능.
+    sources:
+      - source: gryphline
+        url: https://endfield.gryphline.com/ko-kr/news/5208
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: prydwen
+    url: https://www.prydwen.gg/arknights-endfield/characters/purrchena
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 인게임 문구를 정리한 공략. 한국어 공식 스킬명·수치의 직접 대조는 미완료.

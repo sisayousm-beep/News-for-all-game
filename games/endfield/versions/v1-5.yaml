@@ -1,0 +1,22 @@
+id: v1-5
+updatedAt: 2026-09-27
+title: 1.5 · 눈꽃 속에 피어난 고요한 꿈
+version: "1.5"
+start: 2026-09-02T06:00:00+08:00
+end: null
+summary: 티프로스·푸치나와 신규 지역이 추가되고, 이본 재구축 헤드헌팅과 통합 생산 이벤트가 진행됩니다.
+highlights:
+  - 티프로스·푸치나 추가
+  - 눈 덮인 소나무 숲·수명 개방
+  - 이본 재구축 헤드헌팅
+  - 공업 연속 배치·육성 확인 추가
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 홈페이지 버전 PV 메타데이터 name: 1.5版本PV로 버전 번호 대조."

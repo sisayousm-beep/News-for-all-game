@@ -1,0 +1,53 @@
+id: typhoeus-evaluation
+updatedAt: 2026-09-27
+version: "1.5"
+title: 티프로스 — 지속딜과 파티 구성 평가
+kind: evaluation
+certainty: reported
+consensus: moderate
+subjects:
+  - operators/typhoeus
+summary: 국내 시롤과 해외 Prydwen은 자연 폭발을 지원하는 파티 구성을 중시합니다. 지속딜은 강점으로, 짧은 폭딜 구간과 투사체 손실은 약점으로 평가합니다.
+verdicts:
+  - label: 티어
+    value: Prydwen T0.5 · 그림자 이정표 기준
+  - label: 역할
+    value: 자연 속성 지속딜 · 두 대상 상대 강점
+  - label: 전용 무기 의존도
+    value: 고난의 끝 대안 가능 · 피해 차이는 존재
+  - label: 파티 의존도
+    value: 높음 · 자연 부착·폭발 지원이 중요
+  - label: 조작 난이도
+    value: 계시·화살 관리와 로테이션 숙련 필요
+regions:
+  - region: domestic
+    summary: 시롤 가이드는 아르케인·리노와의 조합 및 전용 무기의 성능을 높게 평가합니다.
+    positive:
+      - 자연 폭발을 활용한 주력 딜러
+    negative:
+      - 지원 조합을 갖추는 부담
+  - region: overseas
+    summary: Prydwen은 지속딜과 생존을 장점으로 평가하고, Reddit 분석은 여러 대체 조합을 제시합니다.
+    positive:
+      - 지속 공격·다중 대상 적성
+    negative:
+      - 짧은 공격 기회·움직이는 적에서는 손실 가능
+positive:
+  - 공중 공격을 이어 가는 지속딜 구조
+  - 대체 무기와 여러 파티 조합을 검토할 수 있음
+negative:
+  - 지원 구성과 적 패턴에 따라 성능 차이
+  - 전체 커뮤니티 투표가 아닌 제한된 공략·스레드의 요약
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/arknights-endfield/characters/typhoeus
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: creator-syrol
+    url: https://v.daum.net/v/20260903101152213
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: reddit
+    url: https://www.reddit.com/r/Endfield/comments/1w5aavt/typhoeus_analysis_and_teams_update/
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27

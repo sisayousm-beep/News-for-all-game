@@ -1,0 +1,25 @@
+id: dessert-moment
+updatedAt: 2026-09-27
+title: 간식 시간
+aliases:
+  - Dessert Moment
+version: "1.5"
+summary: 우리의 거대한 필라인이 왔다!에서 획득하는 5성 무기.
+attributes:
+  rarity: 5
+  type: sword
+  acquisition: 우리의 거대한 필라인이 왔다!
+  version: "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+topics:
+  - id: free
+    section: acquisition
+    name: 이벤트 지급
+    text: 증정 이벤트의 여러 콘텐츠에 참여해 획득합니다.
+    values:
+      획득 수량: 6
+history: []

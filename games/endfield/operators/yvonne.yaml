@@ -1,0 +1,94 @@
+id: yvonne
+updatedAt: 2026-09-27
+title: 이본
+aliases:
+  - Yvonne
+certainty: reported
+summary: 냉기 부착·강제 동결과 궁극기 강화 사격을 사용하는 6성 스트라이커. 1.5에서 재구축 헤드헌팅 대상입니다.
+attributes:
+  rarity: 6
+  element: cryo
+  class: striker
+  weapon: handcannon
+  version: null
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90
+    values:
+      힘: 82
+      민첩: 128
+      지능: 176
+      의지: 105
+  - id: battle
+    section: skills
+    name: 배틀 스킬
+    text: 냉기·자연 부착을 소비해 동결시키고 궁극기 에너지를 얻습니다.
+    values:
+      SP: 100
+  - id: combo
+    section: skills
+    name: 연계 스킬
+    text: 동결된 적에 강타 시 발동. 주변 적을 모아 냉기 피해와 동결을 적용합니다.
+    values:
+      쿨타임(초): 18
+  - id: ultimate
+    section: skills
+    name: 궁극기
+    text: 조작 캐릭터가 이본으로 전환되며 일반 공격·치명타가 강화됩니다.
+    values:
+      필요 에너지: 220
+  - id: p1
+    section: potential
+    name: 1잠재
+    text: 연계 범위·공격 횟수·에너지 회복 증가.
+    values:
+      범위: 20%
+      추가 공격: 2
+      추가 에너지: 15
+  - id: p2
+    section: potential
+    name: 2잠재
+    text: 지능·치명타 확률 증가.
+    values:
+      지능: 20
+      치명타 확률: 7%
+  - id: p3
+    section: potential
+    name: 3잠재
+    text: 냉기 부착 대상 추가 치명타 피해. 동결 대상에게 효과 배증.
+    values:
+      추가 치명타 피해: 10%
+  - id: p4
+    section: potential
+    name: 4잠재
+    text: 배틀 스킬의 첫 폭발이 단일 대상만 명중하면 SP 반환.
+    values:
+      SP 반환: 10
+  - id: p5
+    section: potential
+    name: 5잠재
+    text: 궁극기 중 공격력·치명타 피해 증가.
+    values:
+      공격력: 10%
+      치명타 피해: 30%
+history:
+  - date: 2026-09-24T12:00:00+08:00
+    version: "1.5"
+    kind: rerun
+    summary: "찬란한 색채 재구축 헤드헌팅 #1. 최초 출시일과 구분."
+    sources:
+      - source: gryphline
+        url: https://endfield.gryphline.com/ko-kr/news/3839
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/3839
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: prydwen
+    url: https://www.prydwen.gg/arknights-endfield/characters/yvonne
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 인게임 문구를 정리한 공략. 한국어 공식 스킬명·수치의 직접 대조는 미완료.

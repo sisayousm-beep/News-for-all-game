@@ -1,0 +1,42 @@
+id: reconstruction-emergency-count
+updatedAt: 2026-09-27
+version: "1.5"
+title: 긴급 모집을 더해 120회면 보장될까?
+kind: gacha
+answer: 긴급 모집은 보장 제외
+method: 재구축 최초 30·60·90 집계 횟수에서 각각 긴급 모집 10회를 더하되, 120회 최초 픽업 보장 카운터에는 더하지 않습니다.
+assumptions:
+  - 동일 명칭 재구축에서 각 단계의 긴급 모집을 아직 받지 않은 상태.
+  - 표는 지급된 긴급 모집을 모두 사용한 경우. 기존 같은 명칭 이월 카운터 없음.
+  - 무료 모집에서 픽업을 먼저 얻을 가능성은 배제한 보장 카운터 설명.
+results:
+  - 집계 90회 + 긴급 모집 30회는 실제 시도 120회지만, 최초 픽업 보장 카운터는 90회입니다.
+table:
+  columns:
+    - 집계 횟수
+    - 긴급 모집 누적
+    - 실제 시도 합계
+  rows:
+    - - 30
+      - 10
+      - 40
+    - - 60
+      - 20
+      - 80
+    - - 90
+      - 30
+      - 120
+    - - 120
+      - 30
+      - 150
+subjects:
+  - events/resplendent-spectrum-1
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/2664
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/3839
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
