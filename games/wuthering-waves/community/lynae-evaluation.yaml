@@ -29,7 +29,7 @@ divided:
   - position: "1돌도 가치 있다"
     reasons:
       - "스택형 편의와 딜 약간 — 산호가 남으면 사도 좋다는 의견"
-subjects: [resonators/lynae]
+subjects: [resonators/lynae, weapons/spectrum-blaster]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/lynae

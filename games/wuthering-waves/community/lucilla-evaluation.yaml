@@ -26,7 +26,7 @@ divided:
   - position: "수수가 먼저"
     reasons:
       - "수수가 더 범용적인 서포터라는 의견"
-subjects: [resonators/lucilla]
+subjects: [resonators/lucilla, weapons/freeze-frame]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/lucilla

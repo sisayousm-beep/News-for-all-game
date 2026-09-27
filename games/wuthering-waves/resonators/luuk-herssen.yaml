@@ -52,11 +52,16 @@ topics:
     name: "6체인 「빙원 위, 끝없이 펼쳐진 새벽빛」"
     text: "조화도 파괴 시 적이 받는 주요 스킬 피해 +30%, 공명 해방 피해 보너스 최대 +120%."
 history:
-  - date: null
+  - date: 2026-02-26
     version: "3.1"
     kind: release
-    summary: "3.1 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [기나긴 겨울을 넘어]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.1 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [기나긴 겨울을 넘어])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4323
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 3월 18일 11:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
         collectedAt: 2026-09-26

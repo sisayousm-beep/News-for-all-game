@@ -42,7 +42,7 @@ const cardFields = mod.fields.filter((f) => f.key !== 'rarity').slice(0, 3);
   <div class="db-grid" data-pane="grid">
     {items.map((r) => (
       <a class="db-card" href={gameHref(game, mod.id, r.id)} {...attrs(r)}>
-        <Portrait game={game} record={r} tall />
+        <Portrait game={game} record={r} tall fit={mod.imageFit} />
         <span class="name">{r.title} {r.certainty !== 'confirmed' && <Provenance game={game} record={r} />}</span>
         <span class="attrs">
           {has('rarity') && <span class="rarity" data-v={r.attributes.rarity}>{value(r, 'rarity') ?? '등급 미확인'}</span>}
@@ -58,7 +58,7 @@ const cardFields = mod.fields.filter((f) => f.key !== 'rarity').slice(0, 3);
       <tbody>
         {items.map((r) => (
           <tr {...attrs(r)}>
-            <td><a class="cell-name" href={gameHref(game, mod.id, r.id)}><Portrait game={game} record={r} small />{r.title}</a></td>
+            <td><a class="cell-name" href={gameHref(game, mod.id, r.id)}><Portrait game={game} record={r} small fit={mod.imageFit} />{r.title}</a></td>
             {mod.fields.map((f) => <td class:list={{ rarity: f.key === 'rarity' }} data-v={f.key === 'rarity' ? r.attributes.rarity : undefined}>{fieldLabel(f, r.attributes[f.key]) ?? <span class="badge unknown" title="출처에서 확인되지 않은 값">미확인</span>}</td>)}
             <td><Provenance game={game} record={r} /></td>
           </tr>

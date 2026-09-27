@@ -18,7 +18,7 @@ positive:
 negative:
   - "주요 공격 범위가 좁아 다수전에서 크게 밀린다."
   - "3번째 자리 선택지가 좁다(치사·수수)."
-subjects: [resonators/yangyang-xuanling]
+subjects: [resonators/yangyang-xuanling, weapons/azure-oath]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/yangyang-xuanling

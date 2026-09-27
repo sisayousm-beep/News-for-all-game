@@ -4,13 +4,13 @@
  * Reading widgets (news, community, analysis) take the wide column; version/codes/schedule/database sit in the side column.
  */
 import GameShell from '../../../layouts/GameShell.astro';
-import { games } from '../../../core/hub';
+import { games, visibleModules } from '../../../core/hub';
 import { views, WIDE_TYPES } from '../../../modules';
 
 export const getStaticPaths = () => games().map((game) => ({ params: { game: game.config.id }, props: { game } }));
 const { game } = Astro.props;
-const main = game.config.modules.filter((m) => WIDE_TYPES.includes(m.type));
-const side = game.config.modules.filter((m) => !WIDE_TYPES.includes(m.type));
+const main = visibleModules(game).filter((m) => WIDE_TYPES.includes(m.type));
+const side = visibleModules(game).filter((m) => !WIDE_TYPES.includes(m.type));
 ---
 <GameShell game={game} current="overview">
   <div class="layout">

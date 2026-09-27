@@ -19,7 +19,7 @@ positive:
 negative:
   - "저가 파티에서는 로테이션을 더 신경 써야 한다."
   - "전용 무기는 필수는 아니지만 메인 딜러 중 가장 좋은 업그레이드라는 의견."
-subjects: [resonators/hiyuki]
+subjects: [resonators/hiyuki, weapons/frostburn]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/hiyuki

@@ -53,11 +53,16 @@ topics:
     text: "적이 받는 공명 해방 피해 +40%. 조화 파동·불꽃 피해가 크리티컬 발생(80%/275% 고정)."
     values: {받는 공명 해방 피해: "+40%"}
 history:
-  - date: null
+  - date: 2026-02-04
     version: "3.1"
     kind: release
-    summary: "3.1 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [봄바람을 타고 온 별의 여정]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.1 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [봄바람을 타고 온 별의 여정])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4198
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 2월 26일 09:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4212
         collectedAt: 2026-09-26

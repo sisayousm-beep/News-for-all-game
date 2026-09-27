@@ -58,6 +58,8 @@ subjects: [resonators/cheongcho#chain-1]   # 이 레코드가 다루는 공식 �
 |---|---|
 | `attributes` | `game.yaml`의 `fields`에 선언된 키만, **모든 키 필수**. 모르면 `null` → "미확인" 표시 |
 | `history` | 의미 있는 변화 기록(아래) |
+| (모듈 설정) `glance` | 상세 페이지 "한눈에 보기" 항목·순서. 커뮤니티 판정 이름 또는 `analysis:<kind>=<표시 이름>` |
+| (모듈 설정) `imageFit` | `cover`(캐릭터 일러스트, 기본) · `contain`(무기·아이템 전체 표시) |
 | `topics` | 공식 하위 항목(스킬, 공명 체인, 무기 패시브…). `{ id, section, name, text, values, sources }`. `section`은 모듈 `sections`에 선언된 키. `text`는 **요약**(툴팁 전문 ✗), `values`는 핵심 수치만. 계산·커뮤니티가 `<컬렉션>/<id>#<topic id>`로 연결 |
 
 ### history (시간에 따른 변화)

@@ -1,6 +1,8 @@
 id: okbit-gureum
 title: 옥빛 구름
 aliases: [Glint of Clouds]
+image: /games/wuthering-waves/img/weapons/okbit-gureum.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020106_UI.webp
 summary: 3.6 버전 5성 직검. 청초와 같은 시기에 무기 이벤트 튜닝으로 출시됐다.
 attributes:
   rarity: 5
@@ -38,5 +40,5 @@ sources:
     url: https://api.encore.moe/ko/weapon/21020106
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
-    note: 능력치·패시브 수치
+    note: 능력치·패시브 수치·이미지
 updatedAt: 2026-09-26

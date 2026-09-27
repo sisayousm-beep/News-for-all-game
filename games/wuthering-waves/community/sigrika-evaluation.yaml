@@ -30,7 +30,7 @@ divided:
   - position: "차기 캐릭터를 기다려라"
     reasons:
       - "비싼 파츠를 요구하는 \"재화 소모용\" 캐릭터라는 의견"
-subjects: [resonators/sigrika]
+subjects: [resonators/sigrika, weapons/solsworn-ciphers]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/sigrika

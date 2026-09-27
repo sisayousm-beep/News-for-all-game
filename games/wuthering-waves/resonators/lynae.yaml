@@ -53,11 +53,16 @@ topics:
     name: "6체인 「「나」라는 이름으로 그려진 진정한 빛」"
     text: "찬란한 도약·공중 강공격마다 「마음의 색」(최대 3스택) — 스택당 적이 받는 레인보우 스플래시·시각적 충격 피해 +30%."
 history:
-  - date: null
+  - date: 2025-12-24
     version: "3.0"
     kind: release
-    summary: "3.0 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [언디파인드 스펙트럼]). 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.0 버전 신규 5성 공명자로 출시 (캐릭터 이벤트 튜닝 [언디파인드 스펙트럼])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3866
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 1월 15일 09:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/3923
         collectedAt: 2026-09-26

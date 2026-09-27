@@ -1,0 +1,37 @@
+id: thousandfold-deliverance
+title: 수많은 인도
+aliases: ["Thousandfold Deliverance"]
+summary: "3.6 버전 5성 대검. 경연와 같은 버전에 추가됐다."
+image: /games/wuthering-waves/img/weapons/thousandfold-deliverance.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21010076_UI.webp
+attributes:
+  rarity: 5
+  type: broadblade
+  version: "3.6"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "412.5", HP: "72.23%" }
+  - id: passive
+    section: passive
+    name: "패시브 「혼을 부르고 별을 소환해」 (재련 1~5)"
+    text: "전체 속성 피해 보너스 증가. 등장 중 변주 스킬이나 실드 획득 시 「봉천」·「포용」 스택을 얻는다(최대 6, 교체 시 소멸). 봉천은 크리티컬 피해를, 6스택이면 강공격 크리티컬을 올리고, 포용은 강공격 때 소모되어 방어력을 무시한다."
+    values: { 전체 속성 피해 보너스: "12~24%", 봉천 크리티컬 피해(최대): "24~48%", 포용 방어력 무시(최대): "30~50%", 강공격 크리티컬(봉천 6스택): "12~24%" }
+history:
+  - date: null
+    version: "3.6"
+    kind: release
+    summary: "3.6 버전에 추가된 5성 무기. 한국어 무기 튜닝 공지는 아직 찾지 못해 출시일 미확인."
+    sources:
+      - source: encore-db
+        url: https://api.encore.moe/ko/weapon/21010076
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+sources:
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21010076
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-09-27

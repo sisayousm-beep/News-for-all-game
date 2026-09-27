@@ -27,7 +27,7 @@ divided:
   - position: "3돌까지 가야 의미"
     reasons:
       - "1돌 딜 상승은 작고 3돌부터 체감이 크다"
-subjects: [resonators/aemeath]
+subjects: [resonators/aemeath, weapons/everbright-polestar]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/aemeath

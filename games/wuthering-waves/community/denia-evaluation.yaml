@@ -23,7 +23,7 @@ negative:
   - "불꽃·조화 밀집 두 파티 외에는 쓸 곳이 없다 — 에이메스·루크가 없으면 비추천."
   - "조화 밀집 모드에서는 전용 무기와 모니에가 사실상 필수."
   - "파티마다 에코 세트를 따로 맞춰야 한다."
-subjects: [resonators/denia]
+subjects: [resonators/denia, weapons/forged-dwarf-star]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/denia

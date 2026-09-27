@@ -51,11 +51,16 @@ topics:
     name: "6체인 「어쩌면...」"
     text: "획득하는 일반 공격 피해 보너스 +40%. 강공격 중 900% 추가 전도 피해."
 history:
-  - date: null
+  - date: 2026-06-07
     version: "3.4"
     kind: release
-    summary: "3.4 버전 신규 5성 공명자로 출시. 픽업 시작일(전반/후반)은 공지에서 미확인."
+    summary: "3.4 버전 신규 5성 공명자로 출시 (캐릭터 콜라보 튜닝 [잿불 속 다시 깨어난 분노])."
     sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4854
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: "캐릭터 튜닝 공지 — 이벤트 기간 ~ 2026년 7월 9일 12:59"
       - source: kuro-official
         url: https://wutheringwaves.kurogames.com/ko/main/news/detail/4814
         collectedAt: 2026-09-26

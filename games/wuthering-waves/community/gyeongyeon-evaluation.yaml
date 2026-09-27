@@ -19,7 +19,7 @@ negative:
   - "전용 무기 없으면 딜 손실이 매우 크다 — \"필수\" 의견 다수."
   - "스킬 추적이 나빠 다수전(폐허)에서 약하다."
   - "HP 계수라 에코 세팅·육성이 까다롭다."
-subjects: [resonators/gyeongyeon]
+subjects: [resonators/gyeongyeon, weapons/thousandfold-deliverance]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/jingran

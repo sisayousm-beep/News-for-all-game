@@ -26,7 +26,7 @@ divided:
   - position: "명함으로 충분"
     reasons:
       - "린네와 같이 쓰는 조화도 파티라면 명함도 충분하다"
-subjects: [resonators/mornye]
+subjects: [resonators/mornye, weapons/starfield-calibrator]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/mornye
