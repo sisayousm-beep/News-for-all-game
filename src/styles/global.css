@@ -541,6 +541,8 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .glance a:hover dd { color: var(--accent-ink); }
 @media (max-width: 720px) { .glance a { grid-template-columns: minmax(0, 1fr); } .glance { padding: var(--s3); } }
 .conclusion { font-size: 1rem; font-weight: 700; line-height: 1.55; color: var(--ink); }
+.conclusion.answer { font-size: 1.25rem; color: var(--ai); }
+.explain { font-size: .9375rem; line-height: 1.6; color: var(--ink-2); }
 .results { color: var(--ink-2); }
 /* "더 보기" toggles: details stay one tap away, conclusions stay on top. */
 .more-toggle > summary, .topic-toggle > summary { list-style: none; cursor: pointer; -webkit-tap-highlight-color: transparent; }

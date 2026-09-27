@@ -25,7 +25,7 @@ const stale = staleness(game, c);
   {c.verdicts.length > 0 && <dl class="verdicts">{c.verdicts.map((v) => <div><dt>{v.label}</dt><dd>{v.value}</dd></div>)}</dl>}
   <p class="conclusion">{c.summary}</p>
   {c.shift && <p class="shift"><span class="meta">평가 변화</span> 출시 당시 <b>{c.shift.release}</b> → 현재 <b>{c.shift.now}</b><span class="meta"> — {c.shift.reason}</span></p>}
-  <p class="meta">{platforms.map((p) => p.name).join(' · ')}<span class="sep num">{c.version} 버전</span></p>
+  <p class="meta num">{c.version} 버전</p>
   {stale && <p class="stale" data-level={stale.level} role="note">⚠ {stale.text}</p>}
   {!compact && (
     <details class="more-toggle" open={heading}>
@@ -50,7 +50,7 @@ const stale = staleness(game, c);
           </div>
         )}
         <Freshness game={game} record={c} quiet />
-        <details><summary class="meta">근거 글 {c.sources.length}건</summary><SourceList game={game} refs={c.sources} compact /></details>
+        <div class="sources"><h3>출처</h3><p class="meta">{platforms.map((p) => p.name).join(' · ')}</p><details><summary class="meta">근거 글 {c.sources.length}건</summary><SourceList game={game} refs={c.sources} compact /></details></div>
       </div>
     </details>
   )}

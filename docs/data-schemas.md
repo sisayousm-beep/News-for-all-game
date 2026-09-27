@@ -99,6 +99,7 @@ history:
 | `version` | 기준 버전 (필수) |
 | `method` | 계산 방법 (필수). 직접 계산했으면 "Game Hub 자체 계산" + 식 |
 | `assumptions` | 계산 조건 1개 이상 (필수): 무기·에코·로테이션·적 조건… |
+| `answer` | 선택. 한마디 결론(20자, 예: "명전 추천"). 있으면 맨 위에 크게, `results[0]`은 그 아래 부연 설명 |
 | `results` | 조건부 문장 1개 이상 ("이 조건에서 약 …") |
 | `table` | 선택. `{ columns, rows, note }` — 첫 열은 행 이름 |
 | `chart` | 선택. `{ title, unit('%'), delta, points[{ label, value }] }` 막대 그래프(2~12개). `delta: true`면 첫 값 대비 증감("기준", "+14.7%")으로 표시. 결론 바로 아래에 보인다 |
@@ -113,7 +114,7 @@ history:
 | `summary` | 필수. 우세한 의견과 **이유**, 어느 커뮤니티 기준인지 |
 | `consensus` | `strong` `moderate` `mixed` `weak` — 점수가 아닌 일치 정도 |
 | `verdicts` | `{ label, value }` 한 줄 판정(티어, 파티 순위, 전용 무기 의존도…). 카드 맨 위와 엔티티 페이지 "한눈에 보기"에 표시 |
-| `shift` | 선택. `{ release, now, reason }` — 출시 당시 평가와 현재 평가가 다를 때(티어 조정, 파츠 출시, 메타 변화). 카드와 "한눈에 보기"에 `출시 X → 현재 Y` |
+| `shift` | 선택. `{ release, now, reason }` — **굵직한 이미지 변화가 있을 때만**(티어 한 단계 이상, 역할 자체가 바뀜). 카드에만 표시 |
 | `positive` / `negative` | 자주 보이는 긍정 / 부정·우려 의견 |
 | `divided` | `{ position, reasons[] }` — 갈리는 지점의 양쪽 |
 | `tips` | `{ text, when?, who? }` — 어떤 상황·어떤 유저에게 |
