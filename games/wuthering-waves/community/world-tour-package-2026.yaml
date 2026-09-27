@@ -1,0 +1,20 @@
+id: world-tour-package-2026
+title: 「To the New World」 월드 투어 한정 패키지
+kind: issue
+scope: offgame
+happenedAt: 2026-09-27
+version: "3.6"
+background: "9월 26일 싱가포르 월드 투어 행사에 맞춰 한정 패키지(방랑자 액세서리·프로필 휘장·별의 소리 500)가 9월 28일부터 판매된다. 재판매 없음."
+consensus: moderate
+summary: "재판매 없는 한정 구성이라 사겠다는 반응이 대부분이다. 싱가포르 행사 자체는 국내 커뮤니티에서 크게 화제가 되진 않았다."
+positive:
+  - 액세서리·휘장이 다시 안 나오는 한정품이라 소장 가치가 있다.
+negative:
+  - 이전 누적 충전 한정 보상(에이메스)을 놓친 사람들은 한정 판매 방식 자체가 부담스럽다고 말한다.
+tips:
+  - { text: "누적 충전 이벤트 점수에 포함되는지는 댓글에서도 확인되지 않았다 — 구매 전 이벤트 안내를 확인", when: 3.7 누적 충전과 겹칠 때 }
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184206003", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 공식 공지 전재 + 댓글 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184069395", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 싱가포르 행사 공식 게시 전재 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1w0dfjx/official_art_to_the_new_world_world_tour/", collectedAt: 2026-09-27 }
+updatedAt: 2026-09-27

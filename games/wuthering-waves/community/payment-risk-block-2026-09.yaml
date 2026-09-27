@@ -1,0 +1,25 @@
+id: payment-risk-block-2026-09
+title: 공식 상점 '위험거래' 결제 차단 제보
+kind: issue
+scope: offgame
+happenedAt: 2026-09-26
+version: "3.6"
+background: "모바일 공식 상점 결제가 「위험거래가 감지되어 서비스 이용이 불가합니다」로 막혔고, 고객센터가 해제를 거절했다는 제보."
+consensus: weak
+summary: "해외 통화(엔화)·VPN 우회 결제 이력이 원인이라는 추측이 많다. 같은 계정도 구글 플레이·갤럭시 스토어 결제는 된다는 댓글이 이어졌다."
+negative:
+  - 해외에서 귀국해 결제 수단을 바꾼 경우에도 같은 차단을 겪고 풀지 못했다는 댓글이 있다.
+divided:
+  - position: 우회 결제 탓이다
+    reasons:
+      - 약관의 '불성실한 거래 행위'로 언제든 제재될 수 있다
+      - 스토어마다 첫 결제 통화로 묶이는 구조라는 설명
+  - position: 정상 사용자도 걸린다
+    reasons:
+      - 우회 이력 없이 해외 체류·결제 수단 변경만으로 막혔다는 사례
+tips:
+  - { text: "고객센터 답변은 'IP를 안정적으로 유지하고 현지 통화로 충전하거나 공식 충전 센터 이용'", when: 결제가 막혔을 때 }
+  - { text: "막혀도 구글 플레이·갤럭시 스토어 결제는 되는 경우가 많다", when: 결제가 막혔을 때 }
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184163253", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 제보 글 1건 + 댓글 (단일 글 기준) }
+updatedAt: 2026-09-27

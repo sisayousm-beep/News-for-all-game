@@ -1,0 +1,18 @@
+id: payment-discount-tips-3-7
+title: 3.7 결제 할인 꿀팁 — 쿠폰·충전 이벤트 조합
+kind: tip
+scope: offgame
+happenedAt: 2026-09-26
+version: "3.7"
+background: "3.7 누적 충전 이벤트를 앞두고 채널에서 공유된 결제 할인 방법."
+consensus: moderate
+summary: "갤럭시 스토어 2천 원 쿠폰은 1,200원 상품에 쓰면 사실상 공짜라는 팁과, 구글 플레이 25% 할인·충전 이벤트를 겹쳐 누적 충전 비용을 약 20% 줄이는 공략이 추천을 많이 받았다."
+tips:
+  - { text: "갤럭시 스토어 쿠폰 GALAXY#BLUE(2천 원, 등록 후 5일). 최소 금액 제한이 없어 1,200원 별의 소리 상품에 쓰는 게 이득", when: 9월 30일까지 등록 }
+  - { text: "구글 플레이 25% 할인 + 상품권·편의점 충전 이벤트를 겹치면 누적 충전 2200 토큰을 약 32만 원(정가 약 40만 원)에 맞출 수 있다는 계산", when: 3.7 누적 충전, who: 과금 예정 유저 }
+  - { text: "월간 패키지 일부는 누적 충전 토큰에 포함되지 않는다는 댓글 — 구매 전 대상 상품 확인", when: 3.7 누적 충전 }
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184192672", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183602586", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183510998", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
+updatedAt: 2026-09-27

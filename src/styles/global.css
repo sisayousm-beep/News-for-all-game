@@ -527,6 +527,7 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface) 70%, transparent)
 .bar-chart .val { font-size: .6875rem; font-weight: 700; text-align: center; white-space: nowrap; margin-bottom: 3px; letter-spacing: -.02em; }
 .bar-chart .cat { font-size: .75rem; color: var(--muted); text-align: center; padding-top: 4px; white-space: nowrap; }
 .shift { font-size: .875rem; color: var(--ink-2); }
+.layer-card .background { font-size: .875rem; color: var(--ink-2); line-height: 1.55; }
 .shift > .meta:first-child { font-weight: 700; margin-right: 4px; }
 /* Headline verdicts (tier, weapon dependency…) and the entity page's "한눈에 보기". */
 .verdicts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px; }

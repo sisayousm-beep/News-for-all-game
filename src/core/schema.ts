@@ -234,7 +234,9 @@ export type AnalysisRecord = z.infer<typeof AnalysisRecord>;
 
 // ── Community layer ─────────────────────────────────────────────────────────
 
-export const COMMUNITY_KINDS = ['evaluation', 'investment', 'team', 'feel', 'story', 'version', 'tip', 'mistake', 'debate'] as const;
+export const COMMUNITY_KINDS = ['evaluation', 'investment', 'team', 'feel', 'story', 'version', 'tip', 'mistake', 'debate', 'issue'] as const;
+/** Hot issues are either about the game itself or about things around it (festivals, incidents, payments…). */
+export const ISSUE_SCOPES = ['ingame', 'offgame'] as const;
 
 /** How much the observed opinions agree — a descriptive label, never a score. */
 export const CONSENSUS = ['strong', 'moderate', 'mixed', 'weak'] as const;
@@ -249,6 +251,10 @@ export const CommunityRecord = RecordBase.extend({
   /** The conclusion shown on top: the prevailing view in one or two short sentences. */
   summary: short(LIMITS.conclusion),
   consensus: z.enum(CONSENSUS),
+  /** Hot issues / tips: 게임 내 or 게임 외, when it happened, and what people are reacting to (one line of context). */
+  scope: z.enum(ISSUE_SCOPES).optional(),
+  happenedAt: dateString.optional(),
+  background: short(150).optional(),
   /**
    * Headline verdicts players look for, shown first (and in the entity page's "한눈에 보기"):
    * e.g. 티어 / 파티 순위 / 전용 무기 의존도 / 추천 돌파. Labels are free per game; each must be backed by the cited sources.
