@@ -1,0 +1,53 @@
+id: marcille-evaluation
+title: 마르실 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상위권 — 해외 2스 S-, 국내 장문 리뷰 총평 S
+- label: 뽑기 권장
+  value: 콜라보 한정 — 적폐는 아니지만 잘 쓰임
+- label: 역할
+  value: 스플래시 캐스터 — 광역 마법 딜 + 기절·정지
+- label: 추천 스킬
+  value: 2스킬 필수, 3스킬 선택(누킹), 1스킬 비추천
+- label: 조작 난이도
+  value: 2스 쉬움, 3스 어려움 — 2스는 끄고 다시 영창해야 강해짐
+summary: 하는 일이 많지만 어느 하나가 압도적이진 않다는 해외 평가. 국내 6개월 사용 리뷰는 "현존 광역 마법 국밥 중 최고봉"이라며 2스 특화를 필수로 꼽았다. 두 번째 영창을 몰라 약하다고 느낀 글도 많았다.
+positive:
+- 광역 마법 딜과 기절·정지를 함께 갖춰 안정적이고, 고유 자원 "마력"으로 SP 제약에서 자유롭다(국내 리뷰).
+- 2스는 한 번 끄고 다시 영창하면 사거리 +1·공속 증가 — 원작 고증 호평.
+- 공중 적을 기절로 떨어뜨려 일반 맵을 편하게 푼다.
+negative:
+- 마법 관통이 없어 보조 없이는 마법 저항 높은 적에게 약하다.
+- 3스는 강하지만 사용이 까다롭고 보조가 필수 — 폭딜을 기대하고 키우면 실망한다는 후기.
+- 통합 전략 1정예 스타트에서는 예열이 60초 걸려 아쉽고, 명토체스에서는 활약하기 어렵다.
+subjects:
+- operators/marcille
+- operators/marcille#s2
+- operators/marcille#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1j4hzqh/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Delicious on Terra (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5506750
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 6개월 사용 장문 리뷰(조회 1.2만)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5525119
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5525985
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5516576
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

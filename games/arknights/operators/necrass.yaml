@@ -1,111 +1,115 @@
 id: necrass
 title: 네크라스
 aliases:
-  - Necrass
+- Necrass
 summary: 6★ 캐스터 · 셰이퍼 캐스터. 더블린의 전 리더인 네크라스. 더블린 전체가 멸망한 지금 로도스 아일랜드에 방문했습니다.
 attributes:
   rarity: 6
   class: caster
   branch: 셰이퍼 캐스터
   obtain: standard
-  version: "5.5"
+  version: '5.5'
 topics:
-  - id: trait
-    section: stats
-    name: 특성 (셰이퍼 캐스터)
-    text: 공격 시 마법 대미지를 입히며, 적 처치 시 소환물 생성, 소환물이 저지한 적 공격 가능
-  - id: stats-max
-    section: stats
-    name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
-    values:
-      HP: 1,924
-      공격력: "633"
-      방어력: "133"
-      마법 저항: "20"
-      배치 코스트: "21"
-      저지: "1"
-      공격 간격: 1.6초
-      재배치: 70초
-  - id: trust
-    section: stats
-    name: 신뢰도 100% 보너스
-    values:
-      공격력: "+45"
-      방어력: "+45"
-  - id: potential
-    section: stats
-    name: 잠재 보너스 (2~6잠)
-    text: 2잠 배치 코스트 -1 · 3잠 제2재능 강화 · 4잠 공격력 +27 · 5잠 재배치 시간 -6초 · 6잠 배치 코스트 -1
-  - id: s1
-    section: skills
-    name: 1스킬 「저주받은 염원」 (특화 3)
-    text: "패시브 효과: 비탄의 하인 소환 및 강화 시 주변의 모든 적에게 네크라스 공격력의 450%에 해당하는 마법 대미지를 입힘 액티브 효과: 즉시 모든 비탄의 하인을 다시 소환, 전장에 비탄의 하인이
-      없을 경우 1명 소환"
-    values:
-      SP 소모: "13"
-      초기 SP: "8"
-      SP: 자동 회복
-      발동: 수동
-  - id: s2
-    section: skills
-    name: 2스킬 「무너지는 부패」 (특화 3)
-    text: 공격 범위 내 최대 2명의 적에게 수면 효과 부여, 0.5초마다 목표에게 공격력의 160%에 해당하는 마법 대미지를 입히며, 스킬 지속 시간 동안 목표가 쓰러지면 추가로 비탄의 하인 2명 소환
-    values:
-      SP 소모: "20"
-      초기 SP: "14"
-      지속: 12초
-      SP: 자동 회복
-      발동: 수동
-  - id: s3
-    section: skills
-    name: 3스킬 「왕관으로 빛나는 죽음」 (특화 3)
-    text: "패시브 효과: 비탄의 하인 1명이 특수 형태로 변경, 해당 형태에서는 스킬을 통해서만 강화할 수 있으며, 최대 6회 강화 가능 액티브 효과: 즉시 범위 내 모든 적에게 공격력의 800%에
-      해당하는 마법 대미지를 입히고, 비탄의 하인 1명을 소모해 특수 형태인 비탄의 하인을 강화시키며 HP를 20% 회복시킴(강화된 비탄의 하인은 2배 효과 적용), 3회 반복"
-    values:
-      SP 소모: "16"
-      초기 SP: "5"
-      SP: 자동 회복
-      발동: 수동
-  - id: talent-1
-    section: talents
-    name: 1재능 「재점화」
-    text: 공격 범위 내 적이 쓰러질 시 비탄의 하인 1명 소환, 최대 3명 소환, 더 이상 소환할 수 없으면 비탄의 하인 1명을 강화 (저지 가능 수 증가, 더 많은 HP, 공격력, 방어력 증가)
-  - id: talent-2
-    section: talents
-    name: 2재능 「회광암담」
-    text: 자신과 소환물이 HP가 50% 미만인 적을 공격할 시 공격력이 140%로 증가
-  - id: module-1
-    section: modules
-    name: 모듈 SOC-X 「주인 없는 유산」 (Lv.3)
-    text: 자신과 소환물의 공격 범위 내 적이 쓰러질 시 10초간 자신의 공격력 +25%, 동시에 비탄의 하인 1명 소환, 최대 3명 소환, 더 이상 소환할 수 없으면 비탄의 하인 1명을 강화 (저지 가능
-      수 증가, 더 많은 HP, 공격력, 방어력 증가)
-    values:
-      HP: "+200"
-      공격력: "+55"
+- id: trait
+  section: stats
+  name: 특성 (셰이퍼 캐스터)
+  text: 공격 시 마법 대미지를 입히며, 적 처치 시 소환물 생성, 소환물이 저지한 적 공격 가능
+- id: stats-max
+  section: stats
+  name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
+  values:
+    HP: 1,924
+    공격력: '633'
+    방어력: '133'
+    마법 저항: '20'
+    배치 코스트: '21'
+    저지: '1'
+    공격 간격: 1.6초
+    재배치: 70초
+- id: trust
+  section: stats
+  name: 신뢰도 100% 보너스
+  values:
+    공격력: '+45'
+    방어력: '+45'
+- id: potential
+  section: stats
+  name: 잠재 보너스 (2~6잠)
+  text: 2잠 배치 코스트 -1 · 3잠 제2재능 강화 · 4잠 공격력 +27 · 5잠 재배치 시간 -6초 · 6잠 배치 코스트 -1
+- id: s1
+  section: skills
+  name: 1스킬 「저주받은 염원」 (특화 3)
+  text: '패시브 효과: 비탄의 하인 소환 및 강화 시 주변의 모든 적에게 네크라스 공격력의 450%에 해당하는 마법 대미지를 입힘 액티브 효과: 즉시 모든 비탄의 하인을 다시 소환, 전장에 비탄의 하인이 없을 경우 1명 소환'
+  values:
+    SP 소모: '13'
+    초기 SP: '8'
+    SP: 자동 회복
+    발동: 수동
+- id: s2
+  section: skills
+  name: 2스킬 「무너지는 부패」 (특화 3)
+  text: 공격 범위 내 최대 2명의 적에게 수면 효과 부여, 0.5초마다 목표에게 공격력의 160%에 해당하는 마법 대미지를 입히며, 스킬 지속 시간 동안 목표가 쓰러지면 추가로 비탄의 하인 2명 소환
+  values:
+    SP 소모: '20'
+    초기 SP: '14'
+    지속: 12초
+    SP: 자동 회복
+    발동: 수동
+- id: s3
+  section: skills
+  name: 3스킬 「왕관으로 빛나는 죽음」 (특화 3)
+  text: '패시브 효과: 비탄의 하인 1명이 특수 형태로 변경, 해당 형태에서는 스킬을 통해서만 강화할 수 있으며, 최대 6회 강화 가능 액티브 효과: 즉시 범위 내 모든 적에게 공격력의 800%에 해당하는 마법 대미지를 입히고, 비탄의 하인 1명을 소모해 특수 형태인 비탄의 하인을 강화시키며 HP를 20% 회복시킴(강화된 비탄의 하인은 2배 효과 적용), 3회 반복'
+  values:
+    SP 소모: '16'
+    초기 SP: '5'
+    SP: 자동 회복
+    발동: 수동
+- id: talent-1
+  section: talents
+  name: 1재능 「재점화」
+  text: 공격 범위 내 적이 쓰러질 시 비탄의 하인 1명 소환, 최대 3명 소환, 더 이상 소환할 수 없으면 비탄의 하인 1명을 강화 (저지 가능 수 증가, 더 많은 HP, 공격력, 방어력 증가)
+- id: talent-2
+  section: talents
+  name: 2재능 「회광암담」
+  text: 자신과 소환물이 HP가 50% 미만인 적을 공격할 시 공격력이 140%로 증가
+- id: module-1
+  section: modules
+  name: 모듈 SOC-X 「주인 없는 유산」 (Lv.3)
+  text: 자신과 소환물의 공격 범위 내 적이 쓰러질 시 10초간 자신의 공격력 +25%, 동시에 비탄의 하인 1명 소환, 최대 3명 소환, 더 이상 소환할 수 없으면 비탄의 하인 1명을 강화 (저지 가능 수 증가, 더 많은 HP, 공격력, 방어력 증가)
+  values:
+    HP: '+200'
+    공격력: '+55'
 history:
-  - date: 2025-08-28
-    version: "5.5"
-    kind: release
-    summary: 2025년 신규 6★ 오퍼레이터. 이벤트 헤드헌팅으로 등장.
-    sources:
-      - source: arknights-global
-        url: https://www.arknights.global/news/1554
-        collectedAt: 2026-09-28
-        verifiedAt: 2026-09-28
-        note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
-sources:
+- date: '2025-08-28T16:00:00+09:00'
+  version: '5.5'
+  kind: release
+  summary: 5.5주년 시즌 신규 6★ 오퍼레이터. 이벤트 헤드헌팅 [불 속에서 귀환] (8월 28일 16:00 ~ 9월 11일 03:59)
+  sources:
+  - &id001
+    source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1215709
+    collectedAt: '2026-09-28'
+    verifiedAt: '2026-09-28'
+    note: 한국 공식 카페 공지 — 개방 일시·기간
   - source: arknights-global
     url: https://www.arknights.global/news/1554
     collectedAt: 2026-09-28
     verifiedAt: 2026-09-28
     note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
-  - source: gamedata
-    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
-    collectedAt: 2026-09-28
-    verifiedAt: 2026-09-28
-    note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_450_necras)
+sources:
+- *id001
+- source: arknights-global
+  url: https://www.arknights.global/news/1554
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_450_necras)
 image: /games/arknights/img/operators/necrass.webp
 imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_450_necras_2.png
 keyVisual: /games/arknights/img/keyvisuals/necrass.webp
 keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_450_necras_2b.png
-updatedAt: 2026-09-28
+updatedAt: '2026-09-28'

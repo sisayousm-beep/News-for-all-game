@@ -1,0 +1,43 @@
+id: contrail-evaluation
+title: 콘트레일 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 4★ 중 상위 — 해외 2스 A
+- label: 뽑기 권장
+  value: 구매증명서 상점 교환 추천
+- label: 역할
+  value: 스카이레인저 서포터 — 이륙 중 피격 불가, 공중 저지
+- label: 추천 스킬
+  value: 2스킬
+summary: 이륙 중에는 공격받지 않고 가동률도 높아 4★ 중 손꼽히는 유닛이라는 해외 평가. 국내에서도 "4성치고 생존력이 좋다", "스카이레인저 원탑"이라는 반응이다.
+positive:
+- 이륙 중 공격 대상이 되지 않아 거의 안전하게 딜을 넣는다(해외).
+- 4성치고 생존력이 좋고 딜이 쏠쏠하다는 후기.
+negative:
+- 지상 적은 저지하지 못한다.
+- 통합 전략(살카즈)에서는 다른 4★ 서포터 모집권에 밀린다는 댓글.
+subjects:
+- operators/contrail
+- operators/contrail#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1k4r87z/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — I Portatori dei Velluti (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5608698
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5558568
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5610595
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

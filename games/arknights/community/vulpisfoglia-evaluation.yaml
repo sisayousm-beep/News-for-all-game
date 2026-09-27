@@ -1,0 +1,57 @@
+id: vulpisfoglia-evaluation
+title: 불피스폴리아 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상위권 — 해외 3스 S
+- label: 뽑기 권장
+  value: 좋지만 필수는 아님
+- label: 역할
+  value: 척후병 뱅가드 — 전투력 + 자가 회복 + 코스트
+- label: 추천 스킬
+  value: 3스킬
+- label: 조작 난이도
+  value: 쉬움
+summary: 비에이전트 뱅가드 중 메타에 가장 가까운 유닛이라는 해외 평가. 국내에서는 "생존·딜·코스트를 다 챙긴다, 비나보다 낫다"는 호평과 "없어도 머틀·백파이프로 충분하다"는 의견이 갈린다.
+positive:
+- 강적과도 버티는 전투력, 초반 자가 회복, 깃발 뱅가드급 코스트 수급(해외).
+- '"생존 잘하고 딜 잘하고 코스트 잘 벌고 암살까지", 머틀 쓰다 쓰니 사이다라는 후기.'
+negative:
+- 뱅가드라 여전히 메타 밖(해외).
+- '"없어도 지장 없다, 다음 한정을 노려라"는 댓글이 다수.'
+divided:
+- position: 고인물에게 추천
+  reasons:
+  - 이벤트 맵 좌상단을 마운틴 대신 막을 수 있을 만큼 생존력이 좋다
+- position: 넘겨도 된다
+  reasons:
+  - 머틀·백파이프로도 충분
+  - 재화가 넉넉하지 않으면 한정에 집중
+subjects:
+- operators/vulpisfoglia
+- operators/vulpisfoglia#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1k4r87z/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — I Portatori dei Velluti (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5559827
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5564125
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5557013
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5573159
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

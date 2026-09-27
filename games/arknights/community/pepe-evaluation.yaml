@@ -1,0 +1,44 @@
+id: pepe-evaluation
+title: 페페 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중상위 — 해외 3스 S(일반)·S-
+- label: 뽑기 권장
+  value: 애정 픽 (한정)
+- label: 역할
+  value: 지진술사 가드 — 높은 한 방 피해 + 기절
+- label: 추천 스킬
+  value: 3스킬
+summary: 한 방 피해와 제어는 강하지만 최상위 가드들이 앞에 있고 생존 수단이 없어 유리 대포에 가깝다는 해외 평가. 국내에서는 "뉴비에게 키우라는 건 못된 짓", 모듈도 아쉽다는 의견이 우세하다.
+positive:
+- 강한 한 방 피해와 좋은 제어(해외).
+- 딜 수준 자체는 여전히 가치가 있다.
+negative:
+- 3스 기절 외에는 회복·방어·디버프가 없어 유리 대포(해외).
+- '"모듈까지 구리게 받았다", 통계상 픽률 중간이라는 국내 댓글.'
+- 공격 범위가 짧다는 불만(“1칸 못 때리쥬, 팔 짧쥬”).
+subjects:
+- operators/pepe
+- operators/pepe#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1i0rl10/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Adventure That Cannot Wait for the Sun (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5475238
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5465355
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5456486
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

@@ -1,0 +1,41 @@
+id: entelechia-evaluation
+title: 엔텔레키아 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 6★ 가드 중간 — 해외 3스 A+, 2스 A
+- label: 뽑기 권장
+  value: 비추천 (해외 Strong Skip, 이후 배너가 너무 강함)
+- label: 역할
+  value: 가드 — 범용 근접 딜러
+- label: 추천 스킬
+  value: 3스킬 또는 2스킬 (세 스킬 모두 선택지)
+summary: 범용성은 무난하지만 천장이 낮아 6★ 가드 중 중간이라는 해외 평가. 국내에서도 "쓸 만은 한데 뒤에 나올 라인업에 비하면 평민"이라는 반응이 많았다.
+positive:
+- 사용감이 좋고 재미있다는 후기.
+- 3스는 일반 맵 수준에서 버티는 엘리트가 거의 없다는 후기.
+- 세 스킬 모두 쓸 곳이 있다(해외).
+negative:
+- 바로 뒤에 Mon3tr·엑시아 더 뉴 커버넌트·트라고디아가 이어져 상대적으로 약해 보인다.
+- 상위 가드들에 비해 천장이 낮다(해외).
+subjects:
+- operators/entelechia
+- operators/entelechia#s2
+- operators/entelechia#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1mikkeh/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — See You Soon (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5680552
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5688473
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

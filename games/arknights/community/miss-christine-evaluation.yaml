@@ -1,0 +1,51 @@
+id: miss-christine-evaluation
+title: 미스 크리스틴 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 등급 없음
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 프라이멀 캐스터 — 트라고디아와 짝
+- label: 추천 스킬
+  value: 원하는 효과에 따라 1·2스킬 모두 선택지
+- label: 육성 권장
+  value: 애정용
+summary: 5★ 프라이멀 캐스터는 다른 유닛 의존도가 높아 활약이 어렵고, 트라고디아가 혼자서도 너무 강해 함께 써도 효과가 작다는 해외 평가. 국내에서는 성능보다 고양이 캐릭터의 귀여움과 인기로 화제가 됐다.
+positive:
+- 같은 등급 프라이멀 캐스터 중에서는 그나마 쓸 만하다(해외).
+- 귀여움과 음성 때문에 애정으로 키운다는 글이 많다.
+negative:
+- '"배포캐는 몇 예외 빼고 키우는 거 아니다"라는 답변.'
+- 같은 동물 군주 계열(자로) 중 최약체라는 농담 섞인 평.
+- 트라고디아 없이는 역할이 거의 없다(해외).
+subjects:
+- operators/miss-christine
+- operators/miss-christine#s1
+- operators/miss-christine#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1otu92k/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Act or Die (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5857346
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5857960
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5859682
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5859142
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

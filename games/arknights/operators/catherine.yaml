@@ -1,107 +1,116 @@
 id: catherine
 title: 캐서린
 aliases:
-  - Catherine
+- Catherine
 summary: 5★ 서포터 · 기능공. 빅토리아의 노동자 캐서린, 그녀가 무거운 렌치를 들고 있지만, 손을 볼 상대는 당신이 아닙니다.
 attributes:
   rarity: 5
   class: supporter
   branch: 기능공
   obtain: event
-  version: "5.0"
+  version: '5.0'
 topics:
-  - id: trait
-    section: stats
-    name: 특성 (기능공)
-    text: 적 2명 저지 가능, 를 사용해 작전 지원
-  - id: stats-max
-    section: stats
-    name: 정예2 Lv.80 능력치 (신뢰도·잠재 제외)
-    values:
-      HP: 2,680
-      공격력: "550"
-      방어력: "420"
-      마법 저항: "0"
-      배치 코스트: "20"
-      저지: "2"
-      공격 간격: 1.5초
-      재배치: 80초
-  - id: trust
-    section: stats
-    name: 신뢰도 100% 보너스
-    values:
-      공격력: "+40"
-      방어력: "+40"
-  - id: potential
-    section: stats
-    name: 잠재 보너스 (2~6잠)
-    text: 2잠 배치 코스트 -1 · 3잠 재배치 시간 -10초 · 4잠 배치 코스트 -1 · 5잠 재능 강화 · 6잠 배치 코스트 -1
-  - id: s1
-    section: skills
-    name: 1스킬 「세월의 단련」 (최대 레벨)
-    text: 자신 및 장치의 보호막을 보유한 오퍼레이터의 공격력 +15%, 방어력 +15%
-    values:
-      SP 소모: "0"
-      초기 SP: "0"
-      SP: 8
-      발동: 패시브
-  - id: s2
-    section: skills
-    name: 2스킬 「전화의 담금질」 (특화 3)
-    text: 공격 중지, 최대 HP +70%, 방어력 +30%, 장치의 효과가 목표 오퍼레이터가 초당 캐서린 최대 HP의 6%에 해당하는 보호막 획득으로 변경 (재능 최대치 초과 불가)
-    values:
-      SP 소모: "30"
-      초기 SP: "15"
-      지속: 30초
-      SP: 자동 회복
-      발동: 수동
-  - id: talent-1
-    section: talents
-    name: 1재능 「지향성 지원 신호」
-    text: 3개 보유(최대 2개 배치), 오퍼레이터 1명에게 캐서린 최대 HP의 20%에 해당하는 보호막 부여(목표가 5초간 피격되지 않은 경우, 캐서린 최대 HP의 6%에 해당하는 보호막 보충, 초기
-      최대치 초과 불가), 장치 효과 중첩 불가
-  - id: talent-2
-    section: talents
-    name: 2재능 「null」
-    text: "-"
-  - id: talent-3
-    section: talents
-    name: 3재능 「null」
-    text: "-"
-  - id: module-1
-    section: modules
-    name: 모듈 CRA-X 「여가 시간」 (Lv.3)
-    text: 의 최대 보유 수량 +1, 배치 코스트 감소 / 3개 보유(최대 2개 배치), 오퍼레이터 1명에게 캐서린 최대 HP의 28%에 해당하는 보호막 부여(목표가 5초간 피격되지 않은 경우, 캐서린 최대
-      HP의 6%에 해당하는 보호막 보충, 초기 최대치 초과 불가), 장치 효과 중첩 불가 / 공격 범위 내 아군 오퍼레이터 1명에게 캐서린 최대 HP의 28%에 해당하는 보호막 부여(목표가 5초간
-      피격되지 않은 경우, 캐서린 최대 HP의 6%에 해당하는 보호막 보충, 초기…
-    values:
-      HP: "+200"
-      공격력: "+30"
-      방어력: "+30"
+- id: trait
+  section: stats
+  name: 특성 (기능공)
+  text: 적 2명 저지 가능, 를 사용해 작전 지원
+- id: stats-max
+  section: stats
+  name: 정예2 Lv.80 능력치 (신뢰도·잠재 제외)
+  values:
+    HP: 2,680
+    공격력: '550'
+    방어력: '420'
+    마법 저항: '0'
+    배치 코스트: '20'
+    저지: '2'
+    공격 간격: 1.5초
+    재배치: 80초
+- id: trust
+  section: stats
+  name: 신뢰도 100% 보너스
+  values:
+    공격력: '+40'
+    방어력: '+40'
+- id: potential
+  section: stats
+  name: 잠재 보너스 (2~6잠)
+  text: 2잠 배치 코스트 -1 · 3잠 재배치 시간 -10초 · 4잠 배치 코스트 -1 · 5잠 재능 강화 · 6잠 배치 코스트 -1
+- id: s1
+  section: skills
+  name: 1스킬 「세월의 단련」 (최대 레벨)
+  text: 자신 및 장치의 보호막을 보유한 오퍼레이터의 공격력 +15%, 방어력 +15%
+  values:
+    SP 소모: '0'
+    초기 SP: '0'
+    SP: 8
+    발동: 패시브
+- id: s2
+  section: skills
+  name: 2스킬 「전화의 담금질」 (특화 3)
+  text: 공격 중지, 최대 HP +70%, 방어력 +30%, 장치의 효과가 목표 오퍼레이터가 초당 캐서린 최대 HP의 6%에 해당하는 보호막 획득으로 변경 (재능 최대치 초과 불가)
+  values:
+    SP 소모: '30'
+    초기 SP: '15'
+    지속: 30초
+    SP: 자동 회복
+    발동: 수동
+- id: talent-1
+  section: talents
+  name: 1재능 「지향성 지원 신호」
+  text: 3개 보유(최대 2개 배치), 오퍼레이터 1명에게 캐서린 최대 HP의 20%에 해당하는 보호막 부여(목표가 5초간 피격되지 않은 경우, 캐서린 최대 HP의 6%에 해당하는 보호막 보충, 초기 최대치 초과 불가), 장치 효과 중첩 불가
+- id: talent-2
+  section: talents
+  name: 2재능 「null」
+  text: '-'
+- id: talent-3
+  section: talents
+  name: 3재능 「null」
+  text: '-'
+- id: module-1
+  section: modules
+  name: 모듈 CRA-X 「여가 시간」 (Lv.3)
+  text: 의 최대 보유 수량 +1, 배치 코스트 감소 / 3개 보유(최대 2개 배치), 오퍼레이터 1명에게 캐서린 최대 HP의 28%에 해당하는 보호막 부여(목표가 5초간 피격되지 않은 경우, 캐서린 최대 HP의 6%에 해당하는 보호막 보충, 초기 최대치 초과 불가), 장치 효과 중첩 불가 / 공격 범위 내 아군 오퍼레이터 1명에게 캐서린 최대 HP의 28%에 해당하는 보호막 부여(목표가 5초간 피격되지 않은 경우, 캐서린 최대 HP의 6%에 해당하는 보호막 보충, 초기…
+  values:
+    HP: '+200'
+    공격력: '+30'
+    방어력: '+30'
 history:
-  - date: 2025-04-08
-    version: "5.0"
-    kind: release
-    summary: 2025년 신규 5★ 오퍼레이터. 이벤트 보상으로 등장.
-    sources:
-      - source: arknights-global
-        url: https://www.arknights.global/news/282
-        collectedAt: 2026-09-28
-        verifiedAt: 2026-09-28
-        note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
-sources:
+- date: '2025-04-08T16:00:00+09:00'
+  version: '5.0'
+  kind: release
+  summary: 5주년 시즌 신규 5★ 오퍼레이터. SideStory [위대한 서곡의 끝] 이벤트 보상(이벤트 획득).
+  sources:
+  - &id001
+    source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1199433
+    collectedAt: '2026-09-28'
+    verifiedAt: '2026-09-28'
+    note: 한국 공식 카페 공지 — 개방 일시·기간
   - source: arknights-global
     url: https://www.arknights.global/news/282
     collectedAt: 2026-09-28
     verifiedAt: 2026-09-28
     note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
-  - source: gamedata
-    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
-    collectedAt: 2026-09-28
-    verifiedAt: 2026-09-28
-    note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_4162_cathy)
+sources:
+- *id001
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1199942
+  collectedAt: '2026-09-28'
+  verifiedAt: '2026-09-28'
+  note: 한국 공식 카페 공지 — 개방 일시·기간
+- source: arknights-global
+  url: https://www.arknights.global/news/282
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_4162_cathy)
 image: /games/arknights/img/operators/catherine.webp
 imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4162_cathy_2.png
 keyVisual: /games/arknights/img/keyvisuals/catherine.webp
 keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4162_cathy_2b.png
-updatedAt: 2026-09-28
+updatedAt: '2026-09-28'

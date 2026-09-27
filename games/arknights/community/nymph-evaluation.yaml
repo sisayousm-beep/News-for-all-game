@@ -1,0 +1,49 @@
+id: nymph-evaluation
+title: 님프 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위권 — 해외 2스 S(일반)·S+(고난도)
+- label: 뽑기 권장
+  value: 성능캐 — 꼭 필요하다는 의견이 우세
+- label: 역할
+  value: 원소 캐스터 — 공포(스톨링)·괴사 누킹
+- label: 추천 스킬
+  value: 2스킬 범용·공포 스톨링, 원소 파티면 3스킬
+summary: 국내외 모두 "성능캐"로 본다. 범용·스톨링은 2스, 비르투오사(알투)가 있는 원소 파티에서는 3스라는 스킬 선택 공식이 국내 개념글로 정리됐다.
+positive:
+- 2스로 적에게 공포를 걸어 지연(스톨링)시키는 범용성(국내외 공통).
+- 비르투오사와 함께 쓰는 원소 파티에서 3스가 강력한 누킹이 된다.
+- 통합 전략 고승천 클리어 스타트로 꼽힌다.
+negative:
+- 3스 가치는 괴사 부여원(비르투오사 등)에 크게 의존한다(해외).
+- 초기 "성능 평가 2점" 같은 저평가가 있었으나 직접 써 보지 않은 평가라는 반박이 개념글로 올랐다.
+subjects:
+- operators/nymph
+- operators/nymph#s2
+- operators/nymph#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1ihvny0/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — A Kazdelian Rescue (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5478976
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5546746
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5478943
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5515902
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

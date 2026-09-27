@@ -1,0 +1,45 @@
+id: tippi-evaluation
+title: 티피 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 2스 C·C+
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 스카이레인저 스나이퍼 — 공중 정찰·시야
+- label: 추천 스킬
+  value: 원하는 효과에 따라 1·2스킬
+- label: 육성 권장
+  value: 같은 직군 4★ 콘트레일이 우선
+summary: 두 번째 스카이레인저지만 4★ 콘트레일보다 기본 역할을 못해 애정용이라는 해외 평가. 국내에서도 "4성 콘트레일이 더 좋다", "5성스러운 딜"이라는 반응이 대부분이었다.
+positive:
+- 스카이레인저 직군 자체는 공중에서 맞지 않고 시야를 밝혀 저스펙 공략에 좋다는 후기.
+- 두 스킬 모두 쓸 곳은 있다(해외).
+negative:
+- 같은 직군 4★ 콘트레일에게도 밀린다.
+- 딜이 평범한 5★ 수준이다.
+subjects:
+- operators/tippi
+- operators/tippi#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1otu92k/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Act or Die (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5853110
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5869565
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5890229
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

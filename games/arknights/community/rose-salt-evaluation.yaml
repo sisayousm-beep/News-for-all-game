@@ -1,0 +1,49 @@
+id: rose-salt-evaluation
+title: 로즈솔트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 배포 5★ 메딕 중 상위 — 해외 2스 A-·A
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 메딕 — 받은 피해를 시간에 걸쳐 분산
+- label: 추천 스킬
+  value: 2스킬 특화 필수에 가까움(분산 30%→50%, 초기 SP 19→9)
+summary: 2스로 큰 피해를 시간차로 나눠 받게 해 등급·직군 대비 우선순위가 높다는 해외 평가. 국내에서는 "치유량 증가 20%와 유사 죽음의 무도 2스로 생각보다 쓸 만하다"와 "5성이라 수치가 짜다"가 갈린다.
+positive:
+- 2스는 받은 피해를 분산시켜 큰 한 방에 강하다 — "죽음의 무도" 같다는 반응.
+- 특화 3에서 분산량과 초기 SP가 크게 좋아진다(해외).
+- '"그냥저냥 쓸 만하다"는 후기.'
+negative:
+- '"5성이라 수치가 너무 짜다".'
+- 생존연산 험로 모드에서는 맞으면 한 방에 죽어 안 쓴다는 평가.
+subjects:
+- operators/rose-salt
+- operators/rose-salt#s2
+- operators/rose-salt#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1l1ujq2/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Exodus from the Pale Sea (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5615782
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5614702
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5611789
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5608947
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'
