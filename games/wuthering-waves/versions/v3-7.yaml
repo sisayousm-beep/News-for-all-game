@@ -5,21 +5,39 @@ version: "3.7"
 start: 2026-09-30T05:00:00+09:00
 end: null
 summary: >-
-  2026년 9월 30일 업데이트 예정(점검 05:00~12:00, 한국 시간). 신규 5성 공명자 여우의 별자리(전반부)와
-  쇄명(후반부)이 공개됐다. 한국어 버전명은 한국 공식 X 게시물 기준.
+  2026년 9월 30일 업데이트(점검 05:00~12:00). 신규 5성 공명자 여우의 별자리(전반부)·쇄명(후반부), 신규 지역 「몽추천라」,
+  조수 임무 제4장 제4막과 새 임무 유형 「기담 임무」가 추가됐다. 버전 기간은 11월 12일 점검 전까지(영문 공지 기준).
 highlights:
   - "신규 5성 공명자: 여우의 별자리(전도·증폭기, 전반부), 쇄명(전도·직검, 후반부)"
+  - "신규 5성 무기: 옥궐에 피는 꽃(증폭기), 적막한 어둠(직검)"
+  - "신규 지역: 「몽추천라」 · 신규 에코 5종 + COST 4 1종 · 신규 화음 3종"
+  - "신규 스토리: 조수 임무 제4장 · 제4막 「몽주의 궤적, 마음이 그리는 대로」, 기담 임무 「달빛에 빌어보는 선정의 그리움」"
+  - "편의: 미강화 에코 중첩 보관(슬롯당 999), 파티 관리, 3D 파티 편성, 촬영 모드 개선, 일부 조수 임무 다시 보기"
+  - "점검 보상 별의 소리 ×300·결정 용제 ×2, 문제 수정 보상 별의 소리 ×300"
+phases:
+  - name: 전반부 픽업 (여우의 별자리)
+    start: 2026-09-30T12:00:00+09:00
+    end: 2026-10-22T09:59:00+08:00
+  - name: 후반부 픽업 (쇄명)
+    start: 2026-10-22T10:00:00+08:00
+    end: 2026-11-11T11:59:00+08:00
 sources:
   - source: kuro-official
-    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5454
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 버전 업데이트 내용 안내
   - source: kuro-official
-    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5476
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 콘텐츠 안내(이미지) — 버전 기간·튜닝
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5546
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
   - source: official-x-kr
     url: https://x.com/WW_KR_Official/status/2101268817095844331
     collectedAt: 2026-09-25
     note: 한국어 버전명
-updatedAt: 2026-09-26
+updatedAt: 2026-10-04

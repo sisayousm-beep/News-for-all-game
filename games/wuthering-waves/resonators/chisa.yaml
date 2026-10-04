@@ -49,6 +49,15 @@ topics:
     name: "6체인 「이제 잃었던 희망의 빛을 되찾으리」"
     text: "치사가 톱니바퀴 · 속공, 톱니바퀴 · 종결, 전기톱 모드 · 회피 반격을 발동하는 기간 동안, 치명적인 피해를 입을 시 의식을 잃지 않고, 최소 1pt의 HP를 유지한다. 공허히 얽힌 흔적이 공허히 얽힌 흔적 · 종말로 강화되며, 다음과 같은 효과를 획득한다. · 공허히 얽힌 흔적 · 종말은 공허히 얽힌 흔적의 모든 효과를 이어받는다."
 history:
+  - date: 2026-09-30
+    version: "3.7"
+    kind: rerun
+    summary: "3.7 전반부 튜닝으로 복각 (3.7 업데이트 후 ~ 2026-10-22 09:59, 서버 시간)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5546
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
   - date: 2025-11-20
     version: "2.8"
     kind: release
@@ -72,4 +81,4 @@ sources:
     note: 능력치·스킬·공명 체인 한국어 인게임 문구
 image: /games/wuthering-waves/img/resonators/chisa.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/qianxiao-9de775f3.webp
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

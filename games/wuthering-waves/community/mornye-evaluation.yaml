@@ -1,7 +1,7 @@
 id: mornye-evaluation
 title: "모니에 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: strong
 verdicts:
   - { label: "캐릭터 티어", value: "T0 서포터 (역경의 탑 기준)" }

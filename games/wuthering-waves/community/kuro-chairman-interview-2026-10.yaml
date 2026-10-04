@@ -1,0 +1,19 @@
+id: kuro-chairman-interview-2026-10
+title: 쿠로 회장 류성 인터뷰 — "해외 유저 40%"
+kind: issue
+scope: offgame
+happenedAt: 2026-10-03
+version: "3.7"
+background: "쿠로게임즈 창업자 류성 회장이 중국 매체 인터뷰에 나왔다. 명조 유저 비중은 해외 40%·중국 60%, TGA 2025 플레이어스 보이스 수상과 자체 퍼블리싱을 성장 요인으로 꼽았다."
+consensus: mixed
+summary: "명조가 광둥성 대표 게임으로 소개될 만큼 커졌다는 반응과, 내용이 선전물에 가깝다는 반응이 함께 나온다. 회장 얼굴이 처음 공개됐다는 점도 화제."
+positive:
+  - 중국 최대 게임 지역에서 대표 사례로 꼽힐 만큼 성공했다는 반응.
+negative:
+  - 지역 홍보·선전 성격이 강하다는 지적.
+  - 몽주 스토리의 중국 문화 강조가 의도적이었다는 해석.
+subjects: []
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184844955", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 인터뷰 번역 요약 + 댓글 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wx1qxk/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+updatedAt: 2026-10-04

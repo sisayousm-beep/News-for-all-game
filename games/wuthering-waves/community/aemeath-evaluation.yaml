@@ -1,17 +1,21 @@
 id: aemeath-evaluation
 title: "에이메스 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: strong
 verdicts:
-  - { label: "캐릭터 티어", value: "T0 (역경의 탑 기준)" }
+  - { label: "캐릭터 티어", value: "T0.5 (역경의 탑 기준, 최상위)" }
   - { label: "파티 순위", value: "최상위 — 조화 파동·불꽃·단일 용융 3가지 파티 모두 메타" }
   - { label: "전용 무기 의존도", value: "중간 — 대체 무기로도 85% 수준" }
   - { label: "조작 난이도", value: "쉬움 — 스킬이 자연스럽게 이어짐 (키트 이해는 복잡)" }
   - { label: "파티 의존도", value: "중간 — 린네·모니에 / 데니아 / 루파 중 선택" }
   - { label: "돌파 가치", value: "3돌 이상에서 큼, 1돌은 편의" }
   - { label: "국내 성능 만족도", value: "9.61/10 (3.5 채널 설문)" }
-summary: "3.x 최고 인기·최상위 딜러로 평가된다. 파티 선택지가 넓고 전용 무기 의존도도 비교적 낮다."
+shift:
+  release: "T0 (역경의 탑)"
+  now: "T0.5 최상위 (숙련자는 T0급)"
+  reason: "9/30 티어 갱신에서 재계산 결과 시그리카와 같은 급으로 조정됐다. 퀵스왑 숙련 시 T0급이라는 Expert 태그가 붙었다."
+summary: "3.x 최고 인기 딜러로, 현재 T0.5 최상위로 평가된다. 파티 선택지가 넓고 전용 무기 의존도도 비교적 낮다."
 positive:
   - "세 가지 파티 방식 모두에서 메타 성능을 낸다."
   - "불꽃 모드는 현재 최강 광역 딜러라는 평가."
@@ -36,9 +40,9 @@ sources:
     note: "Review: T0, 장단점"
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/tier-list
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-    note: "9/10 변경 내역: 에이메스 T0 유지 언급"
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "3.7 티어 리스트 (2026-09-30 갱신) — 에이메스 T0 → T0.5"
   - source: reddit
     url: https://www.reddit.com/r/WutheringWavesGuide/comments/1qwj40m/is_s1_aemeath_a_good_stopping_point/
     collectedAt: 2026-09-26

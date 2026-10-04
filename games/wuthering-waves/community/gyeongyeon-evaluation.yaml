@@ -1,7 +1,7 @@
 id: gyeongyeon-evaluation
 title: "경연 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: moderate
 verdicts:
   - { label: "캐릭터 티어", value: "T0 (역경의 탑) · 다수전 T1" }
@@ -19,6 +19,7 @@ negative:
   - "전용 무기 없으면 딜 손실이 매우 크다 — \"필수\" 의견 다수."
   - "스킬 추적이 나빠 다수전(폐허)에서 약하다."
   - "HP 계수라 에코 세팅·육성이 까다롭다."
+  - "국내 채널 보유율 9.9%로 매우 낮다 — 노출이 강조된 공식 쇼츠 영상이 큰 반감을 샀다(3.6 설문 피드백)."
 subjects: [resonators/gyeongyeon, weapons/thousandfold-deliverance]
 sources:
   - source: prydwen
@@ -49,4 +50,14 @@ sources:
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
     note: "경연 육성 목표 스탯 정리"
-updatedAt: 2026-09-26
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/184781186
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "3.6 설문 게임 피드백"
+  - source: arca-wuwa
+    url: https://arca.live/b/wutheringwaves/184779355
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "3.6 설문: 보유 9.9%"
+updatedAt: 2026-10-04

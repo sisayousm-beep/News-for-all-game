@@ -1,0 +1,23 @@
+id: v3-7-tips
+title: 3.7 꿀팁 — 여우의 별자리 육성 재료·새알심·용량 정리
+kind: tip
+scope: ingame
+happenedAt: 2026-10-03
+version: "3.7"
+background: "3.7 초반 국내 채널과 Reddit에서 추천을 많이 받은 팁 모음."
+consensus: strong
+summary: "새알심 이벤트 첫 판만 해도 여우의 별자리 돌파 꽃 60개를 받는다. 새알심 전체 보상은 린네로 골드를 불리는 방법이 가장 쉽다는 평이다."
+tips:
+  - { text: "새알심 이벤트 첫 시련(수수전, 약 2분)을 깨면 여우의 별자리 돌파 재료 꽃 60개를 준다. 필드 채집보다 빠르다", who: 여우의 별자리를 뽑은 유저 }
+  - { text: "새알심 '빨간 품질 2개' 조건은 린네로 골드를 불리면서 라하이 로이 재료를 모아 맞추는 게 쉽다. 앙코르 진입 전까지만 깨면 임무가 완료된다", who: 새알심 보상을 다 받으려는 유저 }
+  - { text: "수많은 문의 환상에 서리·불꽃 버프가 추가됐다. 불꽃 버프는 불꽃 피해를 크게 올려 전도(불꽃) 파티에 좋다" }
+  - { text: "공식 클라이언트는 리소스 등급(UHD·HD·SD)이 여러 개 깔려 있을 수 있다. 런처 게임 설정의 '게임 삭제'로 안 쓰는 등급만 지우면 수십 GB가 비워진다", who: PC 공식 클라이언트 }
+  - { text: "전반부 지역·이벤트를 다 먹으면 별의 소리 약 6,400 + 출석 5뽑(약 45뽑)을 모았다는 실측. 공지에 수량이 없는 몽추천라 탐사 보상까지 포함한 값이다", when: 3.7 전반부 }
+subjects: [versions/v3-7]
+sources:
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wu9rq0/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184882744", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 새알심 전체 보상 팁 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184872506", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 수많은 문 신규 버프 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184855278", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 리소스 등급 파일 정리 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184886972", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 3.7 전반부 사료량 실측 }
+updatedAt: 2026-10-04

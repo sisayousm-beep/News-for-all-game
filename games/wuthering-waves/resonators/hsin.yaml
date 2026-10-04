@@ -1,37 +1,80 @@
 id: hsin
 title: 여우의 별자리
-aliases: [Hsin, 心月狐]
-summary: 몽주 문명을 이끄는 수호신. 게임 최초의 플레이 가능한 '파수인(Sentinel)' 공명자.
+aliases: ["Hsin"]
+summary: "수호신 「여우의 별자리」, 몽주 문명을 이끄는 인도자. 감정이 풍부하고, 인간 세상의 기쁨을 사랑한다. 활기 넘치는 세상 속, 만물이 끊임없이 변화하는 가운데, 인간 세상의 온기가 오래도록 꺼지지 않게 지켜 나간다"
 attributes:
   rarity: 5
   element: electro
   weapon: rectifier
   version: "3.7"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,300", 공격력: "462.5", 방어력: "1,112.2", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「달밤을 거닐어 돌아온 마음」"
+    values: {쿨타임: "12초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「중추로 이끈 맑은 빛」"
+    values: {쿨타임: "25초"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「배와 노를 받아 밀려온 물결 건너니」"
+    text: "공명 해방 · 형상 전환 발동 시, 여우의 별자리는 2스택의 찬란함을 숨긴 장벽을 획득하고, 최대 2스택 중첩이 가능하며 만상의 화응으로 전환 시, 모든 스택이 제거된다. 여우의 별자리가 적의 공격이 입히는 피해를 받을 시, 1스택의 찬란함을 숨긴 장벽을 소모하여 적의 공격에 의해 자신의 공격이 중단되지 않고 받는 피해를 60% 감소시키며, 1초간 지속된다. 해당 효과는 1초마다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「처음 깨어날 때 마음이 내게 묻노라」"
+    text: "강공격 · 만상의 화응 · 속세를 거니는 발걸음과 강공격 · 만상의 화응 · 속세 평정의 피해 배율이 60% 상승된다. 강공격 · 만상의 비춤 · 천하 강림과 강공격 · 만상의 비춤 · 천하 평정의 피해 배율이 60% 상승된다. 여우의 별자리가 전투 상태에 진입 시, 여우의 별자리가 속세의 염원과 하늘의 법칙을 획득하는 쿨타임이 리셋되고, 추가로 100pt의 「마음의 화응」을 회복한다."
+  - id: chain-3
+    section: chain
+    name: "3체인 「깊은 산자락 속 돌아갈 꿈이 머무니」"
+    text: "공명 해방 · 무수히 하늘을 뒤덮은 궁궐의 피해 배율이 70% 상승된다. 공명 모드 · 합일에 있을 경우: 공명 해방 · 무수히 하늘을 뒤덮은 궁궐의 크리티컬 피해가 20% 증가된다. 「합일 버프」 1스택을 보유할 때마다, 해당 크리티컬 피해를 추가로 15% 증가시키고, 최대 4스택 중첩이 가능하다."
+  - id: chain-4
+    section: chain
+    name: "4체인 「물에 뜬 등불에 자그만 소망 담겼네」"
+    text: "파티 내 캐릭터가 다음 효과 중 하나를 발생시킬 시, 파티 내 모든 캐릭터의 전체 속성 피해 보너스를 20% 증가시키고, 30초간 지속된다. · 목표에게 「전자 효과」, 「자기 폭발」 추가 후 · 합일을 보유하지 않은 상태에서 획득 시 · 합일 대응 시"
+  - id: chain-5
+    section: chain
+    name: "5체인 「만상 그 흐름은 마음이 결정 하리니」"
+    text: "만상의 비춤에 있을 경우, 여우의 별자리가 받는 피해가 20% 감소된다. 여우의 별자리가 치명적인 피해를 받을 시, 여우의 별자리는 해당 피해로 인해 의식을 잃지 않고, 여우의 별자리 HP 최대치의 100%에 해당하는 HP를 회복한다. 동시에 피해와 공격에 면역되고, 1초간 지속된다. 해당 효과는 10분마다 1회 발생할 수 있다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「조월 그 이름은 기대에 응답 하리라」"
+    text: "목표가 여우의 별자리로부터 받는 공명 스킬 피해가 40% 증가된다. 여우의 별자리가 입히는 공명 스킬 피해는 목표의 20% 방어력을 무시한다. 공명 모드 · 합일에 있을 경우: 파티 내 캐릭터의 「합일 버프」 효과 스택 최대치가 추가로 1스택 증가된다. 파티 내 캐릭터가 합일 대응 시, 파티 내 캐릭터는 1스택의 「합일 버프」를 추가로 획득하고, 30초간 지속된다."
 history:
   - date: 2026-09-30
     version: "3.7"
     kind: release
-    summary: 3.7 버전 전반부 픽업으로 출시 예정(9월 30일 업데이트). 전용 무기 Blooming Jadehaven(5성 증폭기) 동시 픽업.
+    summary: "3.7 전반부 신규 5성 공명자. 캐릭터 이벤트 튜닝 [부디 이 밤처럼 늘 영원하기를]으로 출시 (3.7 업데이트 후 ~ 2026-10-22 09:59, 서버 시간). 전용 무기 「옥궐에 피는 꽃」 동시 픽업."
     sources:
-      - source: press-en
-        url: https://fandomwire.com/wuthering-waves-reveals-hsin-suoming-version-3-7/
-        collectedAt: 2026-09-25
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
+        note: "3.7 버전 업데이트 내용 안내 — 신규 공명자·튜닝 이름"
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
+        note: "3.7 콘텐츠 안내(이미지) — 튜닝 기간"
 sources:
   - source: kuro-official
-    url: https://wutheringwaves.kurogames.com/ko/main
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-    note: 공식 홈페이지 공명자 소개(한국어 명칭 '여우의 별자리', 속성 아이콘 전도)
-  - source: kuro-official
-    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5454
-    collectedAt: 2026-09-26
-    verifiedAt: 2026-09-26
-  - source: press-kr
-    url: https://www.inven.co.kr/webzine/news/?news=320387
-    collectedAt: 2026-09-25
-  - source: press-en
-    url: https://www.gematsu.com/2026/09/wuthering-waves-version-3-7-update-prisms-illusion-hearts-illumination-launches-september-30
-    collectedAt: 2026-09-25
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "3.7 버전 업데이트 내용 안내"
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1311
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
 image: /games/wuthering-waves/img/resonators/hsin.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/xin-4e9f5c0c.webp
-updatedAt: 2026-09-26
+updatedAt: 2026-10-04

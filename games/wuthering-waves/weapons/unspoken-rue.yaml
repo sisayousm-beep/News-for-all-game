@@ -1,0 +1,42 @@
+id: unspoken-rue
+title: "적막한 어둠"
+aliases: ["Unspoken Rue"]
+summary: "3.7 버전 5성 직검. 쇄명 픽업과 같은 기간의 무기 이벤트 튜닝으로 출시됐다."
+image: /games/wuthering-waves/img/weapons/unspoken-rue.webp
+imageFrom: https://api.encore.moe/resource/Data/Game/Aki/UI/UIResources/Common/Image/IconWeapon732/T_IconWeapon732_21020107_UI.webp
+attributes:
+  rarity: 5
+  type: sword
+  version: "3.7"
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 능력치
+    values: { 공격력: "587.5", 크리티컬: "24.30%" }
+  - id: passive
+    section: passive
+    name: "패시브 「뇌우 감옥」 (재련 1~5)"
+    text: "공격력이 12~24% 증가된다. 합일 획득 시 전도 피해가 30~60% 증가되고, 30초간 지속된다. 합일 획득 시, 파티 내 캐릭터는 「못다 한 그리움」 효과를 획득하고 「애틋한 그리움」이 제거되며, 전도 피해 보너스가 24~48% 증가되고, 30초간 지속된다. 같은 이름의 효과는 중첩이 불가하다. 자신의 협주 에너지가 소모될 시, 「애틋한 그리움」 효과를 획득하고 파티 내 캐릭터의 「못다 한 그리움」이 제거되며, 자신의 전도 피해가 추가로 40~80% 증가되고, 14초간 지속된다."
+history:
+  - date: 2026-10-22
+    version: "3.7"
+    kind: release
+    summary: "3.7 후반부 무기 이벤트 튜닝 「적막한 어둠」으로 출시 (2026-10-22 10:00 ~ 11-11 11:59, 서버 시간). 쇄명 픽업과 같은 기간."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
+        note: 3.7 콘텐츠 안내(이미지) — 튜닝 기간
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 버전 업데이트 내용 안내 — 신규 무기
+  - source: encore-db
+    url: https://api.encore.moe/ko/weapon/21020107
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 능력치·패시브 수치·이미지
+updatedAt: 2026-10-04

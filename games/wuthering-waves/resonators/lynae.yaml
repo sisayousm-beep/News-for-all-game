@@ -53,6 +53,15 @@ topics:
     name: "6체인 「「나」라는 이름으로 그려진 진정한 빛」"
     text: "찬란한 도약·공중 강공격마다 「마음의 색」(최대 3스택) — 스택당 적이 받는 레인보우 스플래시·시각적 충격 피해 +30%."
 history:
+  - date: 2026-10-22
+    version: "3.7"
+    kind: rerun
+    summary: "3.7 후반부 튜닝으로 복각 (2026-10-22 10:00 ~ 11-11 11:59, 서버 시간)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
   - date: 2025-12-25
     version: "3.0"
     kind: release
@@ -81,4 +90,4 @@ sources:
     note: 능력치·스킬·공명 체인 한국어 인게임 문구
 image: /games/wuthering-waves/img/resonators/lynae.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/linnai-89a81158.webp
-updatedAt: 2026-09-26
+updatedAt: 2026-10-04

@@ -19,6 +19,15 @@ topics:
     text: "공격력 증가. 변주 스킬이나 일반 공격이 적중하면 자신의 일반 공격 피해 보너스가 4초간 증가한다. 일반 공격 중 적에게 조화 파동·이탈 또는 조화 밀집·이탈을 부여하면 파티 전체 피해가 30초간 증가(최대 3스택, 같은 효과 중첩 불가)."
     values: { 공격력: "12~24%", 일반 공격 피해 보너스: "36~72%", 파티 피해 증가(스택당): "8~16%" }
 history:
+  - date: 2026-10-22
+    version: "3.7"
+    kind: rerun
+    summary: "3.7 후반부 튜닝으로 복각 (2026-10-22 10:00 ~ 11-11 11:59, 서버 시간)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
   - date: 2025-12-25
     version: "3.0"
     kind: release
@@ -40,4 +49,4 @@ sources:
     collectedAt: 2026-09-27
     verifiedAt: 2026-09-27
     note: 능력치·패시브 수치·이미지
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

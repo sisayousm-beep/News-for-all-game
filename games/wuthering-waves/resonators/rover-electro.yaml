@@ -1,0 +1,75 @@
+id: rover-electro
+title: 방랑자 · 전도
+aliases: ["Rover: Electro"]
+summary: "정체불명의 공명자, 모든 소리를 흡수할 수 있는 힘을 가지고 있다. 기억을 되찾기 위해 여행을 떠난다"
+attributes:
+  rarity: 5
+  element: electro
+  weapon: sword
+  version: "3.5"
+topics:
+  - id: stats-lv90
+    section: stats
+    name: Lv.90 기본 능력치
+    values: {HP: "10,775", 공격력: "437.5", 방어력: "1,136.7", 크리티컬: "5%", 크리티컬 피해: "150%"}
+  - id: stat-bonus
+    section: stats
+    name: 스킬 트리 능력치 보너스 (노드 합계)
+    values: {크리티컬: "+8%", 공격력: "+12%"}
+  - id: skill
+    section: skills
+    name: "공명 스킬 「번개의 인도」"
+    values: {쿨타임: "10초"}
+  - id: liberation
+    section: skills
+    name: "공명 해방 「최종 전략」"
+    values: {쿨타임: "25초", 공명 에너지: "125"}
+  - id: chain-1
+    section: chain
+    name: "1체인 「신묘한 솜씨」"
+    text: "기본 공격과 공명 스킬 밀려온 천개의 소리 발동 시, 경직 저항력 증가 효과를 획득하고, 0.5초간 지속된다"
+  - id: chain-2
+    section: chain
+    name: "2체인 「뛰어난 기교」"
+    text: "공명 해방 최종 전략으로 피해를 입힌 후, 목표에게 「전자 효과」 5스택을 추가한다"
+  - id: chain-3
+    section: chain
+    name: "3체인 「피어난 기적」"
+    text: "공명 스킬 과부하의 피해 배율이 20% 상승된다"
+  - id: chain-4
+    section: chain
+    name: "4체인 「울리는 천둥」"
+    text: "공명 해방 최종 전략의 피해 배율이 20% 상승된다"
+  - id: chain-5
+    section: chain
+    name: "5체인 「변화의 이치」"
+    text: "임계 공명 상태 기간 동안 크리티컬 피해가 20% 증가된다"
+  - id: chain-6
+    section: chain
+    name: "6체인 「함 속의 심연」"
+    text: "공명 스킬 밀려온 천개의 소리와 천둥의 추락의 피해 배율이 20% 상승된다"
+history:
+  - date: 2026-07-10
+    version: "3.5"
+    kind: release
+    summary: "3.5 버전에 방랑자의 새 음의 순서 「방랑자 · 전도」 추가. 조수 임무 4장 2막 완료 후 해제."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5122
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
+        note: "3.5 버전 업데이트 내용 안내 — 방랑자 신규 음의 순서"
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5122
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "3.5 버전 업데이트 내용 안내"
+  - source: encore-db
+    url: https://api.encore.moe/ko/character/1309
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 능력치·스킬·공명 체인 한국어 인게임 문구
+image: /games/wuthering-waves/img/resonators/rover-electro.webp
+imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/rover2-a3bf71da.png
+updatedAt: 2026-10-04

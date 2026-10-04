@@ -1,7 +1,7 @@
 id: sigrika-evaluation
 title: "시그리카 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: moderate
 verdicts:
   - { label: "캐릭터 티어", value: "T0.5 (역경의 탑) · 다수전 최상위" }

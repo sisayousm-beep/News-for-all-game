@@ -1,0 +1,19 @@
+id: blooms-for-the-shadow
+title: "「그림자에 피는 꽃」 신규 레귤러 콘텐츠"
+aliases: ["Blooms for the Shadow"]
+kind: event
+start: 2026-09-30T12:00:00+09:00
+end: null
+version: "3.7"
+summary: "몽추천라의 세 마음의 영역에 꽃잎을 바쳐 안정도를 올리는 상시 콘텐츠. 별의 소리 400·회오리의 무늬 10 등."
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 콘텐츠 안내(이미지) — 보상
+updatedAt: 2026-10-04

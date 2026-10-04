@@ -1,7 +1,7 @@
 id: luuk-herssen-evaluation
 title: "루크 · 헤르센 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: moderate
 verdicts:
   - { label: "캐릭터 티어", value: "T0.5 (역경의 탑 기준)" }

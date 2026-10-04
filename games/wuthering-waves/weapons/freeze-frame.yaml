@@ -19,6 +19,15 @@ topics:
     text: "공격력 증가. 서리 효과를 부여하면 자신의 응결 피해 보너스가 12초간 증가하고, 파티 전원의 공격력이 30초간 증가한다(같은 효과 중첩 불가)."
     values: { 공격력: "12~24%", 응결 피해 보너스: "30~60%", 파티 공격력: "24~48%" }
 history:
+  - date: 2026-10-22
+    version: "3.7"
+    kind: rerun
+    summary: "3.7 후반부 튜닝으로 복각 (2026-10-22 10:00 ~ 11-11 11:59, 서버 시간)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
   - date: 2026-06-13
     version: "3.4"
     kind: release
@@ -40,4 +49,4 @@ sources:
     collectedAt: 2026-09-27
     verifiedAt: 2026-09-27
     note: 능력치·패시브 수치·이미지
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

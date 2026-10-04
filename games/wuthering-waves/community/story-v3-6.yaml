@@ -3,18 +3,25 @@ title: "3.6 스토리 — 청초 — 4장 3막·간주"
 kind: story
 version: "3.6"
 consensus: mixed
+rating:
+  value: 4.02
+  basis: "아카라이브 명조 채널 3.6 버전 설문 스토리 평점(5점)"
+  parts:
+    - { label: "4장 3막·에필로그 (몽주·청초)", value: 4.02 }
 flow: "4장 3막과 간주. 청초와 목우의 대립을 중심으로 한 몽주 이야기와, 경연의 간주 퀘스트."
 verdicts:
   - { label: "캐릭터", value: "청초 서사 호평(국내)" }
   - { label: "분량", value: "한 편이 길고 중간 쉼표가 없다" }
   - { label: "구성", value: "\"방랑자+신캐\" 공식이 한계라는 지적(해외)" }
-summary: "3.6 채널 설문은 아직 집계 전이다. 국내 장문 후기는 청초 서사를 호평하는 반면, 해외에서는 몽주 스토리가 라하이 로이보다 약하다는 의견이 나온다."
+summary: "국내 채널 설문 4.02점으로 3.5(3.89)보다 올랐다. 국내는 청초 서사를 호평하는 반면, 해외에서는 몽주 스토리가 라하이 로이보다 약하다는 의견이 나온다."
 regions:
   - region: domestic
     summary: "청초가 힘을 나눠 약해진 설정으로 긴장감을 만든 구성과 경연의 간주가 호평받았다."
     positive:
       - "청초의 서사와 캐릭터성"
       - "경연 간주"
+    negative:
+      - "6주치 스토리가 버전 초에 한꺼번에 나와 후반부에 할 게 없다 — 3주 단위 분할을 원하는 피드백이 많다"
   - region: overseas
     summary: "\"라하이 로이가 그립다\", \"방랑자 + 신캐 공식을 깨야 한다\"는 글이 크게 공감받았다."
     positive:
@@ -24,11 +31,13 @@ regions:
       - "퀘스트가 너무 길고 중간 쉼표가 없다"
 subjects: [versions/v3-6]
 sources:
-  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183767180", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.6 채널 설문 안내 (~09/27, 결과 미발표)" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/183767180", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: "3.6 채널 설문 안내" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184779355", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: "3.6 설문 결과: 스토리 4.02" }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184781186", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: "3.6 설문 게임 피드백" }
   - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/180501091", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
   - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/182907893", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
   - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wm1dxa/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
   - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wlsyml/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
   - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1w5j8fs/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27 }
   - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wdo3sp/", collectedAt: 2026-09-27, verifiedAt: 2026-09-27, note: 3.6 분량 언급 }
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

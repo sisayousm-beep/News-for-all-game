@@ -1,0 +1,37 @@
+id: story-v3-7
+title: "3.7 스토리 — 여우의 별자리 — 4장 4막·현방 최종장"
+kind: story
+version: "3.7"
+consensus: mixed
+flow: "4장 4막 「몽주의 궤적, 마음이 그리는 대로」. 조월회 중 붕괴 소문이 돌고, 방랑자는 쇄명과 함께 몽추천라로 들어가 여우의 별자리를 찾는다. 여우의 별자리가 진짜 수호신이 되기까지를 그린 현방 지계 최종장이며, 기담 임무가 함께 추가됐다."
+verdicts:
+  - { label: "주인공 서사", value: "여우의 별자리의 고뇌·성장 호평" }
+  - { label: "연출", value: "궁극기 연출과 연결된 클라이맥스 호평, 경극·중국풍 음악은 호불호" }
+  - { label: "완결성", value: "최종장이자 프롤로그 같다 — 현방 캐릭터 활용 부족 지적(해외)" }
+summary: "여우의 별자리 서사와 연출은 호평이 많지만, 최종장치고 혼란스럽고 다른 현방 캐릭터의 활용이 부족했다는 의견이 갈린다. 3.7 채널 설문은 아직 집계 전이다."
+regions:
+  - region: domestic
+    summary: "여우의 별자리가 '진짜 수호신보다 잘하고 있을까'라는 고뇌를 넘어 수호신으로 거듭나는 구조와 연출이 만족스럽다는 후기가 많다. 현방 지계 전체를 '전쟁의 아픔과 위로'로 읽는 장문 해석도 나왔다."
+    positive:
+      - "여우의 별자리의 과거와 감정이 단계적으로 드러나는 구조"
+      - "궁극기 형태·컷신의 이유를 납득시키는 연출"
+    negative:
+      - "경극·중국풍 음악 연출이 과하다는 반응"
+      - "이름을 정하는 장면의 번역이 아쉽다"
+  - region: overseas
+    summary: "3.1과 비슷한 10점짜리라는 호평과, 가장 혼란스러운 최종장이라는 혹평이 함께 공감을 받았다."
+    positive:
+      - "퀘스트를 마무리하는 방식이 좋았다"
+      - "방랑자와 여우의 별자리의 관계가 감동적"
+    negative:
+      - "'또 다른 자신'·'희생' 모티프 반복에 피로감"
+      - "청초·양양·수수·경연이 지역 서사에서 겉돈다 — 최종장이 아니라 다음 이야기의 프롤로그 같다"
+      - "보스 재료용 보스를 메인 퀘스트에 넣는 공식이 서사를 제약한다"
+subjects: [versions/v3-7]
+sources:
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184848744", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 3.7 스토리 후기 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184915909", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: 현방 스토리 주제 장문 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wuxrmh/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wun570/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wuwjge/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+updatedAt: 2026-10-04

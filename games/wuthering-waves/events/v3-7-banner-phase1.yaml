@@ -1,0 +1,25 @@
+id: v3-7-banner-phase1
+title: "3.7 전반부 픽업 — 여우의 별자리 (치사·유노 복각)"
+aliases: ["Hsin", "Chisa", "Iuno"]
+kind: banner
+start: 2026-09-30T12:00:00+09:00
+end: 2026-10-22T09:59:00+08:00
+endNote: "공지 표기: server time — 아시아 서버 UTC+8"
+version: "3.7"
+summary: "신규 5성 여우의 별자리 [부디 이 밤처럼 늘 영원하기를]과 치사·유노 복각, 전용 무기 「옥궐에 피는 꽃」·쿠모키리·세상 만물의 진리 무기 튜닝. 4성 픽업 복링·도기·유호."
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5546
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 전반부 튜닝 공지
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 콘텐츠 안내(이미지) — 튜닝 기간
+updatedAt: 2026-10-04

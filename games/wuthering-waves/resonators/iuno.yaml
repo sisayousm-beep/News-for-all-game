@@ -49,6 +49,15 @@ topics:
     name: "6체인 「내가 머무는 곳, 그곳이야말로 변치 않는 유일한 진실」"
     text: "강공격 · 완벽한 결말의 피해 배율이 1600% 증가된다. 유노가 강공격 · 완벽한 결말 발동 시, 다시 달의 순환 · 초승달 상태에 진입하고 100pt의 「영성」을 획득하며, 공명 스킬 · 경계를 넘은 활시위의 모든 쿨타임을 리셋한다"
 history:
+  - date: 2026-09-30
+    version: "3.7"
+    kind: rerun
+    summary: "3.7 전반부 튜닝으로 복각 (3.7 업데이트 후 ~ 2026-10-22 09:59, 서버 시간)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5546
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
   - date: 2025-09-17
     version: "2.6"
     kind: release
@@ -72,4 +81,4 @@ sources:
     note: 능력치·스킬·공명 체인 한국어 인게임 문구
 image: /games/wuthering-waves/img/resonators/iuno.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/younuo-16dc65fc.webp
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

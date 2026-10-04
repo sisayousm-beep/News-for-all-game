@@ -1,0 +1,43 @@
+id: hsin-evaluation
+title: "여우의 별자리 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.7"
+consensus: strong
+verdicts:
+  - { label: "캐릭터 티어", value: "T0.5 (역경의 탑 기준)" }
+  - { label: "파티 순위", value: "T0.5 — 전도 파티(방랑자·전도 + 복링), 공명 파티는 T1.5" }
+  - { label: "전용 무기 의존도", value: "높은 편 — 상시 무기 선택지가 약해 전용 무기 권장" }
+  - { label: "돌파 가치", value: "명함으로 충분, 6돌만 크게 오름" }
+  - { label: "파티 의존도", value: "낮음 — 전도 파티를 무과금 캐릭터로 짤 수 있다" }
+summary: "현재 최고의 전도 딜러로 T0.5 평가. 무과금 파티로도 성능이 나와 입문자에게도 추천되며, 출시와 함께 명조가 처음으로 Steam 글로벌 순위 1위에 올랐다."
+positive:
+  - "드문 전도 딜러 중 최상위 — 전도 계열을 키우던 유저에게 반가운 캐릭터."
+  - "방랑자·전도 + 복링 무과금 파티가 금희 공명 파티와 비슷한 성능."
+  - "공명(동조) 메커니즘이 확장되면 더 성장할 여지가 있다."
+negative:
+  - "전도(Flare) 모드에서는 6돌 외 돌파 효율이 낮다."
+  - "상시 무기 선택지가 약하다."
+  - "공명 모드로 금희를 다시 쓰게 해 줄 줄 알았지만, 무과금 전도 파티보다 낫지 않다."
+subjects: [resonators/hsin, weapons/blooming-jadehaven]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/characters/hsin
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "Review(장단점)·Teams·Calculations, 2026-10-01 갱신"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "역경의 탑 T0.5 (2026-09-30 갱신)"
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/team-tier-list
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "HSIN FLARE T0.5, HSIN UNISON T1.5"
+  - source: reddit
+    url: https://www.reddit.com/r/WutheringWaves/comments/1wtyik6/
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "Steam 글로벌·미국 1위"
+updatedAt: 2026-10-04
