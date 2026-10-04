@@ -1,0 +1,53 @@
+id: yahata-umiri-evaluation
+title: 야하타 우미리 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 조건부 강함 — 해외 1스 B-
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 매복자 스페셜리스트 — 사키코 1스와 조합
+- label: 추천 스킬
+  value: 1스킬(특화 1부터 체감), 2스 비추천
+summary: 사키코 1스와 함께 쓰는 1스 조합은 "조건부 6★급", 궁극의 방치(AFK) 조합이라는 평. 2스는 회전율이 나빠 "배포 5★ 냄새가 난다"는 반응이 공통이다.
+positive:
+- 사키코 1스 + 우미리 1스는 숨 쉬듯 스킬이 나오는 AFK 조합(중국 서버 선행 후기 포함).
+- 통합 전략 유물과 맞물리면 공격력이 복사돼 정예1로도 사기를 친다.
+negative:
+- 2스는 SP 40·지속 15초로 회전율이 나쁘다.
+- 사키코 3스 운용이면 우미리의 역할이 작아진다.
+- 단독 딜은 약하고 잡몹에게 맞아 죽기 쉽다는 글.
+subjects:
+- operators/yahata-umiri
+- operators/yahata-umiri#s1
+- operators/yahata-umiri#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qxxhrp/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Somniloquium Serenum (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5968255
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5988799
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6003355
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5945842
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6058435
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

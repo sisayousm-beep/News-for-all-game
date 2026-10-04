@@ -1,0 +1,60 @@
+id: story-first-of-a-thousand-autumns
+title: '''사세행'' — 6.5주년 염국 SideStory'
+kind: story
+version: '6.5'
+consensus: moderate
+flow: 쉐이(세) 형제 이야기의 6.5주년 편. 과거 시점과 현재 시점이 교차하며, 바둑 국수 '왕'과 쉐이 형제·첸 등 염국 인물들이 쉐이 본체와 얽힌 오랜 대국을 마무리한다. 왕의 로도스 합류 후일담은 오퍼레이터 파일·레코드로 이어진다.
+verdicts:
+- label: 진입 장벽
+  value: 높음 — 장진주·등림의·회서리·상견환 등 선행 스토리 필요
+- label: 연출
+  value: 애니메이션 PV·영상 연출 호평
+- label: 화제 인물
+  value: 왕, 춘
+summary: 쉐이 이야기의 큰 마무리로 받아들여지며 연출은 호평이지만, 앞선 쉐이 스토리를 모르면 이해하기 어렵다는 반응이 국내외 공통이다.
+regions:
+- region: domestic
+  summary: 영상 연출이 좋았다는 글과 춘(과거 시점) 서사에 대한 호평이 있었다. 신규 유입은 선행 스토리가 많아 이해가 어렵다고 했다.
+  positive:
+  - 영상 연출
+  - 과거 시점의 춘 서사
+  negative:
+  - 선행 스토리 없이는 이해하기 어렵다
+  - 초기 쉐이 스토리 속 왕과 설정이 달라졌다는 지적
+- region: overseas
+  summary: 메가스레드에서 과거·현재 교차 구조와 왕의 설정을 묻는 질문이 많았고, 쉐이 형제끼리의 싸움이라 다른 인물의 역할이 작다는 의견과 그게 맞다는 반박이 맞섰다.
+  positive:
+  - 형제들의 싸움을 형제들이 끝낸다는 구성
+  negative:
+  - 첸 등 다른 인물이 한 일이 적어 보인다
+  - 스탬프·문양 기믹이 헷갈린다
+subjects:
+- versions/v6-5
+- events/first-of-a-thousand-autumns
+sources:
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6099403
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6090247
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6088220
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6080633
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6099860
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1uxu0ra/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 이벤트 메가스레드
+updatedAt: '2026-09-27'

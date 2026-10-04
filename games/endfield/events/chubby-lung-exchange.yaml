@@ -1,0 +1,19 @@
+id: chubby-lung-exchange
+updatedAt: 2026-09-27
+title: 통합 지원 · 버블 출동! · 교환소
+kind: shop
+start: 2026-09-16T12:00:00+08:00
+end: 2026-10-07T04:00:00+08:00
+version: "1.5"
+summary: 납품 이벤트와 별도로 교환소가 열립니다. 지원 성과권으로 보상을 교환하세요.
+rewards:
+  - 오로베릴 ×1,600
+  - 프로필 · 버블 출동!
+subjects:
+  - industry/support-production
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+endNote: 원문 Asia 서버 시간(UTC+8). 화면은 한국 시간으로 표시.

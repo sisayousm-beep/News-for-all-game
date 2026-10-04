@@ -1,0 +1,17 @@
+id: deep-cold-issue
+updatedAt: 2026-09-27
+title: 한기 신청 · 추운 밤의 그림자
+category: shop
+publishedAt: 2026-09-01
+version: "1.5"
+summary: 추운 밤의 그림자 획득 확률 증가. 종료 기준은 겨울 사냥부터 특별 허가 헤드헌팅 3회입니다.
+tags:
+  - 엔드필드
+  - "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/4480
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+image: /games/endfield/img/news/weapons.webp
+imageFrom: https://web-static.hg-cdn.com/upload/image/20260831/95f8709ebbeeed300488e23f68335bb7.jpg

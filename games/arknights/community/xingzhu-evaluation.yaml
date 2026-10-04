@@ -1,0 +1,47 @@
+id: xingzhu-evaluation
+title: 싱주 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최하위권 — 해외 스킬 등급 없음
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 비호자 서포터
+- label: 추천 스킬
+  value: 키운다면 1스킬 (2스는 SP 75·30초로 최악의 가동률)
+summary: 해외 공략이 "키우지 말아야 할 유닛"으로 꼽았고, 국내에서도 "비호자 자체가 하자품", "5성은 피규어"라며 애정으로만 키운다는 반응이 대부분이다.
+positive:
+- 신뢰도 대사가 귀엽다는 이유로 키운다는 글이 많다.
+negative:
+- 2스는 SP 75에 지속 30초로 게임 최악 수준의 가동률, 효과도 약하다(해외).
+- 와파린·사일런스가 훨씬 좋다는 댓글.
+subjects:
+- operators/xingzhu
+- operators/xingzhu#s1
+- operators/xingzhu#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1lzk7k5/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Such is the Joy of Our Reunion (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5655939
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5644272
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5644171
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5646740
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

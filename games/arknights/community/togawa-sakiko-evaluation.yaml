@@ -1,0 +1,52 @@
+id: togawa-sakiko-evaluation
+title: 토가와 사키코 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위권 딜러 — 해외 3스 S++
+- label: 뽑기 권장
+  value: 추천 (해외 Strong Pull, 콜라보 한정)
+- label: 역할
+  value: 군주 가드 — 물리·마법 전환, 방어·마저 무시 원거리 딜
+- label: 추천 스킬
+  value: 3스킬 / 우미리 조합이면 1스킬
+- label: 조작 난이도
+  value: 쉬움
+summary: 기본 딜이 강하고 방어·마법 저항 무시가 붙어 거의 모든 적에게 딜이 나오는 콜라보 한정 딜러. 국내에서도 계정 거래 추천 상위권이고, 3스 순간 딜은 왕과 비빌 만하다는 평.
+positive:
+- 물리(피아노)·마법(오르간)을 스킬에 따라 전환하고 방어·마저 무시로 대상을 가리지 않는다(해외).
+- 피버 메커니즘과 넓은 사거리, 밴드 멤버와 쓰면 더 강해진다.
+- 3스 총딜은 방어·마저 조건에 따라 왕보다 높을 수도 있다는 댓글(단, 왕은 광역).
+negative:
+- 단일 대상 딜이고 최상위 메타 유닛보다 유틸이 적다(해외).
+- '"없어도 깰 건 다 깬다"는 말처럼 필수까지는 아니라는 의견.'
+subjects:
+- operators/togawa-sakiko
+- operators/togawa-sakiko#s1
+- operators/togawa-sakiko#s3
+- operators/togawa-sakiko#talent-2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qxxhrp/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Somniloquium Serenum (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6077920
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6059506
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6047633
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5968255
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

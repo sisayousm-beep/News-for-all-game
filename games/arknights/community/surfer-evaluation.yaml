@@ -1,0 +1,58 @@
+id: surfer-evaluation
+title: 서퍼 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 최상위 — 해외 1스 S+
+- label: 뽑기 권장
+  value: 추천(5★ 에이전트)
+- label: 역할
+  value: 에이전트 뱅가드 — 코스트 + 쾌속 재배치
+- label: 추천 스킬
+  value: 1스킬
+- label: 잠재 의존도
+  value: 잠재 효율 매우 좋음(코감·재배치·공속·재능 강화)
+summary: 에이전트는 직군 자체가 강하고 서퍼는 5★인데도 좋다는 평이 국내외 공통이다. 칸타빌레와 비교하면 코스트 수급은 서퍼, 통합 전략 유틸은 칸타빌레라는 의견이 많다.
+positive:
+- '"에이전트 직군은 다이아수저", 5★인데도 좋다는 댓글이 다수.'
+- 잠재 효과(코감·재배치·공속·재능 강화·코스트 환급)가 버릴 게 없다.
+- 공속 효과를 두 스킬 모두 받고 저점이 높다.
+negative:
+- 일반 맵에서는 이네스·머틀이 더 편하다는 의견.
+- 첫 재배치 감소 모듈을 받은 칸타빌레가 통합 전략에서는 더 낫다는 비교.
+divided:
+- position: 서퍼가 칸타빌레보다 낫다
+  reasons:
+  - 코스트 수급이 조금 더 좋고 저점이 높다
+- position: 칸타빌레가 낫다
+  reasons:
+  - 첫 재배치 감소·위장 유틸
+subjects:
+- operators/surfer
+- operators/surfer#s1
+- operators/surfer#potential
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1lzk7k5/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Such is the Joy of Our Reunion (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5656071
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5655973
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5653758
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5653765
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

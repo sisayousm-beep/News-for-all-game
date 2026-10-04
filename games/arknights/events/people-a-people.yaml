@@ -1,0 +1,22 @@
+id: people-a-people
+title: SideStory '사람들, 우리들'
+kind: event
+start: '2026-09-16T16:00:00+09:00'
+end: '2026-10-07T03:59:00+09:00'
+version: '6.5'
+summary: 우르수스 학생자치단 SideStory. 스테이지는 9월 16일·23일 두 번에 나눠 열리며, 이벤트 상점 [눈 속의 모닥불]에서 보상을 교환한다. 개방 조건 1-10 클리어.
+rewards:
+- 5★ 보타니(이벤트 보상 오퍼레이터)
+- 헤드헌팅 허가증
+- 에포크 시리즈 컬렉션 - 인필트레이터(에단)
+- 모듈 육성 재료
+subjects:
+- operators/botany
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1247160
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+image: /games/arknights/img/events/people-a-people.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA5MTFfMzEg/MDAxNzg5MTA4MTEwNTYw.5AbnEF72CIGbavmOGX6bOyGpgxpul5J5Dei2KwsDZPsg.TMVuqQBEdaQcL-FEuZExRfxSOdosK_0i0Y3o2QKnqWUg.JPEG/out.jpg
+updatedAt: '2026-09-27'

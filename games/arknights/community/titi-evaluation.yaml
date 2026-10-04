@@ -1,0 +1,58 @@
+id: titi-evaluation
+title: 티티 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상황형 — 해외 3스 S-(일반)·2스 A+(고난도)
+- label: 뽑기 권장
+  value: 해외 비추천(Strong Skip), 국내는 고난도용으로 재평가
+- label: 역할
+  value: 주술 메딕 — 수면 제어 + 힐·딜
+- label: 추천 스킬
+  value: 2스킬(고난도·보조) / 3스킬(일반)
+summary: 출시 직후 국내에서는 "계륵", "애매하다"는 반응이 많았지만, 이후 2스 활용과 고난도·명토체스에서의 쓰임이 알려지며 재평가됐다. 해외 공략은 여전히 뽑기 비추천.
+shift:
+  release: 국내 "계륵·애매" / 해외 Lean Skip
+  now: 국내 "2스 성능 말이 안 됨" / 해외 Strong Skip
+  reason: 국내는 고난도와 명토체스(사르곤 맹약 핵심)에서 쓰임이 확인되며 올랐고, 해외는 뒤이은 강한 배너 때문에 뽑기 우선도를 더 낮췄다.
+positive:
+- 2스 퍼포먼스가 좋고, 신시아와 같이 쓰면 서로 막아 주고 무적을 걸어 줘 든든하다는 후기.
+- 수면 중 SP를 채우고, 수동 종료가 있어 생각보다 불편하지 않다.
+- '해외: 명토체스 사르곤 맹약은 "티티 아니면 망"이라 할 만큼 핵심.'
+negative:
+- 수면은 보스 면역이 많고 아군과의 상호작용이 나쁜 제어라는 해외 평가.
+- 범용 힐러는 하루카·몬삼터가 있어 일반 맵에서는 볼 일이 적다.
+subjects:
+- operators/titi
+- operators/titi#s2
+- operators/titi#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1u9ych8/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Medjehtiqedti Bound (스킬 등급·뽑기 권장, 댓글)
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1w59jxc/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Stronghold Protocol 2 리뷰 — 사르곤과 티티
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6069178
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6069150
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6096522
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6070327
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

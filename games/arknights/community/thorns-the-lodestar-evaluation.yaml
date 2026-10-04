@@ -1,0 +1,63 @@
+id: thorns-the-lodestar-evaluation
+title: 쏜즈 더 로드스타 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: mixed
+verdicts:
+- label: 오퍼레이터 티어
+  value: 해외 2스 S+ / 국내 "고스펙 백수"
+- label: 뽑기 권장
+  value: 넘겨도 됨 (해외 Lean Skip)
+- label: 역할
+  value: 스페셜리스트 — 준전역 딜·힐, 실(줄) 연결 버프
+- label: 추천 스킬
+  value: 2스킬 (1스는 힐, 3스는 틈새)
+summary: 해외 공략은 2스를 매우 높게 평가하지만, 국내에서는 "뽑아 놓고 안 쓴다", "고스펙 백수라 사기당했다"는 글이 많다. 원본 쏜즈처럼 매번 출근하는 유닛은 아니라는 평.
+positive:
+- 2스가 범용으로 뛰어나다(해외) — 2스가 재밌다는 국내 댓글도 많다.
+- 통합 전략에서 준전역 딜·힐이 되고 1스 힐량이 크다는 후기.
+negative:
+- 힐을 받을 수 없게 되는 1스 옵션이 계륵이라는 지적.
+- 뒤이은 위·르무엔·Mon3tr 등 신캐 성능이 좋아 뽑을 이유가 적다는 글.
+- 특정 환경이 갖춰지면 쓴다지만 그 환경이 잘 안 온다는 댓글.
+divided:
+- position: 좋은 유닛이다
+  reasons:
+  - 해외 2스 S+
+  - 통합 전략에서 은근 좋다
+- position: 뽑을 이유가 없다
+  reasons:
+  - 반년 백수
+  - 실전에서 편성하지 않게 된다
+subjects:
+- operators/thorns-the-lodestar
+- operators/thorns-the-lodestar#s1
+- operators/thorns-the-lodestar#s2
+- operators/thorns-the-lodestar#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1l1ujq2/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Exodus from the Pale Sea (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5611224
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5657931
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5676101
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5672100
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5665967
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

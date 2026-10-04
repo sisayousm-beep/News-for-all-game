@@ -1,0 +1,51 @@
+id: chilchuck-evaluation
+title: 칠책 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 최상위권 — 해외 1스 S(고난도)
+- label: 뽑기 권장
+  value: 콜라보 5★ 중 추천
+- label: 역할
+  value: 에이전트 뱅가드 — 코스트 + 컨텐츠 의존적 재능
+- label: 추천 스킬
+  value: 1스킬 (2스는 이네스 하위호환이라는 의견)
+- label: 잠재 의존도
+  value: 위기협약 고득점 특수 용도에 한해 코감 잠재
+summary: 에이전트 직군 자체가 강하고 재능이 대체 불가능해 5★ 중에서도 특화 6개 후보라는 해외 평가. 국내에서는 "위기협약에서 쓰이는 특수픽", 평소엔 애매하다는 의견이 많다.
+positive:
+- 재능이 컨텐츠에 따라 매우 강력하다(해외) — "재능이 대체 불가".
+- 위기협약 고득점 코어 픽으로 쓰였다.
+- 5★ 에이전트인데 모듈이 있다.
+negative:
+- 2스는 이네스 하위호환 같다는 댓글.
+- 위기협약을 빼면 성능이 애매하다는 의견.
+subjects:
+- operators/chilchuck
+- operators/chilchuck#s1
+- operators/chilchuck#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1j4hzqh/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Delicious on Terra (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5514083
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5510562
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5517391
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5513531
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

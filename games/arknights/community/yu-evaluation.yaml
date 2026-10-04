@@ -1,0 +1,55 @@
+id: yu-evaluation
+title: 위 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상위권 — 해외 2스 S(고난도), 3스 A+
+- label: 뽑기 권장
+  value: 추천 (해외 Lean Pull, 한정)
+- label: 역할
+  value: 디펜더 — 소각(화상) 파티 핵심 + 변위
+- label: 추천 스킬
+  value: 2스킬 메타(변위·범용), 3스킬 소각 파티
+- label: 조작 난이도
+  value: 쉬움 — 블레이즈 2격과 3스 동시 사용
+summary: 메타 가치는 2스, 화려한 소각은 3스에 있다는 해외 평가. 국내에서도 "위 3스 핵 좋다", 블레이즈 디 이그나이팅 스파크와 동시에 쓰는 소각 파티, "2스도 확실히 든든하다"는 후기가 이어졌다.
+positive:
+- 3스는 마법 피해만 있으면 소각을 터뜨려 블레이즈 2격 없이도 스즈란 등으로 커버된다는 후기.
+- 2스는 변위(적 밀어내기)를 빼고도 매우 세다.
+- 쏜즈 평타로도 3스가 발동해 섬멸 자동화에 쓰였다.
+negative:
+- 소각은 오퍼레이터가 준 피해에만 붙어 일부 도트 피해(에단 등)는 안 된다는 실험 결과.
+- 3스 가치는 소각 파티 구성에 좌우된다.
+subjects:
+- operators/yu
+- operators/yu#s2
+- operators/yu#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1lzk7k5/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Such is the Joy of Our Reunion (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5661289
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5671687
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5655232
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5657309
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5651913
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

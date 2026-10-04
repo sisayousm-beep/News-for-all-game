@@ -1,0 +1,44 @@
+id: cairn-evaluation
+title: 케언 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 강함 — 해외 2스 A-·A
+- label: 뽑기 권장
+  value: 헤드헌팅에서 나오면 좋음
+- label: 역할
+  value: 원소(신경 손상) 디펜더 — 저지한 적 공격 무효
+- label: 추천 스킬
+  value: 2스킬 — 적은 투자로도 성능이 나옴
+summary: 가장 강한 원소 손상인 신경 손상을 빠르게 걸어 5★인데도 놀랄 만큼 단단하다는 해외 평가. 국내에서는 전투보다 인프라(기반시설) 용도로 키운다는 글이 많다.
+positive:
+- 저지한 적 3명의 공격을 주기적으로 무효화해 매우 단단하다(해외).
+- 정예2 23레벨·스킬 7레벨 정도만 돼도 한 번의 2스로 신경 손상을 건다 — 과투자가 필요 없다.
+- 인프라 자동 편성에서 키울 오퍼로 자주 뽑힌다.
+negative:
+- 저지하지 않은 적에게는 신경 손상이 느리다.
+- 국내에서는 "5성은 폐기물이니 건들지 말라"는 댓글처럼 5★ 투자 자체를 말리는 분위기.
+subjects:
+- operators/cairn
+- operators/cairn#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1tf73ey/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Unrealized Realities (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6108589
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6097437
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6086138
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

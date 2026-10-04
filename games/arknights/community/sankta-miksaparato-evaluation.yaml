@@ -1,0 +1,46 @@
+id: sankta-miksaparato-evaluation
+title: 산크타 믹사파라토 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 3스 B, 2스 C
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 센트리 디펜더 — 탄약형 원거리 반격
+- label: 추천 스킬
+  value: 3스킬
+- label: 육성 권장
+  value: 재화가 남으면 — 성능 보고 키울 정도는 아님
+summary: 배포 디펜더치고 괜찮지만 압도적인 유틸이 없어 저성급 디펜더 대비 투자 가치가 낮다는 해외 평가. 국내에서도 "재화가 부족하면 굳이", "다른 오퍼가 다 있으면 성능 보고 키울 정도는 아니다"는 답이 많았다.
+positive:
+- 센트리라 대공이 된다.
+- 엑시아 더 뉴 커버넌트 모듈(아군 탄약 소모 시 폭격)과 탄약 파티로 엮는 재미 조합을 노린다는 글.
+- 이벤트 상점 증표는 복각 때 잠재를 위해 다 사 두라는 조언.
+negative:
+- 6★ 디펜더는 가격 대비 저성급과 차이가 작아 투자 순위가 낮다(해외).
+- 기관총 난사 연출이 없다는 아쉬움.
+subjects:
+- operators/sankta-miksaparato
+- operators/sankta-miksaparato#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1o2j8ro/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — The Masses' Travels (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5778922
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5841343
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5834989
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

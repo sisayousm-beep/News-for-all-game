@@ -1,0 +1,34 @@
+id: hadiya-evaluation
+title: 하디야 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중하위 — 해외 2스 C+
+- label: 뽑기 권장
+  value: 구매증명서 상점 교환 — 우선순위 낮음
+- label: 역할
+  value: 첫 용병 가드 — 코스트를 써서 스킬 강화
+- label: 추천 스킬
+  value: 2스킬
+summary: 코스트를 써서 스킬을 강화하는 첫 용병 가드지만 실제로 하는 일은 기본 딜 정도라 대부분은 키울 필요가 없다는 해외 평가. 국내에서도 구매증명서 추천 목록에서는 이네스 등이 먼저 거론됐다.
+positive:
+- 코스트를 새로운 자원으로 쓰는 참신한 개념(해외).
+negative:
+- 기본 딜과 적은 유틸, 코스트 의존, 비싼 구매증명서 가격(해외).
+- 구매증명서로 살 오퍼를 묻는 글에서 이네스 정가 교환을 먼저 권했다.
+subjects:
+- operators/hadiya
+- operators/hadiya#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1sixuv4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Retracing Our Steps (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6077598
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

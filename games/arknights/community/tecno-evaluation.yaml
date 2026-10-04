@@ -1,0 +1,49 @@
+id: tecno-evaluation
+title: 테크노 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 2스 C+~B-
+- label: 뽑기 권장
+  value: 애정 픽
+- label: 역할
+  value: 캐스터 — 처치한 적을 유령 소환물로
+- label: 추천 스킬
+  value: 2스킬(딜) 또는 1스킬(길막용 소환물)
+summary: 참신하지만 유령 소환물 스탯이 낮고 많은 잡몹이 필요해 일반 컨텐츠에서는 약하다는 해외 평가와 "딱 실험용 5성", "딜이 약해 안 쓴다"는 국내 반응이 일치한다.
+positive:
+- 초반엔 소환물이 계속 생겨 꽤 쓸 만하고, 어그로 핑퐁을 잘해 준다는 통합 전략 후기.
+- 2스를 켜면 딜이 꽤 나온다.
+negative:
+- 후반으로 갈수록 체급이 크게 밀린다.
+- 소환물 유지에 잡몹이 많이 필요하다(해외).
+- 생존연산 험로 모드에서 딜이 약해 안 썼다는 평가.
+subjects:
+- operators/tecno
+- operators/tecno#s1
+- operators/tecno#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1l1ujq2/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Exodus from the Pale Sea (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5622111
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5608466
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5622076
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5608947
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

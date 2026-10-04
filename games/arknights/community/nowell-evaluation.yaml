@@ -1,0 +1,38 @@
+id: nowell-evaluation
+title: 노웰 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 2스 C·C+
+- label: 뽑기 권장
+  value: 목표로 뽑을 필요 없음
+- label: 역할
+  value: 메딕 — 상황형 비치유 유틸
+- label: 추천 스킬
+  value: 2스킬
+summary: 나쁘진 않지만 힐 위주 5★ 메딕이라 4★보다 가치가 낮다는 해외 평가. 국내에서는 "2스 회전이 좋지만 상태이상 해제가 있는 루멘 앞에서는 범부"라는 반응.
+positive:
+- 2스는 SP 20에 12초 지속으로 회전이 좋아 SP 보조가 있으면 거의 무한처럼 쓴다는 후기.
+negative:
+- 상태이상 해제가 있는 루멘에 밀린다.
+- 통합 전략에서 4★이 희망 0으로 모집되면서 5★ 메딕의 가치가 더 낮아졌다(해외).
+subjects:
+- operators/nowell
+- operators/nowell#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1mikkeh/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — See You Soon (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5680666
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5676198
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

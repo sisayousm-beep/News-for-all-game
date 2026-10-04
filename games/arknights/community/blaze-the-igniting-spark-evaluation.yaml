@@ -1,0 +1,52 @@
+id: blaze-the-igniting-spark-evaluation
+title: 블레이즈 디 이그나이팅 스파크 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 조건부 — 해외 3스 A+(위 보유 시)
+- label: 뽑기 권장
+  value: 위가 있으면 추천, 없으면 넘겨도 됨 (해외 Lean Skip)
+- label: 역할
+  value: 캐스터 — 소각(화상) 파티의 발사대
+- label: 추천 스킬
+  value: 3스킬(위와 함께)
+summary: 국내외 모두 "위가 있어야 좋다"로 정리된다. 위와 함께 쓰는 소각 파티에서는 강하지만 단독으로는 애매하고, Mon3tr 이후 인플레로 평가가 더 내려갔다.
+positive:
+- 위와 함께 3스를 쓰면 소각 파티의 핵심 발사대가 된다.
+- '"비유하자면 소각판 님프", 무난하다는 후기.'
+negative:
+- 위가 없으면 쓰기 애매하다는 댓글이 다수.
+- 출시 때도 사기 소리는 못 들었고, 이후 인플레로 더 밀렸다는 의견.
+- '"있으면 좋고 없어도 그만".'
+subjects:
+- operators/blaze-the-igniting-spark
+- operators/blaze-the-igniting-spark#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1lzk7k5/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Such is the Joy of Our Reunion (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5659934
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5668738
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5641328
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5643179
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5651635
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

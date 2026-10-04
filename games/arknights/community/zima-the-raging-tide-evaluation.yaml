@@ -1,0 +1,59 @@
+id: zima-the-raging-tide-evaluation
+title: 지마 더 레이징 타이드 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: A급 — 해외 공략 2스 S-(일반)·A(고난도)
+- label: 뽑기 권장
+  value: 애정 아니면 넘김 (해외 Lean Skip)
+- label: 역할
+  value: 방치형 라인 유지 + 3스 광역 한방
+- label: 추천 스킬
+  value: 2스킬(자동 발동·무한 지속)
+- label: 조작 난이도
+  value: 매우 쉬움 — 2스 자동 발동
+summary: 2스 방치(AFK) 라인 유지는 최신 6★다운 수치라 편하다는 평이지만, 이어지는 한정·콜라보 배너를 생각하면 애정이 아니면 넘기라는 조언이 국내외 공통이다.
+shift:
+  release: 해외 공략 첫 평가 "Lean Pull"
+  now: '"Lean Skip"'
+  reason: 해외 공략이 뒤이은 한정 배너(켈시 이격 등)와 클로저가 더 강하다고 보며 한 단계 내렸다.
+positive:
+- 2스는 자동 발동·두 번째 발동부터 무한 지속에 공격력·방어력 보너스가 커서 한 라인을 맡겨 두기 좋다.
+- 3스는 망치 5연타로 한 방 피해(DPH)가 크고 회전이 빠르다.
+negative:
+- 회복·마법 저항·대공이 없고 제어는 3스에만 있다.
+- 국밥(범용) 라인에는 프라마닉스 더 프레리타, 가드에는 울피아누스가 이미 있다는 댓글.
+- 한국어 음성이 캐릭터와 안 맞는다는 글이 있었다.
+subjects:
+- operators/zima-the-raging-tide
+- operators/zima-the-raging-tide#s2
+- operators/zima-the-raging-tide#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1weq14o/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — People, A People (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6141001
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6140425
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6149874
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6134438
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6140676
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

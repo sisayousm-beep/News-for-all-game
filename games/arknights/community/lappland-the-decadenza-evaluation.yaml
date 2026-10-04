@@ -1,0 +1,49 @@
+id: lappland-the-decadenza-evaluation
+title: 라플란드 더 데카덴차 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위권 — 해외 3스 S+
+- label: 뽑기 권장
+  value: 좋지만 무리할 필요는 없음 (한정)
+- label: 역할
+  value: 캐스터 — 맵 전체 사거리 딜·제어
+- label: 추천 스킬
+  value: 3스킬
+- label: 모듈
+  value: 체감 작음(공속 +10)
+summary: 맵 전체 사거리에 강한 딜·제어·타겟 조작까지 더한 최고 수준의 범용 캐스터라는 해외 평가. 국내에서는 "좋지만 무조건은 아니다", 최고난도 고인물 컨텐츠를 안 하면 걸러도 된다는 의견이 많다.
+positive:
+- 골든글로우가 세운 전역 사거리 기준을 딜·제어·타겟 조작으로 끌어올렸다(해외).
+- '"성능도 기깔나니 뽑는 게 맞다", 소각(쇠약) 파티 핵심 파츠이고 위(한정)와 연계가 좋다는 댓글.'
+negative:
+- 모듈 체감이 크지 않다(공속 +10).
+- '"최고난도 컨텐츠가 아니면 걸러도 지장 없다"는 댓글.'
+subjects:
+- operators/lappland-the-decadenza
+- operators/lappland-the-decadenza#s3
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1k4r87z/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — I Portatori dei Velluti (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5568917
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5556782
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5557938
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5558289
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

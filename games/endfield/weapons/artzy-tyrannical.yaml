@@ -1,0 +1,27 @@
+id: artzy-tyrannical
+updatedAt: 2026-09-27
+title: 예술의 폭군
+aliases:
+  - Artzy Tyrannical
+summary: "점묘 신청 재구축 #1에서 획득하는 6성 무기."
+attributes:
+  rarity: 6
+  type: handcannon
+  acquisition: "점묘 신청 재구축 #1"
+  version: null
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/3839
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+topics: []
+history:
+  - date: 2026-09-24T12:00:00+08:00
+    version: "1.5"
+    kind: rerun
+    summary: "점묘 신청 재구축 #1 개방."
+    sources:
+      - source: gryphline
+        url: https://endfield.gryphline.com/ko-kr/news/3839
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27

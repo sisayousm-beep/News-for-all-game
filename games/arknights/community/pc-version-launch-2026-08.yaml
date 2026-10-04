@@ -1,0 +1,44 @@
+id: pc-version-launch-2026-08
+title: PC 버전 출시 반응 — "구플베보다 낫다", 결제 가격은 제각각
+kind: issue
+scope: offgame
+happenedAt: '2026-08-13'
+version: '6.5'
+background: 8월 13일 10시 공식 PC 클라이언트가 나왔다. 그동안은 구글 플레이 게임즈(PC)나 에뮬레이터로 PC에서 플레이했다.
+consensus: moderate
+summary: 120프레임·고화질 일러스트·렉 감소로 에뮬레이터·구플베보다 낫다는 평이 대부분이다. 다만 소리·창 크기 설정이 없고, 해외에서는 PC 결제가 싸지 않다는 지적이 나온다.
+positive:
+- 120프레임, 일러스트 4K, 로딩·프리징 감소로 "오토바이 두고 자전거 탈 이유가 없다"는 반응.
+- 21:9 전체 화면에서 맵 배경 구조물까지 보인다.
+- MAA(자동화 도구)도 그대로 쓸 수 있다는 댓글.
+negative:
+- 앱 플레이어처럼 소리 조절이 안 돼 아쉽다(국내), 창 크기·볼륨 설정이 없어 유저 제작 ReShade 애드온이 인기를 끌었다(해외).
+- '해외: 지역에 따라 PC 결제가 오히려 비싸고, 스토어 수수료가 없는데도 할인이 없다는 불만.'
+sources:
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6104525
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6104575
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6103542
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1w52tk4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: PC 결제 가격 비교 스레드
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1w024qe/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: PC 클라이언트용 ReShade 애드온
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246067
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

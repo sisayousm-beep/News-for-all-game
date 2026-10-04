@@ -1,0 +1,61 @@
+id: haruka-mastery
+title: 하루카 — 스킬 특화(3특) 효과
+kind: stat
+version: '6.0'
+answer: 2스킬 +27% (최대)
+results:
+- '특화 3으로 가장 크게 좋아지는 건 2스킬 「틈새의 반딧불」: 공격력 +25%→+40%, SP 20→17, 지속 23→26초 — 종합 약 +27%.'
+- '3스킬 「늦여름의 린수」: 공격력 배율 70%→80% — 약 +14%.'
+- '1스킬 「밤의 파울비스트」: 공격 속도 +45→+60 — 약 +10%.'
+- '스킬 1개 특화 1→3 재료: 스킬개론 제3권 ×35, 경화 섬유판 ×4 등 (특화 3 기준 2스킬).'
+chart:
+  title: 7레벨 → 특화 3 스킬 성능 상승 (핵심 수치 × 가동률)
+  unit: '%'
+  points:
+  - label: 1스킬
+    value: 10.3
+  - label: 2스킬
+    value: 26.6
+  - label: 3스킬
+    value: 14.3
+table:
+  columns:
+  - 스킬
+  - 핵심 수치 7→특화3
+  - SP
+  - 지속
+  - 종합
+  rows:
+  - - 1스킬 「밤의 파울비스트」
+    - 공격 속도 +45→+60 (+10%)
+    - 25→25
+    - 20→20초
+    - +10%
+  - - 2스킬 「틈새의 반딧불」
+    - 공격력 +25%→+40% (+12%)
+    - 20→17
+    - 23→26초
+    - +27%
+  - - 3스킬 「늦여름의 린수」
+    - 공격력 배율 70%→80% (+14%)
+    - 60→60
+    - 40→40초
+    - +14%
+  note: 종합 = (1+핵심 수치 상승) × 가동률 변화 − 1. 지속형은 가동률 = 지속/(지속+SP), 즉발형은 1/SP로 계산(SP 초당 1 회복 가정). 무한 지속·탄약형은 SP 변화를 반영하지 않음. 딜 계산이 아니라 수치 변화 비교.
+method: 한국 서버 게임 데이터 skill_table의 7레벨과 특화 3 수치를 비교했다. 핵심 수치는 공격력 배율→피해 배율→치유 배율→공격력… 순으로 1개를 고르고, 공격력·방어력 +% 버프는 기본치 포함 최종값(1+버프) 기준으로 상승률을 냈다(Game Hub 계산).
+assumptions:
+- 정예2·스킬 7레벨 대비 특화 3
+- 핵심 수치 1개와 SP·지속만 반영 — 적 방어력, 공격 횟수, 재능·모듈 상호작용은 제외
+- SP 감소·지속 증가는 스킬 가동률(지속형) 또는 사용 빈도(즉발형) 변화로 환산, SP는 초당 1(또는 공격당 1) 회복
+subjects:
+- operators/haruka
+- operators/haruka#s1
+- operators/haruka#s2
+- operators/haruka#s3
+sources:
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/blob/master/kr/gamedata/excel/skill_table.json
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 스킬 레벨별 수치·특화 재료(character_table)
+updatedAt: '2026-09-27'

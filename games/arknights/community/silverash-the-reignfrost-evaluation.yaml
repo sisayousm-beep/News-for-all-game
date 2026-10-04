@@ -1,0 +1,66 @@
+id: silverash-the-reignfrost-evaluation
+title: 실버애쉬 더 레인프로스트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 — 해외 2스 S+·S++, 3스 S+
+- label: 뽑기 권장
+  value: 최우선급 (해외 Strong Pull, 한정)
+- label: 역할
+  value: 뱅가드 — 코스트·자힐·제어·아군 버프·딜·은신 제거
+- label: 추천 스킬
+  value: 2스킬 범용, 3스킬 초반 코스트용
+- label: 조작 난이도
+  value: 보통
+summary: '"뱅가드 1황", 뱅가드에게 바랄 수 있는 모든 것을 갖췄다는 평이 국내외 공통이다. 계정 거래에서도 사키코·호시구마 더 브리처와 함께 "국룰 조합"으로 꼽힌다.'
+positive:
+- 막대한 실질 코스트 수급, 자가 회복, 제어, 아군 버프, 딜, 원본의 은신 제거까지 갖췄다(해외).
+- 2스 스택을 쌓아 쏘면 공중 적까지 얼려 떨어뜨린다.
+- 3스로 보스 첫 공격을 먼저 끊고 버틸 수 있어 데겐 등 다른 오퍼 운용이 편해졌다는 후기.
+negative:
+- 뱅가드라 딜은 신시아·위셔델 같은 최상위 딜러보다 한 끗 아쉽다는 의견.
+- 이벤트에 따라 3스 초동이 막혀 2스만 쓰게 된다.
+- 통합 전략 16승천 같은 최고 난도에선 힘이 부족하다는 댓글도 있다.
+divided:
+- position: 최상위 딜러들과 동급 적폐다
+  reasons:
+  - 역할이 다를 뿐 뱅가드 내 입지와 전체 성능은 나란하다
+  - 중국 서버 유저들은 신시아·위셔델보다 높게 평가한다
+- position: 한 끗 아래다
+  reasons:
+  - 뱅가드라 딜이 딸린다
+subjects:
+- operators/silverash-the-reignfrost
+- operators/silverash-the-reignfrost#s2
+- operators/silverash-the-reignfrost#s3
+- operators/silverash-the-reignfrost#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1sixuv4/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Retracing Our Steps (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6010355
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6018094
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6067995
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6069064
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6075054
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: 계정 거래 추천 조합 댓글
+updatedAt: '2026-09-27'

@@ -1,0 +1,48 @@
+id: mitm-evaluation
+title: 미틈 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 상황형 — 해외 고난도에서만 B
+- label: 뽑기 권장
+  value: 헤드헌팅에서 나오면 좋음
+- label: 역할
+  value: 전술가 뱅가드 — 로봇·잡동사니로 어그로·지연
+- label: 추천 스킬
+  value: 재능이 핵심, 특화는 선택
+summary: 로봇 재배치와 잡동사니 생성으로 특정 상황에서 막대한 지연(스톨)을 만드는 특이한 뱅가드라는 해외 평가. 국내에서는 "5★치고 꽤 좋다", 어그로 성능이 좋다는 사용 후기가 이어졌다.
+positive:
+- 배치에 따라 최대 4명까지 저지하는 구성이 비질보다 편하다는 후기.
+- 어그로를 잘 끌어 쥐 영감(보스)의 공격을 다 받아 냈다는 글.
+- 특정 고난도 상황에서는 독보적인 지연 능력(해외).
+negative:
+- 그 외 상황에서는 로봇 맷집과 본체 딜이 약하다(해외).
+- 기반시설 효과는 샤마르와 겹치면 의미가 작다는 댓글.
+subjects:
+- operators/mitm
+- operators/mitm#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1ihvny0/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — A Kazdelian Rescue (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5479831
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5499846
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5545222
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5496410
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

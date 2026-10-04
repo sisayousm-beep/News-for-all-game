@@ -1,0 +1,20 @@
+id: deep-cold-issue
+updatedAt: 2026-09-27
+title: 한기 신청 · 추운 밤의 그림자
+kind: banner
+start: 2026-09-02T12:00:00+08:00
+end: null
+version: "1.5"
+summary: 겨울 사냥부터 특별 허가 헤드헌팅 3회 진행 후 종료. 캐릭터 픽업 종료일과 같다고 가정하지 않습니다.
+rewards: []
+subjects:
+  - weapons/umbra-of-frigid-eventide
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/4480
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+startNote: 버전 업데이트 점검 종료 후. 시작 시각은 공식 예정 종료 시각.
+endNote: 겨울 사냥부터 특별 허가 헤드헌팅 3회 종료 후. 확정 종료 날짜 미공개.
+image: /games/endfield/img/news/weapons.webp
+imageFrom: https://web-static.hg-cdn.com/upload/image/20260831/95f8709ebbeeed300488e23f68335bb7.jpg

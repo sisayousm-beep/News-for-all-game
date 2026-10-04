@@ -1,0 +1,38 @@
+id: bobbing-evaluation
+title: 보빙 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 중 괜찮음 — 해외 2스 B+
+- label: 뽑기 권장
+  value: 헤드헌팅에서 나오면 좋음
+- label: 역할
+  value: 원소(화상) 서포터
+- label: 추천 스킬
+  value: 2스킬 (1스는 특화 1까지)
+summary: 원소 피해를 제대로 활용하는 첫 5★이라 5★ 중에서는 매력적이라는 해외 평가. 국내에서도 통합 전략에서 "원소 피해를 생각보다 잘 쌓는다", "좋다"는 후기가 있다.
+positive:
+- 원소 피해(화상)를 의미 있게 쓰는 첫 5★(해외).
+- 통합 전략에서 희망을 안 써도 원소 피해를 잘 쌓는다는 후기.
+negative:
+- 화상은 강력한 괴사(부식) 계열과 겹치지 않아 로스터에 따라 매력이 크게 떨어진다(해외).
+subjects:
+- operators/bobbing
+- operators/bobbing#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1jroeso/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Ending a Grand Overture (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5566869
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5572161
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

@@ -1,0 +1,28 @@
+id: umbra-of-frigid-eventide
+updatedAt: 2026-09-27
+title: 추운 밤의 그림자
+aliases:
+  - Umbra of Frigid Eventide
+version: "1.5"
+summary: 한기 신청에서 획득하는 6성 무기.
+attributes:
+  rarity: 6
+  type: arts-unit
+  acquisition: 한기 신청
+  version: "1.5"
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/4480
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: warfarin
+    url: https://warfarin.wiki/kr/weapons/umbra-of-frigid-eventide
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+topics:
+  - id: stats
+    section: stats
+    name: Lv.90 기본 공격력
+    values:
+      기본 공격력: 505
+history: []

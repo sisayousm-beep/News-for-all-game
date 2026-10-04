@@ -1,0 +1,19 @@
+id: pc-version-launch
+title: 명일방주 PC 버전 출시 (8/13 10:00)
+category: announcement
+publishedAt: '2026-08-07'
+summary: 8월 13일 10시 PC 버전 정식 서비스. 공식 홈페이지에서 설치 파일(.exe)을 받는다. 최저 사양 Windows 10 64bit·i3-6100·RAM 8GB·GTX 750 Ti, 저장 공간 30GB.
+tags:
+- PC
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1245879
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1246067
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+image: /games/arknights/img/news/pc-version-launch.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA4MDZfMzcg/MDAxNzg2MDA3NDA3OTIy.ihLmA3owyDp3gP3IAzBakVFzc7Ley-KGALkBTT00I6gg.E5ibyBqOChiK0TWKQRR-4ITeGfPmenEWwknBOijs7fQg.JPEG/out.jpg
+updatedAt: '2026-09-27'

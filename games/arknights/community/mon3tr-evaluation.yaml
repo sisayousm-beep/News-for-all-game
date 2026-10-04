@@ -1,0 +1,59 @@
+id: mon3tr-evaluation
+title: Mon3tr — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최상위 — 해외 3스 S++, 2스 A+
+- label: 뽑기 권장
+  value: 강력 추천 (해외 Strong Pull, 통상)
+- label: 역할
+  value: 체인 메딕 — 힐 + 버프 + 트루 대미지 딜
+- label: 추천 스킬
+  value: 3스킬
+- label: 조작 난이도
+  value: 보통 — 재구성체에 도트 힐이 닿으면 힐을 멈춘다
+summary: 힐·버프·트루 대미지를 한 명이 해내는 역할 압축으로 게임 최상위라는 평가가 국내외 공통이다. 국내에서는 "힐러를 뽑았는데 버프·딜·탱까지 한다", "통합 전략 힐러 모집권 0순위"라는 반응이 많았다.
+positive:
+- 3스는 특화 전에도 딜이 강해 "몬삼이 쓰니까 날먹"이라는 후기.
+- 통합 전략에서 힐러 유물 효과를 잘 받고, 쓰러져도 퇴각하지 않아 사실상 필수라는 평.
+- 힐이야는 순수 힐러, 몬삼은 힐·버프·딜러라 역할 폭이 더 넓다는 비교.
+negative:
+- 재구성체가 슈의 장판 같은 도트 힐을 받으면 몬삼이 힐을 멈춘다 — 음유시인·HP 재생 유물과 궁합이 나쁘다.
+- 바로 뒤에 한정 배너가 이어져 뽑기 재화가 부족하면 참으라는 조언도 있었다.
+subjects:
+- operators/mon3tr
+- operators/mon3tr#s3
+- operators/mon3tr#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1nfgo4j/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Episode 15 (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5843602
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5751163
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5802171
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5741687
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5732635
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5740140
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

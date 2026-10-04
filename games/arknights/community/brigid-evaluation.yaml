@@ -1,0 +1,50 @@
+id: brigid-evaluation
+title: 브리지드 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 2스 B-
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 루프슈터 스나이퍼
+- label: 추천 스킬
+  value: 2스킬
+- label: 육성 권장
+  value: 애정용 — 루프슈터가 필요하면 케이퍼가 가성비
+summary: 나쁘진 않지만 나란투야와 역할이 겹치고 4★ 케이퍼보다 나은 점이 작아 투자할 이유가 적다는 해외 평가. 국내에서도 "5★ 체면치레 정도", "루프슈터가 필요하면 케이퍼를 키워라"는 답이 대부분이었다.
+positive:
+- 4★에게 밀리지는 않고 5★ 체면치레는 한다는 평.
+- 루프슈터 직군 자체는 딜과 생존력이 괜찮다(해외).
+negative:
+- 나란투야가 있으면 자리가 없고, 없으면 케이퍼가 더 가성비가 좋다.
+- 재능이 사실상 없는 것과 마찬가지라는 불만.
+- 뉴비가 성장권을 쓰기엔 아깝다는 답변이 다수.
+subjects:
+- operators/brigid
+- operators/brigid#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1n040qc/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — When Elegies Are Ashes (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5704005
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5704587
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5710573
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5702242
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

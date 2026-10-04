@@ -1,0 +1,43 @@
+id: crownslayer-evaluation
+title: 크라운슬레이어 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 최하위권 — 해외 스킬 등급 없음
+- label: 뽑기 권장
+  value: 이벤트 보상(무료 6★)
+- label: 역할
+  value: 6★ 스페셜리스트(배포)
+- label: 추천 스킬
+  value: 2스킬 특화 1까지만 (해외 Breakpoint)
+summary: 국내외 모두 "매우 약한 배포 6★"으로 본다. 해외 공략은 이후 중국 서버에서 좋은 모듈을 받았지만 글로벌에 오기 전까지는 약하다고 했고, 국내에서는 "운용법을 적기엔 여백이 부족하다"는 농담이 돌았다.
+positive:
+- 배포 6★이라 부담이 없다.
+- 후속 모듈은 괜찮다는 해외 추가 평가(메타급은 아님).
+negative:
+- 신규라면 크루스 더 킨 글린트·글래디아 같은 다른 배포 6★가 훨씬 가치 있다(해외).
+- '"여캐는 다 키워도 크라운슬레이어는 제외"라는 글.'
+subjects:
+- operators/crownslayer
+- operators/crownslayer#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1k4r87z/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — I Portatori dei Velluti (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5566318
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5610512
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5592153
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

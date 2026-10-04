@@ -1,0 +1,38 @@
+id: wulfenite-evaluation
+title: 울페나이트 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.5'
+consensus: weak
+verdicts:
+- label: 오퍼레이터 티어
+  value: 중간 — 해외 1스 B·B+
+- label: 뽑기 권장
+  value: 헤드헌팅에서 나오면 좋음
+- label: 역할
+  value: 함정술사 스페셜리스트 — 수동 폭파 함정
+- label: 추천 스킬
+  value: 1스킬
+summary: 엘라처럼 적지만 강한 함정을 깔고, 직접 터뜨리는 수동 폭파로 타이밍을 정밀하게 잡는 기술형 유닛이라는 해외 평가. 국내에서는 "수동 폭파 지뢰가 시야 확보에 쓸 만하겠다"는 기대 정도로 논의가 적었다.
+positive:
+- 수동 폭파라 정확한 타이밍에 함정을 쓸 수 있다(해외).
+- 밟아도 안 터지는 지뢰를 직접 터뜨려 시야 기믹 맵에 쓸 만하다는 기대.
+negative:
+- 엘라와 전반적인 파워 인플레로 5★ 함정술사의 입지가 줄었다(해외).
+subjects:
+- operators/wulfenite
+- operators/wulfenite#s1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1n040qc/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — When Elegies Are Ashes (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5705492
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5712300
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

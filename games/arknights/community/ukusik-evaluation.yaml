@@ -1,0 +1,45 @@
+id: ukusik-evaluation
+title: 우쿠시크 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.5'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 5★ 메딕 중 쓸 만한 편 — 해외 2스 C
+- label: 뽑기 권장
+  value: 지마 배너에서 노려볼 만한 5★
+- label: 역할
+  value: 체인 메딕 + 아군 위장(은신) 부여
+- label: 추천 스킬
+  value: 2스킬(12초 위장·자기 HP 소모로 힐 각 확보)
+summary: 위장(은신)을 최대 4명에게 거는 2스가 특정 기믹을 씹어 주는 유틸로 호평받는다. 다만 일반 스테이지에서 들어갈 자리는 적다는 의견도 많다.
+positive:
+- 2스로 자신과 아군 최대 4명에게 12초 위장을 걸어 위험한 패턴을 피한다(헤비레인보다 회전이 빠르고 저지 부담이 없다).
+- 스킬을 쓰자마자 SP가 다시 차고, 체력을 깎고 시작해 힐 대상을 잡기 쉽다는 설계 칭찬.
+- 차기 통합 전략(흑류수해) 숨은 보스 대응용으로 날시 다음 메딕 픽이라는 평가.
+negative:
+- 5★ 메딕이라 수치가 낮고, 일반 맵에는 넣을 자리가 없다는 댓글.
+- 위장 외에는 평범한 힐러다.
+subjects:
+- operators/ukusik
+- operators/ukusik#s2
+- operators/ukusik#talent-1
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1weq14o/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — People, A People (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6143082
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6140653
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6149280
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

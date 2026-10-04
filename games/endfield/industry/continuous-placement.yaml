@@ -1,0 +1,28 @@
+id: continuous-placement
+updatedAt: 2026-09-27
+title: 연속 배치
+summary: 건설 상태를 유지하며 보유한 설비·장식·논배미를 연속해서 배치합니다.
+version: "1.5"
+attributes:
+  category: construction
+  region: 공통
+topics:
+  - id: operation
+    section: operation
+    name: 작동 조건
+    text: 건설 화면에서 연속 배치를 켜고 가방에 배치할 아이템을 보유해야 합니다.
+    values: {}
+  - id: blueprint
+    section: constraints
+    name: 청사진 선택 제한
+    text: 일괄 선택 시 현재 설비 수와 청사진 저장 한도를 확인할 수 있습니다.
+    values: {}
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/4481
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/5208
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27

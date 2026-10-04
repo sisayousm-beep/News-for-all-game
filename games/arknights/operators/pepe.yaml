@@ -1,0 +1,129 @@
+id: pepe
+title: 페페
+aliases:
+- Pepe
+summary: 6★ 가드 · 어스셰이커. 고고학자 페페. 모래에 파묻힌 과거를 발굴하고 있습니다.
+attributes:
+  rarity: 6
+  class: guard
+  branch: 어스셰이커
+  obtain: limited
+  version: '5.0'
+topics:
+- id: trait
+  section: stats
+  name: 특성 (어스셰이커)
+  text: 공격 시 목표 주변의 다른 적에게 공격력의 50%에 해당하는 광역 물리 대미지를 입힘
+- id: stats-max
+  section: stats
+  name: 정예2 Lv.90 능력치 (신뢰도·잠재 제외)
+  values:
+    HP: 2,851
+    공격력: 1,290
+    방어력: '387'
+    마법 저항: '0'
+    배치 코스트: '20'
+    저지: '2'
+    공격 간격: 1.8초
+    재배치: 70초
+- id: trust
+  section: stats
+  name: 신뢰도 100% 보너스
+  values:
+    공격력: '+70'
+    방어력: '+45'
+- id: potential
+  section: stats
+  name: 잠재 보너스 (2~6잠)
+  text: 2잠 배치 코스트 -1 · 3잠 제2재능 강화 · 4잠 공격력 +35 · 5잠 제1재능 강화 · 6잠 배치 코스트 -1
+- id: s1
+  section: skills
+  name: 1스킬 「도장!」 (특화 3)
+  text: 다음 공격이 공격력의 290%에 해당하는 물리 대미지를 입히며, 상태 이상에서도 스킬을 발동하여 상태 이상 해제 가능 2회 충전 가능
+  values:
+    SP 소모: '5'
+    초기 SP: '0'
+    SP: 자동 회복
+    발동: 자동
+- id: s2
+  section: skills
+  name: 2스킬 「혼돈 제압 망치」 (특화 3)
+  text: 공격 범위 확대, 공격력 +90%, 공격 속도 +80, 공격 범위 내 목표를 무작위로 공격 사용할 때마다 다음에 발동하는 스킬의 공격 속도가 추가로 +40, 최대 2회 중첩
+  values:
+    SP 소모: '25'
+    초기 SP: '18'
+    지속: 18초
+    SP: 자동 회복
+    발동: 수동
+- id: s3
+  section: skills
+  name: 3스킬 「시간의 진동」 (특화 3)
+  text: 공격 딜레이 소폭 증가, 공격력 +240%, 공격 시 목표를 0.8초간 기절시킴, 주요 목표의 경우 1.5초까지 증가, 공격할 때마다 스플래시 범위 확대, 공격력이 추가로 +25%, 최대 4회 중첩
+  values:
+    SP 소모: '45'
+    초기 SP: '35'
+    지속: 40초
+    SP: 자동 회복
+    발동: 수동
+- id: talent-1
+  section: talents
+  name: 1재능 「과거의 전승」
+  text: 스킬 지속 시간 동안 적 1명을 처치할 때마다 스킬 종료 시 SP 1 회복 (최대 14 회복)
+- id: talent-2
+  section: talents
+  name: 2재능 「만연한 연꽃향」
+  text: 배치되어 있을 때, 모든 [가드] 오퍼레이터의 공격력 +16%
+- id: module-1
+  section: modules
+  name: 모듈 HAM-X 「비가 오나 맑으나」 (Lv.3)
+  text: 스플래시 범위 내 적이 3명 이상 있을 시 해당 회차의 공격력이 115%로 증가 / 스킬 지속 시간 동안 적 1명을 처치할 때마다 스킬 종료 시 SP 2 회복 (최대 17 회복)
+  values:
+    HP: '+300'
+    공격력: '+113'
+- id: module-2
+  section: modules
+  name: 모듈 RA-A 「페페의 특별 한정 배지」 (Lv.3)
+  text: 특수 모드 한정 · 생존 연산에서 자원 운반 시 재배치 시간 대폭 감소 / 배치되어 있을 때 모든 [가드] 오퍼레이터의 공격력 +16%, 생존 연산에서 배치 시 보물 상자 위치의 시야 획득, 공격할 때마다 모든 가드 오퍼레이터가 있는 위치에 공격력의 50%에 해당하는 여진 발생, 주요 목표가 자원일 시 연결된 모든 자원에 공격력의 50%에 해당하는 여진 발생 (최대 10회 발동) / 배치되어 있을 때 모든 [가드] 오퍼레이터의 공격력 +16%, 생존 연산에서 배치 시…
+  values:
+    HP: '+350'
+    공격력: '+85'
+    방어력: '+135'
+history:
+- date: '2025-01-16T16:00:00+09:00'
+  version: '5.0'
+  kind: release
+  summary: 5주년 시즌 신규 6★ 오퍼레이터. 한정 헤드헌팅 [모래 위의 각인] (1월 16일 16:00 ~ 1월 30일 03:59) 한정 오퍼레이터 — 일반 헤드헌팅에는 추가되지 않는다.
+  sources:
+  - &id001
+    source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1188457
+    collectedAt: '2026-09-28'
+    verifiedAt: '2026-09-28'
+    note: 한국 공식 카페 공지 — 개방 일시·기간
+  - source: arknights-global
+    url: https://www.arknights.global/news/291
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+sources:
+- *id001
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1188091
+  collectedAt: '2026-09-28'
+  verifiedAt: '2026-09-28'
+  note: 한국 공식 카페 공지 — 개방 일시·기간
+- source: arknights-global
+  url: https://www.arknights.global/news/291
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_4058_pepe)
+image: /games/arknights/img/operators/pepe.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4058_pepe_2.png
+keyVisual: /games/arknights/img/keyvisuals/pepe.webp
+keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4058_pepe_2b.png
+updatedAt: '2026-09-28'

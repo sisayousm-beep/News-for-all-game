@@ -1,0 +1,20 @@
+id: typhoeus-trial
+updatedAt: 2026-09-27
+title: 티프로스 · 작전 훈련
+kind: event
+start: 2026-09-02T12:00:00+08:00
+end: 2026-09-30T11:59:00+08:00
+version: "1.5"
+summary: 티프로스 · 작전 훈련
+rewards:
+  - 오로베릴 ×100
+  - 무기고 방어구 상자
+subjects:
+  - operators/typhoeus
+sources:
+  - source: gryphline
+    url: https://endfield.gryphline.com/ko-kr/news/6172
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+startNote: 버전 업데이트 점검 종료 후. 시작 시각은 공식 예정 종료 시각.
+endNote: 원문 Asia 서버 시간(UTC+8). 화면은 한국 시간으로 표시.

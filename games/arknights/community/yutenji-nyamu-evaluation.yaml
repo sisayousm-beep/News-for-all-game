@@ -1,0 +1,47 @@
+id: yutenji-nyamu-evaluation
+title: 유텐지 냐무 — 커뮤니티 종합 평가
+kind: evaluation
+version: '6.0'
+consensus: moderate
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음(아베무지카 중 최약)
+- label: 뽑기 권장
+  value: 이벤트 보상(무료)
+- label: 역할
+  value: 지진술사 가드 — 저지 + 피버 게이지 충전
+- label: 추천 스킬
+  value: 2스킬
+summary: 드럼 연출은 최고지만 아베무지카 멤버 중 성능이 가장 약하다는 평이 국내외 공통이다. 다만 통합 전략에서 남는 가드 모집권으로 피버를 채우는 용도는 호평.
+positive:
+- 배치만 해도 피버가 오르는 "피버 셔틀", 통합 전략(쉐이)에서 가드 모집권 소진용으로 좋다.
+- 스킬 타격감이 좋다.
+negative:
+- 딜도 한 방 피해도 낮아 순수 딜러로는 약하다(해외).
+- '"애니 안 본 성능충이면 냐무 빼고 키워라"는 조언.'
+subjects:
+- operators/yutenji-nyamu
+- operators/yutenji-nyamu#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1qxxhrp/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Somniloquium Serenum (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5968255
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5969467
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=6067694
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5949745
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

@@ -161,6 +161,9 @@ export type Topic = z.infer<typeof Topic>;
 
 /** Generic database entity (characters, jobs, bosses, items…). Shape of `attributes` is declared per game in game.yaml. */
 export const EntityRecord = RecordBase.extend({
+  /** Optional full character art, separate from the cropped list portrait. */
+  keyVisual: z.string().regex(/^\/games\//, 'path under public/games/').optional(),
+  keyVisualFrom: z.url().optional(),
   /** null = unknown / not yet verified. Never guess a value. */
   attributes: z.record(z.string(), z.union([z.string(), z.number(), z.null()])).default({}),
   topics: z.array(Topic).default([]),

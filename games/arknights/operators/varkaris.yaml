@@ -1,0 +1,71 @@
+id: varkaris
+title: "바르카리스"
+aliases: ["Varkáris"]
+summary: "5★ 가드 · 공격수. 가드 오퍼레이터 바르카리스. 엄숙한 부두 관리인입니다."
+attributes:
+  rarity: 5
+  class: guard
+  branch: "공격수"
+  obtain: event
+  version: "6.0"
+topics:
+  - id: trait
+    section: stats
+    name: "특성 (공격수)"
+    text: "저지하고 있는 모든 적 동시에 공격"
+  - id: stats-max
+    section: stats
+    name: "정예2 Lv.80 능력치 (신뢰도·잠재 제외)"
+    values: {"HP": "2,622", "공격력": "760", "방어력": "333", "마법 저항": "0", "배치 코스트": "25", "저지": "3", "공격 간격": "1.2초", "재배치": "80초"}
+  - id: trust
+    section: stats
+    name: "신뢰도 100% 보너스"
+    values: {"HP": "+150", "공격력": "+50"}
+  - id: potential
+    section: stats
+    name: "잠재 보너스 (2~6잠)"
+    text: "2잠 배치 코스트 -1 · 3잠 재배치 시간 -10초 · 4잠 배치 코스트 -1 · 5잠 재능 강화 · 6잠 배치 코스트 -1"
+  - id: s1
+    section: skills
+    name: "1스킬 「급류」 (특화 3)"
+    text: "다음 공격이 공격력 135% 물리 대미지를 입히고, 3회 연속 공격"
+    values: {"SP 소모": "4", "초기 SP": "0", "SP": "공격 회복", "발동": "자동"}
+  - id: s2
+    section: skills
+    name: "2스킬 「동포의 의지」 (특화 3)"
+    text: "공격할 때마다 공격력 200% 물리 대미지를 입히고, 동시에 자신 최대 HP의 8%만큼 HP 회복, 최대 HP를 초과한 회복량은 보호막으로 전환 / 보호막은 최대 HP의 100%까지 중첩되며, 스킬 종료 후 점차 감소"
+    values: {"SP 소모": "45", "초기 SP": "30", "지속": "30초", "SP": "자동 회복", "발동": "수동"}
+  - id: talent-1
+    section: talents
+    name: "1재능 「영세불망」 (정예2)"
+    text: "배치되어 있을 때, 모든 [미노스] 오퍼레이터가 HP 비율이 자신보다 낮은 적을 공격할 시 공격력이 110%로 증가"
+  - id: module-ceny
+    section: modules
+    name: "모듈 CEN-Y 「귀갓길」 (Lv.3)"
+    text: "특성: HP가 50%보다 높을 경우, 피격 물리 대미지가 20% 감소 / 재능(영세불망): 배치되어 있을 때, 모든 [미노스] 오퍼레이터가 HP 비율이 자신보다 낮은 적을 공격할 시 공격력이 116%로 증가"
+    values: {"HP": "+200", "공격력": "+66"}
+history:
+  - date: 2026-06-22T16:00:00+09:00
+    version: "6.0"
+    kind: release
+    summary: "6주년 시즌 신규 5★ 오퍼레이터. SideStory [아테누스 복수록] 이벤트 보상 이벤트 보상 오퍼레이터(이벤트 획득)."
+    sources:
+      - source: naver-cafe
+        url: https://cafe.naver.com/arknightskor/1242829
+        collectedAt: 2026-09-27
+        verifiedAt: 2026-09-27
+        note: 공식 업데이트·헤드헌팅 공지
+sources:
+  - source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1242829
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "공식 공지 — 기간·신규 오퍼레이터"
+  - source: gamedata
+    url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+    collectedAt: 2026-09-27
+    verifiedAt: 2026-09-27
+    note: "한국 서버 게임 데이터(character·skill·uniequip) — 능력치·스킬·재능·모듈 한국어 인게임 문구 (char_4166_varkis)"
+image: /games/arknights/img/operators/varkaris.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4166_varkis_1b.png
+updatedAt: 2026-09-27

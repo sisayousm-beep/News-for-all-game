@@ -1,0 +1,108 @@
+id: surfer
+title: 서퍼
+aliases:
+- Surfer
+summary: 5★ 뱅가드 · 에이전트. 블랙스틸 선발팀 멤버 서퍼. 다음번 야영을 고대하고 있습니다.
+attributes:
+  rarity: 5
+  class: vanguard
+  branch: 에이전트
+  obtain: standard
+  version: '5.5'
+topics:
+- id: trait
+  section: stats
+  name: 특성 (에이전트)
+  text: 재배치 시간 감소, 원거리 공격 가능
+- id: stats-max
+  section: stats
+  name: 정예2 Lv.80 능력치 (신뢰도·잠재 제외)
+  values:
+    HP: 1,950
+    공격력: '560'
+    방어력: '261'
+    마법 저항: '0'
+    배치 코스트: '10'
+    저지: '1'
+    공격 간격: 1초
+    재배치: 35초
+- id: trust
+  section: stats
+  name: 신뢰도 100% 보너스
+  values:
+    공격력: '+40'
+    방어력: '+20'
+- id: potential
+  section: stats
+  name: 잠재 보너스 (2~6잠)
+  text: 2잠 배치 코스트 -1 · 3잠 재배치 시간 -4초 · 4잠 공격 속도 +5 · 5잠 재능 강화 · 6잠 배치 코스트 -1
+- id: s1
+  section: skills
+  name: 1스킬 「탐색」 (최대 레벨)
+  text: 배치 후 공격력 +100%, 공격할 때마다 배치 코스트 1 획득
+  values:
+    SP 소모: '0'
+    초기 SP: '0'
+    지속: 20초
+    SP: 8
+    발동: 패시브
+- id: s2
+  section: skills
+  name: 2스킬 「통찰」 (특화 3)
+  text: 공격 속도 +60, 공격할 때마다 배치 코스트 1 획득, 동시에 목표의 방어력 55 탈취(최대 275, 스킬 종료 또는 서퍼가 퇴각할 때까지 지속)
+  values:
+    SP 소모: '22'
+    초기 SP: '15'
+    지속: 10초
+    SP: 자동 회복
+    발동: 수동
+- id: talent-1
+  section: talents
+  name: 1재능 「혼자만의 원정」
+  text: 배치 시 주변 4칸에 다른 오퍼레이터가 없으면 배치 코스트 2 획득
+- id: module-1
+  section: modules
+  name: 모듈 AGE-X 「멋진 요리」 (Lv.3)
+  text: 적에게 쉽게 피격되지 않음 / 배치 시 주변 4칸에 다른 오퍼레이터가 없으면 배치 코스트 2 획득, 공격 속도 +15 (10초간 지속)
+  values:
+    HP: '+300'
+    방어력: '+25'
+history:
+- date: '2025-07-17T16:00:00+09:00'
+  version: '5.5'
+  kind: release
+  summary: 5.5주년 시즌 신규 5★ 오퍼레이터. 한정 헤드헌팅 [영원한 불꽃] (7월 17일 16:00 ~ 7월 31일 03:59)
+  sources:
+  - &id001
+    source: naver-cafe
+    url: https://cafe.naver.com/arknightskor/1211119
+    collectedAt: '2026-09-28'
+    verifiedAt: '2026-09-28'
+    note: 한국 공식 카페 공지 — 개방 일시·기간
+  - source: arknights-global
+    url: https://www.arknights.global/news/1326
+    collectedAt: 2026-09-28
+    verifiedAt: 2026-09-28
+    note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+sources:
+- *id001
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1210633
+  collectedAt: '2026-09-28'
+  verifiedAt: '2026-09-28'
+  note: 한국 공식 카페 공지 — 개방 일시·기간
+- source: arknights-global
+  url: https://www.arknights.global/news/1326
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 공식 글로벌 출시 공지. 한국 서버의 정확한 개방 시각은 별도 확인 필요.
+- source: gamedata
+  url: https://github.com/ArknightsAssets/ArknightsGamedata/tree/master/kr/gamedata/excel
+  collectedAt: 2026-09-28
+  verifiedAt: 2026-09-28
+  note: 한국 서버 캐릭터·스킬·모듈 데이터 (char_4052_surfer)
+image: /games/arknights/img/operators/surfer.webp
+imageFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/portrait/char_4052_surfer_2.png
+keyVisual: /games/arknights/img/keyvisuals/surfer.webp
+keyVisualFrom: https://raw.githubusercontent.com/yuanyan3060/ArknightsGameResource/main/skin/char_4052_surfer_2b.png
+updatedAt: '2026-09-28'

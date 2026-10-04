@@ -1,0 +1,48 @@
+id: laios-evaluation
+title: 라이오스 — 커뮤니티 종합 평가
+kind: evaluation
+version: '5.0'
+consensus: strong
+verdicts:
+- label: 오퍼레이터 티어
+  value: 낮음 — 해외 스킬 등급 없음
+- label: 뽑기 권장
+  value: 콜라보 팬이 아니면 넘겨도 됨
+- label: 역할
+  value: 5★ 가드
+- label: 추천 스킬
+  value: 특화 비추천
+summary: 구성은 웃기지만 효과적이지 않다는 해외 평가와 "성능도 웃음벨", "굳이 뽑을 필요 없다"는 국내 반응이 일치한다. 던전밥 팬이라면 수집용으로 뽑는다는 의견이 많다.
+positive:
+- 던전밥 멤버들과 기반시설(단서·제조) 효율이 좋다.
+- 원작 팬에게는 캐릭터 자체가 가치.
+negative:
+- 스킬 중 공격하지 않는 시간이 길다("15초간 공격 안 함 vs 10초간 공격 안 함").
+- 칠책처럼 조커로 쓸 각도 없다는 댓글.
+subjects:
+- operators/laios
+- operators/laios#s1
+- operators/laios#s2
+sources:
+- source: reddit
+  url: https://www.reddit.com/r/arknights/comments/1j4hzqh/
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+  note: Mastery Priority Guide & Should You Pull — Delicious on Terra (스킬 등급·뽑기 권장, 댓글)
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5514857
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5521543
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5523600
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+- source: dc-mibj
+  url: https://gall.dcinside.com/mgallery/board/view/?id=mibj&no=5522415
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+updatedAt: '2026-09-27'

@@ -1,0 +1,20 @@
+id: crossing
+title: 스토리 모음집 '교차지점'
+kind: event
+start: '2026-08-13T16:00:00+09:00'
+end: '2026-08-23T03:59:00+09:00'
+version: '6.5'
+endNote: 스테이지는 8월 20일 03:59까지, 교환소 [와인 챔피언십 위원회]는 8월 23일 03:59까지
+summary: 시라쿠사(누오바 볼시니) 배경 스토리 모음집. 스테이지에서 [코르크 마개]를 모아 기록 조각과 보상으로 교환한다.
+rewards:
+- 에포크 시리즈 컬렉션 - 삼원의 운치(케스트럴)
+- 모집 허가증
+- 모듈 육성 재료
+sources:
+- source: naver-cafe
+  url: https://cafe.naver.com/arknightskor/1245977
+  collectedAt: '2026-09-27'
+  verifiedAt: '2026-09-27'
+image: /games/arknights/img/events/crossing.webp
+imageFrom: https://cafeptthumb-phinf.pstatic.net/MjAyNjA4MDdfMjIx/MDAxNzg2MDg5MzQ2NzM5.n5yI-6VgWfNKID_xS1JOIPot-_BkktJvHAT929dhVZwg.-3jVmHDdSYxEy5IAAcjL9ClZ1UMkY25FClPbq_wE_vcg.JPEG/out.jpg
+updatedAt: '2026-09-27'
