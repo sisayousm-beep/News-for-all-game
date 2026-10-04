@@ -1,0 +1,25 @@
+id: v3-7-banner-phase2
+title: "3.7 후반부 픽업 — 쇄명 (루실라·린네 복각)"
+aliases: ["Suoming", "Lucilla", "Lynae"]
+kind: banner
+start: 2026-10-22T10:00:00+08:00
+end: 2026-11-11T11:59:00+08:00
+endNote: "공지 표기: server time — 아시아 서버 UTC+8"
+version: "3.7"
+summary: "신규 5성 쇄명 [내 마음 닿는 곳, 아홉 번 죽어도 후회 없으리]과 루실라·린네 복각, 전용 무기 「적막한 어둠」 무기 튜닝. 4성 픽업 루미·단근·치샤."
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5546
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 전반부 튜닝 공지
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 콘텐츠 안내(이미지) — 튜닝 기간
+updatedAt: 2026-10-04

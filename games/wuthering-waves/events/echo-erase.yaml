@@ -1,0 +1,19 @@
+id: echo-erase
+title: "[무음 제거] 미니 이벤트"
+aliases: ["Echo Erase"]
+kind: event
+start: 2026-10-22T11:00:00+09:00
+end: 2026-11-09T04:59:00+09:00
+version: "3.7"
+summary: "에코 피스를 눌러 없애는 퍼즐 미니 이벤트(매일 스테이지 개방). 별의 소리 400 등."
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 콘텐츠 안내(이미지) — 보상
+updatedAt: 2026-10-04

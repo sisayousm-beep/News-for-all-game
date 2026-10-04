@@ -1,0 +1,16 @@
+id: v3-7-steam-top1
+title: 3.7 신 출시와 함께 Steam 글로벌 1위
+kind: issue
+scope: offgame
+happenedAt: 2026-09-30
+version: "3.7"
+background: "3.7 업데이트 당일 명조가 Steam 글로벌·미국 순위 1위에 올랐다. 사이버펑크 콜라보와 에이메스 출시 때는 글로벌 2위가 최고였다."
+consensus: strong
+summary: "여우의 별자리(신) 인기가 그만큼 크다는 반응이 대부분이다. 글로벌 1위는 처음이라며 Reddit에서 크게 화제가 됐다."
+positive:
+  - 에이메스 때도 미국 1위였지만 글로벌 1위는 처음이라는 반응.
+  - 아일랜드 등 다른 지역에서도 1위를 봤다는 댓글.
+subjects: [versions/v3-7]
+sources:
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wtyik6/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+updatedAt: 2026-10-04

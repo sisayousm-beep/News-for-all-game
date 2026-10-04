@@ -1,7 +1,7 @@
 id: hiyuki-evaluation
 title: "히유키 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: strong
 verdicts:
   - { label: "캐릭터 티어", value: "T0 (역경의 탑·다수전 모두)" }

@@ -1,7 +1,7 @@
 id: iuno-evaluation
 title: "유노 — 커뮤니티 종합 평가"
 kind: evaluation
-version: "3.6"
+version: "3.7"
 consensus: moderate
 verdicts:
   - { label: "캐릭터 티어", value: "T0 (역경의 탑 기준)" }
@@ -13,12 +13,12 @@ subjects: [resonators/iuno, weapons/moongazers-sigil]
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/tier-list
-    collectedAt: 2026-09-27
-    verifiedAt: 2026-09-26
-    note: "역경의 탑 티어 (2026-09-16 갱신)"
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "역경의 탑 티어 (2026-09-30 갱신)"
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/iuno
-    collectedAt: 2026-09-27
-    verifiedAt: 2026-09-27
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
     note: "Review·Build·Calculations 탭"
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

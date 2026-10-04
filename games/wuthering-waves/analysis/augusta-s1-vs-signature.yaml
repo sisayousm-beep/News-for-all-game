@@ -38,12 +38,12 @@ subjects: [resonators/augusta, weapons/thunderflare-dominion, resonators/augusta
 sources:
   - source: prydwen
     url: https://www.prydwen.gg/wuthering-waves/characters/augusta
-    collectedAt: 2026-09-27
-    verifiedAt: 2026-09-27
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
     note: "Calculations(돌파별 딜)·Build(무기별 딜) 탭"
   - source: kuro-official
     url: https://wutheringwaves.kurogames.com/ko/main/news/detail/763
     collectedAt: 2026-09-26
     verifiedAt: 2026-09-26
     note: "튜닝 확률(평균 뽑기 계산)"
-updatedAt: 2026-09-27
+updatedAt: 2026-10-04

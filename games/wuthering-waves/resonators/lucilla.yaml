@@ -51,6 +51,15 @@ topics:
     name: "6체인 「아지랑이 같은 시간 속 바라보는 시선」"
     text: "「명심」 스택으로 내려놓기 피해 최대 +600%."
 history:
+  - date: 2026-10-22
+    version: "3.7"
+    kind: rerun
+    summary: "3.7 후반부 튜닝으로 복각 (2026-10-22 10:00 ~ 11-11 11:59, 서버 시간)."
+    sources:
+      - source: kuro-official
+        url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+        collectedAt: 2026-10-04
+        verifiedAt: 2026-10-04
   - date: 2026-06-13
     version: "3.4"
     kind: release
@@ -79,4 +88,4 @@ sources:
     note: 능력치·스킬·공명 체인 한국어 인게임 문구
 image: /games/wuthering-waves/img/resonators/lucilla.webp
 imageFrom: https://wutheringwaves.kurogames.com/static4.0/assets/luosela-22bd666e.webp
-updatedAt: 2026-09-26
+updatedAt: 2026-10-04

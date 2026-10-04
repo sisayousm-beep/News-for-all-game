@@ -1,0 +1,18 @@
+id: v3-7-bugs
+title: 3.7 버그·최적화 불만 — 선명도 필터는 일단 끄기
+kind: issue
+scope: ingame
+happenedAt: 2026-09-30
+version: "3.7"
+background: "3.7 이후 그래픽 전역 필터 「선명도」가 수치와 관계없이 최대로 적용되는 버그가 생겼다. 10월 3일 공식이 확인된 문제와 수정 계획을 공지했다."
+consensus: strong
+summary: "선명도 필터는 수정 전까지 끄라는 안내가 가장 많이 공유됐다. 국내에서는 이번 버전 버그가 많고, 그래픽카드 온도가 올랐다는 불만이 이어진다."
+negative:
+  - 선명도 슬라이더 1과 100의 차이가 없고, 0으로 끄면 화면이 조금 흐릿하다.
+  - 텔레포트가 반복되거나 지형에 갇히는 버그 제보.
+  - 예전보다 그래픽카드 온도가 올라갔다는 불만(텍스처팩 변경으로 셰이더 캐시가 초기화된 탓이라는 추측도 있다).
+subjects: [versions/v3-7]
+sources:
+  - { source: reddit, url: "https://www.reddit.com/r/WutheringWaves/comments/1wts9lf/", collectedAt: 2026-10-04, verifiedAt: 2026-10-04 }
+  - { source: arca-wuwa, url: "https://arca.live/b/wutheringwaves/184861115", collectedAt: 2026-10-04, verifiedAt: 2026-10-04, note: "10-03 확인된 문제 공지 전재 + 댓글" }
+updatedAt: 2026-10-04

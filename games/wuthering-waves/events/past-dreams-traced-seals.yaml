@@ -1,0 +1,19 @@
+id: past-dreams-traced-seals
+title: "[오랜 꿈이 쫓는 약속] 기념 촬영 수집 이벤트"
+aliases: ["Past Dreams, Traced Seals"]
+kind: event
+start: 2026-09-30T12:00:00+09:00
+end: null
+version: "3.7"
+summary: "몽추천라 곳곳의 풍경 6곳을 촬영·탐색하는 상시 수집 이벤트(4장 4막 에필로그 이후). 별의 소리 180 등."
+sources:
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/ko/main/news/detail/5572
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+  - source: kuro-official
+    url: https://wutheringwaves.kurogames.com/en/main/news/detail/5529
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: 3.7 콘텐츠 안내(이미지) — 보상
+updatedAt: 2026-10-04

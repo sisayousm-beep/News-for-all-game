@@ -1,0 +1,16 @@
+id: rover-electro-evaluation
+title: "방랑자 · 전도 — 커뮤니티 종합 평가"
+kind: evaluation
+version: "3.7"
+consensus: moderate
+verdicts:
+  - { label: "캐릭터 티어", value: "T1 (역경의 탑 기준)" }
+summary: "Prydwen 역경의 탑 티어 기준 메타권(T1)로 평가된다."
+subjects: [resonators/rover-electro]
+sources:
+  - source: prydwen
+    url: https://www.prydwen.gg/wuthering-waves/tier-list
+    collectedAt: 2026-10-04
+    verifiedAt: 2026-10-04
+    note: "역경의 탑 티어 (2026-09-30 갱신)"
+updatedAt: 2026-10-04
